@@ -1,0 +1,130 @@
+"*":
+  Zen:
+    fullscreen: false
+    width: 100
+  "accents-ui":
+    accentColor:
+      red: 195
+      green: 9
+      blue: 9
+      alpha: 1
+    hexColor: "#c30909"
+    useSyntax: false
+  "atom-ctags":
+    cmdArgs: "--excludeFiles='*.md'"
+  "autocomplete-clang": {}
+  "autocomplete-plus":
+    confirmCompletion: "tab and enter"
+  autosave:
+    enabled: true
+  "base16-syntax":
+    scheme: "Eighties"
+  "block-cursor":
+    global:
+      blinkOff:
+        backgroundColor:
+          red: 255
+          green: 255
+          blue: 255
+          alpha: 0.3
+        borderStyle: "none"
+        borderWidth: 0
+      blinkOn:
+        backgroundColor:
+          red: 255
+          green: 255
+          blue: 255
+          alpha: 0.15
+        borderStyle: "none"
+        borderWidth: 0
+        pulseDuration: 0
+      cursorLineFix: true
+      scopes: [
+        "*"
+      ]
+      selector: "atom-text-editor"
+  core:
+    audioBeep: false
+    autoHideMenuBar: true
+    disabledPackages: [
+      "keybinding-resolver"
+      "symbols-view"
+      "metrics"
+      "pigments"
+      "linter-flake8"
+      "linter-csslint"
+      "linter-js-standard"
+    ]
+    excludeVcsIgnoredPaths: false
+    ignoredNames: [
+      ".vagrant"
+      ".git"
+      ".hg"
+      ".svn"
+      ".DS_STORE"
+      "._*"
+      "Thumbs.db"
+      ".tags*"
+    ]
+    projectHome: "/home/orax/Projects"
+    themes: [
+      "accents-ui"
+      "base16-syntax"
+    ]
+  editor:
+    fontFamily: "Monofur"
+    fontSize: 15
+    invisibles: {}
+    lineHeight: 1.2
+    showIndentGuide: true
+    softWrap: true
+    tabLength: 4
+    tabType: "soft"
+  "exception-reporting":
+    userId: "6bf2d275-89f8-5276-d8a9-654dd0b12dec"
+  "go-plus":
+    goInstallation: "/usr/local/go/bin/go"
+    goPath: "~/projects/Go/"
+  "highlight-line":
+    enableSelectionBorder: true
+    enableUnderline: true
+  "isotope-ui":
+    backgroundColor: "false"
+    backgroundGradient: true
+    customBackgroundColorPicker:
+      alpha: 1
+      blue: 7
+      green: 7
+      red: 51
+    fontFamily: "Clear Sans"
+    minimalMode: true
+  linter:
+    gutterEnabled: false
+  "linter-clang":
+    clangDefaultCFlags: "-Wall -fsytanx-only"
+    clangDefaultCppFlags: "-Wall -std=c++11 -fsytanx-only"
+  "markdown-preview":
+    liveUpdate: false
+    useGitHubStyle: true
+  minimap:
+    plugins:
+      "git-diff": true
+      selection: true
+  "pdf-view":
+    enableSyncTeX: false
+  pigments: {}
+  "tidy-markdown":
+    runOnSave: false
+  "tree-view":
+    hideIgnoredNames: true
+  welcome:
+    showOnStartup: false
+".source.ruby":
+  editor:
+    tabLength: 2
+".source.yaml":
+  editor:
+    tabLength: 2
+".source.toml":
+  editor:
+    tabLength: 2

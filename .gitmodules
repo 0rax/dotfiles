@@ -1,0 +1,12 @@
+[submodule "fish/fish-bd"]
+	path = fish/fish-bd
+	url = https://github.com/0rax/fish-bd.git
+[submodule "fish/fishline"]
+	path = fish/fishline
+	url = https://github.com/0rax/fishline
+[submodule "fish/autojump"]
+	path = fish/autojump
+	url = https://github.com/joelthelion/autojump.git
+[submodule "fish/virtualfish"]
+	path = fish/virtualfish
+	url = https://github.com/adambrenecki/virtualfish

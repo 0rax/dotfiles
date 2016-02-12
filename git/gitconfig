@@ -1,0 +1,66 @@
+# Import private settings such as [user]
+[include]
+    path = ~/.gitconfig_private
+
+# Git base config
+[core]
+    excludesfile = /Users/orax/.gitignore_global
+[push]
+    default = current
+[rebase]
+    autostash = true
+    autosquash = true
+
+# Git remote rewriting
+[url "git@github.com:"]
+    insteadOf = https://github.com/
+[url "git@bitbucket.org:"]
+    insteadOf = https://bitbucket.org/
+
+# Git alias
+[alias]
+    poule = pull
+    pousse = push
+    co = checkout
+    st = status
+    ci = commit
+    fc = commit --amend -m
+    edit = commit --amend -m
+    ic = add -p
+    wdiff = diff --word-diff
+    info = remote show origin
+    size = count-objects -vH
+    gg = grep --break --heading -n
+    file = log --pretty=oneline --shortstat --abbrev-commit
+    unpushed = log --stat origin/master..HEAD
+    alog = log --graph --abbrev-commit --decorate --date=relative --format=prettylog --all
+    slog = log --graph --abbrev-commit --decorate --date=relative --format=prettylog --shortstat -10
+    flog = log --graph --abbrev-commit --decorate --date=relative --format=prettylog --stat -10
+    sdlog = log --graph --abbrev-commit --decorate --date=relative --shortstat --no-color
+
+# Git color
+[color]
+    ui = auto
+[color "branch"]
+    current = yellow reverse
+    local = yellow
+    remote = green
+[color "diff"]
+    meta = yellow bold
+    frag = magenta bold
+    old = red bold
+    new = green bold
+[color "status"]
+    added = yellow
+    changed = green
+    untracked = cyan
+[pretty]
+    prettylog = %C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)
+
+# SourceTree
+[difftool "sourcetree"]
+    cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+    path =
+[mergetool "sourcetree"]
+    cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+    trustExitCode = true
