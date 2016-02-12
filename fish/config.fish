@@ -128,8 +128,8 @@ end
 
 # ---  Fleetctl  ---------------------------------------------------------------
 
-if test -e $HOME/.docker/fleet # Check for a remote fleet host sconfiguration
-    set -gx FLEETCTL_TUNNEL (cat $HOME/.docker/fleet)
+if test -e $HOME/.fleetctl/host # Check for a remote fleetctl host configuration
+    set -gx FLEETCTL_TUNNEL (cat $HOME/.fleetctl/host)
 end
 
 # ---  Latex for MacOSX  -------------------------------------------------------
