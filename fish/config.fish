@@ -6,24 +6,16 @@
 set -gx XDG_CONFIG_HOME $HOME/.config/
 set -gx XDG_DATA_HOME $HOME/.data/
 set -gx OS_TYPE (uname)
-if command -s most >/dev/null
+if command -s most > /dev/null
     set -gx MANPAGER most
     set -gx PAGER most
-end
-
-# ---  Wahoo  ------------------------------------------------------------------
-
-if test -d $HOME/.wahoo
-    set -g WAHOO_PATH $HOME/.wahoo
-    set -g WAHOO_CUSTOM $HOME/.dotfiles
-    source $WAHOO_PATH/init.fish
 end
 
 # ---  Editor  -----------------------------------------------------------------
 
 set -gx EDITOR 'vim'
 set -gx GIT_EDITOR 'vim'
-set -gx ALTERNATE_EDITOR 'vim'
+set -gx ALTERNATE_EDITOR 'nano'
 
 # ---  Aliases  ----------------------------------------------------------------
 
@@ -40,14 +32,12 @@ alias grep  'grep --color=auto'
 alias size  'du -sh'
 
 alias share 'python -m SimpleHTTPServer 8000'
-alias gpg   'rlwrap gpg2'
 
-if test -x $HOME/.ghar/bin/ghar
-    alias ghar $HOME/.ghar/bin/ghar
+if command -s rlwrap > /dev/null
+    alias gpg   'rlwrap gpg2'
 end
 
 # ---  System Specific Aliases  ------------------------------------------------
-
 
 if [ "$OS_TYPE" = "Darwin" ] # Mac OS X
 
@@ -56,13 +46,17 @@ if [ "$OS_TYPE" = "Darwin" ] # Mac OS X
 
 else if [ "$OS_TYPE" = "Linux" ] # GNU/Linux
 
-    if test -x /usr/bin/viewnior
+    if command -s viewnior > /dev/null
         alias display "viewnior"
-    else if test -x /usr/bin/eog
+    else if command -s eog > /dev/null
         alias display "eog"
     end
 
 end
+
+# --- GPG Agent ----------------------------------------------------------------
+
+start_gpg_agent
 
 # ---  FishLine  ---------------------------------------------------------------
 
@@ -73,7 +67,7 @@ if test -f  $HOME/.config/fish/fishline-theme.fish
     source $HOME/.config/fish/fishline-theme.fish
 end
 
-if [ "$OS_TYPE" = "Linux" ]; and tty | grep tty >> /dev/null
+if [ "$OS_TYPE" = "Linux" ]; and tty | grep tty > /dev/null
      source $FLINE_PATH/themes/git_minimal.fish
      source $FLINE_PATH/themes/tty.fish
 end
@@ -97,8 +91,8 @@ if test -d $HOME/Projects/Go
     set -gx GOPATH $HOME/Projects/Go
     set -gx PATH $PATH $GOPATH/bin
 else if test -d $HOME/projects/Go
-   set -gx GOPATH $HOME/projects/Go
-   set -gx PATH $PATH $GOPATH/bin
+    set -gx GOPATH $HOME/projects/Go
+    set -gx PATH $PATH $GOPATH/bin
 end
 
 # ---  Docker  -----------------------------------------------------------------
@@ -116,13 +110,13 @@ if test -d /Applications/Docker # Check if DockerToolbox is installed
 
     # Create function to pass machine name as arg with "default" as default value
     set -gx DOCKER_VM_NAME default
-    alias docker-env    'docker-machine env --shell fish $DOCKER_VM_NAME'
-    alias docker-unenv  'docker-machine env --shell fish -u'
-    alias docker-start  'docker-machine start $DOCKER_VM_NAME'
+    alias docker-env      'docker-machine env --shell fish $DOCKER_VM_NAME'
+    alias docker-unenv    'docker-machine env --shell fish -u'
+    alias docker-start    'docker-machine start $DOCKER_VM_NAME'
     alias docker-restart  'docker-machine restart $DOCKER_VM_NAME'
-    alias docker-stop   'docker-machine stop $DOCKER_VM_NAME'
-    alias docker-status 'docker-machine status $DOCKER_VM_NAME'
-    alias docker-ip     'docker-machine inspect -f "{{ .Driver.IPAddress }}" $DOCKER_VM_NAME'
+    alias docker-stop     'docker-machine stop $DOCKER_VM_NAME'
+    alias docker-status   'docker-machine status $DOCKER_VM_NAME'
+    alias docker-ip       'docker-machine inspect -f "{{ .Driver.IPAddress }}" $DOCKER_VM_NAME'
 
 end
 

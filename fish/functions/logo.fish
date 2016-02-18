@@ -1,3 +1,6 @@
+#!/usr/bin/env fish
+# -*-  mode:fish; tab-width:4  -*-
+
 function logo
 
     alias _s "set_color 16c"

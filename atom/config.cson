@@ -1,6 +1,7 @@
 "*":
   Zen:
     fullscreen: false
+    showWordCount: "Right"
     width: 100
   "accents-ui":
     accentColor:
@@ -11,7 +12,11 @@
     hexColor: "#c30909"
     useSyntax: false
   "atom-ctags":
+    autoBuildTagsWhenActive: true
+    cmd: "/usr/bin/ctags"
     cmdArgs: "--excludeFiles='*.md'"
+    extraTagFiles: "tags, .tags, .TAGS"
+  "atom-terminal-panel": {}
   "autocomplete-clang": {}
   "autocomplete-plus":
     confirmCompletion: "tab and enter"
@@ -48,12 +53,8 @@
     autoHideMenuBar: true
     disabledPackages: [
       "keybinding-resolver"
-      "symbols-view"
       "metrics"
-      "pigments"
-      "linter-flake8"
-      "linter-csslint"
-      "linter-js-standard"
+      "markdown-preview"
     ]
     excludeVcsIgnoredPaths: false
     ignoredNames: [
@@ -65,6 +66,9 @@
       "._*"
       "Thumbs.db"
       ".tags*"
+    ]
+    packagesWithKeymapsDisabled: [
+      "terminal-plus"
     ]
     projectHome: "/home/orax/Projects"
     themes: [
@@ -82,9 +86,13 @@
     tabType: "soft"
   "exception-reporting":
     userId: "6bf2d275-89f8-5276-d8a9-654dd0b12dec"
+  "file-icons":
+    coloured: false
+  "flex-tool-bar": {}
   "go-plus":
     goInstallation: "/usr/local/go/bin/go"
     goPath: "~/projects/Go/"
+    showPanelWhenNoIssuesExist: true
   "highlight-line":
     enableSelectionBorder: true
     enableUnderline: true
@@ -92,39 +100,87 @@
     backgroundColor: "false"
     backgroundGradient: true
     customBackgroundColorPicker:
-      alpha: 1
-      blue: 7
-      green: 7
       red: 51
+      green: 7
+      blue: 7
+      alpha: 1
     fontFamily: "Clear Sans"
     minimalMode: true
+  latex:
+    alwaysOpenResultInAtom: true
   linter:
     gutterEnabled: false
+  "linter-chktex":
+    executablePath: "/Library/TeX/texbin/chktex"
   "linter-clang":
     clangDefaultCFlags: "-Wall -fsytanx-only"
     clangDefaultCppFlags: "-Wall -std=c++11 -fsytanx-only"
+  "linter-flake8":
+    executableDir: "/Users/orax/Library/Python/3.5/bin/"
   "markdown-preview":
     liveUpdate: false
+    useGitHubStyle: true
+  "markdown-preview-plus":
+    enableLatexRenderingByDefault: true
+    enablePandoc: true
+    pandocPath: "/usr/local/bin/pandoc"
     useGitHubStyle: true
   minimap:
     plugins:
       "git-diff": true
+      linter: true
       selection: true
   "pdf-view":
     enableSyncTeX: false
   pigments: {}
+  "spell-check":
+    grammars: [
+      "text.tex.latex"
+      "source.gfm"
+      "text.plain"
+      "text.html.basic"
+    ]
+  "terminal-plus":
+    core:
+      shell: "/bin/bash"
+    style: {}
+    toggles:
+      autoClose: true
   "tidy-markdown":
     runOnSave: false
+  "tool-bar":
+    iconSize: "16px"
+    position: "Left"
   "tree-view":
     hideIgnoredNames: true
   welcome:
     showOnStartup: false
-".source.ruby":
+  wordcount:
+    extensions: [
+      "md"
+      "markdown"
+      "readme"
+      "txt"
+      "rst"
+      "adoc"
+      "log"
+      "msg"
+      "tex"
+      "latex"
+    ]
+    goalLineHeight: "0%"
+".coffee.source":
   editor:
     tabLength: 2
-".source.yaml":
+".cson.source":
+  editor:
+    tabLength: 2
+".ruby.source":
   editor:
     tabLength: 2
 ".source.toml":
+  editor:
+    tabLength: 2
+".source.yaml":
   editor:
     tabLength: 2

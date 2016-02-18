@@ -1,52 +1,54 @@
-# Your keymap
-#
-# Atom keymaps work similarly to style sheets. Just as style sheets use
-# selectors to apply styles to elements, Atom keymaps use selectors to associate
-# keystrokes with events in specific contexts.
-#
-# You can create a new keybinding in this file by typing "key" and then hitting
-# tab.
-#
-# Here's an example taken from Atom's built-in keymap:
-#
-# 'atom-text-editor':
-#   'enter': 'editor:newline'
-#
+# # Save
+# 'body':
+#   'ctrl-p':       'fuzzy-finder:toggle-file-finder'
+#   'ctrl-b':       'fuzzy-finder:toggle-buffer-finder'
 # 'atom-workspace':
-#   'ctrl-shift-p': 'core:move-up'
-#   'ctrl-p': 'core:move-down'
-#
-# You can find more information about keymaps in these guides:
-# * https://atom.io/docs/latest/customizing-atom#customizing-key-bindings
-# * https://atom.io/docs/latest/advanced/keymaps
-#
-# This file uses CoffeeScript Object Notation (CSON).
-# If you are unfamiliar with CSON, you can read more about it here:
-# https://github.com/bevry/cson#what-is-cson
-#
+#   'ctrl-g l':      'go-to-line:toggle'
+#   'ctrl-g f':      'fuzzy-finder:toggle-file-finder'
+#   'ctrl-g b':      'fuzzy-finder:toggle-buffer-finder'
+#   'shift-F11':     'zen:toggle'
+# 'atom-workspace atom-text-editor:not([mini])':
+#   'cmd-r':        'symbols-view:toggle-file-symbols'
+#   'alt-right':    'symbols-view:go-to-declaration'
+#   'alt-left':     'symbols-view:return-from-declaration'
+#   'shift-cmd-R':  'symbols-view:toggle-project-symbols'
 
+# Split Pane
 'body':
-    'ctrl-p': 'fuzzy-finder:toggle-file-finder'
-    'ctrl-b': 'fuzzy-finder:toggle-buffer-finder'
-    'ctrl-k down': 'pane:split-down'
-    'ctrl-k up': 'pane:split-up'
+  'ctrl-k down':  'pane:split-down'
+  'ctrl-k up':    'pane:split-up'
+  'ctrl-k right': 'pane:split-right'
+  'ctrl-k left':  'pane:split-left'
 
-'atom-workspace':
-    'ctrl-g g': 'git-control:toggle'
-    'ctrl-g l': 'go-to-line:toggle'
-    'ctrl-g f': 'fuzzy-finder:toggle-file-finder'
-    'ctrl-g b': 'fuzzy-finder:toggle-buffer-finder'
-    'shift-F11': 'zen:toggle'
-
+# Editor
 'atom-workspace atom-text-editor:not([mini])':
-    'ctrl-up':'editor:move-to-beginning-of-previous-paragraph'
-    'ctrl-down':'editor:move-to-beginning-of-next-paragraph'
-    'ctrl-shift-up':'editor:move-line-up'
-    'ctrl-shift-down':'editor:move-line-down'
-    'alt-right': 'atom-ctags:go-to-declaration'
-    'alt-left': 'atom-ctags:return-from-declaration'
-    'ctrl-,': 'editor:toggle-line-comments'
+  'ctrl-up':      'editor:move-to-beginning-of-previous-paragraph'
+  'ctrl-down':    'editor:move-to-beginning-of-next-paragraph'
+  'cmd-alt-down': 'editor:move-line-down'
+  'cmd-alt-up':   'editor:move-line-up'
+  'ctrl-,':       'editor:toggle-line-comments'
+# Linter
+  'alt->':        'linter:next-message'
+  'alt-<':        'linter:previous-message'
 
-'atom-workspace atom-text-editor':
-    'F10': 'linter:next-message'
-    'F9': 'linter:previous-message'
+# Build & Preview
+'atom-workspace atom-text-editor[data-grammar~="latex"]':
+  'ctrl-shift-m': 'latex:build'
+  'ctrl-alt-b':   'editor:move-to-previous-subword-boundary'
+'atom-workspace atom-text-editor[data-grammar~="gfm"]':
+  'ctrl-shift-m': 'markdown-preview-plus:toggle' # Pandoc Markdown
+'atom-workspace atom-text-editor[data-grammar~="pfm"]':
+  'ctrl-shift-m': 'markdown-preview-plus:toggle' # Pandoc Markdown
+
+# Terminal-Plus
+'atom-workspace':
+  'ctrl-`':       'terminal-plus:toggle'
+'.platform-darwin atom-workspace':
+  'cmd-shift-j':  'terminal-plus:prev'
+  'cmd-shift-k':  'terminal-plus:next'
+'.terminal-plus .terminal':
+  'cmd-c':        'terminal-plus:copy'
+  'cmd-v':        'terminal-plus:paste'
+  'cmd-n':        'terminal-plus:new'
+  'cmd-shift-j':  'terminal-plus:prev'
+  'cmd-shift-k':  'terminal-plus:next'

@@ -22,6 +22,9 @@ function fish_greeting
     set -l OS
     set -l LOAD
     set -l CPU
+    set -l GPG_AGENT_PID
+    set -l GPG_AGENT_ALIVE
+    set -l SSH_AGENT_ALIVE
 
     if command -s lsb_release > /dev/null
         set OS (lsb_release)
@@ -41,15 +44,48 @@ function fish_greeting
         set LOAD '? ? ?'
     end
 
+    if set -q GPG_AGENT_INFO
+        set GPG_AGENT_PID (echo $GPG_AGENT_INFO | cut -d':' -f2)
+        if kill -0 "$GPG_AGENT_PID" ^ /dev/null
+            set GPG_AGENT_ALIVE true
+        else
+            set -ge GPG_AGENT_INFO
+            set -le GPG_AGENT_PID
+        end
+    end
+    if set -q SSH_AGENT_PID; and kill -0 "$SSH_AGENT_PID" ^ /dev/null
+        set SSH_AGENT_ALIVE true
+    else
+        set -ge SSH_AGENT_PID
+        set -ge SSH_AUTH_SOCK
+    end
+
     echo (_n)
     echo (_t)'       ╱ ╲        '             (_i)
     echo (_s)' ┌───'(_t)'╱     ╲ '(_s)'───┐ ' (_i)$USER(_s)@(_t)(hostname)
-    echo (_s)' │ '(_i)'╱ ╲     ╱ ╲  '(_s)'│ ' (_i)"OS "(_s).....(_t) $OS
-    echo (_i)' ╱     ╲ ╱     ╲  '             (_i)"Kernel "(_s).(_t) (uname -rs)
-    echo (_i)' ╲     ╱ ╲     ╱  '             (_i)"Arch "(_s)...(_t) (uname -m)
-    echo (_s)' │ '(_i)'╲ ╱     ╲ ╱  '(_s)'│ ' (_i)"CPU "(_s)....(_t)"$CPU core(s)"
-    echo (_s)' └───'(_t)'╲     ╱ '(_s)'───┘ ' (_i)"Load "(_s)...(_t) $LOAD
+    echo (_s)' │ '(_i)'╱ ╲     ╱ ╲  '(_s)'│ ' (_i)'OS '(_s).....(_t) $OS
+    echo (_i)' ╱     ╲ ╱     ╲  '             (_i)'Kernel '(_s).(_t) (uname -rs)
+    echo (_i)' ╲     ╱ ╲     ╱  '             (_i)'Arch '(_s)...(_t) (uname -m)
+    echo (_s)' │ '(_i)'╲ ╱     ╲ ╱  '(_s)'│ ' (_i)'CPU '(_s)....(_t)"$CPU core(s)"
+    echo (_s)' └───'(_t)'╲     ╱ '(_s)'───┘ ' (_i)'Load '(_s)...(_t) $LOAD
     echo (_t)'       ╲ ╱        '             (_i)
     echo (_n)
+    if [ "$GPG_AGENT_PID" != "" -a "$GPG_AGENT_PID" = "$SSH_AGENT_PID" ]
+        echo (_i)' GPG Agent PID '(_s)...(_t) $GPG_AGENT_PID(_s)' (with SSH Agent)'
+    else if [ "$GPG_AGENT_PID" != "" ]
+        echo (_i)' GPG Agent PID '(_s)...(_t) $GPG_AGENT_PID
+    end
+    if [ "$SSH_AGENT_PID" != "" -a "$SSH_AGENT_PID" != "$GPG_AGENT_PID" ]
+        set AGENT_PRESENT true
+        echo (_i)' SSH Agent PID '(_s)...(_t) $SSH_AGENT_PID
+    end
+    if test "$SSH_AGENT_ALIVE"
+        for i in (ssh-add -l ^ /dev/null | cut -d" " -f3)
+            echo (_i)'  > Known ID '(_s).....(_t)' '$i
+        end
+    end
+    if test "$SSH_AGENT_ALIVE" -o "$GPG_AGENT_ALIVE"
+        echo
+    end
 
 end
