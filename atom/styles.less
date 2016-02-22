@@ -1,0 +1,96 @@
+// Font Size
+html, body, .tree-view, .status-bar,
+.tab-bar .tab, .settings-view .settings-panel label,
+.settings-view .setting-description, .form-control {
+    font-size: 13px;
+}
+
+// Disable Editor Scrollbar
+atom-text-editor .vertical-scrollbar,
+atom-text-editor::shadow .vertical-scrollbar,
+atom-text-editor .horizontal-scrollbar,
+atom-text-editor::shadow .horizontal-scrollbar {
+    opacity: 0;
+    width: 0;
+}
+
+// Disable Tree-View Scrollbar
+.tree-view-scroller::-webkit-scrollbar {
+    display: none;
+}
+
+// Minimap Background Color
+atom-text-editor::shadow atom-text-editor-minimap,
+atom-text-editor atom-text-editor-minimap {
+    background: rgba(0,0,0, 0.15);
+}
+
+// Minimap Visible Area Color
+atom-text-editor::shadow atom-text-editor-minimap::shadow .minimap-visible-area,
+atom-text-editor atom-text-editor-minimap::shadow .minimap-visible-area {
+    background: rgba(255,255,255, 0.3) !important;
+}
+
+// Change space before new nested group in Tree-View
+.list-tree.has-collapsable-children .list-nested-item > .list-tree > li,
+.list-tree.has-collapsable-children .list-nested-item > .list-group > li {
+    padding-left: 12px;
+}
+
+// Deactivate some plugin view when in Zen mode
+[data-zen="true"] {
+    .terminal-plus.status-bar i {
+        height: 0px;
+        width: 0px;
+        display: none;
+    }
+    atom-workspace {
+        background-color: #2a2a2a;
+    }
+    .tool-bar {
+        display: none;
+    }
+}
+
+// Accents + Base16 Eighties
+atom-text-editor::shadow {
+    .line.highlight-line {
+        background: #393d45;
+    }
+    .line.highlight-line-multi-line-solid-bottom {
+        border-bottom-color: rgba(165,20,20,1);
+     }
+    .line.highlight-line-multi-line-solid-top {
+        border-top-color: rgba(165,20,20,1);
+     }
+    .line-number.cursor-line-no-selection {
+        border-bottom: solid 1px rgba(165,20,20,1);
+        border-top: none;
+    }
+    .line-number.cursor-line {
+        background: rgba(255,255,255,0.05) !important;
+    }
+    .line-number{
+        background: rgba(0,0,0,0.20) !important;
+    }
+    .selection .region {
+        background: rgba(255,255,255,0.10) !important;
+    }
+    .wrap-guide {
+        background-color: rgba(195,9,9, 1);
+    }
+}
+atom-text-editor::shadow atom-text-editor-minimap,
+atom-text-editor atom-text-editor-minimap {
+    background: rgba(0,0,0,0.20) !important;
+}
+.tab-bar {
+    height: 40px;
+    .tab {
+        line-height: 36px;
+        border-bottom-width: 3px;
+    }
+}
+.list-tree ol.entries.list-tree::before {
+    display: none;
+}

@@ -4,4 +4,5 @@
 !/packages.lst
 !/init.coffee
 !/keymap.cson
-!/style.less
+!/styles.less
+!/toolbar.cson

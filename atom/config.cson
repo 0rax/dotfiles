@@ -24,6 +24,7 @@
     enabled: true
   "base16-syntax":
     scheme: "Eighties"
+  blame: {}
   "block-cursor":
     global:
       blinkOff:
@@ -54,7 +55,6 @@
     disabledPackages: [
       "keybinding-resolver"
       "metrics"
-      "markdown-preview"
     ]
     excludeVcsIgnoredPaths: false
     ignoredNames: [
@@ -69,6 +69,8 @@
     ]
     packagesWithKeymapsDisabled: [
       "terminal-plus"
+      "flex-tool-bar"
+      "blame"
     ]
     projectHome: "/home/orax/Projects"
     themes: [
@@ -88,10 +90,16 @@
     userId: "6bf2d275-89f8-5276-d8a9-654dd0b12dec"
   "file-icons":
     coloured: false
-  "flex-tool-bar": {}
+  "flex-tool-bar":
+    showConfigButton: false
+  "git-projects":
+    ignoredPatterns: "node_modules;\\.git;vendor;Godeps"
+    maxDepth: 3
+    rootPath: "/Users/orax/Projects"
+    sortBy: "Latest modification date"
   "go-plus":
     goInstallation: "/usr/local/go/bin/go"
-    goPath: "~/projects/Go/"
+    goPath: "~/Projects/Go/"
     showPanelWhenNoIssuesExist: true
   "highlight-line":
     enableSelectionBorder: true
@@ -118,13 +126,12 @@
   "linter-flake8":
     executableDir: "/Users/orax/Library/Python/3.5/bin/"
   "markdown-preview":
-    liveUpdate: false
     useGitHubStyle: true
   "markdown-preview-plus":
     enableLatexRenderingByDefault: true
-    enablePandoc: true
     pandocPath: "/usr/local/bin/pandoc"
-    useGitHubStyle: true
+    useGitHubStyle: false
+    useLazyHeaders: false
   minimap:
     plugins:
       "git-diff": true
@@ -146,8 +153,6 @@
     style: {}
     toggles:
       autoClose: true
-  "tidy-markdown":
-    runOnSave: false
   "tool-bar":
     iconSize: "16px"
     position: "Left"
