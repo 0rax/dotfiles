@@ -4,37 +4,34 @@
 # ---  System  -----------------------------------------------------------------
 
 set -gx XDG_CONFIG_HOME $HOME/.config/
-set -gx XDG_DATA_HOME $HOME/.data/
-set -gx OS_TYPE (uname)
-if command -s most > /dev/null
-    set -gx MANPAGER most
-    set -gx PAGER most
-end
+set -gx XDG_DATA_HOME   $HOME/.data/
+set -gx OS_TYPE         (uname)
 
-# ---  Editor  -----------------------------------------------------------------
+# ---  Editor & Pager  ---------------------------------------------------------
 
-set -gx EDITOR 'vim'
-set -gx GIT_EDITOR 'vim'
+set -gx EDITOR           'vim'
+set -gx GIT_EDITOR       'vim'
 set -gx ALTERNATE_EDITOR 'nano'
+
+if command -s most > /dev/null
+    set -gx MANPAGER     'most'
+    set -gx PAGER        'most'
+end
 
 # ---  Aliases  ----------------------------------------------------------------
 
-alias ne '/usr/bin/emacs -nw --quick --no-init-file'
-
-alias l 'ls -A'
-alias la 'ls -a'
-alias lla 'ls -lha'
-
-alias fgrep 'fgrep --color=auto'
-alias egrep 'egrep --color=auto'
-alias grep  'grep --color=auto'
-
-alias size  'du -sh'
-
-alias share 'python -m SimpleHTTPServer 8000'
+alias ne      '/usr/bin/emacs -nw --quick --no-init-file'
+alias l       'ls -A'
+alias la      'ls -a'
+alias lla     'ls -lha'
+alias fgrep   'fgrep --color=auto'
+alias egrep   'egrep --color=auto'
+alias grep    'grep --color=auto'
+alias size    'du -sh'
+alias share   'python -m SimpleHTTPServer 8000'
 
 if command -s rlwrap > /dev/null
-    alias gpg   'rlwrap gpg2'
+    alias gpg 'rlwrap gpg2'
 end
 
 # ---  System Specific Aliases  ------------------------------------------------
@@ -84,15 +81,15 @@ end
 
 if test -d /usr/local/go
     set -gx GOROOT /usr/local/go
-    set -gx PATH $PATH $GOROOT/bin
+    set -gx PATH   $PATH $GOROOT/bin
 end
 
 if test -d $HOME/Projects/Go
     set -gx GOPATH $HOME/Projects/Go
-    set -gx PATH $PATH $GOPATH/bin
+    set -gx PATH   $PATH $GOPATH/bin
 else if test -d $HOME/projects/Go
     set -gx GOPATH $HOME/projects/Go
-    set -gx PATH $PATH $GOPATH/bin
+    set -gx PATH   $PATH $GOPATH/bin
 end
 
 # ---  Docker  -----------------------------------------------------------------
@@ -136,16 +133,21 @@ end
 # ---  Python for MacOSX  ------------------------------------------------------
 
 if test -d /Users/orax/Library/Python/2.7/bin/
-    # Add local Python path on OS X
+    # Add local Python 2 path on OS X
    set -gx PATH $PATH /Users/orax/Library/Python/2.7/bin/
+end
+
+if test -d /Users/orax/Library/Python/3.5/bin/
+    # Add local Python 3 path on OS X
+   set -gx PATH $PATH /Users/orax/Library/Python/3.5/bin/
 end
 
 # ---  Autojump  ---------------------------------------------------------------
 
-if test -f $HOME/.autojump/etc/profile.d/autojump.fish
-   source $HOME/.autojump/etc/profile.d/autojump.fish
-else if test -f /etc/profile.d/autojump.fish
-   source /etc/profile.d/autojump.fish
+if test -f $HOME/.autojump/share/autojump/autojump.fish
+   source $HOME/.autojump/share/autojump/autojump.fish
+else if test -f /usr/local/share/autojump/autojump.fish
+   source /usr/local/share/autojump/autojump.fish
 end
 
 set -gx AUTOJUMP_IGNORE_CASE 1
