@@ -44,27 +44,27 @@ atom-text-editor atom-text-editor-minimap::shadow .minimap-visible-area {
         width: 0px;
         display: none;
     }
-    atom-workspace {
-        background-color: #2a2a2a;
-    }
     .tool-bar {
         display: none;
     }
 }
 
-// Accents + Base16 Eighties
+// Accents UI (#c30909) + Base16 (Eighties)
 atom-text-editor::shadow {
+    .wrap-guide {
+        background-color: #c30909;
+    }
     .line.highlight-line {
         background: #393d45;
     }
     .line.highlight-line-multi-line-solid-bottom {
-        border-bottom-color: rgba(165,20,20,1);
+        border-bottom-color: #a51414;
      }
     .line.highlight-line-multi-line-solid-top {
-        border-top-color: rgba(165,20,20,1);
+        border-top-color: #a51414;
      }
     .line-number.cursor-line-no-selection {
-        border-bottom: solid 1px rgba(165,20,20,1);
+        border-bottom: solid 1px #a51414;
         border-top: none;
     }
     .line-number.cursor-line {
@@ -76,10 +76,9 @@ atom-text-editor::shadow {
     .selection .region {
         background: rgba(255,255,255,0.10) !important;
     }
-    .wrap-guide {
-        background-color: rgba(195,9,9, 1);
-    }
 }
+
+// Accents UI Fix
 atom-text-editor::shadow atom-text-editor-minimap,
 atom-text-editor atom-text-editor-minimap {
     background: rgba(0,0,0,0.20) !important;
@@ -93,4 +92,9 @@ atom-text-editor atom-text-editor-minimap {
 }
 .list-tree ol.entries.list-tree::before {
     display: none;
+}
+[data-zen="true"] {
+    atom-workspace {
+        background-color: #2a2a2a;
+    }
 }

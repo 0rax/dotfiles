@@ -10,16 +10,6 @@
       blue: 9
       alpha: 1
     hexColor: "#c30909"
-    useSyntax: false
-  "atom-ctags":
-    autoBuildTagsWhenActive: true
-    cmd: "/usr/bin/ctags"
-    cmdArgs: "--excludeFiles='*.md'"
-    extraTagFiles: "tags, .tags, .TAGS"
-  "atom-terminal-panel": {}
-  "autocomplete-clang": {}
-  "autocomplete-plus":
-    confirmCompletion: "tab and enter"
   autosave:
     enabled: true
   "base16-syntax":
@@ -86,17 +76,10 @@
     softWrap: true
     tabLength: 4
     tabType: "soft"
-  "exception-reporting":
-    userId: "6bf2d275-89f8-5276-d8a9-654dd0b12dec"
   "file-icons":
     coloured: false
   "flex-tool-bar":
     showConfigButton: false
-  "git-projects":
-    ignoredPatterns: "node_modules;\\.git;vendor;Godeps"
-    maxDepth: 3
-    rootPath: "/Users/orax/Projects"
-    sortBy: "Latest modification date"
   "go-plus":
     goInstallation: "/usr/local/go/bin/go"
     goPath: "~/Projects/Go/"
@@ -104,16 +87,6 @@
   "highlight-line":
     enableSelectionBorder: true
     enableUnderline: true
-  "isotope-ui":
-    backgroundColor: "false"
-    backgroundGradient: true
-    customBackgroundColorPicker:
-      red: 51
-      green: 7
-      blue: 7
-      alpha: 1
-    fontFamily: "Clear Sans"
-    minimalMode: true
   latex:
     alwaysOpenResultInAtom: true
   linter:
@@ -127,11 +100,6 @@
     executableDir: "/Users/orax/Library/Python/3.5/bin/"
   "markdown-preview":
     useGitHubStyle: true
-  "markdown-preview-plus":
-    enableLatexRenderingByDefault: true
-    pandocPath: "/usr/local/bin/pandoc"
-    useGitHubStyle: false
-    useLazyHeaders: false
   minimap:
     plugins:
       "git-diff": true
