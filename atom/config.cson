@@ -10,6 +10,7 @@
       blue: 9
       alpha: 1
     hexColor: "#c30909"
+    useSyntax: false
   autosave:
     enabled: true
   "base16-syntax":
@@ -76,6 +77,8 @@
     softWrap: true
     tabLength: 4
     tabType: "soft"
+  "exception-reporting":
+    userId: "531ef7d2-ff19-b6eb-2128-6183c169ebf1"
   "file-icons":
     coloured: false
   "flex-tool-bar":

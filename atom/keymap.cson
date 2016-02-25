@@ -13,7 +13,7 @@
 #   'alt-left':     'symbols-view:return-from-declaration'
 #   'shift-cmd-R':  'symbols-view:toggle-project-symbols'
 
-# Split Pane
+# Split Pane & UI
 'body':
   'ctrl-k down':  'pane:split-down'
   'ctrl-k up':    'pane:split-up'
@@ -37,8 +37,8 @@
 'atom-workspace atom-text-editor[data-grammar~="latex"]':
   'ctrl-shift-m': 'latex:build'
   'ctrl-alt-b':   'editor:move-to-previous-subword-boundary'
-# 'atom-workspace atom-text-editor[data-grammar~="gfm"]':
-#   'ctrl-shift-m': 'markdown-preview-plus:toggle'
+'atom-workspace atom-text-editor[data-grammar~="gfm"]':
+  'ctrl-shift-m': 'markdown-preview:toggle'
 
 # Terminal-Plus
 'atom-workspace':
