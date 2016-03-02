@@ -46,6 +46,7 @@
     disabledPackages: [
       "keybinding-resolver"
       "metrics"
+      "markdown-scroll-sync"
     ]
     excludeVcsIgnoredPaths: false
     ignoredNames: [
@@ -149,6 +150,9 @@
   editor:
     tabLength: 2
 ".cson.source":
+  editor:
+    tabLength: 2
+".json.source":
   editor:
     tabLength: 2
 ".ruby.source":

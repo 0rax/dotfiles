@@ -1,1 +1,0 @@
-../fish-bd/completions/bd.fish
