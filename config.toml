@@ -13,7 +13,8 @@
 
 [tasks.fish]
   links = [
-    [".config/fish/", "fish"]
+    [".config/fish/", "fish"],
+    [".config/fisherman/fishfile", "fish/fisherpkgs.lst"]
   ]
 
 [tasks.emacs]
