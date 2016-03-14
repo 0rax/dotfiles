@@ -93,6 +93,7 @@
     enableUnderline: true
   latex:
     alwaysOpenResultInAtom: true
+    engine: "xelatex"
   linter:
     gutterEnabled: false
   "linter-chktex":
@@ -107,8 +108,11 @@
   minimap:
     plugins:
       "git-diff": true
+      "git-diffDecorationsZIndex": 0
       linter: true
+      linterDecorationsZIndex: 0
       selection: true
+      selectionDecorationsZIndex: 0
   "pdf-view":
     enableSyncTeX: false
   pigments: {}
