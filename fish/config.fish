@@ -85,8 +85,8 @@ if test -f "$XDG_CONFIG_HOME/fish/fishline/fishline.fish"
     set FLINE_PATH "$XDG_CONFIG_HOME/fish/fishline"
     source $FLINE_PATH/fishline.fish
 
-    if test -f "$XDG_CONFIG_HOME/fish/fishline-theme.fish"
-        source $XDG_CONFIG_HOME/fish/fishline-theme.fish
+    if test -f "$XDG_CONFIG_HOME/fish/theme.fish"
+        source $XDG_CONFIG_HOME/fish/theme.fish
     end
 
     if [ "$OS_TYPE" = "Linux" ]; and tty | grep tty > /dev/null
@@ -110,6 +110,7 @@ end
 
 # ---  Plugins/Z  --------------------------------------------------------------
 
+alias j "z"
 set -gx Z_DATA $XDG_DATA_HOME/z.db
 
 # ---  Plugins/Fish-BD  --------------------------------------------------------
@@ -142,9 +143,9 @@ if begin; command -s rlwrap; and command -s gpg2; end > /dev/null
     alias gpg    'rlwrap gpg2'
 end
 
-if command -s hub > /dev/null
-    alias git    'hub'
-end
+# if command -s hub > /dev/null
+#     alias git    'hub'
+# end
 
 if functions -q narwhal
     alias docker 'narwhal'

@@ -14,9 +14,9 @@
 
 function fish_greeting
 
-    alias _s "set_color 16c"
-    alias _t "set_color cb410b"
-    alias _i "set_color fa1"
+    alias _s "set_color $__base_16_0D"
+    alias _t "set_color $__base_16_08"
+    alias _i "set_color $__base_16_0A"
     alias _n "set_color normal"
 
     set -l OS
