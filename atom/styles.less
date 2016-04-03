@@ -53,22 +53,25 @@ atom-text-editor::shadow .horizontal-scrollbar {
     padding: 0 10px;
 }
 
-// Accents UI (#c30909) + Base16 (Eighties)
+// Accents UI + Base16 (Eighties)
+// @accent: #c30909;
+@accent: #6699cc;
+@accent-alternate: darken(@accent, 6%);
 atom-text-editor::shadow {
     .wrap-guide {
-        background-color: #c30909;
+        background-color: @accent;
     }
     .line.highlight-line {
         background: #393d45;
     }
     .line.highlight-line-multi-line-solid-bottom {
-        border-bottom-color: #a51414;
+        border-bottom-color: @accent-alternate;
      }
     .line.highlight-line-multi-line-solid-top {
-        border-top-color: #a51414;
+        border-top-color: @accent-alternate;
      }
     .line-number.cursor-line-no-selection {
-        border-bottom: solid 1px #a51414;
+        border-bottom: solid 1px @accent-alternate;
         border-top: none;
     }
     .line-number.cursor-line {
@@ -103,11 +106,11 @@ atom-text-editor atom-text-editor-minimap::shadow .minimap-visible-area {
     }
     button.tool-bar-btn.disabled:hover {
         background-color: inherit;
-        color: #a51414;
+        color: @accent-alternate;
     }
     button.tool-bar-btn:hover {
         background-color: inherit;
-        color: #c30909;
+        color: @accent;
     }
 }
 

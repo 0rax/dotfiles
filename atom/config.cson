@@ -5,11 +5,11 @@
     width: 100
   "accents-ui":
     accentColor:
-      red: 195
-      green: 9
-      blue: 9
+      red: 102
+      green: 153
+      blue: 204
       alpha: 1
-    hexColor: "#c30909"
+    hexColor: "#6699cc"
     useSyntax: false
   autosave:
     enabled: true
@@ -46,7 +46,6 @@
     disabledPackages: [
       "keybinding-resolver"
       "metrics"
-      "markdown-scroll-sync"
     ]
     excludeVcsIgnoredPaths: false
     ignoredNames: [
@@ -104,6 +103,7 @@
   "linter-flake8":
     executableDir: "/Users/orax/Library/Python/3.5/bin/"
   "markdown-preview":
+    liveUpdate: false
     useGitHubStyle: true
   minimap:
     plugins:
@@ -150,6 +150,9 @@
       "latex"
     ]
     goalLineHeight: "0%"
+".basic.html.text":
+  editor:
+    tabLength: 2
 ".coffee.source":
   editor:
     tabLength: 2
@@ -162,9 +165,15 @@
 ".ruby.source":
   editor:
     tabLength: 2
+".source":
+  editor:
+    tabLength: 2
 ".source.toml":
   editor:
     tabLength: 2
 ".source.yaml":
+  editor:
+    tabLength: 2
+gfm:
   editor:
     tabLength: 2
