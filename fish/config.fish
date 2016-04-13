@@ -21,7 +21,7 @@
 set -gx XDG_CONFIG_HOME $HOME/.config/
 set -gx XDG_DATA_HOME   $HOME/.data/
 set -gx OS_TYPE         (uname)
-set -gx PATH            $PATH $HOME/bin /sbin/ /usr/sbin /usr/local/sbin
+set -gx PATH            $PATH $HOME/bin /sbin /usr/sbin /usr/local/sbin
 
 # ---  System/Editor & Pager  --------------------------------------------------
 
@@ -58,12 +58,12 @@ end
 # Set default python binary version to python3.5
 if test -d $HOME/Library/Python/3.5/
     # Add local Python 3 path on OS X
-   set -gx PATH $PATH $HOME/Library/Python/3.5/bin/
+   set -gx PATH $PATH $HOME/Library/Python/3.5/bin
 end
 
 if test -d $HOME/Library/Python/2.7/
     # Add local Python 2 path on OS X
-   set -gx PATH $PATH $HOME/Library/Python/2.7/bin/
+   set -gx PATH $PATH $HOME/Library/Python/2.7/bin
 end
 
 # ------------------------------------------------------------------------------
@@ -83,6 +83,7 @@ end
 if test -f "$XDG_CONFIG_HOME/fish/fishline/fishline.fish"
 
     set FLINE_PATH "$XDG_CONFIG_HOME/fish/fishline"
+    set FLINE_PATH "$HOME/Projects/Fish/fishline/"
     source $FLINE_PATH/fishline.fish
 
     if test -f "$XDG_CONFIG_HOME/fish/theme.fish"

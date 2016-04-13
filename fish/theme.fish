@@ -2,22 +2,22 @@
 # -*-  mode:fish; tab-width:4  -*-
 
 # Base-16 - Eighties
-set __base_16_00 2d2d2d
-set __base_16_01 393939
-set __base_16_02 515151
-set __base_16_03 747369
-set __base_16_04 a09f93
-set __base_16_05 d3d0c8
-set __base_16_06 e8e6df
-set __base_16_07 f2f0ec
-set __base_16_08 f2777a
-set __base_16_09 f99157
-set __base_16_0A ffcc66
-set __base_16_0B 99cc99
-set __base_16_0C 66cccc
-set __base_16_0D 6699cc
-set __base_16_0E cc99cc
-set __base_16_0F d27b53
+set -l __base_16_00 2d2d2d
+set -l __base_16_01 393939
+set -l __base_16_02 515151
+set -l __base_16_03 747369
+set -l __base_16_04 a09f93
+set -l __base_16_05 d3d0c8
+set -l __base_16_06 e8e6df
+set -l __base_16_07 f2f0ec
+set -l __base_16_08 f2777a
+set -l __base_16_09 f99157
+set -l __base_16_0A ffcc66
+set -l __base_16_0B 99cc99
+set -l __base_16_0C 66cccc
+set -l __base_16_0D 6699cc
+set -l __base_16_0E cc99cc
+set -l __base_16_0F d27b53
 
 # Fish colors
 set -U fish_color_normal                normal
