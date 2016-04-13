@@ -57,6 +57,7 @@
       "._*"
       "Thumbs.db"
       ".tags*"
+      ".DS_Store"
     ]
     packagesWithKeymapsDisabled: [
       "terminal-plus"
