@@ -15,9 +15,9 @@ end
 
 # ---  Plugins/VirtualFish  ----------------------------------------------------
 
-if test -f "$XDG_CONFIG_HOME/fish/virtualfish/virtualfish/virtual.fish"
+if test -f "$FISH_PLUGIN_PATH/virtualfish/virtualfish/virtual.fish"
 
-    source $XDG_CONFIG_HOME/fish/virtualfish/virtualfish/virtual.fish
+    source $FISH_PLUGIN_PATH/virtualfish/virtualfish/virtual.fish
     emit virtualfish_did_setup_plugins
 
     set -gx VIRTUALFISH_DEFAULT_PYTHON "python3"
