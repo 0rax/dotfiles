@@ -14,7 +14,7 @@ function clean -d "Clean specified directories - or if not specified the current
   set -l to_rm
 
   # Argument parser
-  set -l args  (getopt "adh" $argv)
+  set -l args  (getopt "rdh" $argv)
   [ $status -gt 0 ]; and return 1
   set args (echo $args | sed 's/^\s//' | tr ' ' '\n')
 
@@ -46,12 +46,12 @@ Options:
   end
 
   # Cleanup logic
-  set to_rm (find $path $pattern)
+  set to_rm (find $path $recur $pattern)
   if [ (count $to_rm) -eq 0 ]
     echo "# $_: nothing to clean" 1>&2
   else if [ "$dry" = "true" ]
     echo "# $_: dry mode" 1>&2
-    echo $to_rm
+    echo $to_rm | tr ' ' '\n'
   else
     echo "# $_: cleanup mode" 1>&2
     for i in $to_rm
