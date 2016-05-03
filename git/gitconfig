@@ -34,9 +34,9 @@
     file = log --pretty=oneline --shortstat --abbrev-commit
     unpushed = log --stat origin/master..HEAD
     alog = log --graph --abbrev-commit --decorate --date=relative --format=prettylog --all
+    sdlog = log --graph --abbrev-commit --decorate --date=relative --shortstat --no-color --all
     slog = log --graph --abbrev-commit --decorate --date=relative --format=prettylog --shortstat -10
-    flog = log --graph --abbrev-commit --decorate --date=relative --format=prettylog --stat -10
-    sdlog = log --graph --abbrev-commit --decorate --date=relative --shortstat --no-color
+    flog = log --graph --abbrev-commit --decorate --date=relative --color --stat --show-signature -10
 
 # Git color
 [color]
@@ -55,7 +55,7 @@
     changed = green
     untracked = cyan
 [pretty]
-    prettylog = %C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)
+    prettylog = %C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(magenta bold)[%G?]%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)
 
 # SourceTree
 [difftool "sourcetree"]

@@ -18,6 +18,8 @@ alias grep       'grep --color=auto'
 alias size       'du -sh'
 alias share      'python -m SimpleHTTPServer 8000'
 
+alias editor     'eval $EDITOR'
+
 if command -s emacs > /dev/null
     alias emacs  'emacs_connect'
     alias ne     'command emacs -nw --quick --no-init-file'

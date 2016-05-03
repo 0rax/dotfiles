@@ -5,6 +5,16 @@
 # ---  Fish & Fishline Theme  --------------------------------------------------
 # ------------------------------------------------------------------------------
 
+# ---  Colors/MINIMAL_SHELL  ---------------------------------------------------
+
+if [ "$MINIMAL_SHELL" = "true" ]
+    # Load tty-compatible theme from fishline
+    source $FLINE_PATH/themes/git_minimal.fish
+    source $FLINE_PATH/themes/tty-compatible.fish
+    # Don't apply custom theme
+    exit
+end
+
 # ---  ColorSet/Base-16 - Eighties ---------------------------------------------
 
 set -l __base_16_00 2d2d2d

@@ -11,9 +11,12 @@ if test -f "$FISH_PLUGIN_PATH/fishline/fishline.fish"
     set FLINE_PATH "$HOME/Projects/Fish/fishline"
     source $FLINE_PATH/fishline.fish
 
-    if [ "$OS_TYPE" = "Linux" ]; and tty | grep tty > /dev/null
+    if [ "$TERM_PROGRAM" = "Terminal-Plus" ]
         source $FLINE_PATH/themes/git_minimal.fish
-        source $FLINE_PATH/themes/tty.fish
+        source $FLINE_PATH/themes/tty-compatible.fish
+    else if [ "$OS_TYPE" = "Linux" ]; and tty | grep tty > /dev/null
+        source $FLINE_PATH/themes/git_minimal.fish
+        source $FLINE_PATH/themes/tty-compatile.fish
     end
 
 end

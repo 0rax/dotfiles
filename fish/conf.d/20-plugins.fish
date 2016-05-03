@@ -5,14 +5,6 @@
 # ---  Plugins  ----------------------------------------------------------------
 # ------------------------------------------------------------------------------
 
-# ---  Plugins/Fisherman -------------------------------------------------------
-
-if test -d $XDG_DATA_HOME/fisherman
-    set -gx fisher_home   $XDG_DATA_HOME/fisherman
-    set -gx fisher_config $XDG_CONFIG_HOME/fisherman
-    source $fisher_home/config.fish
-end
-
 # ---  Plugins/VirtualFish  ----------------------------------------------------
 
 if test -f "$FISH_PLUGIN_PATH/virtualfish/virtualfish/virtual.fish"
@@ -27,12 +19,18 @@ end
 
 # ---  Plugins/Z  --------------------------------------------------------------
 
-alias j "z"
 set -gx Z_DATA $XDG_DATA_HOME/z.db
+set -gx Z_CMD  "j"
 
 # ---  Plugins/Fish-BD  --------------------------------------------------------
 
 set -gx BD_OPT 'insensitive'
+
+# ---  Plugins/GRC  ------------------------------------------------------------
+
+# Remove cat & ls from the list
+set -U grc_plugin_execs cvs df diff dig gcc g++ ifconfig wdiff \
+                        make mount mtr netstat ping ps tail traceroute
 
 # ------------------------------------------------------------------------------
 # ---  END  --------------------------------------------------------------------

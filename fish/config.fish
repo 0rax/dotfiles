@@ -22,6 +22,12 @@ set -gx XDG_CONFIG_HOME  $HOME/.config
 set -gx XDG_DATA_HOME    $HOME/.data
 set -gx OS_TYPE          (uname)
 set -gx PATH             $PATH $HOME/bin /sbin /usr/sbin /usr/local/sbin
+set -gx MINIMAL_SHELL    false
+if [ "$TERM_PROGRAM" = "Terminal-Plus" ]
+    set -gx MINIMAL_SHELL true
+else if [ "$OS_TYPE" = "Linux" ]; and tty | grep tty > /dev/null
+    set -gx MINIMAL_SHELL true
+end
 
 # ---  System/Editor & Pager  --------------------------------------------------
 

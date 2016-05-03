@@ -2,3 +2,12 @@
 !.gitignore
 fish_history
 fishd.*
+functions/*.fish
+functions/*.awk
+completions/*.fish
+!functions/fish_*.fish
+!functions/fisher.fish
+!completions/fisher.fish
+!functions/clean.fish
+!functions/emacs_connect.fish
+!functions/start_gpg_agent.fish

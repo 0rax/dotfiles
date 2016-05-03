@@ -14,6 +14,10 @@
 
 function fish_greeting
 
+    if [ "$MINIMAL_SHELL" = "true" ]
+      return
+    end
+
     alias _s "set_color blue"
     alias _t "set_color red"
     alias _i "set_color yellow"
