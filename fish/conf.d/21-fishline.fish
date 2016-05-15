@@ -7,9 +7,10 @@
 
 if test -f "$FISH_PLUGIN_PATH/fishline/fishline.fish"
 
-    set FLINE_PATH "$FISH_PLUGIN_PATH/fishline"
+    # set FLINE_PATH "$FISH_PLUGIN_PATH/fishline"
+    # source $FLINE_PATH/fishline.fish
     set FLINE_PATH "$HOME/Projects/Fish/fishline"
-    source $FLINE_PATH/fishline.fish
+    source $FLINE_PATH/init.fish
 
     if [ "$TERM_PROGRAM" = "Terminal-Plus" ]
         source $FLINE_PATH/themes/git_minimal.fish

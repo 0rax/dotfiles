@@ -4,3 +4,9 @@
 [submodule "fish/virtualfish"]
 	path = fish/plugins/virtualfish
 	url = https://github.com/adambrenecki/virtualfish
+[submodule "fish/plugins/fish-bd"]
+	path = fish/plugins/fish-bd
+	url = https://github.com/0rax/fish-bd.git
+[submodule "fish/plugins/narwhal"]
+	path = fish/plugins/narwhal
+	url = https://github.com/0rax/narwhal
