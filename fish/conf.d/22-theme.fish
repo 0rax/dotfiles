@@ -9,7 +9,7 @@
 
 if [ "$MINIMAL_SHELL" = "true" ]
     # Load tty-compatible theme from fishline
-    source $FLINE_PATH/themes/git_minimal.fish
+    source $FLINE_PATH/themes/tty_compatible.fish
     # Don't apply custom theme
     exit
 end
