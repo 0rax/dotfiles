@@ -1,0 +1,1 @@
+../plugins/fish-bd/completions/bd.fish

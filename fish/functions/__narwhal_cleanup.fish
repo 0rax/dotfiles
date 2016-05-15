@@ -1,0 +1,1 @@
+../plugins/narwhal/functions/__narwhal_cleanup.fish

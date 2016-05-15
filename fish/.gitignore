@@ -11,3 +11,8 @@ completions/*.fish
 !functions/clean.fish
 !functions/emacs_connect.fish
 !functions/start_gpg_agent.fish
+!functions/__narwhal_*.fish
+!functions/narwhal.fish
+!functions/bd.fish
+!completions/narwhal.fish
+!completions/bd.fish

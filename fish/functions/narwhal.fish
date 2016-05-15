@@ -1,0 +1,1 @@
+../plugins/narwhal/functions/narwhal.fish
