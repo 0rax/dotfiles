@@ -1,1 +1,0 @@
-/Users/orax/.config/fisherman/grc/init.fish
