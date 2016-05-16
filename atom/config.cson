@@ -93,6 +93,7 @@
   "go-plus":
     showPanelWhenNoIssuesExist: true
   "highlight-line":
+    enableBackgroundColor: false
     enableSelectionBorder: true
     enableUnderline: true
   latex:
@@ -268,6 +269,7 @@
     position: "Left"
   "tree-view":
     hideIgnoredNames: true
+    hideVcsIgnoredFiles: true
   welcome:
     showOnStartup: false
   wordcount:
@@ -293,6 +295,9 @@
 ".cson.source":
   editor:
     tabLength: 2
+".fish.source":
+  editor:
+    tabLength: 4
 ".json.source":
   editor:
     tabLength: 2
