@@ -20,18 +20,14 @@ alias share      'python -m SimpleHTTPServer 8000'
 
 alias editor     'eval $EDITOR'
 
-if command -s emacs > /dev/null
+if type -q emacs
     alias emacs  'emacs_connect'
     alias ne     'command emacs -nw --quick --no-init-file'
 end
 
-if begin; command -s rlwrap; and command -s gpg2; end > /dev/null
+if begin; type -q rlwrap; and type -q gpg2; end > /dev/null
     alias gpg    'rlwrap gpg2'
 end
-
-# if command -s hub > /dev/null
-#     alias git    'hub'
-# end
 
 if functions -q narwhal
     alias docker 'narwhal'
@@ -47,9 +43,9 @@ if [ "$OS_TYPE" = "Darwin" ] # Mac OS X
 
 else if [ "$OS_TYPE" = "Linux" ] # GNU/Linux
 
-    if command -s viewnior > /dev/null
+    if type -q viewnior > /dev/null
         alias display 'viewnior'
-    else if command -s eog > /dev/null
+    else if type -q eog > /dev/null
         alias display 'eog'
     end
 

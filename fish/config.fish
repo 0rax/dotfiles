@@ -24,9 +24,9 @@ set -gx OS_TYPE          (uname)
 set -gx PATH             $PATH $HOME/bin /sbin /usr/sbin /usr/local/sbin
 set -gx MINIMAL_SHELL    false
 if [ "$TERM_PROGRAM" = "Terminal-Plus" ]
-    set -gx MINIMAL_SHELL true
-else if [ "$OS_TYPE" = "Linux" ]; and tty | grep tty > /dev/null
-    set -gx MINIMAL_SHELL true
+    set MINIMAL_SHELL true
+else if [ "$OS_TYPE" != "Darwin" ]; and tty | grep tty > /dev/null
+    set MINIMAL_SHELL true
 end
 
 # ---  System/Editor & Pager  --------------------------------------------------
@@ -46,6 +46,10 @@ set -gx FISH_CONFIG_PATH $XDG_CONFIG_HOME/fish
 set -gx FISH_PLUGIN_PATH $FISH_CONFIG_PATH/plugins
 set -gx FISH_CONFD_PATH  $FISH_CONFIG_PATH/conf.d
 
+# ---  Stop loading here if non interactive  -----------------------------------
+
+status --is-interactive; or exit
+
 # ------------------------------------------------------------------------------
 # ---  Conf.D  -----------------------------------------------------------------
 # ------------------------------------------------------------------------------
@@ -53,9 +57,9 @@ set -gx FISH_CONFD_PATH  $FISH_CONFIG_PATH/conf.d
 set -l __fish_version (echo $version | tr '.' '\n')
 
 if [ $__fish_version[1] -eq 2 -a $__fish_version[2] -lt 3 ]
-  for f in $FISH_CONFD_PATH/*.fish
-    source $f
-  end
+    for f in $FISH_CONFD_PATH/*.fish
+        source $f
+    end
 end
 
 # ------------------------------------------------------------------------------
