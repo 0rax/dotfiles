@@ -3,6 +3,6 @@
 
 function fish_prompt
 
-	fishline -s $status VIMODE SIGSTATUS JOBS VFISH PWD GIT WRITE N ROOT
+	fishline -s $status vimode sigstatus jobs vfish pwd git write n root
 
 end

@@ -6,9 +6,9 @@ function fish_right_prompt
     if [ "$MINIMAL_SHELL" = "true" ]
         return
     else if [ "$CMD_DURATION" -ge 100 ]
-        fishline -s 0 -r EXECTIME
+        fishline -s 0 -r exectime
     else
-        fishline -s 0 -r CLOCK
+        fishline -s 0 -r clock
     end
 
 end

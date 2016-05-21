@@ -1,0 +1,1 @@
+../plugins/plugin-grc/functions/grc.wrap.fish

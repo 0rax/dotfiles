@@ -5,7 +5,7 @@ functions/*.fish
 functions/*.awk
 completions/*.fish
 conf.d/*.fish
-!conf.d/[1-9][0-9]-*.fish
+!conf.d/[0-9][0-9]-*.fish
 !functions/fish_*.fish
 !functions/fisher.fish
 !completions/fisher.fish
