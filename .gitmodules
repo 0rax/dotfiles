@@ -13,3 +13,6 @@
 [submodule "fish/plugins/plugin-grc"]
 	path = fish/plugins/plugin-grc
 	url = https://github.com/oh-my-fish/plugin-grc.git
+[submodule "fish/plugins/fin"]
+	path = fish/plugins/fin
+	url = https://github.com/fisherman/fin.git
