@@ -12,10 +12,12 @@ tap "homebrew/bundle"         # https://github.com/Homebrew/homebrew-bundle
 tap "nishanths/tap"           # https://github.com/nishanths/homebrew-tap
 tap "caskroom/cask"           # https://github.com/caskroom/homebrew-cask
 tap "caskroom/fonts"          # https://github.com/caskroom/homebrew-fonts
+tap "fisherman/tap"           # https://github.com/fisherman/homebrew-tap
 
 ## Brew Packages
 
 brew "fish"                   # https://fishshell.com
+brew "fisherman"              # https://github.com/fisherman/fisherman
 brew "go"                     # https://golang.org
 brew "tig"                    # http://jonas.nitro.dk/tig/
 brew "vim"                    # http://www.vim.org/
@@ -57,3 +59,4 @@ cask "devcenter"              # http://www.planetcassandra.org/devcenter/
 cask "horndis"                # http://joshuawise.com/horndis
 cask "flash"                  # https://get.adobe.com/flashplayer/
 cask "android-file-transfer"  # https://android.com/filetransfer/
+cask "wireshark"              # https://www.wireshark.org/
