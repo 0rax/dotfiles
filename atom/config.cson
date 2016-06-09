@@ -70,6 +70,7 @@
       "base16-syntax"
     ]
   editor:
+    autoIndent: false
     fontFamily: "Monofur"
     fontSize: 15
     invisibles: {}
@@ -269,7 +270,6 @@
     position: "Left"
   "tree-view":
     hideIgnoredNames: true
-    hideVcsIgnoredFiles: true
   welcome:
     showOnStartup: false
   wordcount:
