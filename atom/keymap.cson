@@ -1,4 +1,4 @@
-# # Save
+# # Save
 # 'body':
 #   'ctrl-p':       'fuzzy-finder:toggle-file-finder'
 #   'ctrl-b':       'fuzzy-finder:toggle-buffer-finder'
@@ -29,7 +29,7 @@
   'cmd-alt-down': 'editor:move-line-down'
   'cmd-alt-up':   'editor:move-line-up'
   'ctrl-,':       'editor:toggle-line-comments'
-# Linter
+# Linter
   'alt->':        'linter:next-message'
   'alt-<':        'linter:previous-message'
 
