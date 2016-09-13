@@ -37,13 +37,17 @@ end
 
 # ---  Alises/System Specific  -------------------------------------------------
 
-if [ "$OS_TYPE" = "Darwin" ] # Mac OS X
+if [ "$OS_TYPE" = "Darwin" ] # Mac OS X
 
-    alias airport '/System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport'
-    alias lsusb   'system_profiler SPUSBDataType'
-    alias display 'open'
+    alias display  'open'
+    alias airport  '/System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport'
+    alias lsusb    'system_profiler SPUSBDataType'
+    alias lsroute  'netstat -nr'
+    alias lsport   'lsof -i -P | grep "LISTEN"'
+    alias lsdisk   'diskutil list'
+    alias umdisk   'diskutil umountDisk'
 
-else if [ "$OS_TYPE" = "Linux" ] # GNU/Linux
+else if [ "$OS_TYPE" = "Linux" ] # GNU/Linux
 
     if type -q viewnior > /dev/null
         alias display 'viewnior'

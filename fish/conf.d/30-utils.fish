@@ -8,7 +8,7 @@
 # Do not load utils when launched non-interactivly
 status --is-interactive; or exit
 
-# ---  Utls/GPG Agent  --------------------------------------------------------
+# ---  Utils/GPG Agent  --------------------------------------------------------
 
 start_gpg_agent
 
