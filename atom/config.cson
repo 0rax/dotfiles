@@ -41,8 +41,12 @@
       ]
       selector: "atom-text-editor"
   core:
-    audioBeep: false
     autoHideMenuBar: true
+    customFileTypes:
+      "source.shell": [
+        "APKBUILD"
+        "functions"
+      ]
     disabledPackages: [
       "keybinding-resolver"
       "metrics"
@@ -58,6 +62,16 @@
       "Thumbs.db"
       ".tags*"
       ".DS_Store"
+      "*.synctex.gz"
+      "*.aux"
+      "*.out"
+      "*.lof"
+      "*.lol"
+      "*.lot"
+      "*.dvi"
+      "*.fdb*"
+      "*.fls"
+      "*.toc"
     ]
     packagesWithKeymapsDisabled: [
       "terminal-plus"
@@ -69,10 +83,12 @@
       "accents-ui"
       "base16-syntax"
     ]
+  "custom-folds":
+    postfix: "`"
+    prefix: "`"
   editor:
     autoIndent: false
     fontFamily: "Monofur"
-    fontSize: 15
     invisibles: {}
     lineHeight: 1.2
     showIndentGuide: true
@@ -90,18 +106,32 @@
   "file-icons":
     coloured: false
   "flex-tool-bar":
+    reloadToolBarWhenEditConfigFile: false
     showConfigButton: false
+  "git-projects":
+    ignoredPath: "/Users/orax/Projects/Go/;/Users/orax/Projects/GHSave;/Users/orax/Projects/BBSave;/Users/orax/Projects/Old"
+    maxDepth: 3
+    rootPath: "/Users/orax/Projects"
+  "go-debug":
+    limitCommandsToGo: true
+    panelInitialVisible: false
+  "go-outline":
+    showTests: false
   "go-plus":
     showPanelWhenNoIssuesExist: true
+  "highlight-column":
+    lineMode: true
   "highlight-line":
     enableBackgroundColor: false
     enableSelectionBorder: true
     enableUnderline: true
   latex:
     alwaysOpenResultInAtom: true
-    engine: "xelatex"
+    enableShellEscape: true
+    enableSynctex: false
   linter:
     gutterEnabled: false
+    showErrorPanel: false
   "linter-chktex":
     executablePath: "/Library/TeX/texbin/chktex"
   "linter-clang":
@@ -116,6 +146,8 @@
     plugins:
       "git-diff": true
       "git-diffDecorationsZIndex": 0
+      "highlight-selected": true
+      "highlight-selectedDecorationsZIndex": 0
       linter: true
       linterDecorationsZIndex: 0
       selection: true
@@ -123,6 +155,8 @@
   "pdf-view":
     enableSyncTeX: false
   pigments: {}
+  "project-plus":
+    projectHome: "/Users/orax/Projects"
   "spell-check":
     grammars: [
       "text.tex.latex"
@@ -265,6 +299,8 @@
     style: {}
     toggles:
       autoClose: true
+  "todo-show":
+    statusBarIndicator: true
   "tool-bar":
     iconSize: "16px"
     position: "Left"
@@ -289,24 +325,60 @@
 ".basic.html.text":
   editor:
     tabLength: 2
+".beamer.latex.tex.text":
+  editor:
+    tabLength: 4
+".bibtex.text":
+  editor:
+    tabLength: 4
 ".coffee.source":
   editor:
     tabLength: 2
 ".cson.source":
   editor:
     tabLength: 2
+".diff.source":
+  editor:
+    tabLength: 4
 ".fish.source":
+  editor:
+    tabLength: 4
+".gfm.source":
+  editor:
+    tabLength: 2
+".html.text.vue":
   editor:
     tabLength: 4
 ".json.source":
   editor:
     tabLength: 2
+".latex.log.text":
+  editor:
+    tabLength: 4
+".latex.memoir.tex.text":
+  editor:
+    tabLength: 4
+".latex.tex.text":
+  editor:
+    tabLength: 4
+".makefile.source":
+  editor:
+    tabLength: 8
+".patch.source":
+  editor:
+    tabLength: 4
 ".ruby.source":
   editor:
     tabLength: 2
+".solidity.source":
+  editor:
+    tabLength: 4
 ".source.toml":
   editor:
     tabLength: 2
 ".source.yaml":
   editor:
     tabLength: 2
+".tex.text":
+  editor:
+    tabLength: 4

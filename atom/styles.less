@@ -98,9 +98,15 @@ atom-text-editor atom-text-editor-minimap::shadow .minimap-visible-area {
     atom-workspace, atom-panel.left {
         background-color: #272727;
     }
+    .tool-bar {
+        background-color: #272727;
+        border: transparent 0 solid !important;
+    }
 }
 .tool-bar {
-    background-color: #272727;
+    background-color: #333333;
+    border: #1e1e1e 2px solid;
+    border-radius: 3px;
     button.tool-bar-btn {
         background-color: inherit;
     }
@@ -111,6 +117,12 @@ atom-text-editor atom-text-editor-minimap::shadow .minimap-visible-area {
     button.tool-bar-btn:hover {
         background-color: inherit;
         color: @accent;
+    }
+    hr.tool-bar-spacer {
+        border-color: #1e1e1e !important;
+        -webkit-mask-image: none !important;
+        width: 38px !important;
+        margin: 0 0px !important;
     }
 }
 
