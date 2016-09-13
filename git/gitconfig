@@ -2,16 +2,16 @@
 [include]
     path = ~/.gitconfig_private
 
-# Git base config
+# Git base config
 [core]
     excludesfile = /Users/orax/.gitignore_global
 [push]
-    default = current
+	default = current
 [rebase]
     autostash = true
     autosquash = true
 
-# Git remote rewriting
+# Git remote rewriting
 [url "git@github.com:"]
     insteadOf = https://github.com/
 [url "git@bitbucket.org:"]
@@ -38,7 +38,7 @@
     slog = log --graph --abbrev-commit --decorate --date=relative --format=prettylog --shortstat -10
     flog = log --graph --abbrev-commit --decorate --date=relative --color --stat --show-signature -10
 
-# Git color
+# Git color
 [color]
     ui = auto
 [color "branch"]
@@ -60,7 +60,7 @@
 # SourceTree
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
+	path =
 [mergetool "sourcetree"]
 	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
