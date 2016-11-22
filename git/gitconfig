@@ -37,6 +37,7 @@
     sdlog = log --graph --abbrev-commit --decorate --date=relative --shortstat --no-color --all
     slog = log --graph --abbrev-commit --decorate --date=relative --format=prettylog --shortstat -10
     flog = log --graph --abbrev-commit --decorate --date=relative --color --stat --show-signature -10
+    root = rev-parse --show-toplevel
 
 # Git color
 [color]

@@ -1,0 +1,157 @@
+#!/usr/bin/env brew bundle
+#
+# require:
+#   - brew:
+#       /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+#   - brew bundle:
+#       brew tap homebrew/bundle
+#
+# execute with:
+#   brew bundle
+#
+
+### Taps
+tap "homebrew/bundle"             # https://github.com/Homebrew/homebrew-bundle
+tap "homebrew/dupes"
+tap "caskroom/cask"               # https://github.com/caskroom/homebrew-cask
+tap "caskroom/fonts"              # https://github.com/caskroom/homebrew-fonts
+tap "fisherman/tap"               # https://github.com/fisherman/homebrew-tap
+tap "drone/drone"                 # https://github.com/drone/homebrew-drone
+tap "buo/cask-upgrade"            # https://github.com/buo/homebrew-cask-upgrade
+tap "caskroom/versions"           # https://github.com/caskroom/homebrew-versions
+
+### Brews
+# Shells
+brew "fish"                       # https://fishshell.com
+brew "fisherman"                  # https://github.com/fisherman/fisherman
+brew "bash"                       # https://www.gnu.org/software/bash/ for bash >= v4
+# CVS
+brew "git"                        # https://git-scm.com
+brew "git-flow"                   # https://github.com/nvie/gitflow
+brew "gibo"                       # https://github.com/simonwhitaker/gibo
+brew "tig"                        # http://jonas.nitro.dk/tig/
+brew "mercurial"                  # https://www.mercurial-scm.org/
+# Shell Utils
+brew "moreutils"                  # https://joeyh.name/code/moreutils/
+brew "coreutils"                  # https://www.gnu.org/software/coreutils/
+brew "findutils"                  # https://www.gnu.org/software/findutils/
+brew "grep"                       # https://www.gnu.org/software/grep/
+brew "binutils"                   # https://www.gnu.org/software/binutils/
+brew "gnu-indent"                 # https://www.gnu.org/software/indent/
+brew "gnu-sed"                    # https://www.gnu.org/software/sed/
+brew "gnu-tar"                    # https://www.gnu.org/software/tar/
+brew "pstree"                     # http://www.thp.uni-duisburg.de/pstree/
+brew "htop"                       # https://hisham.hm/htop/
+brew "tree"                       # http://mama.indstate.edu/users/ice/tree/
+brew "wget"                       # https://www.gnu.org/software/wget/
+brew "most"                       # http://www.jedsoft.org/most/
+brew "vim"                        # http://www.vim.org/
+brew "dtrx"                       # http://brettcsmith.org/2007/dtrx/
+brew "grc"                        # http://kassiopeia.juls.savba.sk/~garabik/software/grc.html
+brew "pv"                         # https://www.ivarch.com/programs/pv.shtml
+brew "apg"                        # [http://www.adel.nursat.kz/apg/]
+brew "jq"                         # https://stedolan.github.io/jq/
+brew "trash"                      # https://github.com/ali-rantakari/trash
+# Programming
+brew "nodejs"                     # https://nodejs.org/
+brew "go"                         # https://golang.org
+brew "python3"                    # https://www.python.org/
+brew "autoconf"                   # https://www.gnu.org/software/autoconf/autoconf.html
+# Network tools
+brew "iftop"                      # http://www.ex-parrot.com/pdw/iftop/
+brew "nmap"                       # https://nmap.org/
+brew "mtr"                        # http://www.bitwizard.nl/mtr/
+# DevOps
+brew "awscli"                     # https://github.com/aws/aws-cli
+brew "drone"                      # https://github.com/drone/drone/
+# Virtualisation
+brew "packer"                     # https://packer.io/
+brew "qemu"                       # http://wiki.qemu.org/Main_Page
+# Other
+brew "asciinema"                  # https://asciinema.org/
+brew "android-platform-tools"     # https://developer.android.com/sdk
+brew "pandoc"                     # http://pandoc.org
+brew "micro"                      # ? # https://github.com/zyedidia/micro
+brew "speedtest_cli"              # https://github.com/sivel/speedtest-cli
+brew "vbindiff"                   # https://www.cjmweb.net/vbindiff/
+brew "ack"                        # http://beyondgrep.com/
+
+brew "rancher-cli"                # https://github.com/rancher/cli
+brew "rancher-compose"            # https://github.com/rancher/rancher-compose
+
+### Casks
+cask "font-monofur"               # http://www.dafont.com/monofur.font
+cask "font-monofur-for-powerline" # https://github.com/powerline/fonts/tree/master/Monofur
+cask "flash-player"               # https://get.adobe.com/flashplayer/
+cask "android-file-transfer"      # https://android.com/filetransfer/
+cask "wireshark"                  # https://www.wireshark.org/
+cask "tuntap"                     # http://tuntaposx.sourceforge.net/faq.xhtml
+
+cask "basictex"                   # https://www.tug.org/mactex/
+cask "yed"                        # http://www.yworks.com/en/downloads.html#yEd
+cask "gimp"                       # http://www.gimp.org/
+cask "Hex-fiend"                  # https://github.com/ridiculousfish/HexFiend/
+cask "keepingyouawake"            # https://github.com/newmarcel/KeepingYouAwake/releases
+cask "appcleaner"                 # http://freemacsoft.net/appcleaner/
+cask "flux"                       # https://justgetflux.com/
+cask "forklift"                   # http://www.binarynights.com/
+cask "boom"                       # http://www.globaldelight.com/boom/
+cask "gitify"                     # http://gitify.io/
+cask "ccmenu"                     # https://github.com/erikdoe/ccmenu/
+cask "airflow"                    # http://airflowapp.com/
+cask "osxfuse"                    # https://osxfuse.github.io/
+cask "veracrypt"                  # https://veracrypt.codeplex.com/
+cask "keybase"                    # https://keybase.io/
+cask "viscosity"                  # https://www.sparklabs.com/viscosity/
+cask "franz"                      # http://meetfranz.com/
+cask "textual"                    # https://www.codeux.com/textual/
+cask "slack"                      # ttps://slack.com/
+cask "yubikey-neo-manager"        # http://yubico.com/
+cask "yubikey-personalization-gui"# http://yubico.com/
+cask "horndis"                    # http://joshuawise.com/horndis
+
+cask "macdown"                    # http://macdown.uranusjr.com/
+cask "numi"                       # http://numi.io/
+cask "virtualbox"                 # https://www.virtualbox.org/
+
+# Database
+cask "mongohub"                   # https://github.com/jeromelebel/MongoHub-Mac
+cask "devcenter"                  # http://www.planetcassandra.org/devcenter/
+cask "psequel"                    # http://www.psequel.com/
+cask "sequel-pro"                 # https://sequelpro.com/
+cask "spotify"                    # https://www.spotify.com/
+
+cask "vlc"                        # http://www.videolan.org/vlc/
+cask "kitematic"                  # https://kitematic.com/
+cask "transmission"               # http://www.transmissionbt.com/download/
+cask "skype"                      # https://www.skype.com/en/download-skype/skype-for-computer/
+cask "vagrant"                    # https://www.vagrantup.com/
+cask "vagrant-manager"            # http://vagrantmanager.com/
+cask "iterm2-beta"                # https://iterm2.com/downloads.html
+cask "docker-beta"                # https://docs.docker.com/engine/installation/mac/
+cask "airmail"                    # http://airmailapp.com/beta
+cask "atom"                       # http://atom.io/
+cask "java6"                      # https://support.apple.com/kb/DL1572
+cask "keybase"                    # https://keybase.io/docs/the_app/install_macos
+cask "macpass"                    # https://github.com/mstarke/MacPass/ + https://github.com/MacPass/MacPassHTTP
+cask "gpgtools"                   # https://gpgtools.org/
+cask "waterfox"                   # http://waterfoxproject.org/
+
+cask "fromscratch"                # ? # https://fromscratch.rocks/
+cask "caret"                      # ? # http://caret.io/
+
+cask "doomrl"                     # http://doom.chaosforge.org
+cask "sourcetree"                 # https://www.sourcetreeapp.com/
+
+### Non Brew software
+# Photoshop CC                    # https://www.adobe.com/products/photoshop.html
+# Illustrator CC                  # https://www.adobe.com/products/illustrator.html
+# Fantastical 2                   # AppStore
+# Reeder 3                        # AppStore
+# XCode                           # AppStore
+# Office 2016                     # https://portal.office.com/OLS/MySoftware.aspx)
+# Habitica-GUI                    # https://github.com/0rax/habitica-gui
+# Hozz                            # ? # http://blog.zhangruipeng.me/Hozz/)
+# Finderpath                      # ? # https://bahoom.com/finderpath/
+# WindowsTidy                     # ? # http://www.lightpillar.com/window-tidy.html
+# Ulyesses                        # ? # https://ulyssesapp.com/
