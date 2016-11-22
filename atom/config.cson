@@ -4,11 +4,7 @@
     showWordCount: "Right"
     width: 100
   "accents-ui":
-    accentColor:
-      red: 102
-      green: 153
-      blue: 204
-      alpha: 1
+    accentColor: "#6699cc"
     hexColor: "#6699cc"
     useSyntax: false
   autosave:
@@ -19,19 +15,11 @@
   "block-cursor":
     global:
       blinkOff:
-        backgroundColor:
-          red: 255
-          green: 255
-          blue: 255
-          alpha: 0.3
+        backgroundColor: "rgba(255, 255, 255, 0.3)"
         borderStyle: "none"
         borderWidth: 0
       blinkOn:
-        backgroundColor:
-          red: 255
-          green: 255
-          blue: 255
-          alpha: 0.15
+        backgroundColor: "rgba(255, 255, 255, 0.15)"
         borderStyle: "none"
         borderWidth: 0
         pulseDuration: 0
@@ -42,6 +30,7 @@
       selector: "atom-text-editor"
   core:
     autoHideMenuBar: true
+    automaticallyUpdate: false
     customFileTypes:
       "source.shell": [
         "APKBUILD"
@@ -77,8 +66,11 @@
       "terminal-plus"
       "flex-tool-bar"
       "blame"
+      "go-config"
+      "markdown-toc"
     ]
     projectHome: "/home/orax/Projects"
+    telemetryConsent: "no"
     themes: [
       "accents-ui"
       "base16-syntax"
@@ -89,6 +81,7 @@
   editor:
     autoIndent: false
     fontFamily: "Monofur"
+    fontSize: 15
     invisibles: {}
     lineHeight: 1.2
     showIndentGuide: true
@@ -112,13 +105,18 @@
     ignoredPath: "/Users/orax/Projects/Go/;/Users/orax/Projects/GHSave;/Users/orax/Projects/BBSave;/Users/orax/Projects/Old"
     maxDepth: 3
     rootPath: "/Users/orax/Projects"
+  "go-config":
+    gopath: "/Users/orax/Projects/Go"
   "go-debug":
     limitCommandsToGo: true
     panelInitialVisible: false
   "go-outline":
     showTests: false
   "go-plus":
+    currentPanelHeight: "21.047619047619047vh"
     showPanelWhenNoIssuesExist: true
+  gofmt:
+    formatTool: "goreturns"
   "highlight-column":
     lineMode: true
   "highlight-line":
@@ -131,7 +129,6 @@
     enableSynctex: false
   linter:
     gutterEnabled: false
-    showErrorPanel: false
   "linter-chktex":
     executablePath: "/Library/TeX/texbin/chktex"
   "linter-clang":
@@ -167,135 +164,35 @@
   "terminal-plus":
     ansiColors:
       normal:
-        black:
-          red: 45
-          green: 45
-          blue: 45
-          alpha: 1
-        blue:
-          red: 102
-          green: 153
-          blue: 204
-          alpha: 1
-        cyan:
-          red: 102
-          green: 204
-          blue: 204
-          alpha: 1
-        green:
-          red: 153
-          green: 204
-          blue: 153
-          alpha: 1
-        magenta:
-          red: 204
-          green: 153
-          blue: 204
-          alpha: 1
-        red:
-          red: 242
-          green: 119
-          blue: 122
-          alpha: 1
-        white:
-          red: 242
-          green: 240
-          blue: 236
-          alpha: 1
-        yellow:
-          red: 255
-          green: 204
-          blue: 102
-          alpha: 1
+        black: "#2d2d2d"
+        blue: "#6699cc"
+        cyan: "#66cccc"
+        green: "#99cc99"
+        magenta: "#cc99cc"
+        red: "#f2777a"
+        white: "#f2f0ec"
+        yellow: "#ffcc66"
       zBright:
-        brightBlack:
-          red: 45
-          green: 45
-          blue: 45
-          alpha: 1
-        brightBlue:
-          red: 102
-          green: 153
-          blue: 204
-          alpha: 1
-        brightCyan:
-          red: 102
-          green: 204
-          blue: 204
-          alpha: 1
-        brightGreen:
-          red: 153
-          green: 204
-          blue: 153
-          alpha: 1
-        brightMagenta:
-          red: 204
-          green: 153
-          blue: 204
-          alpha: 1
-        brightRed:
-          red: 242
-          green: 119
-          blue: 122
-          alpha: 1
-        brightWhite:
-          red: 242
-          green: 240
-          blue: 236
-          alpha: 1
-        brightYellow:
-          red: 255
-          green: 204
-          blue: 102
-          alpha: 1
+        brightBlack: "#2d2d2d"
+        brightBlue: "#6699cc"
+        brightCyan: "#66cccc"
+        brightGreen: "#99cc99"
+        brightMagenta: "#cc99cc"
+        brightRed: "#f2777a"
+        brightWhite: "#f2f0ec"
+        brightYellow: "#ffcc66"
     core:
       shell: "/usr/local/bin/fish"
     iconColors:
-      blue:
-        red: 102
-        green: 153
-        blue: 204
-        alpha: 1
-      cyan:
-        red: 102
-        green: 204
-        blue: 204
-        alpha: 1
-      green:
-        red: 153
-        green: 204
-        blue: 153
-        alpha: 1
-      magenta:
-        red: 204
-        green: 153
-        blue: 204
-        alpha: 1
-      orange:
-        red: 249
-        green: 145
-        blue: 87
-        alpha: 1
-      pink:
-        red: 179
-        green: 88
-        blue: 142
-        alpha: 1
-      purple:
-        red: 108
-        green: 113
-        blue: 196
-        alpha: 1
-      red:
-        red: 242
-        green: 119
-        blue: 122
-        alpha: 1
-      yellow:
-        red: 255
-        green: 204
-        blue: 102
-        alpha: 1
+      blue: "#6699cc"
+      cyan: "#66cccc"
+      green: "#99cc99"
+      magenta: "#cc99cc"
+      orange: "#f99157"
+      pink: "#b3588e"
+      purple: "#6c71c4"
+      red: "#f2777a"
+      yellow: "#ffcc66"
     style: {}
     toggles:
       autoClose: true
@@ -306,6 +203,7 @@
     position: "Left"
   "tree-view":
     hideIgnoredNames: true
+    hideVcsIgnoredFiles: true
   welcome:
     showOnStartup: false
   wordcount:
