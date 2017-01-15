@@ -22,6 +22,8 @@ alias share      'python -m SimpleHTTPServer 8000'
 
 alias editor     'eval $EDITOR'
 
+alias sdig       'dig +short'
+
 if type -q emacs
     alias emacs  'emacs_connect'
     alias ne     'command emacs -nw --quick --no-init-file'

@@ -6,7 +6,7 @@ function start_gpg_agent
     set -l GPG_ENVFILE $HOME/.gnupg/environment
     set -l GPG_BIN (which gpg-agent)
 
-    # See if a gpg-agent is already configured
+    # See if a gpg-agent is already configured
     if test -f "$GPG_ENVFILE"
         if kill -0 (cat $GPG_ENVFILE | grep GPG_AGENT_INFO | cut -d: -f2) ^ /dev/null
             set -l IFS
@@ -18,7 +18,7 @@ function start_gpg_agent
         end
     end
 
-    # Kill non reachable agents
+    # Kill non reachable agents
     set -l NB_AGENT (ps x | grep -E "( gpg-agent|$GPG_BIN)" | grep -v grep | wc -l)
     if [ "$NB_AGENT" -gt 0 ]
         kill (ps x | grep -E "( gpg-agent|$GPG_BIN)" | grep -v grep | cut -d" " -f1)

@@ -3,7 +3,7 @@
 
 function clean -d "Clean specified directories - or if not specified the current working one"
 
-    # Find pattern options
+    # Find pattern options
     set -l pattern -name '\#*\#' -o -name '*~' -o -name '.*~' -o -name '*.pyc'
     # Limit 'find' search depths to 1 by default
     set -l recur   -maxdepth 1
@@ -48,7 +48,7 @@ Options:
     # Cleanup logic
     set to_rm (find $path $recur $pattern)
     if [ (count $to_rm) -eq 0 ]
-        echo "# $_: nothing to clean" 1>&2
+        echo "# $_: nothing to clean" 1>&2
     else if [ "$dry" = "true" ]
         echo "# $_: dry mode" 1>&2
         echo $to_rm | tr ' ' '\n'

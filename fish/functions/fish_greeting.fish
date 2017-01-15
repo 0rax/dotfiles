@@ -86,11 +86,11 @@ function fish_greeting
         set AGENT_PRESENT true
         echo (_i)' SSH Agent PID '(_s)...(_t) $SSH_AGENT_PID
     end
-    if test "$SSH_AGENT_ALIVE"
-        for i in (ssh-add -l ^ /dev/null | cut -d" " -f3)
-            echo (_i)'  > Known ID '(_s).....(_t)' '$i
-        end
-    end
+    # if test "$SSH_AGENT_ALIVE"
+    #     for i in (ssh-add -l ^ /dev/null | cut -d" " -f3)
+    #         echo (_i)'  > Known ID '(_s).....(_t)' '$i
+    #     end
+    # end
     if test "$SSH_AGENT_ALIVE" -o "$GPG_AGENT_ALIVE"
         echo
     end
