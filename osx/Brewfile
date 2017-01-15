@@ -12,13 +12,17 @@
 
 ### Taps
 tap "homebrew/bundle"             # https://github.com/Homebrew/homebrew-bundle
-tap "homebrew/dupes"
+tap "homebrew/dupes"              # https://github.com/Homebrew/homebrew-dupes
 tap "caskroom/cask"               # https://github.com/caskroom/homebrew-cask
 tap "caskroom/fonts"              # https://github.com/caskroom/homebrew-fonts
 tap "fisherman/tap"               # https://github.com/fisherman/homebrew-tap
 tap "drone/drone"                 # https://github.com/drone/homebrew-drone
 tap "buo/cask-upgrade"            # https://github.com/buo/homebrew-cask-upgrade
 tap "caskroom/versions"           # https://github.com/caskroom/homebrew-versions
+tap "homebrew/aliases"            # https://github.com/Homebrew/homebrew-aliases
+
+### Aliases
+# brew alias 'fu=!brew upgrade;brew cu;brew cleanup;brew cask cleanup'
 
 ### Brews
 # Shells
@@ -28,6 +32,7 @@ brew "bash"                       # https://www.gnu.org/software/bash/ for bash 
 # CVS
 brew "git"                        # https://git-scm.com
 brew "git-flow"                   # https://github.com/nvie/gitflow
+brew "git-lfs"                    # https://github.com/git-lfs/git-lfs
 brew "gibo"                       # https://github.com/simonwhitaker/gibo
 brew "tig"                        # http://jonas.nitro.dk/tig/
 brew "mercurial"                  # https://www.mercurial-scm.org/
@@ -55,6 +60,7 @@ brew "trash"                      # https://github.com/ali-rantakari/trash
 # Programming
 brew "nodejs"                     # https://nodejs.org/
 brew "go"                         # https://golang.org
+brew "go-delve/delve/delve"       # https://github.com/derekparker/delve
 brew "python3"                    # https://www.python.org/
 brew "autoconf"                   # https://www.gnu.org/software/autoconf/autoconf.html
 # Network tools
@@ -126,10 +132,9 @@ cask "kitematic"                  # https://kitematic.com/
 cask "transmission"               # http://www.transmissionbt.com/download/
 cask "skype"                      # https://www.skype.com/en/download-skype/skype-for-computer/
 cask "vagrant"                    # https://www.vagrantup.com/
-cask "vagrant-manager"            # http://vagrantmanager.com/
 cask "iterm2-beta"                # https://iterm2.com/downloads.html
 cask "docker-beta"                # https://docs.docker.com/engine/installation/mac/
-cask "airmail"                    # http://airmailapp.com/beta
+cask "airmail-beta"               # http://airmailapp.com/beta
 cask "atom"                       # http://atom.io/
 cask "java6"                      # https://support.apple.com/kb/DL1572
 cask "keybase"                    # https://keybase.io/docs/the_app/install_macos
@@ -138,10 +143,8 @@ cask "gpgtools"                   # https://gpgtools.org/
 cask "waterfox"                   # http://waterfoxproject.org/
 
 cask "fromscratch"                # ? # https://fromscratch.rocks/
-cask "caret"                      # ? # http://caret.io/
-
-cask "doomrl"                     # http://doom.chaosforge.org
-cask "sourcetree"                 # https://www.sourcetreeapp.com/
+cask "steam"                      # ? # http://store.steampowered.com/
+cask "insomnia"                   # ? # https://insomnia.rest/
 
 ### Non Brew software
 # Photoshop CC                    # https://www.adobe.com/products/photoshop.html
@@ -154,4 +157,3 @@ cask "sourcetree"                 # https://www.sourcetreeapp.com/
 # Hozz                            # ? # http://blog.zhangruipeng.me/Hozz/)
 # Finderpath                      # ? # https://bahoom.com/finderpath/
 # WindowsTidy                     # ? # http://www.lightpillar.com/window-tidy.html
-# Ulyesses                        # ? # https://ulyssesapp.com/
