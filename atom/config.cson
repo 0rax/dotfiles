@@ -7,27 +7,16 @@
     accentColor: "#6699cc"
     hexColor: "#6699cc"
     useSyntax: false
+  "atom-clock":
+    dateFormat: " DD/MM/YY HH:mm"
+    showClockIcon: true
+  "autocomplete-python":
+    useKite: false
   autosave:
     enabled: true
   "base16-syntax":
     scheme: "Eighties"
   blame: {}
-  "block-cursor":
-    global:
-      blinkOff:
-        backgroundColor: "rgba(255, 255, 255, 0.3)"
-        borderStyle: "none"
-        borderWidth: 0
-      blinkOn:
-        backgroundColor: "rgba(255, 255, 255, 0.15)"
-        borderStyle: "none"
-        borderWidth: 0
-        pulseDuration: 0
-      cursorLineFix: true
-      scopes: [
-        "*"
-      ]
-      selector: "atom-text-editor"
   core:
     autoHideMenuBar: true
     automaticallyUpdate: false
@@ -37,7 +26,6 @@
         "functions"
       ]
     disabledPackages: [
-      "keybinding-resolver"
       "metrics"
     ]
     excludeVcsIgnoredPaths: false
@@ -66,7 +54,6 @@
       "terminal-plus"
       "flex-tool-bar"
       "blame"
-      "go-config"
       "markdown-toc"
     ]
     projectHome: "/home/orax/Projects"
@@ -75,13 +62,10 @@
       "accents-ui"
       "base16-syntax"
     ]
-  "custom-folds":
-    postfix: "`"
-    prefix: "`"
+    warnOnLargeFileLimit: 64
   editor:
     autoIndent: false
     fontFamily: "Monofur"
-    fontSize: 15
     invisibles: {}
     lineHeight: 1.2
     showIndentGuide: true
@@ -120,15 +104,16 @@
   "highlight-column":
     lineMode: true
   "highlight-line":
-    enableBackgroundColor: false
     enableSelectionBorder: true
     enableUnderline: true
+    hideHighlightOnSelect: true
   latex:
     alwaysOpenResultInAtom: true
     enableShellEscape: true
     enableSynctex: false
   linter:
     gutterEnabled: false
+    showErrorPanel: false
   "linter-chktex":
     executablePath: "/Library/TeX/texbin/chktex"
   "linter-clang":
@@ -156,46 +141,14 @@
     projectHome: "/Users/orax/Projects"
   "spell-check":
     grammars: [
-      "text.tex.latex"
+      "source.asciidoc"
       "source.gfm"
+      "text.git-commit"
       "text.plain"
+      "text.plain.null-grammar"
+      "text.tex.latex"
       "text.html.basic"
     ]
-  "terminal-plus":
-    ansiColors:
-      normal:
-        black: "#2d2d2d"
-        blue: "#6699cc"
-        cyan: "#66cccc"
-        green: "#99cc99"
-        magenta: "#cc99cc"
-        red: "#f2777a"
-        white: "#f2f0ec"
-        yellow: "#ffcc66"
-      zBright:
-        brightBlack: "#2d2d2d"
-        brightBlue: "#6699cc"
-        brightCyan: "#66cccc"
-        brightGreen: "#99cc99"
-        brightMagenta: "#cc99cc"
-        brightRed: "#f2777a"
-        brightWhite: "#f2f0ec"
-        brightYellow: "#ffcc66"
-    core:
-      shell: "/usr/local/bin/fish"
-    iconColors:
-      blue: "#6699cc"
-      cyan: "#66cccc"
-      green: "#99cc99"
-      magenta: "#cc99cc"
-      orange: "#f99157"
-      pink: "#b3588e"
-      purple: "#6c71c4"
-      red: "#f2777a"
-      yellow: "#ffcc66"
-    style: {}
-    toggles:
-      autoClose: true
   "todo-show":
     statusBarIndicator: true
   "tool-bar":
@@ -220,6 +173,11 @@
       "latex"
     ]
     goalLineHeight: "0%"
+  zentabs:
+    maximumOpenedTabs: 10
+    neverCloseDirty: true
+    neverCloseNew: true
+    neverCloseUnsaved: true
 ".basic.html.text":
   editor:
     tabLength: 2
@@ -235,6 +193,12 @@
 ".cson.source":
   editor:
     tabLength: 2
+".csv.semicolon.text":
+  editor:
+    autoIndent: false
+".csv.text":
+  editor:
+    autoIndent: false
 ".diff.source":
   editor:
     tabLength: 4
@@ -243,7 +207,7 @@
     tabLength: 4
 ".gfm.source":
   editor:
-    tabLength: 2
+    tabLength: 4
 ".html.text.vue":
   editor:
     tabLength: 4

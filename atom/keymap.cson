@@ -1,17 +1,22 @@
-# # Save
-# 'body':
-#   'ctrl-p':       'fuzzy-finder:toggle-file-finder'
-#   'ctrl-b':       'fuzzy-finder:toggle-buffer-finder'
-# 'atom-workspace':
-#   'ctrl-g l':      'go-to-line:toggle'
-#   'ctrl-g f':      'fuzzy-finder:toggle-file-finder'
-#   'ctrl-g b':      'fuzzy-finder:toggle-buffer-finder'
-#   'shift-F11':     'zen:toggle'
+##### Save
+# # symbols-view
 # 'atom-workspace atom-text-editor:not([mini])':
 #   'cmd-r':        'symbols-view:toggle-file-symbols'
 #   'alt-right':    'symbols-view:go-to-declaration'
 #   'alt-left':     'symbols-view:return-from-declaration'
 #   'shift-cmd-R':  'symbols-view:toggle-project-symbols'
+# # Terminal-Plus
+# 'atom-workspace':
+#   'ctrl-`':       'terminal-plus:toggle'
+# '.platform-darwin atom-workspace':
+#   'cmd-shift-j':  'terminal-plus:prev'
+#   'cmd-shift-k':  'terminal-plus:next'
+# '.terminal-plus .terminal':
+#   'cmd-c':        'terminal-plus:copy'
+#   'cmd-v':        'terminal-plus:paste'
+#   'cmd-n':        'terminal-plus:new'
+#   'cmd-shift-j':  'terminal-plus:prev'
+#   'cmd-shift-k':  'terminal-plus:next'
 
 # Split Pane & UI
 'body':
@@ -39,16 +44,3 @@
   'ctrl-alt-b':   'editor:move-to-previous-subword-boundary'
 'atom-workspace atom-text-editor[data-grammar~="gfm"]':
   'ctrl-shift-m': 'markdown-preview:toggle'
-
-# Terminal-Plus
-'atom-workspace':
-  'ctrl-`':       'terminal-plus:toggle'
-'.platform-darwin atom-workspace':
-  'cmd-shift-j':  'terminal-plus:prev'
-  'cmd-shift-k':  'terminal-plus:next'
-'.terminal-plus .terminal':
-  'cmd-c':        'terminal-plus:copy'
-  'cmd-v':        'terminal-plus:paste'
-  'cmd-n':        'terminal-plus:new'
-  'cmd-shift-j':  'terminal-plus:prev'
-  'cmd-shift-k':  'terminal-plus:next'

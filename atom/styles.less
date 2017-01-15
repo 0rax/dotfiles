@@ -4,29 +4,20 @@ html, body, .tree-view, .status-bar,
 .settings-view .setting-description, .form-control {
     font-size: 13px;
 }
-
 // Disable Editor Scrollbar
 atom-text-editor .vertical-scrollbar,
-atom-text-editor::shadow .vertical-scrollbar,
+atom-text-editor.editor .vertical-scrollbar,
 atom-text-editor .horizontal-scrollbar,
-atom-text-editor::shadow .horizontal-scrollbar {
+atom-text-editor.editor .horizontal-scrollbar {
     opacity: 0;
     width: 0;
 }
-
 // Disable Tree-View Scrollbar
 .tree-view-scroller::-webkit-scrollbar {
     display: none;
 }
-
 // Deactivate some plugin view when in Zen mode
 [data-zen="true"] {
-    // Remove terminal-plus status bar in Zen Mode
-    .terminal-plus.status-bar i {
-        height: 0px;
-        width: 0px;
-        display: none;
-    }
     // Hide everything but Zen button in Zen Mode
     .tool-bar {
         .tool-bar-btn {
@@ -47,17 +38,12 @@ atom-text-editor::shadow .horizontal-scrollbar {
     }
 }
 
-// Fix terminal-plus status-bar width
-.terminal-plus.status-bar {
-    margin: 0;
-    padding: 0 10px;
-}
+// ===================== Accents UI + Base16 (Eighties) ===================== //
 
-// Accents UI + Base16 (Eighties)
 // @accent: #c30909;
 @accent: #6699cc;
 @accent-alternate: darken(@accent, 6%);
-atom-text-editor::shadow {
+atom-text-editor.editor {
     .wrap-guide {
         background-color: @accent;
     }
@@ -85,13 +71,13 @@ atom-text-editor::shadow {
     }
 }
 // Minimap Background Color
-atom-text-editor::shadow atom-text-editor-minimap,
+atom-text-editor.editor atom-text-editor-minimap,
 atom-text-editor atom-text-editor-minimap {
     background-color: #1e1e1e;
 }
 // Minimap Visible Area Color
-atom-text-editor::shadow atom-text-editor-minimap::shadow .minimap-visible-area,
-atom-text-editor atom-text-editor-minimap::shadow .minimap-visible-area {
+atom-text-editor.editor atom-text-editor-minimap .minimap-visible-area,
+atom-text-editor atom-text-editor-minimap .minimap-visible-area {
     background: rgba(255,255,255, 0.4) !important;
 }
 [data-zen="true"] {
@@ -125,8 +111,6 @@ atom-text-editor atom-text-editor-minimap::shadow .minimap-visible-area {
         margin: 0 0px !important;
     }
 }
-
-// Accents UI Fix
 // Make the tab-bar smaller
 .tab-bar {
     height: 40px;
