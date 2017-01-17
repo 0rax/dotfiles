@@ -24,7 +24,6 @@
       ]
     disabledPackages: [
       "metrics"
-      "go-debug"
     ]
     excludeVcsIgnoredPaths: false
     ignoredNames: [
@@ -94,7 +93,10 @@
   "go-outline":
     showTests: false
   "go-plus":
-    currentPanelHeight: "21.047619047619047vh"
+    currentPanelHeight: "25vh"
+    disabledBundledPackages: [
+      "go-debug"
+    ]
     panelDisplayMode: "closed"
     panelOrientation: "vertical"
     showPanelWhenNoIssuesExist: true

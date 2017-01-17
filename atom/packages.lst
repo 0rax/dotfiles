@@ -13,7 +13,6 @@ flex-tool-bar
 git-blame
 git-control
 git-projects
-go-debug
 go-plus
 go-signature-statusbar
 highlight-bad-chars
