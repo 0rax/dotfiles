@@ -4,12 +4,9 @@
     showWordCount: "Right"
     width: 100
   "accents-ui":
-    accentColor: "#6699cc"
-    hexColor: "#6699cc"
+    accentColor: "#6398cc"
+    hexColor: "#6398cc"
     useSyntax: false
-  "atom-clock":
-    dateFormat: " DD/MM/YY HH:mm"
-    showClockIcon: true
   "autocomplete-python":
     useKite: false
   autosave:
@@ -27,6 +24,7 @@
       ]
     disabledPackages: [
       "metrics"
+      "go-debug"
     ]
     excludeVcsIgnoredPaths: false
     ignoredNames: [
@@ -93,16 +91,17 @@
     gopath: "/Users/orax/Projects/Go"
   "go-debug":
     limitCommandsToGo: true
-    panelInitialVisible: false
   "go-outline":
     showTests: false
   "go-plus":
     currentPanelHeight: "21.047619047619047vh"
+    panelDisplayMode: "closed"
+    panelOrientation: "vertical"
     showPanelWhenNoIssuesExist: true
   gofmt:
     formatTool: "goreturns"
   "highlight-column":
-    lineMode: true
+    opacity: 1
   "highlight-line":
     enableSelectionBorder: true
     enableUnderline: true
@@ -137,6 +136,14 @@
   "pdf-view":
     enableSyncTeX: false
   pigments: {}
+  "platformio-ide-terminal":
+    core:
+      shell: "/usr/local/bin/bash"
+    style:
+      animationSpeed: 2
+      defaultPanelHeight: "25%"
+    toggles:
+      autoClose: true
   "project-plus":
     projectHome: "/Users/orax/Projects"
   "spell-check":
@@ -157,6 +164,14 @@
   "tree-view":
     hideIgnoredNames: true
     hideVcsIgnoredFiles: true
+  "vim-mode-plus":
+    automaticallyEscapeInsertModeOnActivePaneItemChange: true
+    clearHighlightSearchOnResetNormalMode: true
+    clearPersistentSelectionOnResetNormalMode: true
+    groupChangesWhenLeavingInsertMode: false
+    highlightSearch: true
+    useSmartcaseForSearch: true
+    useSmartcaseForSearchCurrentWord: true
   welcome:
     showOnStartup: false
   wordcount:

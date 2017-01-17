@@ -37,6 +37,12 @@ atom-text-editor.editor .horizontal-scrollbar {
         background-color: transparent !important;
     }
 }
+// Hide Deprecation Warning Text
+.status-bar .deprecation-cop-status.text-warning {
+    font-size: 0px;
+    color: inherit;
+    line-height: 0px;
+}
 
 // ===================== Accents UI + Base16 (Eighties) ===================== //
 
@@ -45,10 +51,10 @@ atom-text-editor.editor .horizontal-scrollbar {
 @accent-alternate: darken(@accent, 6%);
 atom-text-editor.editor {
     .wrap-guide {
-        background-color: @accent;
+        background-color: @accent-alternate;
     }
-    .line.highlight-line {
-        background: #393d45;
+    .line.highlight-line, .highlight-column {
+        background: fade(@accent-alternate, 15%) !important;
     }
     .line.highlight-line-multi-line-solid-bottom {
         border-bottom-color: @accent-alternate;
@@ -61,13 +67,13 @@ atom-text-editor.editor {
         border-top: none;
     }
     .line-number.cursor-line {
-        background: rgba(255,255,255,0.05) !important;
+        background: fade(@accent-alternate, 8%) !important;
     }
-    .line-number{
-        background: rgba(0,0,0,0.20) !important;
+    .gutter {
+        background: #272727 !important;
     }
     .selection .region {
-        background: rgba(255,255,255,0.10) !important;
+        background:  fade(@accent, 20%) !important;
     }
 }
 // Minimap Background Color
@@ -130,4 +136,37 @@ atom-text-editor atom-text-editor-minimap .minimap-visible-area {
 .list-tree.has-collapsable-children .list-nested-item > .list-tree > li,
 .list-tree.has-collapsable-children .list-nested-item > .list-group > li {
     padding-left: 12px;
+}
+
+// ========================= Vim Mode Plus Modeline ========================= //
+
+#status-bar-vim-mode-plus-container {
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+    font-size: 10px;
+    border-radius: 4px;
+    text-align: center;
+    .status-bar-vim-mode-plus-insert {
+        background-color: #99cc99;
+        color: #2d2d2d;
+    }
+    .status-bar-vim-mode-plus-normal {
+        background-color: #ffcc66;
+        color: #2d2d2d;
+    }
+    .status-bar-vim-mode-plus-visual {
+        background-color: #f2777a;
+        color: #2d2d2d;
+    }
+    .status-bar-vim-mode-plus-operator-pending {
+        background-color: #f99157;
+        color: #2d2d2d;
+    }
+}
+
+// ========================== PlatformIO  Terminal ========================== //
+
+.platformio-ide-terminal .xterm {
+  background-color: #2d2d2d;
 }

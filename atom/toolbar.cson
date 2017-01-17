@@ -61,7 +61,7 @@
     type: "button"
     icon: "terminal"
     callback: [
-      "terminal-plus:toggle"
+      "platformio-ide-terminal:toggle"
     ]
   }
   {

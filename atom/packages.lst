@@ -1,10 +1,11 @@
 Sublime-Style-Column-Selection
 Zen
 accents-ui
-atom-clock
 autocomplete-clang
 autocomplete-python
 base16-syntax
+color-picker
+colorful-json
 column-select
 env-from-shell
 file-icons
@@ -12,9 +13,14 @@ flex-tool-bar
 git-blame
 git-control
 git-projects
+go-debug
+go-plus
+go-signature-statusbar
 highlight-bad-chars
+highlight-column
 highlight-line
 highlight-selected
+hyperclick
 language-csv
 language-docker
 language-fish-shell
@@ -38,6 +44,7 @@ minimap-linter
 minimap-selection
 pdf-view
 pigments
+platformio-ide-terminal
 pretty-json
 script
 sort-lines
@@ -46,5 +53,6 @@ tablr
 tail
 todo-show
 tool-bar
+vim-mode-plus
 wordcount
 zentabs
