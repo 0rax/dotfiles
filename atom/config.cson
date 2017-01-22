@@ -139,11 +139,42 @@
     enableSyncTeX: false
   pigments: {}
   "platformio-ide-terminal":
+    ansiColors:
+      normal:
+        black: "#2d2d2d"
+        blue: "#6699cc"
+        cyan: "#66cccc"
+        green: "#99cc99"
+        magenta: "#cc99cc"
+        red: "#f2777a"
+        white: "#f2f0ec"
+        yellow: "#ffcc66"
+      zBright:
+        brightBlack: "#2d2d2d"
+        brightBlue: "#6699cc"
+        brightCyan: "#66cccc"
+        brightGreen: "#99cc99"
+        brightMagenta: "#cc99cc"
+        brightRed: "#f2777a"
+        brightWhite: "#f2f0ec"
+        brightYellow: "#ffcc66"
     core:
       shell: "/usr/local/bin/bash"
+    iconColors:
+      blue: "#6699cc"
+      cyan: "#66cccc"
+      green: "#99cc99"
+      magenta: "#cc99cc"
+      orange: "#f99157"
+      pink: "#f386a1"
+      purple: "#8868b3"
+      red: "#f2777a"
+      yellow: "#ffcc66"
     style:
       animationSpeed: 2
       defaultPanelHeight: "25%"
+      fontFamily: "monofur"
+      fontSize: "12"
     toggles:
       autoClose: true
   "project-plus":
@@ -165,7 +196,6 @@
     position: "Left"
   "tree-view":
     hideIgnoredNames: true
-    hideVcsIgnoredFiles: true
   "vim-mode-plus":
     automaticallyEscapeInsertModeOnActivePaneItemChange: true
     clearHighlightSearchOnResetNormalMode: true

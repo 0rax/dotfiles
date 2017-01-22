@@ -73,8 +73,11 @@ atom-text-editor.editor {
         background: #272727 !important;
     }
     .selection .region {
-        background:  fade(@accent, 20%) !important;
+        background:  fade(lighten(@accent, 20%), 20%) !important;
     }
+    .indent-guide, .invisibile-character {
+       color: #424242;
+   }
 }
 // Minimap Background Color
 atom-text-editor.editor atom-text-editor-minimap,
