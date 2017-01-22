@@ -1,0 +1,1 @@
+../plugins/z/conf.d/z.fish

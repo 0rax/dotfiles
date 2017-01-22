@@ -1,0 +1,1 @@
+../plugins/getopts/getopts.fish
