@@ -12,6 +12,7 @@
 
 ### Taps
 tap "homebrew/bundle"             # https://github.com/Homebrew/homebrew-bundle
+tap "homebrew/services"           # https://github.com/Homebrew/homebrew-services
 tap "homebrew/dupes"              # https://github.com/Homebrew/homebrew-dupes
 tap "caskroom/cask"               # https://github.com/caskroom/homebrew-cask
 tap "caskroom/fonts"              # https://github.com/caskroom/homebrew-fonts
@@ -55,11 +56,11 @@ brew "pv"                         # https://www.ivarch.com/programs/pv.shtml
 brew "apg"                        # [http://www.adel.nursat.kz/apg/]
 brew "trash"                      # https://github.com/ali-rantakari/trash
 # Programming
-brew "nodejs"                     # https://nodejs.org/
+brew "node"                       # https://nodejs.org/
+brew "perl"                       # https://www.perl.org/
 brew "go"                         # https://golang.org
 brew "python"                     # https://www.python.org/
 brew "python3"                    # https://www.python.org/
-brew "autoconf"                   # https://www.gnu.org/software/autoconf/autoconf.html
 # Network tools
 brew "iftop"                      # http://www.ex-parrot.com/pdw/iftop/
 brew "nmap"                       # https://nmap.org/
