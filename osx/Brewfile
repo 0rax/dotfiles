@@ -14,12 +14,13 @@
 tap "homebrew/bundle"             # https://github.com/Homebrew/homebrew-bundle
 tap "homebrew/services"           # https://github.com/Homebrew/homebrew-services
 tap "homebrew/dupes"              # https://github.com/Homebrew/homebrew-dupes
+tap "homebrew/aliases"            # https://github.com/Homebrew/homebrew-aliases
 tap "caskroom/cask"               # https://github.com/caskroom/homebrew-cask
 tap "caskroom/fonts"              # https://github.com/caskroom/homebrew-fonts
-tap "drone/drone"                 # https://github.com/drone/homebrew-drone
-tap "buo/cask-upgrade"            # https://github.com/buo/homebrew-cask-upgrade
 tap "caskroom/versions"           # https://github.com/caskroom/homebrew-versions
-tap "homebrew/aliases"            # https://github.com/Homebrew/homebrew-aliases
+tap "buo/cask-upgrade"            # https://github.com/buo/homebrew-cask-upgrade
+tap "drone/drone"                 # https://github.com/drone/homebrew-drone
+tap "mickep76/funk-gnarge"        # https://github.com/mickep76/homebrew-funk-gnarge
 
 ### Aliases
 # brew alias 'fu=!brew upgrade;brew cu;brew cleanup;brew cask cleanup'
@@ -55,6 +56,7 @@ brew "grc"                        # http://kassiopeia.juls.savba.sk/~garabik/sof
 brew "pv"                         # https://www.ivarch.com/programs/pv.shtml
 brew "apg"                        # [http://www.adel.nursat.kz/apg/]
 brew "trash"                      # https://github.com/ali-rantakari/trash
+brew "rlwrap"                     # http://utopia.knoware.nl/~hlub/rlwrap/
 # Programming
 brew "node"                       # https://nodejs.org/
 brew "perl"                       # https://www.perl.org/
@@ -71,6 +73,9 @@ brew "awscli"                     # https://github.com/aws/aws-cli
 brew "drone"                      # https://github.com/drone/drone/
 brew "rancher-cli"                # https://github.com/rancher/cli
 brew "rancher-compose"            # https://github.com/rancher/rancher-compose
+brew "etcd"                       # https://github.com/coreos/etcd
+brew "etcdtool"                   # https://github.com/mickep76/etcdtool
+
 # Other
 brew "asciinema"                  # https://asciinema.org/
 brew "android-platform-tools"     # https://developer.android.com/sdk
@@ -93,6 +98,7 @@ cask "wireshark"                  # https://www.wireshark.org/
 cask "tuntap"                     # http://tuntaposx.sourceforge.net/faq.xhtml
 cask "horndis"                    # http://joshuawise.com/horndis
 cask "viscosity"                  # https://www.sparklabs.com/viscosity/
+cask "nordvpn"                    # http://nordvpn.com/
 # Virtualisation
 cask "virtualbox"                 # https://www.virtualbox.org/
 cask "docker-beta"                # https://docs.docker.com/engine/installation/mac/
@@ -118,7 +124,7 @@ cask "macpass"                    # https://github.com/mstarke/MacPass/ + https:
 # Programming
 cask "iterm2-beta"                # https://iterm2.com/downloads.html
 cask "atom"                       # http://atom.io/
-cask "insomnia"                   # ? # https://insomnia.rest/
+cask "insomnia"                   # https://insomnia.rest/
 cask "Hex-fiend"                  # https://github.com/ridiculousfish/HexFiend/
 # Media Edit
 cask "basictex"                   # https://www.tug.org/mactex/
@@ -126,7 +132,6 @@ cask "yed"                        # http://www.yworks.com/en/downloads.html#yEd
 cask "gimp"                       # http://www.gimp.org/
 cask "macdown"                    # http://macdown.uranusjr.com/
 cask "numi"                       # http://numi.io/
-cask "fromscratch"                # ? # https://fromscratch.rocks/
 # Web
 cask "transmission"               # http://www.transmissionbt.com/download/
 cask "skype"                      # https://www.skype.com/en/download-skype/skype-for-computer/
@@ -134,22 +139,24 @@ cask "airmail-beta"               # http:airmailapp.com/beta
 cask "waterfox"                   # http://waterfoxproject.org/
 cask "forklift-beta"              # http://www.binarynights.com/
 # Social
-cask "rambox"                     # http://rambox.pro/
 cask "franz"                      # http://meetfranz.com/
 cask "textual"                    # https://www.codeux.com/textual/
 cask "slack"                      # ttps://slack.com/
 # Game
 cask "steam"                      # ? # http://store.steampowered.com/
-# Utils
-cask "java6"                      # https://support.apple.com/kb/DL1572
-cask "flash-player"               # https://get.adobe.com/flashplayer/
-cask "android-file-transfer"      # https://android.com/filetransfer/
+# Tray
 cask "keepingyouawake"            # https://github.com/newmarcel/KeepingYouAwake/releases
-cask "appcleaner"                 # http://freemacsoft.net/appcleaner/
 cask "flux"                       # https://justgetflux.com/
 cask "boom"                       # http://www.globaldelight.com/boom/
 cask "gitify"                     # http://gitify.io/
 cask "ccmenu"                     # https://github.com/erikdoe/ccmenu/
+# Utils
+cask "java6"                      # https://support.apple.com/kb/DL1572
+cask "flash-player"               # https://get.adobe.com/flashplayer/
+cask "android-file-transfer"      # https://android.com/filetransfer/
+cask "appcleaner"                 # http://freemacsoft.net/appcleaner/
+cask "etcher"                     # https://etcher.io/
+cask "karabiner-elements"         # https://pqrs.org/osx/karabiner/
 
 ### Non Brew software
 # Photoshop CC                    # https://www.adobe.com/products/photoshop.html
@@ -160,4 +167,3 @@ cask "ccmenu"                     # https://github.com/erikdoe/ccmenu/
 # Office 2016                     # https://portal.office.com/OLS/MySoftware.aspx
 # Habitica-GUI                    # https://github.com/0rax/habitica-gui
 # HackMD-GUI                      # https://github.com/0rax/hackmd-gui
-# Hozz                            # ? # http://blog.zhangruipeng.me/Hozz/)
