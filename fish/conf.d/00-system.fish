@@ -43,6 +43,16 @@ if test -d /usr/local/share/fish/vendor_completions.d
     set -gx fish_complete_path $fish_complete_path /usr/local/share/fish/vendor_completions.d
 end
 
+# ---  System/Fish Alias Folder ------------------------------------------------
+
+set -gx fish_function_path $fish_function_path $FISH_CONFIG_PATH/alias
+
+if [ "$OS_TYPE" = "Darwin" ] # Mac OS X
+
+    set -gx fish_function_path $fish_function_path $FISH_CONFIG_PATH/alias/osx
+
+end
+
 # ------------------------------------------------------------------------------
 # ---  END  --------------------------------------------------------------------
 # ------------------------------------------------------------------------------

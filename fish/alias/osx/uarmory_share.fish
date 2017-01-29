@@ -1,7 +1,7 @@
 #!/usr/bin/env fish
 # -*-  mode:fish; tab-width:4  -*-
 
-function usbarmory_share
+function uarmory_share
 
     sudo sysctl -w net.inet.ip.forwarding=1
     sudo pfctl -e

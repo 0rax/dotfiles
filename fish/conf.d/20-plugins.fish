@@ -8,6 +8,21 @@
 # Do not load plugins or configure plugins when launched non-interactivly
 status --is-interactive; or exit
 
+# ---  Plugins/Fishline  -------------------------------------------------------
+
+if test -f "$FISH_PLUGIN_PATH/fishline/init.fish"
+
+    # set FLINE_PATH "$FISH_PLUGIN_PATH/fishline"
+    # source $FLINE_PATH/init.fish
+    set FLINE_PATH "$HOME/Projects/Fish/fishline"
+    source $FLINE_PATH/init.fish
+
+end
+
+# ---  Plugins/Fish-BD  --------------------------------------------------------
+
+set -gx BD_OPT 'insensitive'
+
 # ---  Plugins/VirtualFish  ----------------------------------------------------
 
 if test -f "$FISH_PLUGIN_PATH/virtualfish/virtualfish/virtual.fish"
@@ -24,10 +39,6 @@ end
 
 set -U Z_DATA $XDG_DATA_HOME/z.db
 set -U Z_CMD  "j"
-
-# ---  Plugins/Fish-BD  --------------------------------------------------------
-
-set -gx BD_OPT 'insensitive'
 
 # ---  Plugins/GRC  ------------------------------------------------------------
 
