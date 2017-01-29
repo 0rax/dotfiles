@@ -94,6 +94,7 @@
     showTests: false
   "go-plus":
     currentPanelHeight: "25vh"
+    currentPanelWidth: "25vw"
     disabledBundledPackages: [
       "go-debug"
     ]
@@ -173,7 +174,7 @@
     style:
       animationSpeed: 2
       defaultPanelHeight: "25%"
-      fontFamily: "monofur"
+      fontFamily: "monofur for Powerline"
       fontSize: "12"
     toggles:
       autoClose: true

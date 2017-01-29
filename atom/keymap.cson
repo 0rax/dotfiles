@@ -5,25 +5,9 @@
 #   'alt-right':    'symbols-view:go-to-declaration'
 #   'alt-left':     'symbols-view:return-from-declaration'
 #   'shift-cmd-R':  'symbols-view:toggle-project-symbols'
-# # Terminal-Plus
-# 'atom-workspace':
-#   'ctrl-`':       'terminal-plus:toggle'
-# '.platform-darwin atom-workspace':
-#   'cmd-shift-j':  'terminal-plus:prev'
-#   'cmd-shift-k':  'terminal-plus:next'
-# '.terminal-plus .terminal':
-#   'cmd-c':        'terminal-plus:copy'
-#   'cmd-v':        'terminal-plus:paste'
-#   'cmd-n':        'terminal-plus:new'
-#   'cmd-shift-j':  'terminal-plus:prev'
-#   'cmd-shift-k':  'terminal-plus:next'
 
-# Split Pane & UI
+# UI
 'body':
-  'ctrl-k down':  'pane:split-down'
-  'ctrl-k up':    'pane:split-up'
-  'ctrl-k right': 'pane:split-right'
-  'ctrl-k left':  'pane:split-left'
   'cmd-\\':       'tree-view:toggle'
   'cmd-\'':       'minimap:toggle'
 
