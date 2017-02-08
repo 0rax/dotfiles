@@ -15,6 +15,7 @@ tap "homebrew/bundle"             # https://github.com/Homebrew/homebrew-bundle
 tap "homebrew/services"           # https://github.com/Homebrew/homebrew-services
 tap "homebrew/dupes"              # https://github.com/Homebrew/homebrew-dupes
 tap "homebrew/aliases"            # https://github.com/Homebrew/homebrew-aliases
+tap "homebrew/fuse"               # https://github.com/Homebrew/homebrew-fuse
 tap "caskroom/cask"               # https://github.com/caskroom/homebrew-cask
 tap "caskroom/fonts"              # https://github.com/caskroom/homebrew-fonts
 tap "caskroom/versions"           # https://github.com/caskroom/homebrew-versions
@@ -35,6 +36,7 @@ brew "git-flow"                   # https://github.com/nvie/gitflow
 brew "git-lfs"                    # https://github.com/git-lfs/git-lfs
 brew "gibo"                       # https://github.com/simonwhitaker/gibo
 brew "tig"                        # http://jonas.nitro.dk/tig/
+brew "mr"                         # https://myrepos.branchable.com/
 brew "mercurial"                  # https://www.mercurial-scm.org/
 # Shell Utils
 brew "moreutils"                  # https://joeyh.name/code/moreutils/
@@ -63,6 +65,7 @@ brew "perl"                       # https://www.perl.org/
 brew "go"                         # https://golang.org
 brew "python"                     # https://www.python.org/
 brew "python3"                    # https://www.python.org/
+brew "shellcheck"                 # http://www.shellcheck.net/
 # Network tools
 brew "iftop"                      # http://www.ex-parrot.com/pdw/iftop/
 brew "nmap"                       # https://nmap.org/
@@ -70,11 +73,13 @@ brew "mtr"                        # http://www.bitwizard.nl/mtr/
 brew "nghttp2"                    # https://nghttp2.org/
 # DevOps
 brew "awscli"                     # https://github.com/aws/aws-cli
+brew "minio-mc"                   # https://github.com/minio/mc
 brew "drone"                      # https://github.com/drone/drone/
 brew "rancher-cli"                # https://github.com/rancher/cli
 brew "rancher-compose"            # https://github.com/rancher/rancher-compose
 brew "etcd"                       # https://github.com/coreos/etcd
 brew "etcdtool"                   # https://github.com/mickep76/etcdtool
+brew "wrk"                        # https://github.com/wg/wrk
 
 # Other
 brew "asciinema"                  # https://asciinema.org/
@@ -118,6 +123,7 @@ cask "yubikey-neo-manager"        # http://yubico.com/
 cask "yubikey-personalization-gui"# http://yubico.com/
 cask "osxfuse"                    # https://osxfuse.github.io/
 cask "veracrypt"                  # https://veracrypt.codeplex.com/
+cask "eldeveloper-macfusion"      # https://github.com/ElDeveloper/macfusion2/
 cask "keybase"                    # https://keybase.io/
 cask "gpgtools"                   # https://gpgtools.org/
 cask "macpass"                    # https://github.com/mstarke/MacPass/ + https://github.com/MacPass/MacPassHTTP

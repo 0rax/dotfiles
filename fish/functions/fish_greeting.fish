@@ -14,10 +14,7 @@
 
 function fish_greeting
 
-    # Edit to make it run only on new term instance and not everytime
-    # This way when doing a sudo -s it will not be reshown
-
-    if [ "$MINIMAL_SHELL" = "true" ]
+    if [ "$MINIMAL_SHELL" = "true" ]; or set -q SUDO_UID
       return
     end
 

@@ -90,7 +90,7 @@
     icon: "android-checkbox-outline"
     iconset: "ion"
     callback: [
-      "todo-show:find-in-workspace"
+      "todo-show:find-in-project"
     ]
   }
   {
