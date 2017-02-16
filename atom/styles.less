@@ -29,6 +29,7 @@ atom-text-editor.editor .horizontal-scrollbar {
         .tool-bar-spacer {
             display: none;
         }
+        border-right: 0;
         position: absolute;
         top: 0;
         left: 0;
@@ -46,99 +47,393 @@ atom-text-editor.editor .horizontal-scrollbar {
 
 // ===================== Accents UI + Base16 (Eighties) ===================== //
 
-// @accent: #c30909;
-@accent: #6699cc;
-@accent-alternate: darken(@accent, 6%);
-atom-text-editor.editor {
-    .wrap-guide {
-        background-color: @accent-alternate;
-    }
-    .line.highlight-line, .highlight-column {
-        background: fade(@accent-alternate, 15%) !important;
-    }
-    .line.highlight-line-multi-line-solid-bottom {
-        border-bottom-color: @accent-alternate;
-     }
-    .line.highlight-line-multi-line-solid-top {
-        border-top-color: @accent-alternate;
-     }
-    .line-number.cursor-line-no-selection {
-        border-bottom: solid 1px @accent-alternate;
-        border-top: none;
-    }
-    .line-number.cursor-line {
-        background: fade(@accent-alternate, 8%) !important;
-    }
-    .gutter {
-        background: #272727 !important;
-    }
-    .selection .region {
-        background:  fade(lighten(@accent, 20%), 20%) !important;
-    }
-    .indent-guide, .invisibile-character {
-       color: #424242;
-   }
-}
-// Minimap Background Color
-atom-text-editor.editor atom-text-editor-minimap,
-atom-text-editor atom-text-editor-minimap {
-    background-color: #1e1e1e;
-}
-// Minimap Visible Area Color
-atom-text-editor.editor atom-text-editor-minimap .minimap-visible-area,
-atom-text-editor atom-text-editor-minimap .minimap-visible-area {
-    background: rgba(255,255,255, 0.4) !important;
-}
-[data-zen="true"] {
-    atom-workspace, atom-panel.left {
-        background-color: #272727;
-    }
-    .tool-bar {
-        background-color: #272727;
-        border: transparent 0 solid !important;
-    }
-}
-.tool-bar {
-    background-color: #333333;
-    border: #1e1e1e 2px solid;
-    border-radius: 3px;
-    button.tool-bar-btn {
-        background-color: inherit;
-    }
-    button.tool-bar-btn.disabled:hover {
-        background-color: inherit;
-        color: @accent-alternate;
-    }
-    button.tool-bar-btn:hover {
-        background-color: inherit;
-        color: @accent;
-    }
-    hr.tool-bar-spacer {
-        border-color: #1e1e1e !important;
-        -webkit-mask-image: none !important;
-        width: 38px !important;
-        margin: 0 0px !important;
-    }
-}
-// Make the tab-bar smaller
+// // @accent: #c30909;
+// @accent: #6699cc;
+// @accent-alternate: darken(@accent, 6%);
+// atom-text-editor.editor {
+//     .wrap-guide {
+//         background-color: @accent-alternate;
+//     }
+//     .gutter {
+//         background: #272727 !important;
+//     }
+//     .selection .region {
+//         background:  fade(lighten(@accent, 20%), 20%) !important;
+//     }
+//     .indent-guide, .invisibile-character {
+//        color: #424242;
+//    }
+// }
+// // Minimap
+// atom-text-editor.editor atom-text-editor-minimap,
+// atom-text-editor atom-text-editor-minimap {
+//     & {
+//         background-color: #1e1e1e;
+//     }
+//     .minimap-visible-area {
+//         background: rgba(255,255,255, 0.4) !important;
+//     }
+// }
+// // ZenMode tweak
+// [data-zen="true"] {
+//     atom-workspace, atom-panel.left {
+//         background-color: #272727;
+//     }
+//     .tool-bar {
+//         background-color: #272727;
+//         border: transparent 0 solid !important;
+//     }
+// }
+// // ToolBar colors
+// .tool-bar {
+//     background-color: #333333;
+//     border: #1e1e1e 2px solid;
+//     border-radius: 3px;
+//     button.tool-bar-btn {
+//         background-color: inherit;
+//     }
+//     button.tool-bar-btn.disabled:hover {
+//         background-color: inherit;
+//         color: @accent-alternate;
+//     }
+//     button.tool-bar-btn:hover {
+//         background-color: inherit;
+//         color: @accent;
+//     }
+//     hr.tool-bar-spacer {
+//         border-color: #1e1e1e !important;
+//         -webkit-mask-image: none !important;
+//         width: 38px !important;
+//         margin: 0 0px !important;
+//     }
+// }
+// .platformio-ide-terminal .xterm {
+//   background-color: #2d2d2d;
+// }
+// // Make the tab-bar smaller
+// .tab-bar {
+//     height: 40px;
+//     .tab {
+//         line-height: 36px;
+//         border-bottom-width: 3px;
+//         &.modified:not(:hover) .close-icon, &.modified:hover .close-icon {
+//             top: 16px;
+//         }
+//     }
+// }
+// // Remove the level separators in tree-view
+// .list-tree ol.entries.list-tree::before {
+//     display: none;
+// }
+// // Change space before new nested group in Tree-View
+// .list-tree.has-collapsable-children .list-nested-item > .list-tree > li,
+// .list-tree.has-collapsable-children .list-nested-item > .list-group > li {
+//     padding-left: 12px;
+// }
+// // Highlight line & collumn
+// atom-text-editor.editor {
+//     .line.highlight-line, .highlight-column {
+//         background: fade(@accent-alternate, 15%) !important;
+//     }
+//     .line.highlight-line-multi-line-solid-bottom {
+//         border-bottom-color: @accent-alternate;
+//      }
+//     .line.highlight-line-multi-line-solid-top {
+//         border-top-color: @accent-alternate;
+//      }
+//     .line-number.cursor-line-no-selection {
+//         border-bottom: solid 1px @accent-alternate;
+//         border-top: none;
+//     }
+//     .line-number.cursor-line {
+//         background: fade(@accent-alternate, 8%) !important;
+//     }
+// }
+
+// ======================= Neutron UI + Neutron Syntax ====================== //
+
+@button-disabled: #61676e;
+@button-standard: #7d868c;
+@button-hover:    #ced2d4;
+@color-lighter:   #343d46;
+@color-light:     #2e3239;
+@color:           #24282e;
+@color-dark:      #1e2126;
+
+// UI Tweaks
 .tab-bar {
-    height: 40px;
-    .tab {
-        line-height: 36px;
-        border-bottom-width: 3px;
-        &.modified:not(:hover) .close-icon, &.modified:hover .close-icon {
-            top: 16px;
+    padding: 0;
+    .tab, .tab.active {
+        text-align: center;
+        line-height: 28px;
+        top: 0px;
+        height: 33px;
+        background-image: none;
+        border-top: transparent;
+        .title {
+            line-height: 32px;
+            top: 0px;
         }
     }
 }
-// Remove the level separators in tree-vie
-.list-tree ol.entries.list-tree::before {
-    display: none;
+.tool-bar {
+    border: 0px;
+    .btn, .btn:hover {
+        border: 0 !important;
+    }
+    &.tool-bar-vertical .tool-bar-spacer {
+        border-top-color: @color-dark;
+        border-bottom: 0px;
+        -webkit-mask-image: none;
+        width: 24px !important;
+    }
 }
-// Change space before new nested group in Tree-View
-.list-tree.has-collapsable-children .list-nested-item > .list-tree > li,
-.list-tree.has-collapsable-children .list-nested-item > .list-group > li {
-    padding-left: 12px;
+.terminal-view .btn-toolbar .btn {
+    // remove border around terminak button
+    border: 0px !important;
+    background-color: transparent;
+}
+.tree-view > .directory > .header, .tab-bar {
+    // fix 1 pixel line under tree-view header & tab-bar
+    border-bottom: 0px solid transparent !important;
+}
+.terminal-view .btn-toolbar {
+    // fixe weird empty part in term tool-bar
+    margin-left: 0px;
+}
+.go-plus-panel .panel-nav-item.is-selected, .go-plus-panel .panel-nav-item:active, .go-plus-panel .panel-nav-item {
+    // remove border on panel button
+    border: 0px;
+    height: 33px;
+    line-height: 20px;
+}
+
+// UI Colors
+.tree-view > .directory > .header, .tab-bar {
+    // tab-bar & tree-view header color
+    background-color: @color-dark !important;
+}
+.status-bar, .tool-bar, .title-bar, .go-plus-panel .panel-heading,
+.terminal-view .btn-toolbar, .tool-panel .find-and-replace, .project-find {
+    // around color (status-bar, tool-bar, title-bar & button-color)
+    background-color: @color-light !important;
+    .editor.mini {
+        // border: 0px !important;
+        background-color: @color !important;
+    }
+    .btn, .icon, .panel-nav-item {
+        color: @button-standard;
+    }
+    .selected .icon, .panel-nav-item.is-selected {
+        color: @button-hover;
+    }
+    .btn:hover, .icon:hover, .panel-nav-item:hover {
+        color: @button-hover;
+    }
+    .btn.disabled, &:hover .btn.disabled {
+        color: @button-disabled;
+    }
+}
+.find-and-replace, .project-find {
+    // custom color for find-and-replace & project-find
+    .btn {
+        background-color: @color !important;
+    }
+    .btn-group, .btn.disabled {
+        background-color: @color-light !important;
+    }
+    .btn-group-options {
+        .btn {
+            background-color: @color-light !important;
+        }
+        .btn.selected {
+            background-color: @color!important;
+        }
+    }
+}
+.status-bar {
+    linter-bottom-tab {
+        color: @button-standard;
+        background-color: none;
+        &.active {
+            color: @button-hover;
+            background-color: @color-dark;
+        }
+    }
+}
+background-tips ul.background-message {
+    color: @button-standard;
+}
+atom-text-editor-minimap, .tree-view, .tab.active, .go-plus-panel .panel-body, .go-plus-panel .is-selected, linter-panel {
+    // left & right color (minimap & tree-view + active tab)
+    background-image: none;
+    background-color: @color !important;
+}
+atom-text-editor.editor atom-text-editor-minimap,
+atom-text-editor atom-text-editor-minimap {
+    .minimap-visible-area {
+        background: rgba(255,255,255, 0.05) !important;
+    }
+}
+
+// UI Borders
+status-bar {
+    border-top: 1px solid @color-dark;
+    height: 25px;
+}
+.tool-bar, .tree-view-scroller {
+    border-right: 1px solid @color-dark;
+}
+.title-bar {
+    border-bottom: 1px solid @color-dark;
+}
+.terminal-view, .terminal-view .xterm {
+    border-top: 1px solid @color-dark;
+}
+.go-plus-panel {
+    .panel-heading:not(.is-vertical) {
+        border-top: 1px solid @color-dark;
+        border-bottom: 1px solid @color-dark;
+        .panel-nav-item.is-selected {
+            border-left: 1px solid @color-dark;
+            border-right: 1px solid @color-dark;
+        }
+        .panel-nav {
+            border-left: 1px solid @color-dark;
+            border-right: 1px solid @color-dark;
+        }
+        .panel-nav .panel-nav-item.is-selected:first-child {
+            border-left: 0px solid @color-dark;
+        }
+    }
+    &.is-vertical {
+        border-left: 0px;
+        border-top: 0px;
+        .panel-heading {
+            border: 0px;
+            border-left: 1px solid @color-dark;
+            border-right: 1px solid @color-dark;
+        }
+        .panel-nav {
+            border-left: 0px !important;
+            border-right: 0px !important;
+        }
+        .panel-nav-item.is-selected {
+            border-left: 0px !important;
+            border-right: 0px !important;
+            border-top: 1px solid @color-dark;
+            border-bottom: 1px solid @color-dark;
+        }
+        .panel-nav .panel-nav-item.is-selected:first-child {
+            border-top: 0px !important;
+        }
+    }
+}
+.find-and-replace {
+    border-top: 1px solid @color-dark;
+}
+.tab.active {
+    border-right: 1px solid @color-dark;
+    border-left: 1px solid @color-dark;
+    border-bottom: 1px solid @color-dark;
+    &:first-child {
+        border-left: 0px;
+    }
+}
+
+// Zen Mode Colors
+[data-zen="true"] {
+    atom-pane-container atom-pane .item-views, .tool-bar .btn {
+        background-color: @color !important;
+    }
+}
+
+// Modal Colors
+.modal {
+    background-color: @color !important;
+    border: 1px solid @color-dark;
+    &.from-top {
+        top: 23px;
+    }
+    .event {
+        padding-left: 6px;
+        padding-right: 6px;
+    }
+    .event.selected {
+        background-color: @color-lighter !important;
+    }
+}
+
+// Highlight line & collumn
+atom-text-editor.editor {
+    .line.highlight-line, .highlight-column {
+        background: fade(lighten(@color, 75%), 12%) !important;
+    }
+    .line.highlight-line-multi-line-solid-bottom {
+        border-bottom-color: @color-lighter;
+     }
+    .line.highlight-line-multi-line-solid-top {
+        border-top-color: @color-lighter;
+     }
+    .line-number.cursor-line-no-selection {
+        border-bottom: solid 1px @color-lighter;
+        border-top: none;
+    }
+    .line-number.cursor-line {
+        background: fade(lighten(@color, 75%), 12%) !important;
+    }
+    .wrap-guide {
+        background-color: @color-lighter;
+    }
+    .indent-guide {
+        color: @color-lighter;
+    }
+}
+
+// Focus Mode
+.tree-view {
+    // files focus-mode
+    .icon {
+        opacity: 0.3;
+    }
+    // projects  focus-mode
+    .project-root-header .icon {
+        opacity: 0.4;
+    }
+    // files on tree-view hover
+    &:hover .icon {
+        opacity: 0.5;
+    }
+    // projects on tree-view hover
+    &:hover .icon {
+        opacity: 0.7;
+    }
+    // files and projects on project list hover
+    .entry:hover .icon, .project-root-header:hover .icon, .selected .icon {
+        opacity: 1;
+    }
+}
+.tab-bar {
+    // tabs focus-mode
+    .tab {
+        opacity: 0.4;
+    }
+    // tabs on tab-bar hover
+    &:hover .tab {
+        opacity: 0.7;
+    }
+    // tabs on tab hover & active tab
+    .tab:hover, .tab.active {
+        opacity: 1;
+    }
+}
+.status-bar {
+    .status-bar-left, .status-bar-right {
+        opacity: 0.5;
+    }
+    &:hover .status-bar-left, &:hover .status-bar-right {
+        opacity: 1;
+    }
 }
 
 // ========================= Vim Mode Plus Modeline ========================= //

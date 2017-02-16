@@ -36,11 +36,14 @@ linter-chktex
 linter-clang
 linter-flake8
 linter-json-lint
+linter-shellcheck
 minimap
 minimap-git-diff
 minimap-highlight-selected
 minimap-linter
 minimap-selection
+neutron-syntax
+neutron-ui
 pdf-view
 pigments
 platformio-ide-terminal

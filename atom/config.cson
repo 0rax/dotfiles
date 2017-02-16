@@ -56,9 +56,10 @@
     projectHome: "/home/orax/Projects"
     telemetryConsent: "no"
     themes: [
-      "accents-ui"
-      "base16-syntax"
+      "neutron-ui"
+      "neutron-syntax"
     ]
+    useCustomTitleBar: true
     warnOnLargeFileLimit: 64
   editor:
     autoIndent: false
@@ -94,7 +95,7 @@
     showTests: false
   "go-plus":
     currentPanelHeight: "25vh"
-    currentPanelWidth: "25vw"
+    currentPanelWidth: "24vw"
     disabledBundledPackages: [
       "go-debug"
     ]
@@ -114,8 +115,8 @@
     enableShellEscape: true
     enableSynctex: false
   linter:
+    displayLinterStatus: false
     gutterEnabled: false
-    showErrorPanel: false
   "linter-chktex":
     executablePath: "/Library/TeX/texbin/chktex"
   "linter-clang":
@@ -190,11 +191,16 @@
       "text.tex.latex"
       "text.html.basic"
     ]
+  "status-bar": {}
   "todo-show":
+    openListInDirection: "ontop"
+    sortAscending: false
+    sortBy: "Path"
     statusBarIndicator: true
   "tool-bar":
     iconSize: "16px"
     position: "Left"
+    visible: false
   "tree-view":
     hideIgnoredNames: true
   "vim-mode-plus":
