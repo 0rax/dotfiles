@@ -1,3 +1,5 @@
+// =========================== General UI Tweaks ============================ //
+
 // Font Size
 html, body, .tree-view, .status-bar,
 .tab-bar .tab, .settings-view .settings-panel label,
@@ -45,7 +47,42 @@ atom-text-editor.editor .horizontal-scrollbar {
     line-height: 0px;
 }
 
-// ===================== Accents UI + Base16 (Eighties) ===================== //
+// ======================== Highlight Line & Collumn ======================== //
+
+atom-text-editor.editor {
+    .line.highlight-line, .highlight-column, .line-number.cursor-line {
+        background: fade(#fff, 10%) !important;
+    }
+}
+
+// ========================= Vim Mode Plus Modeline ========================= //
+
+#status-bar-vim-mode-plus-container {
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+    font-size: 10px;
+    border-radius: 4px;
+    text-align: center;
+    .status-bar-vim-mode-plus-insert {
+        background-color: #99cc99;
+        color: #2d2d2d;
+    }
+    .status-bar-vim-mode-plus-normal {
+        background-color: #ffcc66;
+        color: #2d2d2d;
+    }
+    .status-bar-vim-mode-plus-visual {
+        background-color: #f2777a;
+        color: #2d2d2d;
+    }
+    .status-bar-vim-mode-plus-operator-pending {
+        background-color: #f99157;
+        color: #2d2d2d;
+    }
+}
+
+// ==================== Accents UI + Base16 Eighties Dark =================== //
 
 // // @accent: #c30909;
 // @accent: #6699cc;
@@ -149,9 +186,15 @@ atom-text-editor.editor .horizontal-scrollbar {
 //         background: fade(@accent-alternate, 8%) !important;
 //     }
 // }
+//
+// // PlatformIO Terminal Background
+// .platformio-ide-terminal .xterm {
+//     background-color: #2d2d2d;
+// }
 
-// ======================= Neutron UI + Neutron Syntax ====================== //
+// ====================== Neutron UI + Base16 Ocean Dark ==================== //
 
+// Colors
 @button-disabled: #61676e;
 @button-standard: #7d868c;
 @button-hover:    #ced2d4;
@@ -159,6 +202,7 @@ atom-text-editor.editor .horizontal-scrollbar {
 @color-light:     #2e3239;
 @color:           #24282e;
 @color-dark:      #1e2126;
+@syntax-bg:       #2b303b;
 
 // UI Tweaks
 .tab-bar {
@@ -275,6 +319,9 @@ atom-text-editor atom-text-editor-minimap {
         background: rgba(255,255,255, 0.05) !important;
     }
 }
+atom-pane-container atom-pane .item-views {
+    background-color: @syntax-bg;
+}
 
 // UI Borders
 status-bar {
@@ -364,45 +411,19 @@ status-bar {
     }
 }
 
-// Highlight line & collumn
-atom-text-editor.editor {
-    .line.highlight-line, .highlight-column {
-        background: fade(lighten(@color, 75%), 12%) !important;
-    }
-    .line.highlight-line-multi-line-solid-bottom {
-        border-bottom-color: @color-lighter;
-     }
-    .line.highlight-line-multi-line-solid-top {
-        border-top-color: @color-lighter;
-     }
-    .line-number.cursor-line-no-selection {
-        border-bottom: solid 1px @color-lighter;
-        border-top: none;
-    }
-    .line-number.cursor-line {
-        background: fade(lighten(@color, 75%), 12%) !important;
-    }
-    .wrap-guide {
-        background-color: @color-lighter;
-    }
-    .indent-guide {
-        color: @color-lighter;
-    }
-}
-
 // Focus Mode
 .tree-view {
     // files focus-mode
     .icon {
-        opacity: 0.3;
+        opacity: 0.4;
     }
     // projects  focus-mode
     .project-root-header .icon {
-        opacity: 0.4;
+        opacity: 0.5;
     }
     // files on tree-view hover
     &:hover .icon {
-        opacity: 0.5;
+        opacity: 0.4;
     }
     // projects on tree-view hover
     &:hover .icon {
@@ -436,35 +457,7 @@ atom-text-editor.editor {
     }
 }
 
-// ========================= Vim Mode Plus Modeline ========================= //
-
-#status-bar-vim-mode-plus-container {
-    width: 18px;
-    height: 18px;
-    line-height: 18px;
-    font-size: 10px;
-    border-radius: 4px;
-    text-align: center;
-    .status-bar-vim-mode-plus-insert {
-        background-color: #99cc99;
-        color: #2d2d2d;
-    }
-    .status-bar-vim-mode-plus-normal {
-        background-color: #ffcc66;
-        color: #2d2d2d;
-    }
-    .status-bar-vim-mode-plus-visual {
-        background-color: #f2777a;
-        color: #2d2d2d;
-    }
-    .status-bar-vim-mode-plus-operator-pending {
-        background-color: #f99157;
-        color: #2d2d2d;
-    }
-}
-
-// ========================== PlatformIO  Terminal ========================== //
-
+// PlatformIO Terminal Background
 .platformio-ide-terminal .xterm {
-  background-color: #2d2d2d;
+    background-color: @syntax-bg;
 }

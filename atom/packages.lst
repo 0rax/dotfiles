@@ -4,6 +4,7 @@ accents-ui
 autocomplete-clang
 autocomplete-python
 base16-syntax
+busy-signal
 color-picker
 colorful-json
 column-select
@@ -14,12 +15,12 @@ git-blame
 git-control
 git-projects
 go-plus
-go-signature-statusbar
 highlight-bad-chars
 highlight-column
 highlight-line
 highlight-selected
 hyperclick
+intentions
 language-csv
 language-docker
 language-fish-shell
@@ -37,7 +38,10 @@ linter-clang
 linter-flake8
 linter-json-lint
 linter-shellcheck
+linter-ui-default
 minimap
+minimap-bookmarks
+minimap-cursorline
 minimap-git-diff
 minimap-highlight-selected
 minimap-linter

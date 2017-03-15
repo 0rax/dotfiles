@@ -6,3 +6,4 @@
 !/keymap.cson
 !/styles.less
 !/toolbar.cson
+!/linter-config.json

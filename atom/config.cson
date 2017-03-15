@@ -12,7 +12,7 @@
   autosave:
     enabled: true
   "base16-syntax":
-    scheme: "Eighties"
+    scheme: "Ocean"
   blame: {}
   core:
     autoHideMenuBar: true
@@ -24,6 +24,7 @@
       ]
     disabledPackages: [
       "metrics"
+      "keybinding-resolver"
     ]
     excludeVcsIgnoredPaths: false
     ignoredNames: [
@@ -57,10 +58,10 @@
     telemetryConsent: "no"
     themes: [
       "neutron-ui"
-      "neutron-syntax"
+      "base16-syntax"
     ]
     useCustomTitleBar: true
-    warnOnLargeFileLimit: 64
+    warnOnLargeFileLimit: 5
   editor:
     autoIndent: false
     fontFamily: "Monofur"
@@ -98,6 +99,7 @@
     currentPanelWidth: "24vw"
     disabledBundledPackages: [
       "go-debug"
+      "go-signature-statusbar"
     ]
     panelDisplayMode: "closed"
     panelOrientation: "vertical"
@@ -107,16 +109,11 @@
   "highlight-column":
     opacity: 1
   "highlight-line":
-    enableSelectionBorder: true
-    enableUnderline: true
     hideHighlightOnSelect: true
   latex:
     alwaysOpenResultInAtom: true
     enableShellEscape: true
     enableSynctex: false
-  linter:
-    displayLinterStatus: false
-    gutterEnabled: false
   "linter-chktex":
     executablePath: "/Library/TeX/texbin/chktex"
   "linter-clang":
@@ -124,11 +121,17 @@
     clangDefaultCppFlags: "-Wall -std=c++11 -fsytanx-only"
   "linter-flake8":
     executableDir: "/Users/orax/Library/Python/3.5/bin/"
+  "linter-ui-default":
+    gutterPosition: "Left"
   "markdown-preview":
     liveUpdate: false
     useGitHubStyle: true
   minimap:
     plugins:
+      bookmarks: true
+      bookmarksDecorationsZIndex: 0
+      cursorline: true
+      cursorlineDecorationsZIndex: 0
       "git-diff": true
       "git-diffDecorationsZIndex": 0
       "highlight-selected": true
@@ -161,7 +164,8 @@
         brightWhite: "#f2f0ec"
         brightYellow: "#ffcc66"
     core:
-      shell: "/usr/local/bin/bash"
+      shell: "/usr/bin/env"
+      shellArguments: "fish"
     iconColors:
       blue: "#6699cc"
       cyan: "#66cccc"
