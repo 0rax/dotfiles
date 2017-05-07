@@ -14,7 +14,7 @@
 
 function fish_greeting
 
-    if [ "$MINIMAL_SHELL" = "true" ]; or set -q SUDO_UID
+    if set -q SUDO_UID
       return
     end
 

@@ -19,3 +19,6 @@
 [submodule "fish/plugins/getopts"]
 	path = fish/plugins/getopts
 	url = https://github.com/fisherman/getopts.git
+[submodule "fish/plugins/sharktooth"]
+	path = fish/plugins/sharktooth
+	url = https://github.com/0rax/sharktooth
