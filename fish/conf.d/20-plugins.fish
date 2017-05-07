@@ -12,10 +12,10 @@ status --is-interactive; or exit
 
 if test -f "$FISH_PLUGIN_PATH/fishline/init.fish"
 
-    # set FLINE_PATH "$FISH_PLUGIN_PATH/fishline"
-    # source $FLINE_PATH/init.fish
-    set FLINE_PATH "$HOME/Projects/Fish/fishline"
+    set FLINE_PATH "$FISH_PLUGIN_PATH/fishline"
     source $FLINE_PATH/init.fish
+    # set FLINE_PATH "$HOME/Projects/Fish/fishline"
+    # source $FLINE_PATH/init.fish
 
 end
 

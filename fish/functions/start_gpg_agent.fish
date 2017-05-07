@@ -3,7 +3,7 @@
 
 function start_gpg_agent
 
-    set -l GPG_ENVFILE $HOME/.gnupg/environment
+    set -l GPG_ENVFILE $HOME/.gnupg/gpg-agent.info
     set -l GPG_BIN (which gpg-agent)
 
     # See if a gpg-agent is already configured
