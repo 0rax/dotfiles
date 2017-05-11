@@ -19,25 +19,33 @@
 
 # Git alias
 [alias]
-    poule = pull
-    pousse = push
+    # git management
     co = checkout
-    st = status
+    # git commit
     ci = commit
-    fc = commit --amend -m
-    edit = commit --amend -m
+    fc = commit --amend
+    edit = commit --amend
     ic = add -p
+    # git branch
+    fresh-branch = checkout --orphan
+    # git search
+    gg = grep --break --heading -n
+    # git diff
     wdiff = diff --word-diff
+    # git ingo
+    st = status
     info = remote show origin
     size = count-objects -vH
-    gg = grep --break --heading -n
-    file = log --pretty=oneline --shortstat --abbrev-commit
     unpushed = log --stat origin/master..HEAD
+    root = rev-parse --show-toplevel
+    # https://blog.filippo.io/git-fixup-amending-an-older-commit/
+    fixup = "!f() { TARGET=$(git rev-parse "$1"); git commit --fixup=$TARGET ${@:2} && EDITOR=true git rebase -i --autostash --autosquash $TARGET^; }; f"
+    # git logs
+    file = log --pretty=oneline --shortstat --abbrev-commit
     alog = log --graph --abbrev-commit --decorate --date=relative --format=prettylog --all
     sdlog = log --graph --abbrev-commit --decorate --date=relative --shortstat --no-color --all
     slog = log --graph --abbrev-commit --decorate --date=relative --format=prettylog --shortstat -10
     flog = log --graph --abbrev-commit --decorate --date=relative --color --stat --show-signature -10
-    root = rev-parse --show-toplevel
 
 # Git color
 [color]
