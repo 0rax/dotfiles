@@ -98,10 +98,10 @@
   }
   {
     type: "button"
-    icon: "git"
+    icon: "github"
     iconset: "fa"
     callback: [
-      "git-control:toggle"
+      "github:toggle-git-tab"
     ]
   }
   {

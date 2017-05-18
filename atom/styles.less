@@ -14,10 +14,100 @@ atom-text-editor.editor .horizontal-scrollbar {
     opacity: 0;
     width: 0;
 }
-// Disable Tree-View Scrollbar
-.tree-view-scroller::-webkit-scrollbar {
-    display: none;
+// Hide Deprecation Warning Text
+.status-bar .deprecation-cop-status.text-warning {
+    font-size: 0px;
+    color: inherit;
+    line-height: 0px;
+    position: relative;
+    top: 7px;
+    margin-left: 8px;
 }
+
+// ======================== Highlight Line & Collumn ======================== //
+
+atom-text-editor.editor {
+    .line.highlight-line, .highlight-column, .line-number.cursor-line {
+        background: fade(#fff, 10%) !important;
+    }
+}
+
+// ============================ One Dark Tweaks ============================= //
+
+// Colors
+@background-pane: #252932;
+
+// Project Header in different color
+.project-root.directory.entry:before {
+    background-color: #2B303B;
+    left: 0;
+    right: 0;
+    border-top: 0px !important;
+}
+.project-root.directory.entry.selected:before {
+    background-color: lighten(#2B303B, 2%);
+    left: 0;
+    right: 0;
+    border-top: 0px !important;
+}
+
+// Less space between icon in status bar
+.status-bar {
+    .status-bar-right .inline-block {
+        margin-left: 8px;
+        margin-right: 0px;
+
+    }
+    .status-bar-left .inline-block {
+        margin-left: 0px;
+        margin-right: 8px;
+
+    }
+}
+
+// Minimap background color
+atom-text-editor-minimap {
+    background-color: @background-pane;
+}
+
+// ========================= Vim Mode Plus Modeline ========================= //
+
+#status-bar-vim-mode-plus-container {
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 12px;
+    border-radius: 4px;
+    text-align: center;
+    margin-top: 6px;
+
+    .status-bar-vim-mode-plus-insert {
+        background-color: #99cc99;
+        color: #2d2d2d;
+    }
+    .status-bar-vim-mode-plus-normal {
+        background-color: #ffcc66;
+        color: #2d2d2d;
+    }
+    .status-bar-vim-mode-plus-visual {
+        background-color: #f2777a;
+        color: #2d2d2d;
+    }
+    .status-bar-vim-mode-plus-operator-pending {
+        background-color: #f99157;
+        color: #2d2d2d;
+    }
+}
+
+// ================================ Zen Mode ================================ //
+
+// Zen Background Color
+[data-zen="true"] {
+    atom-pane-container atom-pane .item-views, .tool-bar .btn {
+        background-color: @background-pane !important;
+    }
+}
+
 // Deactivate some plugin view when in Zen mode
 [data-zen="true"] {
     // Hide everything but Zen button in Zen Mode
@@ -40,424 +130,68 @@ atom-text-editor.editor .horizontal-scrollbar {
         background-color: transparent !important;
     }
 }
-// Hide Deprecation Warning Text
-.status-bar .deprecation-cop-status.text-warning {
-    font-size: 0px;
-    color: inherit;
-    line-height: 0px;
-}
 
-// ======================== Highlight Line & Collumn ======================== //
-
-atom-text-editor.editor {
-    .line.highlight-line, .highlight-column, .line-number.cursor-line {
-        background: fade(#fff, 10%) !important;
-    }
-}
-
-// ========================= Vim Mode Plus Modeline ========================= //
-
-#status-bar-vim-mode-plus-container {
-    width: 18px;
-    height: 18px;
-    line-height: 18px;
-    font-size: 10px;
-    border-radius: 4px;
-    text-align: center;
-    .status-bar-vim-mode-plus-insert {
-        background-color: #99cc99;
-        color: #2d2d2d;
-    }
-    .status-bar-vim-mode-plus-normal {
-        background-color: #ffcc66;
-        color: #2d2d2d;
-    }
-    .status-bar-vim-mode-plus-visual {
-        background-color: #f2777a;
-        color: #2d2d2d;
-    }
-    .status-bar-vim-mode-plus-operator-pending {
-        background-color: #f99157;
-        color: #2d2d2d;
-    }
-}
-
-// ==================== Accents UI + Base16 Eighties Dark =================== //
-
-// // @accent: #c30909;
-// @accent: #6699cc;
-// @accent-alternate: darken(@accent, 6%);
-// atom-text-editor.editor {
-//     .wrap-guide {
-//         background-color: @accent-alternate;
-//     }
-//     .gutter {
-//         background: #272727 !important;
-//     }
-//     .selection .region {
-//         background:  fade(lighten(@accent, 20%), 20%) !important;
-//     }
-//     .indent-guide, .invisibile-character {
-//        color: #424242;
-//    }
-// }
-// // Minimap
-// atom-text-editor.editor atom-text-editor-minimap,
-// atom-text-editor atom-text-editor-minimap {
-//     & {
-//         background-color: #1e1e1e;
-//     }
-//     .minimap-visible-area {
-//         background: rgba(255,255,255, 0.4) !important;
-//     }
-// }
-// // ZenMode tweak
-// [data-zen="true"] {
-//     atom-workspace, atom-panel.left {
-//         background-color: #272727;
-//     }
-//     .tool-bar {
-//         background-color: #272727;
-//         border: transparent 0 solid !important;
-//     }
-// }
-// // ToolBar colors
-// .tool-bar {
-//     background-color: #333333;
-//     border: #1e1e1e 2px solid;
-//     border-radius: 3px;
-//     button.tool-bar-btn {
-//         background-color: inherit;
-//     }
-//     button.tool-bar-btn.disabled:hover {
-//         background-color: inherit;
-//         color: @accent-alternate;
-//     }
-//     button.tool-bar-btn:hover {
-//         background-color: inherit;
-//         color: @accent;
-//     }
-//     hr.tool-bar-spacer {
-//         border-color: #1e1e1e !important;
-//         -webkit-mask-image: none !important;
-//         width: 38px !important;
-//         margin: 0 0px !important;
-//     }
-// }
-// .platformio-ide-terminal .xterm {
-//   background-color: #2d2d2d;
-// }
-// // Make the tab-bar smaller
-// .tab-bar {
-//     height: 40px;
-//     .tab {
-//         line-height: 36px;
-//         border-bottom-width: 3px;
-//         &.modified:not(:hover) .close-icon, &.modified:hover .close-icon {
-//             top: 16px;
-//         }
-//     }
-// }
-// // Remove the level separators in tree-view
-// .list-tree ol.entries.list-tree::before {
-//     display: none;
-// }
-// // Change space before new nested group in Tree-View
-// .list-tree.has-collapsable-children .list-nested-item > .list-tree > li,
-// .list-tree.has-collapsable-children .list-nested-item > .list-group > li {
-//     padding-left: 12px;
-// }
-// // Highlight line & collumn
-// atom-text-editor.editor {
-//     .line.highlight-line, .highlight-column {
-//         background: fade(@accent-alternate, 15%) !important;
-//     }
-//     .line.highlight-line-multi-line-solid-bottom {
-//         border-bottom-color: @accent-alternate;
-//      }
-//     .line.highlight-line-multi-line-solid-top {
-//         border-top-color: @accent-alternate;
-//      }
-//     .line-number.cursor-line-no-selection {
-//         border-bottom: solid 1px @accent-alternate;
-//         border-top: none;
-//     }
-//     .line-number.cursor-line {
-//         background: fade(@accent-alternate, 8%) !important;
-//     }
-// }
-//
-// // PlatformIO Terminal Background
-// .platformio-ide-terminal .xterm {
-//     background-color: #2d2d2d;
-// }
-
-// ====================== Neutron UI + Base16 Ocean Dark ==================== //
+// ================================ Focus Mode ============================== //
 
 // Colors
-@button-disabled: #61676e;
-@button-standard: #7d868c;
-@button-hover:    #ced2d4;
-@color-lighter:   #343d46;
-@color-light:     #2e3239;
-@color:           #24282e;
-@color-dark:      #1e2126;
 @syntax-bg:       #2b303b;
 
-// UI Tweaks
-.tab-bar {
-    padding: 0;
-    .tab, .tab.active {
-        text-align: center;
-        line-height: 28px;
-        top: 0px;
-        height: 33px;
-        background-image: none;
-        border-top: transparent;
-        .title {
-            line-height: 32px;
-            top: 0px;
-        }
-    }
-}
-.tool-bar {
-    border: 0px;
-    .btn, .btn:hover {
-        border: 0 !important;
-    }
-    &.tool-bar-vertical .tool-bar-spacer {
-        border-top-color: @color-dark;
-        border-bottom: 0px;
-        -webkit-mask-image: none;
-        width: 24px !important;
-    }
-}
-.terminal-view .btn-toolbar .btn {
-    // remove border around terminak button
-    border: 0px !important;
-    background-color: transparent;
-}
-.tree-view > .directory > .header, .tab-bar {
-    // fix 1 pixel line under tree-view header & tab-bar
-    border-bottom: 0px solid transparent !important;
-}
-.terminal-view .btn-toolbar {
-    // fixe weird empty part in term tool-bar
-    margin-left: 0px;
-}
-.go-plus-panel .panel-nav-item.is-selected, .go-plus-panel .panel-nav-item:active, .go-plus-panel .panel-nav-item {
-    // remove border on panel button
-    border: 0px;
-    height: 33px;
-    line-height: 20px;
-}
-
-// UI Colors
-.tree-view > .directory > .header, .tab-bar {
-    // tab-bar & tree-view header color
-    background-color: @color-dark !important;
-}
-.status-bar, .tool-bar, .title-bar, .go-plus-panel .panel-heading,
-.terminal-view .btn-toolbar, .tool-panel .find-and-replace, .project-find {
-    // around color (status-bar, tool-bar, title-bar & button-color)
-    background-color: @color-light !important;
-    .editor.mini {
-        // border: 0px !important;
-        background-color: @color !important;
-    }
-    .btn, .icon, .panel-nav-item {
-        color: @button-standard;
-    }
-    .selected .icon, .panel-nav-item.is-selected {
-        color: @button-hover;
-    }
-    .btn:hover, .icon:hover, .panel-nav-item:hover {
-        color: @button-hover;
-    }
-    .btn.disabled, &:hover .btn.disabled {
-        color: @button-disabled;
-    }
-}
-.find-and-replace, .project-find {
-    // custom color for find-and-replace & project-find
-    .btn {
-        background-color: @color !important;
-    }
-    .btn-group, .btn.disabled {
-        background-color: @color-light !important;
-    }
-    .btn-group-options {
-        .btn {
-            background-color: @color-light !important;
-        }
-        .btn.selected {
-            background-color: @color!important;
-        }
-    }
-}
-.status-bar {
-    linter-bottom-tab {
-        color: @button-standard;
-        background-color: none;
-        &.active {
-            color: @button-hover;
-            background-color: @color-dark;
-        }
-    }
-}
-background-tips ul.background-message {
-    color: @button-standard;
-}
-atom-text-editor-minimap, .tree-view, .tab.active, .go-plus-panel .panel-body, .go-plus-panel .is-selected, linter-panel {
-    // left & right color (minimap & tree-view + active tab)
-    background-image: none;
-    background-color: @color !important;
-}
-atom-text-editor.editor atom-text-editor-minimap,
-atom-text-editor atom-text-editor-minimap {
-    .minimap-visible-area {
-        background: rgba(255,255,255, 0.05) !important;
-    }
-}
-atom-pane-container atom-pane .item-views {
-    background-color: @syntax-bg;
-}
-
-// UI Borders
-status-bar {
-    border-top: 1px solid @color-dark;
-    height: 25px;
-}
-.tool-bar, .tree-view-scroller {
-    border-right: 1px solid @color-dark;
-}
-.title-bar {
-    border-bottom: 1px solid @color-dark;
-}
-.terminal-view, .terminal-view .xterm {
-    border-top: 1px solid @color-dark;
-}
-.go-plus-panel {
-    .panel-heading:not(.is-vertical) {
-        border-top: 1px solid @color-dark;
-        border-bottom: 1px solid @color-dark;
-        .panel-nav-item.is-selected {
-            border-left: 1px solid @color-dark;
-            border-right: 1px solid @color-dark;
-        }
-        .panel-nav {
-            border-left: 1px solid @color-dark;
-            border-right: 1px solid @color-dark;
-        }
-        .panel-nav .panel-nav-item.is-selected:first-child {
-            border-left: 0px solid @color-dark;
-        }
-    }
-    &.is-vertical {
-        border-left: 0px;
-        border-top: 0px;
-        .panel-heading {
-            border: 0px;
-            border-left: 1px solid @color-dark;
-            border-right: 1px solid @color-dark;
-        }
-        .panel-nav {
-            border-left: 0px !important;
-            border-right: 0px !important;
-        }
-        .panel-nav-item.is-selected {
-            border-left: 0px !important;
-            border-right: 0px !important;
-            border-top: 1px solid @color-dark;
-            border-bottom: 1px solid @color-dark;
-        }
-        .panel-nav .panel-nav-item.is-selected:first-child {
-            border-top: 0px !important;
-        }
-    }
-}
-.find-and-replace {
-    border-top: 1px solid @color-dark;
-}
-.tab.active {
-    border-right: 1px solid @color-dark;
-    border-left: 1px solid @color-dark;
-    border-bottom: 1px solid @color-dark;
-    &:first-child {
-        border-left: 0px;
-    }
-}
-
-// Zen Mode Colors
-[data-zen="true"] {
-    atom-pane-container atom-pane .item-views, .tool-bar .btn {
-        background-color: @color !important;
-    }
-}
-
-// Modal Colors
-.modal {
-    background-color: @color !important;
-    border: 1px solid @color-dark;
-    &.from-top {
-        top: 23px;
-    }
-    .event {
-        padding-left: 6px;
-        padding-right: 6px;
-    }
-    .event.selected {
-        background-color: @color-lighter !important;
-    }
-}
-
 // Focus Mode
+@unfocus:     0.5;
+@unfocustitle: 0.7;
+@nearfocus:    0.8;
+@focus:        1;
+
 .tree-view {
     // files focus-mode
     .icon {
-        opacity: 0.4;
+        opacity: @unfocus;
     }
-    // projects  focus-mode
-    .project-root-header .icon {
-        opacity: 0.5;
+    // projects focus-mode
+    .project-root-header .icon, .tree-view-git-status {
+        opacity: @unfocustitle;
     }
     // files on tree-view hover
     &:hover .icon {
-        opacity: 0.4;
-    }
-    // projects on tree-view hover
-    &:hover .icon {
-        opacity: 0.7;
+        opacity: @nearfocus;
     }
     // files and projects on project list hover
-    .entry:hover .icon, .project-root-header:hover .icon, .selected .icon {
-        opacity: 1;
+    .selected .icon, .entry:hover .icon,
+    .project-root-header:hover .icon, .project-root-header:hover .tree-view-git-status {
+        opacity: @focus;
     }
 }
 .tab-bar {
     // tabs focus-mode
     .tab {
-        opacity: 0.4;
+        opacity: @unfocus;
     }
     // tabs on tab-bar hover
     &:hover .tab {
-        opacity: 0.7;
+        opacity: @nearfocus;
     }
     // tabs on tab hover & active tab
     .tab:hover, .tab.active {
-        opacity: 1;
+        opacity: @focus;
     }
 }
 .status-bar {
     .status-bar-left, .status-bar-right {
-        opacity: 0.5;
+        opacity: @unfocustitle;
     }
     &:hover .status-bar-left, &:hover .status-bar-right {
-        opacity: 1;
+        opacity: @focus;
     }
 }
 
 // PlatformIO Terminal Background
 .platformio-ide-terminal .xterm {
     background-color: @syntax-bg;
+}
+
+// TreeView Git Status Fix
+.project-root-header {
+    .name, &.selected .name, .icon, .tree-view-git-status, .branch-label {
+        color: inherit !important;
+    }
 }

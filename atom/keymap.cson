@@ -19,8 +19,12 @@
   'cmd-alt-up':   'editor:move-line-up'
   'ctrl-,':       'editor:toggle-line-comments'
 # Linter
-  'alt->':        'linter:next-message'
-  'alt-<':        'linter:previous-message'
+  'alt->':        'linter-ui-default:next'
+  'alt-<':        'linter-ui-default:previous'
+  'f6':           'linter-ui-default:next'
+  'f5':           'linter-ui-default:previous'
+  'cmd-shift-d':  'pane:split-down-and-copy-active-item'
+  'cmd-d':        'pane:split-right-and-copy-active-item'
 
 # Build & Preview
 'atom-workspace atom-text-editor[data-grammar~="latex"]':

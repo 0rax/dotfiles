@@ -25,8 +25,13 @@
     disabledPackages: [
       "metrics"
       "keybinding-resolver"
+      "tool-bar"
+      "flex-tool-bar"
+      "language-latex"
+      "latex"
+      "latexer"
+      "linter-chktex"
     ]
-    excludeVcsIgnoredPaths: false
     ignoredNames: [
       ".vagrant"
       ".git"
@@ -49,18 +54,16 @@
       "*.toc"
     ]
     packagesWithKeymapsDisabled: [
-      "terminal-plus"
       "flex-tool-bar"
       "blame"
-      "markdown-toc"
     ]
     projectHome: "/home/orax/Projects"
     telemetryConsent: "no"
     themes: [
-      "neutron-ui"
+      "one-dark-ui"
       "base16-syntax"
     ]
-    useCustomTitleBar: true
+    titleBar: "custom"
     warnOnLargeFileLimit: 5
   editor:
     autoIndent: false
@@ -95,12 +98,17 @@
   "go-outline":
     showTests: false
   "go-plus":
+    config:
+      gopath: "/Users/orax/Projects/Go"
     currentPanelHeight: "25vh"
     currentPanelWidth: "24vw"
     disabledBundledPackages: [
       "go-debug"
       "go-signature-statusbar"
     ]
+    panel:
+      currentWidth: "22vw"
+      orientation: "vertical"
     panelDisplayMode: "closed"
     panelOrientation: "vertical"
     showPanelWhenNoIssuesExist: true
@@ -123,6 +131,11 @@
     executableDir: "/Users/orax/Library/Python/3.5/bin/"
   "linter-ui-default":
     gutterPosition: "Left"
+    showPanel: true
+    statusBarRepresents: "Entire Project"
+  "linter-write-good":
+    additionalArgs: "--no-passive"
+    severityLevel: "Warning"
   "markdown-preview":
     liveUpdate: false
     useGitHubStyle: true
@@ -163,9 +176,7 @@
         brightRed: "#f2777a"
         brightWhite: "#f2f0ec"
         brightYellow: "#ffcc66"
-    core:
-      shell: "/usr/bin/env"
-      shellArguments: "fish"
+    core: {}
     iconColors:
       blue: "#6699cc"
       cyan: "#66cccc"
@@ -207,6 +218,9 @@
     visible: false
   "tree-view":
     hideIgnoredNames: true
+  "tree-view-git-status":
+    showCommitsAheadLabel: false
+    showCommitsBehindLabel: false
   "vim-mode-plus":
     automaticallyEscapeInsertModeOnActivePaneItemChange: true
     clearHighlightSearchOnResetNormalMode: true

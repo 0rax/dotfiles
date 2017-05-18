@@ -1,9 +1,6 @@
 [submodule "fish/fishline"]
 	path = fish/plugins/fishline
 	url = https://github.com/0rax/fishline
-[submodule "fish/virtualfish"]
-	path = fish/plugins/virtualfish
-	url = https://github.com/adambrenecki/virtualfish
 [submodule "fish/plugins/fish-bd"]
 	path = fish/plugins/fish-bd
 	url = https://github.com/0rax/fish-bd.git
