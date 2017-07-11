@@ -3,6 +3,4 @@
 ipython         # http://ipython.org/
 virtualenv      # http://virtualenv.readthedocs.org/
 nodeenv         # https://github.com/ekalinin/nodeenv
-httpie          # http://httpie.org/
-http-prompt     # https://github.com/eliangcs/http-prom
 flake8          # https://flake8.readthedocs.org/
