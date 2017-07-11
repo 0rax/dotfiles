@@ -9,8 +9,8 @@
 #    ╱╲
 #   ╱  ╲    0rax's fish-config
 #  ╱╲  ╱╲
-# ╱  ╲╱  ╲  Fish-Shell . v2.3.0
-# ╲  ╱╲  ╱  Fisherman .. v2.10.0
+# ╱  ╲╱  ╲  Fish-Shell . v2.6.0
+# ╲  ╱╲  ╱  
 #  ╲╱  ╲╱   OS Compat .. Linux
 #   ╲  ╱              .. MacOSX
 #    ╲╱

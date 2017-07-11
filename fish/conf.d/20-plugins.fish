@@ -13,9 +13,8 @@ status --is-interactive; or exit
 if test -f "$FISH_PLUGIN_PATH/fishline/init.fish"
 
     set FLINE_PATH "$FISH_PLUGIN_PATH/fishline"
-    source $FLINE_PATH/init.fish
     # set FLINE_PATH "$HOME/Projects/Fish/fishline"
-    # source $FLINE_PATH/init.fish
+    source $FLINE_PATH/init.fish
 
 end
 
@@ -25,10 +24,9 @@ set -gx BD_OPT 'insensitive'
 
 # ---  Plugins/VirtualFish  ----------------------------------------------------
 
-if test -f "$FISH_PLUGIN_PATH/virtualfish/virtualfish/virtual.fish"
+if test -f "/usr/local/lib/python2.7/site-packages/virtualfish/virtual.fish"
 
-    source $FISH_PLUGIN_PATH/virtualfish/virtualfish/virtual.fish
-    emit virtualfish_did_setup_plugins
+    eval (python -m virtualfish)
 
     set -gx VIRTUALFISH_DEFAULT_PYTHON "python3"
     set -gx VIRTUALFISH_HOME           "$HOME/.virtualenvs"
