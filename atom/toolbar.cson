@@ -31,28 +31,9 @@
     type: "button"
     icon: "code"
     callback: [
-      "go-debug:toggle-panel"
+      "golang:toggle-panel"
     ]
     show: "go"
-  }
-  {
-    type: "spacer"
-  }
-  {
-    type: "button"
-    icon: "play"
-    iconset: "ion"
-    callback: [
-      "script:run"
-    ]
-  }
-  {
-    type: "button"
-    icon: "stop"
-    iconset: "ion"
-    callback: [
-      "script:kill-process"
-    ]
   }
   {
     type: "spacer"
@@ -153,7 +134,7 @@
     type: "button"
     icon: "cogs"
     callback: "settings-view:open"
-    tooltip: "pen Settings View"
+    tooltip: "Settings View"
     iconset: "fa"
   }
 ]

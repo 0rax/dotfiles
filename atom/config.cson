@@ -25,8 +25,6 @@
     disabledPackages: [
       "metrics"
       "keybinding-resolver"
-      "tool-bar"
-      "flex-tool-bar"
       "language-latex"
       "latex"
       "latexer"
@@ -85,7 +83,6 @@
   "file-icons":
     coloured: false
   "flex-tool-bar":
-    reloadToolBarWhenEditConfigFile: false
     showConfigButton: false
   "git-projects":
     ignoredPath: "/Users/orax/Projects/Go/;/Users/orax/Projects/GHSave;/Users/orax/Projects/BBSave;/Users/orax/Projects/Old"
@@ -107,11 +104,11 @@
       "go-signature-statusbar"
     ]
     panel:
-      currentWidth: "22vw"
-      orientation: "vertical"
+      currentHeight: "20vh"
+      displayMode: "closed"
     panelDisplayMode: "closed"
     panelOrientation: "vertical"
-    showPanelWhenNoIssuesExist: true
+    showPanelWhenNoIssuesExist: false
   gofmt:
     formatTool: "goreturns"
   "highlight-column":
@@ -122,6 +119,7 @@
     alwaysOpenResultInAtom: true
     enableShellEscape: true
     enableSynctex: false
+  linter: {}
   "linter-chktex":
     executablePath: "/Library/TeX/texbin/chktex"
   "linter-clang":
@@ -131,6 +129,8 @@
     executableDir: "/Users/orax/Library/Python/3.5/bin/"
   "linter-ui-default":
     gutterPosition: "Left"
+    hidePanelWhenEmpty: true
+    panelHeight: 67
     showPanel: true
     statusBarRepresents: "Entire Project"
   "linter-write-good":
@@ -153,6 +153,8 @@
       linterDecorationsZIndex: 0
       selection: true
       selectionDecorationsZIndex: 0
+  "one-dark-ui":
+    tabSizing: "Maximum"
   "pdf-view":
     enableSyncTeX: false
   pigments: {}
@@ -215,7 +217,6 @@
   "tool-bar":
     iconSize: "16px"
     position: "Left"
-    visible: false
   "tree-view":
     hideIgnoredNames: true
   "tree-view-git-status":
@@ -295,6 +296,9 @@
 ".latex.tex.text":
   editor:
     tabLength: 4
+".lua.source":
+  editor:
+    tabLength: 2
 ".makefile.source":
   editor:
     tabLength: 8
