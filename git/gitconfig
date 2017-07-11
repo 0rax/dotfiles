@@ -1,6 +1,14 @@
-# Import private settings such as [user]
-[include]
-    path = ~/.gitconfig_private
+# Git Commiter information
+[user]
+    name = Jean-Philippe Roemer
+    email = jp@roemer.im
+    signingkey = 6FF4678C
+
+# GPG Integration configuration
+[commit]
+    gpgsign = true
+[gpg]
+    program = /usr/local/bin/gpg2
 
 # Git base config
 [core]
