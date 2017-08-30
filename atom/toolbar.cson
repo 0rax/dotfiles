@@ -23,7 +23,7 @@
     type: "button"
     icon: "markdown"
     callback: [
-      "markdown-preview:toggle"
+      "markdown-preview-plus:toggle"
     ]
     show: "markdown"
   }
@@ -101,7 +101,8 @@
     icon: "leaf"
     iconset: "ion"
     callback: [
-      "zen:toggle"
+      # "zen:toggle"
+      "vim-mode-plus:maximize-pane"
     ]
   }
   {

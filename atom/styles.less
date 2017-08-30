@@ -1,3 +1,17 @@
+// ================================ Colors ================================== //
+
+// Base16 Ocean
+// @background-pane: #252932;
+// @syntax-bg:       #2b303b;
+// @root-header:     #2B303B;
+// @root-header-cur: lighten(@root-header, 2%);
+
+// Base16 OceanicNext
+@syntax-bg:       #1b2b34;
+@background-pane: darken(@syntax-bg, 2%);
+@root-header:     @syntax-bg;
+@root-header-cur: lighten(@root-header, 5%);
+
 // =========================== General UI Tweaks ============================ //
 
 // Font Size
@@ -25,7 +39,7 @@ atom-text-editor.editor .horizontal-scrollbar {
 }
 // Fix weird color bug
 .item-views {
-    background-color: #252932;
+    background-color: @background-pane;
 }
 
 // ======================== Highlight Line & Collumn ======================== //
@@ -38,18 +52,15 @@ atom-text-editor.editor {
 
 // ============================ One Dark Tweaks ============================= //
 
-// Colors
-@background-pane: #252932;
-
 // Project Header in different color
 .project-root.directory.entry:before {
-    background-color: #2B303B;
+    background-color: @root-header;
     left: 0;
     right: 0;
     border-top: 0px !important;
 }
 .project-root.directory.entry.selected:before {
-    background-color: lighten(#2B303B, 2%);
+    background-color: @root-header-cur;
     left: 0;
     right: 0;
     border-top: 0px !important;
@@ -60,12 +71,10 @@ atom-text-editor.editor {
     .status-bar-right .inline-block {
         margin-left: 8px;
         margin-right: 0px;
-
     }
     .status-bar-left .inline-block {
         margin-left: 0px;
         margin-right: 8px;
-
     }
 }
 
@@ -76,7 +85,7 @@ atom-text-editor-minimap {
 
 // ========================= Vim Mode Plus Modeline ========================= //
 
-#status-bar-vim-mode-plus-container {
+#status-bar-vim-mode-plus {
     width: 20px;
     height: 20px;
     line-height: 20px;
@@ -103,18 +112,14 @@ atom-text-editor-minimap {
     }
 }
 
-// ================================ Zen Mode ================================ //
+// ========================= Vim-Mode-Plus Zen Mode ========================= //
 
-// Zen Background Color
-[data-zen="true"] {
+atom-workspace.vim-mode-plus--pane-maximized {
+    // Zen Background Color
     atom-pane-container atom-pane .item-views, .tool-bar .btn {
         background-color: @background-pane !important;
     }
-}
-
-// Deactivate some plugin view when in Zen mode
-[data-zen="true"] {
-    // Hide everything but Zen button in Zen Mode
+    // Hide everything but Zen button in tool-bar
     .tool-bar {
         .tool-bar-btn {
             display: none;
@@ -125,20 +130,24 @@ atom-text-editor-minimap {
         .tool-bar-spacer {
             display: none;
         }
-        border-right: 0;
-        position: absolute;
-        top: 0;
-        left: 0;
-        float: left;
-        z-index: 1;
-        background-color: transparent !important;
+    }
+    // Center editor + hide tool-bar background
+    &.vim-mode-plus--pane-centered {
+        atom-text-editor {
+            width: 50%;
+            margin: auto;
+            min-width: 900px;
+        }
+        .tool-bar {
+            background-color: @background-pane !important;
+        }
+        .tool-panel {
+            border-right: 0;
+        }
     }
 }
 
 // ================================ Focus Mode ============================== //
-
-// Colors
-@syntax-bg:       #2b303b;
 
 // Focus Mode
 @unfocus:     0.5;

@@ -1,23 +1,19 @@
 "*":
-  Zen:
-    fullscreen: false
-    showWordCount: "Right"
-    width: 100
-  "accents-ui":
-    accentColor: "#6398cc"
-    hexColor: "#6398cc"
-    useSyntax: false
   "autocomplete-python":
     useKite: false
+    useSnippets: "required"
   autosave:
     enabled: true
   "base16-syntax":
-    scheme: "Ocean"
+    scheme: "OceanicNext"
   blame: {}
   core:
     autoHideMenuBar: true
     automaticallyUpdate: false
     customFileTypes:
+      "source.gotemplate": [
+        "tmpl"
+      ]
       "source.shell": [
         "APKBUILD"
         "functions"
@@ -29,6 +25,8 @@
       "latex"
       "latexer"
       "linter-chktex"
+      "language-gfm"
+      "markdown-preview"
     ]
     ignoredNames: [
       ".vagrant"
@@ -72,12 +70,6 @@
     softWrap: true
     tabLength: 4
     tabType: "soft"
-  "env-from-shell":
-    autoRun: true
-    variables: [
-      "PATH"
-      "GOPATH"
-    ]
   "exception-reporting":
     userId: "531ef7d2-ff19-b6eb-2128-6183c169ebf1"
   "file-icons":
@@ -85,30 +77,23 @@
   "flex-tool-bar":
     showConfigButton: false
   "git-projects":
-    ignoredPath: "/Users/orax/Projects/Go/;/Users/orax/Projects/GHSave;/Users/orax/Projects/BBSave;/Users/orax/Projects/Old"
+    ignoredPath: "/Users/orax/Projects/Go/;/Users/orax/Projects/_deprecated;/Users/orax/Projects/Old"
     maxDepth: 3
     rootPath: "/Users/orax/Projects"
   "go-config":
     gopath: "/Users/orax/Projects/Go"
-  "go-debug":
-    limitCommandsToGo: true
   "go-outline":
     showTests: false
   "go-plus":
-    config:
-      gopath: "/Users/orax/Projects/Go"
-    currentPanelHeight: "25vh"
-    currentPanelWidth: "24vw"
     disabledBundledPackages: [
       "go-debug"
-      "go-signature-statusbar"
     ]
     panel:
       currentHeight: "20vh"
       displayMode: "closed"
-    panelDisplayMode: "closed"
-    panelOrientation: "vertical"
-    showPanelWhenNoIssuesExist: false
+      maxHeight: "30vh"
+      maxWidth: "25vw"
+      minHeight: "15vw"
   gofmt:
     formatTool: "goreturns"
   "highlight-column":
@@ -127,19 +112,19 @@
     clangDefaultCppFlags: "-Wall -std=c++11 -fsytanx-only"
   "linter-flake8":
     executableDir: "/Users/orax/Library/Python/3.5/bin/"
+    ignoreErrorCodes: [
+      "E501"
+    ]
   "linter-ui-default":
     gutterPosition: "Left"
     hidePanelWhenEmpty: true
-    panelHeight: 67
-    showPanel: true
+    panelHeight: 300
     statusBarRepresents: "Entire Project"
-  "linter-write-good":
-    additionalArgs: "--no-passive"
-    severityLevel: "Warning"
-  "markdown-preview":
+  "markdown-preview-plus":
     liveUpdate: false
     useGitHubStyle: true
   minimap:
+    disablePythonDocLinks: true
     plugins:
       bookmarks: true
       bookmarksDecorationsZIndex: 0
@@ -157,7 +142,6 @@
     tabSizing: "Maximum"
   "pdf-view":
     enableSyncTeX: false
-  pigments: {}
   "platformio-ide-terminal":
     ansiColors:
       normal:
@@ -196,8 +180,6 @@
       fontSize: "12"
     toggles:
       autoClose: true
-  "project-plus":
-    projectHome: "/Users/orax/Projects"
   "spell-check":
     grammars: [
       "source.asciidoc"
@@ -207,6 +189,7 @@
       "text.plain.null-grammar"
       "text.tex.latex"
       "text.html.basic"
+      "text.md"
     ]
   "status-bar": {}
   "todo-show":
@@ -246,11 +229,6 @@
       "latex"
     ]
     goalLineHeight: "0%"
-  zentabs:
-    maximumOpenedTabs: 10
-    neverCloseDirty: true
-    neverCloseNew: true
-    neverCloseUnsaved: true
 ".basic.html.text":
   editor:
     tabLength: 2
@@ -281,6 +259,9 @@
 ".gfm.source":
   editor:
     tabLength: 4
+".gotemplate.source":
+  editor:
+    tabLength: 2
 ".html.text.vue":
   editor:
     tabLength: 4

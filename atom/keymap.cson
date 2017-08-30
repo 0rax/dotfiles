@@ -23,12 +23,10 @@
   'alt-<':        'linter-ui-default:previous'
   'f6':           'linter-ui-default:next'
   'f5':           'linter-ui-default:previous'
-  'cmd-shift-d':  'pane:split-down-and-copy-active-item'
-  'cmd-d':        'pane:split-right-and-copy-active-item'
 
 # Build & Preview
 'atom-workspace atom-text-editor[data-grammar~="latex"]':
   'ctrl-shift-m': 'latex:build'
   'ctrl-alt-b':   'editor:move-to-previous-subword-boundary'
 'atom-workspace atom-text-editor[data-grammar~="gfm"]':
-  'ctrl-shift-m': 'markdown-preview:toggle'
+  'ctrl-shift-m': 'markdown-preview-plus:toggle'

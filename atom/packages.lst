@@ -1,5 +1,4 @@
 Sublime-Style-Column-Selection
-Zen
 autocomplete-clang
 autocomplete-python
 base16-syntax
@@ -11,6 +10,7 @@ flex-tool-bar
 git-blame
 git-projects
 go-plus
+go-signature-statusbar
 highlight-bad-chars
 highlight-column
 highlight-line
@@ -23,6 +23,7 @@ language-fish-shell
 language-ini
 language-latex
 language-lua
+language-markdown
 language-nginx
 language-patch
 language-protobuf
@@ -35,6 +36,7 @@ linter-flake8
 linter-json-lint
 linter-shellcheck
 linter-ui-default
+markdown-preview-plus
 minimap
 minimap-bookmarks
 minimap-git-diff
