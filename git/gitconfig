@@ -1,82 +1,84 @@
 # Git Commiter information
 [user]
-    name = Jean-Philippe Roemer
-    email = jp@roemer.im
-    signingkey = 6FF4678C
+	name = Jean-Philippe Roemer
+	email = jp@roemer.im
+	signingkey = 6FF4678C
 
 # GPG Integration configuration
 [commit]
-    gpgsign = true
+	gpgsign = true
 [gpg]
-    program = /usr/local/bin/gpg2
+	program = /usr/local/bin/gpg
 
 # Git base config
 [core]
-    excludesfile = /Users/orax/.gitignore_global
+	excludesfile = /Users/orax/.gitignore_global
 [push]
-    default = current
+	default = current
 [rebase]
-    autostash = true
-    autosquash = true
+	autostash = true
+	autosquash = true
 
 # Git remote rewriting
 [url "git@github.com:"]
-    insteadOf = https://github.com/
+	insteadOf = https://github.com/
 [url "git@bitbucket.org:"]
-    insteadOf = https://bitbucket.org/
+	insteadOf = https://bitbucket.org/
 
 # Git alias
 [alias]
-    # git management
-    co = checkout
-    # git commit
-    ci = commit
-    fc = commit --amend
-    edit = commit --amend
-    ic = add -p
-    # git branch
-    fresh-branch = checkout --orphan
-    # git search
-    gg = grep --break --heading -n
-    # git diff
-    wdiff = diff --word-diff
-    # git ingo
-    st = status
-    info = remote show origin
-    size = count-objects -vH
-    unpushed = log --stat origin/master..HEAD
-    root = rev-parse --show-toplevel
-    # https://blog.filippo.io/git-fixup-amending-an-older-commit/
-    fixup = "!f() { TARGET=$(git rev-parse "$1"); git commit --fixup=$TARGET ${@:2} && EDITOR=true git rebase -i --autostash --autosquash $TARGET^; }; f"
-    # git logs
-    file = log --pretty=oneline --shortstat --abbrev-commit
-    alog = log --graph --abbrev-commit --decorate --date=relative --format=prettylog --all
-    sdlog = log --graph --abbrev-commit --decorate --date=relative --shortstat --no-color --all
-    slog = log --graph --abbrev-commit --decorate --date=relative --format=prettylog --shortstat -10
-    flog = log --graph --abbrev-commit --decorate --date=relative --color --stat --show-signature -10
+	# git info
+	st = status
+	info = remote show origin
+	size = count-objects -vH
+	unpushed = log --stat origin/master..HEAD
+	root = rev-parse --show-toplevel
+	# git management
+	co = checkout
+	cb = checkout -b
+	fa = fetch --all
+	# git commit
+	ci = commit
+	edit = commit --amend
+	ic = add -p
+	# git branch
+	fresh-branch = checkout --orphan
+	# git search
+	gg = grep --break --heading -n
+	# git diff
+    sdiff = diff --staged
+	wdiff = diff --word-diff
+	# https://blog.filippo.io/git-fixup-amending-an-older-commit/
+	fixup = "!f() { TARGET=$(git rev-parse "$1"); git commit --fixup=$TARGET ${@:2} && EDITOR=true git rebase -i --autostash --autosquash $TARGET^; }; f"
+	# git logs
+	file = log --pretty=oneline --shortstat --abbrev-commit
+	alog = log --graph --abbrev-commit --decorate --date=relative --format=prettylog --all
+	sdlog = log --graph --abbrev-commit --decorate --date=relative --shortstat --no-color --all
+	slog = log --graph --abbrev-commit --decorate --date=relative --format=prettylog --shortstat -10
+	flog = log --graph --abbrev-commit --decorate --date=relative --color --stat --show-signature -10
 
 # Git color
 [color]
-    ui = auto
+	ui = auto
 [color "branch"]
-    current = yellow reverse
-    local = yellow
-    remote = green
+	current = yellow reverse
+	local = yellow
+	remote = green
 [color "diff"]
-    meta = yellow bold
-    frag = magenta bold
-    old = red bold
-    new = green bold
+	meta = yellow bold
+	frag = magenta bold
+	old = red bold
+	new = green bold
 [color "status"]
-    added = yellow
-    changed = green
-    untracked = cyan
+	added = yellow
+	changed = green
+	untracked = cyan
 [pretty]
-    prettylog = %C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(magenta bold)[%G?]%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)
+	prettylog = %C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(magenta bold)[%G?]%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)
 
 # Git LFS
 [filter "lfs"]
-    process = git-lfs filter-process
-    required = true
-    clean = git-lfs clean -- %f
-    smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
