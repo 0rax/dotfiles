@@ -26,7 +26,7 @@ set -gx BD_OPT 'insensitive'
 
 if test -f "/usr/local/lib/python2.7/site-packages/virtualfish/virtual.fish"
 
-    eval (python -m virtualfish)
+    eval (/usr/local/bin/python2 -m virtualfish)
 
     set -gx VIRTUALFISH_DEFAULT_PYTHON "python3"
     set -gx VIRTUALFISH_HOME           "$HOME/.virtualenvs"
