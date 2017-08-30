@@ -22,9 +22,11 @@ tap "caskroom/versions"           # https://github.com/caskroom/homebrew-version
 tap "caskroom/drivers"            # https://github.com/caskroom/homebrew-drivers
 tap "buo/cask-upgrade"            # https://github.com/buo/homebrew-cask-upgrade
 tap "mickep76/funk-gnarge"        # https://github.com/mickep76/homebrew-funk-gnarge
+tap "scaleway/scaleway"           # https://github.com/scaleway/homebrew-scaleway
 
 ### Aliases
-# brew alias 'fu=!brew upgrade;brew cu -a;brew cleanup;brew cask cleanup'
+# brew alias fc='cleanup; brew cask cleanup'
+# brew alias fu='update; brew upgrade; brew cu -a'
 
 ### Brews
 # Shells
@@ -81,16 +83,17 @@ brew "rancher-compose"            # https://github.com/rancher/rancher-compose
 brew "etcdtool"                   # https://github.com/mickep76/etcdtool
 brew "wrk"                        # https://github.com/wg/wrk
 brew "httpie"                     # https://httpie.org/
+brew "scw"                        # https://github.com/scaleway/scaleway-cli
 # Other
 brew "asciinema"                  # https://asciinema.org/
 brew "android-platform-tools"     # https://developer.android.com/sdk
 brew "pandoc"                     # http://pandoc.org
 brew "micro"                      # ? # https://github.com/zyedidia/micro
-brew "speedtest_cli"              # https://github.com/sivel/speedtest-cli
+brew "speedtest-cli"              # https://github.com/sivel/speedtest-cli
 brew "vbindiff"                   # https://www.cjmweb.net/vbindiff/
 brew "jq"                         # https://stedolan.github.io/jq/
-brew "ack"                        # http://beyondgrep.com/
-brew "pt"                         # https://github.com/monochromegane/the_platinum_searcher
+brew "ripgrep"                    # https://github.com/BurntSushi/ripgrep
+brew "aria2"                      # https://aria2.github.io/
 # Brew & Cask utils
 brew "vitorgalvao/tiny-scripts/cask-repair" # https://github.com/caskroom/homebrew-cask/blob/master/CONTRIBUTING.md#updating-a-cask
 
@@ -183,6 +186,8 @@ cask "logitech-options"           # http://support.logitech.com/en_us/product/wi
 # grpcc                           # npm install -g grpcc
 # ForkLift2                       # http://www.binarynights.com/
 # Drone CLI                       # http://readme.drone.io/0.5/install/cli/
+
+cask "mist"
 
 ## Keyboard shortcut
 # CTRL+CMD+left : Desktop left
