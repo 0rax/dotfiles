@@ -17,3 +17,7 @@ if caffeine then
     caffeine:setClickCallback(caffeineClicked)
     setCaffeineDisplay(hs.caffeinate.get("displayIdle"))
 end
+
+-- Bindings
+
+hs.hotkey.bind({"alt"}, "l",  hs.caffeinate.lockScreen)
