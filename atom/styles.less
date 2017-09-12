@@ -20,14 +20,11 @@ html, body, .tree-view, .status-bar,
 .settings-view .setting-description, .form-control {
     font-size: 13px;
 }
-// Disable Editor Scrollbar
-atom-text-editor .vertical-scrollbar,
-atom-text-editor.editor .vertical-scrollbar,
-atom-text-editor .horizontal-scrollbar,
-atom-text-editor.editor .horizontal-scrollbar {
-    opacity: 0;
-    width: 0;
+// Disable Scrollbars
+::-webkit-scrollbar {
+    display: none;
 }
+
 // Hide Deprecation Warning Text
 .status-bar .deprecation-cop-status.text-warning {
     font-size: 0px;

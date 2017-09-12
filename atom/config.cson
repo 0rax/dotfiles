@@ -1,4 +1,6 @@
 "*":
+  "atom-spotify2":
+    displayOnLeftSide: false
   "autocomplete-python":
     useKite: false
     useSnippets: "required"
