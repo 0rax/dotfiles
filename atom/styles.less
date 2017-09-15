@@ -60,6 +60,15 @@ atom-workspace ::-webkit-scrollbar {
         opacity: 1;
     }
 }
+// Fix linter status icon in Status Bar
+.linter-status-count .icon::before {
+    font-size: 15px;
+    width: 15px;
+    height: 15px;
+    position: relative;
+    top: -1px;
+    margin-right: 0px;
+}
 
 // ======================== Highlight Line & Collumn ======================== //
 

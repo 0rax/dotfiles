@@ -31,6 +31,7 @@
       "markdown-preview"
       "spell-check"
       "atom-ide-ui"
+      "linter-spell-latex"
     ]
     ignoredNames: [
       ".vagrant"
@@ -80,10 +81,6 @@
     coloured: false
   "flex-tool-bar":
     showConfigButton: false
-  "git-projects":
-    ignoredPath: "/Users/orax/Projects/Go/;/Users/orax/Projects/_deprecated;/Users/orax/Projects/Old"
-    maxDepth: 3
-    rootPath: "/Users/orax/Projects"
   "go-config":
     gopath: "/Users/orax/Projects/Go"
   "go-outline":
@@ -103,7 +100,7 @@
   "highlight-column":
     opacity: 1
   "highlight-line":
-    hideHighlightOnSelect: true
+    hideHighlightOnSelect: false
   latex:
     alwaysOpenResultInAtom: true
     enableShellEscape: true
@@ -125,11 +122,11 @@
     gutterPosition: "Left"
     hidePanelWhenEmpty: true
     panelHeight: 300
-    showPanel: false
     statusBarRepresents: "Entire Project"
   "markdown-preview-plus":
     liveUpdate: false
     useGitHubStyle: true
+  "markdown-table-editor": {}
   minimap:
     disablePythonDocLinks: true
     plugins:

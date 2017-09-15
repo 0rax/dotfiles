@@ -50,17 +50,9 @@
   }
   {
     type: "button"
-    icon: "android-bookmark"
-    iconset: "ion"
-    callback: [
-      "application:add-project-folder"
-    ]
-  }
-  {
-    type: "button"
     icon: "repo"
     callback: [
-      "git-projects:toggle-add"
+      "application:add-project-folder"
     ]
   }
   {
