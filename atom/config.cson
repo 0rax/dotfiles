@@ -29,6 +29,8 @@
       "linter-chktex"
       "language-gfm"
       "markdown-preview"
+      "spell-check"
+      "atom-ide-ui"
     ]
     ignoredNames: [
       ".vagrant"
@@ -117,10 +119,13 @@
     ignoreErrorCodes: [
       "E501"
     ]
+  "linter-spell":
+    spellPath: "/usr/local/bin/aspell"
   "linter-ui-default":
     gutterPosition: "Left"
     hidePanelWhenEmpty: true
     panelHeight: 300
+    showPanel: false
     statusBarRepresents: "Entire Project"
   "markdown-preview-plus":
     liveUpdate: false

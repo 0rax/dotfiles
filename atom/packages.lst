@@ -1,4 +1,5 @@
 Sublime-Style-Column-Selection
+atom-ide-ui
 atom-spotify2
 autocomplete-clang
 autocomplete-python
@@ -36,6 +37,7 @@ linter-clang
 linter-flake8
 linter-json-lint
 linter-shellcheck
+linter-spell
 linter-ui-default
 markdown-preview-plus
 minimap
@@ -47,6 +49,7 @@ minimap-selection
 pdf-view
 platformio-ide-terminal
 pretty-json
+python-indent
 sort-lines
 ssh-config
 tablr

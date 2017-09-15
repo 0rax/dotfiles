@@ -1,117 +1,174 @@
-// ================================ Colors ================================== //
+// ======================= Configuration  Variables ========================= //
 
-// Base16 Ocean
-// @background-pane: #252932;
-// @syntax-bg:       #2b303b;
-// @root-header:     #2B303B;
-// @root-header-cur: lighten(@root-header, 2%);
+// Import base16
+@base16-scheme: 'oceanicnext';
+@base16-style: 'dark';
+@import 'schemes/@{base16-scheme}';
+@import 'syntax-variables-@{base16-style}';
 
-// Base16 OceanicNext
-@syntax-bg:       #1b2b34;
-@background-pane: darken(@syntax-bg, 2%);
-@root-header:     @syntax-bg;
-@root-header-cur: lighten(@root-header, 5%);
+// UI Background Colors
+@background-pane:  darken(@syntax-background-color, 3%); // level-3-color
+@gutter-pane:      lighten(@background-pane, 1%);        // bg lighter
+@cursor-ruler:     fade(@syntax-cursor-color, 15%);      // cursor faded
+
+// UI Foreground Colors
+@line-number:      @base16-color-base03; // syntax-comment
+
+// Focus Mode
+@unfocus:          0.6;
+@unfocustitle:     0.8;
+@focus:            1;
+@focus-text-color: @base16-color-base06; // text-color-highlight
+
+// Font Size
+@ui-font:          12px;
+@title-font:       13px;
+@editor-font:      14px;
+
+// Vim Mode Colors
+@vim-mode-text:    @background-pane;
+@vim-mode-normal:  @base16-color-base0A;;
+@vim-mode-insert:  @base16-color-base0B;
+@vim-mode-visual:  @base16-color-base08;
+@vim-mode-pending: @base16-color-base0E;
 
 // =========================== General UI Tweaks ============================ //
 
-// Font Size
+// UI Font Size
 html, body, .tree-view, .status-bar,
 .tab-bar .tab, .settings-view .settings-panel label,
 .settings-view .setting-description, .form-control {
-    font-size: 13px;
+    font-size: @ui-font;
+}
+// TabBar Font Size
+.tab-bar {
+    font-size: @title-font;
+    .tab { font-size: inherit; }
+}
+// Editor Font Size
+atom-text-editor {
+    font-size: @editor-font;
 }
 // Disable Scrollbars
-::-webkit-scrollbar {
+atom-workspace ::-webkit-scrollbar {
     display: none;
 }
-
-// Hide Deprecation Warning Text
-.status-bar .deprecation-cop-status.text-warning {
-    font-size: 0px;
-    color: inherit;
-    line-height: 0px;
-    position: relative;
-    top: 7px;
-    margin-left: 8px;
-}
-// Fix weird color bug
-.item-views {
-    background-color: @background-pane;
+// Reset line number opacity
+.gutter .line-number {
+    color: @line-number;
+    &.cursor-line-no-selection {
+        opacity: 1;
+    }
 }
 
 // ======================== Highlight Line & Collumn ======================== //
 
-atom-text-editor.editor {
-    .line.highlight-line, .highlight-column, .line-number.cursor-line {
-        background: fade(#fff, 10%) !important;
-    }
+atom-text-editor .line.highlight-line, .highlight-column, .line-number.cursor-line {
+    background: @cursor-ruler !important;
+}
+
+// ========================== PlatformIO  Terminal ========================== //
+
+.platformio-ide-terminal .xterm {
+    background-color: @syntax-background-color;
 }
 
 // ============================ One Dark Tweaks ============================= //
 
-// Project Header in different color
-.project-root.directory.entry:before {
-    background-color: @root-header;
-    left: 0;
-    right: 0;
-    border-top: 0px !important;
-}
-.project-root.directory.entry.selected:before {
-    background-color: @root-header-cur;
-    left: 0;
-    right: 0;
-    border-top: 0px !important;
-}
-
-// Less space between icon in status bar
-.status-bar {
-    .status-bar-right .inline-block {
-        margin-left: 8px;
-        margin-right: 0px;
+.theme-one-dark-ui {
+    .tree-view {
+        // Project Header in different color
+        .project-root.directory.entry:before {
+            left: 0;
+            right: 0;
+            border-top: 0px !important;
+            background-color: lighten(@background-pane, 3%);
+        }
+        // Selected color setup accordingly
+        .entry.selected:before, .project-root.directory.entry.selected:before {
+            background-color: lighten(@background-pane, 5%);
+        }
     }
-    .status-bar-left .inline-block {
-        margin-left: 0px;
-        margin-right: 8px;
+    // Minimap & Gutter background color
+    atom-text-editor-minimap, atom-text-editor .gutter {
+        background-color: @gutter-pane;
     }
-}
-
-// Minimap background color
-atom-text-editor-minimap {
-    background-color: @background-pane;
+    // Force tool-panel background color
+    .tool-panel {
+        background-color: @background-pane;
+    }
+    // Less space between element in status bar
+    .status-bar .inline-block{
+        padding: 0 0.6em;
+    }
+    // Tree view folder and file indicator from pristine-ui
+    // https://github.com/cdonohue/pristine-ui/blob/v1.1.8/styles/tree-view.lesso
+    .tree-view:not(.nuclide-file-tree) {
+        .selected:before {
+            position: absolute;
+            margin-left: -100%;
+            margin-right: -10px;
+            z-index: -1;
+        }
+        .list-item + .list-tree {
+            position: relative;
+            &:before {
+                content: '';
+                position: absolute;
+                min-width: 1px;
+                display: block;
+                top: 0;
+                bottom: 0;
+                left: 5px;
+                background: rgba(255, 255, 255, .12);
+            }
+        }
+        .list-item.file.entry {
+            &:after {
+                opacity: .25;
+                font-family: "Octicons Regular";
+                content: "\f052";
+                position: relative;
+                font-size: 4px;
+                float: left;
+                top: 1px;
+                left: -12.5px;
+                width: 6px;
+                margin-right: -8px;
+            }
+            &[class^="status-"], &[class*="status-"] {
+                &:after {
+                    opacity: .50;
+                }
+            }
+        }
+    }
 }
 
 // ========================= Vim Mode Plus Modeline ========================= //
 
 #status-bar-vim-mode-plus {
-    width: 20px;
-    height: 20px;
-    line-height: 20px;
-    font-size: 12px;
-    border-radius: 4px;
+    width: 30px;
     text-align: center;
-    margin-top: 6px;
-
-    .status-bar-vim-mode-plus-insert {
-        background-color: #99cc99;
-        color: #2d2d2d;
-    }
+    padding: 0px;
+    color: @vim-mode-text;
     .status-bar-vim-mode-plus-normal {
-        background-color: #ffcc66;
-        color: #2d2d2d;
+        background-color: @vim-mode-normal;
+    }
+    .status-bar-vim-mode-plus-insert {
+        background-color: @vim-mode-insert;
     }
     .status-bar-vim-mode-plus-visual {
-        background-color: #f2777a;
-        color: #2d2d2d;
+        background-color: @vim-mode-visual;
     }
     .status-bar-vim-mode-plus-operator-pending {
-        background-color: #f99157;
-        color: #2d2d2d;
+        background-color: @vim-mode-pending;
     }
 }
 
 // ========================= Vim-Mode-Plus Zen Mode ========================= //
 
-atom-workspace.vim-mode-plus--pane-maximized {
+.vim-mode-plus--pane-maximized {
     // Zen Background Color
     atom-pane-container atom-pane .item-views, .tool-bar .btn {
         background-color: @background-pane !important;
@@ -130,9 +187,9 @@ atom-workspace.vim-mode-plus--pane-maximized {
     }
     // Center editor + hide tool-bar background
     &.vim-mode-plus--pane-centered {
-        atom-text-editor {
-            width: 50%;
-            margin: auto;
+        atom-text-editor:not(.mini) {
+            width: 30%;
+            margin: auto !important;
             min-width: 900px;
         }
         .tool-bar {
@@ -146,12 +203,6 @@ atom-workspace.vim-mode-plus--pane-maximized {
 
 // ================================ Focus Mode ============================== //
 
-// Focus Mode
-@unfocus:     0.5;
-@unfocustitle: 0.7;
-@nearfocus:    0.8;
-@focus:        1;
-
 .tree-view {
     // files focus-mode
     .icon {
@@ -161,29 +212,29 @@ atom-workspace.vim-mode-plus--pane-maximized {
     .project-root-header .icon, .tree-view-git-status {
         opacity: @unfocustitle;
     }
-    // files on tree-view hover
-    &:hover .icon {
-        opacity: @nearfocus;
-    }
     // files and projects on project list hover
     .selected .icon, .entry:hover .icon,
     .project-root-header:hover .icon, .project-root-header:hover .tree-view-git-status {
         opacity: @focus;
     }
+    // text highlight on entry hover
+    .list-item:hover {
+        color: @focus-text-color !important;
+    }
 }
 .tab-bar {
     // tabs focus-mode
     .tab {
-        opacity: @unfocus;
+        opacity: @unfocustitle;
     }
-    // tabs on tab-bar hover
-    &:hover .tab {
-        opacity: @nearfocus;
-    }
-    // tabs on tab hover & active tab
-    .tab:hover, .tab.active {
+    // tabs on hover & active tab
+    &:hover .tab, .tab.active {
         opacity: @focus;
     }
+    // text highlight on tab hover
+    .tab:hover {
+       color: @focus-text-color !important;
+   }
 }
 .status-bar {
     .status-bar-left, .status-bar-right {
@@ -191,17 +242,5 @@ atom-workspace.vim-mode-plus--pane-maximized {
     }
     &:hover .status-bar-left, &:hover .status-bar-right {
         opacity: @focus;
-    }
-}
-
-// PlatformIO Terminal Background
-.platformio-ide-terminal .xterm {
-    background-color: @syntax-bg;
-}
-
-// TreeView Git Status Fix
-.project-root-header {
-    .name, &.selected .name, .icon, .tree-view-git-status, .branch-label {
-        color: inherit !important;
     }
 }
