@@ -129,6 +129,7 @@
   "markdown-table-editor": {}
   minimap:
     disablePythonDocLinks: true
+    displayPluginsControls: false
     plugins:
       bookmarks: true
       bookmarksDecorationsZIndex: 0
@@ -142,6 +143,13 @@
       linterDecorationsZIndex: 0
       selection: true
       selectionDecorationsZIndex: 0
+  "minimap-git-diff":
+    useGutterDecoration: true
+  "minimap-linter":
+    markerType: "highlight-under"
+  "minimap-selection":
+    highlightCursorsLines: true
+    outlineSelection: true
   "one-dark-ui":
     tabSizing: "Maximum"
   "pdf-view":

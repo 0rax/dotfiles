@@ -15,9 +15,9 @@
 @line-number:      @base16-color-base03; // syntax-comment
 
 // Focus Mode
-@unfocus:          0.6;
-@unfocustitle:     0.8;
-@focus:            1;
+@unfocus:          0.70;
+@unfocustitle:     0.85;
+@focus:            1.00;
 @focus-text-color: @base16-color-base06; // text-color-highlight
 
 // Font Size
@@ -197,7 +197,7 @@ atom-text-editor .line.highlight-line, .highlight-column, .line-number.cursor-li
     // Center editor + hide tool-bar background
     &.vim-mode-plus--pane-centered {
         atom-text-editor:not(.mini) {
-            width: 30%;
+            width: 50%;
             margin: auto !important;
             min-width: 900px;
         }
@@ -207,6 +207,9 @@ atom-text-editor .line.highlight-line, .highlight-column, .line-number.cursor-li
         .tool-panel {
             border-right: 0;
         }
+    }
+    .vim-mode-plus--active-pane .item-views {
+        background-color: @background-pane !important;
     }
 }
 
