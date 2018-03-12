@@ -23,14 +23,14 @@ end
 # ---  Programming/Python [MacOSX]  --------------------------------------------
 
 # Set default python binary version to python3.5
-if test -d $HOME/Library/Python/3.5/bin
+if test -x /usr/local/opt/python3/bin/python3
     # Add local Python 3 path on OS X
-   set -gx PATH $PATH $HOME/Library/Python/3.5/bin
+   set -gx PATH /usr/local/opt/python3/bin/ $PATH
 end
 
-if test -d $HOME/Library/Python/2.7/bin
+if test -x /usr/local/opt/python2/bin/python2
     # Add local Python 2 path on OS X
-   set -gx PATH $PATH $HOME/Library/Python/2.7/bin
+   set -gx PATH /usr/local/opt/python2/bin $PATH
 end
 
 # ---  Programming/Fluff  ------------------------------------------------------

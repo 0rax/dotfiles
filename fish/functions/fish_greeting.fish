@@ -74,22 +74,5 @@ function fish_greeting
     echo (_s)' └───'(_t)'╲     ╱ '(_s)'───┘ ' (_i)'Load '(_s)...(_t) $LOAD
     echo (_t)'       ╲ ╱        '             (_i)
     echo (_n)
-    if [ "$GPG_AGENT_PID" != "" -a "$GPG_AGENT_PID" = "$SSH_AGENT_PID" ]
-        echo (_i)' GPG Agent PID '(_s)...(_t) $GPG_AGENT_PID(_s)' (with SSH Agent)'
-    else if [ "$GPG_AGENT_PID" != "" ]
-        echo (_i)' GPG Agent PID '(_s)...(_t) $GPG_AGENT_PID
-    end
-    if [ "$SSH_AGENT_PID" != "" -a "$SSH_AGENT_PID" != "$GPG_AGENT_PID" ]
-        set AGENT_PRESENT true
-        echo (_i)' SSH Agent PID '(_s)...(_t) $SSH_AGENT_PID
-    end
-    # if test "$SSH_AGENT_ALIVE"
-    #     for i in (ssh-add -l ^ /dev/null | cut -d" " -f3)
-    #         echo (_i)'  > Known ID '(_s).....(_t)' '$i
-    #     end
-    # end
-    if test "$SSH_AGENT_ALIVE" -o "$GPG_AGENT_ALIVE"
-        echo
-    end
 
 end
