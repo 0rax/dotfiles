@@ -67,8 +67,10 @@ brew "pwgen"                      # https://pwgen.sourceforge.io/
 brew "node"                       # https://nodejs.org/
 brew "perl"                       # https://www.perl.org/
 brew "go"                         # https://golang.org
-brew "python"                     # https://www.python.org/
-brew "python3"                    # https://www.python.org/
+brew "dep"                        # https://github.com/golang/dep
+brew "godep"                      # github.com/tools/godep
+brew "python@2"                   # https://www.python.org/
+brew "python@3"                   # https://www.python.org/
 brew "shellcheck"                 # http://www.shellcheck.net/
 brew "grpc"                       # http://www.grpc.io/
 brew "protobuf"                   # https://github.com/google/protobuf
@@ -85,6 +87,7 @@ brew "mickep76/funk-gnarge/etcdtool" # https://github.com/mickep76/etcdtool
 brew "wrk"                        # https://github.com/wg/wrk
 brew "httpie"                     # https://httpie.org/
 brew "scaleway/scaleway/scw"      # https://github.com/scaleway/scaleway-cli
+brew "mitmproxy"                  # https://mitmproxy.org/
 # Other
 brew "android-platform-tools"     # https://developer.android.com/sdk
 brew "pandoc"                     # http://pandoc.org
@@ -100,6 +103,13 @@ brew "vitorgalvao/tiny-scripts/cask-repair" # https://github.com/caskroom/homebr
 # Fonts
 cask "font-monofur"               # http://www.dafont.com/monofur.font
 cask "font-monofur-for-powerline" # https://github.com/powerline/fonts/tree/master/Monofur
+cask "font-lato"                  # http://www.dafont.com/monofur.font
+cask "font-go-mono"               # https://go.googlesource.com/image/+/master/font/gofont/ttfs/README
+cask "font-nova-mono"             # https://fonts.google.com/specimen/Nova+Mono
+cask "font-monoid"                # ? # https://github.com/larsenwork/monoid
+cask "font-hack"                  # ? # https://sourcefoundry.org/hack/
+cask "font-hasklig"               # ? # https://github.com/i-tu/Hasklig/
+
 # Network tools
 cask "wireshark"                  # https://www.wireshark.org/
 cask "tuntap"                     # http://tuntaposx.sourceforge.net/faq.xhtml
@@ -111,22 +121,19 @@ cask "docker-edge"                # https://docs.docker.com/engine/installation/
 cask "vagrant"                    # https://www.vagrantup.com/
 # Database
 cask "mongohub"                   # https://github.com/jeromelebel/MongoHub-Mac
-cask "devcenter"                  # http://www.planetcassandra.org/devcenter/
-cask "psequel"                    # http://www.psequel.com/
 cask "sequel-pro"                 # https://sequelpro.com/
-cask "medis"                      # https://github.com/luin/medis
+cask "postico"                    # https://eggerapps.at/postico/
 # Media Playback
 cask "spotify"                    # https://www.spotify.com/
 cask "vlc"                        # http://www.videolan.org/vlc/
-cask "airflow"                    # http://airflowapp.com/
 cask "simple-comic"               # http://dancingtortoise.com/simplecomic/
 # Encryption
-cask "yubikey-neo-manager"        # http://yubico.com/
-cask "yubikey-personalization-gui" # http://yubico.com/
+cask "yubikey-manager"            # https://developers.yubico.com/yubikey-manager-qt/
+cask "yubico-authenticator"       # https://developers.yubico.com/yubioath-desktop/
 cask "keybase"                    # https://keybase.io/
-cask "gpgtools-beta"              # https://gpgtools.org/
+cask "gpg-suite"                  # https://gpgtools.org/
 cask "macpass"                    # https://github.com/mstarke/MacPass/ + https://github.com/MacPass/MacPassHTTP
-# Stprage
+# Storage
 cask "osxfuse"                    # https://osxfuse.github.io/
 cask "veracrypt"                  # https://veracrypt.codeplex.com/
 cask "hubic"                      # https://hubic.com/home/
@@ -148,7 +155,7 @@ cask "numi"                       # http://numi.io/
 cask "transmission"               # http://www.transmissionbt.com/download/
 cask "skype"                      # https://www.skype.com/en/download-skype/skype-for-computer/
 cask "airmail-beta"               # http:airmailapp.com/beta
-cask "waterfox"                   # http://waterfoxproject.org/
+cask "firefoxdeveloperedition"    # https://www.mozilla.org/en-US/firefox/
 cask "google-chrome"              # https://www.google.com/chrome/index.html
 # Social
 cask "rambox"                     # http://rambox.pro/
@@ -161,7 +168,7 @@ cask "mist"                       # https://github.com/ethereum/mist/releases
 # Tray
 cask "hammerspoon"                # http://www.hammerspoon.org/'
 cask "flux"                       # https://justgetflux.com/
-cask "boom3d"                       # http://www.globaldelight.com/boom3d/
+cask "boom-3d"                    # http://www.globaldelight.com/boom3d/
 cask "gitify"                     # http://gitify.io/
 cask "ccmenu"                     # https://github.com/erikdoe/ccmenu/
 cask "bartender"                  # https://www.macbartender.com/
@@ -173,7 +180,6 @@ cask "android-file-transfer"      # https://android.com/filetransfer/
 cask "appcleaner"                 # http://freemacsoft.net/appcleaner/
 cask "etcher"                     # https://etcher.io/
 cask "karabiner-elements"         # https://pqrs.org/osx/karabiner/
-cask "ticktick"                   # http://ticktick.com/
 cask "logitech-options"           # http://support.logitech.com/en_us/product/wireless-mouse-m335
 
 ### AppStore
@@ -181,7 +187,7 @@ mas "Pages", id: 409201541        # https://www.apple.com/pages/
 mas "Numbers", id: 409203825      # https://www.apple.com/numbers/
 mas "Keynote", id: 409183694      # https://www.apple.com/keynote/
 mas "Reeder", id: 880001334       # http://reederapp.com/
-mas "Xcode", id: 497799835        # https://developer.apple.com/xcode/
+# mas "Xcode", id: 497799835        # https://developer.apple.com/xcode/
 
 ### Non Brew software
 # Photoshop CC                    # https://www.adobe.com/products/photoshop.html
@@ -189,16 +195,15 @@ mas "Xcode", id: 497799835        # https://developer.apple.com/xcode/
 # Office 2016                     # https://portal.office.com/OLS/MySoftware.aspx
 # Drone CLI                       # http://readme.drone.io/0.5/install/cli/
 # grpcc                           # npm install -g grpcc
-# dep                             # go get -u -v github.com/golang/dep/cmd/dep
-# godep                           # go get -u -v github.com/tools/godep
 # etcdctl                         # go get -u -v github.com/coreos/etcd/etcdctl
+# Medis                           # git clone https://github.com/luin/medis.git && npm run pack
 
 ### Testing
 brew "micro"                      # https://github.com/zyedidia/micro
 cask "standard-notes"             # http://standardnotes.org/
-cask "uncolored"                  # https://github.com/n457/Uncolored
-cask "mongoclient"                # https://www.nosqlclient.com/
-cask "dbglass"                    # https://github.com/web-pal/DBGlass
+cask "tableplus"                  # https://tableplus.io/
+cask "sketch"                     # http://sketchapp.com/
+brew "ncdu"                       # https://dev.yorhel.nl/ncdu
 
 ## Keyboard shortcut
 # CTRL+CMD+left : Desktop left
@@ -212,3 +217,10 @@ cask "dbglass"                    # https://github.com/web-pal/DBGlass
 # Gesture+Down  : App Expose
 # ScrollLeft    : Forward
 # ScrollRight   : Back
+
+## Firefox about:config
+# extension.pocket.enabled = false
+# xpinstall.signatures.required = false
+# security.webauth.u2f = false
+
+# http://www.airsquirrels.com/airparrot/
