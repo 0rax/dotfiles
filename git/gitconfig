@@ -33,12 +33,15 @@
 	size = count-objects -vH
 	unpushed = log --stat origin/master..HEAD
 	root = rev-parse --show-toplevel
+	# git clone
+	rclone = clone --recursive
 	# git management
 	co = checkout
 	cb = checkout -b
 	fa = fetch --all
 	# git commit
 	ci = commit
+	ci-nogpg =  commit --no-gpg-sign
 	edit = commit --amend
 	ic = add -p
 	# git branch
@@ -46,7 +49,7 @@
 	# git search
 	gg = grep --break --heading -n
 	# git diff
-    sdiff = diff --staged
+	sdiff = diff --staged
 	wdiff = diff --word-diff
 	# https://blog.filippo.io/git-fixup-amending-an-older-commit/
 	fixup = "!f() { TARGET=$(git rev-parse "$1"); git commit --fixup=$TARGET ${@:2} && EDITOR=true git rebase -i --autostash --autosquash $TARGET^; }; f"
