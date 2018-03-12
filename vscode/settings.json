@@ -1,0 +1,113 @@
+{
+    "docker.showExplorer": false,
+    "editor.cursorBlinking": "solid",
+    "editor.cursorStyle": "block",
+    "editor.fontFamily": "'monofur For Powerline', monofur, Menlo, Monaco, 'Courier New', monospace",
+    "editor.fontSize": 14,
+    "editor.insertSpaces": true,
+    "editor.minimap.enabled": false,
+    "editor.renderLineHighlight": "all",
+    "editor.renderWhitespace": "boundary",
+    "editor.rulers": [
+        80
+    ],
+    "editor.scrollBeyondLastLine": false,
+    "editor.wordWrap": "on",
+    "explorer.confirmDragAndDrop": false,
+    "files.autoSave": "onFocusChange",
+    "git.ignoreLimitWarning": true,
+    "gitlens.advanced.telemetry.enabled": false,
+    "gitlens.codeLens.enabled": false,
+    "gitlens.codeLens.scopes": [
+        "document",
+        "containers"
+    ],
+    "gitlens.currentLine.enabled": false,
+    "gitlens.explorers.avatars": false,
+    "gitlens.gitExplorer.enabled": false,
+    "gitlens.gitExplorer.files.layout": "auto",
+    "gitlens.hovers.currentLine.enabled": false,
+    "gitlens.hovers.currentLine.over": "line",
+    "gitlens.recentChanges.highlight.locations": [
+        "gutter",
+        "line",
+        "overview"
+    ],
+    "gitlens.statusBar.alignment": "left",
+    "gitlens.statusBar.enabled": false,
+    "go.gopath": "/Users/orax/Projects/Go",
+    "go.useLanguageServer": false,
+    "go.vetOnSave": "package",
+    "markdown.extension.showExplorer": false,
+    "projectManager.showProjectNameInStatusBar": true,
+    "projectManager.treeview.visible": false,
+    "shellcheck.run": "onSave",
+    "telemetry.enableCrashReporter": false,
+    "telemetry.enableTelemetry": false,
+    "terminal.integrated.fontSize": 14,
+    "terminal.integrated.copyOnSelection": true,
+    "todo-tree.expanded": true,
+    "todo-tree.flat": false,
+    "todo-tree.iconColour": "grey",
+    "todo-tree.iconColours": {
+        "BUG": "#bf616a",
+        "CHANGED": "#C0C5CE",
+        "COMBAK": "#d08770",
+        "FIXME": "#bf616a",
+        "HACK": "#d08770",
+        "IDEA": "#C0C5CE",
+        "NB": "#ebcb8b",
+        "NOTE": "#ebcb8b",
+        "QUESTION": "#a3be8c",
+        "REVIEW": "#a3be8c",
+        "TEMP": "#d08770",
+        "TODO": "#8fa1b3",
+        "XXX": "#C0C5CE"
+    },
+    "todo-tree.regex": "(//|#|<!--|;)\\s*(TODO|FIXME|CHANGED|XXX|IDEA|HACK|NOTE|REVIEW|NB|BUG|QUESTION|COMBAK|TEMP)",
+    "todo-tree.ripgrep": "/Applications/Visual Studio Code.app/Contents/Resources/app/node_modules.asar.unpacked/vscode-ripgrep/bin/rg",
+    "vim.cursorStylePerMode": {
+        "insert": "line-thin",
+        "normal": "block",
+        "replace": "block-outline"
+    },
+    "vim.overrideCopy": false,
+    "vim.showmodename": true,
+    "vim.sneak": true,
+    // "vim.statusBarColorControl": true,
+    // "vim.statusBarColors": {
+    //     "insert": [
+    //         "#a3be8c",
+    //         "#2b303b"
+    //     ],
+    //     "normal": [
+    //         "#181a21",
+    //         "#c0c5ce"
+    //     ],
+    //     "replace": [
+    //         "#bf616a",
+    //         "#2b303b"
+    //     ],
+    //     "visual": [
+    //         "#d08770",
+    //         "#2b303b"
+    //     ],
+    //     "visualblock": [
+    //         "#d08770",
+    //         "#2b303b"
+    //     ],
+    //     "visualline": [
+    //         "#d08770",
+    //         "#2b303b"
+    //     ]
+    // },
+    "window.zoomLevel": 0,
+    "wordscounter.enableLanguageFilter": true,
+    "wordscounter.languageFilter": [
+        "markdown",
+        "plaintext"
+    ],
+    "workbench.colorTheme": "Ocean Dark Extended",
+    "workbench.iconTheme": "file-icons",
+    "zenMode.fullScreen": false,
+}
