@@ -45,10 +45,10 @@ html, body, .tree-view, .status-bar,
     font-size: @title-font;
     .tab { font-size: inherit; }
 }
-// Editor Font Size
-atom-text-editor {
-    font-size: @editor-font;
-}
+// // Editor Font Size
+// atom-text-editor {
+//     font-size: @editor-font;
+// }
 // Disable Scrollbars
 atom-workspace ::-webkit-scrollbar {
     display: none;
@@ -157,20 +157,24 @@ atom-text-editor .line.highlight-line, .highlight-column, .line-number.cursor-li
 // ========================= Vim Mode Plus Modeline ========================= //
 
 #status-bar-vim-mode-plus {
-    width: 30px;
+    width: auto;
     text-align: center;
     padding: 0px;
     color: @vim-mode-text;
     .status-bar-vim-mode-plus-normal {
+        width: 30px;
         background-color: @vim-mode-normal;
     }
     .status-bar-vim-mode-plus-insert {
+        width: 30px;
         background-color: @vim-mode-insert;
     }
     .status-bar-vim-mode-plus-visual {
+        width: 30px;
         background-color: @vim-mode-visual;
     }
     .status-bar-vim-mode-plus-operator-pending {
+        width: 30px;
         background-color: @vim-mode-pending;
     }
 }
