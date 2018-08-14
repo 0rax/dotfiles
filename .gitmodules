@@ -19,3 +19,6 @@
 [submodule "fish/plugins/sharktooth"]
 	path = fish/plugins/sharktooth
 	url = https://github.com/0rax/sharktooth
+[submodule "fish/plugins/virtualfish"]
+	path = fish/plugins/virtualfish
+	url = git@github.com:adambrenecki/virtualfish.git

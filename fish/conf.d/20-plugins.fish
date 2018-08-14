@@ -24,9 +24,9 @@ set -gx BD_OPT 'insensitive'
 
 # ---  Plugins/VirtualFish  ----------------------------------------------------
 
-if test -f "/usr/local/lib/python2.7/site-packages/virtualfish/virtual.fish"
+if test -f "/usr/local/lib/python3.6/site-packages/virtualfish/virtual.fish"
 
-    eval (/usr/local/bin/python2 -m virtualfish)
+    eval (/usr/local/bin/python3 -m virtualfish)
 
     set -gx VIRTUALFISH_DEFAULT_PYTHON "python3"
     set -gx VIRTUALFISH_HOME           "$HOME/.virtualenvs"
@@ -50,7 +50,6 @@ if test -f "$FISH_PLUGIN_PATH/plugin-grc/init.fish"
     source $FISH_PLUGIN_PATH/plugin-grc/init.fish
 
 end
-
 
 # ------------------------------------------------------------------------------
 # ---  END  --------------------------------------------------------------------
