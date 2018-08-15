@@ -81,13 +81,14 @@ brew "mtr"                        # http://www.bitwizard.nl/mtr/
 # DevOps
 brew "awscli"                     # https://github.com/aws/aws-cli
 brew "minio-mc"                   # https://github.com/minio/mc
-brew "rancher-cli"                # https://github.com/rancher/cli
-brew "rancher-compose"            # https://github.com/rancher/rancher-compose
 brew "mickep76/funk-gnarge/etcdtool" # https://github.com/mickep76/etcdtool
 brew "wrk"                        # https://github.com/wg/wrk
 brew "httpie"                     # https://httpie.org/
 brew "scaleway/scaleway/scw"      # https://github.com/scaleway/scaleway-cli
 brew "mitmproxy"                  # https://mitmproxy.org/
+# Backup
+brew "restic"                     # https://github.com/restic/restic
+brew "rclone"                     # https://rclone.org/
 # Other
 brew "android-platform-tools"     # https://developer.android.com/sdk
 brew "pandoc"                     # http://pandoc.org
@@ -115,14 +116,19 @@ cask "wireshark"                  # https://www.wireshark.org/
 cask "tuntap"                     # http://tuntaposx.sourceforge.net/faq.xhtml
 cask "horndis"                    # http://joshuawise.com/horndis
 cask "viscosity"                  # https://www.sparklabs.com/viscosity/
+cask "james"                      # https://github.com/james-proxy/james
+cask "protonvpn"                  # https://protonvpn.com/
 # Virtualisation
 cask "virtualbox"                 # https://www.virtualbox.org/
-cask "docker-edge"                # https://docs.docker.com/engine/installation/mac/
+cask "virtualbox-extension-pack"  # https://www.virtualbox.org/
+cask "docker"                     # https://docs.docker.com/engine/installation/mac/
 cask "vagrant"                    # https://www.vagrantup.com/
 # Database
 cask "mongohub"                   # https://github.com/jeromelebel/MongoHub-Mac
 cask "sequel-pro"                 # https://sequelpro.com/
 cask "postico"                    # https://eggerapps.at/postico/
+cask "tableplus"                  # https://tableplus.io/
+cask "robot-3t"                   # https://robomongo.org/
 # Media Playback
 cask "spotify"                    # https://www.spotify.com/
 cask "vlc"                        # http://www.videolan.org/vlc/
@@ -138,6 +144,7 @@ cask "osxfuse"                    # https://osxfuse.github.io/
 cask "veracrypt"                  # https://veracrypt.codeplex.com/
 cask "hubic"                      # https://hubic.com/home/
 cask "forklift2"                  # https://www.binarynights.com/forklift/
+cask "cyberduck"                  # https://cyberduck.io/
 # Programming
 cask "iterm2-beta"                # https://iterm2.com/downloads.html
 cask "atom"                       # http://atom.io/
@@ -145,12 +152,15 @@ cask "insomnia"                   # https://insomnia.rest/
 cask "hex-fiend"                  # https://github.com/ridiculousfish/HexFiend/
 cask "arduino"                    # https://www.arduino.cc/
 cask "fork"                       # https://git-fork.com/
-# Media Edit
+cask "sketch"                     # http://sketchapp.com/
+# Media Editor
 cask "basictex"                   # https://www.tug.org/mactex/
 cask "yed"                        # http://www.yworks.com/en/downloads.html#yEd
 cask "gimp"                       # http://www.gimp.org/
 cask "hackmd"                     # https://github.com/hackmdio/hackmd-desktop
+cask "standard-notes"             # http://standardnotes.org/
 cask "numi"                       # http://numi.io/
+cask "macdown"                    # https://macdown.uranusjr.com/
 # Web
 cask "transmission"               # http://www.transmissionbt.com/download/
 cask "skype"                      # https://www.skype.com/en/download-skype/skype-for-computer/
@@ -163,8 +173,6 @@ cask "textual"                    # https://www.codeux.com/textual/
 cask "slack"                      # ttps://slack.com/
 # Game
 cask "steam"                      # ttp://store.steampowered.com/
-# Blockchain
-cask "mist"                       # https://github.com/ethereum/mist/releases
 # Tray
 cask "hammerspoon"                # http://www.hammerspoon.org/'
 cask "flux"                       # https://justgetflux.com/
@@ -189,6 +197,15 @@ mas "Keynote", id: 409183694      # https://www.apple.com/keynote/
 mas "Reeder", id: 880001334       # http://reederapp.com/
 # mas "Xcode", id: 497799835        # https://developer.apple.com/xcode/
 
+### QMK Toolchain
+tap "osx-cross/avr"
+tap "PX4/homebrew-px4"
+brew "avr-gcc"
+brew "dfu-programmer"
+brew "gcc-arm-none-eabi"
+brew "avrdude"
+cask "caskroom/drivers/qmk-toolbox"
+
 ### Non Brew software
 # Photoshop CC                    # https://www.adobe.com/products/photoshop.html
 # Illustrator CC                  # https://www.adobe.com/products/illustrator.html
@@ -197,30 +214,23 @@ mas "Reeder", id: 880001334       # http://reederapp.com/
 # grpcc                           # npm install -g grpcc
 # etcdctl                         # go get -u -v github.com/coreos/etcd/etcdctl
 # Medis                           # git clone https://github.com/luin/medis.git && npm run pack
+# Hey                             # go get -u github.com/rakyll/hey
+# GRPCurl                         # go get -u -v github.com/fullstorydev/grpcurl/cmd/grpcurl
 
-### Testing
-brew "micro"                      # https://github.com/zyedidia/micro
-cask "standard-notes"             # http://standardnotes.org/
-cask "tableplus"                  # https://tableplus.io/
-cask "sketch"                     # http://sketchapp.com/
-brew "ncdu"                       # https://dev.yorhel.nl/ncdu
+### Firefox about:config
+# extension.pocket.enabled = false
+# xpinstall.signatures.required = false
+# security.webauth.u2f = true
 
-## Keyboard shortcut
+### Keyboard shortcut
 # CTRL+CMD+left : Desktop left
 # CTRL+CMD+Right: Desktop right
 # CTRL+CMD+Up   : Mission Control
 # CTRL+CMD+Down : App Expose
-## Mouse Shortcut
+### Mouse Shortcut
 # Gesture+Left  : Desktop left  (as keyboard input)
 # Gesture+Right : Desktop right (as keyboard input)
 # Gesture+Up    : Mission Control
 # Gesture+Down  : App Expose
 # ScrollLeft    : Forward
 # ScrollRight   : Back
-
-## Firefox about:config
-# extension.pocket.enabled = false
-# xpinstall.signatures.required = false
-# security.webauth.u2f = false
-
-# http://www.airsquirrels.com/airparrot/

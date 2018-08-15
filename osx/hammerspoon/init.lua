@@ -4,7 +4,6 @@ hs.logger.defaultLogLevel = 'debug'
 
 -- Modules
 
--- require("spotify")
 require("caffeine")
 require("spectacle")
 require("spotify")

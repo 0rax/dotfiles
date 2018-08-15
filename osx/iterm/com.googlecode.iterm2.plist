@@ -858,21 +858,21 @@
 		<integer>1</integer>
 	</dict>
 	<key>NSWindow Frame NSFontPanel</key>
-	<string>420 201 445 103 0 0 1680 1050 </string>
+	<string>995 414 445 77 0 0 2560 1440 </string>
 	<key>NSWindow Frame Preferences</key>
 	<string>269 139 606 456 0 0 2560 1418 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
-	<string>996 769 620 392 0 0 2560 1418 </string>
+	<string>995 769 620 392 0 0 2560 1418 </string>
 	<key>NSWindow Frame SessionsPreferences</key>
-	<string>692 197 606 469 0 0 1920 1058 </string>
+	<string>340 343 609 404 0 0 1920 1058 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>1287 484 1018 447 0 0 2560 1418 </string>
+	<string>474 411 918 394 0 0 2560 1418 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
-	<string>230 834 592 584 0 0 2560 1418 </string>
+	<string>155 474 592 584 0 0 1920 1058 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>48 0 1795 1058 0 0 1920 1058 </string>
+	<string>50 0 1870 1058 0 0 1920 1058 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>71 1038 570 402 0 0 2560 1440 </string>
+	<string>53 1016 570 402 0 0 2560 1418 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
 	<string>2723 -17 1354 807 2560 -150 1680 1028 </string>
 	<key>NeverWarnAboutShortLivedSessions_272D0D9D-4D75-47A5-A806-BAA4DDFB749F</key>
@@ -1651,13 +1651,13 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2017-10-20T12:53:55Z</date>
+	<date>2018-07-30T04:49:05Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>ShowBookmarkName</key>
 	<false/>
 	<key>ShowFullScreenTabBar</key>
-	<true/>
+	<false/>
 	<key>ShowNewOutputIndicator</key>
 	<true/>
 	<key>ShowPaneTitles</key>
@@ -1668,6 +1668,8 @@
 	<real>0.16584284855769232</real>
 	<key>StretchTabsToFillBar</key>
 	<true/>
+	<key>SuppressRestartAnnouncement</key>
+	<true/>
 	<key>TabStyle</key>
 	<integer>1</integer>
 	<key>TabViewType</key>
@@ -1677,7 +1679,7 @@
 		<string>Profiles</string>
 	</array>
 	<key>UKCrashReporterLastCrashReportDate</key>
-	<real>1508504192</real>
+	<real>1523503488</real>
 	<key>UseBorder</key>
 	<false/>
 	<key>WindowNumber</key>
@@ -1691,7 +1693,7 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.1.4.beta.1</string>
+	<string>3.2.0beta8</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
 	<integer>0</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>
