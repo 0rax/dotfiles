@@ -3,6 +3,7 @@
 set nocompatible
 
 "" Plugins
+" Requires vim-plug: https://github.com/junegunn/vim-plug
 call plug#begin('~/.vim/plugged')
 
 Plug 'Soares/base16.nvim'
@@ -47,14 +48,17 @@ nnoremap <esc>^[ <esc>^[
 
 " Colors
 syntax on               " allow syntax highlighting
-set background=dark     " background color
-colorscheme OceanicNext " base16 OceanicNext
+set background=dark     " base16: set dark background
+colorscheme oceanicnext " base16 oceanicnext
 set termguicolors       " use true colors to render
 set hlsearch            " highlight search results
 set cursorline          " show current line
 set cursorcolumn        " show current column
 
-"" Plugins Configur
+"" Plugins Configuraton
+" Base16
+Base16Highlight Normal bg=NONE
+
 " Airline
 let g:airline#extensions#tabline#enabled=1
 let g:airline#extensions#tabline#buffers_label='buffer'
@@ -63,7 +67,7 @@ let g:airline#extensions#tabline#show_tabs=0
 let g:airline_theme='base16_oceanicnext'
 let g:airline_powerline_fonts=1
 
-" CtrlP Configuration
+" CtrlP
 let g:ctrlp_map = '<C-p>'
 let g:ctrlp_cmd = 'CtrlP'
 let g:ctrlp_working_path_mode = 'c'
