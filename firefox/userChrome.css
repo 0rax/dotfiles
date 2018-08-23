@@ -1,0 +1,42 @@
+/*
+ * Hide Identity Box Info
+ *
+ * Contributor(s): 0rax
+ */
+
+/* Hide identity-box info icon & EV SSL Labels */
+#identity-icon {
+  opacity: 0 !important;
+  -moz-margin-end: -1.1em !important;
+}
+#identity-icon-labels {
+  visibility: collapse !important;
+}
+
+/* Restore hidden identity-box info on hover */
+#identity-box:hover > #identity-icon-labels {
+  visibility: visible !important;
+}
+#identity-box:hover > #identity-icon {
+    opacity: 1 !important;
+  -moz-margin-end: initial !important;
+}
+
+/*
+ * Dim and decorate pending tabs
+ *
+ * Contributor(s): 0rax
+ */
+
+/* Dim, underline and italic pending tabs */
+.tabbrowser-tab[pending] {
+  /* text-decoration: underline; */
+  font-style: italic;
+  opacity: .5;
+}
+
+/* Undim slightly and remove italic on pending tab hover */
+.tabbrowser-tab[pending]:hover {
+  font-style: normal;
+  opacity: .8;
+}
