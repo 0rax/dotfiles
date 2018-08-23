@@ -51,7 +51,6 @@
     "go.gopath": "/Users/orax/Projects/Go",
     "go.useLanguageServer": false,
     "go.vetOnSave": "package",
-    "markdown.extension.quickStyling": true,
     "markdown.extension.showExplorer": false,
     "markdown.preview.scrollEditorWithPreview": false,
     "shellcheck.run": "onSave",
@@ -94,6 +93,10 @@
     "workbench.iconTheme": "file-icons",
     "workbench.startupEditor": "none",
     "workbench.statusBar.feedback.visible": false,
+    "workbench.colorCustomizations": {
+        "statusBar.background": "#16181D",
+        "statusBar.noFolderBackground": "#16181D"
+    },
     "zenMode.fullScreen": false,
     "[makefile]": {
         "editor.tabSize": 4,
@@ -112,6 +115,8 @@
     "todo-tree.showInExplorer": false,
     "gitlens.historyExplorer.enabled": true,
     "editor.fontLigatures": true,
+    "window.menuBarVisibility": "toggle",
+    "amVim.bindCtrlCommands": false,
 }
 // "vim.cursorStylePerMode": {
 //     "insert": "line-thin",
