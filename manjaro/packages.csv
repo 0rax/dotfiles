@@ -1,0 +1,136 @@
+#!/usr/bin/env true
+#
+# require:
+#   - pacman (Arch Linux Package Manager)
+#   - yay (AUR Wrapper)
+#       git clone https://aur.archlinux.org/yay-bin.git /tmp/yay; cd /tmp/yay; makepkg -si
+#
+
+## Shell
+fish                        # https://fishshell.com
+bash                        # https://www.gnu.org/software/bash/
+
+## CVS
+git                         # https://git-scm.com
+aur/gibo                    # https://github.com/simonwhitaker/gibo
+tig                         # http://jonas.nitro.dk/tig/
+git-lfs                     # https://github.com/git-lfs/git-lfs
+mercurial                   # https://www.mercurial-scm.org/
+subversion                  # https://subversion.apache.org/
+
+## Shell Utils
+moreutils                   # https://joeyh.name/code/moreutils/
+coreutils                   # https://www.gnu.org/software/coreutils/
+findutils                   # https://www.gnu.org/software/findutils/
+grep                        # https://www.gnu.org/software/grep/
+binutils                    # https://www.gnu.org/software/binutils/
+sed                         # https://www.gnu.org/software/sed/
+tar                         # https://www.gnu.org/software/tar/
+psmisc                      # https://gitlab.com/psmisc/psmisc
+htop                        # https://hisham.hm/htop/
+tree                        # http://mama.indstate.edu/users/ice/tree/
+wget                        # https://www.gnu.org/software/wget/
+most                        # http://www.jedsoft.org/most/
+vim                         # http://www.vim.org/
+grc                         # http://kassiopeia.juls.savba.sk/~garabik/software/grc.htm
+pv                          # https://www.ivarch.com/programs/pv.shtml
+pwgen                       # https://pwgen.sourceforge.io/
+lsof                        # http://people.freebsd.org/~abe/
+ripgrep                     # https://github.com/BurntSushi/ripgrep
+aria2                       # https://aria2.github.io/
+jq                          # https://stedolan.github.io/jq/
+pandoc                      # http://pandoc.org
+aur/dtrx                    # http://brettcsmith.org/2007/dtrx/
+
+## Programming
+base-devel                  # https://www.archlinux.org/groups/x86_64/base-devel/
+go                          # https://golang.org
+nodejs                      # https://nodejs.org/
+npm                         # https://www.npmjs.com/
+dep                         # https://github.com/golang/dep
+shellcheck                  # http://www.shellcheck.net/
+python2                     # https://docs.python.org/2/index.html
+python2-pip                 # https://pip.pypa.io/en/stable/installing/
+python                      # https://docs.python.org/3/index.html
+python-pip                  # https://pip.pypa.io/en/stable/installing/
+aur/visual-studio-code      # https://code.visualstudio.com/
+aur/insomnia                # https://insomnia.rest/
+
+## Virtualization
+docker                      # https://www.docker.com/
+docker-compose
+virtualbox                  # https://www.virtualbox.org/
+
+## Network tools
+net-tools                   # http://net-tools.sourceforge.net/
+iftop                       # http://www.ex-parrot.com/pdw/iftop/
+nmap                        # https://nmap.org/
+mtr                         # http://www.bitwizard.nl/mtr/
+
+## DevOps
+aws-cli                     # https://github.com/aws/aws-cli
+aur/wrk                     # https://github.com/wg/wrk
+httpie                      # https://httpie.org/
+mitmproxy                   # https://mitmproxy.org/
+
+## Backup Utils
+restic                      # https://github.com/restic/restic
+rclone                      # https://rclone.org/
+
+## System Utils
+powertop                    # https://01.org/powertop/
+tilix                       # https://github.com/gnunn1/tilix
+aur/libinput-gestures       # https://github.com/bulletmark/libinput-gestures (Enable Trackpad Gesture)
+aur/solaar-git              # https://github.com/pwr/Solaar (Logitech Unifying tool)
+aur/albert                  # https://albertlauncher.github.io/
+muparser                    # For Albert's libcalculator
+aur/activitywatch-bin       # https://activitywatch.net/
+
+## Fonts
+aur/ttf-emojione            # https://github.com/eosrei/emojione-color-font
+
+## Gnome themes
+arc-gtk-theme               # https://github.com/horst3180/Arc-theme
+adapta-gtk-theme            # https://github.com/adapta-project/adapta-gtk-theme
+
+## Media Playback
+vlc                         # http://www.videolan.org/vlc/
+aur/spotify                 # https://www.spotify.com/
+
+## Media Editor
+aur/yed                     # http://www.yworks.com/en/downloads.html#yEd
+gimp                        # http://www.gimp.org/
+aur/standardnotes-desktop   # http://standardnotes.org/
+aur/onlyoffice-bin
+
+## Encryption
+aur/keybase-bin             # https://keybase.io/
+keypassxc                   # https://keepassxc.org/
+veracrypt                   # https://veracrypt.codeplex.com/
+
+## Web & Social
+evolution                   # https://wiki.gnome.org/Apps/Evolution/
+firefox-developer-edition   # https://www.mozilla.org/en-US/firefox/developer/
+transmission-gtk            # https://transmissionbt.com/
+feedreader                  # https://jangernert.github.io/FeedReader/
+aur/rambox-bin              # https://rambox.pro/
+
+### Installation
+## Enable Docker & Add current current user to Docker group
+# sudo systemctl enable --now docker
+# sudo usermod -a -G docker $USER
+## Setup libinput-gestures
+# sudo usermod -a -G input $USER
+# libinput-gestures-setup autostart
+# libinput-gestures-setup start
+## Gnome Theme
+# - Set theme to Adapta, Icon to Papyrus & Shell theme to Adapta-Nokto
+# - Use Kvantum Manager to set QT theme to KvArc
+## Gnome Shell extension
+# caffeine
+# media-player-indictor
+# no-annoyance
+# dash-to-dock
+# remove-dropdown-arrows
+## Set following command in autostart to remap capslock to backspace
+# setxkbmap -option caps:backspace
