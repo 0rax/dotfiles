@@ -71,7 +71,6 @@ user_pref("browser.crashReports.unsubmittedCheck.enabled", false);
 
 //// Security tweaks
 // General
-user_pref("privacy.resistFingerprinting", true);               // Prevent browser fingerprinting
 user_pref("privacy.trackingprotection.enabled", true);         // Activate Tracking Protection
 user_pref("privacy.donottrackheader.enabled", true);           // Always send DoNotTrack header
 user_pref("browser.cache.offline.enable", false);              // Disables offline cache
@@ -87,7 +86,7 @@ user_pref("network.proxy.socks_remote_dns", true);             // Send DNS reque
 user_pref("network.manage-offline-status", false);             // Don't monitor OS online/offline connection state
 user_pref("media.video_stats.enabled", false);                 // Disable video stats to reduce fingerprinting threat
 // DOM APIs
-user_pref("dom.event.clipboardevents.enabled", false);         // Disable copy, cut & paste dom notification
+// user_pref("dom.event.clipboardevents.enabled", false);         // Disable copy, cut & paste dom notification
 user_pref("dom.battery.enabled", false);                       // Disable battery dom capability
 user_pref("dom.mozTCPSocket.enabled", false);                  // Disable raw TCP socket support (mozTCPSocket)
 user_pref("dom.netinfo.enabled", false);                       // Disable leaking network/browser connection information via Javascript
@@ -95,6 +94,8 @@ user_pref("dom.gamepad.enabled", false);                       // Disable gamepa
 user_pref("dom.vr.enabled", false);                            // Disable virtual reality devices APIs
 user_pref("dom.vibrator.enabled", false);                      // Diable vibrator API
 user_pref("dom.maxHardwareConcurrency", 4);                    // Spoof QuadCore CPU
+// Font fingerprinting
+// user_pref("browser.display.use_document_fonts", 0);
 // Geolocation
 user_pref("geo.enabled", false);                               // Disable geolocation
 user_pref("geo.wifi.uri", "https://location.services.mozilla.com/v1/geolocate?key=%MOZILLA_API_KEY%"); // Use Mozilla geoloc service instead of Google when geolocation is enabled
@@ -119,6 +120,7 @@ user_pref("network.http.referer.XOriginTrimmingPolicy", 2);    // Referer policy
 
 
 //// Disable Security options
+// user_pref("privacy.resistFingerprinting", true);            // Prevent browser fingerprinting (timezone, ...)
 // user_pref("media.peerconnection.enabled", false);           // Disable WebRTC entirely (done via extension)
 // user_pref("network.websocket.enabled", false)               // Disable WebSockets (required)
 // user_pref("dom.storage.enabled", false);                    // Disable DOM storage
