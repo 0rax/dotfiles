@@ -24,10 +24,12 @@ set -gx BD_OPT 'insensitive'
 
 # ---  Plugins/VirtualFish  ----------------------------------------------------
 
-if test -f "/usr/local/lib/python3.6/site-packages/virtualfish/virtual.fish"
+if begin;
+      test -f "/usr/local/lib/python3.6/site-packages/virtualfish/virtual.fish";
+      or test -f "$HOME/.local/lib/python3.7/site-packages/virtualfish/virtual.fish"
+   end
 
-    eval (/usr/local/bin/python3 -m virtualfish)
-
+    eval (python3 -m virtualfish)
     set -gx VIRTUALFISH_DEFAULT_PYTHON "python3"
     set -gx VIRTUALFISH_HOME           "$HOME/.virtualenvs"
 
@@ -35,19 +37,27 @@ end
 
 # ---  Plugins/Z  --------------------------------------------------------------
 
-set -U Z_DATA $XDG_DATA_HOME/z.db
-set -U Z_CMD  "j"
+if test -f "$FISH_PLUGIN_PATH/z/conf.d/z.fish"
+    set -gx fish_function_path $fish_function_path "$FISH_PLUGIN_PATH/z/functions"
+    set -U Z_DATA $XDG_DATA_HOME/z.db
+    set -U Z_CMD  "j"
+    source "$FISH_PLUGIN_PATH/z/conf.d/z.fish"
+end
 
 # ---  Plugins/GRC  ------------------------------------------------------------
 
-if test -f "$FISH_PLUGIN_PATH/plugin-grc/init.fish"
+if test -f "/etc/grc.fish"
 
-    # Remove cat & ls from the list
-    set -U grc_plugin_execs cvs df diff dig gcc g++ ifconfig wdiff \
-                            make mount mtr netstat ping ps tail traceroute
+    set -U grc_plugin_execs cvs df diff dig gcc g++ ifconfig id ip w who \
+                            make mount mtr netstat ping ps tail traceroute \
+                            wdiff blkid du dnf docker docker-machine env \
+                            iostat last lsattr lsblk lspci lsmod lsof getfacl \
+                            getsebool ulimit uptime nmap fdisk findmnt free \
+                            semanage sar ss sysctl systemctl stat showmount \
+                            tcpdump tune2fs vmstat
 
     # Load GRC
-    source $FISH_PLUGIN_PATH/plugin-grc/init.fish
+    source /etc/grc.fish
 
 end
 

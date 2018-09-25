@@ -45,6 +45,10 @@ if [ "$OS_TYPE" = "Darwin" ] # Mac OS X
 
     set -gx fish_function_path $fish_function_path $FISH_CONFIG_PATH/alias/osx
 
+else if [ "$OS_TYPE" = "Linux" ]
+
+    set -gx fish_function_path $fish_function_path $FISH_CONFIG_PATH/alias/linux
+
 end
 
 # ------------------------------------------------------------------------------

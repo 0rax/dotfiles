@@ -37,6 +37,8 @@ end
 
 if test -d $HOME/TMP/bin
     set -gx PATH   $PATH $HOME/TMP/bin
+else if  test -d $HOME/tmp/bin
+    set -gx PATH   $PATH $HOME/tmp/bin
 end
 
 # ------------------------------------------------------------------------------

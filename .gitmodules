@@ -7,18 +7,9 @@
 [submodule "fish/plugins/narwhal"]
 	path = fish/plugins/narwhal
 	url = https://github.com/0rax/narwhal
-[submodule "fish/plugins/plugin-grc"]
-	path = fish/plugins/plugin-grc
-	url = https://github.com/oh-my-fish/plugin-grc.git
-[submodule "fish/plugins/z"]
-	path = fish/plugins/z
-	url = https://github.com/fisherman/z.git
-[submodule "fish/plugins/getopts"]
-	path = fish/plugins/getopts
-	url = https://github.com/fisherman/getopts.git
 [submodule "fish/plugins/sharktooth"]
 	path = fish/plugins/sharktooth
 	url = https://github.com/0rax/sharktooth
-[submodule "fish/plugins/virtualfish"]
-	path = fish/plugins/virtualfish
-	url = git@github.com:adambrenecki/virtualfish.git
+[submodule "fish/plugins/z"]
+	path = fish/plugins/z
+	url = https://github.com/jethrokuan/z

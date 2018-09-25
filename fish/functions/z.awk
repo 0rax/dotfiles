@@ -1,1 +1,0 @@
-../plugins/z/functions/z.awk
