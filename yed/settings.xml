@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<settings>
+  <store name="com.yworks.yfx.GlobalProperties">
+    <entry name="antialiasing" type="java.lang.Boolean">
+      <value>true</value>
+      <defaultValue>true</defaultValue>
+    </entry>
+    <entry name="maxUndoDepth" type="java.lang.Integer">
+      <value>40</value>
+      <defaultValue>40</defaultValue>
+    </entry>
+    <entry name="TooltipsDisplayType" type="java.lang.String">
+      <value>TooltipsOnAdjustable</value>
+      <defaultValue>TooltipsOnAdjustable</defaultValue>
+    </entry>
+    <entry name="TooltipsDelay" type="java.lang.Integer">
+      <value>4</value>
+      <defaultValue>4</defaultValue>
+    </entry>
+    <entry name="DrawSelectionOnTop" type="java.lang.Boolean">
+      <value>true</value>
+      <defaultValue>true</defaultValue>
+    </entry>
+    <entry name="locale" type="java.util.Locale">
+      <value>en</value>
+      <defaultValue>en</defaultValue>
+    </entry>
+    <entry name="fileChooserType" type="java.lang.String">
+      <value>native</value>
+      <defaultValue>native</defaultValue>
+    </entry>
+  </store>
+  <store name="com.yworks.yfx.yfiles.YFilesModule">
+    <entry name="animatedZooming" type="java.lang.Boolean">
+      <value>true</value>
+      <defaultValue>false</defaultValue>
+    </entry>
+    <entry name="mouseWheelBehavior" type="java.lang.Byte">
+      <value>0</value>
+      <defaultValue>0</defaultValue>
+    </entry>
+    <entry name="navigationModeBehavior" type="java.lang.Byte">
+      <value>0</value>
+      <defaultValue>0</defaultValue>
+    </entry>
+    <entry name="fitContentOnResize" type="java.lang.Boolean">
+      <value>false</value>
+      <defaultValue>false</defaultValue>
+    </entry>
+    <entry name="maxDynamicPaletteEntries" type="java.lang.Integer">
+      <value>30</value>
+      <defaultValue>30</defaultValue>
+    </entry>
+    <entry name="arrowClip" type="java.lang.Integer">
+      <value>0</value>
+      <defaultValue>0</defaultValue>
+    </entry>
+    <entry name="paintNodesOverEdges" type="java.lang.Boolean">
+      <value>false</value>
+      <defaultValue>false</defaultValue>
+    </entry>
+    <entry name="detailsThreshold" type="java.lang.Double">
+      <value>0.3</value>
+      <defaultValue>0.3</defaultValue>
+    </entry>
+    <entry name="groupStateDisplay" type="java.lang.Byte">
+      <value>1</value>
+      <defaultValue>1</defaultValue>
+    </entry>
+    <entry name="createNodeOnClick" type="java.lang.Boolean">
+      <value>false</value>
+      <defaultValue>false</defaultValue>
+    </entry>
+    <entry name="synchronizeGroupLabels" type="java.lang.Boolean">
+      <value>false</value>
+      <defaultValue>false</defaultValue>
+    </entry>
+    <entry name="useCenteredPorts" type="java.lang.Boolean">
+      <value>true</value>
+      <defaultValue>false</defaultValue>
+    </entry>
+    <entry name="selectElementOnDrop" type="java.lang.Boolean">
+      <value>false</value>
+      <defaultValue>false</defaultValue>
+    </entry>
+    <entry name="splitEdgeOnDrop" type="java.lang.Boolean">
+      <value>true</value>
+      <defaultValue>true</defaultValue>
+    </entry>
+    <entry name="createDefaultNodeLabel" type="java.lang.Boolean">
+      <value>true</value>
+      <defaultValue>true</defaultValue>
+    </entry>
+    <entry name="editLabelOnCreateNode" type="java.lang.Boolean">
+      <value>false</value>
+      <defaultValue>false</defaultValue>
+    </entry>
+    <entry name="editLabelOnCreateEdge" type="java.lang.Boolean">
+      <value>false</value>
+      <defaultValue>false</defaultValue>
+    </entry>
+    <entry name="adjustNodeSizeToLabel" type="java.lang.Boolean">
+      <value>false</value>
+      <defaultValue>false</defaultValue>
+    </entry>
+    <entry name="removeInnerBends" type="java.lang.Boolean">
+      <value>true</value>
+      <defaultValue>true</defaultValue>
+    </entry>
+    <entry name="showScrollbarsInEditMode" type="java.lang.Boolean">
+      <value>true</value>
+      <defaultValue>true</defaultValue>
+    </entry>
+    <entry name="resizeFromCenter" type="java.lang.Boolean">
+      <value>true</value>
+      <defaultValue>true</defaultValue>
+    </entry>
+    <entry name="morphLayouts" type="java.lang.Boolean">
+      <value>true</value>
+      <defaultValue>true</defaultValue>
+    </entry>
+    <entry name="morphDuration" type="java.lang.Integer">
+      <value>300</value>
+      <defaultValue>300</defaultValue>
+    </entry>
+    <entry name="showModulesDialogs" type="java.lang.Boolean">
+      <value>true</value>
+      <defaultValue>true</defaultValue>
+    </entry>
+    <entry name="snapping.color" type="java.awt.Color">
+      <value>#c0c0c0</value>
+      <defaultValue>#c0c0c0</defaultValue>
+    </entry>
+    <entry name="snapping.node.node" type="java.lang.Integer">
+      <value>30</value>
+      <defaultValue>30</defaultValue>
+    </entry>
+    <entry name="snapping.node.edge" type="java.lang.Integer">
+      <value>20</value>
+      <defaultValue>20</defaultValue>
+    </entry>
+    <entry name="snapping.edge.edge" type="java.lang.Integer">
+      <value>20</value>
+      <defaultValue>20</defaultValue>
+    </entry>
+    <entry name="snapping.bend.bend" type="java.lang.Integer">
+      <value>20</value>
+      <defaultValue>20</defaultValue>
+    </entry>
+    <entry name="snapping.mpm.edge.distance" type="java.lang.Boolean">
+      <value>false</value>
+      <defaultValue>false</defaultValue>
+    </entry>
+    <entry name="gridColor" type="java.awt.Color">
+      <value>#808080</value>
+      <defaultValue>#808080</defaultValue>
+    </entry>
+    <entry name="gridSpacing" type="java.lang.Integer">
+      <value>30</value>
+      <defaultValue>30</defaultValue>
+    </entry>
+    <entry name="showGrid" type="java.lang.Boolean">
+      <value>false</value>
+      <defaultValue>false</defaultValue>
+    </entry>
+    <entry name="backgroundMode" type="java.lang.Byte">
+      <value>4</value>
+      <defaultValue>4</defaultValue>
+    </entry>
+    <entry name="backgroundColor" type="java.awt.Color">
+      <value>#ffffff</value>
+      <defaultValue>#ffffff</defaultValue>
+    </entry>
+    <entry name="bridgeScaling" type="y.view.BridgeCalculator">
+      <value>5</value>
+      <defaultValue>5</defaultValue>
+    </entry>
+    <entry name="bridgeCrossing" type="y.view.BridgeCalculator">
+      <value>7</value>
+      <defaultValue>7</defaultValue>
+    </entry>
+    <entry name="gridType" type="java.lang.String">
+      <value>POINTS</value>
+      <defaultValue>POINTS</defaultValue>
+    </entry>
+    <entry name="snapping.enabled" type="java.lang.Boolean">
+      <value>true</value>
+      <defaultValue>true</defaultValue>
+    </entry>
+    <entry name="useOrthogonalEdgeMode" type="java.lang.Boolean">
+      <value>false</value>
+      <defaultValue>false</defaultValue>
+    </entry>
+    <entry name="drawControlPointsInPalette" type="java.lang.Boolean">
+      <value>false</value>
+      <defaultValue>false</defaultValue>
+    </entry>
+    <entry name="labelEditorNewLineMode" type="java.lang.Byte">
+      <value>0</value>
+      <defaultValue>0</defaultValue>
+    </entry>
+    <entry name="morphLayoutType" type="java.lang.Byte">
+      <value>0</value>
+      <defaultValue>0</defaultValue>
+    </entry>
+  </store>
+  <store name="com.yworks.yfx.localviews.LocalViewsModule">
+    <entry name="localViewsHierarchyAware" type="java.lang.Boolean">
+      <value>true</value>
+      <defaultValue>true</defaultValue>
+    </entry>
+    <entry name="localViewsMaxNodeCount" type="java.lang.Integer">
+      <value>50</value>
+      <defaultValue>50</defaultValue>
+    </entry>
+    <entry name="localViewsMaxEdgeCount" type="java.lang.Integer">
+      <value>100</value>
+      <defaultValue>100</defaultValue>
+    </entry>
+    <entry name="localViewsUpdateTrigger" type="java.lang.Byte">
+      <value>1</value>
+      <defaultValue>1</defaultValue>
+    </entry>
+  </store>
+  <store name="com.yworks.yfx.YEd">
+    <entry name="checkVersionOnStartup" type="java.lang.Boolean">
+      <value>true</value>
+      <defaultValue>true</defaultValue>
+    </entry>
+  </store>
+  <store name="com.yworks.yfx.welcome.WelcomeManager">
+    <entry name="show.on.startup" type="java.lang.Boolean">
+      <value>true</value>
+      <defaultValue>true</defaultValue>
+    </entry>
+  </store>
+  <store name="com.yworks.yfx.io.IoSupport">
+    <entry name="maximumHistorySize" type="java.lang.Integer">
+      <value>10</value>
+      <defaultValue>10</defaultValue>
+    </entry>
+    <store name="lastFilterIndex">
+      <entry name="save" type="java.lang.Integer">
+        <value>0</value>
+        <defaultValue>0</defaultValue>
+      </entry>
+      <entry name="export" type="java.lang.Integer">
+        <value>8</value>
+        <defaultValue>8</defaultValue>
+      </entry>
+      <entry name="open" type="java.lang.Integer">
+        <value>0</value>
+        <defaultValue>0</defaultValue>
+      </entry>
+    </store>
+    <store name="lastDirectoryName">
+      <entry name="mainFile" type="java.io.File">
+        <value>/home/orax/.yEd/palettes</value>
+        <defaultValue>/home/orax/Projects/Emotech/workbench/vpc</defaultValue>
+      </entry>
+    </store>
+  </store>
+  <store name="com.yworks.yfx.DialogManager">
+    <store name="docked">
+      <entry name="com.yworks.yfx.ui.PaletteManagerView" type="java.lang.Boolean">
+        <value>false</value>
+        <defaultValue>false</defaultValue>
+      </entry>
+      <entry name="y.module.EdgeGroupConstraintModule" type="java.lang.Boolean">
+        <value>false</value>
+        <defaultValue>false</defaultValue>
+      </entry>
+      <entry name="y.module.ParallelEdgeLayoutModule" type="java.lang.Boolean">
+        <value>false</value>
+        <defaultValue>false</defaultValue>
+      </entry>
+      <entry name="yed.feature.modules.tools.CentralityTool" type="java.lang.Boolean">
+        <value>false</value>
+        <defaultValue>false</defaultValue>
+      </entry>
+      <entry name="Preferences" type="java.lang.Boolean">
+        <value>false</value>
+        <defaultValue>false</defaultValue>
+      </entry>
+      <entry name="IMAGEIO_OUTPUT" type="java.lang.Boolean">
+        <value>false</value>
+        <defaultValue>false</defaultValue>
+      </entry>
+      <entry name="y.module.GraphTransformerModule" type="java.lang.Boolean">
+        <value>false</value>
+        <defaultValue>false</defaultValue>
+      </entry>
+      <entry name="com.yworks.yfx.ui.IconFinderView" type="java.lang.Boolean">
+        <value>false</value>
+        <defaultValue>false</defaultValue>
+      </entry>
+    </store>
+  </store>
+  <store name="PARALLEL_EDGES">
+    <entry name="PARALLEL_EDGES.LINE_DISTANCE" type="java.lang.String">
+      <value>10</value>
+      <defaultValue>10</defaultValue>
+    </entry>
+    <entry name="PARALLEL_EDGES.JOIN_DISTANCE" type="java.lang.String">
+      <value>20</value>
+      <defaultValue>20</defaultValue>
+    </entry>
+    <entry name="PARALLEL_EDGES.CONSIDER_EDGE_DIRECTION" type="java.lang.String">
+      <value>false</value>
+      <defaultValue>false</defaultValue>
+    </entry>
+    <entry name="PARALLEL_EDGES.JOINS_ENDS" type="java.lang.String">
+      <value>false</value>
+      <defaultValue>false</defaultValue>
+    </entry>
+    <entry name="PARALLEL_EDGES.USE_SELECTED_EDGES_AS_MASTER" type="java.lang.String">
+      <value>false</value>
+      <defaultValue>false</defaultValue>
+    </entry>
+    <entry name="PARALLEL_EDGES.USE_ADAPTIVE_LINE_DISTANCE" type="java.lang.String">
+      <value>true</value>
+      <defaultValue>true</defaultValue>
+    </entry>
+    <entry name="PARALLEL_EDGES.SCOPE" type="java.lang.String">
+      <value>ALL_EDGES</value>
+      <defaultValue>ALL_EDGES</defaultValue>
+    </entry>
+  </store>
+  <store name="CENTRALITY">
+    <entry name="CENTRALITY.VISUAL.USE_SIZE_INDICATION" type="java.lang.String">
+      <value>true</value>
+      <defaultValue>true</defaultValue>
+    </entry>
+    <entry name="CENTRALITY.CENTRALITY_INDEX.USE_EDGE_LABELS" type="java.lang.String">
+      <value>false</value>
+      <defaultValue>false</defaultValue>
+    </entry>
+    <entry name="CENTRALITY.VISUAL.COLOR_LEAST_CENTRAL" type="java.lang.String">
+      <value>#ffffff</value>
+      <defaultValue>#ffffff</defaultValue>
+    </entry>
+    <entry name="CENTRALITY.VISUAL.USE_COLOR_INDICATION" type="java.lang.String">
+      <value>true</value>
+      <defaultValue>true</defaultValue>
+    </entry>
+    <entry name="CENTRALITY.VISUAL.USE_NODE_LABELS" type="java.lang.String">
+      <value>true</value>
+      <defaultValue>true</defaultValue>
+    </entry>
+    <entry name="CENTRALITY.CENTRALITY_INDEX.OUT_EDGES" type="java.lang.String">
+      <value>true</value>
+      <defaultValue>true</defaultValue>
+    </entry>
+    <entry name="CENTRALITY.CENTRALITY_INDEX.DIRECTED" type="java.lang.String">
+      <value>false</value>
+      <defaultValue>false</defaultValue>
+    </entry>
+    <entry name="CENTRALITY.CENTRALITY_INDEX.IN_EDGES" type="java.lang.String">
+      <value>true</value>
+      <defaultValue>true</defaultValue>
+    </entry>
+    <entry name="CENTRALITY.CENTRALITY_INDEX.CENTRALITY_INDEX_TYPE" type="java.lang.String">
+      <value>DEGREE_CENTRALITY</value>
+      <defaultValue>DEGREE_CENTRALITY</defaultValue>
+    </entry>
+    <entry name="CENTRALITY.VISUAL.MAXIMUM_NUMBER_OF_LAYERS" type="java.lang.String">
+      <value>20</value>
+      <defaultValue>20</defaultValue>
+    </entry>
+    <entry name="CENTRALITY.VISUAL.SIZE_MOST_CENTRAL" type="java.lang.String">
+      <value>100.0</value>
+      <defaultValue>100.0</defaultValue>
+    </entry>
+    <entry name="CENTRALITY.VISUAL.APPLY_HIERARCHICAL_LAYOUT" type="java.lang.String">
+      <value>false</value>
+      <defaultValue>false</defaultValue>
+    </entry>
+    <entry name="CENTRALITY.VISUAL.COLOR_MOST_CENTRAL" type="java.lang.String">
+      <value>#0000ff</value>
+      <defaultValue>#0000ff</defaultValue>
+    </entry>
+    <entry name="CENTRALITY.VISUAL.SIZE_LEAST_CENTRAL" type="java.lang.String">
+      <value>20.0</value>
+      <defaultValue>20.0</defaultValue>
+    </entry>
+  </store>
+  <store name="GRAPH_TRANSFORMER">
+    <entry name="GRAPH_TRANSFORMER.APPLY_BEST_FIT_ROTATION" type="java.lang.String">
+      <value>false</value>
+      <defaultValue>false</defaultValue>
+    </entry>
+    <entry name="GRAPH_TRANSFORMER.TRANSLATE_Y" type="java.lang.String">
+      <value>0.0</value>
+      <defaultValue>0.0</defaultValue>
+    </entry>
+    <entry name="GRAPH_TRANSFORMER.TRANSLATE_X" type="java.lang.String">
+      <value>0.0</value>
+      <defaultValue>0.0</defaultValue>
+    </entry>
+    <entry name="GRAPH_TRANSFORMER.ACT_ON_SELECTION_ONLY" type="java.lang.String">
+      <value>true</value>
+      <defaultValue>true</defaultValue>
+    </entry>
+    <entry name="GRAPH_TRANSFORMER.SCALE_NODE_SIZE" type="java.lang.String">
+      <value>false</value>
+      <defaultValue>false</defaultValue>
+    </entry>
+    <entry name="GRAPH_TRANSFORMER.ROTATION_ANGLE" type="java.lang.String">
+      <value>0</value>
+      <defaultValue>0</defaultValue>
+    </entry>
+    <entry name="GRAPH_TRANSFORMER.OPERATION" type="java.lang.String">
+      <value>MIRROR_ON_Y-AXIS</value>
+      <defaultValue>MIRROR_ON_Y-AXIS</defaultValue>
+    </entry>
+    <entry name="GRAPH_TRANSFORMER.SCALE_FACTOR" type="java.lang.String">
+      <value>1.0</value>
+      <defaultValue>1.0</defaultValue>
+    </entry>
+  </store>
+</settings>
