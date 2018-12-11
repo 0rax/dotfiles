@@ -26,9 +26,6 @@ function fish_greeting
     set -l OS
     set -l LOAD
     set -l CPU
-    set -l GPG_AGENT_PID
-    set -l GPG_AGENT_ALIVE
-    set -l SSH_AGENT_ALIVE
 
     if test -f /etc/os-release
         set OS (cat /etc/os-release | sed -nE 's/^PRETTY_NAME="(.*)"$/\1/p')
@@ -46,22 +43,6 @@ function fish_greeting
         set OS 'Unknown'
         set CPU '?'
         set LOAD '? ? ?'
-    end
-
-    if set -q GPG_AGENT_INFO
-        set GPG_AGENT_PID (echo $GPG_AGENT_INFO | cut -d':' -f2)
-        if kill -0 "$GPG_AGENT_PID" ^ /dev/null
-            set GPG_AGENT_ALIVE true
-        else
-            set -ge GPG_AGENT_INFO
-            set -le GPG_AGENT_PID
-        end
-    end
-    if set -q SSH_AGENT_PID; and kill -0 "$SSH_AGENT_PID" ^ /dev/null
-        set SSH_AGENT_ALIVE true
-    else
-        set -ge SSH_AGENT_PID
-        set -ge SSH_AUTH_SOCK
     end
 
     echo (_n)

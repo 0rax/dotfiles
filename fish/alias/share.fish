@@ -2,5 +2,5 @@
 # -*-  mode:fish; tab-width:4  -*-
 
 function share
-	python -m SimpleHTTPServer 8080 $argv
+	python2 -m SimpleHTTPServer 8080 $argv
 end

@@ -44,10 +44,12 @@ set -gx fish_function_path $fish_function_path $FISH_CONFIG_PATH/alias
 if [ "$OS_TYPE" = "Darwin" ] # Mac OS X
 
     set -gx fish_function_path $fish_function_path $FISH_CONFIG_PATH/alias/osx
+    set -gx fish_complete_path $fish_complete_path $FISH_CONFIG_PATH/completions/osx
 
 else if [ "$OS_TYPE" = "Linux" ]
 
     set -gx fish_function_path $fish_function_path $FISH_CONFIG_PATH/alias/linux
+    set -gx fish_complete_path $fish_complete_path $FISH_CONFIG_PATH/completions/linux
 
 end
 

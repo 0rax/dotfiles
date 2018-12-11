@@ -2,5 +2,5 @@
 # -*-  mode:fish; tab-width:4  -*-
 
 function pbpaste
-	xclip -selection clipboard -o $argv
+	xsel --clipboard --output $argv
 end
