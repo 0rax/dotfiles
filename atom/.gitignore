@@ -1,9 +1,0 @@
-/*
-!/.gitignore
-!/config.cson
-!/packages.lst
-!/init.coffee
-!/keymap.cson
-!/styles.less
-!/toolbar.cson
-!/linter-config.json
