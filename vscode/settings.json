@@ -1,26 +1,43 @@
 {
+    "[json]": {
+        "editor.insertSpaces": true,
+        "editor.tabSize": 2
+    },
+    "[makefile]": {
+        "editor.insertSpaces": false,
+        "editor.tabSize": 4
+    },
     "[shellscript]": {
         "editor.insertSpaces": true,
         "editor.tabSize": 4
     },
+    "[toml]": {
+        "editor.insertSpaces": true,
+        "editor.tabSize": 2
+    },
+    "amVim.bindCtrlCommands": false,
+    "breadcrumbs.enabled": true,
     "docker.showExplorer": false,
     "editor.cursorBlinking": "solid",
     "editor.cursorStyle": "block",
+    "editor.detectIndentation": false,
     "editor.fontFamily": "'monofur For Powerline', monofur, Menlo, Monaco, 'Courier New', monospace",
+    "editor.fontLigatures": true,
     "editor.fontSize": 14,
     "editor.insertSpaces": true,
     "editor.minimap.enabled": false,
     "editor.renderLineHighlight": "all",
     "editor.renderWhitespace": "boundary",
-    "editor.rulers": [
-        80
-    ],
+    "editor.rulers": [ 80 ],
     "editor.scrollBeyondLastLine": false,
+    "editor.tabSize": 4,
     "editor.wordWrap": "on",
     "explorer.confirmDragAndDrop": false,
+    "extensions.ignoreRecommendations": true,
     "files.associations": {
-        "Brewfile": "ruby",
+        "*.pgsql": "sql",
         "APKBUILD": "shellscript",
+        "Brewfile": "ruby",
         "Dockerfile.*": "dockerfile",
         "ssh_config": "ssh_config"
     },
@@ -29,6 +46,16 @@
     "files.trimFinalNewlines": true,
     "files.trimTrailingWhitespace": true,
     "git.ignoreLimitWarning": true,
+    "gitlens.advanced.messages": {
+        "suppressCommitHasNoPreviousCommitWarning": false,
+        "suppressCommitNotFoundWarning": false,
+        "suppressFileNotUnderSourceControlWarning": false,
+        "suppressGitVersionWarning": false,
+        "suppressLineUncommittedWarning": false,
+        "suppressNoRepositoryWarning": false,
+        "suppressResultsExplorerNotice": false,
+        "suppressShowKeyBindingsNotice": true
+    },
     "gitlens.advanced.telemetry.enabled": false,
     "gitlens.codeLens.enabled": false,
     "gitlens.codeLens.scopes": [
@@ -36,9 +63,6 @@
         "containers"
     ],
     "gitlens.currentLine.enabled": false,
-    "gitlens.explorers.avatars": false,
-    "gitlens.gitExplorer.enabled": false,
-    "gitlens.gitExplorer.files.layout": "auto",
     "gitlens.hovers.currentLine.enabled": false,
     "gitlens.hovers.currentLine.over": "line",
     "gitlens.recentChanges.highlight.locations": [
@@ -48,16 +72,36 @@
     ],
     "gitlens.statusBar.alignment": "left",
     "gitlens.statusBar.enabled": false,
-    "go.gopath": "/Users/orax/Projects/Go",
+    "gitlens.views.avatars": false,
+    "gitlens.views.fileHistory.enabled": true,
+    "gitlens.views.lineHistory.enabled": true,
+    "gitlens.views.repositories.enabled": false,
+    "gitlens.views.repositories.files.layout": "auto",
+    "go.inferGopath": true,
     "go.useLanguageServer": false,
     "go.vetOnSave": "package",
-    "markdown.extension.showExplorer": false,
+    "markdown.extension.tableFormatter.normalizeIndentation": true,
+    "markdown.extension.toc.githubCompatibility": true,
     "markdown.preview.scrollEditorWithPreview": false,
+    "shellcheck.customArgs": [ "-x" ],
     "shellcheck.run": "onSave",
     "telemetry.enableCrashReporter": false,
     "telemetry.enableTelemetry": false,
     "terminal.integrated.copyOnSelection": true,
     "terminal.integrated.fontSize": 14,
+    "todo-tree.autoRefresh": false,
+    "todo-tree.customHighlight": {
+        "FIXME": {
+            "foreground": "#bf616a"
+        },
+        "TODO": {
+            "foreground": "#8fa1b3"
+        }
+    },
+    "todo-tree.defaultHighlight": {
+        "foreground": "grey",
+        "type": "none"
+    },
     "todo-tree.expanded": true,
     "todo-tree.flat": false,
     "todo-tree.iconColour": "grey",
@@ -78,78 +122,59 @@
     },
     "todo-tree.regex": "(//|#|<!--|;)\\s*(TODO|FIXME|CHANGED|XXX|IDEA|HACK|NOTE|REVIEW|NB|BUG|QUESTION|COMBAK|TEMP)",
     "todo-tree.ripgrep": "/usr/local/bin/rg",
-    "[toml]": {
-        "editor.insertSpaces": true,
-        "editor.tabSize": 2
-    },
+    "todo-tree.showInExplorer": false,
+    "window.menuBarVisibility": "default",
     "window.restoreWindows": "one",
+    "window.titleBarStyle": "custom",
     "window.zoomLevel": 0,
     "wordscounter.enableLanguageFilter": true,
     "wordscounter.languageFilter": [
         "markdown",
         "plaintext"
     ],
-    "workbench.colorTheme": "Ocean Dark Extended",
-    "workbench.iconTheme": "file-icons",
-    "workbench.startupEditor": "none",
-    "workbench.statusBar.feedback.visible": false,
     "workbench.colorCustomizations": {
         "statusBar.background": "#16181D",
         "statusBar.noFolderBackground": "#16181D"
     },
+    "workbench.colorTheme": "Ocean Dark Extended",
+    "workbench.iconTheme": "file-icons",
+    "workbench.startupEditor": "none",
+    "workbench.statusBar.feedback.visible": false,
     "zenMode.fullScreen": false,
-    "[makefile]": {
-        "editor.tabSize": 4,
-        "editor.insertSpaces": false
-    },
-    "gitlens.advanced.messages": {
-        "suppressCommitHasNoPreviousCommitWarning": false,
-        "suppressCommitNotFoundWarning": false,
-        "suppressFileNotUnderSourceControlWarning": false,
-        "suppressGitVersionWarning": false,
-        "suppressLineUncommittedWarning": false,
-        "suppressNoRepositoryWarning": false,
-        "suppressResultsExplorerNotice": false,
-        "suppressShowKeyBindingsNotice": true
-    },
-    "todo-tree.showInExplorer": false,
-    "gitlens.historyExplorer.enabled": true,
-    "editor.fontLigatures": true,
-    "window.menuBarVisibility": "toggle",
-    "amVim.bindCtrlCommands": false,
+    // "vim.cursorStylePerMode": {
+    //     "insert": "line-thin",
+    //     "normal": "block",
+    //     "replace": "block-outline"
+    // },
+    // "vim.overrideCopy": false,
+    // "vim.showmodename": true,
+    // "vim.sneak": true,
+    // "vim.statusBarColorControl": true,
+    // "vim.statusBarColors": {
+    //     "insert": [
+    //         "#a3be8c",
+    //         "#2b303b"
+    //     ],
+    //     "normal": [
+    //         "#181a21",
+    //         "#c0c5ce"
+    //     ],
+    //     "replace": [
+    //         "#bf616a",
+    //         "#2b303b"
+    //     ],
+    //     "visual": [
+    //         "#d08770",
+    //         "#2b303b"
+    //     ],
+    //     "visualblock": [
+    //         "#d08770",
+    //         "#2b303b"
+    //     ],
+    //     "visualline": [
+    //         "#d08770",
+    //         "#2b303b"
+    //     ]
+    // },
+    // "vim.useSystemClipboard": true
 }
-// "vim.cursorStylePerMode": {
-//     "insert": "line-thin",
-//     "normal": "block",
-//     "replace": "block-outline"
-// },
-// "vim.overrideCopy": false,
-// "vim.showmodename": true,
-// "vim.sneak": true,
-// "vim.statusBarColorControl": true,
-// "vim.statusBarColors": {
-//     "insert": [
-//         "#a3be8c",
-//         "#2b303b"
-//     ],
-//     "normal": [
-//         "#181a21",
-//         "#c0c5ce"
-//     ],
-//     "replace": [
-//         "#bf616a",
-//         "#2b303b"
-//     ],
-//     "visual": [
-//         "#d08770",
-//         "#2b303b"
-//     ],
-//     "visualblock": [
-//         "#d08770",
-//         "#2b303b"
-//     ],
-//     "visualline": [
-//         "#d08770",
-//         "#2b303b"
-//     ]
-// },
