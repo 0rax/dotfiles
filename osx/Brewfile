@@ -14,7 +14,6 @@
 # Brew
 tap "homebrew/core"               # https://github.com/homebrew/homebrew-core
 tap "homebrew/bundle"             # https://github.com/Homebrew/homebrew-bundle
-tap "homebrew/aliases"            # https://github.com/Homebrew/homebrew-aliases
 tap "homebrew/services"           # https://github.com/Homebrew/homebrew-services
 tap "homebrew/dupes"              # https://github.com/Homebrew/homebrew-dupes
 tap "homebrew/fuse"               # https://github.com/Homebrew/homebrew-fuse
@@ -25,10 +24,6 @@ tap "caskroom/fonts"              # https://github.com/caskroom/homebrew-fonts
 tap "caskroom/versions"           # https://github.com/caskroom/homebrew-versions
 # Custom
 tap "buo/cask-upgrade"            # https://github.com/buo/homebrew-cask-upgrade
-
-### Aliases
-# brew alias fc='cleanup; brew cask cleanup'
-# brew alias fu='update; brew upgrade; brew cu -a'
 
 ### Brews
 # Shells
@@ -147,7 +142,7 @@ cask "forklift2"                  # https://www.binarynights.com/forklift/
 cask "cyberduck"                  # https://cyberduck.io/
 # Programming
 cask "iterm2-beta"                # https://iterm2.com/downloads.html
-cask "atom"                       # http://atom.io/
+cask "visual-studio-code"         # https://code.visualstudio.com/
 cask "insomnia"                   # https://insomnia.rest/
 cask "hex-fiend"                  # https://github.com/ridiculousfish/HexFiend/
 cask "arduino"                    # https://www.arduino.cc/
@@ -197,15 +192,6 @@ mas "Keynote", id: 409183694      # https://www.apple.com/keynote/
 mas "Reeder", id: 880001334       # http://reederapp.com/
 # mas "Xcode", id: 497799835        # https://developer.apple.com/xcode/
 
-### QMK Toolchain
-tap "osx-cross/avr"
-tap "PX4/homebrew-px4"
-brew "avr-gcc"
-brew "dfu-programmer"
-brew "gcc-arm-none-eabi"
-brew "avrdude"
-cask "caskroom/drivers/qmk-toolbox"
-
 ### Non Brew software
 # Photoshop CC                    # https://www.adobe.com/products/photoshop.html
 # Illustrator CC                  # https://www.adobe.com/products/illustrator.html
@@ -216,11 +202,6 @@ cask "caskroom/drivers/qmk-toolbox"
 # Medis                           # git clone https://github.com/luin/medis.git && npm run pack
 # Hey                             # go get -u github.com/rakyll/hey
 # GRPCurl                         # go get -u -v github.com/fullstorydev/grpcurl/cmd/grpcurl
-
-### Firefox about:config
-# extension.pocket.enabled = false
-# xpinstall.signatures.required = false
-# security.webauth.u2f = true
 
 ### Keyboard shortcut
 # CTRL+CMD+left : Desktop left
