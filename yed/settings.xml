@@ -171,6 +171,10 @@
       <value>#ffffff</value>
       <defaultValue>#ffffff</defaultValue>
     </entry>
+    <entry name="bridgeStyle" type="y.view.BridgeCalculator">
+      <value>2</value>
+      <defaultValue>2</defaultValue>
+    </entry>
     <entry name="bridgeScaling" type="y.view.BridgeCalculator">
       <value>5</value>
       <defaultValue>5</defaultValue>
@@ -252,11 +256,19 @@
         <value>0</value>
         <defaultValue>0</defaultValue>
       </entry>
+      <entry name="symbolImport" type="java.lang.Integer">
+        <value>0</value>
+        <defaultValue>0</defaultValue>
+      </entry>
     </store>
     <store name="lastDirectoryName">
       <entry name="mainFile" type="java.io.File">
-        <value>/home/orax/.yEd/palettes</value>
+        <value>/home/orax/Projects/Emotech/devops/docs/data-collection</value>
         <defaultValue>/home/orax/Projects/Emotech/workbench/vpc</defaultValue>
+      </entry>
+      <entry name="symbolFile" type="java.io.File">
+        <value>/home/orax/Downloads</value>
+        <defaultValue>/home/orax/Downloads</defaultValue>
       </entry>
     </store>
   </store>

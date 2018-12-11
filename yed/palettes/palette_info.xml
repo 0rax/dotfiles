@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <palette.information>
   <palette.section palette.id="MyGraphs" palette.visibility="true"/>
+  <palette.section palette.id="DevOps Tools" palette.visibility="true"/>
   <palette.section palette.id="shapeNodes.palette" palette.visibility="true"/>
   <palette.section palette.id="modernNodes.palette" palette.visibility="true"/>
   <palette.section palette.id="edges.palette" palette.visibility="true"/>

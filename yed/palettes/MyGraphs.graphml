@@ -463,7 +463,6 @@
     <node id="n21">
       <data key="d3"><![CDATA[66a2fb30-0720-4e16-831e-ea6259a21b28]]></data>
       <data key="d4"/>
-      <data key="d6"/>
       <data key="d7">
         <y:SVGNode>
           <y:Geometry height="50.0" width="80.0" x="800.0" y="140.0"/>
@@ -480,7 +479,6 @@
     <node id="n22">
       <data key="d3"><![CDATA[eae258ac-92fd-41b6-99b3-5678b858cc7a]]></data>
       <data key="d4"/>
-      <data key="d6"/>
       <data key="d7">
         <y:SVGNode>
           <y:Geometry height="50.0" width="80.0" x="0.0" y="220.0"/>
