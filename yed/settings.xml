@@ -115,6 +115,10 @@
       <value>true</value>
       <defaultValue>true</defaultValue>
     </entry>
+    <entry name="adjustPortsOnResize" type="java.lang.Boolean">
+      <value>true</value>
+      <defaultValue>true</defaultValue>
+    </entry>
     <entry name="morphLayouts" type="java.lang.Boolean">
       <value>true</value>
       <defaultValue>true</defaultValue>
