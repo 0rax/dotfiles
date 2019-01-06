@@ -9,6 +9,7 @@
 - <img width="16" src="https://addons.cdn.mozilla.net/user-media/addon_icons/497/497366-64.png"> [Disable WebRTC](https://github.com/ChrisAntaki/disable-webrtc-firefox)
 - <img width="16" src="https://addons.cdn.mozilla.net/user-media/addon_icons/385/385621-64.png"> [DuckDuckGo Privacy Essentials](https://github.com/duckduckgo/duckduckgo-privacy-extension)
 - <img width="16" src="https://addons.cdn.mozilla.net/user-media/addon_icons/954/954390-64.png"> [Facebook Container](https://github.com/mozilla/contain-facebook)
+- <img width="16" src="https://addons.cdn.mozilla.net/user-media/addon_icons/5/5791-64.png"> [Flagfox](https://flagfox.wordpress.com/)
 - <img width="16" src="https://upload.wikimedia.org/wikipedia/commons/e/ea/HTTPS_Everywhere_icon.svg"> [HTTPS Everywhere](https://www.eff.org/https-everywhere)
 - <img width="16" src="https://addons.cdn.mozilla.net/user-media/addon_icons/930/930884-64.png"> [Iridium for YouTube](https://github.com/ParticleCore/Iridium)
 - <img width="16" src="https://cdn.add0n.com/icons/javascript-toggler48.png"> [JavaScript Toggle On and Off](https://add0n.com/javascript-toggler.html)

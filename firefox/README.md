@@ -28,4 +28,3 @@ This section of the repository contains two different files providing tweaks to 
 - http://kb.mozillazine.org/Profile_folder_-_Firefox
 - http://kb.mozillazine.org/User.js_file
 - http://kb.mozillazine.org/UserChrome.css
-
