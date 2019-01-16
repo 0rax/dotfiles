@@ -1,3 +1,4 @@
 !.gitignore
 fish_history
 fishd.*
+fish_variables
