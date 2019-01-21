@@ -6,5 +6,5 @@
 
 ## Install
 ### OSX
-- Link `palettes` to `~/Library/yWorks/yEd/palettes`
+- Copy `palettes` to `~/Library/yWorks/yEd/palettes`
 - Link `settings.xml` to `~/Library/yWorks/yEd/settings.xml`
