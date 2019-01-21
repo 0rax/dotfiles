@@ -1,4 +1,0 @@
-#!/usr/bin/env pip2 install -r
-
-ipython         # http://ipython.org/
-fabric          # http://www.fabfile.org/
