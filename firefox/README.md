@@ -20,6 +20,8 @@ This section of the repository contains two different files providing tweaks to 
 
 ### Useful links
 
+- https://www.privacytools.io/#browser
+- https://github.com/pyllyukko/user.js/blob/master/user.js
 - https://github.com/ghacksuserjs/ghacks-user.js/blob/master/user.js
 - https://github.com/Timvde/UserChrome-Tweaks
 

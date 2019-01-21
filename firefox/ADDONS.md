@@ -32,6 +32,12 @@
 
 ## Chrome Addons Foxified
 
-Requires <img width="16" src="https://addons.cdn.mozilla.net/user-media/addon_icons/664/664136-64.png"> [Chrome Store Foxified](https://github.com/Noitidart/Chrome-Store-Foxified) to install addons as well as being logged in to [addons.mozilla.org](https://addons.mozilla.org). 
+Requires <img width="16" src="https://addons.cdn.mozilla.net/user-media/addon_icons/664/664136-64.png"> [Chrome Store Foxified](https://github.com/Noitidart/Chrome-Store-Foxified) to install addons as well as being logged in to [addons.mozilla.org](https://addons.mozilla.org).
 
 - <img width="16" src="https://lh3.googleusercontent.com/53hcAIIiKXg1pBSJcapHGexLqyLrvxbrM_0kWiAfIJ8XdCmFVoRvJG0Yy50iIhVaTQjcWgNMgw=w128-h128-e365"> [HN Special - An addition for Hacker News](https://gabrielecirulli.github.io/hn-special/)
+
+## Dictionnaries
+
+- <img width="16" src="https://addons.cdn.mozilla.net/user-media/addon_icons/677/677644-64.png"> [English US Dictionary](https://addons.mozilla.org/en-US/firefox/addon/us-english-dictionary/)
+- <img width="16" src="https://addons.cdn.mozilla.net/user-media/addon_icons/461/461570-64.png"> [British English Dictionary](https://addons.mozilla.org/en-US/firefox/addon/british-english-dictionary-2/)
+- <img width="16" src="https://addons.cdn.mozilla.net/user-media/addon_icons/354/354872-64.png"> [French Dictionary](https://addons.mozilla.org/en-US/firefox/addon/dictionnaire-fran%C3%A7ais1/)
