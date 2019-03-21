@@ -12,9 +12,11 @@ function awsprofile
 	echo "Switch AWS Profile to '$new_profile' ..." 1>&2
 	set output (env --unset=AWS_DEFAULT_PROFILE aws --profile="$new_profile" configure list 2>&1 1>/dev/null)
 	if [ "$status" -eq 0 ]
-		echo "  status: success" 1>&2
 		set -gx AWS_DEFAULT_PROFILE $new_profile
 		set -gx AWS_PROFILE $new_profile
+		set account (aws sts get-caller-identity --output text --query 'Account' --output text 2>/dev/null)
+		echo "  account: $account" 1>&2
+		echo "  status: success" 1>&2
 	else
 		echo "  status: failure" 1>&2
 		set process (echo "$output" | tail -n1)
