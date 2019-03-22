@@ -23,8 +23,6 @@
     "editor.detectIndentation": false,
     "editor.fontFamily": "'Hasklug Nerd Font', 'Hasklig', Monaco, monofur, Menlo, monospace",
     "editor.fontLigatures": true,
-    "editor.fontSize": 13,
-    "editor.fontWeight": "500",
     "editor.insertSpaces": true,
     "editor.minimap.enabled": false,
     "editor.renderLineHighlight": "all",
@@ -45,6 +43,9 @@
         "ssh_config": "ssh_config"
     },
     "files.autoSave": "onFocusChange",
+    "files.exclude": {
+        "**/.snapshots": true
+    },
     "files.insertFinalNewline": true,
     "files.trimFinalNewlines": true,
     "files.trimTrailingWhitespace": true,
@@ -87,6 +88,16 @@
     "markdown.extension.tableFormatter.normalizeIndentation": true,
     "markdown.extension.toc.githubCompatibility": true,
     "markdown.preview.scrollEditorWithPreview": false,
+    "python.venvPath": "~/.virtualenvs/",
+    "python.formatting.provider": "black",
+    "python.jediEnabled": false,
+    "python.linting.enabled": true,
+    "python.linting.flake8Args": [
+        "--max-line-length=100",
+        "--ignore=E501,W503",
+    ],
+    "python.linting.flake8Enabled": true,
+    "python.linting.pylintEnabled": false,
     "shellcheck.customArgs": [
         "-x"
     ],
@@ -154,41 +165,32 @@
     "workbench.iconTheme": "file-icons",
     "workbench.startupEditor": "none",
     "workbench.statusBar.feedback.visible": false,
-    "zenMode.fullScreen": false,
-    // "vim.cursorStylePerMode": {
-    //     "insert": "line-thin",
-    //     "normal": "block",
-    //     "replace": "block-outline"
-    // },
-    // "vim.overrideCopy": false,
-    // "vim.showmodename": true,
-    // "vim.sneak": true,
-    // "vim.statusBarColorControl": true,
-    // "vim.statusBarColors": {
-    //     "insert": [
-    //         "#a3be8c",
-    //         "#2b303b"
-    //     ],
-    //     "normal": [
-    //         "#181a21",
-    //         "#c0c5ce"
-    //     ],
-    //     "replace": [
-    //         "#bf616a",
-    //         "#2b303b"
-    //     ],
-    //     "visual": [
-    //         "#d08770",
-    //         "#2b303b"
-    //     ],
-    //     "visualblock": [
-    //         "#d08770",
-    //         "#2b303b"
-    //     ],
-    //     "visualline": [
-    //         "#d08770",
-    //         "#2b303b"
-    //     ]
-    // },
-    // "vim.useSystemClipboard": true
+    "yaml.format.enable": true,
+    "yaml.customTags": [
+        // Cloud formation tags
+        "!And",
+        "!If",
+        "!Not",
+        "!Equals",
+        "!Or",
+        "!FindInMap",
+        "!Base64",
+        "!Cidr",
+        "!Ref",
+        "!Sub",
+        "!GetAtt",
+        "!GetAZs",
+        "!ImportValue",
+        "!Select",
+        "!Split",
+        "!Join",
+        // Sceptre tags
+        "!environment_variable",
+        "!file_contents",
+        "!stack_output",
+        "!stack_output_external",
+        "!cmd",
+        "!asg_scaling_processes"
+    ],
+    "zenMode.fullScreen": false
 }

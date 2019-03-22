@@ -41,3 +41,8 @@ Requires <img width="16" src="https://addons.cdn.mozilla.net/user-media/addon_ic
 - <img width="16" src="https://addons.cdn.mozilla.net/user-media/addon_icons/677/677644-64.png"> [English US Dictionary](https://addons.mozilla.org/en-US/firefox/addon/us-english-dictionary/)
 - <img width="16" src="https://addons.cdn.mozilla.net/user-media/addon_icons/461/461570-64.png"> [British English Dictionary](https://addons.mozilla.org/en-US/firefox/addon/british-english-dictionary-2/)
 - <img width="16" src="https://addons.cdn.mozilla.net/user-media/addon_icons/354/354872-64.png"> [French Dictionary](https://addons.mozilla.org/en-US/firefox/addon/dictionnaire-fran%C3%A7ais1/)
+
+## Themes
+
+- <img width="16" src="https://addons.cdn.mozilla.net/static/img/addon-icons/default-64.png"> [Arc Dark](https://addons.mozilla.org/en-US/firefox/addon/arc-dark-theme-we/)
+- <img width="16" src="https://addons.cdn.mozilla.net/static/img/addon-icons/default-64.png"> [Arc Darker](https://addons.mozilla.org/en-US/firefox/addon/arc-darker/)

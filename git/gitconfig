@@ -7,8 +7,6 @@
 # GPG Integration configuration
 [commit]
 	gpgsign = true
-[gpg]
-	program = /usr/local/bin/gpg
 
 # Git base config
 [core]

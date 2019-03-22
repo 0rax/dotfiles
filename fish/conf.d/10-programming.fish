@@ -24,6 +24,9 @@ if test -d $HOME/Projects/Go
 else if test -d $HOME/projects/Go
     set -gx GOPATH $HOME/projects/Go
     set -gx PATH   $PATH $GOPATH/bin
+else if test -d $HOME/projects/go
+    set -gx GOPATH $HOME/projects/go
+    set -gx PATH   $PATH $GOPATH/bin
 else if test -d $HOME/go
     set -gx GOPATH $HOME/go
     set -gx PATH   $PATH $GOPATH/bin
@@ -44,10 +47,8 @@ end
 
 # ---  Programming/Fluff  ------------------------------------------------------
 
-if test -d $HOME/TMP/bin
-    set -gx PATH   $PATH $HOME/TMP/bin
-else if  test -d $HOME/tmp/bin
-    set -gx PATH   $PATH $HOME/tmp/bin
+if test -d $HOME/bin
+    set -gx PATH   $PATH $HOME/bin
 end
 
 if test -d $HOME/.local/bin

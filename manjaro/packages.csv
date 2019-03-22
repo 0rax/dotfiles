@@ -37,10 +37,19 @@ pv                          # https://www.ivarch.com/programs/pv.shtml
 pwgen                       # https://pwgen.sourceforge.io/
 lsof                        # http://people.freebsd.org/~abe/
 ripgrep                     # https://github.com/BurntSushi/ripgrep
+fd                          # https://github.com/sharkdp/fd
 aria2                       # https://aria2.github.io/
 jq                          # https://stedolan.github.io/jq/
 pandoc                      # http://pandoc.org
-aur/dtrx                    # http://brettcsmith.org/2007/dtrx/
+screen                      # https://www.gnu.org/software/screen/
+bind-tools                  # https://www.isc.org/downloads/bind/
+dash                        # http://gondor.apana.org.au/~herbert/dash/
+whois                       # https://github.com/rfc1036/whois
+traceroute                  # http://traceroute.sourceforge.net/
+aur/gotop-git               # https://github.com/cjbassi/gotop
+tcpdump                     # https://www.archlinux.org/packages/extra/x86_64/tcpdump/
+diffstat                    # http://invisible-island.net/diffstat
+# aur/dtrx                  # http://brettcsmith.org/2007/dtrx/
 
 ## Programming
 base-devel                  # https://www.archlinux.org/groups/x86_64/base-devel/
@@ -55,11 +64,14 @@ python                      # https://docs.python.org/3/index.html
 python-pip                  # https://pip.pypa.io/en/stable/installing/
 aur/visual-studio-code      # https://code.visualstudio.com/
 aur/insomnia                # https://insomnia.rest/
+meld                        # http://meldmerge.org/
+aur/onefetch                # https://github.com/o2sh/onefetch
+# pip install --user virtualfish # https://github.com/adambrenecki/virtualfish
 
 ## Virtualization
 docker                      # https://www.docker.com/
-docker-compose
-virtualbox                  # https://www.virtualbox.org/
+docker-compose              # https://www.docker.com/
+# virtualbox                # https://www.virtualbox.org/
 
 ## Network tools
 net-tools                   # http://net-tools.sourceforge.net/
@@ -69,39 +81,62 @@ mtr                         # http://www.bitwizard.nl/mtr/
 
 ## DevOps
 aws-cli                     # https://github.com/aws/aws-cli
-aur/wrk                     # https://github.com/wg/wrk
 httpie                      # https://httpie.org/
-mitmproxy                   # https://mitmproxy.org/
+aur/kubectl-bin             # https://kubernetes.io/docs/reference/kubectl/overview/
+aur/kubernetes-helm-bin     # https://helm.sh/docs/using_helm/
+# aur/wrk                   # https://github.com/wg/wrk
+# mitmproxy                 # https://mitmproxy.org/
+# dbeaver                   # https://dbeaver.io/
+# aur/medis                 # https://github.com/luin/medis
+# postgresql                # https://postgresql.org/
+# wireshark-gtk             # https://www.wireshark.org/
+# go get github.com/mehrdadrad/mylg # http://mylg.io
+# go get github.com/wagoodman/dive  # https://github.com/wagoodman/dive
 
 ## Backup Utils
-restic                      # https://github.com/restic/restic
-rclone                      # https://rclone.org/
+# restic                    # https://github.com/restic/restic
+# rclone                    # https://rclone.org/
 
 ## System Utils
-powertop                    # https://01.org/powertop/
 tilix                       # https://github.com/gnunn1/tilix
-aur/libinput-gestures       # https://github.com/bulletmark/libinput-gestures (Enable Trackpad Gesture)
-aur/solaar-git              # https://github.com/pwr/Solaar (Logitech Unifying tool)
-aur/albert                  # https://albertlauncher.github.io/
-muparser                    # For Albert's libcalculator
-aur/activitywatch-bin       # https://activitywatch.net/
+gparted                     # https://gparted.sourceforge.io/
+snapper-gui                 # https://wiki.archlinux.org/index.php/Snapper#Installation
+keyhain                     # https://www.funtoo.org/Keychain
+xsel                        # http://www.vergenet.net/~conrad/software/xsel/
+solaar                      # https://github.com/pwr/Solaar (Logitech Unifying tool)
+scrot                       # https://github.com/dreamer/scrot
+redshift                    # http://jonls.dk/redshift/
+                            # https://cinnamon-spices.linuxmint.com/applets/view/296
+xorg-xev                    # https://www.mankier.com/1/xev
+# powertop                  # https://01.org/powertop/
+# aur/libinput-gestures     # https://github.com/bulletmark/libinput-gestures (Enable Trackpad Gesture)
+# aur/albert-lite           # https://albertlauncher.github.io/
+# muparser                  # For Albert's libcalculator
+# aur/activitywatch-bin     # https://activitywatch.net/
 
 ## Fonts
 aur/ttf-emojione            # https://github.com/eosrei/emojione-color-font
-
-## Gnome themes
-arc-gtk-theme               # https://github.com/horst3180/Arc-theme
-adapta-gtk-theme            # https://github.com/adapta-project/adapta-gtk-theme
+aur/ephifonts               # http://www.ephifonts.com/
+aur/ttf-ms-fonts            # http://corefonts.sourceforge.net/
+aur/ttf-monofur             # https://www.dafont.com/monofur.font
+aur/ttf-monaco              # https://github.com/cstrap/monaco-font
+aur/ttf-monofur-powerline-git # https://github.com/powerline/fonts/tree/master/Monofur
+aur/monaco-powerline-font-git # https://gist.github.com/arkhan/229a0729ec79c6fcec81
 
 ## Media Playback
 vlc                         # http://www.videolan.org/vlc/
 aur/spotify                 # https://www.spotify.com/
+pulseaudio-equalizer-ladspa # https://github.com/pulseaudio-equalizer-ladspa/equalizer
+# playerctl                 # https://github.com/acrisci/playerctl
 
 ## Media Editor
 aur/yed                     # http://www.yworks.com/en/downloads.html#yEd
+# dia                       # https://wiki.gnome.org/Apps/Dia
+# aur/dia-shapes            # http://dia-installer.de/diashapes/index.html
 gimp                        # http://www.gimp.org/
 aur/standardnotes-desktop   # http://standardnotes.org/
-aur/onlyoffice-bin
+aur/onlyoffice-bin          # https://www.onlyoffice.com/en/download-desktop.aspx
+eog                         # https://wiki.gnome.org/Apps/EyeOfGnome/
 
 ## Encryption
 aur/keybase-bin             # https://keybase.io/
@@ -109,28 +144,61 @@ keypassxc                   # https://keepassxc.org/
 veracrypt                   # https://veracrypt.codeplex.com/
 
 ## Web & Social
-evolution                   # https://wiki.gnome.org/Apps/Evolution/
 firefox-developer-edition   # https://www.mozilla.org/en-US/firefox/developer/
-transmission-gtk            # https://transmissionbt.com/
-feedreader                  # https://jangernert.github.io/FeedReader/
+aur/ungoogled-chromium-bin  # https://github.com/Eloston/ungoogled-chromium
 aur/rambox-bin              # https://rambox.pro/
+evolution                   # https://wiki.gnome.org/Apps/Evolution/
+evolution-ews               # https://gitlab.gnome.org/GNOME/evolution-ews
+# transmission-gtk          # https://transmissionbt.com/
+# feedreader                # https://jangernert.github.io/FeedReader/
+                            # lifeara vs feedreader ?
 
+## Dictionaries
+hunspell
+hunspell-en_GB
+hunspell-fr
+
+#### Global
 ### Installation
 ## Enable Docker & Add current current user to Docker group
 # sudo systemctl enable --now docker
 # sudo usermod -a -G docker $USER
+## Add dictionaries to vscode via
+# ln -s /usr/share/hunspell ~/.config/Code/Dictionaries
+## Solaar Setup
+# sudo groupadd --system plugdev
+# sudo usermod -a -G plugdev $USER
+# sudo udevadm control --reload-rules
+
+#### Laptop
+### Installation
 ## Setup libinput-gestures
 # sudo usermod -a -G input $USER
 # libinput-gestures-setup autostart
 # libinput-gestures-setup start
-## Gnome Theme
-# - Set theme to Adapta, Icon to Papyrus & Shell theme to Adapta-Nokto
-# - Use Kvantum Manager to set QT theme to KvArc
-## Gnome Shell extension
+## Set following command in autostart to remap capslock to backspace
+# setxkbmap -option caps:backspace
+
+#### GNOME
+### Packages
+arc-gtk-theme               # https://github.com/horst3180/Arc-theme
+adapta-gtk-theme            # https://github.com/adapta-project/adapta-gtk-theme
+### Gnome Theme
+# Set theme to Adapta, Icon to Papyius & Shell theme to Adapta-Nokto
+# Use Kvantum Manager to set QT theme to KvArc
+### Gnome Shell extension
 # caffeine
 # media-player-indictor
 # no-annoyance
 # dash-to-dock
 # remove-dropdown-arrows
-## Set following command in autostart to remap capslock to backspace
-# setxkbmap -option caps:backspace
+
+#### Cinnamon
+### GTK Theme
+arc-gtk-theme
+# Set theme to Arc-Dark with Papirus-Dark icon pack
+
+#### Fonts
+aur/otf-hasklig
+# https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/Hasklig/Regular/complete/Hasklug%20Nerd%20Font%20Complete%20Mono.otf
+# Download to ~/.fonts and run `fc-cache -fv`
