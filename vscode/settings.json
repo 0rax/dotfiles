@@ -90,7 +90,7 @@
     "markdown.preview.scrollEditorWithPreview": false,
     "python.venvPath": "~/.virtualenvs/",
     "python.formatting.provider": "black",
-    "python.jediEnabled": false,
+    "python.jediEnabled": true,
     "python.linting.enabled": true,
     "python.linting.flake8Args": [
         "--max-line-length=100",

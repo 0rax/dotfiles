@@ -23,26 +23,26 @@ function fish_greeting
     alias _i "set_color yellow"
     alias _n "set_color normal"
 
-    set -l OS (uname)
+    set -l PLATFORM (uname)
+    set -l OS 'Unknown'
     set -l LOAD '? ? ?'
     set -l CORE '?'
     set -l THREAD '?'
 
-    switch $OS
-        case "Linux":
-            if test -f /etc/os-release
-                set OS (cat /etc/os-release | sed -nE 's/^PRETTY_NAME="(.*)"$/\1/p')
-            else if command -s lsb_release > /dev/null
-                set OS (lsb_release)
-            end
-            set LOAD (cat /proc/loadavg | cut -d " " -f1-3)
-            set CORE (sed -nE 's/^((physical id)|(cpu cores))\s+: ([0-9]+)$/\4/p' /proc/cpuinfo | paste -d " " - - | sort -u | awk '{s+=$2}END{print s}')
-            set THREAD (grep -c "^processor" /proc/cpuinfo)
-        case "Darwin":
-            set OS 'Mac OS X' (sw_vers -productVersion)
-            set LOAD (sysctl -n vm.loadavg | cut -d" " -f2-4)
-            set CORE (sysctl -a machdep.cpu.core_count | cut -d' ' -f2)
-            set THREAD (sysctl -a machdep.cpu.thread_count | cut -d' ' -f2)
+    if [ "$PLATFORM" = "Linux" ]
+        if test -f /etc/os-release
+            set OS (cat /etc/os-release | sed -nE 's/^PRETTY_NAME="(.*)"$/\1/p')
+        else if command -s lsb_release > /dev/null
+            set OS (lsb_release)
+        end
+        set LOAD (cat /proc/loadavg | cut -d " " -f1-3)
+        set CORE (sed -nE 's/^((physical id)|(cpu cores))\s+: ([0-9]+)$/\4/p' /proc/cpuinfo | paste -d " " - - | sort -u | awk '{s+=$2}END{print s}')
+        set THREAD (grep -c "^processor" /proc/cpuinfo)
+    else if [ "$PLATFORM" = "Darwin" ]
+        set OS 'Mac OS X' (sw_vers -productVersion)
+        set LOAD (sysctl -n vm.loadavg | cut -d" " -f2-4)
+        set CORE (sysctl -a machdep.cpu.core_count | cut -d' ' -f2)
+        set THREAD (sysctl -a machdep.cpu.thread_count | cut -d' ' -f2)
     end
 
     echo (_n)
