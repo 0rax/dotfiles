@@ -108,6 +108,9 @@ scrot                       # https://github.com/dreamer/scrot
 redshift                    # http://jonls.dk/redshift/
                             # https://cinnamon-spices.linuxmint.com/applets/view/296
 xorg-xev                    # https://www.mankier.com/1/xev
+gnome-calculator            # https://wiki.gnome.org/Apps/Calculator
+gnome-system-monitor        # https://wiki.gnome.org/Apps/SystemMonitor
+aur/ctop                    # https://github.com/bcicen/ctop
 # powertop                  # https://01.org/powertop/
 # aur/libinput-gestures     # https://github.com/bulletmark/libinput-gestures (Enable Trackpad Gesture)
 # aur/albert-lite           # https://albertlauncher.github.io/
