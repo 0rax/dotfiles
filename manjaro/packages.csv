@@ -134,6 +134,7 @@ pulseaudio-equalizer-ladspa # https://github.com/pulseaudio-equalizer-ladspa/equ
 
 ## Media Editor
 aur/yed                     # http://www.yworks.com/en/downloads.html#yEd
+# Need extra palette from https://github.com/pafnow/vrt-graphml-for-yed
 # dia                       # https://wiki.gnome.org/Apps/Dia
 # aur/dia-shapes            # http://dia-installer.de/diashapes/index.html
 gimp                        # http://www.gimp.org/
@@ -154,6 +155,7 @@ evolution                   # https://wiki.gnome.org/Apps/Evolution/
 evolution-ews               # https://gitlab.gnome.org/GNOME/evolution-ews
 # transmission-gtk          # https://transmissionbt.com/
 # feedreader                # https://jangernert.github.io/FeedReader/
+# liferea                   # https://lzone.de/liferea/
                             # lifeara vs feedreader ?
 
 ## Dictionaries
@@ -186,9 +188,14 @@ hunspell-fr
 ### Packages
 arc-gtk-theme               # https://github.com/horst3180/Arc-theme
 adapta-gtk-theme            # https://github.com/adapta-project/adapta-gtk-theme
+aur/adapta-gtk-theme-git    # https://github.com/adapta-project/adapta-gtk-theme
+papirus-icon-theme          # https://github.com/PapirusDevelopmentTeam/papirus-icon-theme
+aur/papirus-folders-git     # https://github.com/PapirusDevelopmentTeam/papirus-folders
 ### Gnome Theme
-# Set theme to Adapta, Icon to Papyius & Shell theme to Adapta-Nokto
-# Use Kvantum Manager to set QT theme to KvArc
+# - Set theme to Adapta, Icon to Papyius & Shell theme to Adapta-Nokto
+# - Use Kvantum Manager to set KDE + QT theme to KvAdapta
+# - Use QT5 Settings to set theme to kvantum and icon theme to Papyrus-Adapta-Nokto
+# - Run papirus-folders -C bluegrey
 ### Gnome Shell extension
 # caffeine
 # media-player-indictor
@@ -197,9 +204,10 @@ adapta-gtk-theme            # https://github.com/adapta-project/adapta-gtk-theme
 # remove-dropdown-arrows
 
 #### Cinnamon
-### GTK Theme
+### Packages
 arc-gtk-theme
-# Set theme to Arc-Dark with Papirus-Dark icon pack
+### GTK Theme
+# - Set theme to Arc-Dark with Papirus-Dark icon pack
 
 #### Fonts
 aur/otf-hasklig
