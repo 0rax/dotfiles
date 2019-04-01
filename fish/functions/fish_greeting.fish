@@ -2,14 +2,14 @@
 # -*-  mode:fish; tab─width:4  -*-
 
 #
-#       ╱ ╲
-# ┌───╱     ╲ ───┐ user@hostname
-# │ ╱ ╲     ╱ ╲  │ OS ..... OS Type & Release
-# ╱     ╲ ╱     ╲  Kernel . Kernel Type
-# ╲     ╱ ╲     ╱  Arch ... CPU Architecture
-# │ ╲ ╱     ╲ ╱  │ CPU .... Number of CPU cores
-# └───╲     ╱ ───┘ Load ... Load Average
-#       ╲ ╱
+#         ╱ ╲
+#   ┌───╱     ╲───┐   user@hostname
+#   │ ╱ ╲     ╱ ╲ │   OS ..... OS Type & Release
+#   ╱     ╲ ╱     ╲   Kernel . Kernel Type
+#   ╲     ╱ ╲     ╱   Arch ... CPU Architecture
+#   │ ╲ ╱     ╲ ╱ │   CPU .... Number of CPU cores
+#   └───╲     ╱───┘   Load ... Load Average
+#         ╲ ╱
 #
 
 function fish_greeting
@@ -46,14 +46,14 @@ function fish_greeting
     end
 
     echo (_n)
-    echo (_t)'       ╱ ╲        '             (_i)
-    echo (_s)' ┌───'(_t)'╱     ╲ '(_s)'───┐ ' (_i)$USER(_s)@(_t)(hostname)
-    echo (_s)' │ '(_i)'╱ ╲     ╱ ╲  '(_s)'│ ' (_i)'OS '(_s).....(_t) $OS
-    echo (_i)' ╱     ╲ ╱     ╲  '             (_i)'Kernel '(_s).(_t) (uname -rs)
-    echo (_i)' ╲     ╱ ╲     ╱  '             (_i)'Arch '(_s)...(_t) (uname -m)
-    echo (_s)' │ '(_i)'╲ ╱     ╲ ╱  '(_s)'│ ' (_i)'CPU '(_s)....(_t) "$CORE C / $THREAD T"
-    echo (_s)' └───'(_t)'╲     ╱ '(_s)'───┘ ' (_i)'Load '(_s)...(_t) $LOAD
-    echo (_t)'       ╲ ╱        '             (_i)
+    echo (_t)'         ╱ ╲        '             (_i)
+    echo (_s)'   ┌───'(_t)'╱     ╲'(_s)'───┐  ' (_i)$USER(_s)@(_t)(hostname)
+    echo (_s)'   │ '(_i)'╱ ╲     ╱ ╲ '(_s)'│  ' (_i)'OS '(_s).....(_t) $OS
+    echo (_i)'   ╱     ╲ ╱     ╲  '             (_i)'Kernel '(_s).(_t) (uname -rs)
+    echo (_i)'   ╲     ╱ ╲     ╱  '             (_i)'Arch '(_s)...(_t) (uname -m)
+    echo (_s)'   │ '(_i)'╲ ╱     ╲ ╱ '(_s)'│  ' (_i)'CPU '(_s)....(_t) "$CORE C / $THREAD T"
+    echo (_s)'   └───'(_t)'╲     ╱'(_s)'───┘  ' (_i)'Load '(_s)...(_t) $LOAD
+    echo (_t)'         ╲ ╱        '             (_i)
     echo (_n)
 
 end
