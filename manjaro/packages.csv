@@ -82,8 +82,13 @@ mtr                         # http://www.bitwizard.nl/mtr/
 ## DevOps
 aws-cli                     # https://github.com/aws/aws-cli
 httpie                      # https://httpie.org/
+prips                       # https://packages.debian.org/stable/net/prips
+ipcalc                      # http://jodies.de/ipcalc
 aur/kubectl-bin             # https://kubernetes.io/docs/reference/kubectl/overview/
 aur/kubernetes-helm-bin     # https://helm.sh/docs/using_helm/
+aur/aws-vault               # https://github.com/99designs/aws-vault
+aur/docker-credential-secretservice # https://github.com/docker/docker-credential-helpers
+aur/amazon-ecr-credential-helper # https://github.com/awslabs/amazon-ecr-credential-helper 
 # aur/wrk                   # https://github.com/wg/wrk
 # mitmproxy                 # https://mitmproxy.org/
 # dbeaver                   # https://dbeaver.io/
@@ -110,6 +115,9 @@ redshift                    # http://jonls.dk/redshift/
 xorg-xev                    # https://www.mankier.com/1/xev
 gnome-calculator            # https://wiki.gnome.org/Apps/Calculator
 gnome-system-monitor        # https://wiki.gnome.org/Apps/SystemMonitor
+gnome-screenshot            # https://gitlab.gnome.org/GNOME/gnome-screenshot
+dconf-editor                # https://wiki.gnome.org/Apps/DconfEditor
+seahorse                    # https://wiki.gnome.org/Apps/Seahorse
 aur/ctop                    # https://github.com/bcicen/ctop
 # powertop                  # https://01.org/powertop/
 # aur/libinput-gestures     # https://github.com/bulletmark/libinput-gestures (Enable Trackpad Gesture)
@@ -153,10 +161,8 @@ aur/ungoogled-chromium-bin  # https://github.com/Eloston/ungoogled-chromium
 aur/rambox-bin              # https://rambox.pro/
 evolution                   # https://wiki.gnome.org/Apps/Evolution/
 evolution-ews               # https://gitlab.gnome.org/GNOME/evolution-ews
-# transmission-gtk          # https://transmissionbt.com/
 # feedreader                # https://jangernert.github.io/FeedReader/
-# liferea                   # https://lzone.de/liferea/
-                            # lifeara vs feedreader ?
+# transmission-gtk          # https://transmissionbt.com/
 
 ## Dictionaries
 hunspell

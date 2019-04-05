@@ -167,7 +167,7 @@
     "workbench.statusBar.feedback.visible": false,
     "yaml.format.enable": true,
     "yaml.customTags": [
-        // Cloud formation tags
+        // CloudFormation tags
         "!And",
         "!If",
         "!Not",

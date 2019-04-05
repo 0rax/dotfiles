@@ -1,0 +1,1 @@
+../plugins/sharktooth/functions/__flseg_awsvault.fish
