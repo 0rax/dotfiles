@@ -97,6 +97,7 @@ aur/amazon-ecr-credential-helper # https://github.com/awslabs/amazon-ecr-credent
 # wireshark-gtk             # https://www.wireshark.org/
 # go get github.com/mehrdadrad/mylg # http://mylg.io
 # go get github.com/wagoodman/dive  # https://github.com/wagoodman/dive
+# go get github.com/FiloSottile/mkcert # https://github.com/FiloSottile/mkcert
 
 ## Backup Utils
 # restic                    # https://github.com/restic/restic
@@ -116,6 +117,7 @@ xorg-xev                    # https://www.mankier.com/1/xev
 gnome-calculator            # https://wiki.gnome.org/Apps/Calculator
 gnome-system-monitor        # https://wiki.gnome.org/Apps/SystemMonitor
 gnome-screenshot            # https://gitlab.gnome.org/GNOME/gnome-screenshot
+file-roller                 # https://wiki.gnome.org/Apps/FileRoller
 dconf-editor                # https://wiki.gnome.org/Apps/DconfEditor
 seahorse                    # https://wiki.gnome.org/Apps/Seahorse
 aur/ctop                    # https://github.com/bcicen/ctop
@@ -219,3 +221,16 @@ arc-gtk-theme
 aur/otf-hasklig
 # https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/Hasklig/Regular/complete/Hasklug%20Nerd%20Font%20Complete%20Mono.otf
 # Download to ~/.fonts and run `fc-cache -fv`
+
+#### QMK
+zip
+unzip
+avr-gcc
+avr-binutils
+avr-libc
+dfu-util
+arm-none-eabi-gcc
+arm-none-eabi-binutils
+arm-none-eabi-newlib dfu-programmer
+dfu-util
+# https://beta.docs.qmk.fm/detailed-guides/getting_started_build_tools#linux
