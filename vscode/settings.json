@@ -152,11 +152,6 @@
     "window.restoreWindows": "one",
     "window.titleBarStyle": "custom",
     "window.zoomLevel": 0,
-    "wordscounter.enableLanguageFilter": true,
-    "wordscounter.languageFilter": [
-        "markdown",
-        "plaintext"
-    ],
     "workbench.colorCustomizations": {
         "statusBar.background": "#16181D",
         "statusBar.noFolderBackground": "#16181D"
@@ -192,5 +187,5 @@
         "!cmd",
         "!asg_scaling_processes"
     ],
-    "zenMode.fullScreen": false
+    "zenMode.fullScreen": false,
 }
