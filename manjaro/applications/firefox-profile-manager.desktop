@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Name=Firefox Profile Manager
+Exec=/usr/lib/firefox-developer-edition/firefox -P %u
+Icon=firefox
+Terminal=false
+Type=Application
+StartupNotify=true
+StartupWMClass=Firefox Profile Manager
+Categories=Network;WebBrowser;
+Keywords=web;browser;internet;
