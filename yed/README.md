@@ -10,3 +10,6 @@
 
 ### Linux
 - Copy `palettes` to `~/.yEd/palettes`
+
+## Windows
+- Copy `palettes` to `%APPDATA%\yWorks\yEd\palettes`
