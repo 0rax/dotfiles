@@ -144,6 +144,9 @@ aur/monaco-powerline-font-git # https://gist.github.com/arkhan/229a0729ec79c6fce
 vlc                         # http://www.videolan.org/vlc/
 aur/spotify                 # https://www.spotify.com/
 pulseaudio-equalizer-ladspa # https://github.com/pulseaudio-equalizer-ladspa/equalizer
+evince                      # https://wiki.gnome.org/Apps/Evince
+aur/gnome-twitch-git        # http://gnome-twitch.vinszent.com/
+aur/gnome-twitch-player-backend-gstreamer-cairo-git
 # playerctl                 # https://github.com/acrisci/playerctl
 
 ## Media Editor
@@ -160,6 +163,14 @@ eog                         # https://wiki.gnome.org/Apps/EyeOfGnome/
 aur/keybase-bin             # https://keybase.io/
 keypassxc                   # https://keepassxc.org/
 veracrypt                   # https://veracrypt.codeplex.com/
+
+## Security
+gufw                        # http://gufw.org/
+linux50-headers             # https://www.kernel.org/
+wireguard-dkms              # https://www.wireguard.com/
+wireguard-tools             # https://www.wireguard.com/
+aur/networkmanager-wireguard-git # https://github.com/max-moser/network-manager-wireguard/
+remmina                     # http://www.remmina.org/wp/
 
 ## Web & Social
 firefox-developer-edition   # https://www.mozilla.org/en-US/firefox/developer/
