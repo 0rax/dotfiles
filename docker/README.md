@@ -16,9 +16,6 @@ $ vi ~/.docker/config.json
 ```
 ```json
 {
-	"HttpHeaders": {
-		"User-Agent": "Docker-Client/18.09.4-ce (linux)"
-	},
 	"credsStore": "ecr-login",
 	"credHelpers": {
 		"https://index.docker.io/v1/": "secretservice",
@@ -38,9 +35,6 @@ $ vi ~/.docker/config.json
 ```
 ```json
 {
-	"HttpHeaders": {
-		"User-Agent": "Docker-Client/18.09.4-ce (linux)"
-	},
 	"credsStore": "ecr-login",
 	"credHelpers": {
 		"https://index.docker.io/v1/": "osxkeychain",
