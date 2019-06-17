@@ -7,7 +7,7 @@
 #   │ ╱ ╲     ╱ ╲ │   OS ..... OS Type & Release
 #   ╱     ╲ ╱     ╲   Kernel . Kernel Type
 #   ╲     ╱ ╲     ╱   Arch ... CPU Architecture
-#   │ ╲ ╱     ╲ ╱ │   CPU .... Number of CPU cores
+#   │ ╲ ╱     ╲ ╱ │   CPU .... CPU Core / CPU Thread
 #   └───╲     ╱───┘   Load ... Load Average
 #         ╲ ╱
 #
@@ -45,15 +45,15 @@ function fish_greeting
         set THREAD (sysctl -a machdep.cpu.thread_count | cut -d' ' -f2)
     end
 
-    echo (_n)
-    echo (_t)'         ╱ ╲        '             (_i)
-    echo (_s)'   ┌───'(_t)'╱     ╲'(_s)'───┐  ' (_i)$USER(_s)@(_t)(hostname)
-    echo (_s)'   │ '(_i)'╱ ╲     ╱ ╲ '(_s)'│  ' (_i)'OS '(_s).....(_t) $OS
-    echo (_i)'   ╱     ╲ ╱     ╲  '             (_i)'Kernel '(_s).(_t) (uname -rs)
-    echo (_i)'   ╲     ╱ ╲     ╱  '             (_i)'Arch '(_s)...(_t) (uname -m)
-    echo (_s)'   │ '(_i)'╲ ╱     ╲ ╱ '(_s)'│  ' (_i)'CPU '(_s)....(_t) "$CORE C / $THREAD T"
-    echo (_s)'   └───'(_t)'╲     ╱'(_s)'───┘  ' (_i)'Load '(_s)...(_t) $LOAD
-    echo (_t)'         ╲ ╱        '             (_i)
-    echo (_n)
+    echo ''
+    echo       '         '(_t)'╱ ╲'(_n)'        '
+    echo '   '(_s)'┌───'(_t)'╱     ╲'(_s)'───┐'(_n)'  ' (_i)$USER(_s)@(_t)(hostname)(_n)
+    echo '   '(_s)'│ '(_i)'╱ ╲     ╱ ╲ '(_s)'│'(_n)'  ' (_i)'OS '(_s).....(_t) $OS(_n)
+    echo       '   '(_i)'╱     ╲ ╱     ╲'(_n)'  '       (_i)'Kernel '(_s).(_t) (uname -rs)(_n)
+    echo       '   '(_i)'╲     ╱ ╲     ╱'(_n)'  '       (_i)'Arch '(_s)...(_t) (uname -m)(_n)
+    echo '   '(_s)'│ '(_i)'╲ ╱     ╲ ╱ '(_s)'│'(_n)'  ' (_i)'CPU '(_s)....(_t) "$CORE C / $THREAD T"(_n)
+    echo '   '(_s)'└───'(_t)'╲     ╱'(_s)'───┘'(_n)'  ' (_i)'Load '(_s)...(_t) $LOAD(_n)
+    echo       '         '(_t)'╲ ╱'(_n)'        '
+    echo ''
 
 end
