@@ -81,21 +81,22 @@ net-tools                   # http://net-tools.sourceforge.net/
 iftop                       # http://www.ex-parrot.com/pdw/iftop/
 nmap                        # https://nmap.org/
 mtr                         # http://www.bitwizard.nl/mtr/
+aur/qomui                   # https://github.com/corrad1nho/qomui
 
 ## DevOps
 aws-cli                     # https://github.com/aws/aws-cli
 httpie                      # https://httpie.org/
 prips                       # https://packages.debian.org/stable/net/prips
 ipcalc                      # http://jodies.de/ipcalc
+dbeaver                     # https://dbeaver.io/
 aur/kubectl-bin             # https://kubernetes.io/docs/reference/kubectl/overview/
 aur/kubernetes-helm-bin     # https://helm.sh/docs/using_helm/
 aur/aws-vault               # https://github.com/99designs/aws-vault
 aur/docker-credential-secretservice # https://github.com/docker/docker-credential-helpers
 aur/amazon-ecr-credential-helper # https://github.com/awslabs/amazon-ecr-credential-helper
-# aur/saml2aws              # https://github.com/Versent/saml2aws
+aur/saml2aws                # https://github.com/Versent/saml2aws
 # aur/wrk                   # https://github.com/wg/wrk
 # mitmproxy                 # https://mitmproxy.org/
-# dbeaver                   # https://dbeaver.io/
 # aur/medis                 # https://github.com/luin/medis
 # postgresql                # https://postgresql.org/
 # wireshark-gtk             # https://www.wireshark.org/
@@ -132,13 +133,16 @@ aur/ctop                    # https://github.com/bcicen/ctop
 # aur/activitywatch-bin     # https://activitywatch.net/
 
 ## Fonts
-aur/ttf-emojione            # https://github.com/eosrei/emojione-color-font
+ttf-joypixels               # https://www.joypixels.com/download
 aur/ephifonts               # http://www.ephifonts.com/
 aur/ttf-ms-fonts            # http://corefonts.sourceforge.net/
 aur/ttf-monofur             # https://www.dafont.com/monofur.font
 aur/ttf-monaco              # https://github.com/cstrap/monaco-font
 aur/ttf-monofur-powerline-git # https://github.com/powerline/fonts/tree/master/Monofur
 aur/monaco-powerline-font-git # https://gist.github.com/arkhan/229a0729ec79c6fcec81
+aur/otf-hasklig             # https://github.com/i-tu/Hasklig
+# https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/hasklig/regular/complete/hasklug%20nerd%20font%20complete%20mono.otf
+# Download to ~/.fonts and run `fc-cache -fv`
 
 ## Media Playback
 vlc                         # http://www.videolan.org/vlc/
@@ -166,7 +170,6 @@ veracrypt                   # https://veracrypt.codeplex.com/
 
 ## Security
 gufw                        # http://gufw.org/
-linux50-headers             # https://www.kernel.org/
 wireguard-dkms              # https://www.wireguard.com/
 wireguard-tools             # https://www.wireguard.com/
 aur/networkmanager-wireguard-git # https://github.com/max-moser/network-manager-wireguard/
@@ -186,56 +189,11 @@ hunspell
 hunspell-en_GB
 hunspell-fr
 
-#### Global
-### Installation
-## Enable Docker & Add current current user to Docker group
-# sudo systemctl enable --now docker
-# sudo usermod -a -G docker $USER
-## Add dictionaries to vscode via
-# ln -s /usr/share/hunspell ~/.config/Code/Dictionaries
-## Solaar Setup
-# sudo groupadd --system plugdev
-# sudo usermod -a -G plugdev $USER
-# sudo udevadm control --reload-rules
-
-#### Laptop
-### Installation
-## Setup libinput-gestures
-# sudo usermod -a -G input $USER
-# libinput-gestures-setup autostart
-# libinput-gestures-setup start
-## Set following command in autostart to remap capslock to backspace
-# setxkbmap -option caps:backspace
-
-#### GNOME
-### Packages
+#### GNOME / Cinnamon Theme
 arc-gtk-theme               # https://github.com/horst3180/Arc-theme
 adapta-gtk-theme            # https://github.com/adapta-project/adapta-gtk-theme
-aur/adapta-gtk-theme-git    # https://github.com/adapta-project/adapta-gtk-theme
 papirus-icon-theme          # https://github.com/PapirusDevelopmentTeam/papirus-icon-theme
 aur/papirus-folders-git     # https://github.com/PapirusDevelopmentTeam/papirus-folders
-### Gnome Theme
-# - Set theme to Adapta, Icon to Papyius & Shell theme to Adapta-Nokto
-# - Use Kvantum Manager to set KDE + QT theme to KvAdapta
-# - Use QT5 Settings to set theme to kvantum and icon theme to Papyrus-Adapta-Nokto
-# - Run papirus-folders -C bluegrey
-### Gnome Shell extension
-# caffeine
-# media-player-indictor
-# no-annoyance
-# dash-to-dock
-# remove-dropdown-arrows
-
-#### Cinnamon
-### Packages
-arc-gtk-theme
-### GTK Theme
-# - Set theme to Arc-Dark with Papirus-Dark icon pack
-
-#### Fonts
-aur/otf-hasklig
-# https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/Hasklig/Regular/complete/Hasklug%20Nerd%20Font%20Complete%20Mono.otf
-# Download to ~/.fonts and run `fc-cache -fv`
 
 #### QMK (https://beta.docs.qmk.fm/detailed-guides/getting_started_build_tools#linux)
 zip
