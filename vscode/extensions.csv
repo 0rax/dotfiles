@@ -2,6 +2,7 @@ andyyaldoo.vscode-json
 auiworks.amvim
 aws-scripting-guy.cform
 ban.spellright
+bierner.github-markdown-preview
 bungcip.better-toml
 chrmarti.ssh
 coolbear.systemd-unit-file
@@ -18,10 +19,10 @@ kleber-swf.ocean-dark-extended
 lindraupe.aw-watcher-vscode
 lunaryorn.fish-ide
 mechatroner.rainbow-csv
+ms-azuretools.vscode-docker
 ms-python.python
 ms-vscode.Go
 ms-vscode.wordcount
-PeterJausovec.vscode-docker
 quicktype.quicktype
 redhat.vscode-yaml
 richie5um2.vscode-sort-json

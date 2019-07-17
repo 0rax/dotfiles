@@ -4,7 +4,8 @@
 #   - pacman (Arch Linux Package Manager)
 #   - yay (AUR Wrapper)
 #       git clone https://aur.archlinux.org/yay-bin.git /tmp/yay; cd /tmp/yay; makepkg -si
-#
+#   - base-devel (meta package)
+#       see https://www.archlinux.org/groups/x86_64/base-devel/
 
 ## Shell
 fish                        # https://fishshell.com
@@ -52,7 +53,6 @@ diffstat                    # http://invisible-island.net/diffstat
 # aur/dtrx                  # http://brettcsmith.org/2007/dtrx/
 
 ## Programming
-base-devel                  # https://www.archlinux.org/groups/x86_64/base-devel/
 go                          # https://golang.org
 nodejs                      # https://nodejs.org/
 npm                         # https://www.npmjs.com/
@@ -62,7 +62,7 @@ python2                     # https://docs.python.org/2/index.html
 python2-pip                 # https://pip.pypa.io/en/stable/installing/
 python                      # https://docs.python.org/3/index.html
 python-pip                  # https://pip.pypa.io/en/stable/installing/
-aur/visual-studio-code      # https://code.visualstudio.com/
+aur/visual-studio-code-bin  # https://code.visualstudio.com/
 aur/insomnia                # https://insomnia.rest/
 meld                        # http://meldmerge.org/
 aur/onefetch                # https://github.com/o2sh/onefetch
@@ -86,7 +86,7 @@ aur/qomui                   # https://github.com/corrad1nho/qomui
 ## DevOps
 aws-cli                     # https://github.com/aws/aws-cli
 httpie                      # https://httpie.org/
-prips                       # https://packages.debian.org/stable/net/prips
+aur/prips                   # https://packages.debian.org/stable/net/prips
 ipcalc                      # http://jodies.de/ipcalc
 dbeaver                     # https://dbeaver.io/
 aur/kubectl-bin             # https://kubernetes.io/docs/reference/kubectl/overview/
@@ -112,7 +112,7 @@ aur/saml2aws                # https://github.com/Versent/saml2aws
 tilix                       # https://github.com/gnunn1/tilix
 gparted                     # https://gparted.sourceforge.io/
 snapper-gui                 # https://wiki.archlinux.org/index.php/Snapper#Installation
-keyhain                     # https://www.funtoo.org/Keychain
+keychain                    # https://www.funtoo.org/Keychain
 xsel                        # http://www.vergenet.net/~conrad/software/xsel/
 solaar                      # https://github.com/pwr/Solaar (Logitech Unifying tool)
 scrot                       # https://github.com/dreamer/scrot
@@ -165,7 +165,7 @@ eog                         # https://wiki.gnome.org/Apps/EyeOfGnome/
 
 ## Encryption
 aur/keybase-bin             # https://keybase.io/
-keypassxc                   # https://keepassxc.org/
+keepassxc                   # https://keepassxc.org/
 veracrypt                   # https://veracrypt.codeplex.com/
 
 ## Security
@@ -177,10 +177,9 @@ remmina                     # http://www.remmina.org/wp/
 
 ## Web & Social
 firefox-developer-edition   # https://www.mozilla.org/en-US/firefox/developer/
-aur/ungoogled-chromium-bin  # https://github.com/Eloston/ungoogled-chromium
 aur/rambox-bin              # https://rambox.pro/
-evolution                   # https://wiki.gnome.org/Apps/Evolution/
-evolution-ews               # https://gitlab.gnome.org/GNOME/evolution-ews
+# evolution                 # https://wiki.gnome.org/Apps/Evolution/
+# evolution-ews             # https://gitlab.gnome.org/GNOME/evolution-ews
 # feedreader                # https://jangernert.github.io/FeedReader/
 # transmission-gtk          # https://transmissionbt.com/
 
@@ -204,5 +203,6 @@ avr-libc
 dfu-util
 arm-none-eabi-gcc
 arm-none-eabi-binutils
-arm-none-eabi-newlib dfu-programmer
+arm-none-eabi-newlib
+dfu-programmer
 dfu-util

@@ -1,7 +1,8 @@
 {
     "[json]": {
         "editor.insertSpaces": true,
-        "editor.tabSize": 2
+        "editor.tabSize": 2,
+        "editor.defaultFormatter": "HookyQR.beautify"
     },
     "[makefile]": {
         "editor.insertSpaces": false,
@@ -188,4 +189,5 @@
         "!asg_scaling_processes"
     ],
     "zenMode.fullScreen": false,
+    "terminal.integrated.shell.linux": "/usr/bin/fish",
 }

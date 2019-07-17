@@ -13,5 +13,5 @@ cat extensions.lst | cut -d '#' -f 1 | tr -d ' \t' | xargs -L 1 code --install-e
 
 ## Export installed extensions
 ```sh
-code --list-extensions > extensions.lst
+code --list-extensions > extensions.csv
 ```
