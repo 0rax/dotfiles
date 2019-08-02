@@ -31,7 +31,7 @@ function awsprofile
 		echo "Switching AWS Profile to '$new_profile' ..." 1>&2
 	end
 
-	set output (aws-vault exec "$new_profile" -- env)
+	set output (aws-vault exec --session-ttl=4h --assume-role-ttl=1h "$new_profile" -- env)
 	if [ "$status" -eq 0 ]
 		eval (printf "export %s\n" $output | grep "^export AWS_")
 		set account (aws sts get-caller-identity --output text --query 'Account' --output text 2>/dev/null)
