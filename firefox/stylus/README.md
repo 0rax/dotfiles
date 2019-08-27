@@ -6,8 +6,7 @@ Requires <img width="16" src="https://addons.cdn.mozilla.net/user-media/addon_ic
 - [Github - dark code snippets](https://userstyles.org/styles/156474/github-dark-code-snippets)
 - [GitHub: better-sized tabs in code](https://userstyles.org/styles/70979/github-better-sized-tabs-in-code)
 - https://userstyles.org/styles/70979/github-better-sized-tabs-in-code
-- [Google - Clean Dark](https://userstyles.org/styles/144028/google-clean-dark) (disabled)
 - [Hacker News Fixed & Spaced](https://userstyles.org/styles/134360/hacker-news-fixed-spaced)
 - [Monospace GitHub Comments](https://userstyles.org/styles/95232/monospace-github-comments)
 - [RFC Readable](https://userstyles.org/styles/134536/rfc-readable)
-- [Wikipedia 1911 (rotane)](https://userstyles.org/styles/99515/wikipedia-1911-rotane) (customized)
+- [Wikipedia 1911 (rotane)](https://userstyles.org/styles/99515/wikipedia-1911-rotane)

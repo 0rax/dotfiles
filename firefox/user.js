@@ -1,16 +1,11 @@
 //// Browser user configuration
-user_pref("lightweightThemes.selectedThemeID", "default-theme@mozilla.org"); // Set Firefox theme to "Default"
-user_pref("lightweightThemes.usedThemes", "[]");                    // Disable lightweight theming
-user_pref("lightweightThemes.persisted.footerURL", false);          // Disable lightweight theming
-user_pref("lightweightThemes.persisted.headerURL", false);          // Disable lightweight theming
 user_pref("devtools.theme", "dark");                                // Use devtools "Dark Theme"
-user_Pref("ui.use_standins_for_native_colors", true);               // Fix issues with Linux dark themes
+user_pref("ui.use_standins_for_native_colors", true);               // Fix issues with Linux dark themes
+user_pref("toolkit.legacyUserProfileCustomizations.stylesheets", true) // Allow userChrome.css to load
 // user_pref("browser.startup.homepage", "about:blank");            // Set "about:blank" as homepage
 user_pref("browser.startup.page", 3);                               // Restore previous session at startup
 user_pref("browser.ctrlTab.previews", true);                        // Activate CTRL+Tab preview
 user_pref("signon.rememberSignons", false);                         // Deactivate Firefox internal password manager
-user_pref("browser.urlbar.placeholderName", "DuckDuckGo");          // Set Default search engine to DuckDuckGo
-user_pref("browser.search.hiddenOneOffs", "Google,Bing,Amazon.com,DuckDuckGo,eBay,Twitter,Wikipedia (en)"); // Hide all other search engines
 user_pref("security.webauth.u2f", true);                            // Enable FIDO U2F support
 user_pref("xpinstall.signatures.required", false);                  // Allow unsigned extensions to be installed
 user_pref("extensions.legacy.enabled", true);                       // Allow legacy extensions to be installed
