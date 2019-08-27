@@ -15,13 +15,11 @@
 tap "homebrew/core"               # https://github.com/homebrew/homebrew-core
 tap "homebrew/bundle"             # https://github.com/Homebrew/homebrew-bundle
 tap "homebrew/services"           # https://github.com/Homebrew/homebrew-services
-tap "homebrew/dupes"              # https://github.com/Homebrew/homebrew-dupes
-tap "homebrew/fuse"               # https://github.com/Homebrew/homebrew-fuse
 # Cask
-tap "caskroom/cask"               # https://github.com/caskroom/homebrew-cask
-tap "caskroom/drivers"            # https://github.com/caskroom/homebrew-drivers
-tap "caskroom/fonts"              # https://github.com/caskroom/homebrew-fonts
-tap "caskroom/versions"           # https://github.com/caskroom/homebrew-versions
+tap "homebrew/cask"               # https://github.com/Homebrew/homebrew-cask
+tap "homebrew/cask-drivers"       # https://github.com/Homebrew/homebrew-cask-drivers
+tap "homebrew/cask-fonts"         # https://github.com/Homebrew/homebrew-cask-fonts
+tap "homebrew/cask-versions"      # https://github.com/Homebrew/homebrew-cask-versions
 # Custom
 tap "buo/cask-upgrade"            # https://github.com/buo/homebrew-cask-upgrade
 
@@ -31,12 +29,10 @@ brew "fish"                       # https://fishshell.com
 brew "bash"                       # https://www.gnu.org/software/bash/ for bash >= v4
 # CVS
 brew "git"                        # https://git-scm.com
-brew "git-flow"                   # https://github.com/nvie/gitflow
 brew "git-lfs"                    # https://github.com/git-lfs/git-lfs
 brew "gibo"                       # https://github.com/simonwhitaker/gibo
 brew "tig"                        # http://jonas.nitro.dk/tig/
 brew "mercurial"                  # https://www.mercurial-scm.org/
-brew "hub"                        # https://github.com/github/hub
 # Shell Utils
 brew "moreutils"                  # https://joeyh.name/code/moreutils/
 brew "coreutils"                  # https://www.gnu.org/software/coreutils/
@@ -58,14 +54,17 @@ brew "pv"                         # https://www.ivarch.com/programs/pv.shtml
 brew "trash"                      # https://github.com/ali-rantakari/trash
 brew "rlwrap"                     # http://utopia.knoware.nl/~hlub/rlwrap/
 brew "pwgen"                      # https://pwgen.sourceforge.io/
+brew "ripgrep"                    # https://github.com/BurntSushi/ripgrep
+brew "fd"                         # https://github.com/sharkdp/fd
 # Programming
 brew "node"                       # https://nodejs.org/
 brew "perl"                       # https://www.perl.org/
 brew "go"                         # https://golang.org
 brew "dep"                        # https://github.com/golang/dep
-brew "godep"                      # github.com/tools/godep
 brew "python@2"                   # https://www.python.org/
 brew "python@3"                   # https://www.python.org/
+brew "ipython"                    # https://ipython.org/
+brew "flake8"                     # http://flake8.pycqa.org/
 brew "shellcheck"                 # http://www.shellcheck.net/
 brew "grpc"                       # http://www.grpc.io/
 brew "protobuf"                   # https://github.com/google/protobuf
@@ -75,25 +74,25 @@ brew "nmap"                       # https://nmap.org/
 brew "mtr"                        # http://www.bitwizard.nl/mtr/
 # DevOps
 brew "awscli"                     # https://github.com/aws/aws-cli
-brew "minio-mc"                   # https://github.com/minio/mc
-brew "mickep76/funk-gnarge/etcdtool" # https://github.com/mickep76/etcdtool
+cask "aws-vault"                  # https://github.com/99designs/aws-vault
+brew "versent/taps/saml2aws"      # https://github.com/Versent/saml2aws
 brew "wrk"                        # https://github.com/wg/wrk
 brew "httpie"                     # https://httpie.org/
-brew "scaleway/scaleway/scw"      # https://github.com/scaleway/scaleway-cli
 brew "mitmproxy"                  # https://mitmproxy.org/
+brew "docker-credential-helper-ecr" # https://github.com/awslabs/amazon-ecr-credential-helper
+brew "kubernetes-cli"             # https://kubernetes.io/docs/tasks/tools/install-kubectl/
+brew "kubernetes-helm"            # https://helm.sh/
 # Backup
 brew "restic"                     # https://github.com/restic/restic
 brew "rclone"                     # https://rclone.org/
 # Other
-brew "android-platform-tools"     # https://developer.android.com/sdk
 brew "pandoc"                     # http://pandoc.org
 brew "jq"                         # https://stedolan.github.io/jq/
-brew "ripgrep"                    # https://github.com/BurntSushi/ripgrep
 brew "aria2"                      # https://aria2.github.io/
 brew "aspell"                     # http://aspell.net/
+brew "keychain"                   # https://www.funtoo.org/Keychain
 # Brew utils
 brew "mas"                        # https://github.com/mas-cli/mas
-brew "vitorgalvao/tiny-scripts/cask-repair" # https://github.com/caskroom/homebrew-cask/blob/master/CONTRIBUTING.md#updating-a-cask
 
 ### Casks
 # Fonts
@@ -102,9 +101,10 @@ cask "font-monofur-for-powerline" # https://github.com/powerline/fonts/tree/mast
 cask "font-lato"                  # http://www.dafont.com/monofur.font
 cask "font-go-mono"               # https://go.googlesource.com/image/+/master/font/gofont/ttfs/README
 cask "font-nova-mono"             # https://fonts.google.com/specimen/Nova+Mono
-cask "font-monoid"                # ? # https://github.com/larsenwork/monoid
-cask "font-hack"                  # ? # https://sourcefoundry.org/hack/
-cask "font-hasklig"               # ? # https://github.com/i-tu/Hasklig/
+cask "font-monoid"                # https://github.com/larsenwork/monoid
+cask "font-hack"                  # https://sourcefoundry.org/hack/
+cask "font-hasklig"               # https://github.com/i-tu/Hasklig/
+cask "font-hasklig-nerd-font"     # https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/Hasklig
 
 # Network tools
 cask "wireshark"                  # https://www.wireshark.org/
@@ -117,91 +117,93 @@ cask "protonvpn"                  # https://protonvpn.com/
 cask "virtualbox"                 # https://www.virtualbox.org/
 cask "virtualbox-extension-pack"  # https://www.virtualbox.org/
 cask "docker"                     # https://docs.docker.com/engine/installation/mac/
-cask "vagrant"                    # https://www.vagrantup.com/
 # Database
-cask "mongohub"                   # https://github.com/jeromelebel/MongoHub-Mac
+cask "jeromelebel-mongohub"       # https://github.com/jeromelebel/MongoHub-Mac
 cask "sequel-pro"                 # https://sequelpro.com/
 cask "postico"                    # https://eggerapps.at/postico/
 cask "tableplus"                  # https://tableplus.io/
-cask "robot-3t"                   # https://robomongo.org/
 # Media Playback
 cask "spotify"                    # https://www.spotify.com/
 cask "vlc"                        # http://www.videolan.org/vlc/
 cask "simple-comic"               # http://dancingtortoise.com/simplecomic/
 # Encryption
-cask "yubikey-manager"            # https://developers.yubico.com/yubikey-manager-qt/
-cask "yubico-authenticator"       # https://developers.yubico.com/yubioath-desktop/
+cask "yubico-yubikey-manager"     # https://developers.yubico.com/yubikey-manager-qt/
 cask "keybase"                    # https://keybase.io/
 cask "gpg-suite"                  # https://gpgtools.org/
-cask "macpass"                    # https://github.com/mstarke/MacPass/ + https://github.com/MacPass/MacPassHTTP
+cask "keepassxc"                  # https://keepassxc.org/
 # Storage
 cask "osxfuse"                    # https://osxfuse.github.io/
 cask "veracrypt"                  # https://veracrypt.codeplex.com/
-cask "hubic"                      # https://hubic.com/home/
-cask "forklift2"                  # https://www.binarynights.com/forklift/
 cask "cyberduck"                  # https://cyberduck.io/
 # Programming
-cask "iterm2-beta"                # https://iterm2.com/downloads.html
+cask "iterm2"                     # https://iterm2.com/downloads.html
 cask "visual-studio-code"         # https://code.visualstudio.com/
 cask "insomnia"                   # https://insomnia.rest/
 cask "hex-fiend"                  # https://github.com/ridiculousfish/HexFiend/
 cask "arduino"                    # https://www.arduino.cc/
-cask "fork"                       # https://git-fork.com/
-cask "sketch"                     # http://sketchapp.com/
+cask "meld"                       # http://meldmerge.org/
 # Media Editor
 cask "basictex"                   # https://www.tug.org/mactex/
 cask "yed"                        # http://www.yworks.com/en/downloads.html#yEd
 cask "gimp"                       # http://www.gimp.org/
-cask "hackmd"                     # https://github.com/hackmdio/hackmd-desktop
 cask "standard-notes"             # http://standardnotes.org/
 cask "numi"                       # http://numi.io/
-cask "macdown"                    # https://macdown.uranusjr.com/
+cask "marp"                       # https://marpit.marp.app/
 # Web
 cask "transmission"               # http://www.transmissionbt.com/download/
-cask "skype"                      # https://www.skype.com/en/download-skype/skype-for-computer/
-cask "airmail-beta"               # http:airmailapp.com/beta
-cask "firefoxdeveloperedition"    # https://www.mozilla.org/en-US/firefox/
+cask "firefox-developer-edition"  # https://www.mozilla.org/en-US/firefox/
+cask "thunderbird"                # https://www.thunderbird.net/
 cask "google-chrome"              # https://www.google.com/chrome/index.html
+cask "eloston-chromium"           # https://github.com/Eloston/ungoogled-chromium
 # Social
 cask "rambox"                     # http://rambox.pro/
 cask "textual"                    # https://www.codeux.com/textual/
-cask "slack"                      # ttps://slack.com/
 # Game
 cask "steam"                      # ttp://store.steampowered.com/
 # Tray
 cask "hammerspoon"                # http://www.hammerspoon.org/'
 cask "flux"                       # https://justgetflux.com/
 cask "boom-3d"                    # http://www.globaldelight.com/boom3d/
-cask "gitify"                     # http://gitify.io/
-cask "ccmenu"                     # https://github.com/erikdoe/ccmenu/
 cask "bartender"                  # https://www.macbartender.com/
 cask "istat-menus"                # https://bjango.com/mac/istatmenus/
 # Utils
-cask "java6"                      # https://support.apple.com/kb/DL1572
+cask "java"                       # https://support.apple.com/kb/DL1572
 cask "flash-player"               # https://get.adobe.com/flashplayer/
 cask "android-file-transfer"      # https://android.com/filetransfer/
+cask "android-platform-tools"     # https://developer.android.com/sdk
 cask "appcleaner"                 # http://freemacsoft.net/appcleaner/
-cask "etcher"                     # https://etcher.io/
+cask "balenaetcher"               # https://www.balena.io/etcher/
 cask "karabiner-elements"         # https://pqrs.org/osx/karabiner/
 cask "logitech-options"           # http://support.logitech.com/en_us/product/wireless-mouse-m335
+cask "qmk-toolbox"                # https://qmk.fm/toolbox/
+cask "boinc"                      # https://boinc.berkeley.edu/wiki/BOINC_Manager
 
 ### AppStore
 mas "Pages", id: 409201541        # https://www.apple.com/pages/
 mas "Numbers", id: 409203825      # https://www.apple.com/numbers/
 mas "Keynote", id: 409183694      # https://www.apple.com/keynote/
 mas "Reeder", id: 880001334       # http://reederapp.com/
-# mas "Xcode", id: 497799835        # https://developer.apple.com/xcode/
+mas "WireGuard", id: 1451685025   # https://www.wireguard.com/
+# mas "Xcode", id: 497799835      # https://developer.apple.com/xcode/
 
 ### Non Brew software
 # Photoshop CC                    # https://www.adobe.com/products/photoshop.html
 # Illustrator CC                  # https://www.adobe.com/products/illustrator.html
-# Office 2016                     # https://portal.office.com/OLS/MySoftware.aspx
-# Drone CLI                       # http://readme.drone.io/0.5/install/cli/
+# MS Office                       # https://portal.office.com/OLS/MySoftware.aspx
+# Audacity                        # https://www.audacityteam.org/
 # grpcc                           # npm install -g grpcc
 # etcdctl                         # go get -u -v github.com/coreos/etcd/etcdctl
 # Medis                           # git clone https://github.com/luin/medis.git && npm run pack
 # Hey                             # go get -u github.com/rakyll/hey
 # GRPCurl                         # go get -u -v github.com/fullstorydev/grpcurl/cmd/grpcurl
+
+### 3D Printing
+cask "prusa-slic3r"               # https://github.com/prusa3d/Slic3r
+cask "repetier-host"              # https://www.repetier.com/
+cask "openscad"                   # https://www.openscad.org/
+# Autodesk Fusion 360             # https://www.autodesk.com/campaigns/fusion-360-for-hobbyists
+# fstl                            # https://github.com/mkeeter/fstl
+# pronterface.app                 # Fetch from Prusa Drivers bundle at https://www.prusa3d.com/drivers/
 
 ### Keyboard shortcut
 # CTRL+CMD+left : Desktop left
