@@ -18,7 +18,6 @@
     },
     "amVim.bindCtrlCommands": false,
     "breadcrumbs.enabled": false,
-    "docker.showExplorer": false,
     "editor.cursorBlinking": "solid",
     "editor.cursorStyle": "block",
     "editor.detectIndentation": false,
@@ -130,22 +129,6 @@
     },
     "todo-tree.expanded": true,
     "todo-tree.flat": false,
-    "todo-tree.iconColour": "grey",
-    "todo-tree.iconColours": {
-        "BUG": "#bf616a",
-        "CHANGED": "#C0C5CE",
-        "COMBAK": "#d08770",
-        "FIXME": "#bf616a",
-        "HACK": "#d08770",
-        "IDEA": "#C0C5CE",
-        "NB": "#ebcb8b",
-        "NOTE": "#ebcb8b",
-        "QUESTION": "#a3be8c",
-        "REVIEW": "#a3be8c",
-        "TEMP": "#d08770",
-        "TODO": "#8fa1b3",
-        "XXX": "#C0C5CE"
-    },
     "todo-tree.regex": "(//|#|<!--|;)\\s*(TODO|FIXME|CHANGED|XXX|IDEA|HACK|NOTE|REVIEW|NB|BUG|QUESTION|COMBAK|TEMP)",
     "todo-tree.ripgrep": "/usr/local/bin/rg",
     "todo-tree.showInExplorer": false,
@@ -160,7 +143,6 @@
     "workbench.colorTheme": "Ocean Dark Extended",
     "workbench.iconTheme": "file-icons",
     "workbench.startupEditor": "none",
-    "workbench.statusBar.feedback.visible": false,
     "yaml.format.enable": true,
     "yaml.customTags": [
         // CloudFormation tags

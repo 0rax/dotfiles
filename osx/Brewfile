@@ -105,7 +105,6 @@ cask "font-monoid"                # https://github.com/larsenwork/monoid
 cask "font-hack"                  # https://sourcefoundry.org/hack/
 cask "font-hasklig"               # https://github.com/i-tu/Hasklig/
 cask "font-hasklig-nerd-font"     # https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/Hasklig
-
 # Network tools
 cask "wireshark"                  # https://www.wireshark.org/
 cask "tuntap"                     # http://tuntaposx.sourceforge.net/faq.xhtml
@@ -126,6 +125,7 @@ cask "tableplus"                  # https://tableplus.io/
 cask "spotify"                    # https://www.spotify.com/
 cask "vlc"                        # http://www.videolan.org/vlc/
 cask "simple-comic"               # http://dancingtortoise.com/simplecomic/
+cask "molotov"                    # https://www.molotov.tv/
 # Encryption
 cask "yubico-yubikey-manager"     # https://developers.yubico.com/yubikey-manager-qt/
 cask "keybase"                    # https://keybase.io/
@@ -196,6 +196,7 @@ mas "WireGuard", id: 1451685025   # https://www.wireguard.com/
 # Medis                           # git clone https://github.com/luin/medis.git && npm run pack
 # Hey                             # go get -u github.com/rakyll/hey
 # GRPCurl                         # go get -u -v github.com/fullstorydev/grpcurl/cmd/grpcurl
+# Flotato for Netflix             # https://flotato.com/
 
 ### 3D Printing
 cask "prusa-slic3r"               # https://github.com/prusa3d/Slic3r
