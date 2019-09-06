@@ -8,7 +8,7 @@
 
 ## Install extensions from list
 ```sh
-cat extensions.lst | cut -d '#' -f 1 | tr -d ' \t' | xargs -L 1 code --install-extension
+cat extensions.csv | cut -d '#' -f 1 | tr -d ' \t' | xargs -L 1 code --install-extension
 ```
 
 ## Export installed extensions

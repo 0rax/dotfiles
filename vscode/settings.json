@@ -44,7 +44,9 @@
     },
     "files.autoSave": "onFocusChange",
     "files.exclude": {
-        "**/.snapshots": true
+        "**/.snapshots": true,
+        "**/*.code-workspace": true,
+        "**/.vscode": true,
     },
     "files.insertFinalNewline": true,
     "files.trimFinalNewlines": true,
@@ -98,6 +100,9 @@
     ],
     "python.linting.flake8Enabled": true,
     "python.linting.pylintEnabled": false,
+    "search.exclude": {
+        "**/vendor": true
+    },
     "shellcheck.customArgs": [
         "-x"
     ],
@@ -114,6 +119,7 @@
     "telemetry.enableTelemetry": false,
     "terminal.integrated.copyOnSelection": true,
     "terminal.integrated.fontSize": 14,
+    "terminal.integrated.shell.linux": "/usr/bin/fish",
     "todo-tree.autoRefresh": false,
     "todo-tree.customHighlight": {
         "FIXME": {
@@ -141,6 +147,7 @@
         "statusBar.noFolderBackground": "#16181D"
     },
     "workbench.colorTheme": "Ocean Dark Extended",
+    "workbench.editor.revealIfOpen": true,
     "workbench.iconTheme": "file-icons",
     "workbench.startupEditor": "none",
     "yaml.format.enable": true,
@@ -171,5 +178,4 @@
         "!asg_scaling_processes"
     ],
     "zenMode.fullScreen": false,
-    "terminal.integrated.shell.linux": "/usr/bin/fish",
 }
