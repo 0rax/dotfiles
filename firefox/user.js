@@ -1,7 +1,7 @@
 //// Browser user configuration
 user_pref("devtools.theme", "dark");                                // Use devtools "Dark Theme"
 user_pref("ui.use_standins_for_native_colors", true);               // Fix issues with Linux dark themes
-user_pref("toolkit.legacyUserProfileCustomizations.stylesheets", true) // Allow userChrome.css to load
+user_pref("toolkit.legacyUserProfileCustomizations.stylesheets", true); // Allow userChrome.css to load
 // user_pref("browser.startup.homepage", "about:blank");            // Set "about:blank" as homepage
 user_pref("browser.startup.page", 3);                               // Restore previous session at startup
 user_pref("browser.ctrlTab.previews", true);                        // Activate CTRL+Tab preview
