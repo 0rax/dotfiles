@@ -7,6 +7,10 @@
 #   - base-devel (meta package)
 #       see https://www.archlinux.org/groups/x86_64/base-devel/
 
+## Kernel
+linux52                     # https://kernel.org
+linux52-header              # https://kernel.org
+
 ## Shell
 fish                        # https://fishshell.com
 bash                        # https://www.gnu.org/software/bash/
@@ -114,7 +118,6 @@ gparted                     # https://gparted.sourceforge.io/
 snapper-gui                 # https://wiki.archlinux.org/index.php/Snapper#Installation
 keychain                    # https://www.funtoo.org/Keychain
 xsel                        # http://www.vergenet.net/~conrad/software/xsel/
-solaar                      # https://github.com/pwr/Solaar (Logitech Unifying tool)
 scrot                       # https://github.com/dreamer/scrot
 redshift                    # http://jonls.dk/redshift/
                             # https://cinnamon-spices.linuxmint.com/applets/view/296
@@ -126,11 +129,9 @@ file-roller                 # https://wiki.gnome.org/Apps/FileRoller
 dconf-editor                # https://wiki.gnome.org/Apps/DconfEditor
 seahorse                    # https://wiki.gnome.org/Apps/Seahorse
 aur/ctop                    # https://github.com/bcicen/ctop
-# powertop                  # https://01.org/powertop/
+powertop                    # https://01.org/powertop/
+aur/s-tui                   # https://github.com/amanusk/s-tui
 # aur/libinput-gestures     # https://github.com/bulletmark/libinput-gestures (Enable Trackpad Gesture)
-# aur/albert-lite           # https://albertlauncher.github.io/
-# muparser                  # For Albert's libcalculator
-# aur/activitywatch-bin     # https://activitywatch.net/
 
 ## Fonts
 ttf-joypixels               # https://www.joypixels.com/download
@@ -155,7 +156,6 @@ aur/gnome-twitch-player-backend-gstreamer-cairo-git
 
 ## Media Editor
 aur/yed                     # http://www.yworks.com/en/downloads.html#yEd
-# Need extra palette from https://github.com/pafnow/vrt-graphml-for-yed
 # dia                       # https://wiki.gnome.org/Apps/Dia
 # aur/dia-shapes            # http://dia-installer.de/diashapes/index.html
 gimp                        # http://www.gimp.org/
@@ -167,17 +167,18 @@ eog                         # https://wiki.gnome.org/Apps/EyeOfGnome/
 aur/keybase-bin             # https://keybase.io/
 keepassxc                   # https://keepassxc.org/
 veracrypt                   # https://veracrypt.codeplex.com/
+aur/bitwarden               # https://bitwarden.com/#/
 
 ## Security
 gufw                        # http://gufw.org/
 wireguard-dkms              # https://www.wireguard.com/
 wireguard-tools             # https://www.wireguard.com/
-aur/networkmanager-wireguard-git # https://github.com/max-moser/network-manager-wireguard/
-remmina                     # http://www.remmina.org/wp/
+# aur/networkmanager-wireguard-git # Broken # https://github.com/max-moser/network-manager-wireguard/
 
 ## Web & Social
 firefox-developer-edition   # https://www.mozilla.org/en-US/firefox/developer/
 aur/rambox-bin              # https://rambox.pro/
+# thunderbird               # https://www.thunderbird.net
 # evolution                 # https://wiki.gnome.org/Apps/Evolution/
 # evolution-ews             # https://gitlab.gnome.org/GNOME/evolution-ews
 # feedreader                # https://jangernert.github.io/FeedReader/
@@ -193,6 +194,11 @@ arc-gtk-theme               # https://github.com/horst3180/Arc-theme
 adapta-gtk-theme            # https://github.com/adapta-project/adapta-gtk-theme
 papirus-icon-theme          # https://github.com/PapirusDevelopmentTeam/papirus-icon-theme
 aur/papirus-folders-git     # https://github.com/PapirusDevelopmentTeam/papirus-folders
+
+#### Bluetooth
+bluez
+bluez-utils
+blueberry
 
 #### QMK (https://beta.docs.qmk.fm/detailed-guides/getting_started_build_tools#linux)
 zip

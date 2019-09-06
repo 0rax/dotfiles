@@ -42,7 +42,7 @@ image/x-xcf=gimp.desktop
 image/x-xcursor=gimp.desktop
 image/x-xwindowdump=gimp.desktop
 image/x-icns=eog.desktop
-application/pdf=xreader.desktop
+application/pdf=org.gnome.Evince.desktop
 application/x-bittorrent=transmission-gtk.desktop
 text/plain=visual-studio-code.desktop
 x-scheme-handler/mailto=org.gnome.Evolution.desktop
@@ -76,3 +76,6 @@ text/yaml=visual-studio-code.desktop
 inode/directory=nemo.desktop
 x-scheme-handler/http=firefox-developer-edition.desktop
 x-scheme-handler/https=firefox-developer-edition.desktop
+
+[Added Associations]
+application/pdf=org.gnome.Evince.desktop;

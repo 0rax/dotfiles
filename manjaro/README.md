@@ -13,13 +13,6 @@ sudo usermod -a -G docker $USER
 ln -s /usr/share/hunspell ~/.config/Code/Dictionaries
 ```
 
-### Allow user to manage devices through Solaar
-```sh
-sudo groupadd --system plugdev
-sudo usermod -a -G plugdev $USER
-sudo udevadm control --reload-rules
-```
-
 ## Laptop Setup
 
 ### Setup trackpage gesture via libinput-gestures
@@ -54,8 +47,7 @@ setxkbmap -option caps:backspace
 ### Theme
 - Set theme to Arc-Dark with Papirus-Dark icon pack
 - Use Kvantum Manager to set KDE + QT theme to KvArcDark
-- Use QT5 Settings to set theme to kvantum and icon theme to Papyrus-Adapta-Nokto
 
 ### Applets
-- [Redshift](https://cinnamon-spices.linuxmint.com/applets/view/296)
+- [QRedshift](https://cinnamon-spices.linuxmint.com/applets/view/313)
 - [ScreenShot](https://cinnamon-spices.linuxmint.com/applets/view/35)
