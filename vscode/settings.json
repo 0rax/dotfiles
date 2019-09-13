@@ -44,9 +44,10 @@
     },
     "files.autoSave": "onFocusChange",
     "files.exclude": {
+        "**/__pycache__": true,
         "**/.snapshots": true,
-        "**/*.code-workspace": true,
         "**/.vscode": true,
+        "**/*.code-workspace": true
     },
     "files.insertFinalNewline": true,
     "files.trimFinalNewlines": true,
@@ -120,8 +121,12 @@
     "terminal.integrated.copyOnSelection": true,
     "terminal.integrated.fontSize": 14,
     "terminal.integrated.shell.linux": "/usr/bin/fish",
-    "todo-tree.autoRefresh": false,
-    "todo-tree.customHighlight": {
+    "todo-tree.tree.autoRefresh": false,
+    "todo-tree.tree.expanded": true,
+    "todo-tree.tree.flat": false,
+    "todo-tree.regex.regex": "(//|#|<!--|;)\\s*(TODO|FIXME|CHANGED|XXX|IDEA|HACK|NOTE|REVIEW|NB|BUG|QUESTION|COMBAK|TEMP)",
+    "todo-tree.ripgrep.ripgrep": "/usr/bin/rg",
+    "todo-tree.highlights.customHighlight": {
         "FIXME": {
             "foreground": "#bf616a"
         },
@@ -129,15 +134,11 @@
             "foreground": "#8fa1b3"
         }
     },
-    "todo-tree.defaultHighlight": {
+    "todo-tree.highlights.defaultHighlight": {
         "foreground": "grey",
         "type": "none"
     },
-    "todo-tree.expanded": true,
-    "todo-tree.flat": false,
-    "todo-tree.regex": "(//|#|<!--|;)\\s*(TODO|FIXME|CHANGED|XXX|IDEA|HACK|NOTE|REVIEW|NB|BUG|QUESTION|COMBAK|TEMP)",
-    "todo-tree.ripgrep": "/usr/local/bin/rg",
-    "todo-tree.showInExplorer": false,
+    "todo-tree.tree.showInExplorer": false,
     "window.menuBarVisibility": "default",
     "window.restoreWindows": "one",
     "window.titleBarStyle": "custom",

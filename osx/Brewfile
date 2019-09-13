@@ -191,8 +191,6 @@ mas "WireGuard", id: 1451685025   # https://www.wireguard.com/
 # Illustrator CC                  # https://www.adobe.com/products/illustrator.html
 # MS Office                       # https://portal.office.com/OLS/MySoftware.aspx
 # Audacity                        # https://www.audacityteam.org/
-# grpcc                           # npm install -g grpcc
-# etcdctl                         # go get -u -v github.com/coreos/etcd/etcdctl
 # Medis                           # git clone https://github.com/luin/medis.git && npm run pack
 # Hey                             # go get -u github.com/rakyll/hey
 # GRPCurl                         # go get -u -v github.com/fullstorydev/grpcurl/cmd/grpcurl

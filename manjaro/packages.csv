@@ -99,6 +99,7 @@ aur/aws-vault               # https://github.com/99designs/aws-vault
 aur/docker-credential-secretservice # https://github.com/docker/docker-credential-helpers
 aur/amazon-ecr-credential-helper # https://github.com/awslabs/amazon-ecr-credential-helper
 aur/saml2aws                # https://github.com/Versent/saml2aws
+aur/mkcert                  # https://github.com/FiloSottile/mkcert
 # aur/wrk                   # https://github.com/wg/wrk
 # mitmproxy                 # https://mitmproxy.org/
 # aur/medis                 # https://github.com/luin/medis
@@ -106,7 +107,7 @@ aur/saml2aws                # https://github.com/Versent/saml2aws
 # wireshark-gtk             # https://www.wireshark.org/
 # go get github.com/mehrdadrad/mylg # http://mylg.io
 # go get github.com/wagoodman/dive  # https://github.com/wagoodman/dive
-# go get github.com/FiloSottile/mkcert # https://github.com/FiloSottile/mkcert
+# go get github.com/smallstep/cli/cmd/step # https://smallstep.com/cli/
 
 ## Backup Utils
 # restic                    # https://github.com/restic/restic
@@ -131,6 +132,7 @@ seahorse                    # https://wiki.gnome.org/Apps/Seahorse
 aur/ctop                    # https://github.com/bcicen/ctop
 powertop                    # https://01.org/powertop/
 aur/s-tui                   # https://github.com/amanusk/s-tui
+arandr                      # https://christian.amsuess.com/tools/arandr/
 # aur/libinput-gestures     # https://github.com/bulletmark/libinput-gestures (Enable Trackpad Gesture)
 
 ## Fonts
