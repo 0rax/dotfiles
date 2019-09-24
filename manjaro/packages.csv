@@ -133,6 +133,7 @@ aur/ctop                    # https://github.com/bcicen/ctop
 powertop                    # https://01.org/powertop/
 aur/s-tui                   # https://github.com/amanusk/s-tui
 arandr                      # https://christian.amsuess.com/tools/arandr/
+android-tools               # https://sites.google.com/a/android.com/tools/
 # aur/libinput-gestures     # https://github.com/bulletmark/libinput-gestures (Enable Trackpad Gesture)
 
 ## Fonts
@@ -144,7 +145,7 @@ aur/ttf-monaco              # https://github.com/cstrap/monaco-font
 aur/ttf-monofur-powerline-git # https://github.com/powerline/fonts/tree/master/Monofur
 aur/monaco-powerline-font-git # https://gist.github.com/arkhan/229a0729ec79c6fcec81
 aur/otf-hasklig             # https://github.com/i-tu/Hasklig
-# https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/hasklig/regular/complete/hasklug%20nerd%20font%20complete%20mono.otf
+# https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/Hasklig/Regular/complete/Hasklug%20Nerd%20Font%20Complete%20Mono.otf
 # Download to ~/.fonts and run `fc-cache -fv`
 
 ## Media Playback
@@ -214,3 +215,15 @@ arm-none-eabi-binutils
 arm-none-eabi-newlib
 dfu-programmer
 dfu-util
+
+#### Minikube
+aur/minikube-bin
+docker-machine-driver-kvm2
+# minikube config set vm-driver kvm2
+# systemctl enable --now libvirtd
+
+#### To sort
+remake
+protobuf
+deluge
+

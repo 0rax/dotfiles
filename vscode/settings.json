@@ -1,4 +1,9 @@
+
 {
+    "[fish]": {
+        "editor.insertSpaces": false,
+        "editor.tabSize": 4
+    },
     "[json]": {
         "editor.insertSpaces": true,
         "editor.tabSize": 2,
@@ -6,7 +11,7 @@
     },
     "[makefile]": {
         "editor.insertSpaces": false,
-        "editor.tabSize": 4
+        "editor.tabSize": 8
     },
     "[shellscript]": {
         "editor.insertSpaces": true,
@@ -40,7 +45,8 @@
         "APKBUILD": "shellscript",
         "Brewfile": "ruby",
         "Dockerfile.*": "dockerfile",
-        "ssh_config": "ssh_config"
+        "ssh_config": "ssh_config",
+        "Makefile.*": "makefile"
     },
     "files.autoSave": "onFocusChange",
     "files.exclude": {
@@ -85,7 +91,7 @@
     "gitlens.views.repositories.files.layout": "auto",
     "go.gopath": "/Users/orax/Projects/Go",
     "go.inferGopath": true,
-    "go.toolsGopath": "/Users/orax/Projects/Go",
+    "go.toolsGopath": "/home/orax/projects/go",
     "go.useLanguageServer": false,
     "go.vetOnSave": "package",
     "markdown.extension.tableFormatter.normalizeIndentation": true,

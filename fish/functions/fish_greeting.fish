@@ -47,11 +47,11 @@ function fish_greeting
 
     echo ''
     echo       '         '(_t)'╱ ╲'(_n)'        '
-    echo '   '(_s)'┌───'(_t)'╱     ╲'(_s)'───┐'(_n)'  ' (_i)$USER(_s)@(_t)(hostname)(_n)
-    echo '   '(_s)'│ '(_i)'╱ ╲     ╱ ╲ '(_s)'│'(_n)'  ' (_i)'OS '(_s).....(_t) $OS(_n)
+    echo '   '(_s)'┌───'(_t)'╱     ╲'(_s)'───┐'(_n)'  ' (_i)$USER(_s) @ (_t)(hostname)(_n)
+    echo '   '(_s)'│ '(_i)'╱ ╲     ╱ ╲ '(_s)'│'(_n)'  ' (_i)'OS '(_s).....(_t) $OS \((uname -m)\)(_n)
     echo       '   '(_i)'╱     ╲ ╱     ╲'(_n)'  '       (_i)'Kernel '(_s).(_t) (uname -rs)(_n)
-    echo       '   '(_i)'╲     ╱ ╲     ╱'(_n)'  '       (_i)'Arch '(_s)...(_t) (uname -m)(_n)
-    echo '   '(_s)'│ '(_i)'╲ ╱     ╲ ╱ '(_s)'│'(_n)'  ' (_i)'CPU '(_s)....(_t) "$CORE C / $THREAD T"(_n)
+    echo       '   '(_i)'╲     ╱ ╲     ╱'(_n)'  '       (_i)'Uptime '(_s).(_t) (uptime -p)(_n)
+    echo '   '(_s)'│ '(_i)'╲ ╱     ╲ ╱ '(_s)'│'(_n)'  ' (_i)'CPU '(_s)....(_t) "$CORE Cores / $THREAD Threads"(_n)
     echo '   '(_s)'└───'(_t)'╲     ╱'(_s)'───┘'(_n)'  ' (_i)'Load '(_s)...(_t) $LOAD(_n)
     echo       '         '(_t)'╲ ╱'(_n)'        '
     echo ''
