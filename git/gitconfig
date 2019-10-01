@@ -1,6 +1,6 @@
 # Git Commiter information
 [user]
-	name = Jean-Philippe Roemer
+	name = JP Roemer
 	email = jp@roemer.im
 	signingkey = 6FF4678C
 
@@ -10,7 +10,7 @@
 
 # Git base config
 [core]
-	excludesfile = /Users/orax/.gitignore_global
+	excludesfile = /home/orax/.gitignore_global
 [push]
 	default = current
 [rebase]

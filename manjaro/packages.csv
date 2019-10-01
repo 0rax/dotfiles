@@ -54,6 +54,7 @@ traceroute                  # http://traceroute.sourceforge.net/
 aur/gotop-git               # https://github.com/cjbassi/gotop
 tcpdump                     # https://www.archlinux.org/packages/extra/x86_64/tcpdump/
 diffstat                    # http://invisible-island.net/diffstat
+bat                         # https://github.com/sharkdp/bat
 # aur/dtrx                  # http://brettcsmith.org/2007/dtrx/
 
 ## Programming
@@ -108,6 +109,7 @@ aur/mkcert                  # https://github.com/FiloSottile/mkcert
 # go get github.com/mehrdadrad/mylg # http://mylg.io
 # go get github.com/wagoodman/dive  # https://github.com/wagoodman/dive
 # go get github.com/smallstep/cli/cmd/step # https://smallstep.com/cli/
+# go get github.com/rakyll/hey      # https://github.com/rakyll/hey
 
 ## Backup Utils
 # restic                    # https://github.com/restic/restic
@@ -226,4 +228,8 @@ docker-machine-driver-kvm2
 remake
 protobuf
 deluge
+prettier
+# BloomRPC from AppImage release at https://github.com/uw-labs/bloomrpc/releases/latest
 
+#### ActivityWatch
+aur/activitywatch-bin

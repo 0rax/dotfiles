@@ -22,6 +22,11 @@
         "editor.tabSize": 2
     },
     "amVim.bindCtrlCommands": false,
+    "bracket-pair-colorizer-2.showBracketsInGutter": true,
+    "bracket-pair-colorizer-2.showHorizontalScopeLine": false,
+    "bracket-pair-colorizer-2.showBracketsInRuler": true,
+    "bracket-pair-colorizer-2.rulerPosition": "Left",
+    "bracket-pair-colorizer-2.highlightActiveScope": true,
     "breadcrumbs.enabled": false,
     "editor.cursorBlinking": "solid",
     "editor.cursorStyle": "block",
