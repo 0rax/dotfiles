@@ -17,10 +17,12 @@ set -gx PATH             $PATH /sbin /usr/sbin /usr/local/sbin
 set -gx EDITOR           'vim'
 set -gx GIT_EDITOR       'vim'
 set -gx ALTERNATE_EDITOR 'nano'
+set -gx PAGER            'less'
 
 if command -s most > /dev/null
-    set -gx MANPAGER     'most'
-    set -gx PAGER        'most'
+	set -gx MANPAGER     'most'
+else
+	set -gx MANPAGER     'less'
 end
 
 # ---  System/Fish Related Path  -----------------------------------------------
@@ -30,11 +32,11 @@ set -gx FISH_PLUGIN_PATH $FISH_CONFIG_PATH/plugins
 set -gx FISH_CONFD_PATH  $FISH_CONFIG_PATH/conf.d
 
 if test -d /usr/local/share/fish/vendor_functions.d
-    set -gx fish_function_path $fish_function_path /usr/local/share/fish/vendor_functions.d
+	set -gx fish_function_path $fish_function_path /usr/local/share/fish/vendor_functions.d
 end
 
 if test -d /usr/local/share/fish/vendor_completions.d
-    set -gx fish_complete_path $fish_complete_path /usr/local/share/fish/vendor_completions.d
+	set -gx fish_complete_path $fish_complete_path /usr/local/share/fish/vendor_completions.d
 end
 
 # ---  System/Fish Alias Folder ------------------------------------------------
@@ -43,13 +45,13 @@ set -gx fish_function_path $fish_function_path $FISH_CONFIG_PATH/alias
 
 if [ "$OS_TYPE" = "Darwin" ] # Mac OS X
 
-    set -gx fish_function_path $fish_function_path $FISH_CONFIG_PATH/alias/osx
-    set -gx fish_complete_path $fish_complete_path $FISH_CONFIG_PATH/completions/osx
+	set -gx fish_function_path $fish_function_path $FISH_CONFIG_PATH/alias/osx
+	set -gx fish_complete_path $fish_complete_path $FISH_CONFIG_PATH/completions/osx
 
 else if [ "$OS_TYPE" = "Linux" ]
 
-    set -gx fish_function_path $fish_function_path $FISH_CONFIG_PATH/alias/linux
-    set -gx fish_complete_path $fish_complete_path $FISH_CONFIG_PATH/completions/linux
+	set -gx fish_function_path $fish_function_path $FISH_CONFIG_PATH/alias/linux
+	set -gx fish_complete_path $fish_complete_path $FISH_CONFIG_PATH/completions/linux
 
 end
 
