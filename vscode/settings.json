@@ -1,5 +1,7 @@
-
 {
+    "[dockerfile]": {
+        "editor.defaultFormatter": "ms-azuretools.vscode-docker"
+    },
     "[fish]": {
         "editor.insertSpaces": false,
         "editor.tabSize": 4
@@ -7,11 +9,14 @@
     "[json]": {
         "editor.insertSpaces": true,
         "editor.tabSize": 2,
-        "editor.defaultFormatter": "HookyQR.beautify"
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "[makefile]": {
         "editor.insertSpaces": false,
         "editor.tabSize": 8
+    },
+    "[markdown]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "[shellscript]": {
         "editor.insertSpaces": true,
@@ -21,7 +26,56 @@
         "editor.insertSpaces": true,
         "editor.tabSize": 2
     },
+    "[yaml]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
     "amVim.bindCtrlCommands": false,
+    "better-comments.highlightPlainText": false,
+    "better-comments.multilineComments": true,
+    "better-comments.tags": [
+        {
+            "tag": "!",
+            "color": "#FF2D00",
+            "strikethrough": false,
+            "backgroundColor": "transparent"
+        },
+        {
+            "tag": "?",
+            "color": "#3498DB",
+            "strikethrough": false,
+            "backgroundColor": "transparent"
+        },
+        {
+            "tag": "//",
+            "color": "#474747",
+            "strikethrough": true,
+            "backgroundColor": "transparent"
+        },
+        {
+            "tag": "*",
+            "color": "#98C379",
+            "strikethrough": false,
+            "backgroundColor": "transparent"
+        },
+        {
+            "tag": "note",
+            "color": "#98C379",
+            "strikethrough": false,
+            "backgroundColor": "transparent"
+        },
+        {
+            "tag": "todo",
+            "color": "#FF8C00",
+            "strikethrough": false,
+            "backgroundColor": "transparent"
+        },
+        {
+            "tag": "fixme",
+            "color": "#FF8C00",
+            "strikethrough": false,
+            "backgroundColor": "transparent"
+        }
+    ],
     "bracket-pair-colorizer-2.showBracketsInGutter": true,
     "bracket-pair-colorizer-2.showHorizontalScopeLine": false,
     "bracket-pair-colorizer-2.showBracketsInRuler": true,
@@ -64,37 +118,7 @@
     "files.trimFinalNewlines": true,
     "files.trimTrailingWhitespace": true,
     "git.ignoreLimitWarning": true,
-    "gitlens.advanced.messages": {
-        "suppressCommitHasNoPreviousCommitWarning": false,
-        "suppressCommitNotFoundWarning": false,
-        "suppressFileNotUnderSourceControlWarning": false,
-        "suppressGitVersionWarning": false,
-        "suppressLineUncommittedWarning": false,
-        "suppressNoRepositoryWarning": false,
-        "suppressResultsExplorerNotice": false,
-        "suppressShowKeyBindingsNotice": true
-    },
-    "gitlens.advanced.telemetry.enabled": false,
-    "gitlens.codeLens.enabled": false,
-    "gitlens.codeLens.scopes": [
-        "document",
-        "containers"
-    ],
-    "gitlens.currentLine.enabled": false,
-    "gitlens.hovers.currentLine.enabled": false,
-    "gitlens.hovers.currentLine.over": "line",
-    "gitlens.recentChanges.highlight.locations": [
-        "gutter",
-        "line",
-        "overview"
-    ],
-    "gitlens.statusBar.alignment": "left",
-    "gitlens.statusBar.enabled": false,
-    "gitlens.views.fileHistory.enabled": true,
-    "gitlens.views.lineHistory.enabled": true,
-    "gitlens.views.repositories.enabled": false,
-    "gitlens.views.repositories.files.layout": "auto",
-    "go.gopath": "/Users/orax/Projects/Go",
+    "go.gopath": "/home/orax/projects/go",
     "go.inferGopath": true,
     "go.toolsGopath": "/home/orax/projects/go",
     "go.useLanguageServer": false,
@@ -108,7 +132,7 @@
     "python.linting.enabled": true,
     "python.linting.flake8Args": [
         "--max-line-length=100",
-        "--ignore=E501,W503",
+        "--ignore=E501,W503"
     ],
     "python.linting.flake8Enabled": true,
     "python.linting.pylintEnabled": false,
@@ -132,24 +156,6 @@
     "terminal.integrated.copyOnSelection": true,
     "terminal.integrated.fontSize": 14,
     "terminal.integrated.shell.linux": "/usr/bin/fish",
-    "todo-tree.tree.autoRefresh": false,
-    "todo-tree.tree.expanded": true,
-    "todo-tree.tree.flat": false,
-    "todo-tree.regex.regex": "(//|#|<!--|;)\\s*(TODO|FIXME|CHANGED|XXX|IDEA|HACK|NOTE|REVIEW|NB|BUG|QUESTION|COMBAK|TEMP)",
-    "todo-tree.ripgrep.ripgrep": "/usr/bin/rg",
-    "todo-tree.highlights.customHighlight": {
-        "FIXME": {
-            "foreground": "#bf616a"
-        },
-        "TODO": {
-            "foreground": "#8fa1b3"
-        }
-    },
-    "todo-tree.highlights.defaultHighlight": {
-        "foreground": "grey",
-        "type": "none"
-    },
-    "todo-tree.tree.showInExplorer": false,
     "window.menuBarVisibility": "default",
     "window.restoreWindows": "one",
     "window.titleBarStyle": "custom",
@@ -162,7 +168,6 @@
     "workbench.editor.revealIfOpen": true,
     "workbench.iconTheme": "file-icons",
     "workbench.startupEditor": "none",
-    "yaml.format.enable": true,
     "yaml.customTags": [
         // CloudFormation tags
         "!And",
@@ -189,5 +194,6 @@
         "!cmd",
         "!asg_scaling_processes"
     ],
-    "zenMode.fullScreen": false,
+    "yaml.format.enable": true,
+    "zenMode.fullScreen": false
 }
