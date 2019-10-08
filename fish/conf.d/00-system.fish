@@ -25,6 +25,11 @@ else
 	set -gx MANPAGER     'less'
 end
 
+if command -s bat > /dev/null
+	set -gx BAT_PAGER    'less -RF'
+	set -gx BAT_THEME    'base16'
+end
+
 # ---  System/Fish Related Path  -----------------------------------------------
 
 set -gx FISH_CONFIG_PATH $XDG_CONFIG_HOME/fish

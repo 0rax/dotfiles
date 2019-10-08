@@ -11,7 +11,7 @@ function awsstatus
 		set profile $SAML2AWS_PROFILE
 	else if set -q AWS_VAULT
 		set provider "aws-vault"
-		set profile $SAML2AWS_PROFILE
+		set profile $AWS_VAULT
 	else if set -q AWS_PROFILE
 		set provider "environment"
 		set profile $AWS_PROFILE
