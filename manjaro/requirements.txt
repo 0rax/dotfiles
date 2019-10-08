@@ -1,0 +1,8 @@
+# Install via:
+#   pip install --user -r requirements.txt
+black       # https://github.com/psf/black
+ipython     # http://ipython.org/
+virtualfish # https://github.com/excitedleigh/virtualfish
+nodeenv     # https://github.com/ekalinin/nodeenv
+flake8      # https://gitlab.com/pycqa/flake8
+pip-tools   # https://github.com/jazzband/pip-tools

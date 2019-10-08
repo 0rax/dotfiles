@@ -1,4 +1,4 @@
-#!/usr/bin/env true
+u!/usr/bin/env true
 #
 # require:
 #   - pacman (Arch Linux Package Manager)
@@ -71,7 +71,6 @@ aur/visual-studio-code-bin  # https://code.visualstudio.com/
 aur/insomnia                # https://insomnia.rest/
 meld                        # http://meldmerge.org/
 aur/onefetch                # https://github.com/o2sh/onefetch
-# pip install --user virtualfish # https://github.com/adambrenecki/virtualfish
 
 ## Virtualization
 docker                      # https://www.docker.com/
@@ -228,7 +227,8 @@ docker-machine-driver-kvm2
 remake
 protobuf
 deluge
-prettier
+prettier # https://prettier.io/
+shfmt    # https://github.com/mvdan/sh#shfmt
 # BloomRPC from AppImage release at https://github.com/uw-labs/bloomrpc/releases/latest
 
 #### ActivityWatch
