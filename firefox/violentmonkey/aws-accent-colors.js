@@ -1,12 +1,14 @@
 // ==UserScript==
 // @name        AWS Accent Colors
-// @namespace   Violentmonkey Scripts
+// @namespace   https://github.com/0rax/dotfiles
+// @description Color the AWS Menubar depending on the account you are in (uses account name suffix)
 // @match       https://console.aws.amazon.com/*/home*
 // @match       https://*.console.aws.amazon.com/*/home*
 // @grant       none
-// @version     0.1.0
 // @author      0rax
-// @description Color the AWS Menubar depending on the account you are in (uses account name suffix)
+// @version     0.1.3
+// @homepageURL https://github.com/0rax/dotfiles/tree/master/firefox/violentmonkey
+// @downloadURL https://raw.githubusercontent.com/0rax/dotfiles/master/firefox/violentmonkey/aws-accent-colors.js
 // ==/UserScript==
 var styles = {
   'default': '',
