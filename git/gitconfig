@@ -56,6 +56,8 @@
 	alog = log --graph --abbrev-commit --decorate --date=relative --format=prettylog --all
 	slog = log --abbrev-commit --decorate --date=relative --format=prettylog --shortstat -30
 	flog = log --graph --abbrev-commit --decorate --date=relative --stat --show-signature
+	# git diff
+	ndiff = diff --name-only
 
 # Git color
 [color]
@@ -76,7 +78,7 @@
 [pretty]
 	prettylog = format:%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(magenta bold)[%G?]%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)
 
-# Difftool & Mergetool
+# Difftool
 [diff]
 	tool = vscode
 [difftool]
@@ -86,11 +88,16 @@
 	trustExitCode = false
 [difftool "meld"]
 	cmd = meld "$LOCAL" "$REMOTE"
+
+# Mergetool
 [merge]
-	tool = meld
+	tool = vscode
+[mergetool "vscode"]
+	cmd = code --wait "$MERGED"
 [mergetool "meld"]
 	cmd = meld "$LOCAL" "$MERGED" "$REMOTE" --output "$MERGED"
-	# cmd = meld "$LOCAL" "$BASE" "$REMOTE" --output "$MERGED"
+[mergetool "meld-base"]
+	cmd = meld "$LOCAL" "$BASE" "$REMOTE" --output "$MERGED"
 
 # Git LFS
 [filter "lfs"]
