@@ -120,22 +120,6 @@
 		"originalDigest": "364c87728575c6b6a00a092e17661f0a75a72747"
 	},
 	{
-		"method": "saveStyle",
-		"name": "Fix Colors for Dark Theme [Linux]",
-		"enabled": false,
-		"sections": [
-			{
-				"code": "input, option, select, textarea {\n    background-color: white;\n    color: #444;\n    border-radius: 3px;\n    border-width: 1px;\n    border-style: solid;\n    border-color: #888;\n}"
-			}
-		],
-		"updateUrl": null,
-		"md5Url": null,
-		"url": null,
-		"originalMd5": null,
-		"id": 7,
-		"updateDate": 1555517453585
-	},
-	{
 		"enabled": true,
 		"updateUrl": "https://userstyles.org/styles/chrome/99515.json",
 		"md5Url": "https://update.userstyles.org/99515.md5",
@@ -158,5 +142,35 @@
 		"id": 9,
 		"updateDate": 1566898704429,
 		"originalName": "Wikipedia 1911 (rotane)"
+	},
+	{
+		"enabled": true,
+		"updateUrl": null,
+		"md5Url": null,
+		"url": null,
+		"originalMd5": null,
+		"installDate": 1573647016203,
+		"sourceCode": "/* ==UserStyle==\n@name           Github: Wider Project Collumns\n@namespace      github.com/openstyles/stylus\n@version        1.0.0\n@description    Bigger collum in Github Projects\n@author         0rax\n==/UserStyle== */\n@-moz-document regexp(\"https://github.com/(orgs|[a-zA-Z0-9_-]+)/[a-zA-Z0-9_-]+/projects/[0-9]+(#.*)?(\\\\?fullscreen=true)?\") {\n    @media (min-width: 544px) {\n        .project-column {\n            min-width: 450px;\n            max-width: 450px;\n        }\n        .project-pane {\n            width: 470px !important;\n        }\n    }\n}",
+		"sections": [
+			{
+				"code": "@media (min-width: 544px) {\n        .project-column {\n            min-width: 450px;\n            max-width: 450px;\n        }\n        .project-pane {\n            width: 470px !important;\n        }\n    }",
+				"start": 126,
+				"regexps": [
+					"https://github.com/(orgs|[a-zA-Z0-9_-]+)/[a-zA-Z0-9_-]+/projects/[0-9]+(#.*)?(\\?fullscreen=true)?"
+				]
+			}
+		],
+		"usercssData": {
+			"name": "Github: Wider Project Collumns",
+			"namespace": "github.com/openstyles/stylus",
+			"version": "1.0.0",
+			"description": "Bigger collum in Github Projects",
+			"author": "0rax"
+		},
+		"author": "0rax",
+		"description": "Bigger collum in Github Projects",
+		"name": "Github: Wider Project Collumns",
+		"updateDate": 1573750311053,
+		"id": 10
 	}
 ]
