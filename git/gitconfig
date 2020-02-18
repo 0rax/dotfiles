@@ -11,6 +11,8 @@
 # Git base config
 [core]
 	excludesfile = /home/orax/.gitignore_global
+	autocrlf = input
+	eol = lf
 [push]
 	default = current
 [rebase]
@@ -38,8 +40,9 @@
 	cb = checkout -b
 	fa = fetch --all
 	# git commit
+	commit-nogpg = commit --no-gpg-sign
 	ci = commit
-	ci-nogpg =  commit --no-gpg-sign
+	ci-nogpg = commit --no-gpg-sign
 	edit = commit --amend
 	ic = add -p
 	# git branch
@@ -49,6 +52,8 @@
 	# git diff
 	sdiff = diff --staged
 	wdiff = diff --word-diff
+	ndiff = diff --name-only
+	sndiff = diff --staged --name-only
 	# https://blog.filippo.io/git-fixup-amending-an-older-commit/
 	fixup = "!f() { TARGET=$(git rev-parse "$1"); git commit --fixup=$TARGET ${@:2} && EDITOR=true git rebase -i --autostash --autosquash $TARGET^; }; f"
 	# git logs
@@ -56,8 +61,6 @@
 	alog = log --graph --abbrev-commit --decorate --date=relative --format=prettylog --all
 	slog = log --abbrev-commit --decorate --date=relative --format=prettylog --shortstat -30
 	flog = log --graph --abbrev-commit --decorate --date=relative --stat --show-signature
-	# git diff
-	ndiff = diff --name-only
 
 # Git color
 [color]
