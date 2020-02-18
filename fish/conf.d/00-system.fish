@@ -46,17 +46,17 @@ end
 
 # ---  System/Fish Alias Folder ------------------------------------------------
 
-set -gx fish_function_path $fish_function_path $FISH_CONFIG_PATH/alias
+set -gx fish_function_path $FISH_CONFIG_PATH/alias $fish_function_path
 
 if [ "$OS_TYPE" = "Darwin" ] # Mac OS X
 
-	set -gx fish_function_path $fish_function_path $FISH_CONFIG_PATH/alias/osx
-	set -gx fish_complete_path $fish_complete_path $FISH_CONFIG_PATH/completions/osx
+	set -gx fish_function_path $FISH_CONFIG_PATH/alias/osx $fish_function_path
+	set -gx fish_complete_path $FISH_CONFIG_PATH/completions/osx $fish_complete_path
 
 else if [ "$OS_TYPE" = "Linux" ]
 
-	set -gx fish_function_path $fish_function_path $FISH_CONFIG_PATH/alias/linux
-	set -gx fish_complete_path $fish_complete_path $FISH_CONFIG_PATH/completions/linux
+	set -gx fish_function_path $FISH_CONFIG_PATH/alias/linux $fish_function_path
+	set -gx fish_complete_path $FISH_CONFIG_PATH/completions/linux $fish_complete_path
 
 end
 
