@@ -15,18 +15,11 @@ ln -s /usr/share/hunspell ~/.config/Code/Dictionaries
 
 ## Laptop Setup
 
-### Setup trackpage gesture via libinput-gestures
+### Setup trackpad gesture via libinput-gestures
 ```sh
 sudo usermod -a -G input $USER
 libinput-gestures-setup autostart
 libinput-gestures-setup start
-```
-
-## Keyboard Setup
-
-### Remap capslock to backspace (needs to be added to autostart script)
-```sh
-setxkbmap -option caps:backspace
 ```
 
 ## Gnome Setup (DE/WM)
@@ -51,3 +44,17 @@ setxkbmap -option caps:backspace
 ### Applets
 - [QRedshift](https://cinnamon-spices.linuxmint.com/applets/view/313)
 - [ScreenShot](https://cinnamon-spices.linuxmint.com/applets/view/35)
+
+### Keyboard setup
+- Remap CapsLock to Backspace
+  - Go to `Keyboard` settings
+  - Select a layout then click `Options...`
+  - In `Caps Lock Behavior` set to `Make Caps Lock an additional Backspace`
+- Setup Compose key to Menu
+  - Go to `Keyboard` settings
+  - Select a layout then click `Options...`
+  - In `Position of Compose key` set to `Menu`
+- Use GUI+Space to switch Layouts
+  - Go to `Keyboard` settings
+  - Select a layout then click `Options...`
+  - In `Switch to another keyboard layout` set to `Win+Space`

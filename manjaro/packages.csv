@@ -1,4 +1,4 @@
-u!/usr/bin/env true
+#!/usr/bin/env true
 #
 # require:
 #   - pacman (Arch Linux Package Manager)
@@ -8,8 +8,8 @@ u!/usr/bin/env true
 #       see https://www.archlinux.org/groups/x86_64/base-devel/
 
 ## Kernel
-linux52                     # https://kernel.org
-linux52-header              # https://kernel.org
+linux-latest                # https://kernel.org
+linux-latest-headers        # https://kernel.org
 
 ## Shell
 fish                        # https://fishshell.com
@@ -58,11 +58,19 @@ bat                         # https://github.com/sharkdp/bat
 # aur/dtrx                  # http://brettcsmith.org/2007/dtrx/
 
 ## Programming
-go                          # https://golang.org
+base-devel                  # https://www.archlinux.org/groups/x86_64/base-devel/ (metapackage)
+remake                      # http://bashdb.sourceforge.net/remake/
+clang                       # https://clang.llvm.org/
+go                          # https://go.dev/
+protobuf                    # https://developers.google.com/protocol-buffers
+rust                        # https://www.rust-lang.org/
 nodejs                      # https://nodejs.org/
 npm                         # https://www.npmjs.com/
+yarn                        # https://yarnpkg.com/
 dep                         # https://github.com/golang/dep
 shellcheck                  # http://www.shellcheck.net/
+prettier                    # https://prettier.io/
+shfmt                       # https://github.com/mvdan/sh#shfmt
 python2                     # https://docs.python.org/2/index.html
 python2-pip                 # https://pip.pypa.io/en/stable/installing/
 python                      # https://docs.python.org/3/index.html
@@ -71,14 +79,10 @@ aur/visual-studio-code-bin  # https://code.visualstudio.com/
 aur/insomnia                # https://insomnia.rest/
 meld                        # http://meldmerge.org/
 aur/onefetch                # https://github.com/o2sh/onefetch
-
-## Virtualization
-docker                      # https://www.docker.com/
-docker-compose              # https://www.docker.com/
-# virtualbox                # https://www.virtualbox.org/
-gnome-boxes                 # https://wiki.gnome.org/Apps/Boxes
-qemu                        # https://www.qemu.org/
-ebtables                    # Required for libvirt networking
+aur/xsv                     # https://github.com/BurntSushi/xsv
+cmake                       # https://cmake.org/
+rhash                       # https://github.com/rhash/RHash
+# BloomRPC from AppImage release at https://github.com/uw-labs/bloomrpc/releases/latest
 
 ## Network tools
 net-tools                   # http://net-tools.sourceforge.net/
@@ -93,37 +97,55 @@ httpie                      # https://httpie.org/
 aur/prips                   # https://packages.debian.org/stable/net/prips
 ipcalc                      # http://jodies.de/ipcalc
 dbeaver                     # https://dbeaver.io/
+mariadb-clients             # https://mariadb.org/
+mkcert                      # https://github.com/FiloSottile/mkcert
 aur/kubectl-bin             # https://kubernetes.io/docs/reference/kubectl/overview/
 aur/kubernetes-helm-bin     # https://helm.sh/docs/using_helm/
 aur/aws-vault               # https://github.com/99designs/aws-vault
 aur/docker-credential-secretservice # https://github.com/docker/docker-credential-helpers
 aur/amazon-ecr-credential-helper # https://github.com/awslabs/amazon-ecr-credential-helper
 aur/saml2aws                # https://github.com/Versent/saml2aws
-aur/mkcert                  # https://github.com/FiloSottile/mkcert
 # aur/wrk                   # https://github.com/wg/wrk
 # mitmproxy                 # https://mitmproxy.org/
 # aur/medis                 # https://github.com/luin/medis
 # postgresql                # https://postgresql.org/
 # wireshark-gtk             # https://www.wireshark.org/
-# go get github.com/mehrdadrad/mylg # http://mylg.io
-# go get github.com/wagoodman/dive  # https://github.com/wagoodman/dive
+# go get github.com/mehrdadrad/mylg        # http://mylg.io
+# go get github.com/wagoodman/dive         # https://github.com/wagoodman/dive
 # go get github.com/smallstep/cli/cmd/step # https://smallstep.com/cli/
-# go get github.com/rakyll/hey      # https://github.com/rakyll/hey
+# go get github.com/rakyll/hey             # https://github.com/rakyll/hey
+# go get github.com/smartystreets/goconvey # http://goconvey.co/
+
+## Virtualization
+docker                      # https://www.docker.com/
+docker-compose              # https://www.docker.com/
+# virtualbox                # https://www.virtualbox.org/
+gnome-boxes                 # https://wiki.gnome.org/Apps/Boxes
+qemu                        # https://www.qemu.org/
+ebtables                    # Required for libvirt networking
+
+## Minikube
+aur/minikube-bin               # https://minikube.sigs.k8s.io/
+aur/docker-machine-driver-kvm2 # https://minikube.sigs.k8s.io/docs/reference/drivers/kvm2/
+# minikube config set vm-driver kvm2
+# systemctl enable --now libvirtd
 
 ## Backup Utils
+snapper                     # https://wiki.archlinux.org/index.php/Snapper
+snapper-gui                 # https://wiki.archlinux.org/index.php/Snapper#Installation
 # restic                    # https://github.com/restic/restic
 # rclone                    # https://rclone.org/
 
 ## System Utils
 tilix                       # https://github.com/gnunn1/tilix
 gparted                     # https://gparted.sourceforge.io/
-snapper-gui                 # https://wiki.archlinux.org/index.php/Snapper#Installation
 keychain                    # https://www.funtoo.org/Keychain
 xsel                        # http://www.vergenet.net/~conrad/software/xsel/
 scrot                       # https://github.com/dreamer/scrot
 redshift                    # http://jonls.dk/redshift/
                             # https://cinnamon-spices.linuxmint.com/applets/view/296
 xorg-xev                    # https://www.mankier.com/1/xev
+arandr                      # https://christian.amsuess.com/tools/arandr/ (display settings)
 gnome-calculator            # https://wiki.gnome.org/Apps/Calculator
 gnome-system-monitor        # https://wiki.gnome.org/Apps/SystemMonitor
 gnome-screenshot            # https://gitlab.gnome.org/GNOME/gnome-screenshot
@@ -132,15 +154,22 @@ dconf-editor                # https://wiki.gnome.org/Apps/DconfEditor
 seahorse                    # https://wiki.gnome.org/Apps/Seahorse
 aur/ctop                    # https://github.com/bcicen/ctop
 powertop                    # https://01.org/powertop/
-aur/s-tui                   # https://github.com/amanusk/s-tui
-arandr                      # https://christian.amsuess.com/tools/arandr/
+s-tui                       # https://github.com/amanusk/s-tui
 android-tools               # https://sites.google.com/a/android.com/tools/
-# aur/libinput-gestures     # https://github.com/bulletmark/libinput-gestures (Enable Trackpad Gesture)
+aur/activitywatch-bin       # https://github.com/ActivityWatch
+solaar                      # https://pwr-solaar.github.io/Solaar/
+gucharmap                   # https://wiki.gnome.org/Apps/Gucharmap
+zip                         # http://infozip.sourceforge.net/Zip.html
+unzip                       # http://infozip.sourceforge.net/UnZip.html
+yubikey-personalization     # https://yubico.com/
+libu2f-host                 # (require for Yubico U2F via CLI)
 
 ## Fonts
+terminus-font               # http://terminus-font.sourceforge.net/
 ttf-joypixels               # https://www.joypixels.com/download
 aur/ephifonts               # http://www.ephifonts.com/
 aur/ttf-ms-fonts            # http://corefonts.sourceforge.net/
+aur/ttf-windows             # https://aur.archlinux.org/packages/ttf-windows/
 aur/ttf-monofur             # https://www.dafont.com/monofur.font
 aur/ttf-monaco              # https://github.com/cstrap/monaco-font
 aur/ttf-monofur-powerline-git # https://github.com/powerline/fonts/tree/master/Monofur
@@ -154,34 +183,49 @@ vlc                         # http://www.videolan.org/vlc/
 aur/spotify                 # https://www.spotify.com/
 pulseaudio-equalizer-ladspa # https://github.com/pulseaudio-equalizer-ladspa/equalizer
 evince                      # https://wiki.gnome.org/Apps/Evince
-aur/gnome-twitch-git        # http://gnome-twitch.vinszent.com/
-aur/gnome-twitch-player-backend-gstreamer-cairo-git
 # playerctl                 # https://github.com/acrisci/playerctl
+
+## Bluetooth
+bluez                       # http://www.bluez.org/
+bluez-utils                 # http://www.bluez.org/
+blueberry                   # https://github.com/linuxmint/blueberry
 
 ## Media Editor
 aur/yed                     # http://www.yworks.com/en/downloads.html#yEd
 # dia                       # https://wiki.gnome.org/Apps/Dia
 # aur/dia-shapes            # http://dia-installer.de/diashapes/index.html
 gimp                        # http://www.gimp.org/
+inkscape                    # https://inkscape.org/
 aur/standardnotes-desktop   # http://standardnotes.org/
 aur/onlyoffice-bin          # https://www.onlyoffice.com/en/download-desktop.aspx
 eog                         # https://wiki.gnome.org/Apps/EyeOfGnome/
+aur/pdfchain                # http://pdfchain.sourceforge.net/
+
+## Printer
+cups                        # https://wiki.archlinux.org/index.php/CUPS#Installation
+system-config-printer       # http://cyberelk.net/tim/software/system-config-printer/
+# sudo systemctl enable --now org.cups.cupsd.service
 
 ## Encryption
 aur/keybase-bin             # https://keybase.io/
 keepassxc                   # https://keepassxc.org/
 veracrypt                   # https://veracrypt.codeplex.com/
-aur/bitwarden               # https://bitwarden.com/#/
+aur/bitwarden-bin           # https://bitwarden.com/#/
 
 ## Security
 gufw                        # http://gufw.org/
 wireguard-dkms              # https://www.wireguard.com/
 wireguard-tools             # https://www.wireguard.com/
-# aur/networkmanager-wireguard-git # Broken # https://github.com/max-moser/network-manager-wireguard/
+aur/networkmanager-wireguard-git # https://github.com/max-moser/network-manager-wireguard/
 
 ## Web & Social
 firefox-developer-edition   # https://www.mozilla.org/en-US/firefox/developer/
+epiphany                    # https://wiki.gnome.org/Apps/Web
 aur/rambox-bin              # https://rambox.pro/
+deluge                      # https://deluge-torrent.org/
+lynx                        # https://lynx.browser.org/
+w3m                         # http://w3m.sourceforge.net/
+# aur/ungoogled-chromium    # https://github.com/Eloston/ungoogled-chromium
 # thunderbird               # https://www.thunderbird.net
 # evolution                 # https://wiki.gnome.org/Apps/Evolution/
 # evolution-ews             # https://gitlab.gnome.org/GNOME/evolution-ews
@@ -189,24 +233,26 @@ aur/rambox-bin              # https://rambox.pro/
 # transmission-gtk          # https://transmissionbt.com/
 
 ## Dictionaries
-hunspell
-hunspell-en_GB
-hunspell-fr
+hunspell                    # https://hunspell.github.io/
+hunspell-en_GB              # https://hunspell.github.io/
+hunspell-fr                 # https://hunspell.github.io/
+
+## Games
+aur/minecraft-launcher      # http://minecraft.net/
+
+#### 3D Printing
+prusa-slicer                # https://www.prusa3d.com/prusaslicer/
+openscad                    # https://www.openscad.org/
+aur/fstl                    # https://www.mattkeeter.com/projects/fstl/
 
 #### GNOME / Cinnamon Theme
+gtk-engine-murrine          # https://www.archlinux.org/packages/community/x86_64/gtk-engine-murrine/
 arc-gtk-theme               # https://github.com/horst3180/Arc-theme
 adapta-gtk-theme            # https://github.com/adapta-project/adapta-gtk-theme
 papirus-icon-theme          # https://github.com/PapirusDevelopmentTeam/papirus-icon-theme
 aur/papirus-folders-git     # https://github.com/PapirusDevelopmentTeam/papirus-folders
 
-#### Bluetooth
-bluez
-bluez-utils
-blueberry
-
 #### QMK (https://beta.docs.qmk.fm/detailed-guides/getting_started_build_tools#linux)
-zip
-unzip
 avr-gcc
 avr-binutils
 avr-libc
@@ -216,20 +262,3 @@ arm-none-eabi-binutils
 arm-none-eabi-newlib
 dfu-programmer
 dfu-util
-
-#### Minikube
-aur/minikube-bin
-docker-machine-driver-kvm2
-# minikube config set vm-driver kvm2
-# systemctl enable --now libvirtd
-
-#### To sort
-remake
-protobuf
-deluge
-prettier # https://prettier.io/
-shfmt    # https://github.com/mvdan/sh#shfmt
-# BloomRPC from AppImage release at https://github.com/uw-labs/bloomrpc/releases/latest
-
-#### ActivityWatch
-aur/activitywatch-bin
