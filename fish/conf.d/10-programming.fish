@@ -48,11 +48,11 @@ end
 # ---  Programming/Fluff  ------------------------------------------------------
 
 if test -d $HOME/bin
-    set -gx PATH   $PATH $HOME/bin
+    set -gx PATH   $HOME/bin $PATH
 end
 
 if test -d $HOME/.local/bin
-    set -gx PATH   $PATH $HOME/.local/bin
+    set -gx PATH   $HOME/.local/bin $PATH
 end
 
 # ------------------------------------------------------------------------------

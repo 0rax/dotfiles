@@ -16,3 +16,6 @@
 [submodule "qmk"]
 	path = qmk
 	url = https://github.com/0rax/qmk_firmware.git
+[submodule "fish/plugins/awsenv.fish"]
+	path = fish/plugins/awsenv
+	url = https://github.com/0rax/awsenv.fish.git

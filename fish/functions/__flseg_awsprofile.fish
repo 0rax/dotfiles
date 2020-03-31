@@ -1,1 +1,1 @@
-../plugins/sharktooth/functions/__flseg_awsprofile.fish
+../plugins/awsenv/functions/__flseg_awsprofile.fish

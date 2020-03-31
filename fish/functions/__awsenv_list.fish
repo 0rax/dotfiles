@@ -1,0 +1,1 @@
+../plugins/awsenv/functions/__awsenv_list.fish
