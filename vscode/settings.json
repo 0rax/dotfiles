@@ -21,6 +21,8 @@
     "editor.scrollBeyondLastLine": false,
     "editor.tabSize": 4,
     "editor.wordWrap": "on",
+    // Outline
+    "outline.showVariables": false,
     // Explorer
     "explorer.compactFolders": true,
     "explorer.confirmDelete": false,
@@ -30,6 +32,7 @@
     "files.associations": {
         "*.pgsql": "sql",
         "APKBUILD": "shellscript",
+        "bashrc": "sheelscript",
         "Brewfile": "ruby",
         "Dockerfile.*": "dockerfile",
         "ssh_config": "ssh_config",
@@ -49,8 +52,6 @@
     "git.autofetch": false,
     "git.enabled": false,
     "git.ignoreLimitWarning": true,
-    // Outline
-    "outline.showVariables": false,
     // Search
     "search.exclude": {
         "**/vendor": true
@@ -79,6 +80,7 @@
     "workbench.editor.revealIfOpen": true,
     "workbench.iconTheme": "file-icons",
     "workbench.startupEditor": "none",
+    "workbench.activityBar.visible": true,
     "zenMode.fullScreen": false,
     // === Addons ===
     // Vim Mode
@@ -170,6 +172,10 @@
         "editor.insertSpaces": false,
         "editor.tabSize": 4
     },
+    "[css]": {
+        "editor.insertSpaces": false,
+        "editor.tabSize": 8,
+    },
     "[shellscript]": {
         "editor.insertSpaces": true,
         "editor.tabSize": 4
@@ -180,11 +186,8 @@
     },
     // Golang
     "[proto3]": {
-        "protoc": {
-            "clang-format.style": "google"
-        },
-        "editor.defaultFormatter": "zxh404.vscode-proto3",
-        // "editor.formatOnSave": true
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "xaver.clang-format"
     },
     // Golang
     "go.gopath": "/home/orax/projects/go",
@@ -192,6 +195,14 @@
     "go.toolsGopath": "/home/orax/projects/go",
     "go.useLanguageServer": false,
     "go.vetOnSave": "package",
+    "go.testFlags": [
+        "-gcflags=-l"
+    ],
+    "go.formatTool": "goimports",
+    "go.formatFlags": [
+        "-local=github.com/moneway"
+    ],
+    "go.lintTool": "golangci-lint",
     // YAML
     "yaml.format.enable": false,
     "yaml.customTags": [
@@ -231,6 +242,7 @@
     "python.venvPath": "~/.virtualenvs/",
     "python.formatting.provider": "black",
     "python.jediEnabled": true,
+    "python.languageServer": "Jedi",
     "python.linting.enabled": true,
     "python.linting.flake8Args": [
         "--max-line-length=100",
@@ -245,8 +257,14 @@
     // Shell
     "shellcheck.run": "onSave",
     "[fish]": {
-        "editor.insertSpaces": false,
+        "editor.insertSpaces": true,
         "editor.tabSize": 4
+    },
+    // MJML
+    "[mjml]": {
+        "editor.insertSpaces": true,
+        "editor.tabSize": 2,
+        "editor.defaultFormatter": "attilabuti.vscode-mjml"
     },
     // Text
     "spellright.documentTypes": [

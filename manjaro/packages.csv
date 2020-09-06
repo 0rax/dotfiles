@@ -51,7 +51,7 @@ bind-tools                  # https://www.isc.org/downloads/bind/
 dash                        # http://gondor.apana.org.au/~herbert/dash/
 whois                       # https://github.com/rfc1036/whois
 traceroute                  # http://traceroute.sourceforge.net/
-aur/gotop-git               # https://github.com/cjbassi/gotop
+aur/ytop                    # https://github.com/cjbassi/ytop
 tcpdump                     # https://www.archlinux.org/packages/extra/x86_64/tcpdump/
 diffstat                    # http://invisible-island.net/diffstat
 bat                         # https://github.com/sharkdp/bat
@@ -122,6 +122,8 @@ docker-compose              # https://www.docker.com/
 # virtualbox                # https://www.virtualbox.org/
 gnome-boxes                 # https://wiki.gnome.org/Apps/Boxes
 qemu                        # https://www.qemu.org/
+virt-manager                # https://virt-manager.org/
+edk2-ovmf                   # Required for UEFI support
 ebtables                    # Required for libvirt networking
 
 ## Minikube
@@ -156,17 +158,16 @@ aur/ctop                    # https://github.com/bcicen/ctop
 powertop                    # https://01.org/powertop/
 s-tui                       # https://github.com/amanusk/s-tui
 android-tools               # https://sites.google.com/a/android.com/tools/
+android-udev                # https://www.archlinux.org/packages/community/any/android-udev/
 aur/activitywatch-bin       # https://github.com/ActivityWatch
 solaar                      # https://pwr-solaar.github.io/Solaar/
 gucharmap                   # https://wiki.gnome.org/Apps/Gucharmap
 zip                         # http://infozip.sourceforge.net/Zip.html
 unzip                       # http://infozip.sourceforge.net/UnZip.html
-yubikey-personalization     # https://yubico.com/
-libu2f-host                 # (require for Yubico U2F via CLI)
 
 ## Fonts
 terminus-font               # http://terminus-font.sourceforge.net/
-ttf-joypixels               # https://www.joypixels.com/download
+otf-ipafont                 # https://ipafont.ipa.go.jp/
 aur/ephifonts               # http://www.ephifonts.com/
 aur/ttf-ms-fonts            # http://corefonts.sourceforge.net/
 aur/ttf-windows             # https://aur.archlinux.org/packages/ttf-windows/
@@ -180,6 +181,7 @@ aur/otf-hasklig             # https://github.com/i-tu/Hasklig
 
 ## Media Playback
 vlc                         # http://www.videolan.org/vlc/
+libmicrodns                 # Required for Chromecast Discovery
 aur/spotify                 # https://www.spotify.com/
 pulseaudio-equalizer-ladspa # https://github.com/pulseaudio-equalizer-ladspa/equalizer
 evince                      # https://wiki.gnome.org/Apps/Evince
@@ -203,6 +205,7 @@ aur/pdfchain                # http://pdfchain.sourceforge.net/
 
 ## Printer
 cups                        # https://wiki.archlinux.org/index.php/CUPS#Installation
+cups-pdf                    # https://www.cups-pdf.de
 system-config-printer       # http://cyberelk.net/tim/software/system-config-printer/
 # sudo systemctl enable --now org.cups.cupsd.service
 
@@ -222,7 +225,7 @@ aur/networkmanager-wireguard-git # https://github.com/max-moser/network-manager-
 firefox-developer-edition   # https://www.mozilla.org/en-US/firefox/developer/
 epiphany                    # https://wiki.gnome.org/Apps/Web
 aur/rambox-bin              # https://rambox.pro/
-deluge                      # https://deluge-torrent.org/
+deluge-gtk                  # https://deluge-torrent.org/
 lynx                        # https://lynx.browser.org/
 w3m                         # http://w3m.sourceforge.net/
 # aur/ungoogled-chromium    # https://github.com/Eloston/ungoogled-chromium
@@ -237,14 +240,6 @@ hunspell                    # https://hunspell.github.io/
 hunspell-en_GB              # https://hunspell.github.io/
 hunspell-fr                 # https://hunspell.github.io/
 
-## Games
-aur/minecraft-launcher      # http://minecraft.net/
-
-#### 3D Printing
-prusa-slicer                # https://www.prusa3d.com/prusaslicer/
-openscad                    # https://www.openscad.org/
-aur/fstl                    # https://www.mattkeeter.com/projects/fstl/
-
 #### GNOME / Cinnamon Theme
 gtk-engine-murrine          # https://www.archlinux.org/packages/community/x86_64/gtk-engine-murrine/
 arc-gtk-theme               # https://github.com/horst3180/Arc-theme
@@ -253,12 +248,55 @@ papirus-icon-theme          # https://github.com/PapirusDevelopmentTeam/papirus-
 aur/papirus-folders-git     # https://github.com/PapirusDevelopmentTeam/papirus-folders
 
 #### QMK (https://beta.docs.qmk.fm/detailed-guides/getting_started_build_tools#linux)
-avr-gcc
-avr-binutils
-avr-libc
-dfu-util
-arm-none-eabi-gcc
-arm-none-eabi-binutils
-arm-none-eabi-newlib
+
 dfu-programmer
 dfu-util
+aur/qmk
+
+aur/github-cli
+aur/golangci-lint-bin
+
+task
+aur/vit-git
+aur/drawio-desktop-bin
+
+jdk8-openjdk
+jre8-openjdk
+jre8-openjdk-headless
+
+graphviz
+
+# Use Yubikey U2F for sudo
+# https://po-ru.com/2019/06/22/using-u2f-for-passwordless-sudo
+# https://askubuntu.com/questions/1071027/how-to-configure-a-u2f-keysuch-as-a-yubikey-for-system-wide-2-factor-authentic
+# https://support.yubico.com/support/solutions/articles/15000011356-ubuntu-linux-login-guide-u2f
+# https://developers.yubico.com/pam-u2f/
+pam-u2f                     # https://developers.yubico.com/pam-u2f/
+libfido2                    # https://developers.yubico.com/libfido2/
+yubikey-personalization     # https://yubico.com/
+libu2f-host                 # (require for Yubico U2F via CLI)
+
+aur/zoom
+
+chromium
+aur/rclone-browser
+aur/meta-group-texlive-most
+
+aur/minetime-bin
+geary
+
+#### TO UNINSTALL
+
+## Games
+aur/minecraft-launcher      # http://minecraft.net/
+
+#### 3D Printing
+prusa-slicer                # https://www.prusa3d.com/prusaslicer/
+openscad                    # https://www.openscad.org/
+aur/fstl                    # https://www.mattkeeter.com/projects/fstl/
+
+
+sloccount
+cloc
+
+noto-fonts-emoji

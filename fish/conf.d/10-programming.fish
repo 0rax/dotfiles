@@ -32,17 +32,10 @@ else if test -d $HOME/go
     set -gx PATH   $PATH $GOPATH/bin
 end
 
-# ---  Programming/Python [MacOSX]  --------------------------------------------
+# ---  Programming/NoeJS  ------------------------------------------------------
 
-# Set default python binary version to python3.5
-if test -x /usr/local/opt/python3/bin/python3
-    # Add local Python 3 path on OS X
-   set -gx PATH /usr/local/opt/python3/bin/ $PATH
-end
-
-if test -x /usr/local/opt/python2/bin/python2
-    # Add local Python 2 path on OS X
-   set -gx PATH /usr/local/opt/python2/bin $PATH
+if test -d $HOME/.yarn/bin
+   set -gx PATH $HOME/.yarn/bin $PATH
 end
 
 # ---  Programming/Fluff  ------------------------------------------------------
