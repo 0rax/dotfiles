@@ -44,6 +44,8 @@ if test -d /usr/local/share/fish/vendor_completions.d
 	set -gx fish_complete_path $fish_complete_path /usr/local/share/fish/vendor_completions.d
 end
 
+set -gx fish_function_path $FISH_CONFIG_PATH/functions $fish_function_path
+
 # ---  System/Fish Alias Folder ------------------------------------------------
 
 set -gx fish_function_path $FISH_CONFIG_PATH/alias $fish_function_path

@@ -298,5 +298,30 @@ aur/fstl                    # https://www.mattkeeter.com/projects/fstl/
 
 sloccount
 cloc
-
 noto-fonts-emoji
+
+### Default App
+# Files     : Nemo
+# Web       : Firefox
+# Mail      : Geary
+# Documents : OnlyOffice
+# PlainText : VSCode
+# Music     : VLC
+# Video     : VLC
+# Photos    : eog
+# SourceCode: VSCode
+# PDF       : evince
+# Terminal  : Tilix
+# Calculator: gnome-calculator
+
+### Dock
+# Nemo
+# Firefox
+# Rambox
+# Keybase
+# StandardNotes
+# Spotify
+# Tilix
+# VSCode
+# BloomRPC
+# Bitwarden
