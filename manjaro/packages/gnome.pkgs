@@ -1,0 +1,6 @@
+#### GNOME / Cinnamon Theme
+gtk-engine-murrine          # https://www.archlinux.org/packages/community/x86_64/gtk-engine-murrine/
+arc-gtk-theme               # https://github.com/horst3180/Arc-theme
+adapta-gtk-theme            # https://github.com/adapta-project/adapta-gtk-theme
+papirus-icon-theme          # https://github.com/PapirusDevelopmentTeam/papirus-icon-theme
+aur/papirus-folders-git     # https://github.com/PapirusDevelopmentTeam/papirus-folders
