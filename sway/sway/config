@@ -1,0 +1,30 @@
+# Default config for sway
+#
+# Copy this to ~/.config/sway/config and edit it to your liking.
+#
+# Read `man 5 sway` for a complete reference.
+
+### Variables
+#
+# Logo key. Use Mod1 for Alt.
+set $mod Mod4
+set $alt Mod1
+
+# Your preferred terminal emulator
+set $term alacritty
+set $lock swaylock -f -c 000000
+
+# Your preferred application launcher
+# Note: pass the final command to swaymsg so that the resulting window can be opened
+# on the original workspace that the command was run on.
+# set $menu dmenu_path | dmenu | xargs swaymsg exec --
+set $menu wofi --show drun
+
+include themes/base16-oceanicnext.config
+include sway.d/01-general.conf
+include sway.d/02-output.conf
+include sway.d/03-input.conf
+include sway.d/04-workspace.conf
+include sway.d/05-keybinding.conf
+include sway.d/06-bar.conf
+include sway.d/10-autostart.conf

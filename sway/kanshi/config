@@ -1,0 +1,15 @@
+profile {
+    output eDP-1 enable scale 1.5
+}
+
+profile {
+    output eDP-1 disable
+    output DP-3 mode 1920x1080 position 0,386  scale 1.0
+    output DP-4 mode 1920x1080 position 1920,0 scale 1.0 transform 270
+}
+
+profile {
+    output eDP-1 disable
+    output DP-5 mode 1920x1080 position 0,386  scale 1.0
+    output DP-6 mode 1920x1080 position 1920,0 scale 1.0 transform 270
+}

@@ -1,0 +1,124 @@
+@import "themes/base16-oceanicnext.css";
+
+* {
+    border: none;
+    border-radius: 0;
+    font-family: Hasklig, 'Font Awesome 5 Brands', 'Font Awesome 5 Free Solid', Hack, monospace;
+    font-size: 12px;
+    min-height: 0;
+}
+
+window#waybar {
+    background-color: @base00;
+    color: @base05;
+}
+
+#workspaces button {
+    padding: 5px 5px;
+    background-color: @base0D;
+    color: @base01;
+}
+
+
+#workspaces button.focused {
+    background-color: @base0A;
+    color: @base01;
+}
+
+#workspaces button.urgent {
+    background-color: @base08;
+    color: @base01;
+}
+
+#workspaces button.persistent {
+    background-color: @base01;
+    color: @base05;
+}
+
+#mode {
+    background-color: @base02;
+}
+
+#clock,
+#battery,
+#cpu,
+#memory,
+#temperature,
+#backlight,
+#network,
+#pulseaudio,
+#custom-media,
+#tray,
+#mode,
+#idle_inhibitor,
+#mpd {
+    padding: 0 10px;
+    margin:0px;
+    color: #ffffff;
+}
+
+#clock.date {
+    background-color: @base0D;
+    color: @base01;
+}
+
+#clock.time {
+    background-color: @base0E;
+    color: @base01;
+}
+
+
+#battery {
+    background-color: @base0B;
+    color: @base01;
+}
+
+#battery.warning {
+    background-color: @base09;
+    color: @base01;
+}
+
+#battery.charging {
+    background-color: @base0B;
+    color: @base01;
+}
+
+#battery.critical:not(.charging) {
+    background-color: @base08;
+    color: @base01;
+}
+
+#pulseaudio {
+    background-color: @base0A;
+    color: @base01;
+}
+
+#pulseaudio.muted {
+    background-color: @base04;
+    color: @base01;
+}
+
+#network {
+    background-color: @base07;
+    color: @base01;
+}
+
+#network.disconnected {
+    background-color: @base08;
+    color: @base01;
+}
+
+#tray {
+    background-color: @base00;
+    color: @base05;
+}
+
+#idle_inhibitor {
+    background-color: @base01;
+    color: @base05;
+}
+
+#idle_inhibitor.activated {
+    background-color: @base02;
+    color: @base05;
+}

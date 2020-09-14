@@ -103,8 +103,8 @@ aur/prips                   # https://packages.debian.org/stable/net/prips
 ipcalc                      # http://jodies.de/ipcalc
 dbeaver                     # https://dbeaver.io/
 mkcert                      # https://github.com/FiloSottile/mkcert
-aur/kubectl-bin             # https://kubernetes.io/docs/reference/kubectl/overview/
-aur/kubernetes-helm-bin     # https://helm.sh/docs/using_helm/
+kubectl                     # https://kubernetes.io/docs/reference/kubectl/overview/
+helm                        # https://helm.sh/docs/using_helm/
 aur/aws-vault               # https://github.com/99designs/aws-vault
 aur/docker-credential-secretservice # https://github.com/docker/docker-credential-helpers
 aur/amazon-ecr-credential-helper # https://github.com/awslabs/amazon-ecr-credential-helper
@@ -155,23 +155,22 @@ file-roller                 # https://wiki.gnome.org/Apps/FileRoller
 dconf-editor                # https://wiki.gnome.org/Apps/DconfEditor
 seahorse                    # https://wiki.gnome.org/Apps/Seahorse
 powertop                    # https://01.org/powertop/
-s-tui                       # https://github.com/amanusk/s-tui
 android-tools               # https://sites.google.com/a/android.com/tools/
 android-udev                # https://www.archlinux.org/packages/community/any/android-udev/
+arandr                      # https://christian.amsuess.com/tools/arandr/ (display settings)
 # solaar                    # https://pwr-solaar.github.io/Solaar/
-# arandr                    # https://christian.amsuess.com/tools/arandr/ (display settings)
 
 ## Fonts
 terminus-font               # http://terminus-font.sourceforge.net/
 otf-ipafont                 # https://ipafont.ipa.go.jp/
-aur/ephifonts               # http://www.ephifonts.com/
+# aur/ephifonts             # http://www.ephifonts.com/
 aur/ttf-ms-fonts            # http://corefonts.sourceforge.net/
 aur/ttf-windows             # https://aur.archlinux.org/packages/ttf-windows/
-aur/ttf-monofur             # https://www.dafont.com/monofur.font
+ttf-monofur                 # https://www.dafont.com/monofur.font
 aur/ttf-monaco              # https://github.com/cstrap/monaco-font
-aur/ttf-monofur-powerline-git # https://github.com/powerline/fonts/tree/master/Monofur
-aur/monaco-powerline-font-git # https://gist.github.com/arkhan/229a0729ec79c6fcec81
 aur/otf-hasklig             # https://github.com/i-tu/Hasklig
+otf-font-awesome            # https://fontawesome.com/
+ttf-hack                    # https://sourcefoundry.org/hack/
 # https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/Hasklig/Regular/complete/Hasklug%20Nerd%20Font%20Complete%20Mono.otf
 # Download to ~/.fonts and run `fc-cache -fv`
 
@@ -234,10 +233,9 @@ hunspell-en_GB              # https://hunspell.github.io/
 hunspell-fr                 # https://hunspell.github.io/
 
 # Manjaro Budgie Cleanup
-# yay -Rs totem ghtunb manjaro-settings-manager manjaro-application-utiliy manjaro-hello mnanjaro-settings-manager-notifier pamac-cli pamac-gtk pamac-common hexchat
+# yay -Rs totem ghtunb manjaro-settings-manager manjaro-application-utiliy manjaro-hello mnanjaro-settings-manager-notifier network-manager-applet pamac-cli pamac-gtk pamac-common hexchat
 
 # Timeshift vs Snapper
-# Nemo vs Nautilus
-
+# Nemo vs Nautilus vs Others
 # Checkout TaskWarrior + vit
 # Checkout ActivityWatch

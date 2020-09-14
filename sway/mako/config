@@ -1,0 +1,26 @@
+# Global Configuration Options
+max-visible=5
+sort=-time
+output=
+layer=overlay
+anchor=top-right
+
+# Style Options
+font=Hasklig
+background-color=#1b2b34
+text-color=#c0c5ce
+width=360
+height=180
+margin=8
+padding=8
+border-size=4
+border-color=#6699cc
+border-radius=0
+progress-color=over #6699cc
+icons=1
+max-icon-size=64
+icon-path=
+markup=1
+actions=1
+default-timeout=10000
+ignore-timeout=0

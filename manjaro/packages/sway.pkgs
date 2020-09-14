@@ -1,0 +1,15 @@
+sway
+dmenu
+alacritty
+swaylock
+swayidle
+aur/wdisplays
+waybar # Bar
+wofi # Wayland Application Launcher
+rofi # X11 Application Launcher (more customizable than wofi ?)
+mako # Notification Daemon
+brightnessctl
+gammastep
+kanshi
+slurp
+grim
