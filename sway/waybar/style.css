@@ -43,6 +43,7 @@ window#waybar {
 #battery,
 #cpu,
 #memory,
+#disk,
 #temperature,
 #backlight,
 #network,
@@ -121,4 +122,23 @@ window#waybar {
 #idle_inhibitor.activated {
     background-color: @base02;
     color: @base05;
+}
+
+#cpu {
+    background-color: @base0C;
+    color: @base01;
+    padding-right: 5px;
+}
+
+#memory {
+    background-color: @base0C;
+    color: @base01;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#disk {
+    background-color: @base0C;
+    color: @base01;
+    padding-left: 5px;
 }

@@ -12,6 +12,9 @@
     "modules-right": [
         "tray",
         "idle_inhibitor",
+        "cpu",
+        "memory",
+        "disk",
         "network",
         "pulseaudio",
         "battery",
@@ -105,9 +108,6 @@
             "headphone": "",
             "hands-free": "",
             "headset": "",
-            "phone": "",
-            "portable": "",
-            "car": "",
             "default": [
                 "",
                 "",
@@ -116,5 +116,17 @@
         },
         "on-click": "pavucontrol",
         "on-click-middle": "pulseaudio-ctl mute"
+    },
+    "cpu": {
+        "format": " {usage}%",
+        "tooltip": true
+    },
+    "memory": {
+        "format": " {}%"
+    },
+    "disk": {
+        "interval": 30,
+        "format": " {percentage_used}%",
+        "path": "/"
     }
 }

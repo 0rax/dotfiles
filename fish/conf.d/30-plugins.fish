@@ -22,23 +22,6 @@ end
 
 set -gx BD_OPT 'insensitive'
 
-# ---  Plugins/VirtualFish  ----------------------------------------------------
-
-if begin;
-      test -f "/usr/local/lib/python3.8/site-packages/virtualfish/virtual.fish";
-      or test -f "/usr/local/lib/python3.7/site-packages/virtualfish/virtual.fish";
-      or test -f "/usr/local/lib/python3.6/site-packages/virtualfish/virtual.fish";
-      or test -f "$HOME/.local/lib/python3.8/site-packages/virtualfish/virtual.fish";
-      or test -f "$HOME/.local/lib/python3.7/site-packages/virtualfish/virtual.fish";
-      or test -f "$HOME/.local/lib/python3.6/site-packages/virtualfish/virtual.fish"
-   end
-
-    eval (python3 -m virtualfish)
-    set -gx VIRTUALFISH_DEFAULT_PYTHON "python3"
-    set -gx VIRTUALFISH_HOME           "$HOME/.virtualenvs"
-
-end
-
 # ---  Plugins/Z  --------------------------------------------------------------
 
 if test -f "$FISH_PLUGIN_PATH/z/conf.d/z.fish"
