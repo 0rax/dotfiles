@@ -4,7 +4,7 @@ audible_bell = false
 bold_is_bright = true
 #cell_height_scale = 1.0
 #cell_width_scale = 1.0
-clickable_url = true
+clickable_url = false
 dynamic_title = true
 font = Hasklig 11
 fullscreen = true
@@ -26,38 +26,33 @@ scrollbar = off
 
 [colors]
 # Base16 OceanicNext
-# Author: https://github.com/voronianski/oceanic-next-color-scheme
-foreground          = #C0C5CE
-foreground_bold     = #C0C5CE
-cursor              = #C0C5CE
-cursor_foreground   = #1B2B34
-background          = #1B2B34
+# Scheme: https://github.com/voronianski/oceanic-next-color-scheme
+
+foreground        = #C0C5CE
+foreground_bold   = #C0C5CE
+cursor            = #C0C5CE
+background        = #1B2B34
+cursor_foreground = #1B2B34
 
 # 16 color space
-# Black, Gray, Silver, White
 color0  = #1B2B34
-color8  = #65737E
-color7  = #C0C5CE
-color15 = #D8DEE9
-# Red
-color1  = #EC5F67
-color9  = #EC5F67
-# Green
+color1  = #EC5f67
 color2  = #99C794
-color10 = #99C794
-# Yellow
 color3  = #FAC863
-color11 = #FAC863
-# Blue
 color4  = #6699CC
-color12 = #6699CC
-# Purple
 color5  = #C594C5
-color13 = #C594C5
-# Teal
 color6  = #5FB3B3
+color7  = #C0C5CE
+color8  = #65737E
+color9  = #EC5f67
+color10 = #99C794
+color11 = #FAC863
+color12 = #6699CC
+color13 = #C594C5
 color14 = #5FB3B3
-# Extra colors
+color15 = #D8DEE9
+
+# 256 color space
 color16 = #F99157
 color17 = #AB7967
 color18 = #343D46

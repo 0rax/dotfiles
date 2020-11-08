@@ -5,8 +5,7 @@
     // Choose the order of the modules
     "modules-left": [
         "sway/workspaces",
-        "sway/mode",
-        "custom/media"
+        "sway/mode"
     ],
     "modules-center": [],
     "modules-right": [
@@ -57,7 +56,7 @@
         }
     },
     "tray": {
-        // "icon-size": 21,
+        "icon-size": 16,
         "spacing": 10
     },
     "clock#date": {
@@ -76,7 +75,7 @@
         "format-charging": " {capacity}%",
         "format-plugged": " {capacity}%",
         "format-alt": "{icon} {time}",
-        "format-full": " Full",
+        "format-full": " full",
         "format-icons": [
             "",
             "",
@@ -91,19 +90,23 @@
         "format-ethernet": "",
         "format-linked": "",
         "format-disconnected": "",
-        "format-alt": "{ifname}: {ipaddr}/{cidr}",
+        "format-alt": " {ipaddr}/{cidr}",
         "tooltip-format": " {ifname}",
         "tooltip-format-wifi": " {essid} ({signalStrength}%)",
         "tooltip-format-ethernet": " {ifname}",
         "tooltip-format-disconnected": " Disconnected",
-        "interval": 20
+        "interval": 20,
+        "on-click-right": "termite --name=nmtui -e nmtui"
     },
     "pulseaudio": {
         "scroll-step": 2.5, // %, can be a float
         "format": "{icon} {volume}%",
+        "format-alt": "{format_source}",
         "format-bluetooth": "{icon} {volume}%",
         "format-bluetooth-muted": "{icon} mute",
         "format-muted": " mute",
+        "format-source": " {volume}%",
+        "format-source-muted": " mute",
         "format-icons": {
             "headphone": "",
             "hands-free": "",
@@ -114,7 +117,7 @@
                 ""
             ]
         },
-        "on-click": "pavucontrol",
+        "on-click-right": "pavucontrol",
         "on-click-middle": "pulseaudio-ctl mute"
     },
     "cpu": {

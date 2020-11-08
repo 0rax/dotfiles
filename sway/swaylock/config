@@ -1,0 +1,25 @@
+ignore-empty-password
+grace=0
+grace-no-mouse
+grace-no-touch
+
+indicator
+clock
+inside-color=00000000
+ring-color=00000000
+line-color=00000000
+indicator-radius=120
+text-color=ffffffff
+screenshots
+fade-in=0.5
+effect-blur=5x4
+effect-greyscale
+effect-compose=50%,90%;128x128;center;/home/orax/pictures/logos/vaultia-512.png
+
+# inside-color=00000000
+# indicator-radius=32
+# screenshots
+# fade-in=0.5
+# effect-blur=5x4
+# effect-greyscale
+# effect-compose=50%,51%;256x256;center;/home/orax/pictures/logos/vaultia-512.png
