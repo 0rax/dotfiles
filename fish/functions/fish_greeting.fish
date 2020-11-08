@@ -14,7 +14,8 @@
 
 function fish_greeting
 
-    if set -q SUDO_UID
+    # Do no show on sudo or call to kubie
+    if set -q SUDO_UID; or set -q KUBIE_ACTIVE
       return
     end
 
@@ -28,7 +29,8 @@ function fish_greeting
     set -l LOAD '? ? ?'
     set -l CORE '?'
     set -l THREAD '?'
-
+    set -l DEVICE '?'
+    # Parse /proc/meminfo MemFree / MemAvailable to show memory usage
     if [ "$PLATFORM" = "Linux" ]
         if test -f /etc/os-release
             set OS (cat /etc/os-release | sed -nE 's/^PRETTY_NAME="(.*)"$/\1/p')
@@ -38,11 +40,13 @@ function fish_greeting
         set LOAD (cat /proc/loadavg | cut -d " " -f1-3)
         set CORE (sed -nE 's/^((physical id)|(cpu cores))\s+: ([0-9]+)$/\4/p' /proc/cpuinfo | paste -d " " - - | sort -u | awk '{s+=$2}END{print s}')
         set THREAD (grep -c "^processor" /proc/cpuinfo)
+	set DEVICE (cat /sys/devices/virtual/dmi/id/product_name)
     else if [ "$PLATFORM" = "Darwin" ]
         set OS 'Mac OS X' (sw_vers -productVersion)
         set LOAD (sysctl -n vm.loadavg | cut -d" " -f2-4)
         set CORE (sysctl -a machdep.cpu.core_count | cut -d' ' -f2)
         set THREAD (sysctl -a machdep.cpu.thread_count | cut -d' ' -f2)
+	set DEVICE (sysctl -n hw.model)
     end
 
     echo ''

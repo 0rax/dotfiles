@@ -1,1 +1,5 @@
-../plugins/sharktooth/functions/fish_mode_prompt.fish
+#!/usr/bin/env fish
+# -*-  mode:fish; tab-width:4  -*-
+
+function fish_mode_prompt
+end

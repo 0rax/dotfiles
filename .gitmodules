@@ -7,9 +7,6 @@
 [submodule "fish/plugins/narwhal"]
 	path = fish/plugins/narwhal
 	url = https://github.com/0rax/narwhal
-[submodule "fish/plugins/sharktooth"]
-	path = fish/plugins/sharktooth
-	url = https://github.com/0rax/sharktooth
 [submodule "fish/plugins/z"]
 	path = fish/plugins/z
 	url = https://github.com/jethrokuan/z
