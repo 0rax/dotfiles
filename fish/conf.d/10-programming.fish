@@ -32,10 +32,17 @@ else if test -d $HOME/go
     set -gx PATH   $PATH $GOPATH/bin
 end
 
-# ---  Programming/NoeJS  ------------------------------------------------------
+# ---  Programming/NodeJS  -----------------------------------------------------
 
 if test -d $HOME/.yarn/bin
    set -gx PATH $HOME/.yarn/bin $PATH
+end
+
+# ---  Programming/Python  -----------------------------------------------------
+
+if type -q pyenv
+    pyenv init - | source
+    pyenv virtualenv-init - | source
 end
 
 # ---  Programming/Fluff  ------------------------------------------------------
