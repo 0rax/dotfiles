@@ -5,6 +5,16 @@
 # ---  Programming  ------------------------------------------------------------
 # ------------------------------------------------------------------------------
 
+# ---  Programming/Fluff  ------------------------------------------------------
+
+if test -d $HOME/bin
+    set -gx PATH   $HOME/bin $PATH
+end
+
+if test -d $HOME/.local/bin
+    set -gx PATH   $HOME/.local/bin $PATH
+end
+
 # ---  Programming/Docker [Windows]  -------------------------------------------
 
 if uname -r | grep -q Microsoft
@@ -43,16 +53,6 @@ end
 if type -q pyenv
     pyenv init - | source
     pyenv virtualenv-init - | source
-end
-
-# ---  Programming/Fluff  ------------------------------------------------------
-
-if test -d $HOME/bin
-    set -gx PATH   $HOME/bin $PATH
-end
-
-if test -d $HOME/.local/bin
-    set -gx PATH   $HOME/.local/bin $PATH
 end
 
 # ------------------------------------------------------------------------------

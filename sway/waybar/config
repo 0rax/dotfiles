@@ -96,7 +96,7 @@
         "tooltip-format-ethernet": " {ifname}",
         "tooltip-format-disconnected": " Disconnected",
         "interval": 20,
-        "on-click-right": "termite --name=nmtui -e nmtui"
+        "on-click-right": "nm-connection-editor"
     },
     "pulseaudio": {
         "scroll-step": 2.5, // %, can be a float

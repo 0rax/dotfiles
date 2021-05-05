@@ -58,3 +58,6 @@ libinput-gestures-setup start
   - Go to `Keyboard` settings
   - Select a layout then click `Options...`
   - In `Switch to another keyboard layout` set to `Win+Space`
+
+## AUR Setup
+See https://wiki.archlinux.org/index.php/Makepkg#Reduce_source_download_and_extraction_times to make `makepkg` faster.

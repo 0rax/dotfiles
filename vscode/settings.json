@@ -66,7 +66,6 @@
     // Window
     "window.menuBarVisibility": "toggle",
     "window.restoreWindows": "one",
-    "window.zoomLevel": 0,
     // Workbench
     "workbench.editor.limit.enabled": true,
     "workbench.editor.limit.perEditorGroup": true,
@@ -171,6 +170,10 @@
     "[dockerfile]": {
         "editor.defaultFormatter": "ms-azuretools.vscode-docker"
     },
+    "[dockercompose]": {
+        "editor.insertSpaces": true,
+        "editor.tabSize": 2
+    },
     "[jsonc]": {
         "editor.defaultFormatter": "vscode.json-language-features",
         "editor.formatOnSave": true
@@ -196,7 +199,7 @@
         "editor.formatOnSave": true,
         "editor.defaultFormatter": "xaver.clang-format"
     },
-    // Golang
+    "[go]": {},
     "go.gopath": "/home/orax/projects/go",
     "go.inferGopath": true,
     "go.toolsGopath": "/home/orax/projects/go",
@@ -213,6 +216,7 @@
         "-local=github.com/moneway"
     ],
     "go.lintTool": "golangci-lint",
+    "groupImports.onSave": true,
     // YAML
     "yaml.format.enable": false,
     "yaml.customTags": [
@@ -288,6 +292,13 @@
     ],
     "spellright.language": [
         "en"
-    ]
+    ],
+    "workbench.editorAssociations": [
+        {
+            "viewType": "jupyter.notebook.ipynb",
+            "filenamePattern": "*.ipynb"
+        }
+    ],
+    "go.toolsManagement.autoUpdate": true,
     // === End of file ===
 }

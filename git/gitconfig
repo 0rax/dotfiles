@@ -6,7 +6,7 @@
 
 # GPG Integration configuration
 [commit]
-	gpgsign = true
+	gpgsign = false
 
 # Git base config
 [core]

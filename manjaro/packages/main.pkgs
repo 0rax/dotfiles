@@ -25,6 +25,7 @@ subversion                  # https://subversion.apache.org/
 
 ## Shell Utils
 moreutils                   # https://joeyh.name/code/moreutils/
+
 coreutils                   # https://www.gnu.org/software/coreutils/
 findutils                   # https://www.gnu.org/software/findutils/
 grep                        # https://www.gnu.org/software/grep/
@@ -56,9 +57,11 @@ diffstat                    # http://invisible-island.net/diffstat
 bat                         # https://github.com/sharkdp/bat
 zip                         # http://infozip.sourceforge.net/Zip.html
 unzip                       # http://infozip.sourceforge.net/UnZip.html
+lzop                        # http://www.lzop.org/
 
 ## Programming
 base-devel                  # https://www.archlinux.org/groups/x86_64/base-devel/ (metapackage)
+distcc                      # https://github.com/distcc/distcc
 remake                      # http://bashdb.sourceforge.net/remake/
 clang                       # https://clang.llvm.org/
 go                          # https://go.dev/
@@ -84,7 +87,7 @@ pandoc                      # http://pandoc.org
 texlive-most                # https://tug.org/texlive/
 graphviz                    # https://graphviz.org/
 aur/bloomrpc-bin            # https://github.com/uw-labs/bloomrpc
-aur/github-cli              # https://cli.github.com/
+github-cli                  # https://cli.github.com/
 aur/golangci-lint-bin       # https://github.com/golangci/golangci-lint
 # meld                      # http://meldmerge.org/
 # rhash                     # https://github.com/rhash/RHash
@@ -94,7 +97,6 @@ net-tools                   # http://net-tools.sourceforge.net/
 iftop                       # http://www.ex-parrot.com/pdw/iftop/
 nmap                        # https://nmap.org/
 mtr                         # http://www.bitwizard.nl/mtr/
-aur/qomui                   # https://github.com/corrad1nho/qomui
 
 ## DevOps
 aws-cli                     # https://github.com/aws/aws-cli
@@ -103,9 +105,7 @@ aur/prips                   # https://packages.debian.org/stable/net/prips
 ipcalc                      # http://jodies.de/ipcalc
 dbeaver                     # https://dbeaver.io/
 mkcert                      # https://github.com/FiloSottile/mkcert
-kubectl                     # https://kubernetes.io/docs/reference/kubectl/overview/
-helm                        # https://helm.sh/docs/using_helm/
-aur/aws-vault               # https://github.com/99designs/aws-vault
+aws-vault                   # https://github.com/99designs/aws-vault
 aur/docker-credential-secretservice # https://github.com/docker/docker-credential-helpers
 aur/amazon-ecr-credential-helper # https://github.com/awslabs/amazon-ecr-credential-helper
 aur/saml2aws                # https://github.com/Versent/saml2aws
@@ -125,7 +125,7 @@ docker                      # https://www.docker.com/
 docker-compose              # https://www.docker.com/
 aur/ctop                    # https://github.com/bcicen/ctop
 # virtualbox                # https://www.virtualbox.org/
-# gnome-boxes               # https://wiki.gnome.org/Apps/Boxes
+gnome-boxes                 # https://wiki.gnome.org/Apps/Boxes
 # qemu                      # https://www.qemu.org/
 # virt-manager              # https://virt-manager.org/
 # edk2-ovmf                 # Required for UEFI support
@@ -139,8 +139,7 @@ aur/ctop                    # https://github.com/bcicen/ctop
 # snapper                   # https://wiki.archlinux.org/index.php/Snapper
 # snapper-gui               # https://wiki.archlinux.org/index.php/Snapper#Installation
 # restic                    # https://github.com/restic/restic
-# rclone                    # https://rclone.org/
-# aur/rclone-browser        # http://martins.ninja/RcloneBrowser/
+rclone                      # https://rclone.org/
 
 ## System Utils
 tilix                       # https://github.com/gnunn1/tilix
@@ -194,7 +193,6 @@ aur/yed                     # http://www.yworks.com/en/downloads.html#yEd
 gimp                        # http://www.gimp.org/
 inkscape                    # https://inkscape.org/
 aur/standardnotes-desktop   # http://standardnotes.org/
-aur/onlyoffice-bin          # https://www.onlyoffice.com/en/download-desktop.aspx
 eog                         # https://wiki.gnome.org/Apps/EyeOfGnome/
 aur/pdfchain                # http://pdfchain.sourceforge.net/
 
@@ -218,7 +216,7 @@ aur/networkmanager-wireguard-git # https://github.com/max-moser/network-manager-
 ## Web & Social
 firefox-developer-edition   # https://www.mozilla.org/en-US/firefox/developer/
 chromium                    # https://stacker.readthedocs.io/en/latest/
-aur/rambox-bin              # https://rambox.pro/
+# aur/rambox-bin              # https://rambox.pro/
 deluge-gtk                  # https://deluge-torrent.org/
 lynx                        # https://lynx.browser.org/
 w3m                         # http://w3m.sourceforge.net/
@@ -232,10 +230,31 @@ hunspell                    # https://hunspell.github.io/
 hunspell-en_GB              # https://hunspell.github.io/
 hunspell-fr                 # https://hunspell.github.io/
 
-# Manjaro Budgie Cleanup
-# yay -Rs totem ghtunb manjaro-settings-manager manjaro-application-utiliy manjaro-hello mnanjaro-settings-manager-notifier network-manager-applet pamac-cli pamac-gtk pamac-common hexchat
+aur/slack-desktop
+discord
+
+aur/drawio-desktop-bin
+python-virtualenv
+pyenv
+pyenv-virtualenv
+
+virt-manager
+s-tui
+
+wdiff
+colordiff
+
+libreoffice-fresh
+
+downgrade
 
 # Timeshift vs Snapper
 # Nemo vs Nautilus vs Others
 # Checkout TaskWarrior + vit
-# Checkout ActivityWatch
+
+# playerctl
+# mpd
+# ncmpcpp
+# mpc
+# mopidy mopidy-local mopidy-spotify mopidy-mpd mopidy-iris mopidy-jellyfin mopidy-tunein
+# boinc-manager

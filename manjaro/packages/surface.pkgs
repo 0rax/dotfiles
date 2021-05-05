@@ -4,4 +4,12 @@ linux-surface
 linux-surface-headers
 surface-ipts-firmware
 iptsd
-# sudo systemctl disable --now tlp.service # Disable TLP for performance reason
+# yay -Rs tlp powertop # Disable TLP/Powertop for performance reason
+surface-control
+# cpupower
+# cpupower-gui
+psensor
+thermald
+
+intel-media-driver
+libva-utils

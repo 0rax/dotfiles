@@ -1,0 +1,6 @@
+kubectl                     # https://kubernetes.io/docs/reference/kubectl/overview/
+helm                        # https://helm.sh/docs/using_helm/
+aur/k3sup-bin
+aur/kubie-bin
+aur/octant
+aur/lens-bin

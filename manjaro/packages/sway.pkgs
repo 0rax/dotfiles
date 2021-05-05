@@ -1,19 +1,64 @@
 aur/ly
+# sudo systemctl disable getty@tty2.service
+# sudo systemctl enable ly.service
 sway
 aur/swaylock-effects-git
 swayidle
 aur/wdisplays
 waybar # Bar
-termite
 wofi # Wayland Application Launcher
 mako # Notification Daemon
 brightnessctl
 gammastep
+kanshi
+
+# Wayland compatibility layer
+xorg-server-xwayland # X11 Apps support
+qt5-wayland          # Qt5 support
+glfw-wayland         # GLFW support
+glew-wayland         # GLEW support
+
+### Utilities
+termite          # Terminal Emulator
+nautilus         # File manager (gnome)
+aur/seahorse-nautilus-ext # Nautilus: GPG plugin
+sushi            # Nautilus: Preview plugin
+nautilus-admin   # Nautilus: Open as Administrator
+evince           # Document viewer (gnome)
+file-roller      # Archive Manager
+eog              # Image viewer
+gnome-calculator # Calculator
+
+### Alternative
+# thunar    # File manager (xfce)
+# atril     # Document Viwer (mate)
+# ristretto # Image Viewer (xfce)
+# tumbler   # Thumbnailer (xfce)
+# zathura   # Document viewer (vim-like)
+
+# UI Thene
+matcha-gtk-theme            # GTK theme  https://github.com/vinceliuice/Matcha-gtk-theme
+papirus-icon-theme          # Icon theme https://github.com/PapirusDevelopmentTeam/papirus-icon-theme
+xcursor-breeze              # Cursor theme
+lxappearance                # Theme switcher (GTK)
+gnome-tweaks                # Theme switcher (Gnome)
 
 # To test
 rofi # X11 Application Launcher (more customizable than wofi ?)
-kanshi
 slurp
 grim
 dex
 kitty
+catimg
+
+aur/hikari
+
+# Polkit Frontend
+polkit-gnome
+
+
+nm-connection-editor
+gnome-power-manager
+gnome-disk-utility
+
+swappy
