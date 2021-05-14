@@ -1,176 +1,225 @@
 [
-	{
-		"sections": [
-			{
-				"urls": [],
-				"urlPrefixes": [],
-				"domains": [
-					"news.ycombinator.com"
-				],
-				"regexps": [],
-				"code": "@namespace url(http://www.w3.org/1999/xhtml);\nbody {\r\n    margin-top: 36px;\r\n    margin-bottom: 36px;\r\n    background: #333;\r\n  }\r\n  \r\n  #hnmain {\r\n    width: 900px !important;;\r\n  }\r\n\r\n  .itemlist {\r\n    margin: 10px;\r\n  }"
-			}
-		],
-		"url": "http://userstyles.org/styles/134360",
-		"updateUrl": "https://userstyles.org/styles/chrome/134360.json?ik-width=900px",
-		"md5Url": "https://update.userstyles.org/134360.md5",
-		"originalMd5": "84099798b46d8a6d569855926790f236",
-		"name": "Hacker News Fixed & Spaced",
-		"method": "saveStyle",
-		"enabled": true,
-		"id": 1,
-		"updateDate": 1555517473528,
-		"originalName": "Hacker News Fixed & Spaced",
-		"originalDigest": "f9a7c00cc164b00b929f67558972efd0dec7807d"
-	},
-	{
-		"sections": [
-			{
-				"urls": [],
-				"urlPrefixes": [],
-				"domains": [
-					"github.com"
-				],
-				"regexps": [],
-				"code": "textarea {\r\n    font-family: Consolas, \"Liberation Mono\", Courier, monospace;\r\n    font-size: 15px;\r\n    -webkit-font-smoothing: antialiased;\r\n  }"
-			}
-		],
-		"url": "http://userstyles.org/styles/95232",
-		"updateUrl": "https://userstyles.org/styles/chrome/95232.json",
-		"md5Url": "https://update.userstyles.org/95232.md5",
-		"originalMd5": "fa7e22cfe9dc3390e25b1d63e732cdd4",
-		"name": "Monospace GitHub Comments",
-		"method": "saveStyle",
-		"enabled": true,
-		"id": 2,
-		"updateDate": 1555517472943,
-		"originalName": "Monospace GitHub Comments",
-		"originalDigest": "c4ca550d028e4d917233bb2630838ba301ade881"
-	},
-	{
-		"sections": [
-			{
-				"urls": [],
-				"urlPrefixes": [],
-				"domains": [
-					"github.com"
-				],
-				"regexps": [],
-				"code": ".highlight {\r\n        -moz-tab-size: 4 !important;\r\n        -webkit-tab-size: 4 !important;\r\n        -o-tab-size: 4 !important;\r\n        tab-size: 4 !important;\r\n    }\r\n    \r\n    .type-ruby .highlight {\r\n        -moz-tab-size: 2 !important;\r\n        -webkit-tab-size: 2 !important;\r\n        -o-tab-size: 2 !important;\r\n        tab-size: 2 !important;\r\n    }"
-			}
-		],
-		"url": "http://userstyles.org/styles/70979",
-		"updateUrl": "https://userstyles.org/styles/chrome/70979.json?ik-defaultsize=ik-4&ik-rubysize=ik-2",
-		"md5Url": "https://update.userstyles.org/70979.md5",
-		"originalMd5": "fc96cde8533022820905986877d59bec",
-		"name": "GitHub: better-sized tabs in code",
-		"method": "saveStyle",
-		"enabled": true,
-		"id": 3,
-		"updateDate": 1555517477085,
-		"originalName": "GitHub: better-sized tabs in code",
-		"originalDigest": "95aa2482797679a755885d3bf878cb0f38709df2"
-	},
-	{
-		"sections": [
-			{
-				"urls": [],
-				"urlPrefixes": [],
-				"domains": [
-					"github.com"
-				],
-				"regexps": [],
-				"code": ".markdown-body pre {\r\n    box-shadow: 0 5px 12px rgba(255,255,255,.25);\r\n    filter: invert(1) hue-rotate(180deg) saturate(200%);\r\n    background-color: #ced0d4 !important;\r\n    border-radius: .35rem !important;\r\n}"
-			}
-		],
-		"url": "http://userstyles.org/styles/156474",
-		"updateUrl": "https://userstyles.org/styles/chrome/156474.json",
-		"md5Url": "https://update.userstyles.org/156474.md5",
-		"originalMd5": "bd865a16b6319faedbeca154850c2e0a",
-		"name": "Github - dark code snippets",
-		"method": "saveStyle",
-		"enabled": true,
-		"id": 4,
-		"updateDate": 1555517478137,
-		"originalName": "Github - dark code snippets",
-		"originalDigest": "648ef56bbb7beeaff5cc5448f504f4da39460acb"
-	},
-	{
-		"sections": [
-			{
-				"urls": [],
-				"urlPrefixes": [
-					"https://tools.ietf.org/html/rfc"
-				],
-				"domains": [],
-				"regexps": [],
-				"code": "/* Color provided by: https://github.com/mrmrs/colors */\r\n\r\n  .bgblue {\r\n    background-color: #0074D9;\r\n  }\r\n\r\n  .bggreen {\r\n    background-color: #2ECC40;\r\n  }\r\n\r\n  .bgyellow {\r\n    background-color: #FFDC00;\r\n  }\r\n\r\n  .bgorange {\r\n    background-color: #FF851B;\r\n  }\r\n\r\n  .bgred {\r\n    background-color: #FF4136;\r\n  }\r\n\r\n  .bgwhite {\r\n    background-color: #FFFFFF;\r\n  }\r\n\r\n  .bggrey {\r\n    background-color: #AAAAAA;\r\n  }\r\n\r\n  .blue {\r\n    color: #0074D9;\r\n  }\r\n\r\n  .green {\r\n    color: #2ECC40;\r\n  }\r\n\r\n  .yellow {\r\n    color: #FFDC00;\r\n  }\r\n\r\n  .orange {\r\n    color: #FF851B;\r\n  }\r\n\r\n  .red {\r\n    color: #FF4136;\r\n  }\r\n\r\n  .white {\r\n    color: #FFFFFF;\r\n  }\r\n\r\n  .grey {\r\n    color: #AAAAAA;\r\n  }\r\n\r\n  * {\r\n    margin: 0;\r\n    padding: 0;\r\n    color: #111111;\r\n  }\r\n\r\n  body {\r\n    margin: 0;\r\n  }\r\n\r\n  a {\r\n    color: #0074D9;\r\n  }\r\n\r\n  a:visited {\r\n    color: #B10DC9;\r\n  }\r\n\r\n  .pre.noprint.docinfo {\r\n    width: 662px;\r\n  }\r\n\r\n  div.content {\r\n    width: 49.7em !important;\r\n    margin: 0 auto;\r\n  }\r\n\r\n  pre,\r\n  span.pre {\r\n    font-size: 1.15em;\r\n  }\r\n\r\n  hr {\r\n    width: inherit !important;\r\n  }"
-			}
-		],
-		"url": "http://userstyles.org/styles/134536",
-		"updateUrl": "https://userstyles.org/styles/chrome/134536.json",
-		"md5Url": "https://update.userstyles.org/134536.md5",
-		"originalMd5": "a4537d08659ab0cd8b0c0886ab8878a2",
-		"name": "RFC Readable",
-		"method": "saveStyle",
-		"enabled": true,
-		"id": 5,
-		"updateDate": 1555517492576,
-		"originalName": "RFC Readable",
-		"originalDigest": "364c87728575c6b6a00a092e17661f0a75a72747"
-	},
-	{
-		"enabled": true,
-		"updateUrl": "https://userstyles.org/styles/chrome/99515.json",
-		"md5Url": "https://update.userstyles.org/99515.md5",
-		"url": "http://userstyles.org/styles/99515",
-		"originalMd5": "0fa2f4af797abf4163f5d9afec20f864",
-		"installDate": 1555517508669,
-		"sections": [
-			{
-				"code": "/*\nname:        Wikipedia 1911 (rotane)\nauthor:      rotane.deviantart.com\nhomepage:    http://userstyles.org/styles/99515/\nhomepage:    http://fav.me/d7b8hap\ncreated:     March 23, 2014\nupdates:     August 1, 2018, v0.9.9-3\nshort info:  A Wikipedia skin for better readability\ninspired by: http://blog.weare1910.com/post/75576312730/a-readable-wikipedia \n*/\n\n@namespace url(http://www.w3.org/1999/xhtml);"
-			},
-			{
-				"code": "body {\n    border: none !important;\n    font-family: \"Lucida Sans Unicode\", \"Lucida Grande\", sans-serif !important;\n    font-size: 21px !important;\n    background: #D9D7D3 !important;\n}\n\n#content {\n    margin: 0 auto !important;\n    border: none !important;\n    max-width: 860px !important;\n    background: #D9D7D3 !important;\n}\n\na {\n    text-decoration: none !important;\n}\na:hover {\n    text-decoration: underline !important;\n}\n\n\n\n/* top nav */\n#mw-page-base {\n    z-index: 10 !important;\n    height: 90px !important;\n    margin: 0 auto !important;\n    background: #CAC8C4 !important;\n}\n\n#mw-navigation {\n    position: absolute !important;\n    top: 0 !important;\n    left: 0 !important;\n    right: 0 !important;\n}\n\n#mw-head {\n    position: relative !important;\n    max-width: 923px !important;\n    height: 90px !important;\n    margin: 0 auto !important;\n}\n\n#mw-head a,\n#mw-head ul,\n#mw-head li,\n#mw-head span,\n#mw-head .vectorTabs {\n    background: none !important;\n    border: none !important;\n}\n\n#mw-head > * {\n    position: absolute !important;\n    font-size: 16px !important;\n    margin: 0 !important;\n    padding: 0 !important;\n}\n\n#mw-head #left-navigation {\n    top: 50px !important;\n    left: 29px !important;\n    padding: 0 !important;\n}\n#mw-head #right-navigation {\n    top: 50px !important;\n    right: 0 !important;\n    padding: 0 !important;\n}\n#mw-head #p-personal {\n    top: 0px !important;\n    right: 0 !important;\n    padding: 5px 30px 0 0 !important;\n    font-size: 14px !important;\n}\n\n#mw-head li {\n    opacity: 0 !important;\n    transition: all 0.45s ease-out !important;\n}\n#mw-head:hover li {\n    opacity: 1 !important;\n    transition: all 0.13s ease-in !important;\n}\n\n#mw-head a,\n#mw-head a:visited {\n    color: #556 !important;\n}\n\n#mw-head #searchform > div {\n    position: absolute !important;\n    z-index: 90 !important;\n    top: -32px !important;\n    right: 30px !important;\n    margin-top: 13px !important;\n    margin-left: 15px !important;\n    border: none !important;\n    width: 350px !important;\n    padding: 0 0 10px !important;\n}\n\n#mw-head #searchform > div input#searchInput {\n    background: #E8E6E2 !important;\n    padding: 8px 0 6px 8px !important;\n}\n\n#mw-head #p-cactions,\n#mw-head #ca-watch {\n    display: none !important;\n}\n\n\n\n/* logo */\n#mw-head:before {\n    position: relative !important;\n    width: 100px !important;\n    height: 100px !important;\n    top: 31px !important;\n    left: 33px !important;\n    content: 'Wikipedia' !important;\n    font-family: Times, Garamond !important;\n    font-weight: normal !important;\n    font-size: 26px !important;\n    text-transform: uppercase !important;\n    letter-spacing: 0px !important;\n    color: #000 !important;\n}\n\n\n\n/* left nav */\n#mw-navigation #mw-panel {\n    position: fixed !important;\n    z-index: 999 !important;\n    font-size: 18px !important;\n    top: 0px !important;\n    left: -255px !important;\n    width: 190px !important;\n    height: 100% !important;\n    overflow-y: auto !important;\n    padding: 0 0 0 100px !important;\n    background: #E8E6E2 !important;\n    box-shadow: 1px 0 3px rgba(0, 0, 0, 0.25) !important;\n    transition: all 0.66s ease-in-out !important;\n    opacity: 0 !important;\n}\n\n#mw-navigation #mw-panel:hover {\n    left: -100px !important;\n    transition: all 0.2s ease-in-out !important;\n    opacity: 1 !important;\n}\n\n\n#mw-navigation #mw-panel a {\n    color: #445 !important;\n}\n\n#mw-navigation #p-navigation,\n#mw-navigation .first {\n    margin-bottom: 0 !important;\n    margin-top: 7px !important;\n}\n\n#mw-navigation #p-lang:before {\n    content: \"\" !important;\n    font-size: 0 !important;\n    display: inline-block !important;\n    height: 0px !important;\n    width: 100% !important;\n    border-top: 1px solid rgba(0, 0, 0, 0.2) !important;\n    border-bottom: 1px solid rgba(255, 255, 255, 0.75) !important;\n}\n\n#mw-navigation #p-lang {\n    margin-top: -15px !important;\n}\n\n#mw-navigation #p-lang .uls-settings-trigger {\n    margin-right: 8px !important;\n    margin-top: 6px !important;\n}\n\n#mw-navigation > #mw-panel > div:not(#p-lang):not(#p-navigation):not(.first),\n#mw-navigation #p-lang .wbc-editpage {\n    display: none !important;\n}\n\n\n\n/* article */\n/* headlines */\n#firstHeading {\n    font-family: \"Palatino Linotype\", \"Book Antiqua\", Palatino, serif !important;\n    font-size: 39px !important;\n    margin-top: 0 !important;\n    padding-bottom: 5px !important;\n    font-weight: normal !important;\n    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) !important;\n}\n\n#bodyContent h1,\n#bodyContent h2,\n#bodyContent h3,\n#bodyContent h4,\n#bodyContent h5,\n#bodyContent h6 {\n    margin-top: 40px !important;\n    margin-bottom: 25px !important;\n    font-family: \"Palatino Linotype\", \"Book Antiqua\", Palatino, serif !important;\n    font-weight: normal !important;\n    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) !important;\n}\n\n#bodyContent h1 span.mw-editsection,\n#bodyContent h2 span.mw-editsection,\n#bodyContent h3 span.mw-editsection,\n#bodyContent h4 span.mw-editsection,\n#bodyContent h5 span.mw-editsection,\n#bodyContent h6 span.mw-editsection {\n    float: right !important;\n    margin-top: 12px !important;\n    font-family: \"Lucida Sans Unicode\", \"Lucida Grande\", sans-serif !important;\n    text-shadow: none !important;\n}\n\nspan.mw-editsection span.mw-editsection-bracket {\n    display: none !important;\n}\n\n#bodyContent h2 {\n    font-size: 33px !important;\n}\n#bodyContent h3 {\n    font-size: 30px !important;\n}\n#bodyContent h4 {\n    font-size: 26px !important;\n}\n#bodyContent h5 {\n    font-size: 22px !important;\n}\n#bodyContent h6 {\n    font-size: 20px !important;\n}\n\n\n\n/* numbering of the headings */\n/* via http://userstyles.org/styles/56739/wikipedia-readable-hyphenation */\n/* removed, since it stopped working properly */\n/*\nbody { counter-reset: headingOne; }\n#toctitle h2:before\n {\n  content: \"\" !important; \n  counter-reset: headingOne; \n  padding-right: 0 !important; \n }\n#bodyContent h2:before,\n#bodyContent h3:before,\n#bodyContent h4:before,\n#bodyContent h5:before,\n#bodyContent h6:before\n {\n  padding-right: 9px; \n  font-family: \"Lucida Sans Unicode\", \"Lucida Grande\", sans-serif !important; \n  text-shadow: none !important; \n }\n#bodyContent h2 { counter-reset: headingTwo; }\n#bodyContent h2:before\n {\n  counter-increment: headingOne; \n  content: counter(headingOne); \n  font-size: 16px !important; \n }\n#bodyContent h3 { counter-reset: headingThree; }\n#bodyContent h3:before\n {\n  counter-increment: headingTwo; \n  content: counter(headingOne) \".\" counter(headingTwo); \n  font-size: 15px !important; \n }\n#bodyContent h4 { counter-reset: headingFour; }\n#bodyContent h4:before\n {\n  counter-increment: headingThree; \n  content: counter(headingOne) \".\" counter(headingTwo) \".\" counter(headingThree); \n  font-size: 14px !important; \n }\n#bodyContent h5 { counter-reset: headingFive; }\n#bodyContent h5:before\n {\n  counter-increment: headingFour; \n  content: counter(headingOne) \".\" counter(headingTwo) \".\" counter(headingThree) \".\" counter(headingFour); \n  font-size: 13px !important; \n }\n#bodyContent h6 { counter-reset: headingSix; }\n#bodyContent h6:before\n {\n  counter-increment: headingFive; \n  content: counter(headingOne) \".\" counter(headingTwo) \".\" counter(headingThree) \".\" counter(headingFour) \".\" counter(headingFive); \n  font-size: 12px !important; \n }\n*/\n/* article */\n#bodyContent .infobox {\n    padding: 9px 16px 5px !important;\n    margin-left: 30px !important;\n}\n\n#bodyContent #siteSub,\n/* hide Wikipedia byline */\n#bodyContent #mw-fr-revisiontag,\n/* hide revision thingie */\n#bodyContent #tfd.boilerplate/* hide template considered for deletion */\n{\n    display: none !important;\n}\n\n#bodyContent #coordinates {\n    top: -3px !important;\n    padding: 4px 6px 3px !important;\n    background: #E8E6E2 !important;\n    border-radius: 0px !important;\n    border: 1px solid #aaa !important;\n    /* box-shadow: inset 0 1px 0 rgba(255,255,255,0.75), 0 1px 1px rgba(0,0,0,0.25) !important; */\n}\n\nhtml[lang=\"de\"] #bodyContent #coordinates/* .de fix */\n{\n    top: 0px !important;\n    right: 0px !important;\n}\n\n#bodyContent #protected-icon,\n#bodyContent #good-star,\n#bodyContent #spoken-icon,\n#bodyContent #featured-star {\n    top: -45px !important;\n}\n\n\n/* text styles */\n#bodyContent {\n    letter-spacing: -0.1px !important;\n}\n\n#bodyContent p,\n#bodyContent li,\n#bodyContent dd,\n#bodyContent td,\n#bodyContent div.hatnote {\n    font-size: 17px !important;\n    line-height: 26px !important;\n    letter-spacing: -0.2px !important;\n}\n\n#bodyContent a:not(.new) {\n    color: #004FD1 !important;\n}\n#bodyContent a:not(.new):visited {\n    color: #4080AB !important;\n}\n\n#bodyContent .dablink,\n#bodyContent .relarticle,\n#bodyContent .rellink {\n    margin: 7px 0 9px !important;\n    padding: 0 !important;\n    font-size: 14px !important;\n    line-height: 22px !important;\n    color: #333 !important;\n}\n\n#bodyContent #contentSub/* redirected from msg */\n{\n    margin: 5px 0 12px -5px !important;\n    padding: 0 !important;\n    font-size: 12px !important;\n}\n\n#bodyContent table.ambox,\n#bodyContent #disambigbox {\n    margin: 0 !important;\n    font-size: 14px !important;\n    line-height: 22px !important;\n}\n\n#bodyContent #disambigbox {\n    margin: 25px 0 !important;\n}\n\n#bodyContent .references li {\n    color: #111 !important;\n    font-size: 10px !important;\n    line-height: 17px !important;\n}\n\n\n/* boxes */\n.messagebox,\n#catlinks,\n.infobox,\n.infobox td,\ntable.infobox th,\n#bodyContent div.thumb,\n/* fix the thumbs backgrounds!!! */\n.thumbinner,\ndiv.thumb div,\ncode,\npre,\n.thumbcaption,\n.toccolours,\n.NavFrame,\n.toccolours th,\n.toccolours tbody,\n.NavHead,\n.tright,\n.tleft,\ntable,\n.gallery,\n.gallerybox,\n.gallerytext,\ntable.gallery,\ntable.gallery td,\n#toc,\n.toc,\n.mw-warning,\ndiv.townBox,\ntable.diff,\ntd.diff-otitle,\ntd.diff-ntitle,\n#imageLicense,\n#filetoc,\n.hintergrundfarbe1,\n.hintergrundfarbe2,\n#hauptseite h2,\n.MainPageBG,\n.noarticletext,\n.quotebox,\n.mw-code {\n    background-color: #E0DEDA !important;\n}\n\n#content .thumbinner {\n    border-color: #b9b9b9 !important;\n}\n\n\n\n/* noborder test */\n#toc,\n.thumbinner,\n.thumbinner .thumbimage,\n.infobox,\n.vertical-navbox,\n.mergedtoprow,\ntable.infobox > tbody:first-child > tr:first-child > th,\n.metadata:not(.ambox),\n.mbox-small,\n.quotebox,\n.portal,\n.catlinks,\n.navbox,\n.hintergrundfarbe1,\ntable/* check this! i added this for \"roma\" on italian wikipedia */\n{\n    border: none !important;\n}\n\n#content .thumbinner {\n    padding: 7px !important;\n}\n\n#bodyContent .ambox {\n    border-width: 0 0 0 5px !important;\n}\n\n.navbox + .navbox {\n    margin-top: 9px !important;\n}\n\n\n\n/* table of contents */\n#toc {\n    padding: 1px 16px 5px !important;\n    font-size: 12px !important;\n}\n\n#toc #toctitle {\n    margin-top: 7px !important;\n    text-align: left !important;\n    padding-bottom: 0 !important;\n}\n\n#toc #toctitle h2 {\n    font-family: \"Lucida Sans Unicode\", \"Lucida Grande\", sans-serif !important;\n    font-size: 17px !important;\n}\n\n\n\n/* floating toc*/\n#bodyContent {\n    position: relative !important;\n}\n\n#toc .toctoggle {\n    display: none !important;\n}\n\n#toc.toc {\n    padding: 0 !important;\n    font-size: 12px !important;\n    display: block !important;\n    position: fixed !important;\n    top: 0 !important;\n    bottom: 0 !important;\n    height: 100% !important;\n    right: -200px !important;\n    width: 245px !important;\n    border: none !important;\n    transition: all 0.66s ease-in-out !important;\n    opacity: 0 !important;\n    overflow-y: auto !important;\n    z-index: 999;\n    border: none !important;\n    background: #646261 !important;\n    box-shadow: 1px 0 6px rgba(0, 0, 0, 0.25) !important;\n}\n\n#toc.toc:hover {\n    right: 0px !important;\n    transition: all 0.15s ease-in-out !important;\n    opacity: 1 !important;\n}\n\n#bodyContent #toc ul,\n#bodyContent #toc li {\n    padding: 0 !important;\n    margin: 0 !important;\n}\n\n#bodyContent #toc > ul > li {\n    border-top: 1px solid rgba(255, 255, 255, 0.19) !important;\n    border-bottom: 1px solid rgba(0, 0, 0, 0.19) !important;\n}\n#bodyContent #toc > ul > li:first-child {\n    border-top: none !important;\n}\n#bodyContent #toc > ul > li:last-child {\n    border-bottom: none !important;\n}\n\n#bodyContent #toc ul li a {\n    font-size: 18px !important;\n    line-height: 21px !important;\n    color: #EAE9E8 !important;\n    padding: 6px 0 4px !important;\n}\n#bodyContent #toc ul ul li a {\n    font-size: 13px !important;\n    line-height: 17px !important;\n    color: #D0CFCE !important;\n    padding: 4px 0 !important;\n}\n\n#bodyContent #toc ul li a .tocnumber {\n    font-size: 15px !important;\n    color: #bbb !important;\n    margin-right: 0 !important;\n}\n#bodyContent #toc ul li a .tocnumber:after {\n    content: \".\" !important;\n}\n#bodyContent #toc ul ul li a .tocnumber {\n    display: none !important;\n}\n\n#bodyContent #toc ul > li {\n    padding: 0 3px 0 0 !important;\n}\n#bodyContent #toc ul ul ul > li {\n    padding: 0 3px 0 10px !important;\n}\n#bodyContent #toc > ul > li {\n    padding: 3px 3px 3px 13px !important;\n}\n\n#bodyContent #toc li a[href=\"#See_also\"],\n#bodyContent #toc li a[href=\"#Notes\"],\n#bodyContent #toc li a[href=\"#References\"],\n#bodyContent #toc li a[href=\"#Bibliography\"],\n#bodyContent #toc li a[href=\"#Further_reading\"],\n#bodyContent #toc li a[href=\"#Documentaries\"],\n#bodyContent #toc li a[href=\"#External_links\"] {\n    margin: -3px 0 !important;\n    font-size: 14px !important;\n}\n#bodyContent #toc li a[href=\"#See_also\"] .tocnumber,\n#bodyContent #toc li a[href=\"#Notes\"] .tocnumber,\n#bodyContent #toc li a[href=\"#References\"] .tocnumber,\n#bodyContent #toc li a[href=\"#Bibliography\"] .tocnumber,\n#bodyContent #toc li a[href=\"#Further_reading\"] .tocnumber,\n#bodyContent #toc li a[href=\"#Documentaries\"] .tocnumber,\n#bodyContent #toc li a[href=\"#External_links\"] .tocnumber {\n    display: none !important;\n}\n\n#bodyContent #toc li a {\n    display: block !important;\n    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2) !important;\n}\n#bodyContent #toc li a:hover {\n    text-decoration: none !important;\n    color: #fff !important;\n}\n\n#toc ul li {\n    transition: background 0.2s ease-in-out !important;\n}\n#toc ul li:hover {\n    background: #565453 !important;\n    transition: background 0.0s ease-in-out !important;\n}\n\n#toc .toctitle {\n    display: none !important;\n}\n\n\n\n\n/* footer */\n#footer {\n    left: 0 !important;\n    right: 0 !important;\n    margin: 0 !important;\n    padding: 15px 0 !important;\n    background-color: #CAC8C4 !important;\n}\n\n#footer-info {\n    max-width: 860px !important;\n    margin: 0 auto !important;\n    font-size: 18px !important;\n}\n\n#footer li:not(#footer-info-lastmod) {\n    display: none !important;\n}",
-				"domains": [
-					"wikipedia.org"
-				]
-			}
-		],
-		"name": "Wikipedia 1911 (rotane)",
-		"originalDigest": "46a645bc866ad4f27bb29d9a5b06a9106ca83f53",
-		"id": 9,
-		"updateDate": 1566898704429,
-		"originalName": "Wikipedia 1911 (rotane)"
-	},
-	{
-		"enabled": true,
-		"updateUrl": null,
-		"md5Url": null,
-		"url": null,
-		"originalMd5": null,
-		"installDate": 1573647016203,
-		"sourceCode": "/* ==UserStyle==\n@name           Github: Wider Project Collumns\n@namespace      github.com/openstyles/stylus\n@version        1.0.0\n@description    Bigger collum in Github Projects\n@author         0rax\n==/UserStyle== */\n@-moz-document regexp(\"https://github.com/(orgs|[a-zA-Z0-9_-]+)/[a-zA-Z0-9_-]+/projects/[0-9]+(#.*)?(\\\\?fullscreen=true)?\") {\n    @media (min-width: 544px) {\n        .project-column {\n            min-width: 450px;\n            max-width: 450px;\n        }\n        .project-pane {\n            width: 470px !important;\n        }\n    }\n}",
-		"sections": [
-			{
-				"code": "@media (min-width: 544px) {\n        .project-column {\n            min-width: 450px;\n            max-width: 450px;\n        }\n        .project-pane {\n            width: 470px !important;\n        }\n    }",
-				"start": 126,
-				"regexps": [
-					"https://github.com/(orgs|[a-zA-Z0-9_-]+)/[a-zA-Z0-9_-]+/projects/[0-9]+(#.*)?(\\?fullscreen=true)?"
-				]
-			}
-		],
-		"usercssData": {
-			"name": "Github: Wider Project Collumns",
-			"namespace": "github.com/openstyles/stylus",
-			"version": "1.0.0",
-			"description": "Bigger collum in Github Projects",
-			"author": "0rax"
-		},
-		"author": "0rax",
-		"description": "Bigger collum in Github Projects",
-		"name": "Github: Wider Project Collumns",
-		"updateDate": 1573750311053,
-		"id": 10
-	}
+  {
+    "settings": {
+      "openEditInWindow": false,
+      "openEditInWindow.popup": false,
+      "windowPosition": {},
+      "show-badge": true,
+      "disableAll": false,
+      "exposeIframes": false,
+      "newStyleAsUsercss": true,
+      "styleViaXhr": false,
+      "patchCsp": false,
+      "config.autosave": true,
+      "popup.breadcrumbs": true,
+      "popup.breadcrumbs.usePath": false,
+      "popup.enabledFirst": true,
+      "popup.stylesFirst": true,
+      "popup.autoResort": false,
+      "popup.borders": false,
+      "popup.findStylesInline": true,
+      "manage.onlyEnabled": false,
+      "manage.onlyLocal": false,
+      "manage.onlyUsercss": false,
+      "manage.onlyEnabled.invert": false,
+      "manage.onlyLocal.invert": false,
+      "manage.onlyUsercss.invert": false,
+      "manage.actions.expanded": true,
+      "manage.backup.expanded": true,
+      "manage.filters.expanded": true,
+      "manage.newUI": true,
+      "manage.newUI.favicons": false,
+      "manage.newUI.faviconsGray": true,
+      "manage.newUI.targets": 3,
+      "manage.newUI.sort": "title,asc",
+      "editor.options": {},
+      "editor.toc.expanded": true,
+      "editor.options.expanded": true,
+      "editor.lint.expanded": true,
+      "editor.lineWrapping": true,
+      "editor.smartIndent": true,
+      "editor.indentWithTabs": false,
+      "editor.tabSize": 4,
+      "editor.keyMap": "default",
+      "editor.theme": "tomorrow-night-eighties",
+      "editor.beautify": {
+        "end_with_newline": false,
+        "indent_char": " ",
+        "indent_conditional": true,
+        "indent_size": 4,
+        "newline_after_open_brace": true,
+        "newline_before_close_brace": true,
+        "newline_before_open_brace": false,
+        "newline_between_properties": true,
+        "newline_between_rules": false,
+        "preserve_newlines": false,
+        "selector_separator_newline": false,
+        "translate_positions": [
+          {
+            "ch": 5,
+            "line": 55,
+            "sticky": null
+          },
+          {
+            "ch": 4,
+            "line": 55,
+            "sticky": null
+          }
+        ]
+      },
+      "editor.beautify.hotkey": "",
+      "editor.lintDelay": 300,
+      "editor.linter": "csslint",
+      "editor.lintReportDelay": 500,
+      "editor.matchHighlight": "token",
+      "editor.autoCloseBrackets": true,
+      "editor.autocompleteOnTyping": false,
+      "editor.contextDelete": false,
+      "editor.selectByTokens": true,
+      "editor.appliesToLineWidget": true,
+      "editor.livePreview": true,
+      "editor.colorpicker": true,
+      "editor.colorpicker.hexUppercase": false,
+      "editor.colorpicker.hotkey": "",
+      "editor.colorpicker.color": "",
+      "editor.colorpicker.maxHeight": 300,
+      "hotkey._execute_browser_action": "",
+      "hotkey.openManage": "",
+      "hotkey.styleDisableAll": "",
+      "sync.enabled": "none",
+      "iconset": 0,
+      "badgeDisabled": "#8B0000",
+      "badgeNormal": "#006666",
+      "popupWidth": 246,
+      "updateInterval": 24
+    }
+  },
+  {
+    "enabled": true,
+    "updateUrl": null,
+    "md5Url": null,
+    "url": null,
+    "originalMd5": null,
+    "installDate": 1575563383566,
+    "sourceCode": "/* ==UserStyle==\n@name           Hacker News: Fixed & Spaced\n@namespace      github.com/openstyles/stylus\n@version        1.0.0\n@description    Bigger collum in Github Projects\n@author         0rax\n@var color background-color \"Background Color\" #333\n@var text  content-width    \"Content Width\"    \"900px\"\n==/UserStyle== */\n@-moz-document domain(\"news.ycombinator.com\") {\n    body {\n        margin-top: 36px;\n        margin-bottom: 36px;\n        background: var(--background-color);\n    }\n    #hnmain {\n        width: var(--content-width) !important;\n    }\n    .itemlist {\n        margin: 10px;\n    }\n}",
+    "sections": [
+      {
+        "code": ":root {\n  --background-color: rgb(51, 51, 51);\n  --content-width: 900px;\n}\nbody {\n        margin-top: 36px;\n        margin-bottom: 36px;\n        background: var(--background-color);\n    }\n    #hnmain {\n        width: var(--content-width) !important;\n    }\n    .itemlist {\n        margin: 10px;\n    }",
+        "start": 48,
+        "domains": [
+          "news.ycombinator.com"
+        ]
+      }
+    ],
+    "usercssData": {
+      "name": "Hacker News: Fixed & Spaced",
+      "namespace": "github.com/openstyles/stylus",
+      "version": "1.0.0",
+      "description": "Bigger collum in Github Projects",
+      "author": "0rax",
+      "vars": {
+        "background-color": {
+          "type": "color",
+          "label": "Background Color",
+          "name": "background-color",
+          "value": null,
+          "default": "rgb(51, 51, 51)",
+          "options": null
+        },
+        "content-width": {
+          "type": "text",
+          "label": "Content Width",
+          "name": "content-width",
+          "value": "900px",
+          "default": "900px",
+          "options": null
+        }
+      }
+    },
+    "author": "0rax",
+    "description": "Bigger collum in Github Projects",
+    "name": "Hacker News: Fixed & Spaced",
+    "updateDate": 1575567459302,
+    "id": 12,
+    "originalDigest": "67709d5233e05f899900556bdc5778806faf1471",
+    "_id": "87a26b3b-fc03-4036-848b-19d5035bffa9",
+    "_rev": 1583317517986
+  },
+  {
+    "enabled": true,
+    "updateUrl": null,
+    "md5Url": null,
+    "url": null,
+    "originalMd5": null,
+    "installDate": 1575564203945,
+    "sourceCode": "/* ==UserStyle==\n@name           IETF: Dark RFC Readable\n@namespace      github.com/openstyles/stylus\n@version        1.0.0\n@description    Makes RFC documents darker and readable\n@author         0rax\n==/UserStyle== */\n@-moz-document url-prefix(\"https://tools.ietf.org/html/rfc\") {\n    /* Darkify RFC documents */\n    * {\n        margin: 0;\n        padding: 0;\n    }\n    body {\n        margin: 0;\n        background-color: #333;\n        color: #FFF;\n    }\n    a, a:visited, a.selflink {\n        color: #0074D9;\n    }\n    div.content, .pre.noprint.docinfo {\n        margin: 0 auto;\n    }\n    pre, span.pre {\n        font-size: 1.15em;\n    }\n    hr {\n        width: inherit !important;\n    }\n    div.pre.noprint.docinfo {\n        position: absolute;\n        width: 100%;\n        left: 0px;\n    }\n    span.pre.noprint.docinfo {\n        color: #000;\n    }\n    pre:first-of-type {\n        margin-top: 12px;\n    }\n    div#legend {\n        background-color: #333 !important;\n        width: 270px;\n    }\n    /* Update colors (colors from: https://github.com/mrmrs/colors) */\n    .bgblue {\n        background-color: #0074D9;\n    }\n    .bggreen {\n        background-color: #2ECC40;\n    }\n    .bgyellow {\n        background-color: #FFDC00;\n    }\n    .bgorange {\n        background-color: #FF851B;\n    }\n    .bgred {\n        background-color: #FF4136;\n    }\n    .bgwhite {\n        background-color: #FFFFFF;\n    }\n    .bggrey {\n        background-color: #AAAAAA;\n    }\n    .blue {\n        color: #0074D9;\n    }\n    .green {\n        color: #2ECC40;\n    }\n    .yellow {\n        color: #FFDC00;\n    }\n    .orange {\n        color: #FF851B;\n    }\n    .red {\n        color: #FF4136;\n    }\n    .white {\n        color: #FFFFFF;\n    }\n    .grey {\n        color: #AAAAAA;\n    }\n}",
+    "sections": [
+      {
+        "code": "/* Darkify RFC documents */\n    * {\n        margin: 0;\n        padding: 0;\n    }\n    body {\n        margin: 0;\n        background-color: #333;\n        color: #FFF;\n    }\n    a, a:visited, a.selflink {\n        color: #0074D9;\n    }\n    div.content, .pre.noprint.docinfo {\n        margin: 0 auto;\n    }\n    pre, span.pre {\n        font-size: 1.15em;\n    }\n    hr {\n        width: inherit !important;\n    }\n    div.pre.noprint.docinfo {\n        position: absolute;\n        width: 100%;\n        left: 0px;\n    }\n    span.pre.noprint.docinfo {\n        color: #000;\n    }\n    pre:first-of-type {\n        margin-top: 12px;\n    }\n    div#legend {\n        background-color: #333 !important;\n        width: 270px;\n    }\n    /* Update colors (colors from: https://github.com/mrmrs/colors) */\n    .bgblue {\n        background-color: #0074D9;\n    }\n    .bggreen {\n        background-color: #2ECC40;\n    }\n    .bgyellow {\n        background-color: #FFDC00;\n    }\n    .bgorange {\n        background-color: #FF851B;\n    }\n    .bgred {\n        background-color: #FF4136;\n    }\n    .bgwhite {\n        background-color: #FFFFFF;\n    }\n    .bggrey {\n        background-color: #AAAAAA;\n    }\n    .blue {\n        color: #0074D9;\n    }\n    .green {\n        color: #2ECC40;\n    }\n    .yellow {\n        color: #FFDC00;\n    }\n    .orange {\n        color: #FF851B;\n    }\n    .red {\n        color: #FF4136;\n    }\n    .white {\n        color: #FFFFFF;\n    }\n    .grey {\n        color: #AAAAAA;\n    }",
+        "start": 63,
+        "urlPrefixes": [
+          "https://tools.ietf.org/html/rfc"
+        ]
+      }
+    ],
+    "usercssData": {
+      "name": "IETF: Dark RFC Readable",
+      "namespace": "github.com/openstyles/stylus",
+      "version": "1.0.0",
+      "description": "Makes RFC documents darker and readable",
+      "author": "0rax"
+    },
+    "author": "0rax",
+    "description": "Makes RFC documents darker and readable",
+    "name": "IETF: Dark RFC Readable",
+    "updateDate": 1575567450069,
+    "id": 13,
+    "_id": "3c7be9d8-2ba5-4d74-a417-fc1b8e34be44",
+    "_rev": 1583317517986
+  },
+  {
+    "enabled": true,
+    "updateUrl": null,
+    "url": null,
+    "installDate": 1573647016203,
+    "sourceCode": "/* ==UserStyle==\n@name           Github: Wider Project Collumns\n@namespace      github.com/openstyles/stylus\n@version        1.0.0\n@description    Bigger collum in Github Projects\n@author         0rax\n@var number column-width \"Column Width\" 450\n==/UserStyle== */\n@-moz-document regexp(\"https://github.com/(orgs|[a-zA-Z0-9_-]+)/[a-zA-Z0-9_-]+/projects/[0-9]+(#.*)?(\\\\?fullscreen=true)?\") {\n    @media (min-width: 544px) {\n        .project-column {\n            min-width: calc(var(--column-width) * 1px);\n            max-width: calc(var(--column-width) * 1px);\n        }\n        .project-pane {\n            width: calc(var(--column-width) + 20px) !important;\n        }\n    }\n}",
+    "sections": [
+      {
+        "code": ":root {\n  --column-width: 530;\n}\n@media (min-width: 544px) {\n        .project-column {\n            min-width: calc(var(--column-width) * 1px);\n            max-width: calc(var(--column-width) * 1px);\n        }\n        .project-pane {\n            width: calc(var(--column-width) + 20px) !important;\n        }\n    }",
+        "start": 388,
+        "regexps": [
+          "https://github.com/(orgs|[a-zA-Z0-9_-]+)/[a-zA-Z0-9_-]+/projects/[0-9]+(#.*)?(\\?fullscreen=true)?"
+        ]
+      }
+    ],
+    "usercssData": {
+      "name": "Github: Wider Project Collumns",
+      "namespace": "github.com/openstyles/stylus",
+      "version": "1.0.0",
+      "description": "Bigger collum in Github Projects",
+      "author": "0rax",
+      "vars": {
+        "column-width": {
+          "type": "number",
+          "label": "Column Width",
+          "name": "column-width",
+          "value": 530,
+          "default": 450,
+          "options": null,
+          "min": null,
+          "max": null,
+          "step": null,
+          "units": null
+        }
+      }
+    },
+    "author": "0rax",
+    "description": "Bigger collum in Github Projects",
+    "name": "Github: Wider Project Collumns",
+    "updateDate": 1620996980413,
+    "id": 10,
+    "_id": "5e4b4aa2-3895-4ee6-8cbd-de367c68db3e",
+    "_rev": 1620997008032,
+    "originalDigest": "6ef91fa55c9f2b007fff9f6637cf600c15663f27"
+  }
 ]
