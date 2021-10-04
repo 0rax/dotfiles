@@ -45,14 +45,18 @@ end
 # ---  Programming/NodeJS  -----------------------------------------------------
 
 if test -d $HOME/.yarn/bin
-   set -gx PATH $HOME/.yarn/bin $PATH
+    set -gx PATH $HOME/.yarn/bin $PATH
 end
 
 # ---  Programming/Python  -----------------------------------------------------
 
-if type -q pyenv
-    pyenv init - | source
-    pyenv virtualenv-init - | source
+if type -q pyenv; and status is-login
+    source (pyenv init --path | psub)
+end
+
+if type -q pyenv; and status is-interactive
+    source (pyenv init - | psub)
+    source (pyenv virtualenv-init - | psub)
 end
 
 # ------------------------------------------------------------------------------

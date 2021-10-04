@@ -4,12 +4,6 @@ profile {
 
 profile {
     output eDP-1 disable
-    output "Dell Inc. DELL P2219HC BQGYDQ2" mode 1920x1080 position 0,386  scale 1.0 transform normal
-    output "Dell Inc. DELL P2219H 8BMDQP2"  mode 1920x1080 position 1920,0 scale 1.0 transform 270
-}
-
-profile {
-    output eDP-1 disable
     output "Dell Inc. DELL P2419HC 1LC6JQ2" mode 1920x1080 position 0,386  scale 1.0 transform normal
     output "Dell Inc. DELL P2419HC 3BD6JQ2" mode 1920x1080 position 1920,0 scale 1.0 transform 270
 }

@@ -7,10 +7,6 @@
 #   - base-devel (meta package)
 #       see https://www.archlinux.org/groups/x86_64/base-devel/
 
-## Kernel
-linux-latest                # https://kernel.org
-linux-latest-headers        # https://kernel.org
-
 ## Shell
 fish                        # https://fishshell.com
 bash                        # https://www.gnu.org/software/bash/
@@ -70,7 +66,6 @@ rust                        # https://www.rust-lang.org/
 nodejs                      # https://nodejs.org/
 npm                         # https://www.npmjs.com/
 yarn                        # https://yarnpkg.com/
-dep                         # https://github.com/golang/dep
 shellcheck                  # http://www.shellcheck.net/
 prettier                    # https://prettier.io/
 shfmt                       # https://github.com/mvdan/sh#shfmt
@@ -79,8 +74,9 @@ python2-pip                 # https://pip.pypa.io/en/stable/installing/
 python                      # https://docs.python.org/3/index.html
 python-pip                  # https://pip.pypa.io/en/stable/installing/
 aur/visual-studio-code-bin  # https://code.visualstudio.com/
-aur/insomnia                # https://insomnia.rest/
+aur/insomnia-bin            # https://insomnia.rest/
 aur/onefetch                # https://github.com/o2sh/onefetch
+tokei                       # https://github.com/XAMPPRocky/tokei
 aur/xsv                     # https://github.com/BurntSushi/xsv
 cmake                       # https://cmake.org/
 pandoc                      # http://pandoc.org
@@ -142,7 +138,6 @@ gnome-boxes                 # https://wiki.gnome.org/Apps/Boxes
 rclone                      # https://rclone.org/
 
 ## System Utils
-tilix                       # https://github.com/gnunn1/tilix
 gparted                     # https://gparted.sourceforge.io/
 keychain                    # https://www.funtoo.org/Keychain
 xsel                        # http://www.vergenet.net/~conrad/software/xsel/
@@ -177,9 +172,10 @@ ttf-hack                    # https://sourcefoundry.org/hack/
 vlc                         # http://www.videolan.org/vlc/
 libmicrodns                 # Required for Chromecast Discovery
 aur/spotify                 # https://www.spotify.com/
-pulseaudio-equalizer-ladspa # https://github.com/pulseaudio-equalizer-ladspa/equalizer
+# pulseaudio-equalizer-ladspa # https://github.com/pulseaudio-equalizer-ladspa/equalizer
 evince                      # https://wiki.gnome.org/Apps/Evince
-# playerctl                 # https://github.com/acrisci/playerctl
+playerctl                   # https://github.com/acrisci/playerctl
+manjaro-pipewire
 
 ## Bluetooth
 bluez                       # http://www.bluez.org/
@@ -233,7 +229,6 @@ hunspell-fr                 # https://hunspell.github.io/
 aur/slack-desktop
 discord
 
-aur/drawio-desktop-bin
 python-virtualenv
 pyenv
 pyenv-virtualenv
@@ -252,9 +247,14 @@ downgrade
 # Nemo vs Nautilus vs Others
 # Checkout TaskWarrior + vit
 
-# playerctl
-# mpd
-# ncmpcpp
-# mpc
-# mopidy mopidy-local mopidy-spotify mopidy-mpd mopidy-iris mopidy-jellyfin mopidy-tunein
-# boinc-manager
+playerctl
+boinc-manager
+
+aur/neovim-nightly-bin
+# https://github.com/folke/which-key.nvim/
+# https://github.com/nvim-telescope/telescope.nvim
+# https://github.com/ChristianChiarulli/LunarVim
+
+
+aur/obsidian-appimage
+aur/grpcurl-bin

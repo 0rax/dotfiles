@@ -19,7 +19,9 @@ esbenp.prettier-vscode
 file-icons.file-icons
 foxundermoon.shell-format
 golang.go
+golang.go-nightly
 GrapeCity.gc-excelviewer
+Gruntfuggly.todo-tree
 James-Yu.latex-workshop
 jasonnutter.vscode-codeowners
 jq-syntax-highlighting.jq-syntax-highlighting
@@ -29,12 +31,15 @@ mechatroner.rainbow-csv
 mitchdenny.ecdc
 ms-azuretools.vscode-docker
 ms-python.python
+ms-python.vscode-pylance
 ms-toolsai.jupyter
+ms-toolsai.jupyter-keymap
 ms-vscode.wordcount
 naumovs.color-highlight
 octref.vetur
 oderwat.indent-rainbow
 premparihar.gotestexplorer
+redhat.vscode-commons
 redhat.vscode-yaml
 richie5um2.vscode-sort-json
 shanoor.vscode-nginx

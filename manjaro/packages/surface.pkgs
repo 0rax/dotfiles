@@ -6,10 +6,6 @@ surface-ipts-firmware
 iptsd
 # yay -Rs tlp powertop # Disable TLP/Powertop for performance reason
 surface-control
-# cpupower
-# cpupower-gui
-psensor
-thermald
 
 intel-media-driver
 libva-utils

@@ -19,7 +19,7 @@ glfw-wayland         # GLFW support
 glew-wayland         # GLEW support
 
 ### Utilities
-termite          # Terminal Emulator
+alacritty        # Terminal Emulator
 nautilus         # File manager (gnome)
 aur/seahorse-nautilus-ext # Nautilus: GPG plugin
 sushi            # Nautilus: Preview plugin
@@ -43,22 +43,23 @@ xcursor-breeze              # Cursor theme
 lxappearance                # Theme switcher (GTK)
 gnome-tweaks                # Theme switcher (Gnome)
 
-# To test
-rofi # X11 Application Launcher (more customizable than wofi ?)
-slurp
+# Screenshots
 grim
-dex
-kitty
-catimg
+slurp
+swappy
 
-aur/hikari
+# Autostart XDG desktop files
+dex
+
+# grim -g (slurp) - | swappy -f -
+# To test
+catimg
 
 # Polkit Frontend
 polkit-gnome
-
 
 nm-connection-editor
 gnome-power-manager
 gnome-disk-utility
 
-swappy
+wl-clipboard

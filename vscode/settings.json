@@ -1,11 +1,9 @@
 {
     // === VSCode ===
-    // Breadcrumbs
     "breadcrumbs.enabled": true,
     "breadcrumbs.showFunctions": true,
     "breadcrumbs.filePath": "last",
     "breadcrumbs.showVariables": false,
-    // Editor
     "editor.cursorBlinking": "solid",
     "editor.cursorStyle": "block",
     "editor.detectIndentation": false,
@@ -18,17 +16,14 @@
     "editor.rulers": [
         80
     ],
+    "editor.wordWrap": "bounded",
     "editor.scrollBeyondLastLine": false,
     "editor.tabSize": 4,
-    "editor.wordWrap": "on",
-    // Outline
     "outline.showVariables": false,
-    // Explorer
     "explorer.compactFolders": true,
     "explorer.confirmDelete": false,
     "explorer.confirmDragAndDrop": false,
     "extensions.ignoreRecommendations": true,
-    // Files
     "files.associations": {
         "*.pgsql": "sql",
         "APKBUILD": "shellscript",
@@ -48,25 +43,25 @@
     "files.insertFinalNewline": true,
     "files.trimFinalNewlines": true,
     "files.trimTrailingWhitespace": true,
-    // Git integration (disabled)
     "git.autofetch": false,
     "git.enabled": false,
     "git.ignoreLimitWarning": true,
-    // Search
     "search.exclude": {
         "**/vendor": true
     },
-    // Telemetry
     "telemetry.enableCrashReporter": false,
     "telemetry.enableTelemetry": false,
-    // Terminal
     "terminal.integrated.copyOnSelection": true,
     "terminal.integrated.fontSize": 14,
-    "terminal.integrated.shell.linux": "/usr/bin/fish",
-    // Window
+    "terminal.integrated.profiles.linux": {
+        "fish": {
+            "path": "/usr/bin/fish",
+            "args": []
+        }
+    },
+    "terminal.integrated.defaultProfile.linux": "fish",
     "window.menuBarVisibility": "toggle",
     "window.restoreWindows": "one",
-    // Workbench
     "workbench.editor.limit.enabled": true,
     "workbench.editor.limit.perEditorGroup": true,
     "workbench.editor.limit.value": 5,
@@ -79,74 +74,19 @@
     },
     "workbench.iconTheme": "file-icons",
     "workbench.startupEditor": "none",
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter.notebook.ipynb"
+    },
     "zenMode.fullScreen": false,
-    // === Addons ===
-    // Vim Mode
-    "amVim.bindCtrlCommands": false,
-    // Custom Highlighter
-    "better-comments.highlightPlainText": false,
-    "better-comments.multilineComments": true,
-    "better-comments.tags": [
-        {
-            "tag": "!",
-            "color": "#FF2D00",
-            "strikethrough": false,
-            "backgroundColor": "transparent"
-        },
-        {
-            "tag": "?",
-            "color": "#3498DB",
-            "strikethrough": false,
-            "backgroundColor": "transparent"
-        },
-        {
-            "tag": "//",
-            "color": "#474747",
-            "strikethrough": true,
-            "backgroundColor": "transparent"
-        },
-        {
-            "tag": "*",
-            "color": "#98C379",
-            "strikethrough": false,
-            "backgroundColor": "transparent"
-        },
-        {
-            "tag": "note",
-            "color": "#98C379",
-            "strikethrough": false,
-            "backgroundColor": "transparent"
-        },
-        {
-            "tag": "todo",
-            "color": "#FF8C00",
-            "strikethrough": false,
-            "backgroundColor": "transparent"
-        },
-        {
-            "tag": "fixme",
-            "color": "#FF8C00",
-            "strikethrough": false,
-            "backgroundColor": "transparent"
-        }
-    ],
-    "bracket-pair-colorizer-2.showBracketsInGutter": true,
-    "bracket-pair-colorizer-2.showHorizontalScopeLine": false,
-    "bracket-pair-colorizer-2.showBracketsInRuler": true,
-    "bracket-pair-colorizer-2.rulerPosition": "Left",
-    "bracket-pair-colorizer-2.highlightActiveScope": true,
     // === Languages setup ===
-    // Text
     "[markdown]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode",
         "editor.tabSize": 2
     },
-    // Makefile
     "[makefile]": {
         "editor.insertSpaces": false,
         "editor.tabSize": 8
     },
-    // Web
     "[html]": {
         "editor.defaultFormatter": "vscode.html-language-features"
     },
@@ -166,7 +106,6 @@
         "editor.defaultFormatter": "esbenp.prettier-vscode",
         "editor.formatOnSave": true
     },
-    // DevOps
     "[dockerfile]": {
         "editor.defaultFormatter": "ms-azuretools.vscode-docker"
     },
@@ -194,15 +133,80 @@
         "editor.insertSpaces": true,
         "editor.tabSize": 2
     },
-    // Golang
     "[proto3]": {
         "editor.formatOnSave": true,
         "editor.defaultFormatter": "xaver.clang-format"
     },
     "[go]": {},
+    "[yaml]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[fish]": {
+        "editor.insertSpaces": true,
+        "editor.tabSize": 4
+    },
+    "[mjml]": {
+        "editor.insertSpaces": true,
+        "editor.tabSize": 2,
+        "editor.defaultFormatter": "attilabuti.vscode-mjml"
+    },
+    // === Addons ===
+    "amVim.bindCtrlCommands": false,
+    "better-comments.highlightPlainText": false,
+    "better-comments.multilineComments": true,
+    "better-comments.tags": [
+        {
+            "tag": "note",
+            "color": "#a3be8c",
+            "strikethrough": false,
+            "backgroundColor": "transparent"
+        },
+        {
+            "tag": "optimize",
+            "color": "#96b5b4",
+            "strikethrough": false,
+            "backgroundColor": "transparent"
+        },
+        {
+            "tag": "todo",
+            "color": "#d08770",
+            "strikethrough": false,
+            "backgroundColor": "transparent"
+        },
+        {
+            "tag": "hack",
+            "color": "#ebcb8b",
+            "strikethrough": false,
+            "backgroundColor": "transparent"
+        },
+        {
+            "tag": "xxx",
+            "color": "#2b303b",
+            "strikethrough": false,
+            "backgroundColor": "#ebcb8b"
+        },
+        {
+            "tag": "fixme",
+            "color": "#bf616a",
+            "strikethrough": false,
+            "backgroundColor": "transparent"
+        },
+        {
+            "tag": "bug",
+            "color": "#2b303b",
+            "strikethrough": false,
+            "backgroundColor": "#bf616a"
+        },
+    ],
+    "bracket-pair-colorizer-2.showBracketsInGutter": true,
+    "bracket-pair-colorizer-2.showHorizontalScopeLine": false,
+    "bracket-pair-colorizer-2.showBracketsInRuler": true,
+    "bracket-pair-colorizer-2.rulerPosition": "Left",
+    "bracket-pair-colorizer-2.highlightActiveScope": true,
     "go.gopath": "/home/orax/projects/go",
     "go.inferGopath": true,
     "go.toolsGopath": "/home/orax/projects/go",
+    "go.toolsManagement.autoUpdate": true,
     "go.useLanguageServer": true,
     "gopls": {
         "formatting.local": "github.com/moneway"
@@ -217,7 +221,6 @@
     ],
     "go.lintTool": "golangci-lint",
     "groupImports.onSave": true,
-    // YAML
     "yaml.format.enable": false,
     "yaml.customTags": [
         // CloudFormation tags
@@ -245,9 +248,6 @@
         "!cmd",
         "!asg_scaling_processes"
     ],
-    "[yaml]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
     "indentRainbow.includedLanguages": [
         "python",
         "yaml"
@@ -255,10 +255,8 @@
     "indentRainbow.excludedLanguages": [
         "*"
     ],
-    // Markdown
     "markdown.extension.tableFormatter.normalizeIndentation": true,
     "markdown.preview.scrollEditorWithPreview": false,
-    // Python
     "python.venvPath": "~/.pyenv/versions/",
     "python.formatting.provider": "black",
     "python.languageServer": "Jedi",
@@ -269,22 +267,10 @@
     ],
     "python.linting.flake8Enabled": true,
     "python.linting.pylintEnabled": false,
-    // Shell
     "shellcheck.customArgs": [
         "-x"
     ],
     "shellcheck.run": "onSave",
-    "[fish]": {
-        "editor.insertSpaces": true,
-        "editor.tabSize": 4
-    },
-    // MJML
-    "[mjml]": {
-        "editor.insertSpaces": true,
-        "editor.tabSize": 2,
-        "editor.defaultFormatter": "attilabuti.vscode-mjml"
-    },
-    // Text
     "spellright.documentTypes": [
         "markdown",
         "latex",
@@ -293,12 +279,15 @@
     "spellright.language": [
         "en"
     ],
-    "workbench.editorAssociations": [
-        {
-            "viewType": "jupyter.notebook.ipynb",
-            "filenamePattern": "*.ipynb"
-        }
+    "todo-tree.general.tags": [
+        "NOTE",
+        "OPTIMIZE",
+        "TODO",
+        "HACK",
+        "XXX",
+        "FIXME",
+        "BUG",
     ],
-    "go.toolsManagement.autoUpdate": true,
+    "todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^\\s*(-|\\d+.))\\s*($TAGS)",
     // === End of file ===
 }
