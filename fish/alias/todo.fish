@@ -1,6 +1,6 @@
 #!/usr/bin/env fish
 # -*-  mode:fish; tab-width:4  -*-
 
-function gotop
-	command ytop $argv
+function todo
+	command leasot $argv
 end

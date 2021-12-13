@@ -19,6 +19,9 @@
     "editor.wordWrap": "bounded",
     "editor.scrollBeyondLastLine": false,
     "editor.tabSize": 4,
+    "editor.wordWrapColumn": 90,
+    "editor.guides.bracketPairs": "active",
+    "editor.bracketPairColorization.enabled": true,
     "outline.showVariables": false,
     "explorer.compactFolders": true,
     "explorer.confirmDelete": false,
@@ -49,8 +52,6 @@
     "search.exclude": {
         "**/vendor": true
     },
-    "telemetry.enableCrashReporter": false,
-    "telemetry.enableTelemetry": false,
     "terminal.integrated.copyOnSelection": true,
     "terminal.integrated.fontSize": 14,
     "terminal.integrated.profiles.linux": {
@@ -78,6 +79,7 @@
         "*.ipynb": "jupyter.notebook.ipynb"
     },
     "zenMode.fullScreen": false,
+    "telemetry.telemetryLevel": "off",
     // === Languages setup ===
     "[markdown]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode",
@@ -152,7 +154,6 @@
     },
     // === Addons ===
     "amVim.bindCtrlCommands": false,
-    "better-comments.highlightPlainText": false,
     "better-comments.multilineComments": true,
     "better-comments.tags": [
         {
@@ -198,11 +199,6 @@
             "backgroundColor": "#bf616a"
         },
     ],
-    "bracket-pair-colorizer-2.showBracketsInGutter": true,
-    "bracket-pair-colorizer-2.showHorizontalScopeLine": false,
-    "bracket-pair-colorizer-2.showBracketsInRuler": true,
-    "bracket-pair-colorizer-2.rulerPosition": "Left",
-    "bracket-pair-colorizer-2.highlightActiveScope": true,
     "go.gopath": "/home/orax/projects/go",
     "go.inferGopath": true,
     "go.toolsGopath": "/home/orax/projects/go",
@@ -248,12 +244,10 @@
         "!cmd",
         "!asg_scaling_processes"
     ],
+    "color-highlight.markRuler": false,
     "indentRainbow.includedLanguages": [
         "python",
         "yaml"
-    ],
-    "indentRainbow.excludedLanguages": [
-        "*"
     ],
     "markdown.extension.tableFormatter.normalizeIndentation": true,
     "markdown.preview.scrollEditorWithPreview": false,
@@ -279,15 +273,16 @@
     "spellright.language": [
         "en"
     ],
-    "todo-tree.general.tags": [
-        "NOTE",
-        "OPTIMIZE",
-        "TODO",
-        "HACK",
-        "XXX",
-        "FIXME",
-        "BUG",
-    ],
-    "todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^\\s*(-|\\d+.))\\s*($TAGS)",
+    "errorLens.scrollbarHackEnabled": true,
+    "errorLens.messageTemplate": "",
+    "errorLens.gutterIconsEnabled": false,
+    "errorLens.gutterIconSet": "defaultOutline",
+    "errorLens.gutterIconSize": "80%",
+    "errorLens.errorGutterIconColor": "#bf616a",
+    "errorLens.warningGutterIconColor": "#d08770",
+    "errorLens.infoGutterIconColor": "#8fa1b3",
+    "errorLens.statusBarIconsEnabled": false,
+    "errorLens.statusBarColorsEnabled": true,
+    "errorLens.statusBarIconsUseBackground": false,
     // === End of file ===
 }

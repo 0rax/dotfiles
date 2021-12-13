@@ -1,6 +1,21 @@
+## Bootloader
+refind
+aur/refind-theme-regular-git
+### On Surface Laptop
+# Add the following line to /boot/efi/EFI/refind/refind.conf
+# extra_kernel_version_strings linux-surface,linux
+# Add at the end of /boot/refind_linux.conf "Boot with standard options" kernel params
+# reboot=pci
+### To enable theme
+# Add at the end of /boot/efi/EFI/refind/refind.conf or replace any included theme with
+# include refind-theme-regular/theme.conf
+
+## Session Manager
 aur/ly
 # sudo systemctl disable getty@tty2.service
 # sudo systemctl enable ly.service
+
+## Desktop Environment
 sway
 aur/swaylock-effects-git
 swayidle
@@ -18,16 +33,40 @@ qt5-wayland          # Qt5 support
 glfw-wayland         # GLFW support
 glew-wayland         # GLEW support
 
-### Utilities
-alacritty        # Terminal Emulator
+## System Utils
+alacritty                   # Terminal Emulator
+gparted                     # https://gparted.sourceforge.io/
+gnome-calculator            # https://wiki.gnome.org/Apps/Calculator
+seahorse                    # https://wiki.gnome.org/Apps/Seahorse
+aur/seahorse-nautilus-ext   # Nautilus: GPG plugin
+
+## Clipboard
+wl-clipboard
+xsel                        # http://www.vergenet.net/~conrad/software/xsel/
+
+## File Manager
 nautilus         # File manager (gnome)
-aur/seahorse-nautilus-ext # Nautilus: GPG plugin
 sushi            # Nautilus: Preview plugin
 nautilus-admin   # Nautilus: Open as Administrator
-evince           # Document viewer (gnome)
-file-roller      # Archive Manager
-eog              # Image viewer
-gnome-calculator # Calculator
+
+## Document Viewer
+evince                      # https://wiki.gnome.org/Apps/Evince
+eog                         # https://wiki.gnome.org/Apps/EyeOfGnome/
+file-roller                 # https://wiki.gnome.org/Apps/FileRoller
+
+## Media Playback
+vlc                         # http://www.videolan.org/vlc/
+libmicrodns                 # Required for Chromecast Discovery
+aur/spotify                 # https://www.spotify.com/
+playerctl                   # https://github.com/acrisci/playerctl
+
+## Media Editor
+gimp                        # http://www.gimp.org/
+inkscape                    # https://inkscape.org/
+aur/yed                     # http://www.yworks.com/en/downloads.html#yEd
+aur/pdfchain                # http://pdfchain.sourceforge.net/
+# dia                       #
+# aur/dia-shapes            # http://dia-installer.de/diashapes/index.html
 
 ### Alternative
 # thunar    # File manager (xfce)
@@ -61,5 +100,3 @@ polkit-gnome
 nm-connection-editor
 gnome-power-manager
 gnome-disk-utility
-
-wl-clipboard

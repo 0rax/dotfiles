@@ -10,28 +10,27 @@
 ## Shell
 fish                        # https://fishshell.com
 bash                        # https://www.gnu.org/software/bash/
+dash                        # http://gondor.apana.org.au/~herbert/dash/
 
 ## CVS
 git                         # https://git-scm.com
-aur/gibo                    # https://github.com/simonwhitaker/gibo
 tig                         # http://jonas.nitro.dk/tig/
 git-lfs                     # https://github.com/git-lfs/git-lfs
 mercurial                   # https://www.mercurial-scm.org/
 subversion                  # https://subversion.apache.org/
+aur/gibo                    # https://github.com/simonwhitaker/gibo
 
 ## Shell Utils
-moreutils                   # https://joeyh.name/code/moreutils/
-
-coreutils                   # https://www.gnu.org/software/coreutils/
-findutils                   # https://www.gnu.org/software/findutils/
 grep                        # https://www.gnu.org/software/grep/
-binutils                    # https://www.gnu.org/software/binutils/
 sed                         # https://www.gnu.org/software/sed/
 tar                         # https://www.gnu.org/software/tar/
 psmisc                      # https://gitlab.com/psmisc/psmisc
+moreutils                   # https://joeyh.name/code/moreutils/
+coreutils                   # https://www.gnu.org/software/coreutils/
+findutils                   # https://www.gnu.org/software/findutils/
+binutils                    # https://www.gnu.org/software/binutils/
 htop                        # https://hisham.hm/htop/
 tree                        # http://mama.indstate.edu/users/ice/tree/
-wget                        # https://www.gnu.org/software/wget/
 most                        # http://www.jedsoft.org/most/
 vim                         # http://www.vim.org/
 grc                         # http://kassiopeia.juls.savba.sk/~garabik/software/grc.htm
@@ -40,20 +39,15 @@ pwgen                       # https://pwgen.sourceforge.io/
 lsof                        # http://people.freebsd.org/~abe/
 ripgrep                     # https://github.com/BurntSushi/ripgrep
 fd                          # https://github.com/sharkdp/fd
-aria2                       # https://aria2.github.io/
 jq                          # https://stedolan.github.io/jq/
 screen                      # https://www.gnu.org/software/screen/
-bind-tools                  # https://www.isc.org/downloads/bind/
-dash                        # http://gondor.apana.org.au/~herbert/dash/
-whois                       # https://github.com/rfc1036/whois
-traceroute                  # http://traceroute.sourceforge.net/
-aur/ytop                    # https://github.com/cjbassi/ytop
-tcpdump                     # https://www.archlinux.org/packages/extra/x86_64/tcpdump/
-diffstat                    # http://invisible-island.net/diffstat
-bat                         # https://github.com/sharkdp/bat
 zip                         # http://infozip.sourceforge.net/Zip.html
 unzip                       # http://infozip.sourceforge.net/UnZip.html
 lzop                        # http://www.lzop.org/
+bat                         # https://github.com/sharkdp/bat
+rhash                       # https://github.com/rhash/RHash
+aur/ytop                    # https://github.com/cjbassi/ytop
+keychain                    # https://www.funtoo.org/Keychain
 
 ## Programming
 base-devel                  # https://www.archlinux.org/groups/x86_64/base-devel/ (metapackage)
@@ -72,87 +66,81 @@ shfmt                       # https://github.com/mvdan/sh#shfmt
 python2                     # https://docs.python.org/2/index.html
 python2-pip                 # https://pip.pypa.io/en/stable/installing/
 python                      # https://docs.python.org/3/index.html
-python-pip                  # https://pip.pypa.io/en/stable/installing/
-aur/visual-studio-code-bin  # https://code.visualstudio.com/
-aur/insomnia-bin            # https://insomnia.rest/
-aur/onefetch                # https://github.com/o2sh/onefetch
+python-pip                  # https://pip.pypa.io/en/stable/installing/onefetch                    # https://github.com/o2sh/onefetch
 tokei                       # https://github.com/XAMPPRocky/tokei
 aur/xsv                     # https://github.com/BurntSushi/xsv
 cmake                       # https://cmake.org/
-pandoc                      # http://pandoc.org
-texlive-most                # https://tug.org/texlive/
 graphviz                    # https://graphviz.org/
-aur/bloomrpc-bin            # https://github.com/uw-labs/bloomrpc
 github-cli                  # https://cli.github.com/
 aur/golangci-lint-bin       # https://github.com/golangci/golangci-lint
-# meld                      # http://meldmerge.org/
-# rhash                     # https://github.com/rhash/RHash
+aur/visual-studio-code-bin  # https://code.visualstudio.com/
+aur/insomnia-bin            # https://insomnia.rest/
+pandoc                      # http://pandoc.org
+texlive-most                # https://tug.org/texlive/
 
 ## Network tools
+wget                        # https://www.gnu.org/software/wget/
+curl                        # https://curl.se/
+httpie                      # https://httpie.org/
+aria2                       # https://aria2.github.io/
 net-tools                   # http://net-tools.sourceforge.net/
 iftop                       # http://www.ex-parrot.com/pdw/iftop/
+bind-tools                  # https://www.isc.org/downloads/bind/
+whois                       # https://github.com/rfc1036/whois
+traceroute                  # http://traceroute.sourceforge.net/
+tcpdump                     # https://www.archlinux.org/packages/extra/x86_64/tcpdump/
 nmap                        # https://nmap.org/
 mtr                         # http://www.bitwizard.nl/mtr/
+aur/prips                   # https://packages.debian.org/stable/net/prips
+ipcalc                      # http://jodies.de/ipcalc
+# wireshark-gtk             # https://www.wireshark.org/
+# mitmproxy                 # https://mitmproxy.org/
+# leasot                    # https://github.com/pgilad/leasot
 
 ## DevOps
 aws-cli                     # https://github.com/aws/aws-cli
-httpie                      # https://httpie.org/
-aur/prips                   # https://packages.debian.org/stable/net/prips
-ipcalc                      # http://jodies.de/ipcalc
-dbeaver                     # https://dbeaver.io/
-mkcert                      # https://github.com/FiloSottile/mkcert
-aws-vault                   # https://github.com/99designs/aws-vault
 aur/docker-credential-secretservice # https://github.com/docker/docker-credential-helpers
 aur/amazon-ecr-credential-helper # https://github.com/awslabs/amazon-ecr-credential-helper
 aur/saml2aws                # https://github.com/Versent/saml2aws
-# aur/wrk                   # https://github.com/wg/wrk
-# mitmproxy                 # https://mitmproxy.org/
+# mkcert                    # https://github.com/FiloSottile/mkcert
+# aws-vault                 # https://github.com/99designs/aws-vault
+# dbeaver                   # https://dbeaver.io/
 # aur/medis                 # https://github.com/luin/medis
 # postgresql                # https://postgresql.org/
 # mariadb-clients           # https://mariadb.org/
-# wireshark-gtk             # https://www.wireshark.org/
+# aur/wrk                   # https://github.com/wg/wrk
 # go get github.com/wagoodman/dive         # https://github.com/wagoodman/dive
 # go get github.com/smallstep/cli/cmd/step # https://smallstep.com/cli/
 # go get github.com/rakyll/hey             # https://github.com/rakyll/hey
 # go get github.com/smartystreets/goconvey # http://goconvey.co/
 
-## Virtualization
+## Docker
 docker                      # https://www.docker.com/
 docker-compose              # https://www.docker.com/
-aur/ctop                    # https://github.com/bcicen/ctop
-# virtualbox                # https://www.virtualbox.org/
+
+## Kubernetes
+kubectl                     # https://kubernetes.io/docs/reference/kubectl/overview/
+helm                        # https://helm.sh/docs/using_helm/
+aur/octant-bin              # https://github.com/vmware-tanzu/octant
+aur/kubie-bin               # https://github.com/sbstp/kubie
+
+## Virtualization
 gnome-boxes                 # https://wiki.gnome.org/Apps/Boxes
-# qemu                      # https://www.qemu.org/
-# virt-manager              # https://virt-manager.org/
-# edk2-ovmf                 # Required for UEFI support
-# ebtables                  # Required for libvirt networking
-# aur/minikube-bin          # https://minikube.sigs.k8s.io/
-# aur/docker-machine-driver-kvm2 # https://minikube.sigs.k8s.io/docs/reference/drivers/kvm2/
-# minikube config set vm-driver kvm2
-# systemctl enable --now libvirtd
+qemu                        # https://www.qemu.org/
+virt-manager                # https://virt-manager.org/
+edk2-ovmf                   # Required for UEFI support
+ebtables                    # Required for libvirt networking
+# virtualbox                # https://www.virtualbox.org/
 
 ## Backup Utils
 # snapper                   # https://wiki.archlinux.org/index.php/Snapper
 # snapper-gui               # https://wiki.archlinux.org/index.php/Snapper#Installation
 # restic                    # https://github.com/restic/restic
-rclone                      # https://rclone.org/
+# rclone                      # https://rclone.org/
 
-## System Utils
-gparted                     # https://gparted.sourceforge.io/
-keychain                    # https://www.funtoo.org/Keychain
-xsel                        # http://www.vergenet.net/~conrad/software/xsel/
-xorg-xev                    # https://www.mankier.com/1/xev
-gnome-calculator            # https://wiki.gnome.org/Apps/Calculator
-gnome-system-monitor        # https://wiki.gnome.org/Apps/SystemMonitor
-gnome-screenshot            # https://gitlab.gnome.org/GNOME/gnome-screenshot
-file-roller                 # https://wiki.gnome.org/Apps/FileRoller
-dconf-editor                # https://wiki.gnome.org/Apps/DconfEditor
-seahorse                    # https://wiki.gnome.org/Apps/Seahorse
-powertop                    # https://01.org/powertop/
+## Android
 android-tools               # https://sites.google.com/a/android.com/tools/
 android-udev                # https://www.archlinux.org/packages/community/any/android-udev/
-arandr                      # https://christian.amsuess.com/tools/arandr/ (display settings)
-# solaar                    # https://pwr-solaar.github.io/Solaar/
 
 ## Fonts
 terminus-font               # http://terminus-font.sourceforge.net/
@@ -168,40 +156,22 @@ ttf-hack                    # https://sourcefoundry.org/hack/
 # https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/Hasklig/Regular/complete/Hasklug%20Nerd%20Font%20Complete%20Mono.otf
 # Download to ~/.fonts and run `fc-cache -fv`
 
-## Media Playback
-vlc                         # http://www.videolan.org/vlc/
-libmicrodns                 # Required for Chromecast Discovery
-aur/spotify                 # https://www.spotify.com/
-# pulseaudio-equalizer-ladspa # https://github.com/pulseaudio-equalizer-ladspa/equalizer
-evince                      # https://wiki.gnome.org/Apps/Evince
-playerctl                   # https://github.com/acrisci/playerctl
-manjaro-pipewire
-
-## Bluetooth
-bluez                       # http://www.bluez.org/
-bluez-utils                 # http://www.bluez.org/
-blueberry                   # https://github.com/linuxmint/blueberry
-
-## Media Editor
-aur/yed                     # http://www.yworks.com/en/downloads.html#yEd
-# dia                       #
-# aur/dia-shapes            # http://dia-installer.de/diashapes/index.html
-gimp                        # http://www.gimp.org/
-inkscape                    # https://inkscape.org/
-aur/standardnotes-desktop   # http://standardnotes.org/
-eog                         # https://wiki.gnome.org/Apps/EyeOfGnome/
-aur/pdfchain                # http://pdfchain.sourceforge.net/
-
 ## Printer
 cups                        # https://wiki.archlinux.org/index.php/CUPS#Installation
 cups-pdf                    # https://www.cups-pdf.de
 system-config-printer       # http://cyberelk.net/tim/software/system-config-printer/
 # sudo systemctl enable --now org.cups.cupsd.service
 
+## Bluetooth
+bluez                       # http://www.bluez.org/
+bluez-utils                 # http://www.bluez.org/
+blueberry                   # https://github.com/linuxmint/blueberry
+
 ## Encryption
 aur/keybase-bin             # https://keybase.io/
 veracrypt                   # https://veracrypt.codeplex.com/
-aur/bitwarden-bin           # https://bitwarden.com/#/
+bitwarden                   # https://bitwarden.com/#/
+bitwarden-cli               # https://bitwarden.com/#/
 
 ## Security
 wireguard-dkms              # https://www.wireguard.com/
@@ -212,28 +182,19 @@ aur/networkmanager-wireguard-git # https://github.com/max-moser/network-manager-
 ## Web & Social
 firefox-developer-edition   # https://www.mozilla.org/en-US/firefox/developer/
 chromium                    # https://stacker.readthedocs.io/en/latest/
-# aur/rambox-bin              # https://rambox.pro/
 deluge-gtk                  # https://deluge-torrent.org/
-lynx                        # https://lynx.browser.org/
-w3m                         # http://w3m.sourceforge.net/
-# aur/ungoogled-chromium    # https://github.com/Eloston/ungoogled-chromium
-# geary                     # https://gitlab.gnome.org/GNOME/geary
-# feedreader                # https://jangernert.github.io/FeedReader/
-# aur/minetime-bin          # https://minetime.ai/
+aur/ferdi-bin
+aur/deltachat-desktop
 
 ## Dictionaries
 hunspell                    # https://hunspell.github.io/
 hunspell-en_GB              # https://hunspell.github.io/
 hunspell-fr                 # https://hunspell.github.io/
 
-aur/slack-desktop
-discord
-
 python-virtualenv
 pyenv
 pyenv-virtualenv
 
-virt-manager
 s-tui
 
 wdiff
@@ -258,3 +219,20 @@ aur/neovim-nightly-bin
 
 aur/obsidian-appimage
 aur/grpcurl-bin
+
+## QMK (https://docs.qmk.fm)
+dfu-programmer
+dfu-util
+qmk
+
+## FIDO U2F
+# Use Yubikey U2F for sudo
+# https://po-ru.com/2019/06/22/using-u2f-for-passwordless-sudo
+# https://askubuntu.com/questions/1071027/how-to-configure-a-u2f-keysuch-as-a-yubikey-for-system-wide-2-factor-authentic
+# https://support.yubico.com/support/solutions/articles/15000011356-ubuntu-linux-login-guide-u2f
+# https://developers.yubico.com/pam-u2f/
+# Requires
+#   - pam-u2f
+#   - libfido2
+#   - yubikey-personalization
+#   - libu2f-host

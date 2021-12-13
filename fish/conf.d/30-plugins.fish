@@ -33,13 +33,12 @@ end
 
 # ---  Plugins/GRC  ------------------------------------------------------------
 
-set -U grc_plugin_execs cvs df diff dig gcc g++ ifconfig id ip w who \
-                        make mount mtr netstat ping ps tail traceroute \
-                        wdiff blkid du dnf docker docker-machine env \
-                        iostat last lsattr lsblk lspci lsmod lsof getfacl \
-                        getsebool ulimit uptime nmap fdisk findmnt free \
-                        semanage sar ss sysctl systemctl stat showmount \
-                        tcpdump tune2fs vmstat
+set -U grc_plugin_execs df wdiff diff dig ifconfig id ip w who mount mtr \
+                        netstat ping ps tail traceroute blkid du dnf env \
+                        iostat last lsattr lsblk lspci lsmod lsof \
+                        ulimit uptime nmap fdisk findmnt free \
+                        sysctl systemctl stat showmount \
+                        tcpdump vmstat
 
 if type -q grc
     for executable in $grc_plugin_execs

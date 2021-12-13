@@ -1,9 +1,0 @@
-# Use Yubikey U2F for sudo
-# https://po-ru.com/2019/06/22/using-u2f-for-passwordless-sudo
-# https://askubuntu.com/questions/1071027/how-to-configure-a-u2f-keysuch-as-a-yubikey-for-system-wide-2-factor-authentic
-# https://support.yubico.com/support/solutions/articles/15000011356-ubuntu-linux-login-guide-u2f
-# https://developers.yubico.com/pam-u2f/
-pam-u2f                     # https://developers.yubico.com/pam-u2f/
-libfido2                    # https://developers.yubico.com/libfido2/
-yubikey-personalization     # https://yubico.com/
-libu2f-host                 # (require for Yubico U2F via CLI)

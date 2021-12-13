@@ -1,11 +1,22 @@
-# Surface Laptop 3 : Linux Surface
+#!/usr/bin/env true
+#
+# require:
+#   - pacman (Arch Linux Package Manager)
+#   - yay (AUR Wrapper)
+#       git clone https://aur.archlinux.org/yay-bin.git /tmp/yay; cd /tmp/yay; makepkg -si
+#   - base-devel (meta package)
+#       see https://www.archlinux.org/groups/x86_64/base-devel/
+
+## Surface Laptop 3
 # https://github.com/linux-surface/linux-surface/wiki/Installation-and-Setup#surface-kernel-installation
+
+## Linux-Surface kernel
 linux-surface
 linux-surface-headers
 surface-ipts-firmware
 iptsd
-# yay -Rs tlp powertop # Disable TLP/Powertop for performance reason
 surface-control
 
+## Intel Drivers
 intel-media-driver
 libva-utils
