@@ -19,7 +19,7 @@ aur/ly
 sway
 aur/swaylock-effects-git
 swayidle
-aur/wdisplays
+wdisplays
 waybar # Bar
 wofi # Wayland Application Launcher
 mako # Notification Daemon

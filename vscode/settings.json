@@ -209,13 +209,20 @@
     },
     "go.vetOnSave": "package",
     "go.testFlags": [
-        "-gcflags=-l"
+        "-gcflags=-l",
     ],
     "go.formatTool": "goimports",
     "go.formatFlags": [
         "-local=github.com/moneway"
     ],
     "go.lintTool": "golangci-lint",
+    "go.addTags": {
+        "promptForTags": true
+    },
+    "go.removeTags": {
+        "promptForTags": true
+    },
+    "go.buildTags": "integration",
     "groupImports.onSave": true,
     "yaml.format.enable": false,
     "yaml.customTags": [

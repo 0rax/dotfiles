@@ -63,8 +63,6 @@ yarn                        # https://yarnpkg.com/
 shellcheck                  # http://www.shellcheck.net/
 prettier                    # https://prettier.io/
 shfmt                       # https://github.com/mvdan/sh#shfmt
-python2                     # https://docs.python.org/2/index.html
-python2-pip                 # https://pip.pypa.io/en/stable/installing/
 python                      # https://docs.python.org/3/index.html
 python-pip                  # https://pip.pypa.io/en/stable/installing/onefetch                    # https://github.com/o2sh/onefetch
 tokei                       # https://github.com/XAMPPRocky/tokei
@@ -101,7 +99,7 @@ ipcalc                      # http://jodies.de/ipcalc
 aws-cli                     # https://github.com/aws/aws-cli
 aur/docker-credential-secretservice # https://github.com/docker/docker-credential-helpers
 aur/amazon-ecr-credential-helper # https://github.com/awslabs/amazon-ecr-credential-helper
-aur/saml2aws                # https://github.com/Versent/saml2aws
+aur/saml2aws-bin            # https://github.com/Versent/saml2aws
 # mkcert                    # https://github.com/FiloSottile/mkcert
 # aws-vault                 # https://github.com/99designs/aws-vault
 # dbeaver                   # https://dbeaver.io/
@@ -209,7 +207,6 @@ downgrade
 # Checkout TaskWarrior + vit
 
 playerctl
-boinc-manager
 
 aur/neovim-nightly-bin
 # https://github.com/folke/which-key.nvim/
