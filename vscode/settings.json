@@ -117,7 +117,7 @@
     },
     "[jsonc]": {
         "editor.defaultFormatter": "vscode.json-language-features",
-        "editor.formatOnSave": true
+        "editor.tabSize": 2
     },
     "[properties]": {
         "editor.insertSpaces": false,
