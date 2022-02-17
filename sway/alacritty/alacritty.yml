@@ -21,6 +21,9 @@ window:
     x: 8
     y: 8
 
+  # Background opacity
+  opacity: 1.0
+
   # Spread additional padding evenly around the terminal content.
   dynamic_padding: false
   # Window title
@@ -126,9 +129,6 @@ bell:
 
   # Visual bell animation color.
   color: '0xc0c5ce'
-
-# Background opacity
-background_opacity: 1.0
 
 selection:
   # This string contains all characters that are used as separators for

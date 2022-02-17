@@ -1,8 +1,7 @@
 {
-    "layer": "top", // Waybar at top layer
-    "position": "top", // Waybar position (top|bottom|left|right)
-    "height": 24, // Waybar height (to be removed for auto height)
-    // Choose the order of the modules
+    "layer": "top",
+    "position": "top",
+    "height": 24,
     "modules-left": [
         "sway/workspaces",
         "sway/mode"
@@ -20,7 +19,6 @@
         "clock#date",
         "clock#time"
     ],
-    // Modules configuration
     "sway/workspaces": {
         "disable-scroll": true,
         "all-outputs": true,
@@ -99,7 +97,7 @@
         "on-click-right": "nm-connection-editor"
     },
     "pulseaudio": {
-        "scroll-step": 2.5, // %, can be a float
+        "scroll-step": 2.5,
         "format": "{icon} {volume}%",
         "format-alt": "{format_source}",
         "format-bluetooth": "{icon} {volume}%",
