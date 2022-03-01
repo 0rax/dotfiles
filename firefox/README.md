@@ -1,7 +1,8 @@
 # Firefox Configuration
-## Addons
 
-To view the list of addons I use everyday on Firefox, please see the [`firefox/ADDONS.md`](ADDONS.md) of this repository.
+## Add-ons
+
+To view the list of add-ons I use everyday on Firefox, please see the [`firefox/addons.csv`](addons.csv) of this repository.
 
 ## Tweaks
 

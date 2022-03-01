@@ -1,0 +1,74 @@
+{
+  "scripts": {
+    "AWS Accent Colors": {
+      "custom": {
+        "origInclude": true,
+        "origExclude": true,
+        "origMatch": true,
+        "origExcludeMatch": true,
+        "include": [],
+        "match": [],
+        "exclude": [],
+        "excludeMatch": [],
+        "name": "",
+        "runAt": "",
+        "homepageURL": "",
+        "updateURL": "",
+        "downloadURL": "",
+        "pathMap": {}
+      },
+      "config": {
+        "enabled": 1,
+        "shouldUpdate": 1,
+        "removed": 0,
+        "notifyUpdates": null
+      },
+      "position": 1,
+      "lastModified": 1644328384924,
+      "lastUpdated": 1644328384924
+    }
+  },
+  "settings": {
+    "isApplied": true,
+    "autoUpdate": 1,
+    "lastUpdate": 1646037062480,
+    "lastModified": 1574673228490,
+    "showBadge": "unique",
+    "exportValues": true,
+    "expose": { "greasyfork%2Eorg": true, "sleazyfork%2Eorg": false },
+    "closeAfterInstall": false,
+    "trackLocalFile": false,
+    "autoReload": false,
+    "syncScriptStatus": true,
+    "importScriptData": true,
+    "importSettings": true,
+    "notifyUpdates": false,
+    "notifyUpdatesGlobal": false,
+    "version": 1,
+    "defaultInjectInto": "auto",
+    "filters": {
+      "searchScope": "name",
+      "sort": "exec",
+      "viewTable": false,
+      "viewSingleColumn": false
+    },
+    "filtersPopup": {
+      "sort": "exec",
+      "enabledFirst": false,
+      "hideDisabled": false
+    },
+    "editor": {
+      "lineWrapping": false,
+      "indentWithTabs": false,
+      "indentUnit": 2,
+      "tabSize": 2,
+      "undoDepth": 200
+    },
+    "editorWindow": false,
+    "editorWindowPos": {},
+    "editorWindowSimple": true,
+    "scriptTemplate": "// ==UserScript==\n// @name        New script {{name}}\n// @namespace   Violentmonkey Scripts\n// @match       {{url}}\n// @grant       none\n// @version     1.0\n// @author      -\n// @description {{date}}\n// ==/UserScript==\n",
+    "scriptTemplateEdited": true
+  },
+  "values": {}
+}
