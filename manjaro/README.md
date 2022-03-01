@@ -2,62 +2,33 @@
 
 ## Global Setup
 
-### Docker automatic start & user access
-```sh
-sudo systemctl enable --now docker
-sudo usermod -a -G docker $USER
-```
-
 ### Give access to dictionaries to VSCode
+
 ```sh
 ln -s /usr/share/hunspell ~/.config/Code/Dictionaries
 ```
 
-## Laptop Setup
+### Display Environment Themes
 
-### Setup trackpad gesture via libinput-gestures
-```sh
-sudo usermod -a -G input $USER
-libinput-gestures-setup autostart
-libinput-gestures-setup start
-```
-
-## Gnome Setup (DE/WM)
-### Theme
-- Set theme to Adapta, Icon to Papyius & Shell theme to Adapta-Nokto
-- Use Kvantum Manager to set KDE + QT theme to KvAdapta
-- Use QT5 Settings to set theme to kvantum and icon theme to Papyrus-Adapta-Nokto
-- Run papirus-folders -C bluegrey
-
-### Shell extension
-- caffeine
-- media-player-indictor
-- no-annoyance
-- dash-to-dock
-- remove-dropdown-arrows
-
-## Cinnamon Setup (DE/WM)
-### Theme
-- Set theme to Arc-Dark with Papirus-Dark icon pack
-- Use Kvantum Manager to set KDE + QT theme to KvArcDark
-
-### Applets
-- [QRedshift](https://cinnamon-spices.linuxmint.com/applets/view/313)
-- [ScreenShot](https://cinnamon-spices.linuxmint.com/applets/view/35)
-
-### Keyboard setup
-- Remap CapsLock to Backspace
-  - Go to `Keyboard` settings
-  - Select a layout then click `Options...`
-  - In `Caps Lock Behavior` set to `Make Caps Lock an additional Backspace`
-- Setup Compose key to Menu
-  - Go to `Keyboard` settings
-  - Select a layout then click `Options...`
-  - In `Position of Compose key` set to `Menu`
-- Use GUI+Space to switch Layouts
-  - Go to `Keyboard` settings
-  - Select a layout then click `Options...`
-  - In `Switch to another keyboard layout` set to `Win+Space`
+- Application: Matcha-Dark-Azul
+- Cursor: Xcursor-breeze-snow
+- Icons: Papirus-Dark
+- Font: Cantarell Regular
 
 ## AUR Setup
+
 See https://wiki.archlinux.org/index.php/Makepkg#Reduce_source_download_and_extraction_times to make `makepkg` faster.
+
+## Yubikey U2F For Sudo
+
+See:
+- https://po-ru.com/2019/06/22/using-u2f-for-passwordless-sudo
+- https://askubuntu.com/questions/1071027/how-to-configure-a-u2f-keysuch-as-a-yubikey-for-system-wide-2-factor-authentic
+- https://support.yubico.com/support/solutions/articles/15000011356-ubuntu-linux-login-guide-u2f
+- https://developers.yubico.com/pam-u2f/
+
+Requires
+- `pam-u2f`
+- `libfido2`
+- `libu2f-host`
+- `yubikey-personalization`

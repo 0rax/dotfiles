@@ -17,6 +17,7 @@ aur/ly
 
 ## Desktop Environment
 sway
+aur/swaysettings-git
 aur/swaylock-effects-git
 swayidle
 wdisplays
@@ -38,16 +39,10 @@ alacritty                   # Terminal Emulator
 gparted                     # https://gparted.sourceforge.io/
 gnome-calculator            # https://wiki.gnome.org/Apps/Calculator
 seahorse                    # https://wiki.gnome.org/Apps/Seahorse
-aur/seahorse-nautilus-ext   # Nautilus: GPG plugin
 
 ## Clipboard
 wl-clipboard
 xsel                        # http://www.vergenet.net/~conrad/software/xsel/
-
-## File Manager
-nautilus         # File manager (gnome)
-sushi            # Nautilus: Preview plugin
-nautilus-admin   # Nautilus: Open as Administrator
 
 ## Document Viewer
 evince                      # https://wiki.gnome.org/Apps/Evince
@@ -63,7 +58,6 @@ playerctl                   # https://github.com/acrisci/playerctl
 ## Media Editor
 gimp                        # http://www.gimp.org/
 inkscape                    # https://inkscape.org/
-aur/yed                     # http://www.yworks.com/en/downloads.html#yEd
 aur/pdfchain                # http://pdfchain.sourceforge.net/
 # dia                       #
 # aur/dia-shapes            # http://dia-installer.de/diashapes/index.html
@@ -79,13 +73,13 @@ aur/pdfchain                # http://pdfchain.sourceforge.net/
 matcha-gtk-theme            # GTK theme  https://github.com/vinceliuice/Matcha-gtk-theme
 papirus-icon-theme          # Icon theme https://github.com/PapirusDevelopmentTeam/papirus-icon-theme
 xcursor-breeze              # Cursor theme
-lxappearance                # Theme switcher (GTK)
 gnome-tweaks                # Theme switcher (Gnome)
 
 # Screenshots
 grim
 slurp
 swappy
+grimshot
 
 # Autostart XDG desktop files
 dex
@@ -100,3 +94,8 @@ polkit-gnome
 nm-connection-editor
 gnome-power-manager
 gnome-disk-utility
+
+
+aur/yed       # http://www.yworks.com/en/downloads.html#yEd
+# VRT Palettes: https://github.com/pafnow/vrt-graphml-for-yed
+# AWS Palettes: https://github.com/JustDerb/yed-aws-palettes

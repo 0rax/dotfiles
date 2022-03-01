@@ -7,7 +7,7 @@
     "editor.cursorBlinking": "solid",
     "editor.cursorStyle": "block",
     "editor.detectIndentation": false,
-    "editor.fontFamily": "'Hasklug Nerd Font', 'Hasklig', 'Font Awesome 5 Brands', 'Font Awesome 5 Free Solid', Monaco, monofur, Menlo, monospace",
+    "editor.fontFamily": "'Hasklug Nerd Font', 'Hasklig', 'forkawesome', Monaco, monofur, Menlo, monospace",
     "editor.fontLigatures": true,
     "editor.insertSpaces": true,
     "editor.minimap.enabled": false,
@@ -205,17 +205,11 @@
     "go.toolsGopath": "/home/orax/projects/go",
     "go.toolsManagement.autoUpdate": true,
     "go.useLanguageServer": true,
-    "gopls": {
-        "formatting.local": "github.com/moneway"
-    },
     "go.vetOnSave": "package",
     "go.testFlags": [
         "-gcflags=-l",
     ],
     "go.formatTool": "goimports",
-    "go.formatFlags": [
-        "-local=github.com/moneway"
-    ],
     "go.lintTool": "golangci-lint",
     "go.addTags": {
         "promptForTags": true
@@ -273,14 +267,6 @@
         "-x"
     ],
     "shellcheck.run": "onSave",
-    "spellright.documentTypes": [
-        "markdown",
-        "latex",
-        "plaintext"
-    ],
-    "spellright.language": [
-        "en"
-    ],
     "errorLens.scrollbarHackEnabled": true,
     "errorLens.messageTemplate": "",
     "errorLens.gutterIconsEnabled": false,

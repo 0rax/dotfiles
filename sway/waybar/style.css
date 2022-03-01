@@ -3,7 +3,7 @@
 * {
     border: none;
     border-radius: 0;
-    font-family: Hasklig, 'Font Awesome 6 Brands', 'Font Awesome 6 Free Solid', Hack, monospace;
+    font-family: Hasklig, forkawesome, Hack, monospace;
     font-size: 12px;
     min-height: 0;
 }
