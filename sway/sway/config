@@ -20,7 +20,7 @@ set $lock swaylock
 # set $menu dmenu_path | dmenu | xargs swaymsg exec --
 set $menu wofi --show drun
 
-include themes/base16-oceanicnext.config
+include themes/base16-oceanicnext.conf
 include sway.d/01-general.conf
 include sway.d/02-output.conf
 include sway.d/03-input.conf
