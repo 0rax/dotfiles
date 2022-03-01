@@ -1,15 +1,15 @@
 [submodule "fish/fishline"]
-	path = fish/plugins/fishline
+	path = shell/fish/plugins/fishline
 	url = https://github.com/0rax/fishline
 [submodule "fish/plugins/fish-bd"]
-	path = fish/plugins/fish-bd
+	path = shell/fish/plugins/fish-bd
 	url = https://github.com/0rax/fish-bd.git
 [submodule "fish/plugins/narwhal"]
 	path = fish/plugins/narwhal
 	url = https://github.com/0rax/narwhal
 [submodule "fish/plugins/z"]
-	path = fish/plugins/z
+	path = shell/fish/plugins/z
 	url = https://github.com/jethrokuan/z
 [submodule "fish/plugins/awsenv.fish"]
-	path = fish/plugins/awsenv
+	path = shell/fish/plugins/awsenv
 	url = https://github.com/0rax/awsenv.fish.git
