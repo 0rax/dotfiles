@@ -1,6 +1,6 @@
 # Sway
 
-## Install config
+## Link software config files
 
 ```sh
 ln -s $PWD/alactritty             ~/.config/alactritty
