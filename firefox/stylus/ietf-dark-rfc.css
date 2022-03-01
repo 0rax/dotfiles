@@ -1,0 +1,97 @@
+/* ==UserStyle==
+@name           IETF: Dark RFC Readable
+@namespace      https://github.com/0rax
+@version        1.1.0
+@description    Makes RFC documents darker and readable
+@author         0rax
+@homepageURL    https://github.com/0rax/dotfiles/tree/master/firefox/stylus
+@updateURL      https://raw.githubusercontent.com/0rax/dotfiles/master/firefox/stylus/ietf-dark-rfc.css
+==/UserStyle== */
+
+@-moz-document url-prefix("https://tools.ietf.org/html/rfc"), url-prefix("https://datatracker.ietf.org/doc/html/")
+{
+  /* Darkify RFC documents */
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    margin: 0;
+    background-color: #333;
+    color: #fff;
+  }
+  a,
+  a:visited,
+  a.selflink {
+    color: #0074d9;
+  }
+  div.content,
+  .pre.noprint.docinfo {
+    margin: 0 auto;
+  }
+  pre,
+  span.pre {
+    font-size: 1.15em;
+  }
+  hr {
+    width: inherit !important;
+  }
+  div.pre.noprint.docinfo {
+    position: absolute;
+    width: 100%;
+    left: 0px;
+  }
+  span.pre.noprint.docinfo {
+    color: #000;
+  }
+  pre:first-of-type {
+    margin-top: 12px;
+  }
+  div#legend {
+    background-color: #333 !important;
+    width: 270px;
+  }
+  /* Update colors (colors from: https://github.com/mrmrs/colors) */
+  .bgblue {
+    background-color: #0074d9;
+  }
+  .bggreen {
+    background-color: #2ecc40;
+  }
+  .bgyellow {
+    background-color: #ffdc00;
+  }
+  .bgorange {
+    background-color: #ff851b;
+  }
+  .bgred {
+    background-color: #ff4136;
+  }
+  .bgwhite {
+    background-color: #ffffff;
+  }
+  .bggrey {
+    background-color: #aaaaaa;
+  }
+  .blue {
+    color: #0074d9;
+  }
+  .green {
+    color: #2ecc40;
+  }
+  .yellow {
+    color: #ffdc00;
+  }
+  .orange {
+    color: #ff851b;
+  }
+  .red {
+    color: #ff4136;
+  }
+  .white {
+    color: #ffffff;
+  }
+  .grey {
+    color: #aaaaaa;
+  }
+}
