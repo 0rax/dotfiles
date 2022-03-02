@@ -1,14 +1,13 @@
 ## Bootloader
 refind
-aur/refind-theme-regular-git
 ### On Surface Laptop
 # Add the following line to /boot/efi/EFI/refind/refind.conf
 # extra_kernel_version_strings linux-surface,linux
 # Add at the end of /boot/refind_linux.conf "Boot with standard options" kernel params
 # reboot=pci
-### To enable theme
-# Add at the end of /boot/efi/EFI/refind/refind.conf or replace any included theme with
-# include refind-theme-regular/theme.conf
+### To add & enable theme
+# Clone repository https://github.com/bobafetthotmail/refind-theme-regular
+# Check and run `./install.sh`
 
 ## Session Manager
 aur/ly
@@ -63,7 +62,8 @@ aur/pdfchain                # http://pdfchain.sourceforge.net/
 # aur/dia-shapes            # http://dia-installer.de/diashapes/index.html
 
 ### Alternative
-# thunar    # File manager (xfce)
+thunar    # File manager (xfce)
+thunar-volman
 # atril     # Document Viwer (mate)
 # ristretto # Image Viewer (xfce)
 # tumbler   # Thumbnailer (xfce)

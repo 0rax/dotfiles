@@ -21,5 +21,8 @@ ln -s $PWD/libinput/libinput-gestures.conf ~/.config/libinput-gestures.conf
 ```sh
 mkdir -p ~/.config/systemd/user/
 cp systemd/user/* ~/.config/systemd/user/
-systemctl --user enable --now waybar gammastep kanshi mako swayidle
+systemctl --user enable --now waybar.service kanshi.service swayidle.service
+systemctl --user enable --now gammastep.service mako.service
+systemctl --user enable --now polkit-gnome-agent.service
+systemctl --user enable --now libinput-gestures.service
 ```

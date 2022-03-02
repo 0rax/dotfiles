@@ -1,11 +1,10 @@
 [Unit]
-Description=Idle manager for Wayland
-Documentation=man:swayidle(1)
+Description=Legacy polkit authentication agent for GNOME
 PartOf=graphical-session.target
 
 [Service]
 Type=simple
-ExecStart=/usr/bin/swayidle -w timeout 600 'swaylock' before-sleep 'swaylock --fade-in 0'
+ExecStart=/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 ExecStop=/bin/kill -2 $MAINPID
 Restart=on-failure
 RestartSec=1

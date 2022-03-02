@@ -1,4 +1,5 @@
-# VSCode Configuration
+# VS Code Configuration
+
 ## Install configuration
 
 - Find your current configuration folder for your system and back it up:
@@ -6,12 +7,16 @@
   - Linux: `~/.config/Code/User/` or `~/.code/` depending on the platform
 - Remove this folder and link this current folder in its place
 
-## Install extensions from list
+## Extensions
+
+### Export installed extensions
+
 ```sh
-cat extensions.csv | cut -d '#' -f 1 | tr -d ' \t' | xargs -L 1 code --install-extension
+code --list-extensions > extensions.txt
 ```
 
-## Export installed extensions
+### Install extensions from list
+
 ```sh
-code --list-extensions > extensions.csv
+xargs -tL 1 code --install-extension < extensions.txt
 ```

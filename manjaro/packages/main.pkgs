@@ -163,7 +163,7 @@ system-config-printer       # http://cyberelk.net/tim/software/system-config-pri
 # sudo systemctl enable --now org.cups.cupsd.service
 
 ## Bluetooth
-blbluez                       # http://www.bluez.org/
+blbluez                     # http://www.bluez.org/
 bluez-utils                 # http://www.bluez.org/
 blueberry                   # https://github.com/linuxmint/blueberry
 
@@ -206,7 +206,6 @@ libreoffice-fresh
 downgrade
 
 # Timeshift vs Snapper
-# Nemo vs Nautilus vs Others
 # Checkout TaskWarrior + vit
 
 playerctl
@@ -217,5 +216,4 @@ aur/obsidian-appimage
 libinput-gestures
 gestures
 # sudo usermod -a -G input $USER
-# libinput-gestures-setup autostart
-# libinput-gestures-setup start
+# systemctl --user enable --now libinput-gestures.service

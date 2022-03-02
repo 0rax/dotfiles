@@ -12,12 +12,11 @@ file-icons.file-icons
 foxundermoon.shell-format
 golang.go
 GrapeCity.gc-excelviewer
+jeff-hykin.better-dockerfile-syntax
 kleber-swf.ocean-dark-extended
 lunaryorn.fish-ide
 mechatroner.rainbow-csv
-mitchdenny.ecdc
 ML2.nc-gcode
-ms-azuretools.vscode-docker
 ms-python.python
 ms-python.vscode-pylance
 ms-toolsai.jupyter
@@ -26,8 +25,6 @@ ms-toolsai.jupyter-renderers
 ms-vscode.wordcount
 naumovs.color-highlight
 oderwat.indent-rainbow
-PascalReitermann93.vscode-yaml-sort
-premparihar.gotestexplorer
 redhat.vscode-yaml
 shanoor.vscode-nginx
 skyapps.fish-vscode
