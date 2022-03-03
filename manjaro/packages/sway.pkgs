@@ -1,101 +1,78 @@
-## Bootloader
-refind
-### On Surface Laptop
-# Add the following line to /boot/efi/EFI/refind/refind.conf
-# extra_kernel_version_strings linux-surface,linux
-# Add at the end of /boot/refind_linux.conf "Boot with standard options" kernel params
-# reboot=pci
-### To add & enable theme
-# Clone repository https://github.com/bobafetthotmail/refind-theme-regular
-# Check and run `./install.sh`
+#!/usr/bin/env true
+#
+# Sway / Wayland based desktop environment
+#
+# require:
+#   - pacman (Arch Linux Package Manager)
+#   - yay (AUR Wrapper)
+#       git clone https://aur.archlinux.org/yay-bin.git /tmp/yay; cd /tmp/yay; makepkg -si
+#   - base-devel (meta package)
+#       see https://www.archlinux.org/groups/x86_64/base-devel/
 
-## Session Manager
-aur/ly
+## Seesion manager
+aur/ly                      # [session-manager] https://github.com/fairyglade/ly
 # sudo systemctl disable getty@tty2.service
 # sudo systemctl enable ly.service
 
-## Desktop Environment
-sway
-aur/swaysettings-git
-aur/swaylock-effects-git
-swayidle
-wdisplays
-waybar # Bar
-wofi # Wayland Application Launcher
-mako # Notification Daemon
-brightnessctl
-gammastep
-kanshi
+## Display server
+wayland                     # [display-server ] https://wayland.freedesktop.org/
+xorg-xwayland               # [x11-support    ] https://xorg.freedesktop.org/
+qt5-wayland                 # [qt5-support    ] https://www.qt.io/
+glfw-wayland                # [glfw-support   ] https://www.glfw.org/
 
-# Wayland compatibility layer
-xorg-server-xwayland # X11 Apps support
-qt5-wayland          # Qt5 support
-glfw-wayland         # GLFW support
-glew-wayland         # GLEW support
+## Desktop environment
+sway                        # [windows-manager] https://github.com/swaywm/sway
+waybar                      # [wl-status-bar  ] https://github.com/Alexays/Waybar
+wofi                        # [app-launcher   ] https://hg.sr.ht/~scoopta/wofi
+mako                        # [notif-daemon   ] https://github.com/emersion/mako
+swayidle                    # [session-idler  ] https://github.com/swaywm/swayidle
+aur/swaylock-effects-git    # [session-locker ] https://github.com/mortie/swaylock-effects
+dex                         # [autostart-xdg  ] https://github.com/jceb/dex
+gammastep                   # [gamma-ctrl     ] https://gitlab.com/chinstrap/gammastep
+kanshi                      # [display-profile] https://github.com/emersion/kanshi
 
-## System Utils
-alacritty                   # Terminal Emulator
-gparted                     # https://gparted.sourceforge.io/
-gnome-calculator            # https://wiki.gnome.org/Apps/Calculator
-seahorse                    # https://wiki.gnome.org/Apps/Seahorse
+## Base applications
+alacritty                   # [terminal       ] https://alacritty.org/
+thunar                      # [file-manager   ] https://docs.xfce.org/xfce/thunar/
+thunar-volman               # [volume-manager ] https://docs.xfce.org/xfce/thunar/thunar-volman
+tumbler                     # [thumbnailer    ] https://docs.xfce.org/xfce/thunar/4.14/tumbler
+ristretto                   # [image-viewer   ] https://docs.xfce.org/apps/ristretto/
+atril                       # [document-viewer] https://wiki.mate-desktop.org/mate-desktop/applications/atril/
+celluloid                   # [media-player   ] https://celluloid-player.github.io/
+gnome-calculator            # [calculator     ] https://wiki.gnome.org/Apps/Calculator
+file-roller                 # [archive-manager] https://wiki.gnome.org/Apps/FileRoller
 
-## Clipboard
-wl-clipboard
-xsel                        # http://www.vergenet.net/~conrad/software/xsel/
+## CLI utils
+grim                        # [screenshotter  ] https://github.com/emersion/grim
+slurp                       # [screen-region  ] https://github.com/emersion/slurp
+swappy                      # [image-annotator] https://github.com/jtheoof/swappy
+grimshot                    # [screenshot-wrap] https://github.com/swaywm/sway/blob/master/contrib/grimshot
+brightnessctl               # [brightness-ctrl] https://github.com/Hummer12007/brightnessctl
+playerctl                   # [metdia-ctrl    ] https://github.com/altdesktop/playerctl
+wl-clipboard                # [wl-clipboard   ] https://github.com/bugaevc/wl-clipboard
+xsel                        # [x11-clipboard  ] http://www.vergenet.net/~conrad/software/xsel/
 
-## Document Viewer
-evince                      # https://wiki.gnome.org/Apps/Evince
-eog                         # https://wiki.gnome.org/Apps/EyeOfGnome/
-file-roller                 # https://wiki.gnome.org/Apps/FileRoller
+## System settings
+aur/swaysettings-git        # [system-config  ] https://github.com/ErikReider/SwaySettings
+wdisplays                   # [display-manager] https://github.com/artizirk/wdisplays
+nm-connection-editor        # [network-manager] https://networkmanager.dev/
+system-config-printer       # [printer-config ] http://cyberelk.net/tim/software/system-config-printer/
+blueman                     # [bluetooth-cfg  ] https://github.com/blueman-project/blueman
+gestures                    # [gesture-config ] https://gitlab.com/cunidev/gestures
 
-## Media Playback
-vlc                         # http://www.videolan.org/vlc/
-libmicrodns                 # Required for Chromecast Discovery
-aur/spotify                 # https://www.spotify.com/
-playerctl                   # https://github.com/acrisci/playerctl
+## Keyring, passwords & certificate
+polkit-gnome                # [polkit-agent   ] https://gitlab.freedesktop.org/polkit/polkit/
+gnome-keyring               # [keyring        ] https://wiki.gnome.org/Projects/GnomeKeyring/
+seahorse                    # [keyring-gui    ] https://wiki.gnome.org/Apps/Seahorse
 
-## Media Editor
-gimp                        # http://www.gimp.org/
-inkscape                    # https://inkscape.org/
-aur/pdfchain                # http://pdfchain.sourceforge.net/
-# dia                       #
-# aur/dia-shapes            # http://dia-installer.de/diashapes/index.html
+## UI thmes
+matcha-gtk-theme            # [gtk-theme      ] https://github.com/vinceliuice/Matcha-gtk-theme
+papirus-icon-theme          # [icon-theme     ] https://github.com/PapirusDevelopmentTeam/papirus-icon-theme
+xcursor-vanilla-dmz         # [cursor-theme   ] https://www.gnome-look.org/p/999970/
 
-### Alternative
-thunar    # File manager (xfce)
-thunar-volman
-# atril     # Document Viwer (mate)
-# ristretto # Image Viewer (xfce)
-# tumbler   # Thumbnailer (xfce)
-# zathura   # Document viewer (vim-like)
-
-# UI Thene
-matcha-gtk-theme            # GTK theme  https://github.com/vinceliuice/Matcha-gtk-theme
-papirus-icon-theme          # Icon theme https://github.com/PapirusDevelopmentTeam/papirus-icon-theme
-xcursor-breeze              # Cursor theme
-gnome-tweaks                # Theme switcher (Gnome)
-
-# Screenshots
-grim
-slurp
-swappy
-grimshot
-
-# Autostart XDG desktop files
-dex
-
-# grim -g (slurp) - | swappy -f -
-# To test
-catimg
-
-# Polkit Frontend
-polkit-gnome
-
-nm-connection-editor
-gnome-power-manager
-gnome-disk-utility
-
-
-aur/yed       # http://www.yworks.com/en/downloads.html#yEd
-# VRT Palettes: https://github.com/pafnow/vrt-graphml-for-yed
-# AWS Palettes: https://github.com/JustDerb/yed-aws-palettes
+# Alternatives:
+#  - image viewer:    eog        [gnome]
+#  - document viewer: evince     [gnome]
+#  - calculator:      galculator [gtk]
+#  - archive manager: xarchiver  [gtk]
+#  - media player:    vlc

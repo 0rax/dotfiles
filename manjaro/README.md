@@ -2,18 +2,12 @@
 
 ## Global Setup
 
-### Give access to dictionaries to VSCode
-
-```sh
-ln -s /usr/share/hunspell ~/.config/Code/Dictionaries
-```
-
 ### Display Environment Themes
 
-- Application: Matcha-Dark-Azul
-- Cursor: Xcursor-breeze-snow
-- Icons: Papirus-Dark
-- Font: Cantarell Regular
+- Application: `Matcha-Dark-Azul`
+- Icons: `Papirus-Dark`
+- Cursor: `Vanilla-DMZ`
+- Font: `Cantarell Regular`
 
 ## AUR Setup
 
@@ -32,3 +26,25 @@ Requires
 - `libfido2`
 - `libu2f-host`
 - `yubikey-personalization`
+
+## Packages
+
+### List explicitly installed packages
+
+```sh
+pacman -Qqen
+pacman -Qqem | sed 's|^|aur/|'
+```
+
+## Bootloader
+
+## Bootloader
+refind
+### On Surface Laptop
+# Add the following line to /boot/efi/EFI/refind/refind.conf
+# extra_kernel_version_strings linux-surface,linux
+# Add at the end of /boot/refind_linux.conf "Boot with standard options" kernel params
+# reboot=pci
+### To add & enable theme
+# Clone repository https://github.com/bobafetthotmail/refind-theme-regular
+# Check and run `./install.sh`

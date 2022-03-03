@@ -1,0 +1,94 @@
+#!/usr/bin/env true
+#
+# Base system with common CLI tools and services
+#
+# require:
+#   - pacman (Arch Linux Package Manager)
+#   - yay (AUR Wrapper)
+#       git clone https://aur.archlinux.org/yay-bin.git /tmp/yay; cd /tmp/yay; makepkg -si
+#   - base-devel (meta package)
+#       see https://www.archlinux.org/groups/x86_64/base-devel/
+
+## Base
+bash                        # https://www.gnu.org/software/bash/
+fish                        # https://fishshell.com
+base-devel                  # [meta] https://www.archlinux.org/groups/x86_64/base-devel/
+aur/yay-bin                 # https://github.com/Jguer/yay
+aur/downgrade               # https://github.com/pbrisbin/downgrade
+
+## CVS
+git                         # https://git-scm.com
+tig                         # http://jonas.nitro.dk/tig/
+git-lfs                     # https://github.com/git-lfs/git-lfs
+mercurial                   # https://www.mercurial-scm.org/
+subversion                  # https://subversion.apache.org/
+
+## Shell utils
+grep                        # https://www.gnu.org/software/grep/
+sed                         # https://www.gnu.org/software/sed/
+tree                        # http://mama.indstate.edu/users/ice/tree/
+psmisc                      # https://gitlab.com/psmisc/psmisc
+coreutils                   # https://www.gnu.org/software/coreutils/
+findutils                   # https://www.gnu.org/software/findutils/
+binutils                    # https://www.gnu.org/software/binutils/
+screen                      # https://www.gnu.org/software/screen/
+vim                         # http://www.vim.org/
+tar                         # https://www.gnu.org/software/tar/
+zip                         # http://infozip.sourceforge.net/Zip.html
+unzip                       # http://infozip.sourceforge.net/UnZip.html
+lzop                        # http://www.lzop.org/
+lsof                        # http://people.freebsd.org/~abe/
+htop                        # https://hisham.hm/htop/
+most                        # http://www.jedsoft.org/most/
+ripgrep                     # https://github.com/BurntSushi/ripgrep
+fd                          # https://github.com/sharkdp/fd
+moreutils                   # https://joeyh.name/code/moreutils/
+rhash                       # https://github.com/rhash/RHash
+bottom                      # https://github.com/ClementTsang/bottom
+grc                         # http://kassiopeia.juls.savba.sk/~garabik/software/grc.htm
+wdiff                       # https://www.gnu.org/software/wdiff/
+colordiff                   # https://www.colordiff.org/
+pv                          # https://www.ivarch.com/programs/pv.shtml
+pwgen                       # https://pwgen.sourceforge.io/
+keychain                    # https://www.funtoo.org/Keychain
+bat                         # https://github.com/sharkdp/bat
+jq                          # https://stedolan.github.io/jq/
+aur/xsv                     # https://github.com/BurntSushi/xsv
+
+## Network utils
+wget                        # https://www.gnu.org/software/wget/
+curl                        # https://curl.se/
+net-tools                   # http://net-tools.sourceforge.net/
+bind-tools                  # https://www.isc.org/downloads/bind/
+whois                       # https://github.com/rfc1036/whois
+traceroute                  # http://traceroute.sourceforge.net/
+tcpdump                     # https://www.archlinux.org/packages/extra/x86_64/tcpdump/
+iftop                       # http://www.ex-parrot.com/pdw/iftop/
+httpie                      # https://httpie.org/
+nmap                        # https://nmap.org/
+aur/prips                   # https://packages.debian.org/stable/net/prips
+ipcalc                      # http://jodies.de/ipcalc
+
+## Network management
+networkmanager              # https://networkmanager.dev/
+wireguard-dkms              # https://www.wireguard.com/
+wireguard-tools             # https://www.wireguard.com/
+aur/networkmanager-wireguard-git # https://github.com/max-moser/network-manager-wireguard/
+ufw                         # https://launchpad.net/ufw
+# sudo systemctl enable --now networkmanager.service
+# sudo systemctl enable --now ufw.service
+
+## Printer
+cups                        # https://wiki.archlinux.org/index.php/CUPS#Installation
+cups-pdf                    # https://www.cups-pdf.de
+# sudo systemctl enable --now cups.service
+
+## Bluetooth
+bluez                       # http://www.bluez.org/
+bluez-utils                 # http://www.bluez.org/
+# sudo systemctl enable --now bluetooth.service
+
+## Trackpad gestures
+libinput-gestures
+# sudo usermod -a -G input $USER
+# systemctl --user enable --now libinput-gestures.service

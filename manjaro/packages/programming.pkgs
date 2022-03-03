@@ -1,0 +1,91 @@
+#!/usr/bin/env true
+#
+# Programming & DevOps softwares
+#
+# require:
+#   - pacman (Arch Linux Package Manager)
+#   - yay (AUR Wrapper)
+#       git clone https://aur.archlinux.org/yay-bin.git /tmp/yay; cd /tmp/yay; makepkg -si
+#   - base-devel (meta package)
+#       see https://www.archlinux.org/groups/x86_64/base-devel/
+
+## CLI tools
+aur/gibo                    # https://github.com/simonwhitaker/gibo
+github-cli                  # https://cli.github.com/
+tokei                       # https://github.com/XAMPPRocky/tokei
+
+## Make
+make                        # https://www.gnu.org/software/make/
+remake                      # http://bashdb.sourceforge.net/remake/
+cmake                       # https://cmake.org/
+
+## C/C++
+distcc                      # https://github.com/distcc/distcc
+clang                       # https://clang.llvm.org/
+
+## Golang
+go                          # https://go.dev/
+aur/golangci-lint-bin       # https://github.com/golangci/golangci-lint
+
+## Shell
+dash                        # http://gondor.apana.org.au/~herbert/dash/
+shellcheck                  # http://www.shellcheck.net/
+shfmt                       # https://github.com/mvdan/sh#shfmt
+
+## Protobuf
+protobuf                    # https://developers.google.com/protocol-buffers
+aur/grpcurl-bin             # https://github.com/fullstorydev/grpcurl
+
+## NodeJS
+nodejs                      # https://nodejs.org/
+npm                         # https://www.npmjs.com/
+yarn                        # https://yarnpkg.com/
+prettier                    # https://prettier.io/
+
+## Python
+python                      # https://docs.python.org/3/index.html
+python-pip                  # https://github.com/o2sh/onefetch
+pyenv                       # https://github.com/pyenv/pyenv
+python-virtualenv           # https://virtualenv.pypa.io/en/latest/
+pyenv-virtualenv            # https://github.com/pyenv/pyenv-virtualenv
+
+## Text Processing
+texlive-most                # [meta] https://tug.org/texlive/
+pandoc                      # http://pandoc.org
+graphviz                    # https://graphviz.org/
+
+## Graph Editor
+aur/yed                     # http://www.yworks.com/en/downloads.html#yEd
+# yEd VRT palettes: https://github.com/pafnow/vrt-graphml-for-yed
+# yEd AWS palettes: https://github.com/JustDerb/yed-aws-palettes
+
+## GUI clients
+aur/insomnia-bin            # https://insomnia.rest/
+aur/wombat-bin              # https://github.com/rogchap/wombat
+
+## Docker
+docker                      # https://www.docker.com/
+docker-compose              # https://www.docker.com/
+aur/dive                    # https://github.com/wagoodman/dive
+aur/docker-credential-secretservice # https://github.com/docker/docker-credential-helpers
+# sudo systemctl enable --now docker
+# sudo usermod -a -G docker $USER
+
+## AWS
+aws-cli                     # https://github.com/aws/aws-cli
+aur/saml2aws-bin            # https://github.com/Versent/saml2aws
+aur/amazon-ecr-credential-helper # https://github.com/awslabs/amazon-ecr-credential-helper
+
+## Kubernetes
+kubectl                     # https://kubernetes.io/docs/reference/kubectl/overview/
+helm                        # https://helm.sh/docs/using_helm/
+aur/kubie-bin               # https://github.com/sbstp/kubie
+aur/octant-bin              # https://github.com/vmware-tanzu/octant
+
+## Other useful softwares
+# https://github.com/99designs/aws-vault
+# https://hohnstaedt.de/xca/
+# https://github.com/FiloSottile/mkcert
+# https://dbeaver.io/
+# https://github.com/wg/wrk
+# https://github.com/rakyll/hey

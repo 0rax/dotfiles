@@ -1,4 +1,6 @@
-up#!/usr/bin/env true
+#!/usr/bin/env true
+#
+# Main applications and resources
 #
 # require:
 #   - pacman (Arch Linux Package Manager)
@@ -7,213 +9,51 @@ up#!/usr/bin/env true
 #   - base-devel (meta package)
 #       see https://www.archlinux.org/groups/x86_64/base-devel/
 
-## Shell
-fish                        # https://fishshell.com
-bash                        # https://www.gnu.org/software/bash/
-dash                        # http://gondor.apana.org.au/~herbert/dash/
+## Web
+firefox-developer-edition   # https://www.mozilla.org/en-US/firefox/developer/
+chromium                    # https://stacker.readthedocs.io/en/latest/
+aur/keybase-bin             # https://keybase.io/
+aur/ferdi-bin               # https://github.com/getferdi/ferdi/
+aur/deltachat-desktop       # https://delta.chat/en/download
 
-## CVS
-git                         # https://git-scm.com
-tig                         # http://jonas.nitro.dk/tig/
-git-lfs                     # https://github.com/git-lfs/git-lfs
-mercurial                   # https://www.mercurial-scm.org/
-subversion                  # https://subversion.apache.org/
-aur/gibo                    # https://github.com/simonwhitaker/gibo
+## Media
+aur/spotify                 # https://www.spotify.com/
 
-## Shell Utils
-grep                        # https://www.gnu.org/software/grep/
-ripgrep                     # https://github.com/BurntSushi/ripgrep
-sed                         # https://www.gnu.org/software/sed/
-tree                        # http://mama.indstate.edu/users/ice/tree/
-psmisc                      # https://gitlab.com/psmisc/psmisc
-coreutils                   # https://www.gnu.org/software/coreutils/
-findutils                   # https://www.gnu.org/software/findutils/
-binutils                    # https://www.gnu.org/software/binutils/
-moreutils                   # https://joeyh.name/code/moreutils/
-screen                      # https://www.gnu.org/software/screen/
-rhash                       # https://github.com/rhash/RHash
-most                        # http://www.jedsoft.org/most/
-bat                         # https://github.com/sharkdp/bat
-vim                         # http://www.vim.org/
-tar                         # https://www.gnu.org/software/tar/
-zip                         # http://infozip.sourceforge.net/Zip.html
-unzip                       # http://infozip.sourceforge.net/UnZip.html
-lzop                        # http://www.lzop.org/
-lsof                        # http://people.freebsd.org/~abe/
-htop                        # https://hisham.hm/htop/
-bottom                      # https://github.com/ClementTsang/bottom
-grc                         # http://kassiopeia.juls.savba.sk/~garabik/software/grc.htm
-pv                          # https://www.ivarch.com/programs/pv.shtml
-pwgen                       # https://pwgen.sourceforge.io/
-fd                          # https://github.com/sharkdp/fd
-jq                          # https://stedolan.github.io/jq/
-keychain                    # https://www.funtoo.org/Keychain
-
-## Programming
-base-devel                  # https://www.archlinux.org/groups/x86_64/base-devel/
-distcc                      # https://github.com/distcc/distcc
-remake                      # http://bashdb.sourceforge.net/remake/
-clang                       # https://clang.llvm.org/
-go                          # https://go.dev/
-protobuf                    # https://developers.google.com/protocol-buffers
-rust                        # https://www.rust-lang.org/
-nodejs                      # https://nodejs.org/
-npm                         # https://www.npmjs.com/
-yarn                        # https://yarnpkg.com/
-shellcheck                  # http://www.shellcheck.net/
-prettier                    # https://prettier.io/
-shfmt                       # https://github.com/mvdan/sh#shfmt
-python                      # https://docs.python.org/3/index.html
-python-pip                  # https://github.com/o2sh/onefetch
-tokei                       # https://github.com/XAMPPRocky/tokei
-aur/xsv                     # https://github.com/BurntSushi/xsv
-cmake                       # https://cmake.org/
-graphviz                    # https://graphviz.org/
-github-cli                  # https://cli.github.com/
-aur/golangci-lint-bin       # https://github.com/golangci/golangci-lint
+## File editors
 aur/visual-studio-code-bin  # https://code.visualstudio.com/
-aur/insomnia-bin            # https://insomnia.rest/
-pandoc                      # http://pandoc.org
-texlive-most                # https://tug.org/texlive/
-aur/grpcurl-bin             # https://github.com/fullstorydev/grpcurl
-aur/wombat-bin              # https://github.com/rogchap/wombat
+libreoffice-fresh           # https://www.libreoffice.org/
+aur/obsidian-appimage       # https://obsidian.md/
+gimp                        # http://www.gimp.org/
+inkscape                    # https://inkscape.org/
 
-## Network tools
-wget                        # https://www.gnu.org/software/wget/
-curl                        # https://curl.se/
-httpie                      # https://httpie.org/
-aria2                       # https://aria2.github.io/
-net-tools                   # http://net-tools.sourceforge.net/
-iftop                       # http://www.ex-parrot.com/pdw/iftop/
-bind-tools                  # https://www.isc.org/downloads/bind/
-whois                       # https://github.com/rfc1036/whois
-traceroute                  # http://traceroute.sourceforge.net/
-tcpdump                     # https://www.archlinux.org/packages/extra/x86_64/tcpdump/
-nmap                        # https://nmap.org/
-mtr                         # http://www.bitwizard.nl/mtr/
-aur/prips                   # https://packages.debian.org/stable/net/prips
-ipcalc                      # http://jodies.de/ipcalc
-# wireshark-gtk             # https://www.wireshark.org/
-# mitmproxy                 # https://mitmproxy.org/
-
-## DevOps
-aws-cli                     # https://github.com/aws/aws-cli
-aur/docker-credential-secretservice # https://github.com/docker/docker-credential-helpers
-aur/amazon-ecr-credential-helper    # https://github.com/awslabs/amazon-ecr-credential-helper
-aur/saml2aws-bin            # https://github.com/Versent/saml2aws
-xca                         # https://hohnstaedt.de/xca/
-# mkcert                    # https://github.com/FiloSottile/mkcert
-# aws-vault                 # https://github.com/99designs/aws-vault
-# dbeaver                   # https://dbeaver.io/
-# aur/medis                 # https://github.com/luin/medis
-# postgresql                # https://postgresql.org/
-# mariadb-clients           # https://mariadb.org/
-# aur/wrk                   # https://github.com/wg/wrk
-# go get github.com/wagoodman/dive         # https://github.com/wagoodman/dive
-# go get github.com/smallstep/cli/cmd/step # https://smallstep.com/cli/
-# go get github.com/rakyll/hey             # https://github.com/rakyll/hey
-# go get github.com/smartystreets/goconvey # http://goconvey.co/
-
-## Docker
-docker                      # https://www.docker.com/
-docker-compose              # https://www.docker.com/
-# sudo systemctl enable --now docker
-# sudo usermod -a -G docker $USER
-
-## Kubernetes
-kubectl                     # https://kubernetes.io/docs/reference/kubectl/overview/
-helm                        # https://helm.sh/docs/using_helm/
-aur/octant-bin              # https://github.com/vmware-tanzu/octant
-aur/kubie-bin               # https://github.com/sbstp/kubie
-
-## Virtualization
-qemu                        # https://www.qemu.org/
-edk2-ovmf                   # Required for UEFI support
-ebtables                    # Required for libvirt networking
-# virt-manager              # https://virt-manager.org/
-# gnome-boxes               # https://wiki.gnome.org/Apps/Boxes
-
-## Backup Utils
-# snapper                   # https://wiki.archlinux.org/index.php/Snapper
-# snapper-gui               # https://wiki.archlinux.org/index.php/Snapper#Installation
-# restic                    # https://github.com/restic/restic
-# rclone                      # https://rclone.org/
-
-## Android
-android-tools               # https://sites.google.com/a/android.com/tools/
-android-udev                # https://www.archlinux.org/packages/community/any/android-udev/
+## System utils
+gufw                        # http://gufw.org/
+gparted                     # https://gparted.sourceforge.io/
+veracrypt                   # https://veracrypt.codeplex.com/
+bitwarden                   # https://bitwarden.com/#/
 
 ## Fonts
 terminus-font               # http://terminus-font.sourceforge.net/
 otf-ipafont                 # https://ipafont.ipa.go.jp/
+ttf-monofur                 # https://www.dafont.com/monofur.font
+ttf-hack                    # https://sourcefoundry.org/hack/
 aur/ttf-ms-fonts            # http://corefonts.sourceforge.net/
 aur/ttf-windows             # https://aur.archlinux.org/packages/ttf-windows/
-ttf-monofur                 # https://www.dafont.com/monofur.font
 aur/ttf-monaco              # https://github.com/cstrap/monaco-font
 aur/otf-hasklig             # https://github.com/i-tu/Hasklig
 aur/ttf-fork-awesome        # https://forkaweso.me/Fork-Awesome/
-ttf-hack                    # https://sourcefoundry.org/hack/
-# https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/Hasklig/Regular/complete/Hasklug%20Nerd%20Font%20Complete%20Mono.otf
-# Download to ~/.fonts and run `fc-cache -fv`
-
-## Printer
-cups                        # https://wiki.archlinux.org/index.php/CUPS#Installation
-cups-pdf                    # https://www.cups-pdf.de
-system-config-printer       # http://cyberelk.net/tim/software/system-config-printer/
-# sudo systemctl enable --now org.cups.cupsd.service
-
-## Bluetooth
-blbluez                     # http://www.bluez.org/
-bluez-utils                 # http://www.bluez.org/
-blueberry                   # https://github.com/linuxmint/blueberry
-
-## Encryption
-aur/keybase-bin             # https://keybase.io/
-veracrypt                   # https://veracrypt.codeplex.com/
-bitwarden                   # https://bitwarden.com/#/
-bitwarden-cli               # https://bitwarden.com/#/
-
-## Security
-wireguard-dkms              # https://www.wireguard.com/
-wireguard-tools             # https://www.wireguard.com/
-aur/networkmanager-wireguard-git # https://github.com/max-moser/network-manager-wireguard/
-# gufw                        # http://gufw.org/
-
-## Web & Social
-firefox-developer-edition   # https://www.mozilla.org/en-US/firefox/developer/
-chromium                    # https://stacker.readthedocs.io/en/latest/
-deluge-gtk                  # https://deluge-torrent.org/
-aur/ferdi-bin
-aur/deltachat-desktop
+ttf-nerd-fonts-symbols-mono # https://github.com/ryanoasis/nerd-fonts
+aur/nerd-fonts-hack         # https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/Hack
+aur/nerd-fonts-hasklig      # https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/Hasklig
 
 ## Dictionaries
 hunspell                    # https://hunspell.github.io/
 hunspell-en_GB              # https://hunspell.github.io/
 hunspell-fr                 # https://hunspell.github.io/
-# ln -s /usr/share/hunspell ~/.config/Code/Dictionaries # gives access Dictionaries access to VSCode
 
-python-virtualenv
-pyenv
-pyenv-virtualenv
-
-s-tui
-
-wdiff
-colordiff
-
-libreoffice-fresh
-
-downgrade
-
-# Timeshift vs Snapper
-# Checkout TaskWarrior + vit
-
-playerctl
-
-aur/obsidian-appimage
-
-## Laptop
-libinput-gestures
-gestures
-# sudo usermod -a -G input $USER
-# systemctl --user enable --now libinput-gestures.service
+## Backup Utils
+# snapper                   # https://wiki.archlinux.org/index.php/Snapper
+# snapper-gui               # https://wiki.archlinux.org/index.php/Snapper#Installation
+# timeshit                  # https://github.com/teejee2008/timeshift
+# restic                    # https://github.com/restic/restic
+# rclone                    # https://rclone.org/

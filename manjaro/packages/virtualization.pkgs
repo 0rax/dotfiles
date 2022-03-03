@@ -1,0 +1,17 @@
+#!/usr/bin/env true
+#
+# QEMU / libvirt support virtualization support
+#
+# require:
+#   - pacman (Arch Linux Package Manager)
+#   - yay (AUR Wrapper)
+#       git clone https://aur.archlinux.org/yay-bin.git /tmp/yay; cd /tmp/yay; makepkg -si
+#   - base-devel (meta package)
+#       see https://www.archlinux.org/groups/x86_64/base-devel/
+
+## Virtualization
+qemu                        # https://www.qemu.org/
+edk2-ovmf                   # Required for UEFI support
+ebtables                    # Required for libvirt networking
+virt-manager                # https://virt-manager.org/
+# gnome-boxes               # https://wiki.gnome.org/Apps/Boxes
