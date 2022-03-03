@@ -1,7 +1,8 @@
 #!/usr/bin/env true
 #
-# Kernel & tools required to run linux on the Surface Laptop 3
-# See: https://github.com/linux-surface/linux-surface/wiki/
+# description:
+#   Kernel & tools required to run linux on the Surface Laptop 3
+#   See: https://github.com/linux-surface/linux-surface/wiki/
 #
 # require:
 #   - pacman (Arch Linux Package Manager)

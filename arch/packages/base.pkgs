@@ -1,6 +1,8 @@
 #!/usr/bin/env true
 #
-# Base system with common CLI tools and services
+# description:
+#   Base system with all package not requiring a desktop environment (includes
+#   all basic tools, most cli tools I use daily as well as core system services)
 #
 # require:
 #   - pacman (Arch Linux Package Manager)
@@ -38,13 +40,11 @@ zip                         # http://infozip.sourceforge.net/Zip.html
 unzip                       # http://infozip.sourceforge.net/UnZip.html
 lzop                        # http://www.lzop.org/
 lsof                        # http://people.freebsd.org/~abe/
-htop                        # https://hisham.hm/htop/
 most                        # http://www.jedsoft.org/most/
 ripgrep                     # https://github.com/BurntSushi/ripgrep
 fd                          # https://github.com/sharkdp/fd
 moreutils                   # https://joeyh.name/code/moreutils/
 rhash                       # https://github.com/rhash/RHash
-bottom                      # https://github.com/ClementTsang/bottom
 grc                         # http://kassiopeia.juls.savba.sk/~garabik/software/grc.htm
 wdiff                       # https://www.gnu.org/software/wdiff/
 colordiff                   # https://www.colordiff.org/
@@ -63,11 +63,15 @@ bind-tools                  # https://www.isc.org/downloads/bind/
 whois                       # https://github.com/rfc1036/whois
 traceroute                  # http://traceroute.sourceforge.net/
 tcpdump                     # https://www.archlinux.org/packages/extra/x86_64/tcpdump/
-iftop                       # http://www.ex-parrot.com/pdw/iftop/
 httpie                      # https://httpie.org/
 nmap                        # https://nmap.org/
 aur/prips                   # https://packages.debian.org/stable/net/prips
 ipcalc                      # http://jodies.de/ipcalc
+
+## Monitoring
+htop                        # https://hisham.hm/htop/
+bottom                      # https://github.com/ClementTsang/bottom
+iftop                       # http://www.ex-parrot.com/pdw/iftop/
 
 ## Network management
 networkmanager              # https://networkmanager.dev/
@@ -87,8 +91,3 @@ cups-pdf                    # https://www.cups-pdf.de
 bluez                       # http://www.bluez.org/
 bluez-utils                 # http://www.bluez.org/
 # sudo systemctl enable --now bluetooth.service
-
-## Trackpad gestures
-libinput-gestures
-# sudo usermod -a -G input $USER
-# systemctl --user enable --now libinput-gestures.service

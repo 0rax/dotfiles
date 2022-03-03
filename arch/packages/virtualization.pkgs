@@ -1,6 +1,7 @@
 #!/usr/bin/env true
 #
-# QEMU / libvirt support virtualization support
+# description:
+#   QEMU / libvirt support virtualization support
 #
 # require:
 #   - pacman (Arch Linux Package Manager)

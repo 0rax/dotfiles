@@ -1,6 +1,8 @@
 #!/usr/bin/env true
 #
-# Main applications and resources
+# description:
+#   Main GUI applications and graphical resources to be installed after a desktop
+#   environment has been setup
 #
 # require:
 #   - pacman (Arch Linux Package Manager)
@@ -33,18 +35,12 @@ veracrypt                   # https://veracrypt.codeplex.com/
 bitwarden                   # https://bitwarden.com/#/
 
 ## Fonts
-terminus-font               # http://terminus-font.sourceforge.net/
-otf-ipafont                 # https://ipafont.ipa.go.jp/
-ttf-monofur                 # https://www.dafont.com/monofur.font
 ttf-hack                    # https://sourcefoundry.org/hack/
-aur/ttf-ms-fonts            # http://corefonts.sourceforge.net/
-aur/ttf-windows             # https://aur.archlinux.org/packages/ttf-windows/
-aur/ttf-monaco              # https://github.com/cstrap/monaco-font
+aur/nerd-fonts-hack         # https://github.com/ryanoasis/nerd-fonts/
 aur/otf-hasklig             # https://github.com/i-tu/Hasklig
+aur/nerd-fonts-hasklig      # https://github.com/ryanoasis/nerd-fonts/
 aur/ttf-fork-awesome        # https://forkaweso.me/Fork-Awesome/
 ttf-nerd-fonts-symbols-mono # https://github.com/ryanoasis/nerd-fonts
-aur/nerd-fonts-hack         # https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/Hack
-aur/nerd-fonts-hasklig      # https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/Hasklig
 
 ## Dictionaries
 hunspell                    # https://hunspell.github.io/

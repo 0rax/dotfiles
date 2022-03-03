@@ -1,6 +1,7 @@
 #!/usr/bin/env true
 #
-# Programming & DevOps softwares
+# description:
+#   Programming, system administrator and cloud management softwares
 #
 # require:
 #   - pacman (Arch Linux Package Manager)
@@ -73,13 +74,13 @@ aur/docker-credential-secretservice # https://github.com/docker/docker-credentia
 
 ## AWS
 aws-cli                     # https://github.com/aws/aws-cli
-aur/saml2aws-bin            # https://github.com/Versent/saml2aws
+aur/saml2aws                # https://github.com/Versent/saml2aws
 aur/amazon-ecr-credential-helper # https://github.com/awslabs/amazon-ecr-credential-helper
 
 ## Kubernetes
 kubectl                     # https://kubernetes.io/docs/reference/kubectl/overview/
 helm                        # https://helm.sh/docs/using_helm/
-aur/kubie-bin               # https://github.com/sbstp/kubie
+kubie                       # https://github.com/sbstp/kubie
 aur/octant-bin              # https://github.com/vmware-tanzu/octant
 
 ## Other useful softwares
@@ -89,3 +90,4 @@ aur/octant-bin              # https://github.com/vmware-tanzu/octant
 # https://dbeaver.io/
 # https://github.com/wg/wrk
 # https://github.com/rakyll/hey
+# https://github.com/birdayz/kaf

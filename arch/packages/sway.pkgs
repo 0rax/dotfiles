@@ -1,6 +1,7 @@
 #!/usr/bin/env true
 #
-# Sway / Wayland based desktop environment
+# description:
+#   Sway (Wayland) based personal desktop environment
 #
 # require:
 #   - pacman (Arch Linux Package Manager)
@@ -52,23 +53,28 @@ playerctl                   # [metdia-ctrl    ] https://github.com/altdesktop/pl
 wl-clipboard                # [wl-clipboard   ] https://github.com/bugaevc/wl-clipboard
 xsel                        # [x11-clipboard  ] http://www.vergenet.net/~conrad/software/xsel/
 
-## System settings
-aur/swaysettings-git        # [system-config  ] https://github.com/ErikReider/SwaySettings
-wdisplays                   # [display-manager] https://github.com/artizirk/wdisplays
-nm-connection-editor        # [network-manager] https://networkmanager.dev/
-system-config-printer       # [printer-config ] http://cyberelk.net/tim/software/system-config-printer/
-blueman                     # [bluetooth-cfg  ] https://github.com/blueman-project/blueman
-gestures                    # [gesture-config ] https://gitlab.com/cunidev/gestures
+## UI themes
+matcha-gtk-theme            # [gtk-theme      ] https://github.com/vinceliuice/Matcha-gtk-theme
+papirus-icon-theme          # [icon-theme     ] https://github.com/PapirusDevelopmentTeam/papirus-icon-theme
+xcursor-vanilla-dmz         # [cursor-theme   ] https://www.gnome-look.org/p/999970/
 
 ## Keyring, passwords & certificate
 polkit-gnome                # [polkit-agent   ] https://gitlab.freedesktop.org/polkit/polkit/
 gnome-keyring               # [keyring        ] https://wiki.gnome.org/Projects/GnomeKeyring/
 seahorse                    # [keyring-gui    ] https://wiki.gnome.org/Apps/Seahorse
 
-## UI thmes
-matcha-gtk-theme            # [gtk-theme      ] https://github.com/vinceliuice/Matcha-gtk-theme
-papirus-icon-theme          # [icon-theme     ] https://github.com/PapirusDevelopmentTeam/papirus-icon-theme
-xcursor-vanilla-dmz         # [cursor-theme   ] https://www.gnome-look.org/p/999970/
+## System settings
+aur/swaysettings-git        # [system-config  ] https://github.com/ErikReider/SwaySettings
+wdisplays                   # [display-manager] https://github.com/artizirk/wdisplays
+nm-connection-editor        # [network-manager] https://networkmanager.dev/
+system-config-printer       # [printer-config ] http://cyberelk.net/tim/software/system-config-printer/
+blueman                     # [bluetooth-cfg  ] https://github.com/blueman-project/blueman
+
+## Trackpad gestures support
+libinput-gestures           # [gestures-daemon] https://github.com/bulletmark/libinput-gestures
+gestures                    # [gestures-config] https://gitlab.com/cunidev/gestures
+# sudo usermod -a -G input $USER
+# systemctl --user enable --now libinput-gestures.service
 
 # Alternatives:
 #  - image viewer:    eog        [gnome]
