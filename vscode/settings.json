@@ -108,9 +108,6 @@
         "editor.defaultFormatter": "esbenp.prettier-vscode",
         "editor.formatOnSave": true
     },
-    "[dockerfile]": {
-        "editor.defaultFormatter": "ms-azuretools.vscode-docker"
-    },
     "[dockercompose]": {
         "editor.insertSpaces": true,
         "editor.tabSize": 2,
@@ -145,7 +142,7 @@
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "[fish]": {
-        "editor.insertSpaces": true,
+        "editor.insertSpaces": false,
         "editor.tabSize": 4
     },
     "[mjml]": {

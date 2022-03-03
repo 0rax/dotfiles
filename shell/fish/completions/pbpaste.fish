@@ -1,6 +1,4 @@
 #!/usr/bin/env fish
 # -*-  mode:fish; tab-width:4  -*-
 
-function lsroute
-	netstat -nr $argv
-end
+complete -c pbpaste -w wl-paste

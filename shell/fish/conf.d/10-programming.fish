@@ -5,54 +5,46 @@
 # ---  Programming  ------------------------------------------------------------
 # ------------------------------------------------------------------------------
 
-# # ---  Programming/Fluff  ------------------------------------------------------
+# ---  Programming/Fluff  ------------------------------------------------------
 
-# if test -d $HOME/.local/bin
-#     set -gx PATH   $HOME/.local/bin $PATH
-# end
-
-# ---  Programming/Docker [Windows]  -------------------------------------------
-
-if uname -r | grep -q Microsoft
-    set -gx DOCKER_HOST tcp://localhost:2375
+if test -d $HOME/.local/bin; and not contains $HOME/.local/bin $PATH
+	set -p PATH $HOME/.local/bin
 end
 
 # ---  Programming/Golang  -----------------------------------------------------
 
 if test -d /usr/local/go
-    set -gx GOROOT /usr/local/go
-    set -gx PATH   $PATH $GOROOT/bin
+	set GOROOT /usr/local/go
+	set -a PATH $GOROOT/bin
 end
 
-if test -d $HOME/Projects/Go
-    set -gx GOPATH $HOME/Projects/Go
-    set -gx PATH   $PATH $GOPATH/bin
-else if test -d $HOME/projects/Go
-    set -gx GOPATH $HOME/projects/Go
-    set -gx PATH   $PATH $GOPATH/bin
-else if test -d $HOME/projects/go
-    set -gx GOPATH $HOME/projects/go
-    set -gx PATH   $PATH $GOPATH/bin
+if test -d $HOME/projects/go
+	set GOPATH $HOME/projects/go
+else if test -d $HOME/Projects/go
+	set GOPATH $HOME/Projects/go
 else if test -d $HOME/go
-    set -gx GOPATH $HOME/go
-    set -gx PATH   $PATH $GOPATH/bin
+	set GOPATH $HOME/go
+end
+
+if set -q GOPATH and not contains $GOPATH/bin $PATH
+	set -p PATH $GOPATH/bin
 end
 
 # ---  Programming/NodeJS  -----------------------------------------------------
 
-if test -d $HOME/.yarn/bin
-    set -gx PATH $HOME/.yarn/bin $PATH
+if test -d $HOME/.yarn/bin; and not contains $HOME/.yarn/bin $PATH
+	set -p PATH $HOME/.yarn/bin
 end
 
 # ---  Programming/Python  -----------------------------------------------------
 
 if type -q pyenv; and status is-login
-    source (pyenv init --path | psub)
+	source (pyenv init --path | psub)
 end
 
 if type -q pyenv; and status is-interactive
-    source (pyenv init - | psub)
-    source (pyenv virtualenv-init - | psub)
+	source (pyenv init - | psub)
+	source (pyenv virtualenv-init - | psub)
 end
 
 # ------------------------------------------------------------------------------

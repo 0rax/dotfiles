@@ -8,7 +8,7 @@
 # ---  Colors/MINIMAL_SHELL  ---------------------------------------------------
 
 # Check if running in a TTY and load tty-compatible theme instead
-if [ (uname) != "Darwin" ]; and tty | grep tty > /dev/null
+if tty | grep tty > /dev/null
     # Load tty-compatible theme from fishline
     source $FLINE_PATH/themes/tty_compatible.fish
     # Don't apply custom theme

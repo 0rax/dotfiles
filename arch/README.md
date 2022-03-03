@@ -1,4 +1,4 @@
-# Arch Linux Setup
+# Arch Linux / Manjaro
 
 ## Packages
 
