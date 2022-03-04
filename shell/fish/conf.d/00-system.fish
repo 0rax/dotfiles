@@ -39,11 +39,11 @@ set -gx FISH_CONFD_PATH  $FISH_CONFIG_PATH/conf.d
 set -p fish_function_path $FISH_ALIAS_PATH
 
 if test -d /usr/local/share/fish/vendor_functions.d
-	set -a fish_function_path /usr/local/share/fish/vendor_functions.d
+    set -a fish_function_path /usr/local/share/fish/vendor_functions.d
 end
 
 if test -d /usr/local/share/fish/vendor_completions.d
-	set -a fish_complete_path /usr/local/share/fish/vendor_completions.d
+    set -a fish_complete_path /usr/local/share/fish/vendor_completions.d
 end
 
 # ------------------------------------------------------------------------------

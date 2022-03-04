@@ -366,7 +366,6 @@
     "p:0:chat.rich.all-links": false,
     "p:0:chat.rich.enabled": false,
     "p:0:chat.rich.want-mid": false,
-    "p:0:chat.scroller.freeze": 1,
     "p:0:chat.sub-emotes": false,
     "p:0:chat.subs.compact": false,
     "p:0:chat.subs.gift-banner": true,
