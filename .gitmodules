@@ -10,6 +10,3 @@
 [submodule "fish/plugins/z"]
 	path = shell/fish/plugins/z
 	url = https://github.com/jethrokuan/z
-[submodule "fish/plugins/awsenv.fish"]
-	path = shell/fish/plugins/awsenv
-	url = https://github.com/0rax/awsenv.fish.git

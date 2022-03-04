@@ -1,1 +1,0 @@
-../plugins/awsenv/functions/__flseg_awsenv.fish

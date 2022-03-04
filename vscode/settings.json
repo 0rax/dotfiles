@@ -142,7 +142,7 @@
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "[fish]": {
-        "editor.insertSpaces": false,
+        "editor.insertSpaces": true,
         "editor.tabSize": 4
     },
     "[mjml]": {
