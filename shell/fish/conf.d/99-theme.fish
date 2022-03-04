@@ -5,34 +5,30 @@
 # ---  Fish & Fishline Theme  --------------------------------------------------
 # ------------------------------------------------------------------------------
 
-# ---  Colors/MINIMAL_SHELL  ---------------------------------------------------
-
-# Check if running in a TTY and load tty-compatible theme instead
+# Do not set custom theme when running on a TTY
 if tty | grep tty > /dev/null
-    # Load tty-compatible theme from fishline
-    source $FLINE_PATH/themes/tty_compatible.fish
-    # Don't apply custom theme
     exit
 end
 
-# ---  ColorSet/Base-16 - Eighties ---------------------------------------------
+# ---  ColorSet/Base-16 - Oceanic Next -----------------------------------------
 
-set -l __base_16_00 2d2d2d
-set -l __base_16_01 393939
-set -l __base_16_02 515151
-set -l __base_16_03 747369
-set -l __base_16_04 a09f93
-set -l __base_16_05 d3d0c8
-set -l __base_16_06 e8e6df
-set -l __base_16_07 f2f0ec
-set -l __base_16_08 f2777a
-set -l __base_16_09 f99157
-set -l __base_16_0A ffcc66
-set -l __base_16_0B 99cc99
-set -l __base_16_0C 66cccc
-set -l __base_16_0D 6699cc
-set -l __base_16_0E cc99cc
-set -l __base_16_0F d27b53
+
+set -l __base_16_00 1B2B34
+set -l __base_16_01 343D46
+set -l __base_16_02 4F5B66
+set -l __base_16_03 65737E
+set -l __base_16_04 A7ADBA
+set -l __base_16_05 C0C5CE
+set -l __base_16_06 CDD3DE
+set -l __base_16_07 D8DEE9
+set -l __base_16_08 EC5f67
+set -l __base_16_09 F99157
+set -l __base_16_0A FAC863
+set -l __base_16_0B 99C794
+set -l __base_16_0C 5FB3B3
+set -l __base_16_0D 6699CC
+set -l __base_16_0E C594C5
+set -l __base_16_0F AB7967
 
 # ---  Colors/Fish-Shell  ------------------------------------------------------
 
@@ -60,60 +56,60 @@ set -U fish_color_history_current       $__base_16_09
 # ---  Colors/Fishline  --------------------------------------------------------
 
 # Color for PWD and FULLPWD segment
-set -g FLCLR_PWD_BG_HOME       $__base_16_0D
-set -g FLCLR_PWD_FG_HOME       $__base_16_07
-set -g FLCLR_PWD_BG            $__base_16_02
-set -g FLCLR_PWD_FG            $__base_16_07
-set -g FLCLR_FULLPWD_BG        $FLCLR_PWD_BG
-set -g FLCLR_FULLPWD_FG        $FLCLR_PWD_FG
+set FLCLR_PWD_BG_HOME       $__base_16_0D
+set FLCLR_PWD_FG_HOME       $__base_16_07
+set FLCLR_PWD_BG            $__base_16_02
+set FLCLR_PWD_FG            $__base_16_07
+set FLCLR_FULLPWD_BG        $FLCLR_PWD_BG
+set FLCLR_FULLPWD_FG        $FLCLR_PWD_FG
 
 # Color for STATUS segment
-set -g FLCLR_STATUS_BG         $__base_16_08
-set -g FLCLR_STATUS_FG         $__base_16_01
+set FLCLR_STATUS_BG         $__base_16_08
+set FLCLR_STATUS_FG         $__base_16_01
 
 # Color for WRITE segment
-set -g FLCLR_WRITE_BG          $__base_16_08
-set -g FLCLR_WRITE_FG          $__base_16_01
+set FLCLR_WRITE_BG          $__base_16_08
+set FLCLR_WRITE_FG          $__base_16_01
 
 # Color for ARROW  segment
-set -g FLCLR_ARROW_BG          $FLCLR_PWD_BG
-set -g FLCLR_ARROW_FG          $FLCLR_PWD_FG
+set FLCLR_ARROW_BG          $FLCLR_PWD_BG
+set FLCLR_ARROW_FG          $FLCLR_PWD_FG
 
 # Color for ROOT segment
-set -g FLCLR_ROOT_BG_USER      $FLCLR_PWD_BG
-set -g FLCLR_ROOT_FG_USER      $FLCLR_PWD_FG
-set -g FLCLR_ROOT_BG_ROOT      $__base_16_05
-set -g FLCLR_ROOT_FG_ROOT      $__base_16_01
+set FLCLR_ROOT_BG_USER      $FLCLR_PWD_BG
+set FLCLR_ROOT_FG_USER      $FLCLR_PWD_FG
+set FLCLR_ROOT_BG_ROOT      $__base_16_05
+set FLCLR_ROOT_FG_ROOT      $__base_16_01
 
 # Color for VFISH  segment
-set -g FLCLR_VFISH_BG          $__base_16_0B
-set -g FLCLR_VFISH_FG          $__base_16_01
+set FLCLR_VFISH_BG          $__base_16_0B
+set FLCLR_VFISH_FG          $__base_16_01
 
 # Color for GIT segment
-set -g FLCLR_GIT_BG_CLEAN      $__base_16_0A
-set -g FLCLR_GIT_FG_CLEAN      $__base_16_01
-set -g FLCLR_GIT_BG_DIRTY      $__base_16_09
-set -g FLCLR_GIT_FG_DIRTY      $__base_16_01
-set -g FLCLR_GIT_BG_DETACHED   $__base_16_08
-set -g FLCLR_GIT_FG_DETACHED   $__base_16_01
+set FLCLR_GIT_BG_CLEAN      $__base_16_0A
+set FLCLR_GIT_FG_CLEAN      $__base_16_01
+set FLCLR_GIT_BG_DIRTY      $__base_16_09
+set FLCLR_GIT_FG_DIRTY      $__base_16_01
+set FLCLR_GIT_BG_DETACHED   $__base_16_08
+set FLCLR_GIT_FG_DETACHED   $__base_16_01
 
 # Color for CLOCK segment
-set -g FLCLR_CLOCK_BG          $__base_16_0D
-set -g FLCLR_CLOCK_FG          $__base_16_07
+set FLCLR_CLOCK_BG          $__base_16_0D
+set FLCLR_CLOCK_FG          $__base_16_07
 
 # Color for USERHOST segment
-set -g FLCLR_USERHOST_BG       $__base_16_0F
-set -g FLCLR_USERHOST_FG       $__base_16_01
+set FLCLR_USERHOST_BG       $__base_16_0F
+set FLCLR_USERHOST_FG       $__base_16_01
 
 # Color for JOBS segment
-set -g FLCLR_JOBS_BG           $__base_16_0A
-set -g FLCLR_JOBS_FG           $__base_16_01
+set FLCLR_JOBS_BG           $__base_16_0A
+set FLCLR_JOBS_FG           $__base_16_01
 
 # ---  Symbols/Fishline  -------------------------------------------------------
 
 # Symbols for VFISH segment
-set -g FLSYM_VFISH             "\ue73c "
-set -g FLSYM_GIT_BRANCH        "\ue725 "
+set FLSYM_VFISH             "\ue73c "
+set FLSYM_GIT_BRANCH        "\ue725 "
 
 # ------------------------------------------------------------------------------
 # ---  END  --------------------------------------------------------------------
