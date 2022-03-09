@@ -1,0 +1,17 @@
+#!/usr/bin/env true
+#
+# description:
+#   Btrfs timed backup using snapper
+#
+# require:
+#   - pacman (Arch Linux Package Manager)
+#   - yay (AUR Wrapper)
+#       git clone https://aur.archlinux.org/yay-bin.git /tmp/yay; cd /tmp/yay; makepkg -si
+#   - base-devel (meta package)
+#       see https://www.archlinux.org/groups/x86_64/base-devel/
+
+## Snapper
+snapper                     # http://snapper.io/
+aur/snapper-gui-git         # https://github.com/ricardomv/snapper-gui
+# sudo systemctl enable --now snapper-timeline.timer
+# sudo systemctl enable --now snapper-cleanup.timer

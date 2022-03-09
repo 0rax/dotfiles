@@ -5,7 +5,7 @@
 ### Install packages from a file
 
 ```sh
-sed 's/^#.*//;s/\s*#.*$//;/^$/d' packages/file.pkgs | xargs -o yay -S
+cut -d# -f1 packages/file.pkgs | sed '/^$/d' | xargs -o yay -S --needed
 ```
 
 ### List explicitly installed packages

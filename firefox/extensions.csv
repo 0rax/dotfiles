@@ -3,7 +3,6 @@ Librefox Reload/Refresh Button Url Bar,librefox.reload.button@intika.be,extensio
 CodeCopy,codecopy@clipboardjs.com,extension,true,https://github.com/zenorocha/codecopy
 Disable WebRTC,jid1-5Fs7iTLscUaZBgwr@jetpack,extension,true,
 Dictionnaire français,fr-dicollecte@dictionaries.addons.mozilla.org,dictionary,true,https://grammalecte.net
-IndicateTLS,{252ee273-8c8d-4609-b54d-62ae345be0a1},extension,true,https://github.com/jannispinter/indicatetls
 Arc Darker Theme,arc-darker-theme@afnankhan,theme,false,
 JavaScript Toggle On and Off,{479f0278-2c34-4365-b9f0-1d328d0f0a40},extension,true,https://add0n.com/javascript-toggler.html
 Always Right,jid0-SzimoL45Ib8OddgoUBG0buQmjec@jetpack,extension,true,
@@ -13,7 +12,7 @@ Violentmonkey,{aecec67f-0d10-4fa7-b7c7-609a2db280cf},extension,true,https://viol
 Arc Dark Theme,arc-dark-theme@afnankhan,theme,true,
 HTTPS Everywhere,https-everywhere@eff.org,extension,true,https://www.eff.org/https-everywhere
 Stylus,{7a7a4a92-a2a0-41d1-9fd7-1e92480d612d},extension,true,https://add0n.com/stylus.html
-Gitako - GitHub file tree,{983bd86b-9d6f-4394-92b8-63d844c4ce4c},extension,true,https://github.com/EnixCoda/Gitako
+Gitako - GitHub file tree,{983bd86b-9d6f-4394-92b8-63d844c4ce4c},extension,false,https://github.com/EnixCoda/Gitako
 English United States Dictionary,@unitedstatesenglishdictionary,dictionary,true,
 OctoLinker,octolinker@stefanbuck.com,extension,false,https://octolinker.now.sh/
 Firefox Multi-Account Containers,@testpilot-containers,extension,true,https://github.com/mozilla/multi-account-containers#readme

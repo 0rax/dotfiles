@@ -1,0 +1,19 @@
+#!/usr/bin/env true
+#
+# description:
+#   Printer support & configuration application
+#
+# require:
+#   - pacman (Arch Linux Package Manager)
+#   - yay (AUR Wrapper)
+#       git clone https://aur.archlinux.org/yay-bin.git /tmp/yay; cd /tmp/yay; makepkg -si
+#   - base-devel (meta package)
+#       see https://www.archlinux.org/groups/x86_64/base-devel/
+
+## Printer Server Daemon
+cups                        # https://wiki.archlinux.org/index.php/CUPS#Installation
+cups-pdf                    # https://www.cups-pdf.de
+# sudo systemctl enable --now cups.service
+
+## Configurator
+system-config-printer       # http://cyberelk.net/tim/software/system-config-printer/

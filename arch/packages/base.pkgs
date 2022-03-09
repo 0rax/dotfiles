@@ -53,12 +53,12 @@ pwgen                       # https://pwgen.sourceforge.io/
 keychain                    # https://www.funtoo.org/Keychain
 bat                         # https://github.com/sharkdp/bat
 jq                          # https://stedolan.github.io/jq/
-aur/xsv                     # https://github.com/BurntSushi/xsv
+aur/xsv-bin                 # https://github.com/BurntSushi/xsv
 
 ## Network utils
 wget                        # https://www.gnu.org/software/wget/
 curl                        # https://curl.se/
-net-tools                   # http://net-tools.sourceforge.net/
+net-tools                   # !DEPRECATED! # http://net-tools.sourceforge.net/
 bind-tools                  # https://www.isc.org/downloads/bind/
 whois                       # https://github.com/rfc1036/whois
 traceroute                  # http://traceroute.sourceforge.net/
@@ -67,27 +67,12 @@ httpie                      # https://httpie.org/
 nmap                        # https://nmap.org/
 aur/prips                   # https://packages.debian.org/stable/net/prips
 ipcalc                      # http://jodies.de/ipcalc
+wireguard-tools             # https://www.wireguard.com/
 
 ## Monitoring
 htop                        # https://hisham.hm/htop/
 bottom                      # https://github.com/ClementTsang/bottom
 iftop                       # http://www.ex-parrot.com/pdw/iftop/
-
-## Network management
-networkmanager              # https://networkmanager.dev/
-wireguard-dkms              # https://www.wireguard.com/
-wireguard-tools             # https://www.wireguard.com/
-aur/networkmanager-wireguard-git # https://github.com/max-moser/network-manager-wireguard/
-ufw                         # https://launchpad.net/ufw
-# sudo systemctl enable --now networkmanager.service
-# sudo systemctl enable --now ufw.service
-
-## Printer
-cups                        # https://wiki.archlinux.org/index.php/CUPS#Installation
-cups-pdf                    # https://www.cups-pdf.de
-# sudo systemctl enable --now cups.service
-
-## Bluetooth
-bluez                       # http://www.bluez.org/
-bluez-utils                 # http://www.bluez.org/
-# sudo systemctl enable --now bluetooth.service
+acpi                        # https://sourceforge.net/projects/acpiclient/
+inxi                        # https://smxi.org/docs/inxi.htm
+lm_sensors                  # https://hwmon.wiki.kernel.org/lm_sensors

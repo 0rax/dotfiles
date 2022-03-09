@@ -10,7 +10,7 @@
 #   - base-devel (meta package)
 #       see https://www.archlinux.org/groups/x86_64/base-devel/
 
-## Seesion manager
+## Session manager
 aur/ly                      # [session-manager] https://github.com/fairyglade/ly
 # sudo systemctl disable getty@tty2.service
 # sudo systemctl enable ly.service
@@ -32,29 +32,46 @@ dex                         # [autostart-xdg  ] https://github.com/jceb/dex
 gammastep                   # [gamma-ctrl     ] https://gitlab.com/chinstrap/gammastep
 kanshi                      # [display-profile] https://github.com/emersion/kanshi
 
+## Sound
+pipewire                    # [sound-server   ] https://pipewire.org/
+wireplumber                 # [sound-session  ] https://pipewire.pages.freedesktop.org/wireplumber/
+pipewire-pulse              # [pulse-support  ] https://pipewire.org/
+pipewire-jack               # [jack2-support  ] https://pipewire.org/
+
 ## Base applications
 alacritty                   # [terminal       ] https://alacritty.org/
 thunar                      # [file-manager   ] https://docs.xfce.org/xfce/thunar/
-thunar-volman               # [volume-manager ] https://docs.xfce.org/xfce/thunar/thunar-volman
-tumbler                     # [thumbnailer    ] https://docs.xfce.org/xfce/thunar/4.14/tumbler
+thunar-volman               # [thunar-plugin  ] https://docs.xfce.org/xfce/thunar/thunar-volman
+thunar-archive-plugin       # [thunar-plugin  ] https://docs.xfce.org/xfce/thunar/archive
+tumbler                     # [thunar-thumb   ] https://docs.xfce.org/xfce/thunar/4.14/tumbler
 ristretto                   # [image-viewer   ] https://docs.xfce.org/apps/ristretto/
 atril                       # [document-viewer] https://wiki.mate-desktop.org/mate-desktop/applications/atril/
 celluloid                   # [media-player   ] https://celluloid-player.github.io/
 gnome-calculator            # [calculator     ] https://wiki.gnome.org/Apps/Calculator
 file-roller                 # [archive-manager] https://wiki.gnome.org/Apps/FileRoller
 
+## Virtual filesystems (usermount, trash, ...)
+gvfs                        # [userspave-vfs  ] https://wiki.gnome.org/Projects/gvfs
+gvfs-samba                  # [vfs-samba      ] https://wiki.gnome.org/Projects/gvfs
+gvfs-nfs                    # [vfs-nfs        ] https://wiki.gnome.org/Projects/gvfs
+
 ## CLI utils
 grim                        # [screenshotter  ] https://github.com/emersion/grim
 slurp                       # [screen-region  ] https://github.com/emersion/slurp
 swappy                      # [image-annotator] https://github.com/jtheoof/swappy
-grimshot                    # [screenshot-wrap] https://github.com/swaywm/sway/blob/master/contrib/grimshot
+aur/grimshot                # [screenshot-wrap] https://github.com/swaywm/sway/blob/master/contrib/grimshot
 brightnessctl               # [brightness-ctrl] https://github.com/Hummer12007/brightnessctl
 playerctl                   # [metdia-ctrl    ] https://github.com/altdesktop/playerctl
 wl-clipboard                # [wl-clipboard   ] https://github.com/bugaevc/wl-clipboard
 xsel                        # [x11-clipboard  ] http://www.vergenet.net/~conrad/software/xsel/
 
+## Fonts
+noto-fonts                  # [system-font    ] https://fonts.google.com/noto
+ttf-hack                    # [mono-font      ] https://sourcefoundry.org/hack/
+aur/ttf-fork-awesome        # [iconic-font    ] https://forkaweso.me/Fork-Awesome/
+
 ## UI themes
-matcha-gtk-theme            # [gtk-theme      ] https://github.com/vinceliuice/Matcha-gtk-theme
+aur/matcha-gtk-theme        # [gtk-theme      ] https://github.com/vinceliuice/Matcha-gtk-theme
 papirus-icon-theme          # [icon-theme     ] https://github.com/PapirusDevelopmentTeam/papirus-icon-theme
 xcursor-vanilla-dmz         # [cursor-theme   ] https://www.gnome-look.org/p/999970/
 
@@ -64,21 +81,23 @@ gnome-keyring               # [keyring        ] https://wiki.gnome.org/Projects/
 seahorse                    # [keyring-gui    ] https://wiki.gnome.org/Apps/Seahorse
 
 ## System settings
+accountsservice             # [config-deps    ] https://gitlab.freedesktop.org/accountsservice/accountsservice
 aur/swaysettings-git        # [system-config  ] https://github.com/ErikReider/SwaySettings
-wdisplays                   # [display-manager] https://github.com/artizirk/wdisplays
+aur/wdisplays               # [display-manager] https://github.com/artizirk/wdisplays
 nm-connection-editor        # [network-manager] https://networkmanager.dev/
-system-config-printer       # [printer-config ] http://cyberelk.net/tim/software/system-config-printer/
-blueman                     # [bluetooth-cfg  ] https://github.com/blueman-project/blueman
+pavucontrol                 # [audio-manager  ] https://freedesktop.org/software/pulseaudio/pavucontrol/
 
 ## Trackpad gestures support
-libinput-gestures           # [gestures-daemon] https://github.com/bulletmark/libinput-gestures
-gestures                    # [gestures-config] https://gitlab.com/cunidev/gestures
+aur/libinput-gestures       # [gestures-daemon] https://github.com/bulletmark/libinput-gestures
+aur/gestures                # [gestures-config] https://gitlab.com/cunidev/gestures
 # sudo usermod -a -G input $USER
 # systemctl --user enable --now libinput-gestures.service
 
 # Alternatives:
 #  - image viewer:    eog        [gnome]
 #  - document viewer: evince     [gnome]
+#  - document viewer: okular     [kde]
+#  - document viewer: xreader    [mint]
 #  - calculator:      galculator [gtk]
 #  - archive manager: xarchiver  [gtk]
 #  - media player:    vlc

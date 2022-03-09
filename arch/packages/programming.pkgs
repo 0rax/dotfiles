@@ -48,7 +48,7 @@ python                      # https://docs.python.org/3/index.html
 python-pip                  # https://github.com/o2sh/onefetch
 pyenv                       # https://github.com/pyenv/pyenv
 python-virtualenv           # https://virtualenv.pypa.io/en/latest/
-pyenv-virtualenv            # https://github.com/pyenv/pyenv-virtualenv
+aur/pyenv-virtualenv        # https://github.com/pyenv/pyenv-virtualenv
 
 ## Text Processing
 texlive-most                # [meta] https://tug.org/texlive/

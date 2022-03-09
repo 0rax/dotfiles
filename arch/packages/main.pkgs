@@ -14,9 +14,8 @@
 ## Web
 firefox-developer-edition   # https://www.mozilla.org/en-US/firefox/developer/
 chromium                    # https://stacker.readthedocs.io/en/latest/
-aur/keybase-bin             # https://keybase.io/
 aur/ferdi-bin               # https://github.com/getferdi/ferdi/
-aur/deltachat-desktop       # https://delta.chat/en/download
+aur/keybase-bin             # https://keybase.io/
 
 ## Media
 aur/spotify                 # https://www.spotify.com/
@@ -29,18 +28,15 @@ gimp                        # http://www.gimp.org/
 inkscape                    # https://inkscape.org/
 
 ## System utils
-gufw                        # http://gufw.org/
 gparted                     # https://gparted.sourceforge.io/
 veracrypt                   # https://veracrypt.codeplex.com/
 bitwarden                   # https://bitwarden.com/#/
 
 ## Fonts
-ttf-hack                    # https://sourcefoundry.org/hack/
-aur/nerd-fonts-hack         # https://github.com/ryanoasis/nerd-fonts/
+gnome-font-viewer           # https://gitlab.gnome.org/GNOME/gnome-font-viewer
 aur/otf-hasklig             # https://github.com/i-tu/Hasklig
+aur/nerd-fonts-hack         # https://github.com/ryanoasis/nerd-fonts/
 aur/nerd-fonts-hasklig      # https://github.com/ryanoasis/nerd-fonts/
-aur/ttf-fork-awesome        # https://forkaweso.me/Fork-Awesome/
-ttf-nerd-fonts-symbols-mono # https://github.com/ryanoasis/nerd-fonts
 
 ## Dictionaries
 hunspell                    # https://hunspell.github.io/
