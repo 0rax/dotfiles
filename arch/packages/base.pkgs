@@ -54,6 +54,7 @@ keychain                    # https://www.funtoo.org/Keychain
 bat                         # https://github.com/sharkdp/bat
 jq                          # https://stedolan.github.io/jq/
 aur/xsv-bin                 # https://github.com/BurntSushi/xsv
+aur/patool                  # https://wummel.github.io/patool/
 
 ## Network utils
 wget                        # https://www.gnu.org/software/wget/

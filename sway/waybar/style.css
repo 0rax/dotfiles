@@ -142,3 +142,13 @@ window#waybar {
     color: @base01;
     padding-left: 5px;
 }
+
+#temperature {
+    background-color: @base09;
+    color: @base01;
+}
+
+#temperature.critical {
+    background-color: @base08;
+    color: @base01;
+}

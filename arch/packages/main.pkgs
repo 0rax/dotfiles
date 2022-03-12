@@ -23,7 +23,7 @@ aur/spotify                 # https://www.spotify.com/
 ## File editors
 aur/visual-studio-code-bin  # https://code.visualstudio.com/
 libreoffice-fresh           # https://www.libreoffice.org/
-aur/obsidian-appimage       # https://obsidian.md/
+obsidian                    # https://obsidian.md/
 gimp                        # http://www.gimp.org/
 inkscape                    # https://inkscape.org/
 
@@ -34,6 +34,7 @@ bitwarden                   # https://bitwarden.com/#/
 
 ## Fonts
 gnome-font-viewer           # https://gitlab.gnome.org/GNOME/gnome-font-viewer
+inter-font                  # https://github.com/rsms/inter/
 aur/otf-hasklig             # https://github.com/i-tu/Hasklig
 aur/nerd-fonts-hack         # https://github.com/ryanoasis/nerd-fonts/
 aur/nerd-fonts-hasklig      # https://github.com/ryanoasis/nerd-fonts/

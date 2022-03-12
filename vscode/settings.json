@@ -150,6 +150,10 @@
         "editor.tabSize": 2,
         "editor.defaultFormatter": "attilabuti.vscode-mjml"
     },
+    "[ssh_config]": {
+      "editor.insertSpaces": false,
+      "editor.tabSize": 4
+    },
     // === Addons ===
     "amVim.bindCtrlCommands": false,
     "better-comments.multilineComments": true,
@@ -275,5 +279,22 @@
     "errorLens.statusBarIconsEnabled": false,
     "errorLens.statusBarColorsEnabled": true,
     "errorLens.statusBarIconsUseBackground": false,
+    "shellcheck.ignorePatterns": {
+      "**/*.xonshrc": true,
+      "**/*.xsh": true,
+      "**/*.zsh": true,
+      "**/*.zshrc": true,
+      "**/zshrc": true,
+      "**/*.zprofile": true,
+      "**/zprofile": true,
+      "**/*.zlogin": true,
+      "**/zlogin": true,
+      "**/*.zlogout": true,
+      "**/zlogout": true,
+      "**/*.zshenv": true,
+      "**/zshenv": true,
+      "**/*.zsh-theme": true,
+      "**/PKGBUILD": true
+    },
     // === End of file ===
 }

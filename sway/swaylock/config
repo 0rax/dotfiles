@@ -1,4 +1,4 @@
-ignore-empty-password
+# ignore-empty-password
 grace=0
 grace-no-mouse
 grace-no-touch

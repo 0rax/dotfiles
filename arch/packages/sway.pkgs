@@ -93,11 +93,11 @@ aur/gestures                # [gestures-config] https://gitlab.com/cunidev/gestu
 # sudo usermod -a -G input $USER
 # systemctl --user enable --now libinput-gestures.service
 
-# Alternatives:
-#  - image viewer:    eog        [gnome]
-#  - document viewer: evince     [gnome]
-#  - document viewer: okular     [kde]
-#  - document viewer: xreader    [mint]
-#  - calculator:      galculator [gtk]
-#  - archive manager: xarchiver  [gtk]
-#  - media player:    vlc
+## Alternatives:
+# - image viewer:    eog        [gnome]
+# - document viewer: evince     [gnome]
+# - document viewer: okular     [kde]
+# - document viewer: xreader    [mint]
+# - calculator:      galculator [gtk]
+# - archive manager: xarchiver  [gtk]
+# - media player:    vlc

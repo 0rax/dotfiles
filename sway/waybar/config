@@ -13,6 +13,7 @@
         "cpu",
         "memory",
         "disk",
+        "temperature",
         "network",
         "pulseaudio",
         "battery",
@@ -119,15 +120,18 @@
         "on-click-middle": "pulseaudio-ctl mute"
     },
     "cpu": {
-        "format": " {usage}%",
-        "tooltip": true
+        "format": " {usage}%"
     },
     "memory": {
-        "format": " {}%"
+        "format": " {percentage}%"
     },
     "disk": {
         "interval": 30,
         "format": " {percentage_used}%",
         "path": "/"
+    },
+    "temperature": {
+      "critical-threshold": 80,
+      "format": " {temperatureC}°C"
     }
 }

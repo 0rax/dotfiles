@@ -1,0 +1,20 @@
+#!/usr/bin/env true
+#
+# description:
+#   Windows emulation using Wine
+#
+# require:
+#   - pacman (Arch Linux Package Manager)
+#   - yay (AUR Wrapper)
+#       git clone https://aur.archlinux.org/yay-bin.git /tmp/yay; cd /tmp/yay; makepkg -si
+#   - base-devel (meta package)
+#       see https://www.archlinux.org/groups/x86_64/base-devel/
+
+## Wine
+multilib/wine-staging       # Require downgrade to 7.2 # https://www.winehq.org/
+community/wine-mono         # Mono dlls  # https://www.winehq.org/
+community/wine-gecko        # Gecko dlls # https://www.winehq.org/
+
+## Bottles
+aur/bottles                 # https://github.com/bottlesdevs/Bottles
+xfce4-terminal              # Bottles terminal (data : ~/.config/xfce4/)

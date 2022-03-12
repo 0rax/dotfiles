@@ -1,0 +1,26 @@
+#!/usr/bin/env true
+#
+# description:
+#   EDA and PCB manufacturing softwares
+#
+# require:
+#   - pacman (Arch Linux Package Manager)
+#   - yay (AUR Wrapper)
+#       git clone https://aur.archlinux.org/yay-bin.git /tmp/yay; cd /tmp/yay; makepkg -si
+#   - base-devel (meta package)
+#       see https://www.archlinux.org/groups/x86_64/base-devel/
+
+## EDA
+kicad                       # http://kicad.org/
+kicad-library               # http://kicad.org/
+kicad-library-3d            # http://kicad.org/
+aur/eagle                   # https://www.autodesk.fr/products/eagle/
+aur/easyeda-bin             # https://easyeda.com/
+aur/easyeda-router          # https://easyeda.com/
+# systemctl start easyeda-router
+
+## Alternatives:
+# - Alitum CircuitMaker
+# - Fritzing
+# - LibrePCB
+# - Horizon EDA
