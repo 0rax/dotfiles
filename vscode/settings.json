@@ -221,7 +221,6 @@
     "go.removeTags": {
         "promptForTags": true
     },
-    "go.buildTags": "integration",
     "groupImports.onSave": true,
     "yaml.format.enable": false,
     "yaml.customTags": [
