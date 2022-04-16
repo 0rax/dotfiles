@@ -1,0 +1,6 @@
+hide_scroll=true
+term=alacritty
+insensitive=true
+columns=1
+layer=overlay
+dynamic_lines=true

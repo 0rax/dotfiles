@@ -77,3 +77,4 @@ iftop                       # http://www.ex-parrot.com/pdw/iftop/
 acpi                        # https://sourceforge.net/projects/acpiclient/
 inxi                        # https://smxi.org/docs/inxi.htm
 lm_sensors                  # https://hwmon.wiki.kernel.org/lm_sensors
+usbutils                    # http://www.linux-usb.org/

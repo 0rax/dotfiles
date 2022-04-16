@@ -20,6 +20,7 @@ bridge-utils                # Required for libvirt bridged networking
 openbsd-netcat              # Required for remote management over SSH
 # sudo usermod -a -G libvirt $USER
 # sudo systemctl enable --now libvirtd.service
+# Add `intel_iommu=on` to `/etc/kernel/cmdline` to enable Intel VT-d support
 
 ## GUI
 virt-manager                # https://virt-manager.org/

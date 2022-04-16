@@ -8,7 +8,7 @@
 # ---  System/Environment Variables  -------------------------------------------
 
 set -gx XDG_CONFIG_HOME  $HOME/.config
-set -gx XDG_DATA_HOME    $HOME/.data
+set -gx XDG_DATA_HOME    $HOME/.local/share
 set -gx OS_TYPE          (uname)
 
 # ---  System/Editor & Pager  --------------------------------------------------
