@@ -12,10 +12,10 @@
 #       see https://www.archlinux.org/groups/x86_64/base-devel/
 
 ## Web
-firefox-developer-edition   # https://www.mozilla.org/en-US/firefox/developer/
+aur/librewolf-bin           # https://librewolf.net/
+aur/librewolf-firefox-shim  # https://librewolf.net/
 chromium                    # https://stacker.readthedocs.io/en/latest/
 aur/ferdi-bin               # https://github.com/getferdi/ferdi/
-aur/keybase-bin             # https://keybase.io/
 
 ## Media
 aur/spotify                 # https://www.spotify.com/
@@ -45,8 +45,11 @@ hunspell-en_GB              # https://hunspell.github.io/
 hunspell-fr                 # https://hunspell.github.io/
 
 ## Backup Utils
-# snapper                   # https://wiki.archlinux.org/index.php/Snapper
-# snapper-gui               # https://wiki.archlinux.org/index.php/Snapper#Installation
-# timeshit                  # https://github.com/teejee2008/timeshift
+snapper                     # https://wiki.archlinux.org/index.php/Snapper
+snapper-gui                 # https://wiki.archlinux.org/index.php/Snapper#Installation
+
+## Alternative & other useful softwares
+# firefox                   # https://www.mozilla.org/en-US/firefox/
+# aur/keybase-bin           # https://keybase.io/
 # restic                    # https://github.com/restic/restic
 # rclone                    # https://rclone.org/

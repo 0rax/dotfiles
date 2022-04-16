@@ -1,0 +1,19 @@
+name,id,type,enabled,homepage
+uBlock Origin,uBlock0@raymondhill.net,extension,true,
+Bitwarden - Free Password Manager,{446900e4-71c2-419f-a6a7-df9c091e268b},extension,true,https://bitwarden.com
+Smart Referer,smart-referer@meh.paranoid.pk,extension,true,https://gitlab.com/smart-referer
+Arc Dark Theme,arc-dark-theme@afnankhan,theme,true,
+Librefox Reload/Refresh Button Url Bar,librefox.reload.button@intika.be,extension,true,https://github.com/intika/Librefox-Firefox
+Always Right,jid0-SzimoL45Ib8OddgoUBG0buQmjec@jetpack,extension,true,
+Disable WebRTC,jid1-5Fs7iTLscUaZBgwr@jetpack,extension,true,
+Firefox Multi-Account Containers,@testpilot-containers,extension,true,https://github.com/mozilla/multi-account-containers#readme
+Google Container,@contain-google,extension,true,https://github.com/containers-everywhere/contain-google
+Facebook Container,@contain-facebook,extension,true,https://github.com/mozilla/contain-facebook
+Refined GitHub,{a4c4eda4-fb84-4a84-b4a1-f7c1cbf2a1ad},extension,true,https://github.com/refined-github/refined-github
+Violentmonkey,{aecec67f-0d10-4fa7-b7c7-609a2db280cf},extension,true,https://violentmonkey.github.io/
+Stylus,{7a7a4a92-a2a0-41d1-9fd7-1e92480d612d},extension,true,https://add0n.com/stylus.html
+Dictionnaire français,fr-dicollecte@dictionaries.addons.mozilla.org,dictionary,true,https://grammalecte.net
+British English Dictionary (Marco Pinto),marcoagpinto@mail.telepac.pt,dictionary,true,
+English United States Dictionary,@unitedstatesenglishdictionary,dictionary,true,
+FrankerFaceZ,frankerfacez@frankerfacez.com,extension,true,https://www.frankerfacez.com
+ClearURLs,{74145f27-f039-47ce-a470-a662b129930a},extension,true,https://docs.clearurls.xyz
