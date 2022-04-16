@@ -36,6 +36,9 @@
         "ssh_config": "ssh_config",
         "Makefile.*": "makefile"
     },
+    "emmet.includeLanguages": {
+      "twig": "html"
+    },
     "files.autoSave": "onFocusChange",
     "files.exclude": {
         "**/__pycache__": true,
@@ -68,7 +71,6 @@
     "workbench.editor.limit.value": 5,
     "workbench.editor.revealIfOpen": true,
     "workbench.settings.editor": "json",
-    "workbench.colorTheme": "Ocean Dark Extended",
     "workbench.colorCustomizations": {
         "statusBar.background": "#16181D",
         "statusBar.noFolderBackground": "#16181D"
@@ -76,7 +78,7 @@
     "workbench.iconTheme": "file-icons",
     "workbench.startupEditor": "none",
     "workbench.editorAssociations": {
-        "*.ipynb": "jupyter.notebook.ipynb"
+        "*.ipynb": "jupyter-notebook"
     },
     "zenMode.fullScreen": false,
     "telemetry.telemetryLevel": "off",
@@ -145,11 +147,6 @@
         "editor.insertSpaces": true,
         "editor.tabSize": 4
     },
-    "[mjml]": {
-        "editor.insertSpaces": true,
-        "editor.tabSize": 2,
-        "editor.defaultFormatter": "attilabuti.vscode-mjml"
-    },
     "[ssh_config]": {
       "editor.insertSpaces": false,
       "editor.tabSize": 4
@@ -206,11 +203,10 @@
     "go.toolsGopath": "/home/orax/projects/go",
     "go.toolsManagement.autoUpdate": true,
     "go.useLanguageServer": true,
-    "go.vetOnSave": "package",
+    "go.lintOnSave": "package",
     "go.testFlags": [
         "-gcflags=-l",
     ],
-    "go.formatTool": "goimports",
     "go.lintTool": "golangci-lint",
     "go.addTags": {
         "promptForTags": true
@@ -218,8 +214,6 @@
     "go.removeTags": {
         "promptForTags": true
     },
-    "go.buildTags": "integration",
-    "groupImports.onSave": true,
     "yaml.format.enable": false,
     "yaml.customTags": [
         // CloudFormation tags
@@ -296,5 +290,7 @@
       "**/*.zsh-theme": true,
       "**/PKGBUILD": true
     },
+    "redhat.telemetry.enabled": false,
+    "workbench.colorTheme": "Base16 OceanicNext Dark",
     // === End of file ===
 }

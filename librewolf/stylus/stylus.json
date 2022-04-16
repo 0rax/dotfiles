@@ -97,15 +97,15 @@
     }
   },
   {
-    "enabled": true,
-    "updateUrl": "https://raw.githubusercontent.com/0rax/dotfiles/master/firefox/stylus/gh-wider-project.css",
-    "url": "https://github.com/0rax/dotfiles/tree/master/firefox/stylus",
+    "enabled": false,
+    "updateUrl": "https://gist.github.com/0rax/e039865c693093cf3f9ea564cf1140ec/raw/gh-wider-project.user.css",
+    "url": "https://gist.github.com/0rax/e039865c693093cf3f9ea564cf1140ec",
     "installDate": 1573647016203,
-    "sourceCode": "/* ==UserStyle==\n@name           Github: Wider Project Columns\n@namespace      https://github.com/0rax\n@version        1.1.0\n@description    Bigger collum in Github Projects\n@author         0rax\n@homepageURL    https://github.com/0rax/dotfiles/tree/master/firefox/stylus\n@updateURL      https://raw.githubusercontent.com/0rax/dotfiles/master/firefox/stylus/gh-wider-project.css\n@var            number  column-width        \"Column Width\"  450\n==/UserStyle== */\n\n@-moz-document regexp(\"https://github.com/(orgs|[a-zA-Z0-9_-]+)/[a-zA-Z0-9_-]+/projects/[0-9]+(#.*)?(\\\\?fullscreen=true)?\")\n{\n  @media (min-width: 544px) {\n    .project-column {\n      min-width: calc(var(--column-width) * 1px);\n      max-width: calc(var(--column-width) * 1px);\n    }\n    .project-pane {\n      width: calc(var(--column-width) + 20px) !important;\n    }\n  }\n}\n",
+    "sourceCode": "/* ==UserStyle==\n@name           Github: Wider Project Columns\n@namespace      https://github.com/0rax\n@version        1.1.1\n@description    Bigger collum in Github Projects\n@author         0rax\n@homepageURL    https://gist.github.com/0rax/e039865c693093cf3f9ea564cf1140ec\n@updateURL      https://gist.github.com/0rax/e039865c693093cf3f9ea564cf1140ec/raw/gh-wider-project.user.css\n@var            number  column-width        \"Column Width\"  450\n==/UserStyle== */\n\n@-moz-document regexp(\"https://github.com/(orgs|[a-zA-Z0-9_-]+)/[a-zA-Z0-9_-]+/projects/[0-9]+(#.*)?(\\\\?fullscreen=true)?\")\n{\n  @media (min-width: 544px) {\n    .project-column {\n      min-width: calc(var(--column-width) * 1px);\n      max-width: calc(var(--column-width) * 1px);\n    }\n    .project-pane {\n      width: calc(var(--column-width) + 20px) !important;\n    }\n  }\n}\n",
     "sections": [
       {
         "code": ":root {\n  --column-width: 472;\n}\n@media (min-width: 544px) {\n    .project-column {\n      min-width: calc(var(--column-width) * 1px);\n      max-width: calc(var(--column-width) * 1px);\n    }\n    .project-pane {\n      width: calc(var(--column-width) + 20px) !important;\n    }\n  }",
-        "start": 586,
+        "start": 589,
         "regexps": [
           "https://github.com/(orgs|[a-zA-Z0-9_-]+)/[a-zA-Z0-9_-]+/projects/[0-9]+(#.*)?(\\?fullscreen=true)?"
         ]
@@ -114,11 +114,11 @@
     "usercssData": {
       "name": "Github: Wider Project Columns",
       "namespace": "https://github.com/0rax",
-      "version": "1.1.0",
+      "version": "1.1.1",
       "description": "Bigger collum in Github Projects",
       "author": "0rax",
-      "homepageURL": "https://github.com/0rax/dotfiles/tree/master/firefox/stylus",
-      "updateURL": "https://raw.githubusercontent.com/0rax/dotfiles/master/firefox/stylus/gh-wider-project.css",
+      "homepageURL": "https://gist.github.com/0rax/e039865c693093cf3f9ea564cf1140ec",
+      "updateURL": "https://gist.github.com/0rax/e039865c693093cf3f9ea564cf1140ec/raw/gh-wider-project.user.css",
       "vars": {
         "column-width": {
           "type": "number",
@@ -140,21 +140,21 @@
     "updateDate": 1646103208309,
     "id": 10,
     "_id": "5e4b4aa2-3895-4ee6-8cbd-de367c68db3e",
-    "_rev": 1646103208966,
-    "originalDigest": "7ed0098aa578c06ae8789929ef8ee1728f564649",
+    "_rev": 1650120901152,
+    "originalDigest": "02cfc7399c288da897d221b422e24b3b02229a81",
     "_usw": {},
     "etag": "W/\"026608397f75499505dc0a933815a670b1accf70c14554650508470c04bae5ee\""
   },
   {
     "enabled": true,
-    "updateUrl": "https://raw.githubusercontent.com/0rax/dotfiles/master/firefox/stylus/hn-fixed-spaced.css",
-    "url": "https://github.com/0rax/dotfiles/tree/master/firefox/stylus",
+    "updateUrl": "https://gist.github.com/0rax/935c7c9d92800ed74297f9f4f8d59ef1/raw/hn-fixed-spaced.user.css",
+    "url": "https://gist.github.com/0rax/935c7c9d92800ed74297f9f4f8d59ef1",
     "installDate": 1575563383566,
-    "sourceCode": "/* ==UserStyle==\n@name           Hacker News: Fixed & Spaced\n@namespace      https://github.com/0rax\n@version        1.1.0\n@description    Customize the background color and width of Hacker News\n@author         0rax\n@homepageURL    https://github.com/0rax/dotfiles/tree/master/firefox/stylus\n@updateURL      https://raw.githubusercontent.com/0rax/dotfiles/master/firefox/stylus/hn-fixed-spaced.css\n@var            color   background-color    \"Background Color\"  #333\n@var            text    content-width       \"Content Width\"     \"900px\"\n==/UserStyle== */\n@-moz-document domain(\"news.ycombinator.com\") {\n  body {\n    margin-top: 36px;\n    margin-bottom: 36px;\n    background: var(--background-color);\n  }\n  #hnmain {\n    width: var(--content-width) !important;\n  }\n  .itemlist {\n    margin: 10px;\n  }\n}\n",
+    "sourceCode": "/* ==UserStyle==\n@name           Hacker News: Fixed & Spaced\n@namespace      https://github.com/0rax\n@version        1.1.1\n@description    Customize the background color and width of Hacker News\n@author         0rax\n@homepageURL    https://gist.github.com/0rax/935c7c9d92800ed74297f9f4f8d59ef1\n@updateURL      https://gist.github.com/0rax/935c7c9d92800ed74297f9f4f8d59ef1/raw/hn-fixed-spaced.user.css\n@var            color   background-color    \"Background Color\"  #333\n@var            text    content-width       \"Content Width\"     \"900px\"\n==/UserStyle== */\n\n@-moz-document domain(\"news.ycombinator.com\") {\n  body {\n    margin-top: 36px;\n    margin-bottom: 36px;\n    background: var(--background-color);\n  }\n  #hnmain {\n    width: var(--content-width) !important;\n  }\n  .itemlist {\n    margin: 10px;\n  }\n}\n",
     "sections": [
       {
         "code": ":root {\n  --background-color: rgb(51, 51, 51);\n  --content-width: 900px;\n}\nbody {\n    margin-top: 36px;\n    margin-bottom: 36px;\n    background: var(--background-color);\n  }\n  #hnmain {\n    width: var(--content-width) !important;\n  }\n  .itemlist {\n    margin: 10px;\n  }",
-        "start": 604,
+        "start": 608,
         "domains": [
           "news.ycombinator.com"
         ]
@@ -163,11 +163,11 @@
     "usercssData": {
       "name": "Hacker News: Fixed & Spaced",
       "namespace": "https://github.com/0rax",
-      "version": "1.1.0",
+      "version": "1.1.1",
       "description": "Customize the background color and width of Hacker News",
       "author": "0rax",
-      "homepageURL": "https://github.com/0rax/dotfiles/tree/master/firefox/stylus",
-      "updateURL": "https://raw.githubusercontent.com/0rax/dotfiles/master/firefox/stylus/hn-fixed-spaced.css",
+      "homepageURL": "https://gist.github.com/0rax/935c7c9d92800ed74297f9f4f8d59ef1",
+      "updateURL": "https://gist.github.com/0rax/935c7c9d92800ed74297f9f4f8d59ef1/raw/hn-fixed-spaced.user.css",
       "vars": {
         "background-color": {
           "type": "color",
@@ -192,23 +192,23 @@
     "name": "Hacker News: Fixed & Spaced",
     "updateDate": 1646103210010,
     "id": 12,
-    "originalDigest": "560d49f48849498b848468bfb14bbdf046cef11c",
+    "originalDigest": "2289571700159c417a429b8355e01d4a9a6b51c6",
     "_id": "87a26b3b-fc03-4036-848b-19d5035bffa9",
-    "_rev": 1646103210534,
+    "_rev": 1650120690537,
     "_usw": {},
     "customName": "Hacker News: Fixed & Spaced",
     "etag": "W/\"3f1c3d2c935463744558bf04ef2ed3fabe612ad0bd308c37c693f8c991885b6a\""
   },
   {
     "enabled": true,
-    "updateUrl": "https://raw.githubusercontent.com/0rax/dotfiles/master/firefox/stylus/ietf-dark-rfc.css",
-    "url": "https://github.com/0rax/dotfiles/tree/master/firefox/stylus",
+    "updateUrl": "https://gist.github.com/0rax/575483c4acaf235481d32d995a11565d/raw/ietf-dark-rfc.user.css",
+    "url": "https://gist.github.com/0rax/575483c4acaf235481d32d995a11565d",
     "installDate": 1575564203945,
-    "sourceCode": "/* ==UserStyle==\n@name           IETF: Dark RFC Readable\n@namespace      https://github.com/0rax\n@version        1.1.0\n@description    Makes RFC documents darker and readable\n@author         0rax\n@homepageURL    https://github.com/0rax/dotfiles/tree/master/firefox/stylus\n@updateURL      https://raw.githubusercontent.com/0rax/dotfiles/master/firefox/stylus/ietf-dark-rfc.css\n==/UserStyle== */\n\n@-moz-document url-prefix(\"https://tools.ietf.org/html/rfc\"), url-prefix(\"https://datatracker.ietf.org/doc/html/\")\n{\n  /* Darkify RFC documents */\n  * {\n    margin: 0;\n    padding: 0;\n  }\n  body {\n    margin: 0;\n    background-color: #333;\n    color: #fff;\n  }\n  a,\n  a:visited,\n  a.selflink {\n    color: #0074d9;\n  }\n  div.content,\n  .pre.noprint.docinfo {\n    margin: 0 auto;\n  }\n  pre,\n  span.pre {\n    font-size: 1.15em;\n  }\n  hr {\n    width: inherit !important;\n  }\n  div.pre.noprint.docinfo {\n    position: absolute;\n    width: 100%;\n    left: 0px;\n  }\n  span.pre.noprint.docinfo {\n    color: #000;\n  }\n  pre:first-of-type {\n    margin-top: 12px;\n  }\n  div#legend {\n    background-color: #333 !important;\n    width: 270px;\n  }\n  /* Update colors (colors from: https://github.com/mrmrs/colors) */\n  .bgblue {\n    background-color: #0074d9;\n  }\n  .bggreen {\n    background-color: #2ecc40;\n  }\n  .bgyellow {\n    background-color: #ffdc00;\n  }\n  .bgorange {\n    background-color: #ff851b;\n  }\n  .bgred {\n    background-color: #ff4136;\n  }\n  .bgwhite {\n    background-color: #ffffff;\n  }\n  .bggrey {\n    background-color: #aaaaaa;\n  }\n  .blue {\n    color: #0074d9;\n  }\n  .green {\n    color: #2ecc40;\n  }\n  .yellow {\n    color: #ffdc00;\n  }\n  .orange {\n    color: #ff851b;\n  }\n  .red {\n    color: #ff4136;\n  }\n  .white {\n    color: #ffffff;\n  }\n  .grey {\n    color: #aaaaaa;\n  }\n}\n",
+    "sourceCode": "/* ==UserStyle==\n@name           IETF: Dark RFC Readable\n@namespace      https://github.com/0rax\n@version        1.1.1\n@description    Makes RFC documents darker and readable\n@author         0rax\n@homepageURL    https://gist.github.com/0rax/575483c4acaf235481d32d995a11565d\n@updateURL      https://gist.github.com/0rax/575483c4acaf235481d32d995a11565d/raw/ietf-dark-rfc.user.css\n==/UserStyle== */\n\n@-moz-document url-prefix(\"https://tools.ietf.org/html/rfc\"), url-prefix(\"https://datatracker.ietf.org/doc/html/\")\n{\n  /* Darkify RFC documents */\n  * {\n    margin: 0;\n    padding: 0;\n  }\n  body {\n    margin: 0;\n    background-color: #333;\n    color: #fff;\n  }\n  a,\n  a:visited,\n  a.selflink {\n    color: #0074d9;\n  }\n  div.content,\n  .pre.noprint.docinfo {\n    margin: 0 auto;\n  }\n  pre,\n  span.pre {\n    font-size: 1.15em;\n  }\n  hr {\n    width: inherit !important;\n  }\n  div.pre.noprint.docinfo {\n    position: absolute;\n    width: 100%;\n    left: 0px;\n  }\n  span.pre.noprint.docinfo {\n    color: #000;\n  }\n  pre:first-of-type {\n    margin-top: 12px;\n  }\n  div#legend {\n    background-color: #333 !important;\n    width: 270px;\n  }\n  /* Update colors (colors from: https://github.com/mrmrs/colors) */\n  .bgblue {\n    background-color: #0074d9;\n  }\n  .bggreen {\n    background-color: #2ecc40;\n  }\n  .bgyellow {\n    background-color: #ffdc00;\n  }\n  .bgorange {\n    background-color: #ff851b;\n  }\n  .bgred {\n    background-color: #ff4136;\n  }\n  .bgwhite {\n    background-color: #ffffff;\n  }\n  .bggrey {\n    background-color: #aaaaaa;\n  }\n  .blue {\n    color: #0074d9;\n  }\n  .green {\n    color: #2ecc40;\n  }\n  .yellow {\n    color: #ffdc00;\n  }\n  .orange {\n    color: #ff851b;\n  }\n  .red {\n    color: #ff4136;\n  }\n  .white {\n    color: #ffffff;\n  }\n  .grey {\n    color: #aaaaaa;\n  }\n}\n",
     "sections": [
       {
         "code": "/* Darkify RFC documents */\n  * {\n    margin: 0;\n    padding: 0;\n  }\n  body {\n    margin: 0;\n    background-color: #333;\n    color: #fff;\n  }\n  a,\n  a:visited,\n  a.selflink {\n    color: #0074d9;\n  }\n  div.content,\n  .pre.noprint.docinfo {\n    margin: 0 auto;\n  }\n  pre,\n  span.pre {\n    font-size: 1.15em;\n  }\n  hr {\n    width: inherit !important;\n  }\n  div.pre.noprint.docinfo {\n    position: absolute;\n    width: 100%;\n    left: 0px;\n  }\n  span.pre.noprint.docinfo {\n    color: #000;\n  }\n  pre:first-of-type {\n    margin-top: 12px;\n  }\n  div#legend {\n    background-color: #333 !important;\n    width: 270px;\n  }\n  /* Update colors (colors from: https://github.com/mrmrs/colors) */\n  .bgblue {\n    background-color: #0074d9;\n  }\n  .bggreen {\n    background-color: #2ecc40;\n  }\n  .bgyellow {\n    background-color: #ffdc00;\n  }\n  .bgorange {\n    background-color: #ff851b;\n  }\n  .bgred {\n    background-color: #ff4136;\n  }\n  .bgwhite {\n    background-color: #ffffff;\n  }\n  .bggrey {\n    background-color: #aaaaaa;\n  }\n  .blue {\n    color: #0074d9;\n  }\n  .green {\n    color: #2ecc40;\n  }\n  .yellow {\n    color: #ffdc00;\n  }\n  .orange {\n    color: #ff851b;\n  }\n  .red {\n    color: #ff4136;\n  }\n  .white {\n    color: #ffffff;\n  }\n  .grey {\n    color: #aaaaaa;\n  }",
-        "start": 511,
+        "start": 514,
         "urlPrefixes": [
           "https://tools.ietf.org/html/rfc",
           "https://datatracker.ietf.org/doc/html/"
@@ -218,11 +218,11 @@
     "usercssData": {
       "name": "IETF: Dark RFC Readable",
       "namespace": "https://github.com/0rax",
-      "version": "1.1.0",
+      "version": "1.1.1",
       "description": "Makes RFC documents darker and readable",
       "author": "0rax",
-      "homepageURL": "https://github.com/0rax/dotfiles/tree/master/firefox/stylus",
-      "updateURL": "https://raw.githubusercontent.com/0rax/dotfiles/master/firefox/stylus/ietf-dark-rfc.css"
+      "homepageURL": "https://gist.github.com/0rax/575483c4acaf235481d32d995a11565d",
+      "updateURL": "https://gist.github.com/0rax/575483c4acaf235481d32d995a11565d/raw/ietf-dark-rfc.user.css"
     },
     "author": "0rax",
     "description": "Makes RFC documents darker and readable",
@@ -230,9 +230,9 @@
     "updateDate": 1646103211643,
     "id": 13,
     "_id": "3c7be9d8-2ba5-4d74-a417-fc1b8e34be44",
-    "_rev": 1646103211916,
+    "_rev": 1650120888111,
     "_usw": {},
     "etag": "W/\"d58e323a76c8cf7fc8cd881d165bc5f0cd89eb707251f770819891a8f4f89448\"",
-    "originalDigest": "4a96890683fde0f515f0038fedcb3c8e4b4325ea"
+    "originalDigest": "f154c4a53dd0fba700de12eb9451c1520d6d817d"
   }
 ]

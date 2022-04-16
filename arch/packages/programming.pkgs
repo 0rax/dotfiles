@@ -86,11 +86,9 @@ helm                        # https://helm.sh/docs/using_helm/
 kubie                       # https://github.com/sbstp/kubie
 aur/octant-bin              # https://github.com/vmware-tanzu/octant
 
-## Other useful softwares
-# https://github.com/99designs/aws-vault
-# https://hohnstaedt.de/xca/
-# https://github.com/FiloSottile/mkcert
-# https://dbeaver.io/
-# https://github.com/wg/wrk
-# https://github.com/rakyll/hey
-# https://github.com/birdayz/kaf
+## Alternatives & other useful softwares
+# aws-vault                 # https://github.com/99designs/aws-vault
+# xca                       # https://hohnstaedt.de/xca/
+# mkcert                    # https://github.com/FiloSottile/mkcert
+# dbeaver                   # https://dbeaver.io/
+# aur/wrk                   # https://github.com/wg/wrk

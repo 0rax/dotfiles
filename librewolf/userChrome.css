@@ -1,0 +1,18 @@
+/*
+ * Dim and decorate pending tabs
+ *
+ * Contributor(s): 0rax
+ */
+
+/* Dim, underline and italic pending tabs */
+.tabbrowser-tab[pending] {
+  /* text-decoration: underline; */
+  font-style: italic;
+  opacity: .5;
+}
+
+/* Undim slightly and remove italic on pending tab hover */
+.tabbrowser-tab[pending]:hover {
+  font-style: normal;
+  opacity: .8;
+}

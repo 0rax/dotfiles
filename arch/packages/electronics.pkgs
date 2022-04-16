@@ -19,7 +19,7 @@ aur/easyeda-bin             # https://easyeda.com/
 aur/easyeda-router          # https://easyeda.com/
 # systemctl start easyeda-router
 
-## Alternatives:
+## Alternatives
 # - Alitum CircuitMaker
 # - Fritzing
 # - LibrePCB
