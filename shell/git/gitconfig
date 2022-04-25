@@ -83,9 +83,12 @@
 
 # Difftool
 [diff]
-	tool = vscode
+	tool = vscodium
 [difftool]
 	prompt = false
+[difftool "vscodium"]
+	cmd = codium -n --wait --diff "$LOCAL" "$REMOTE"
+	trustExitCode = false
 [difftool "vscode"]
 	cmd = code -n --wait --diff "$LOCAL" "$REMOTE"
 	trustExitCode = false
@@ -94,7 +97,9 @@
 
 # Mergetool
 [merge]
-	tool = vscode
+	tool = vscodium
+[mergetool "vscodium"]
+	cmd = codium --wait "$MERGED"
 [mergetool "vscode"]
 	cmd = code --wait "$MERGED"
 [mergetool "meld"]
