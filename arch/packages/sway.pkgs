@@ -64,6 +64,8 @@ brightnessctl               # [brightness-ctrl] https://github.com/Hummer12007/b
 playerctl                   # [metdia-ctrl    ] https://github.com/altdesktop/playerctl
 wl-clipboard                # [wl-clipboard   ] https://github.com/bugaevc/wl-clipboard
 xsel                        # [x11-clipboard  ] http://www.vergenet.net/~conrad/software/xsel/
+aur/wlr-randr               # [display-manager] https://sr.ht/~emersion/wlr-randr/
+aur/wev                     # [event-viewer   ] https://git.sr.ht/~sircmpwn/wev
 
 ## Fonts
 noto-fonts                  # [system-font    ] https://fonts.google.com/noto

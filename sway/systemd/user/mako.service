@@ -1,10 +1,8 @@
 [Unit]
 Description=Lightweight Wayland notification daemon
 Documentation=man:mako(1)
-PartOf=graphical-session.target
-After=graphical-session.target
-# ConditionEnvironment requires systemd v247 to work correctly
-ConditionEnvironment=WAYLAND_DISPLAY
+PartOf=sway-session.target
+After=sway-session.target
 
 [Service]
 Type=dbus
@@ -13,4 +11,4 @@ ExecStart=/usr/bin/mako
 ExecReload=/usr/bin/makoctl reload
 
 [Install]
-WantedBy=graphical-session.target
+WantedBy=sway-session.target
