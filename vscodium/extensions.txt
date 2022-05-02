@@ -14,6 +14,7 @@ golf1052.base16-generator
 GrapeCity.gc-excelviewer
 jeff-hykin.better-dockerfile-syntax
 mechatroner.rainbow-csv
+mitchdenny.ecdc
 ms-python.python
 ms-toolsai.jupyter
 ms-toolsai.jupyter-keymap
