@@ -31,6 +31,7 @@ window {
 #input {
   margin: 8px 4px 4px 4px;
   border: none;
+  padding: 6px 10px;
   border-radius: 0%;
   color: @base06;
   background-color: @base01;
