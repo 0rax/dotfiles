@@ -15,7 +15,7 @@
 aur/librewolf-bin           # https://librewolf.net/
 aur/librewolf-firefox-shim  # https://librewolf.net/
 chromium                    # https://stacker.readthedocs.io/en/latest/
-aur/ferdi-bin               # https://github.com/getferdi/ferdi/
+aur/ferdium-bin             # https://github.com/ferdium/ferdium-app/
 
 ## Media
 aur/spotify                 # https://www.spotify.com/
