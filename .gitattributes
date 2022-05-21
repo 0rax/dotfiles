@@ -1,5 +1,7 @@
 # Default Behaviour
 *               text=auto
+*.sh            text eol=lf
+/vscodium/*     text eol=lf
 
 # Images
 *.png           binary
