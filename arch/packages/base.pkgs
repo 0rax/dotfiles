@@ -55,6 +55,7 @@ bat                         # https://github.com/sharkdp/bat
 jq                          # https://stedolan.github.io/jq/
 xsv                         # https://github.com/BurntSushi/xsv
 aur/patool                  # https://wummel.github.io/patool/
+aur/pfetch                  # https://github.com/dylanaraps/pfetch
 
 ## Network utils
 wget                        # https://www.gnu.org/software/wget/
