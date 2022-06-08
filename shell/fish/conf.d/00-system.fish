@@ -19,14 +19,14 @@ set -gx ALTERNATE_EDITOR 'nano'
 set -gx PAGER            'less'
 
 if command -s most > /dev/null
-	set -gx MANPAGER     'most'
+    set -gx MANPAGER     'most'
 else
-	set -gx MANPAGER     'less'
+    set -gx MANPAGER     'less'
 end
 
 if command -s bat > /dev/null
-	set -gx BAT_PAGER    'less -RF'
-	set -gx BAT_THEME    'base16'
+    set -gx BAT_PAGER    'less -RF'
+    set -gx BAT_THEME    'base16'
 end
 
 # ---  System/Fish Related Path  -----------------------------------------------
