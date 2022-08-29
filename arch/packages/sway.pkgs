@@ -31,6 +31,7 @@ aur/swaylock-effects-git    # [session-locker ] https://github.com/mortie/swaylo
 dex                         # [autostart-xdg  ] https://github.com/jceb/dex
 gammastep                   # [gamma-ctrl     ] https://gitlab.com/chinstrap/gammastep
 kanshi                      # [display-profile] https://github.com/emersion/kanshi
+wob                         # [overlay-bar    ] https://github.com/francma/wob
 
 ## Sound
 pipewire                    # [sound-server   ] https://pipewire.org/
@@ -73,7 +74,8 @@ ttf-hack                    # [mono-font      ] https://sourcefoundry.org/hack/
 aur/ttf-fork-awesome        # [iconic-font    ] https://forkaweso.me/Fork-Awesome/
 
 ## UI themes
-aur/matcha-gtk-theme        # [gtk-theme      ] https://github.com/vinceliuice/Matcha-gtk-theme
+arc-gtk-theme               # [gtk-theme      ] https://github.com/jnsh/arc-theme
+arc-solid-gtk-theme         # [gtk-theme      ] https://github.com/jnsh/arc-theme
 papirus-icon-theme          # [icon-theme     ] https://github.com/PapirusDevelopmentTeam/papirus-icon-theme
 xcursor-vanilla-dmz         # [cursor-theme   ] https://www.gnome-look.org/p/999970/
 

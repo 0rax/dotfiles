@@ -30,7 +30,9 @@ inkscape                    # https://inkscape.org/
 ## System utils
 gparted                     # https://gparted.sourceforge.io/
 veracrypt                   # https://veracrypt.codeplex.com/
-bitwarden                   # https://bitwarden.com/#/
+
+## Sound utils
+easyeffects                 # https://github.com/wwmm/easyeffects
 
 ## Fonts
 gnome-font-viewer           # https://gitlab.gnome.org/GNOME/gnome-font-viewer
@@ -45,11 +47,16 @@ hunspell-en_GB              # https://hunspell.github.io/
 hunspell-fr                 # https://hunspell.github.io/
 
 ## Backup Utils
-snapper                     # https://wiki.archlinux.org/index.php/Snapper
-snapper-gui                 # https://wiki.archlinux.org/index.php/Snapper#Installation
+aur/seadrive-gui            # https://www.seafile.com/
+aur/seafile-client          # https://www.seafile.com/
+snapper                     # http://snapper.io/
+aur/snapper-gui-git         # https://github.com/ricardomv/snapper-gui
+# sudo systemctl enable --now snapper-timeline.timer
+# sudo systemctl enable --now snapper-cleanup.timer
 
 ## Alternative & other useful softwares
 # firefox                   # https://www.mozilla.org/en-US/firefox/
+# bitwarden                 # https://bitwarden.com/#/
 # aur/keybase-bin           # https://keybase.io/
 # restic                    # https://github.com/restic/restic
 # rclone                    # https://rclone.org/
