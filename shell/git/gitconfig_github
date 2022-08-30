@@ -1,0 +1,10 @@
+[core]
+	sshCommand = ssh -i ~/.ssh/aur.pem
+
+[user]
+	name = JP Roemer
+	email = 2822534+0rax@users.noreply.github.com
+	signingkey = 6FF4678C
+
+[commit]
+	gpgsign = false

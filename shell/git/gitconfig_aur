@@ -1,0 +1,9 @@
+[core]
+	sshCommand = ssh -i ~/.ssh/aur.pem
+
+[user]
+	name = JP Roemer
+	email = jp+aur@roemer.im
+
+[commit]
+	gpgsign = false
