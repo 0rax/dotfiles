@@ -54,22 +54,22 @@ scrolling:
 font:
   # Normal (roman) font face
   normal:
-    family: Hasklig
+    family: Hasklug Nerd Font
     style: Regular
 
   # Bold font face
   bold:
-    family: Hasklig
+    family: Hasklug Nerd Font
     style: Bold
 
   # Italic font face
   italic:
-    family: Hasklig
+    family: Hasklug Nerd Font
     style: Italic
 
   # Bold italic font face
   bold_italic:
-    family: Hasklig
+    family: Hasklug Nerd Font
     style: Bold Italic
 
   # Point size

@@ -71,6 +71,7 @@
     "workbench.editor.limit.value": 5,
     "workbench.editor.revealIfOpen": true,
     "workbench.settings.editor": "json",
+    "workbench.colorTheme": "Base16 OceanicNext Dark",
     "workbench.colorCustomizations": {
         "statusBar.background": "#16181D",
         "statusBar.noFolderBackground": "#16181D"
@@ -124,8 +125,9 @@
         "editor.tabSize": 4
     },
     "[css]": {
-        "editor.insertSpaces": false,
-        "editor.tabSize": 8,
+        "editor.insertSpaces": true,
+        "editor.tabSize": 4,
+        "editor.defaultFormatter": "vscode.css-language-features",
     },
     "[shellscript]": {
         "editor.insertSpaces": true,
@@ -137,7 +139,7 @@
     },
     "[proto3]": {
         "editor.formatOnSave": true,
-        "editor.defaultFormatter": "xaver.clang-format"
+        "editor.defaultFormatter": "xaver.clang-format",
     },
     "[go]": {},
     "[yaml]": {
@@ -291,6 +293,6 @@
       "**/PKGBUILD": true
     },
     "redhat.telemetry.enabled": false,
-    "workbench.colorTheme": "Base16 OceanicNext Dark",
+    "clang-format.executable": "/opt/clang-format-static/clang-format-13",
     // === End of file ===
 }

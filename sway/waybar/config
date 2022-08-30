@@ -120,7 +120,7 @@
         "on-click-middle": "pulseaudio-ctl mute"
     },
     "cpu": {
-        "format": " {usage}%"
+        "format": " {usage}% ({avg_frequency}GHz)"
     },
     "memory": {
         "format": " {percentage}%"
