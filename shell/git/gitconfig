@@ -22,18 +22,16 @@
 # Git remote rewriting
 [url "git@github.com:"]
 	insteadOf = https://github.com/
-	insteadOf = ssh://git@github.com/
 [url "git@bitbucket.org:"]
 	insteadOf = https://bitbucket.org/
-	insteadOf = ssh://git@bitbucket.org/
-[url "aur@aur.archlinux.org:"]
-	insteadOf = ssh://aur@aur.archlinux.org/
 
 # Specific remote config
-[includeIf "hasconfig:remote.*.url:aur@aur.archlinux.org:**"]
-	path = ~/.gitconfig_aur
 [includeIf "hasconfig:remote.*.url:git@github.com:**"]
 	path = ~/.gitconfig_github
+[includeIf "hasconfig:remote.*.url:https://github.com/**"]
+	path = ~/.gitconfig_github
+[includeIf "hasconfig:remote.*.url:ssh://aur@aur.archlinux.org/**"]
+	path = ~/.gitconfig_aur
 
 # Git alias
 [alias]
