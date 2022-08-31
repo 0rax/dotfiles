@@ -7,7 +7,7 @@
     "editor.cursorBlinking": "solid",
     "editor.cursorStyle": "block",
     "editor.detectIndentation": false,
-    "editor.fontFamily": "'Hasklug Nerd Font', 'Hasklig', 'forkawesome', Monaco, monofur, Menlo, monospace",
+    "editor.fontFamily": "'Hasklug Nerd Font', 'Hasklig', 'Hack', 'forkawesome', monospace",
     "editor.fontLigatures": true,
     "editor.insertSpaces": true,
     "editor.minimap.enabled": false,
