@@ -1,5 +1,4 @@
 9j.amvim
-aaron-bond.better-comments
 appliedengdesign.vscode-gcode-syntax
 bmalehorn.vscode-fish
 coolbear.systemd-unit-file
@@ -7,6 +6,7 @@ DavidAnson.vscode-markdownlint
 ecmel.vscode-html-css
 EditorConfig.EditorConfig
 esbenp.prettier-vscode
+ExodiusStudios.comment-anchors
 file-icons.file-icons
 foxundermoon.shell-format
 golang.go

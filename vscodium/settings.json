@@ -1,9 +1,7 @@
 {
     // === VSCode ===
-    "breadcrumbs.enabled": true,
-    "breadcrumbs.showFunctions": true,
-    "breadcrumbs.filePath": "last",
-    "breadcrumbs.showVariables": false,
+    "breadcrumbs.enabled": false,
+    "breadcrumbs.filePath":"last",
     "editor.cursorBlinking": "solid",
     "editor.cursorStyle": "block",
     "editor.detectIndentation": false,
@@ -22,6 +20,9 @@
     "editor.wordWrapColumn": 90,
     "editor.guides.bracketPairs": "active",
     "editor.bracketPairColorization.enabled": true,
+    "editor.stickyScroll.enabled": true,
+    "editor.stickyScroll.maxLineCount": 5,
+    "editor.suggest.matchOnWordStartOnly": true,
     "outline.showVariables": false,
     "explorer.compactFolders": true,
     "explorer.confirmDelete": false,
@@ -30,11 +31,12 @@
     "files.associations": {
         "*.pgsql": "sql",
         "APKBUILD": "shellscript",
-        "bashrc": "sheelscript",
+        "bashrc": "shellscript",
         "Brewfile": "ruby",
         "Dockerfile.*": "dockerfile",
         "ssh_config": "ssh_config",
-        "Makefile.*": "makefile"
+        "Makefile.*": "makefile",
+        "Magefile": "go"
     },
     "emmet.includeLanguages": {
       "twig": "html"
@@ -155,51 +157,100 @@
     },
     // === Addons ===
     "amVim.bindCtrlCommands": false,
-    "better-comments.multilineComments": true,
-    "better-comments.tags": [
-        {
-            "tag": "note",
-            "color": "#a3be8c",
-            "strikethrough": false,
-            "backgroundColor": "transparent"
-        },
-        {
-            "tag": "optimize",
-            "color": "#96b5b4",
-            "strikethrough": false,
-            "backgroundColor": "transparent"
-        },
-        {
-            "tag": "todo",
-            "color": "#d08770",
-            "strikethrough": false,
-            "backgroundColor": "transparent"
-        },
-        {
-            "tag": "hack",
-            "color": "#ebcb8b",
-            "strikethrough": false,
-            "backgroundColor": "transparent"
-        },
-        {
-            "tag": "xxx",
-            "color": "#2b303b",
-            "strikethrough": false,
-            "backgroundColor": "#ebcb8b"
-        },
-        {
-            "tag": "fixme",
-            "color": "#bf616a",
-            "strikethrough": false,
-            "backgroundColor": "transparent"
-        },
-        {
-            "tag": "bug",
-            "color": "#2b303b",
-            "strikethrough": false,
-            "backgroundColor": "#bf616a"
-        },
+    "clang-format.executable": "/opt/clang-format-static/clang-format-13",
+    "commentAnchors.tags.list": [
+      {
+        "tag": "ANCHOR",
+        "enabled": false,
+        "scope": "hidden",
+        "highlightColor": "default"
+      },
+      {
+        "tag": "REVIEW",
+        "enabled": false,
+        "scope": "hidden",
+        "highlightColor": "default"
+      },
+      {
+        "tag": "STUB",
+        "enabled": false,
+        "scope": "hidden",
+        "highlightColor": "default"
+      },
+      {
+        "tag": "SECTION",
+        "enabled": false,
+        "scope": "hidden",
+        "highlightColor": "default"
+      },
+      {
+        "tag": "LINK",
+        "enabled": false,
+        "scope": "hidden",
+        "highlightColor": "default"
+      },
+      {
+        "tag": "NOTE",
+        "scope": "workspace",
+        "iconColor": "#a3be8c",
+        "highlightColor": "#a3be8c",
+        "styleComment": false
+      },
+      {
+        "tag": "OPTIMIZE",
+        "scope": "workspace",
+        "iconColor": "#96b5b4",
+        "highlightColor": "#96b5b4",
+        "styleComment": false
+      },
+      {
+        "tag": "TODO",
+        "scope": "workspace",
+        "iconColor": "#d08770",
+        "highlightColor": "#d08770",
+        "styleComment": false
+      },
+      {
+        "tag": "HACK",
+        "scope": "workspace",
+        "iconColor": "#ebcb8b",
+        "highlightColor": "#ebcb8b",
+        "styleComment": false
+      },
+      {
+        "tag": "XXX",
+        "scope": "workspace",
+        "iconColor": "#ebcb8b",
+        "backgroundColor": "#ebcb8b",
+        "highlightColor": "#2b303b",
+        "styleComment": true
+      },
+      {
+        "tag": "FIXME",
+        "scope": "workspace",
+        "iconColor": "#bf616a",
+        "highlightColor": "#bf616a",
+        "styleComment": false
+      },
+      {
+        "tag": "BUG",
+        "scope": "workspace",
+        "iconColor": "#bf616a",
+        "backgroundColor": "#bf616a",
+        "highlightColor": "#2b303b",
+        "styleComment": true
+      }
     ],
+    "commentAnchors.scrollPosition": "center",
+    "commentAnchors.showCursor": false,
+    "commentAnchors.tags.displayInSidebar": true,
+    "commentAnchors.tags.displayInGutter": false,
+    "commentAnchors.tags.displayInRuler": true,
+    "commentAnchors.tags.rulerStyle": "left",
+    "commentAnchors.tags.provideAutoCompletion": true,
+    "commentAnchors.epic.provideAutoCompletion": false,
+    "commentAnchors.tags.separators": [" ", ": ", " - "],
+    "commentAnchors.workspace.maxFiles": 100,
     "go.gopath": "/home/orax/projects/go",
     "go.inferGopath": true,
     "go.toolsGopath": "/home/orax/projects/go",
@@ -216,6 +267,11 @@
     "go.removeTags": {
         "promptForTags": true
     },
+    "go.liveErrors": {
+      "enabled": true
+    },
+    "go.survey.prompt": false,
+    "go.formatTool": "gofumpt",
     "yaml.format.enable": false,
     "yaml.customTags": [
         // CloudFormation tags
@@ -275,6 +331,7 @@
     "errorLens.statusBarIconsEnabled": false,
     "errorLens.statusBarColorsEnabled": true,
     "errorLens.statusBarIconsUseBackground": false,
+    "redhat.telemetry.enabled": false,
     "shellcheck.ignorePatterns": {
       "**/*.xonshrc": true,
       "**/*.xsh": true,
@@ -292,7 +349,5 @@
       "**/*.zsh-theme": true,
       "**/PKGBUILD": true
     },
-    "redhat.telemetry.enabled": false,
-    "clang-format.executable": "/opt/clang-format-static/clang-format-13",
     // === End of file ===
 }
