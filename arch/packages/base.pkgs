@@ -54,7 +54,7 @@ keychain                    # https://www.funtoo.org/Keychain
 bat                         # https://github.com/sharkdp/bat
 jq                          # https://stedolan.github.io/jq/
 xsv                         # https://github.com/BurntSushi/xsv
-aur/patool                  # https://wummel.github.io/patool/
+aur/dtrx                    # https://github.com/dtrx-py/dtrx
 aur/pfetch                  # https://github.com/dylanaraps/pfetch
 
 ## Network utils
