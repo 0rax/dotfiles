@@ -141,7 +141,6 @@
     },
     "[proto3]": {
         "editor.formatOnSave": true,
-        "editor.defaultFormatter": "xaver.clang-format",
     },
     "[go]": {},
     "[yaml]": {
@@ -157,7 +156,6 @@
     },
     // === Addons ===
     "amVim.bindCtrlCommands": false,
-    "clang-format.executable": "/opt/clang-format-static/clang-format-13",
     "commentAnchors.tags.list": [
       {
         "tag": "ANCHOR",
