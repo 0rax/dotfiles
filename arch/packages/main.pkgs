@@ -19,7 +19,7 @@ aur/ferdium-bin             # https://github.com/ferdium/ferdium-app/
 aur/cinny-desktop-bin       # https://cinny.in/
 
 ## Media
-aur/spotify                 # https://www.spotify.com/
+aur/youtube-music-bin       # https://github.com/th-ch/youtube-music
 
 ## File editors
 aur/vscodium-bin            # https://vscodium.com/
@@ -39,7 +39,7 @@ easyeffects                 # https://github.com/wwmm/easyeffects
 gnome-font-viewer           # https://gitlab.gnome.org/GNOME/gnome-font-viewer
 inter-font                  # https://github.com/rsms/inter/
 aur/otf-hasklig             # https://github.com/i-tu/Hasklig
-aur/nerd-fonts-hack         # https://github.com/ryanoasis/nerd-fonts/
+ttf-hack-nerd               # https://github.com/ryanoasis/nerd-fonts/
 aur/nerd-fonts-hasklig      # https://github.com/ryanoasis/nerd-fonts/
 
 ## Dictionaries

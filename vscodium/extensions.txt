@@ -1,7 +1,7 @@
 9j.amvim
 appliedengdesign.vscode-gcode-syntax
 bmalehorn.vscode-fish
-coolbear.systemd-unit-file
+bufbuild.vscode-buf
 DavidAnson.vscode-markdownlint
 ecmel.vscode-html-css
 EditorConfig.EditorConfig
