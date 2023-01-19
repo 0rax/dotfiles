@@ -32,6 +32,7 @@ dex                         # [autostart-xdg  ] https://github.com/jceb/dex
 gammastep                   # [gamma-ctrl     ] https://gitlab.com/chinstrap/gammastep
 kanshi                      # [display-profile] https://github.com/emersion/kanshi
 wob                         # [overlay-bar    ] https://github.com/francma/wob
+aur/wev                     # [event-viewer   ] https://git.sr.ht/~sircmpwn/wev
 
 ## Sound
 pipewire                    # [sound-server   ] https://pipewire.org/

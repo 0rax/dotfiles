@@ -13,7 +13,10 @@ end
 
 # ---  Programming/Golang  -----------------------------------------------------
 
-if test -d /usr/local/go
+if test -d /usr/lib/go
+    set -gx GOROOT /usr/lib/go
+    set -a PATH $GOROOT/bin
+else if test -d /usr/local/go
     set -gx GOROOT /usr/local/go
     set -a PATH $GOROOT/bin
 end

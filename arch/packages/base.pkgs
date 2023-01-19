@@ -66,6 +66,7 @@ whois                       # https://github.com/rfc1036/whois
 traceroute                  # http://traceroute.sourceforge.net/
 tcpdump                     # https://www.archlinux.org/packages/extra/x86_64/tcpdump/
 httpie                      # https://httpie.org/
+curlie                      # https://github.com/rs/curlie
 nmap                        # https://nmap.org/
 aur/prips                   # https://packages.debian.org/stable/net/prips
 ipcalc                      # http://jodies.de/ipcalc

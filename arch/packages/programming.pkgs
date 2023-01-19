@@ -64,10 +64,18 @@ aur/hugo-extended-cli       # https://gohugo.io/
 pandoc                      # http://pandoc.org
 graphviz                    # https://graphviz.org/
 
+## Data Processing
+gnumeric                    # http://www.gnumeric.org/
+
 ## Graph Editor
 aur/yed                     # http://www.yworks.com/en/downloads.html#yEd
 # yEd VRT palettes: https://github.com/pafnow/vrt-graphml-for-yed
 # yEd AWS palettes: https://github.com/JustDerb/yed-aws-palettes
+
+## Database
+dbeaver                     # https://dbeaver.io/
+dbeaver-plugin-office       # https://dbeaver.io/
+dbeaver-plugin-svg-format   # https://dbeaver.io/
 
 ## GUI clients
 aur/insomnia-bin            # https://insomnia.rest/
@@ -97,5 +105,4 @@ aur/octant-bin              # https://github.com/vmware-tanzu/octant
 # aws-vault                 # https://github.com/99designs/aws-vault
 # xca                       # https://hohnstaedt.de/xca/
 # mkcert                    # https://github.com/FiloSottile/mkcert
-# dbeaver                   # https://dbeaver.io/
 # aur/wrk                   # https://github.com/wg/wrk
