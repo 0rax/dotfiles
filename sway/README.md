@@ -13,6 +13,7 @@ ln -s $PWD/gtk-4.0                         ~/.config/gtk-4.0
 ln -s $PWD/gammastep                       ~/.config/gammastep
 ln -s $PWD/mako                            ~/.config/mako
 ln -s $PWD/xdg/user-dirs.dirs              ~/.config/user-dirs.dirs
+ln -s $PWD/xdg-desktop-portal-wlr          ~/.config/xdg-desktop-portal-wlr
 ln -s $PWD/libinput/libinput-gestures.conf ~/.config/libinput-gestures.conf
 ```
 

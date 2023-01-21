@@ -117,7 +117,7 @@
             ]
         },
         "on-click-right": "pavucontrol",
-        "on-click-middle": "pulseaudio-ctl mute"
+        "on-click-middle": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
     },
     "cpu": {
         "format": " {usage}% ({avg_frequency}GHz)"
