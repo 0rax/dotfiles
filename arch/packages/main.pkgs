@@ -38,9 +38,10 @@ easyeffects                 # https://github.com/wwmm/easyeffects
 ## Fonts
 gnome-font-viewer           # https://gitlab.gnome.org/GNOME/gnome-font-viewer
 inter-font                  # https://github.com/rsms/inter/
+ttf-hack                    # https://github.com/source-foundry/Hack
 aur/otf-hasklig             # https://github.com/i-tu/Hasklig
 ttf-hack-nerd               # https://github.com/ryanoasis/nerd-fonts/
-aur/nerd-fonts-hasklig      # https://github.com/ryanoasis/nerd-fonts/
+otf-hasklig-nerd            # https://github.com/ryanoasis/nerd-fonts/
 
 ## Dictionaries
 hunspell                    # https://hunspell.github.io/
