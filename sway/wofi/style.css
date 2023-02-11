@@ -26,6 +26,7 @@ window {
   margin: 8px;
   border: none;
   background-color: @base00;
+  padding-bottom: 0px;
 }
 
 #input {

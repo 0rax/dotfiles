@@ -61,7 +61,7 @@ aur/pyenv-virtualenv        # https://github.com/pyenv/pyenv-virtualenv
 aur/hugo-extended-cli       # https://gohugo.io/
 
 ## Text Processing
-pandoc                      # http://pandoc.org
+pandoc-cli                  # http://pandoc.org
 graphviz                    # https://graphviz.org/
 
 ## Data Processing

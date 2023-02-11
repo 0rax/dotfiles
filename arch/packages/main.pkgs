@@ -14,9 +14,9 @@
 ## Web
 aur/librewolf-bin           # https://librewolf.net/
 aur/librewolf-firefox-shim  # https://librewolf.net/
+luakit                      # https://luakit.github.io/
 chromium                    # https://stacker.readthedocs.io/en/latest/
 aur/ferdium-bin             # https://github.com/ferdium/ferdium-app/
-aur/cinny-desktop-bin       # https://cinny.in/
 
 ## Media
 aur/youtube-music-bin       # https://github.com/th-ch/youtube-music
@@ -58,6 +58,7 @@ aur/snapper-gui-git         # https://github.com/ricardomv/snapper-gui
 
 ## Alternative & other useful softwares
 # firefox                   # https://www.mozilla.org/en-US/firefox/
+# aur/cinny-desktop-bin     # https://cinny.in/
 # bitwarden                 # https://bitwarden.com/#/
 # aur/keybase-bin           # https://keybase.io/
 # restic                    # https://github.com/restic/restic
