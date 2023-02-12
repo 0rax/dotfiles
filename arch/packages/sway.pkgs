@@ -27,7 +27,7 @@ waybar                      # [wl-status-bar  ] https://github.com/Alexays/Wayba
 wofi                        # [app-launcher   ] https://hg.sr.ht/~scoopta/wofi
 mako                        # [notif-daemon   ] https://github.com/emersion/mako
 swayidle                    # [session-idler  ] https://github.com/swaywm/swayidle
-aur/swaylock-effects-git    # [session-locker ] https://github.com/mortie/swaylock-effects
+aur/swaylock-effects        # [session-locker ] https://github.com/mortie/swaylock-effects
 dex                         # [autostart-xdg  ] https://github.com/jceb/dex
 gammastep                   # [gamma-ctrl     ] https://gitlab.com/chinstrap/gammastep
 kanshi                      # [display-profile] https://github.com/emersion/kanshi
