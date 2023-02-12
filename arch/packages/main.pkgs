@@ -56,6 +56,9 @@ aur/snapper-gui-git         # https://github.com/ricardomv/snapper-gui
 # sudo systemctl enable --now snapper-timeline.timer
 # sudo systemctl enable --now snapper-cleanup.timer
 
+## Security
+yubioath-desktop            # https://www.yubico.com/products/yubico-authenticator/
+
 ## Alternative & other useful softwares
 # firefox                   # https://www.mozilla.org/en-US/firefox/
 # aur/cinny-desktop-bin     # https://cinny.in/
