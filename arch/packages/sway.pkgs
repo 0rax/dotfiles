@@ -42,7 +42,7 @@ pipewire-jack               # [jack2-support  ] https://pipewire.org/
 pavucontrol                 # [audio-manager  ] https://freedesktop.org/software/pulseaudio/pavucontrol/
 easyeffects                 # [audio-effects  ] https://github.com/wwmm/easyeffects
 calf                        # [effects-plugins] https://calf-studio-gear.org/
-lsp-plugings                # [effects-plugins] https://lsp-plug.in/
+lsp-plugins                 # [effects-plugins] https://lsp-plug.in/
 
 ## Base applications
 alacritty                   # [terminal       ] https://alacritty.org/
@@ -59,7 +59,7 @@ luakit                      # [web-browser    ] https://luakit.github.io/
 
 ## Virtual filesystems (usermount, trash, ...)
 gvfs                        # [userspave-vfs  ] https://wiki.gnome.org/Projects/gvfs
-gvfs-samba                  # [vfs-samba      ] https://wiki.gnome.org/Projects/gvfs
+gvfs-smb                    # [vfs-samba      ] https://wiki.gnome.org/Projects/gvfs
 gvfs-nfs                    # [vfs-nfs        ] https://wiki.gnome.org/Projects/gvfs
 
 ## CLI utils
