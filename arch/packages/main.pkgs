@@ -14,7 +14,6 @@
 ## Web
 aur/librewolf-bin           # https://librewolf.net/
 aur/librewolf-firefox-shim  # https://librewolf.net/
-luakit                      # https://luakit.github.io/
 chromium                    # https://stacker.readthedocs.io/en/latest/
 aur/ferdium-bin             # https://github.com/ferdium/ferdium-app/
 

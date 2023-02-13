@@ -298,6 +298,7 @@
   "go.survey.prompt": false,
   "go.formatTool": "gofumpt",
   "yaml.format.enable": false,
+  "yaml.schemaStore.enable": false,
   "yaml.customTags": [
     // CloudFormation tags
     "!And",

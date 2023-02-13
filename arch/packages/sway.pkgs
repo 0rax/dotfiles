@@ -55,6 +55,7 @@ atril                       # [document-viewer] https://wiki.mate-desktop.org/ma
 celluloid                   # [media-player   ] https://celluloid-player.github.io/
 gnome-calculator            # [calculator     ] https://wiki.gnome.org/Apps/Calculator
 file-roller                 # [archive-manager] https://wiki.gnome.org/Apps/FileRoller
+luakit                      # [web-browser    ] https://luakit.github.io/
 
 ## Virtual filesystems (usermount, trash, ...)
 gvfs                        # [userspave-vfs  ] https://wiki.gnome.org/Projects/gvfs

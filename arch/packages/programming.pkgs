@@ -99,6 +99,9 @@ kubectl                     # https://kubernetes.io/docs/reference/kubectl/overv
 helm                        # https://helm.sh/docs/using_helm/
 kubie                       # https://github.com/sbstp/kubie
 aur/octant-bin              # https://github.com/vmware-tanzu/octant
+aur/openlens-bin            # https://github.com/MuhammedKalkan/OpenLens
+# Requires the Node/Pod Menu extension to be complete
+# See: https://github.com/alebcay/openlens-node-pod-menu
 
 ## Alternatives & other useful softwares
 # texlive-most              # https://tug.org/texlive/ [meta]
