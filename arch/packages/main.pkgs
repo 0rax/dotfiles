@@ -18,7 +18,7 @@ chromium                    # https://stacker.readthedocs.io/en/latest/
 aur/ferdium-bin             # https://github.com/ferdium/ferdium-app/
 
 ## Media
-aur/spotify                 # https://www.spotify.com/
+aur/youtube-music-bin       # https://github.com/th-ch/youtube-music
 
 ## File editors
 aur/vscodium-bin            # https://vscodium.com/
@@ -30,14 +30,17 @@ inkscape                    # https://inkscape.org/
 ## System utils
 gparted                     # https://gparted.sourceforge.io/
 veracrypt                   # https://veracrypt.codeplex.com/
-bitwarden                   # https://bitwarden.com/#/
+
+## Sound utils
+easyeffects                 # https://github.com/wwmm/easyeffects
 
 ## Fonts
 gnome-font-viewer           # https://gitlab.gnome.org/GNOME/gnome-font-viewer
 inter-font                  # https://github.com/rsms/inter/
+ttf-hack                    # https://github.com/source-foundry/Hack
 aur/otf-hasklig             # https://github.com/i-tu/Hasklig
-aur/nerd-fonts-hack         # https://github.com/ryanoasis/nerd-fonts/
-aur/nerd-fonts-hasklig      # https://github.com/ryanoasis/nerd-fonts/
+ttf-hack-nerd               # https://github.com/ryanoasis/nerd-fonts/
+otf-hasklig-nerd            # https://github.com/ryanoasis/nerd-fonts/
 
 ## Dictionaries
 hunspell                    # https://hunspell.github.io/
@@ -45,11 +48,20 @@ hunspell-en_GB              # https://hunspell.github.io/
 hunspell-fr                 # https://hunspell.github.io/
 
 ## Backup Utils
-snapper                     # https://wiki.archlinux.org/index.php/Snapper
-snapper-gui                 # https://wiki.archlinux.org/index.php/Snapper#Installation
+aur/seadrive-gui            # https://www.seafile.com/
+aur/seafile-client          # https://www.seafile.com/
+snapper                     # http://snapper.io/
+aur/snapper-gui-git         # https://github.com/ricardomv/snapper-gui
+# sudo systemctl enable --now snapper-timeline.timer
+# sudo systemctl enable --now snapper-cleanup.timer
+
+## Security
+yubioath-desktop            # https://www.yubico.com/products/yubico-authenticator/
 
 ## Alternative & other useful softwares
 # firefox                   # https://www.mozilla.org/en-US/firefox/
+# aur/cinny-desktop-bin     # https://cinny.in/
+# bitwarden                 # https://bitwarden.com/#/
 # aur/keybase-bin           # https://keybase.io/
 # restic                    # https://github.com/restic/restic
 # rclone                    # https://rclone.org/

@@ -61,7 +61,7 @@
         "when": "editorTextFocus"
     },
     {
-        "key": "cmd+enter",
+        "key": "meta+t",
         "command": "workbench.action.toggleZenMode"
     },
     {
@@ -83,5 +83,9 @@
     {
         "key": "ctrl+shift+`",
         "command": "-workbench.action.terminal.new"
+    },
+    {
+      "key": "ctrl+shift+b",
+      "command": "workbench.action.toggleAuxiliaryBar"
     }
 ]

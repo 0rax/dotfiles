@@ -27,16 +27,22 @@ waybar                      # [wl-status-bar  ] https://github.com/Alexays/Wayba
 wofi                        # [app-launcher   ] https://hg.sr.ht/~scoopta/wofi
 mako                        # [notif-daemon   ] https://github.com/emersion/mako
 swayidle                    # [session-idler  ] https://github.com/swaywm/swayidle
-aur/swaylock-effects-git    # [session-locker ] https://github.com/mortie/swaylock-effects
+aur/swaylock-effects        # [session-locker ] https://github.com/mortie/swaylock-effects
 dex                         # [autostart-xdg  ] https://github.com/jceb/dex
 gammastep                   # [gamma-ctrl     ] https://gitlab.com/chinstrap/gammastep
 kanshi                      # [display-profile] https://github.com/emersion/kanshi
+wob                         # [overlay-bar    ] https://github.com/francma/wob
+aur/wev                     # [event-viewer   ] https://git.sr.ht/~sircmpwn/wev
 
 ## Sound
 pipewire                    # [sound-server   ] https://pipewire.org/
 wireplumber                 # [sound-session  ] https://pipewire.pages.freedesktop.org/wireplumber/
 pipewire-pulse              # [pulse-support  ] https://pipewire.org/
 pipewire-jack               # [jack2-support  ] https://pipewire.org/
+pavucontrol                 # [audio-manager  ] https://freedesktop.org/software/pulseaudio/pavucontrol/
+easyeffects                 # [audio-effects  ] https://github.com/wwmm/easyeffects
+calf                        # [effects-plugins] https://calf-studio-gear.org/
+lsp-plugins                 # [effects-plugins] https://lsp-plug.in/
 
 ## Base applications
 alacritty                   # [terminal       ] https://alacritty.org/
@@ -49,10 +55,11 @@ atril                       # [document-viewer] https://wiki.mate-desktop.org/ma
 celluloid                   # [media-player   ] https://celluloid-player.github.io/
 gnome-calculator            # [calculator     ] https://wiki.gnome.org/Apps/Calculator
 file-roller                 # [archive-manager] https://wiki.gnome.org/Apps/FileRoller
+luakit                      # [web-browser    ] https://luakit.github.io/
 
 ## Virtual filesystems (usermount, trash, ...)
 gvfs                        # [userspave-vfs  ] https://wiki.gnome.org/Projects/gvfs
-gvfs-samba                  # [vfs-samba      ] https://wiki.gnome.org/Projects/gvfs
+gvfs-smb                    # [vfs-samba      ] https://wiki.gnome.org/Projects/gvfs
 gvfs-nfs                    # [vfs-nfs        ] https://wiki.gnome.org/Projects/gvfs
 
 ## CLI utils
@@ -73,7 +80,8 @@ ttf-hack                    # [mono-font      ] https://sourcefoundry.org/hack/
 aur/ttf-fork-awesome        # [iconic-font    ] https://forkaweso.me/Fork-Awesome/
 
 ## UI themes
-aur/matcha-gtk-theme        # [gtk-theme      ] https://github.com/vinceliuice/Matcha-gtk-theme
+arc-gtk-theme               # [gtk-theme      ] https://github.com/jnsh/arc-theme
+arc-solid-gtk-theme         # [gtk-theme      ] https://github.com/jnsh/arc-theme
 papirus-icon-theme          # [icon-theme     ] https://github.com/PapirusDevelopmentTeam/papirus-icon-theme
 xcursor-vanilla-dmz         # [cursor-theme   ] https://www.gnome-look.org/p/999970/
 
@@ -87,7 +95,6 @@ accountsservice             # [config-deps    ] https://gitlab.freedesktop.org/a
 aur/swaysettings-git        # [system-config  ] https://github.com/ErikReider/SwaySettings
 aur/wdisplays               # [display-manager] https://github.com/artizirk/wdisplays
 nm-connection-editor        # [network-manager] https://networkmanager.dev/
-pavucontrol                 # [audio-manager  ] https://freedesktop.org/software/pulseaudio/pavucontrol/
 
 ## Trackpad gestures support
 aur/libinput-gestures       # [gestures-daemon] https://github.com/bulletmark/libinput-gestures

@@ -54,7 +54,8 @@ keychain                    # https://www.funtoo.org/Keychain
 bat                         # https://github.com/sharkdp/bat
 jq                          # https://stedolan.github.io/jq/
 xsv                         # https://github.com/BurntSushi/xsv
-aur/patool                  # https://wummel.github.io/patool/
+aur/dtrx                    # https://github.com/dtrx-py/dtrx
+aur/pfetch                  # https://github.com/dylanaraps/pfetch
 
 ## Network utils
 wget                        # https://www.gnu.org/software/wget/
@@ -65,6 +66,7 @@ whois                       # https://github.com/rfc1036/whois
 traceroute                  # http://traceroute.sourceforge.net/
 tcpdump                     # https://www.archlinux.org/packages/extra/x86_64/tcpdump/
 httpie                      # https://httpie.org/
+curlie                      # https://github.com/rs/curlie
 nmap                        # https://nmap.org/
 aur/prips                   # https://packages.debian.org/stable/net/prips
 ipcalc                      # http://jodies.de/ipcalc

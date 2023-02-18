@@ -17,6 +17,7 @@ window#waybar {
     padding: 5px 5px;
     background-color: @base0D;
     color: @base01;
+    transition: none;
 }
 
 
@@ -32,6 +33,11 @@ window#waybar {
 
 #workspaces button.persistent {
     background-color: @base01;
+    color: @base05;
+}
+
+#workspaces button:hover {
+    background: @base03;
     color: @base05;
 }
 
@@ -54,7 +60,7 @@ window#waybar {
 #idle_inhibitor,
 #mpd {
     padding: 0 10px;
-    margin:0px;
+    margin: 0px;
     color: #ffffff;
 }
 

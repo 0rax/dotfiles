@@ -12,8 +12,11 @@
 
 ## CLI tools
 aur/gibo                    # https://github.com/simonwhitaker/gibo
-github-cli                  # https://cli.github.com/
 tokei                       # https://github.com/XAMPPRocky/tokei
+
+# Github
+github-cli                  # https://cli.github.com/
+aur/act-bin                 # https://github.com/nektos/act
 
 ## Make
 make                        # https://www.gnu.org/software/make/
@@ -53,15 +56,25 @@ pyenv                       # https://github.com/pyenv/pyenv
 python-virtualenv           # https://virtualenv.pypa.io/en/latest/
 aur/pyenv-virtualenv        # https://github.com/pyenv/pyenv-virtualenv
 
+## Web
+aur/hugo-extended-cli       # https://gohugo.io/
+
 ## Text Processing
-texlive-most                # [meta] https://tug.org/texlive/
-pandoc                      # http://pandoc.org
+pandoc-cli                  # http://pandoc.org
 graphviz                    # https://graphviz.org/
+
+## Data Processing
+gnumeric                    # http://www.gnumeric.org/
 
 ## Graph Editor
 aur/yed                     # http://www.yworks.com/en/downloads.html#yEd
 # yEd VRT palettes: https://github.com/pafnow/vrt-graphml-for-yed
 # yEd AWS palettes: https://github.com/JustDerb/yed-aws-palettes
+
+## Database
+dbeaver                     # https://dbeaver.io/
+dbeaver-plugin-office       # https://dbeaver.io/
+dbeaver-plugin-svg-format   # https://dbeaver.io/
 
 ## GUI clients
 aur/insomnia-bin            # https://insomnia.rest/
@@ -70,7 +83,7 @@ aur/wombat-bin              # https://github.com/rogchap/wombat
 ## Docker
 docker                      # https://www.docker.com/
 docker-compose              # https://www.docker.com/
-aur/dive                    # https://github.com/wagoodman/dive
+dive                        # https://github.com/wagoodman/dive
 aur/docker-credential-secretservice # https://github.com/docker/docker-credential-helpers
 # sudo systemctl enable --now docker
 # sudo usermod -a -G docker $USER
@@ -85,10 +98,13 @@ kubectl                     # https://kubernetes.io/docs/reference/kubectl/overv
 helm                        # https://helm.sh/docs/using_helm/
 kubie                       # https://github.com/sbstp/kubie
 aur/octant-bin              # https://github.com/vmware-tanzu/octant
+aur/openlens-bin            # https://github.com/MuhammedKalkan/OpenLens
+# Requires the Node/Pod Menu extension to be complete
+# See: https://github.com/alebcay/openlens-node-pod-menu
 
 ## Alternatives & other useful softwares
+# texlive-most              # https://tug.org/texlive/ [meta]
 # aws-vault                 # https://github.com/99designs/aws-vault
 # xca                       # https://hohnstaedt.de/xca/
 # mkcert                    # https://github.com/FiloSottile/mkcert
-# dbeaver                   # https://dbeaver.io/
 # aur/wrk                   # https://github.com/wg/wrk

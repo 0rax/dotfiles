@@ -1,0 +1,39 @@
+#!/usr/bin/env true
+#
+# description:
+#   Hardware acceleration support (VA-API)
+#
+# require:
+#   - pacman (Arch Linux Package Manager)
+#   - yay (AUR Wrapper)
+#       git clone https://aur.archlinux.org/yay-bin.git /tmp/yay; cd /tmp/yay; makepkg -si
+#   - base-devel (meta package)
+#       see https://www.archlinux.org/groups/x86_64/base-devel/
+
+## VA-API
+libva-utils
+intel-media-driver
+intel-gpu-tools
+gstreamer-vaapi
+# sudo usermod -a -G render $USER
+# Test using:
+#   `vainfo`
+#   `vainfo --display drm --device /dev/dri/renderD12`
+
+## Firefox config
+# `about:config`:
+# - media.ffmpeg.vaapi.enabled=true
+# - media.rdd-ffmpeg.enabled=true
+# - media.ffvpx.enabled=false
+# - media.navigator.mediadatadecoder_vpx_enabled=true
+# - media.rdd-vpx.enabled=false
+# - gfx.webrender.all=true
+# - media.hardware-video-decoding.force-enabled=true
+# Source:
+# - https://wiki.archlinux.org/title/Firefox#Hardware_video_acceleration
+# - https://dev.getsol.us/T9599
+# Test using:
+#   `MOZ_LOG="PlatformDecoderModule:5" MOZ_DISABLE_RDD_SANDBOX=1 MOZ_ENABLE_WAYLAND=1 firefox-developer-edition 2>&1 | grep -i VA-API`
+
+## Celluloid config
+# - Extra mpv options: --hwdec=vaapi --gpu-context=wayland

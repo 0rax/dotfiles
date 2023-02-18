@@ -14,6 +14,7 @@
 kicad                       # http://kicad.org/
 kicad-library               # http://kicad.org/
 kicad-library-3d            # http://kicad.org/
+aur/fritzing                # https://fritzing.org/
 aur/eagle                   # https://www.autodesk.fr/products/eagle/
 aur/easyeda-bin             # https://easyeda.com/
 aur/easyeda-router          # https://easyeda.com/

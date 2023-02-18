@@ -25,6 +25,14 @@
 [url "git@bitbucket.org:"]
 	insteadOf = https://bitbucket.org/
 
+# Specific remote config
+[includeIf "hasconfig:remote.*.url:git@github.com:**"]
+	path = ~/.gitconfig_github
+[includeIf "hasconfig:remote.*.url:https://github.com/**"]
+	path = ~/.gitconfig_github
+[includeIf "hasconfig:remote.*.url:ssh://aur@aur.archlinux.org/**"]
+	path = ~/.gitconfig_aur
+
 # Git alias
 [alias]
 	# git info

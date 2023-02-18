@@ -39,6 +39,8 @@
             "4:Media": "",
             "5:Files": "",
             "6:Chat": "",
+            "7:3D": "",
+            "8:VM": "",
             "urgent": "",
             "focused": "",
             "default": ""
@@ -117,10 +119,10 @@
             ]
         },
         "on-click-right": "pavucontrol",
-        "on-click-middle": "pulseaudio-ctl mute"
+        "on-click-middle": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
     },
     "cpu": {
-        "format": " {usage}%"
+        "format": " {usage}% ({avg_frequency}GHz)"
     },
     "memory": {
         "format": " {percentage}%"
