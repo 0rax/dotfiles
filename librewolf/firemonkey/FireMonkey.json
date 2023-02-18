@@ -1,0 +1,158 @@
+{
+  "autoUpdateInterval": "1",
+  "autoUpdateLast": 0,
+  "cmOptions": "",
+  "counter": true,
+  "customOptionsCSS": "",
+  "customPopupCSS": "",
+  "globalScriptExcludeMatches": "",
+  "sync": true,
+  "template": {
+    "css": "",
+    "js": ""
+  },
+  "_AWS Accent Colors": {
+    "name": "AWS Accent Colors",
+    "author": "0rax",
+    "description": "Color the AWS Menubar depending on the account you are in (uses account name suffix)",
+    "updateURL": "https://gist.github.com/0rax/e1ea9ac450b85c47d83a49b9bfbb99f3/raw/aws-accent-colors.user.js",
+    "version": "0.2.0",
+    "enabled": true,
+    "autoUpdate": false,
+    "userMeta": "",
+    "antifeatures": [],
+    "injectInto": "",
+    "require": [],
+    "requireRemote": [],
+    "resource": {},
+    "error": "",
+    "storage": {},
+    "grant": [
+      "none"
+    ],
+    "style": [],
+    "includes": [],
+    "excludes": [],
+    "container": [],
+    "userVar": {},
+    "preprocessor": "",
+    "i18n": {
+      "name": {},
+      "description": {}
+    },
+    "allFrames": false,
+    "js": "// ==UserScript==\n// @name        AWS Accent Colors\n// @namespace   https://github.com/0rax/dotfiles\n// @description Color the AWS Menubar depending on the account you are in (uses account name suffix)\n// @match       https://console.aws.amazon.com/*\n// @match       https://*.console.aws.amazon.com/*\n// @grant       none\n// @author      0rax\n// @version     0.2.0\n// @homepageURL https://gist.github.com/0rax/e1ea9ac450b85c47d83a49b9bfbb99f3\n// @downloadURL https://gist.github.com/0rax/e1ea9ac450b85c47d83a49b9bfbb99f3/raw/aws-accent-colors.user.js\n// ==/UserScript==\n\nlet styles = {\n  'default': '',\n  'billing': 'body #awsc-nav-header > nav { background: #8E44AD; }',\n  'pkgs':    'body #awsc-nav-header > nav { background: #2C3E50; }',\n  'prod':    'body #awsc-nav-header > nav { background: #C0392B; }',\n  'dev':     'body #awsc-nav-header > nav { background: #2980B9; }',\n  'sandbox': 'body #awsc-nav-header > nav { background: #27AE60; }',\n};\n\nfunction setStyle() {\n  let iam = document.querySelector('#nav-usernameMenu > span > span');\n  if (iam) {\n      let account = iam.innerHTML.split(' @ ')[1];\n      let role = iam.innerHTML.split('/')[0];\n      let account_type = account.split('-')[1];\n      if (account_type === undefined) {\n        account_type = \"default\";\n      }\n      iam.innerHTML = role + \" @ \" + account_type;\n      let style = styles[account_type];\n      if (style) {\n          let head = document.getElementsByTagName('head')[0];\n          if (head) {\n              let style_element = document.createElement('style');\n              style_element.setAttribute('type', 'text/css');\n              style_element.textContent = style;\n              head.appendChild(style_element);\n          }\n      }\n  } else {\n      setTimeout(setStyle, 300);\n  }\n}\nsetTimeout(setStyle, 300);",
+    "css": "",
+    "matches": [
+      "https://console.aws.amazon.com/*",
+      "https://*.console.aws.amazon.com/*"
+    ],
+    "excludeMatches": [],
+    "includeGlobs": [],
+    "excludeGlobs": [],
+    "matchAboutBlank": false,
+    "runAt": "document_idle"
+  },
+  "_Hacker News: Fixed & Spaced": {
+    "name": "Hacker News: Fixed & Spaced",
+    "author": "0rax",
+    "description": "Customize the background color and width of Hacker News",
+    "updateURL": "https://gist.github.com/0rax/935c7c9d92800ed74297f9f4f8d59ef1/raw/hn-fixed-spaced.user.css",
+    "version": "1.1.1",
+    "enabled": true,
+    "autoUpdate": false,
+    "userMeta": "",
+    "antifeatures": [],
+    "injectInto": "",
+    "require": [],
+    "requireRemote": [],
+    "resource": {},
+    "error": "",
+    "storage": {},
+    "grant": [],
+    "style": [
+      {
+        "matches": [
+          "*://*.news.ycombinator.com/*"
+        ],
+        "css": "body {\n    margin-top: 36px;\n    margin-bottom: 36px;\n    background: var(--background-color);\n  }\n  #hnmain {\n    width: var(--content-width) !important;\n  }\n  .itemlist {\n    margin: 10px;\n  }"
+      }
+    ],
+    "includes": [],
+    "excludes": [],
+    "container": [],
+    "userVar": {
+      "background-color": {
+        "type": "color",
+        "label": "Background Color",
+        "value": "#333",
+        "user": "#333"
+      },
+      "content-width": {
+        "type": "text",
+        "label": "Content Width",
+        "value": "\"900px\"",
+        "user": "\"900px\""
+      }
+    },
+    "preprocessor": "",
+    "i18n": {
+      "name": {},
+      "description": {}
+    },
+    "allFrames": false,
+    "js": "",
+    "css": "/* ==UserStyle==\n@name           Hacker News: Fixed & Spaced\n@namespace      https://github.com/0rax\n@version        1.1.1\n@description    Customize the background color and width of Hacker News\n@author         0rax\n@homepageURL    https://gist.github.com/0rax/935c7c9d92800ed74297f9f4f8d59ef1\n@updateURL      https://gist.github.com/0rax/935c7c9d92800ed74297f9f4f8d59ef1/raw/hn-fixed-spaced.user.css\n@var            color   background-color    \"Background Color\"  #333\n@var            text    content-width       \"Content Width\"     \"900px\"\n==/UserStyle== */\n\n@-moz-document domain(\"news.ycombinator.com\") {\n  body {\n    margin-top: 36px;\n    margin-bottom: 36px;\n    background: var(--background-color);\n  }\n  #hnmain {\n    width: var(--content-width) !important;\n  }\n  .itemlist {\n    margin: 10px;\n  }\n}\n",
+    "matches": [],
+    "excludeMatches": [],
+    "includeGlobs": [],
+    "excludeGlobs": [],
+    "matchAboutBlank": false,
+    "runAt": "document_start"
+  },
+  "_IETF: Dark RFC Readable": {
+    "name": "IETF: Dark RFC Readable",
+    "author": "0rax",
+    "description": "Makes RFC documents darker and readable",
+    "updateURL": "https://gist.github.com/0rax/575483c4acaf235481d32d995a11565d/raw/ietf-dark-rfc.user.css",
+    "version": "1.1.1",
+    "enabled": true,
+    "autoUpdate": false,
+    "userMeta": "",
+    "antifeatures": [],
+    "injectInto": "",
+    "require": [],
+    "requireRemote": [],
+    "resource": {},
+    "error": "",
+    "storage": {},
+    "grant": [],
+    "style": [
+      {
+        "matches": [
+          "https://tools.ietf.org/html/rfc*",
+          "https://datatracker.ietf.org/doc/html/*"
+        ],
+        "css": "/* Darkify RFC documents */\n  * {\n    margin: 0;\n    padding: 0;\n  }\n  body {\n    margin: 0;\n    background-color: #333;\n    color: #fff;\n  }\n  a,\n  a:visited,\n  a.selflink {\n    color: #0074d9;\n  }\n  div.content,\n  .pre.noprint.docinfo {\n    margin: 0 auto;\n  }\n  pre,\n  span.pre {\n    font-size: 1.15em;\n  }\n  hr {\n    width: inherit !important;\n  }\n  div.pre.noprint.docinfo {\n    position: absolute;\n    width: 100%;\n    left: 0px;\n  }\n  span.pre.noprint.docinfo {\n    color: #000;\n  }\n  pre:first-of-type {\n    margin-top: 12px;\n  }\n  div#legend {\n    background-color: #333 !important;\n    width: 270px;\n  }\n  /* Update colors (colors from: https://github.com/mrmrs/colors) */\n  .bgblue {\n    background-color: #0074d9;\n  }\n  .bggreen {\n    background-color: #2ecc40;\n  }\n  .bgyellow {\n    background-color: #ffdc00;\n  }\n  .bgorange {\n    background-color: #ff851b;\n  }\n  .bgred {\n    background-color: #ff4136;\n  }\n  .bgwhite {\n    background-color: #ffffff;\n  }\n  .bggrey {\n    background-color: #aaaaaa;\n  }\n  .blue {\n    color: #0074d9;\n  }\n  .green {\n    color: #2ecc40;\n  }\n  .yellow {\n    color: #ffdc00;\n  }\n  .orange {\n    color: #ff851b;\n  }\n  .red {\n    color: #ff4136;\n  }\n  .white {\n    color: #ffffff;\n  }\n  .grey {\n    color: #aaaaaa;\n  }"
+      }
+    ],
+    "includes": [],
+    "excludes": [],
+    "container": [],
+    "userVar": {},
+    "preprocessor": "",
+    "i18n": {
+      "name": {},
+      "description": {}
+    },
+    "allFrames": false,
+    "js": "",
+    "css": "/* ==UserStyle==\n@name           IETF: Dark RFC Readable\n@namespace      https://github.com/0rax\n@version        1.1.1\n@description    Makes RFC documents darker and readable\n@author         0rax\n@homepageURL    https://gist.github.com/0rax/575483c4acaf235481d32d995a11565d\n@updateURL      https://gist.github.com/0rax/575483c4acaf235481d32d995a11565d/raw/ietf-dark-rfc.user.css\n==/UserStyle== */\n\n@-moz-document url-prefix(\"https://tools.ietf.org/html/rfc\"), url-prefix(\"https://datatracker.ietf.org/doc/html/\")\n{\n  /* Darkify RFC documents */\n  * {\n    margin: 0;\n    padding: 0;\n  }\n  body {\n    margin: 0;\n    background-color: #333;\n    color: #fff;\n  }\n  a,\n  a:visited,\n  a.selflink {\n    color: #0074d9;\n  }\n  div.content,\n  .pre.noprint.docinfo {\n    margin: 0 auto;\n  }\n  pre,\n  span.pre {\n    font-size: 1.15em;\n  }\n  hr {\n    width: inherit !important;\n  }\n  div.pre.noprint.docinfo {\n    position: absolute;\n    width: 100%;\n    left: 0px;\n  }\n  span.pre.noprint.docinfo {\n    color: #000;\n  }\n  pre:first-of-type {\n    margin-top: 12px;\n  }\n  div#legend {\n    background-color: #333 !important;\n    width: 270px;\n  }\n  /* Update colors (colors from: https://github.com/mrmrs/colors) */\n  .bgblue {\n    background-color: #0074d9;\n  }\n  .bggreen {\n    background-color: #2ecc40;\n  }\n  .bgyellow {\n    background-color: #ffdc00;\n  }\n  .bgorange {\n    background-color: #ff851b;\n  }\n  .bgred {\n    background-color: #ff4136;\n  }\n  .bgwhite {\n    background-color: #ffffff;\n  }\n  .bggrey {\n    background-color: #aaaaaa;\n  }\n  .blue {\n    color: #0074d9;\n  }\n  .green {\n    color: #2ecc40;\n  }\n  .yellow {\n    color: #ffdc00;\n  }\n  .orange {\n    color: #ff851b;\n  }\n  .red {\n    color: #ff4136;\n  }\n  .white {\n    color: #ffffff;\n  }\n  .grey {\n    color: #aaaaaa;\n  }\n}\n",
+    "matches": [],
+    "excludeMatches": [],
+    "includeGlobs": [],
+    "excludeGlobs": [],
+    "matchAboutBlank": false,
+    "runAt": "document_start"
+  }
+}
