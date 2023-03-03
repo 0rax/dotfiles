@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Name=ferdium
+Comment=ferdiumstartup script
+Exec=/opt/ferdium-bin/ferdium --enable-features=WaylandWindowDecorations --ozone-platform-hint=auto --enable-webrtc-pipewire-capturer
+StartupNotify=false
+Terminal=false
