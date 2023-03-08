@@ -75,6 +75,7 @@ aur/yed                     # http://www.yworks.com/en/downloads.html#yEd
 dbeaver                     # https://dbeaver.io/
 dbeaver-plugin-office       # https://dbeaver.io/
 dbeaver-plugin-svg-format   # https://dbeaver.io/
+aur/redisinsight            # https://redis.com/redis-enterprise/redis-insight/
 
 ## GUI clients
 aur/insomnia-bin            # https://insomnia.rest/
@@ -82,7 +83,9 @@ aur/wombat-bin              # https://github.com/rogchap/wombat
 
 ## Docker
 docker                      # https://www.docker.com/
-docker-compose              # https://www.docker.com/
+docker-compose              # https://docs.docker.com/compose/
+docker-buildx               # https://docs.docker.com/engine/reference/commandline/buildx/
+docker-scan                 # https://docs.docker.com/engine/scan/
 dive                        # https://github.com/wagoodman/dive
 aur/docker-credential-secretservice # https://github.com/docker/docker-credential-helpers
 # sudo systemctl enable --now docker
