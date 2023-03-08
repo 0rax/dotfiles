@@ -85,8 +85,6 @@ aur/wombat-bin              # https://github.com/rogchap/wombat
 docker                      # https://www.docker.com/
 docker-compose              # https://docs.docker.com/compose/
 docker-buildx               # https://docs.docker.com/engine/reference/commandline/buildx/
-docker-scan                 # https://docs.docker.com/engine/scan/
-dive                        # https://github.com/wagoodman/dive
 aur/docker-credential-secretservice # https://github.com/docker/docker-credential-helpers
 # sudo systemctl enable --now docker
 # sudo usermod -a -G docker $USER
@@ -111,3 +109,5 @@ aur/openlens-bin            # https://github.com/MuhammedKalkan/OpenLens
 # xca                       # https://hohnstaedt.de/xca/
 # mkcert                    # https://github.com/FiloSottile/mkcert
 # aur/wrk                   # https://github.com/wg/wrk
+# dive                      # https://github.com/wagoodman/dive
+# aur/lazydocker            # https://github.com/jesseduffield/lazydocker
