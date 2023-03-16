@@ -18,7 +18,7 @@ chromium                    # https://stacker.readthedocs.io/en/latest/
 aur/ferdium-bin             # https://github.com/ferdium/ferdium-app/
 
 ## Media
-aur/youtube-music-bin       # https://github.com/th-ch/youtube-music
+aur/spotify                 # https://spotify.com/
 
 ## File editors
 aur/vscodium-bin            # https://vscodium.com/

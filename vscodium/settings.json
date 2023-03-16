@@ -18,7 +18,7 @@
   "editor.wordWrap": "bounded",
   "editor.scrollBeyondLastLine": false,
   "editor.tabSize": 4,
-  "editor.wordWrapColumn": 90,
+  "editor.wordWrapColumn": 100,
   "editor.guides.bracketPairs": "active",
   "editor.bracketPairColorization.enabled": true,
   "editor.stickyScroll.enabled": true,
