@@ -177,8 +177,6 @@
   },
   // === Addons ===
   "amVim.bindCtrlCommands": false,
-  "buf.linting.enabled": false,
-  "buf.linting.lintOnSave": false,
   "commentAnchors.tags.list": [
     {
       "tag": "ANCHOR",

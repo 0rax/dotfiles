@@ -40,7 +40,7 @@ window:
     general: alacritty
 
   # GTK theme variant (Linux/BSD only)
-  decorations_theme_variant: dark
+  decorations_theme_variant: Dark
 
 scrolling:
   # Maximum number of lines in the scrollback buffer.
