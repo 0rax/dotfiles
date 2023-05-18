@@ -730,5 +730,6 @@
     "base16-zenburn-dark",
     "base16-zenburn-light"
   ],
+  "testing.gutterEnabled": false,
   // === End of file ===
 }

@@ -79,7 +79,6 @@ aur/redisinsight            # https://redis.com/redis-enterprise/redis-insight/
 
 ## GUI clients
 aur/insomnia-bin            # https://insomnia.rest/
-aur/wombat-bin              # https://github.com/rogchap/wombat
 
 ## Docker
 docker                      # https://www.docker.com/

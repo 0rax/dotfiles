@@ -73,6 +73,7 @@ wl-clipboard                # [wl-clipboard   ] https://github.com/bugaevc/wl-cl
 xsel                        # [x11-clipboard  ] http://www.vergenet.net/~conrad/software/xsel/
 aur/wlr-randr               # [display-manager] https://sr.ht/~emersion/wlr-randr/
 aur/wev                     # [event-viewer   ] https://git.sr.ht/~sircmpwn/wev
+aur/swaycwd                 # [cwd-tool       ] https://github.com/calebstewart/swaycwd
 
 ## Fonts
 noto-fonts                  # [system-font    ] https://fonts.google.com/noto

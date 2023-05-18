@@ -11,15 +11,6 @@ set $mod  Mod4
 set $alt  Mod1
 set $ctrl Control
 
-set $term alacritty
-set $lock swaylock
-
-# Your preferred application launcher
-# Note: pass the final command to swaymsg so that the resulting window can be opened
-# on the original workspace that the command was run on.
-# set $menu dmenu_path | dmenu | xargs swaymsg exec --
-set $menu wofi --show drun
-
 # Set wob socket
 set $wobsock $XDG_RUNTIME_DIR/wob.sock
 
