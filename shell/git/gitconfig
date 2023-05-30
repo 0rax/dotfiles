@@ -63,12 +63,13 @@
 	ndiff = diff --name-only
 	sndiff = diff --staged --name-only
 	# https://blog.filippo.io/git-fixup-amending-an-older-commit/
-	fixup = "!f() { TARGET=$(git rev-parse "$1"); git commit --fixup=$TARGET ${@:2} && EDITOR=true git rebase -i --autostash --autosquash $TARGET^; }; f"
+	fixup = "!f() { local target=$(git rev-parse "$1"); git commit --fixup=${target} ${@:2} && EDITOR=true git rebase -i --autostash --autosquash ${target}^; }; f"
 	# git logs
 	file = log --graph --pretty=oneline --shortstat --abbrev-commit
 	alog = log --graph --abbrev-commit --decorate --date=relative --format=prettylog --all
 	slog = log --abbrev-commit --decorate --date=relative --format=prettylog --shortstat -30
 	flog = log --graph --abbrev-commit --decorate --date=relative --stat --show-signature
+	set-upstream = "!f() { local remote="$1" branch=$(git branch --show-current); : ${remote:="origin"}; git branch --set-upstream-to=${remote}/${branch} ${branch}; }; f"
 
 # Git color
 [color]
