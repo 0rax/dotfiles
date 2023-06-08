@@ -17,9 +17,9 @@ Google Container,@contain-google,extension,true,https://github.com/containers-ev
 Grammalecte [fr],French-GC@grammalecte.net,extension,true,https://grammalecte.net/
 Gumbo: Twitch Companion,{59a39734-1e66-452e-a7b8-cc79f72062f0},extension,true,
 I still don't care about cookies,idcac-pub@guus.ninja,extension,true,https://github.com/OhMyGuus/I-Still-Dont-Care-About-Cookies
+LibRedirect,7esoorv3@alefvanoon.anonaddy.me,extension,true,
 Librefox Reload/Refresh Button Url Bar,librefox.reload.button@intika.be,extension,true,https://github.com/intika/Librefox-Firefox
 nightTab,{47bf427e-c83d-457d-9b3d-3db4118574bd},extension,true,https://github.com/zombieFox/nightTab
-Nitter Redirect,{513646f8-fb87-4135-a41e-4cf1d1ccccf2},extension,true,
 Open Graph Preview,{6e262423-d612-4f29-be6e-e83aa641645d},extension,false,
 Refined GitHub,{a4c4eda4-fb84-4a84-b4a1-f7c1cbf2a1ad},extension,true,https://github.com/refined-github/refined-github
 Smart Referer,smart-referer@meh.paranoid.pk,extension,true,https://gitlab.com/smart-referer
