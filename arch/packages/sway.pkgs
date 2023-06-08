@@ -11,7 +11,7 @@
 #       see https://www.archlinux.org/groups/x86_64/base-devel/
 
 ## Session manager
-aur/ly                      # [session-manager] https://github.com/fairyglade/ly
+ly                          # [session-manager] https://github.com/fairyglade/ly
 # sudo systemctl disable getty@tty2.service
 # sudo systemctl enable ly.service
 

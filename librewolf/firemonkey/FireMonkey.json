@@ -1,6 +1,6 @@
 {
   "autoUpdateInterval": "1",
-  "autoUpdateLast": 0,
+  "autoUpdateLast": 1686172822629,
   "cmOptions": "",
   "counter": true,
   "customOptionsCSS": "",
@@ -58,7 +58,7 @@
     "author": "0rax",
     "description": "Customize the background color and width of Hacker News",
     "updateURL": "https://gist.github.com/0rax/935c7c9d92800ed74297f9f4f8d59ef1/raw/hn-fixed-spaced.user.css",
-    "version": "1.1.1",
+    "version": "1.4.1",
     "enabled": true,
     "autoUpdate": false,
     "userMeta": "",
@@ -75,26 +75,13 @@
         "matches": [
           "*://*.news.ycombinator.com/*"
         ],
-        "css": "body {\n    margin-top: 36px;\n    margin-bottom: 36px;\n    background: var(--background-color);\n  }\n  #hnmain {\n    width: var(--content-width) !important;\n  }\n  .itemlist {\n    margin: 10px;\n  }"
+        "css": "body {\n    margin: 36px auto;\n    background: #333;\n  }\n  #hnmain {\n    width: 100%;\n    max-width: 1020px;\n  }\n  @media only screen and (min-width: 1020px) and (max-width: 1200px) {\n    body {\n      margin: 24px auto;\n    }\n  }\n  @media only screen and (max-width: 1020px) {\n    body {\n      margin: 0px auto;\n    }\n    #hnmain {\n      width: 100%;\n      min-width: 0;\n    }\n  }\n  .itemlist {\n    margin: 10px;\n  }"
       }
     ],
     "includes": [],
     "excludes": [],
     "container": [],
-    "userVar": {
-      "background-color": {
-        "type": "color",
-        "label": "Background Color",
-        "value": "#333",
-        "user": "#333"
-      },
-      "content-width": {
-        "type": "text",
-        "label": "Content Width",
-        "value": "\"900px\"",
-        "user": "\"900px\""
-      }
-    },
+    "userVar": {},
     "preprocessor": "",
     "i18n": {
       "name": {},
@@ -102,7 +89,7 @@
     },
     "allFrames": false,
     "js": "",
-    "css": "/* ==UserStyle==\n@name           Hacker News: Fixed & Spaced\n@namespace      https://github.com/0rax\n@version        1.1.1\n@description    Customize the background color and width of Hacker News\n@author         0rax\n@homepageURL    https://gist.github.com/0rax/935c7c9d92800ed74297f9f4f8d59ef1\n@updateURL      https://gist.github.com/0rax/935c7c9d92800ed74297f9f4f8d59ef1/raw/hn-fixed-spaced.user.css\n@var            color   background-color    \"Background Color\"  #333\n@var            text    content-width       \"Content Width\"     \"900px\"\n==/UserStyle== */\n\n@-moz-document domain(\"news.ycombinator.com\") {\n  body {\n    margin-top: 36px;\n    margin-bottom: 36px;\n    background: var(--background-color);\n  }\n  #hnmain {\n    width: var(--content-width) !important;\n  }\n  .itemlist {\n    margin: 10px;\n  }\n}\n",
+    "css": "/* ==UserStyle==\n@name           Hacker News: Fixed & Spaced\n@namespace      https://github.com/0rax\n@version        1.4.1\n@description    Customize the background color and width of Hacker News\n@author         0rax\n@homepageURL    https://gist.github.com/0rax/935c7c9d92800ed74297f9f4f8d59ef1\n@updateURL      https://gist.github.com/0rax/935c7c9d92800ed74297f9f4f8d59ef1/raw/hn-fixed-spaced.user.css\n==/UserStyle== */\n\n@-moz-document domain(\"news.ycombinator.com\") {\n  body {\n    margin: 36px auto;\n    background: #333;\n  }\n  #hnmain {\n    width: 100%;\n    max-width: 1020px;\n  }\n  @media only screen and (min-width: 1020px) and (max-width: 1200px) {\n    body {\n      margin: 24px auto;\n    }\n  }\n  @media only screen and (max-width: 1020px) {\n    body {\n      margin: 0px auto;\n    }\n    #hnmain {\n      width: 100%;\n      min-width: 0;\n    }\n  }\n  .itemlist {\n    margin: 10px;\n  }\n}",
     "matches": [],
     "excludeMatches": [],
     "includeGlobs": [],
