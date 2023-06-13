@@ -14,10 +14,6 @@
 aur/gibo                    # https://github.com/simonwhitaker/gibo
 tokei                       # https://github.com/XAMPPRocky/tokei
 
-# Github
-github-cli                  # https://cli.github.com/
-aur/act-bin                 # https://github.com/nektos/act
-
 ## Make
 make                        # https://www.gnu.org/software/make/
 remake                      # http://bashdb.sourceforge.net/remake/
@@ -39,9 +35,14 @@ dash                        # http://gondor.apana.org.au/~herbert/dash/
 shellcheck                  # http://www.shellcheck.net/
 shfmt                       # https://github.com/mvdan/sh#shfmt
 
-## Protobuf
+## HTTP & Protobuf
+httpie                      # https://httpie.org/
+curlie                      # https://github.com/rs/curlie
 protobuf                    # https://developers.google.com/protocol-buffers
 aur/grpcurl-bin             # https://github.com/fullstorydev/grpcurl
+httpie                      # https://httpie.org/
+jq                          # https://stedolan.github.io/jq/
+xsv                         # https://github.com/BurntSushi/xsv
 
 ## NodeJS
 nodejs                      # https://nodejs.org/
@@ -78,7 +79,6 @@ dbeaver-plugin-svg-format   # https://dbeaver.io/
 aur/redisinsight            # https://redis.com/redis-enterprise/redis-insight/
 
 ## GUI clients
-aur/insomnia-bin            # https://insomnia.rest/
 
 ## Docker
 docker                      # https://www.docker.com/
@@ -87,11 +87,6 @@ docker-buildx               # https://docs.docker.com/engine/reference/commandli
 aur/docker-credential-secretservice # https://github.com/docker/docker-credential-helpers
 # sudo systemctl enable --now docker
 # sudo usermod -a -G docker $USER
-
-## AWS
-aws-cli                     # https://github.com/aws/aws-cli
-aur/saml2aws                # https://github.com/Versent/saml2aws
-aur/amazon-ecr-credential-helper # https://github.com/awslabs/amazon-ecr-credential-helper
 
 ## Kubernetes
 kubectl                     # https://kubernetes.io/docs/reference/kubectl/overview/
@@ -107,6 +102,10 @@ aur/openlens-bin            # https://github.com/MuhammedKalkan/OpenLens
 # aws-vault                 # https://github.com/99designs/aws-vault
 # xca                       # https://hohnstaedt.de/xca/
 # mkcert                    # https://github.com/FiloSottile/mkcert
-# aur/wrk                   # https://github.com/wg/wrk
+# hey                       # https://github.com/rakyll/hey
 # dive                      # https://github.com/wagoodman/dive
 # aur/lazydocker            # https://github.com/jesseduffield/lazydocker
+# aur/prips                 # https://packages.debian.org/stable/net/prips
+# ipcalc                    # http://jodies.de/ipcalc
+# bat                       # https://github.com/sharkdp/bat
+

@@ -40,20 +40,15 @@ zip                         # http://infozip.sourceforge.net/Zip.html
 unzip                       # http://infozip.sourceforge.net/UnZip.html
 lzop                        # http://www.lzop.org/
 lsof                        # http://people.freebsd.org/~abe/
-most                        # http://www.jedsoft.org/most/
 ripgrep                     # https://github.com/BurntSushi/ripgrep
 fd                          # https://github.com/sharkdp/fd
 moreutils                   # https://joeyh.name/code/moreutils/
-rhash                       # https://github.com/rhash/RHash
 grc                         # http://kassiopeia.juls.savba.sk/~garabik/software/grc.htm
 wdiff                       # https://www.gnu.org/software/wdiff/
 colordiff                   # https://www.colordiff.org/
 pv                          # https://www.ivarch.com/programs/pv.shtml
 pwgen                       # https://pwgen.sourceforge.io/
 keychain                    # https://www.funtoo.org/Keychain
-bat                         # https://github.com/sharkdp/bat
-jq                          # https://stedolan.github.io/jq/
-xsv                         # https://github.com/BurntSushi/xsv
 aur/dtrx                    # https://github.com/dtrx-py/dtrx
 aur/pfetch                  # https://github.com/dylanaraps/pfetch
 
@@ -65,11 +60,7 @@ bind-tools                  # https://www.isc.org/downloads/bind/
 whois                       # https://github.com/rfc1036/whois
 traceroute                  # http://traceroute.sourceforge.net/
 tcpdump                     # https://www.archlinux.org/packages/extra/x86_64/tcpdump/
-httpie                      # https://httpie.org/
-curlie                      # https://github.com/rs/curlie
 nmap                        # https://nmap.org/
-aur/prips                   # https://packages.debian.org/stable/net/prips
-ipcalc                      # http://jodies.de/ipcalc
 wireguard-tools             # https://www.wireguard.com/
 
 ## Monitoring
