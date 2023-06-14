@@ -1,0 +1,23 @@
+#!/usr/bin/env true
+#
+# description:
+#   Work related software
+#
+# require:
+#   - pacman (Arch Linux Package Manager)
+#   - yay (AUR Wrapper)
+#       git clone https://aur.archlinux.org/yay-bin.git /tmp/yay; cd /tmp/yay; makepkg -si
+#   - base-devel (meta package)
+#       see https://www.archlinux.org/groups/x86_64/base-devel/
+
+# Github
+github-cli                  # https://cli.github.com/
+aur/act-bin                 # https://github.com/nektos/act
+
+## AWS
+aws-cli                     # https://github.com/aws/aws-cli
+aur/saml2aws                # https://github.com/Versent/saml2aws
+aur/amazon-ecr-credential-helper # https://github.com/awslabs/amazon-ecr-credential-helper
+
+## Design
+aur/figma-linux-bin

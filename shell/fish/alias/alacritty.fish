@@ -1,7 +1,7 @@
 #!/usr/bin/env fish
 # -*-  mode:fish; tab-width:4  -*-
 
-function alacritty
+function alacritty --wraps=alacritty
 	if [ (count $argv) -eq 0 ]
 		command alacritty msg create-window; or command alacritty
 	else
