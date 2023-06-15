@@ -4,3 +4,5 @@ insensitive=true
 columns=1
 layer=overlay
 dynamic_lines=true
+width=480
+height=320

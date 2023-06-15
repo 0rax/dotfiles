@@ -1,6 +1,13 @@
 #!/bin/sh
 
-op=$(printf " Lock\n Logout\n Suspend\n Hibernate\n Poweroff\n Reboot\n" | wofi -i --dmenu --lines=4 --width=240 | awk '{print tolower($2)}')
+op=$(printf "img:/usr/share/icons/Papirus/48x48/apps/system-lock-screen.svg:text:Lock
+img:/usr/share/icons/Papirus/48x48/apps/system-log-out.svg:text:Logout
+img:/usr/share/icons/Papirus/48x48/apps/system-suspend.svg:text:Suspend
+img:/usr/share/icons/Papirus/48x48/apps/system-hibernate.svg:text:Hibernate
+img:/usr/share/icons/Papirus/48x48/apps/system-shutdown.svg:text:Poweroff
+img:/usr/share/icons/Papirus/48x48/apps/system-reboot.svg:text:Reboot" \
+    | wofi --allow-image --insensitive --dmenu --columns=2 --width=320 --height=174 \
+    | awk -F: '{print tolower($NF)}')
 
 case $op in
 poweroff)

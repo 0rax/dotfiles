@@ -58,7 +58,7 @@ python-virtualenv           # https://virtualenv.pypa.io/en/latest/
 aur/pyenv-virtualenv        # https://github.com/pyenv/pyenv-virtualenv
 
 ## Web
-aur/hugo-extended-cli       # https://gohugo.io/
+hugo                        # https://gohugo.io/
 
 ## Text Processing
 pandoc-cli                  # http://pandoc.org
