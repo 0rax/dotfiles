@@ -23,7 +23,6 @@ cmake                       # https://cmake.org/
 strace                      # https://strace.io/
 
 ## C/C++
-distcc                      # https://github.com/distcc/distcc
 clang                       # https://clang.llvm.org/
 
 ## Golang
@@ -52,7 +51,8 @@ prettier                    # https://prettier.io/
 
 ## Python
 python                      # https://docs.python.org/3/index.html
-python-pip                  # https://github.com/o2sh/onefetch
+python-pip                  # https://pip.pypa.io/
+python-pipx                 # https://pypa.github.io/pipx/
 pyenv                       # https://github.com/pyenv/pyenv
 python-virtualenv           # https://virtualenv.pypa.io/en/latest/
 aur/pyenv-virtualenv        # https://github.com/pyenv/pyenv-virtualenv
@@ -108,4 +108,3 @@ aur/openlens-bin            # https://github.com/MuhammedKalkan/OpenLens
 # aur/prips                 # https://packages.debian.org/stable/net/prips
 # ipcalc                    # http://jodies.de/ipcalc
 # bat                       # https://github.com/sharkdp/bat
-

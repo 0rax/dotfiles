@@ -18,7 +18,7 @@ gstreamer-vaapi
 # sudo usermod -a -G render $USER
 # Test using:
 #   `vainfo`
-#   `vainfo --display drm --device /dev/dri/renderD12`
+#   `vainfo --display drm --device /dev/dri/renderD128`
 
 ## Firefox config
 # `about:config`:

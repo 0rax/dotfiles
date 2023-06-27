@@ -58,6 +58,7 @@ window#waybar {
 #tray,
 #mode,
 #idle_inhibitor,
+#bluetooth,
 #mpd {
     padding: 0 10px;
     margin: 0px;
@@ -156,5 +157,10 @@ window#waybar {
 
 #temperature.critical {
     background-color: @base08;
+    color: @base01;
+}
+
+#bluetooth {
+    background-color: @base0D;
     color: @base01;
 }

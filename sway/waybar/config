@@ -14,6 +14,7 @@
         "memory",
         "disk",
         "temperature",
+        "bluetooth",
         "network",
         "pulseaudio",
         "battery",
@@ -97,7 +98,7 @@
         "tooltip-format-ethernet": " {ifname}",
         "tooltip-format-disconnected": " Disconnected",
         "interval": 20,
-        "on-click-right": "nm-connection-editor"
+        "on-click-right": "alacritty --class nmtui -e nmtui"
     },
     "pulseaudio": {
         "scroll-step": 2.5,
@@ -118,7 +119,7 @@
                 ""
             ]
         },
-        "on-click-right": "pavucontrol",
+        "on-click-right": "swaysettings -p sound",
         "on-click-middle": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
     },
     "cpu": {
@@ -133,7 +134,20 @@
         "path": "/"
     },
     "temperature": {
-      "critical-threshold": 80,
+      "thermal-zone": 7,
+      "critical-threshold": 70,
       "format": " {temperatureC}°C"
+    },
+    "bluetooth": {
+      "format": "",
+      "format-disabled": "",
+      "format-connected": "",
+      "format-connected-battery": " {device_battery_percentage}%",
+      "format-device-preference": [ "MX Anywhere 2" ],
+      "tooltip-format": "{controller_alias} [{controller_address}] ({num_connections} connected)",
+      "tooltip-format-connected": "{controller_alias} [{controller_address}] ({num_connections} connected)\n\n{device_enumerate}",
+      "tooltip-format-enumerate-connected": "{device_alias}\t[{device_address}]",
+      "tooltip-format-enumerate-connected-battery": "{device_alias}\t[{device_address}] ({device_battery_percentage}%)",
+      "on-click-right": "swaysettings -p bluetooth"
     }
 }

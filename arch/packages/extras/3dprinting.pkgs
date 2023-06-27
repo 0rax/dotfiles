@@ -14,16 +14,17 @@
 freecad                     # https://www.freecadweb.org/
 openscad                    # https://openscad.org/
 aur/solvespace              # https://solvespace.com/
-blender                     # https://github.com/supermerill/SuperSlicer
+blender                     # https://www.blender.org/
 
 ## 3D Viewer
 aur/fstl                    # https://github.com/fstl-app/fstl
 
 ## Slicer
-aur/prusa-slicer-bin        # https://github.com/prusa3d/PrusaSlicer
-aur/superslicer-bin         # https://github.com/supermerill/SuperSlicer
+aur/prusa-slicer-rc-bin     # https://github.com/prusa3d/PrusaSlicer
+aur/superslicer-prerelease-bin # https://github.com/supermerill/SuperSlicer
 
 ## Alternatives
 # - LibreCAD
 # - Autodesk Fusion 360
 # - Autodesk MeshMixer
+# - Onshape

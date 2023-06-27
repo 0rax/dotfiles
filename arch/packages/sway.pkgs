@@ -28,11 +28,11 @@ wofi                        # [app-launcher   ] https://hg.sr.ht/~scoopta/wofi
 mako                        # [notif-daemon   ] https://github.com/emersion/mako
 swayidle                    # [session-idler  ] https://github.com/swaywm/swayidle
 aur/swaylock-effects        # [session-locker ] https://github.com/mortie/swaylock-effects
-dex                         # [autostart-xdg  ] https://github.com/jceb/dex
 gammastep                   # [gamma-ctrl     ] https://gitlab.com/chinstrap/gammastep
 kanshi                      # [display-profile] https://github.com/emersion/kanshi
 wob                         # [overlay-bar    ] https://github.com/francma/wob
 aur/wev                     # [event-viewer   ] https://git.sr.ht/~sircmpwn/wev
+aur/swaysettings-git        # [system-config  ] https://github.com/ErikReider/SwaySettings
 
 ## Sound
 pipewire                    # [sound-server   ] https://pipewire.org/
@@ -91,9 +91,13 @@ polkit-gnome                # [polkit-agent   ] https://gitlab.freedesktop.org/p
 gnome-keyring               # [keyring        ] https://wiki.gnome.org/Projects/GnomeKeyring/
 seahorse                    # [keyring-gui    ] https://wiki.gnome.org/Apps/Seahorse
 
+## Bluetooth Daemon
+bluez                       # http://www.bluez.org/
+bluez-utils                 # http://www.bluez.org/
+# sudo systemctl enable --now bluetooth.service
+
 ## System settings
 accountsservice             # [config-deps    ] https://gitlab.freedesktop.org/accountsservice/accountsservice
-aur/swaysettings-git        # [system-config  ] https://github.com/ErikReider/SwaySettings
 aur/wdisplays               # [display-manager] https://github.com/artizirk/wdisplays
 nm-connection-editor        # [network-manager] https://networkmanager.dev/
 
@@ -108,6 +112,7 @@ aur/gestures                # [gestures-config] https://gitlab.com/cunidev/gestu
 # evince                    # document viewer [gnome]
 # okular                    # document viewer [kde]
 # xreader                   # document viewer [mint]
-# galculator                # calculator:     [gtk]
+# galculator                # calculator      [gtk]
 # xarchiver                 # archive manager [gtk]
 # vlc                       # media player    [vlc]
+# dex                       # autostart       [xdg]
