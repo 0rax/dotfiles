@@ -10,5 +10,8 @@
 #   - base-devel (meta package)
 #       see https://www.archlinux.org/groups/x86_64/base-devel/
 
-## QMK Configurator
-aur/via-bin                 # https://www.caniusevia.com/
+## Toolchain
+qmk                         # https://qmk.fm
+
+## GUI Configurator
+aur/vial-appimage           # https://get.vial.today/

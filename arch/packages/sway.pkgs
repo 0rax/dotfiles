@@ -32,17 +32,16 @@ gammastep                   # [gamma-ctrl     ] https://gitlab.com/chinstrap/gam
 kanshi                      # [display-profile] https://github.com/emersion/kanshi
 wob                         # [overlay-bar    ] https://github.com/francma/wob
 aur/wev                     # [event-viewer   ] https://git.sr.ht/~sircmpwn/wev
-aur/swaysettings-git        # [system-config  ] https://github.com/ErikReider/SwaySettings
 
 ## Sound
 pipewire                    # [sound-server   ] https://pipewire.org/
 wireplumber                 # [sound-session  ] https://pipewire.pages.freedesktop.org/wireplumber/
 pipewire-pulse              # [pulse-support  ] https://pipewire.org/
 pipewire-jack               # [jack2-support  ] https://pipewire.org/
-pavucontrol                 # [audio-manager  ] https://freedesktop.org/software/pulseaudio/pavucontrol/
 easyeffects                 # [audio-effects  ] https://github.com/wwmm/easyeffects
 calf                        # [effects-plugins] https://calf-studio-gear.org/
-lsp-plugins                 # [effects-plugins] https://lsp-plug.in/
+lsp-plugins-lv2             # [effects-plugins] https://lsp-plug.in/
+ecasound                    # [lv2-host       ] https://ecasound.seul.org/ecasound/
 
 ## Base applications
 alacritty                   # [terminal       ] https://alacritty.org/
@@ -91,21 +90,31 @@ polkit-gnome                # [polkit-agent   ] https://gitlab.freedesktop.org/p
 gnome-keyring               # [keyring        ] https://wiki.gnome.org/Projects/GnomeKeyring/
 seahorse                    # [keyring-gui    ] https://wiki.gnome.org/Apps/Seahorse
 
-## Bluetooth Daemon
-bluez                       # http://www.bluez.org/
-bluez-utils                 # http://www.bluez.org/
+## System daemon
+networkmanager              # [network-daemon ] https://networkmanager.dev/
+networkmanager-openvpn      # [ovpn-support   ] https://openvpn.net/
+networkmanager-strongswan   # [ipsec-support  ] https://strongswan.org/
+# systemctl enable --now NetworkManager.service
+cups                        # [print-server   ] https://wiki.archlinux.org/index.php/CUPS#Installation
+cups-pdf                    # [virtual-printer] https://www.cups-pdf.de
+# sudo systemctl enable --now cups.service
+bluez                       # [bluetooth      ] http://www.bluez.org/
+bluez-utils                 # [bluetooth-tools] http://www.bluez.org/
 # sudo systemctl enable --now bluetooth.service
+ufw                         # [firewall       ] https://launchpad.net/ufw
+# sudo systemctl enable --now ufw.service
+aur/libinput-gestures       # [gestures-daemon] https://github.com/bulletmark/libinput-gestures
+# sudo usermod -a -G input $USER
+# systemctl --user enable --now libinput-gestures.service
 
 ## System settings
+aur/swaysettings-git        # [system-config  ] https://github.com/ErikReider/SwaySettings
 accountsservice             # [config-deps    ] https://gitlab.freedesktop.org/accountsservice/accountsservice
 aur/wdisplays               # [display-manager] https://github.com/artizirk/wdisplays
 nm-connection-editor        # [network-manager] https://networkmanager.dev/
-
-## Trackpad gestures support
-aur/libinput-gestures       # [gestures-daemon] https://github.com/bulletmark/libinput-gestures
+system-config-printer       # [printer-config ] http://cyberelk.net/tim/software/system-config-printer/
+gufw                        # [firewall-config] http://gufw.org/
 aur/gestures                # [gestures-config] https://gitlab.com/cunidev/gestures
-# sudo usermod -a -G input $USER
-# systemctl --user enable --now libinput-gestures.service
 
 ## Alternatives & other useful softwares
 # eog                       # image viewer    [gnome]

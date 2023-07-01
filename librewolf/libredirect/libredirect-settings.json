@@ -198,7 +198,8 @@
     "instance": "public"
   },
   "anonymousOverflow": [
-    "https://code.whatever.social"
+    "https://code.whatever.social",
+    "https://overflow.projectsegfau.lt"
   ],
   "goodreads": {
     "enabled": false,
