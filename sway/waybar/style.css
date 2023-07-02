@@ -3,18 +3,24 @@
 * {
     border: none;
     border-radius: 0;
-    font-family: Hasklig, forkawesome, Hack, monospace;
-    font-size: 12px;
+    font-family: Hasklig, forkawesome, 'Hasklug Nerd Font', Hack, monospace;
+    font-size: 14px;
     min-height: 0;
 }
 
 window#waybar {
-    background-color: @base00;
+    background-color: transparent;
     color: @base05;
 }
 
+tooltip {
+    color: @base05;
+    background-color: @base00;
+    text-shadow: none;
+}
+
 #workspaces button {
-    padding: 5px 5px;
+    padding: 8px 8px;
     background-color: @base0D;
     color: @base01;
     transition: none;
@@ -60,21 +66,67 @@ window#waybar {
 #idle_inhibitor,
 #bluetooth,
 #mpd {
-    padding: 0 10px;
+    padding: 0 16px;
     margin: 0px;
-    color: #ffffff;
+    color: @base07;
 }
 
-#clock.date {
+#clock {
+    background-color: @base01;
+}
+
+#tray {
+    background-color: @base00;
+    color: @base05;
+}
+
+#idle_inhibitor {
+    background-color: @base01;
+    color: @base05;
+}
+
+#idle_inhibitor.activated {
+    background-color: @base02;
+    color: @base05;
+}
+
+#cpu, #temperature, #memory {
+    background-color: @base0C;
+    color: @base01;
+}
+
+#cpu {
+    padding-right: 0px;
+}
+
+#temperature {
+    padding: 0;
+}
+
+#bluetooth {
     background-color: @base0D;
     color: @base01;
 }
 
-#clock.time {
-    background-color: @base0E;
+#network {
+    background-color: @base07;
     color: @base01;
 }
 
+#network.disconnected {
+    background-color: @base08;
+    color: @base01;
+}
+
+#pulseaudio {
+    background-color: @base0A;
+    color: @base01;
+}
+
+#pulseaudio.muted {
+    background-color: @base04;
+    color: @base01;
+}
 
 #battery {
     background-color: @base0B;
@@ -93,74 +145,5 @@ window#waybar {
 
 #battery.critical:not(.charging) {
     background-color: @base08;
-    color: @base01;
-}
-
-#pulseaudio {
-    background-color: @base0A;
-    color: @base01;
-}
-
-#pulseaudio.muted {
-    background-color: @base04;
-    color: @base01;
-}
-
-#network {
-    background-color: @base07;
-    color: @base01;
-}
-
-#network.disconnected {
-    background-color: @base08;
-    color: @base01;
-}
-
-#tray {
-    background-color: @base00;
-    color: @base05;
-}
-
-#idle_inhibitor {
-    background-color: @base01;
-    color: @base05;
-}
-
-#idle_inhibitor.activated {
-    background-color: @base02;
-    color: @base05;
-}
-
-#cpu {
-    background-color: @base0C;
-    color: @base01;
-    padding-right: 5px;
-}
-
-#memory {
-    background-color: @base0C;
-    color: @base01;
-    padding-left: 5px;
-    padding-right: 5px;
-}
-
-#disk {
-    background-color: @base0C;
-    color: @base01;
-    padding-left: 5px;
-}
-
-#temperature {
-    background-color: @base09;
-    color: @base01;
-}
-
-#temperature.critical {
-    background-color: @base08;
-    color: @base01;
-}
-
-#bluetooth {
-    background-color: @base0D;
     color: @base01;
 }
