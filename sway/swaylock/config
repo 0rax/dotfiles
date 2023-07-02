@@ -15,4 +15,4 @@ image=/home/orax/.config/sway/wallpaper.jpg
 fade-in=0.5
 effect-blur=5x4
 # effect-greyscale
-effect-compose=50%,90%;64x64;center;/home/orax/.config/swaylock/logo.png
+effect-compose=50%,85%;96x96;center;/home/orax/.config/swaylock/logo.png

@@ -22,6 +22,7 @@ ln -s $PWD/xdg/user-dirs.dirs              ~/.config/user-dirs.dirs
 ln -s $PWD/xdg-desktop-portal-wlr          ~/.config/xdg-desktop-portal-wlr
 ln -s $PWD/libinput/libinput-gestures.conf ~/.config/libinput-gestures.conf
 ln -s $PWD/swappy                          ~/.config/swappy
+ln -s $PWD/wob                             ~/.config/wob
 ```
 
 Kanshi configuration being pretty dependent on the system it is installed on, it's better to just copy the file and update it to match your specific system need.

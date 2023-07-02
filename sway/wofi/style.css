@@ -1,67 +1,56 @@
-/* Base16 OceanicNext */
-@define-color base00 #1b2b34;
-@define-color base01 #343d46;
-@define-color base02 #4f5b66;
-@define-color base03 #65737e;
-@define-color base04 #a7adba;
-@define-color base05 #c0c5ce;
-@define-color base06 #cdd3de;
-@define-color base07 #d8dee9;
-@define-color base08 #ec5f67;
-@define-color base09 #f99157;
-@define-color base0A #fac863;
-@define-color base0B #99c794;
-@define-color base0C #5fb3b3;
-@define-color base0D #6699cc;
-@define-color base0E #c594c5;
-@define-color base0F #ab7967;
+@import ".config/waybar/themes/base16-oceanicnext.css";
 
 window {
-  margin: 0px;
-  border: 2px solid @base0D;
-  background-color: @base00;
+    margin: 0px;
+    border: 2px solid @base0D;
+    border-radius: 4px;
+    background-color: @base00;
 }
 
 #outer-box {
-  margin: 8px;
-  border: none;
-  background-color: @base00;
-  padding-bottom: 0px;
+    margin: 8px;
+    border: none;
+    background-color: @base00;
+    padding-bottom: 0px;
 }
 
 #input {
-  margin: 8px 4px 4px 4px;
-  border: none;
-  padding: 6px 10px;
-  border-radius: 0%;
-  color: @base06;
-  background-color: @base01;
+    margin: 8px 4px 4px 4px;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 4px;
+    color: @base06;
+    background-color: @base01;
 }
 
 #scroll {
-  margin: 4px 0px 4px 0px;
-  border: none;
+    margin: 4px 0px 4px 0px;
+    border: none;
 }
 
 #inner-box {
-  margin: 4px;
-  border: none;
-  background-color: @base00;
+    margin: 4px;
+    border: none;
+    background-color: @base00;
 }
 
 #text {
-  margin: 4px;
-  border: 2px solid transparent;
-  color: @base03;
-  background-color: transparent;
+    margin: 4px;
+    border: 2px solid transparent;
+    color: @base03;
+    background-color: transparent;
 }
 
 #entry:selected {
-  background-color: @base01;
-  border-radius: 0px;
+    background-color: @base01;
+    border-radius: 4px;
+}
+
+#entry list {
+    border-radius: 4px;
 }
 
 #text:selected {
-  color: @base05;
-  background-color: transparent;
+    color: @base05;
+    background-color: transparent;
 }

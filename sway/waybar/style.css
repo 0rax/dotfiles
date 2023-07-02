@@ -3,6 +3,7 @@
 * {
     border: none;
     border-radius: 0;
+    box-shadow: none;
     font-family: Hasklig, forkawesome, 'Hasklug Nerd Font', Hack, monospace;
     font-size: 14px;
     min-height: 0;
@@ -17,6 +18,8 @@ tooltip {
     color: @base05;
     background-color: @base00;
     text-shadow: none;
+    border: 2px @base0D solid;
+    border-radius: 4px;
 }
 
 #workspaces button {
@@ -47,8 +50,13 @@ tooltip {
     color: @base05;
 }
 
-#mode {
-    background-color: @base02;
+#workspaces button:nth-child(1) {
+    border-radius: 4px 0 0 4px;
+}
+
+#workspaces button:nth-last-child(1) {
+    border-radius: 0 4px 4px 0;
+    margin-right: 8px;
 }
 
 #clock,
@@ -69,18 +77,28 @@ tooltip {
     padding: 0 16px;
     margin: 0px;
     color: @base07;
+    background-color: @base00;
+}
+
+#mode {
+    background-color: @base02;
+    border-radius: 4px;
 }
 
 #clock {
-    background-color: @base01;
+    border-radius: 4px;
+    margin-left: 8px;
+    margin-right: 8px;
 }
 
 #tray {
-    background-color: @base00;
+    border-radius: 4px;
     color: @base05;
+    margin-right: 8px;
 }
 
 #idle_inhibitor {
+    border-radius: 4px 0 0 4px;
     background-color: @base01;
     color: @base05;
 }
@@ -90,7 +108,9 @@ tooltip {
     color: @base05;
 }
 
-#cpu, #temperature, #memory {
+#cpu,
+#temperature,
+#memory {
     background-color: @base0C;
     color: @base01;
 }
@@ -131,19 +151,20 @@ tooltip {
 #battery {
     background-color: @base0B;
     color: @base01;
+    border-radius: 0 4px 4px 0;
 }
 
-#battery.warning {
+#battery.warning:not(.charging) {
     background-color: @base09;
-    color: @base01;
-}
-
-#battery.charging {
-    background-color: @base0B;
     color: @base01;
 }
 
 #battery.critical:not(.charging) {
     background-color: @base08;
+    color: @base01;
+}
+
+#battery.charging {
+    background-color: @base0B;
     color: @base01;
 }

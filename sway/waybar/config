@@ -1,170 +1,199 @@
 {
-    "layer": "top",
-    "position": "top",
-    "height": 30,
-    "margin-top": 8,
-    "margin-left": 8,
-    "margin-right": 8,
-    "modules-left": [
-        "sway/workspaces",
-        "sway/mode"
-    ],
-    "modules-center": [
-      "clock"
-    ],
-    "modules-right": [
-        "tray",
-        "idle_inhibitor",
-        "cpu",
-        "temperature",
-        "memory",
-        "bluetooth",
-        "network",
-        "pulseaudio",
-        "battery"
-    ],
-    "sway/workspaces": {
-        "disable-scroll": true,
-        "all-outputs": true,
-        "format": "{icon}",
-        "persistent_workspaces": {
-            "1:Home": [],
-            "2:Code": [],
-            "3:Web": [],
-            "4:Media": [],
-            "5:Files": [],
-            "6:Chat": []
-        },
-        "format-icons": {
-            "1:Home": "",
-            "2:Code": "",
-            "3:Web": "",
-            "4:Media": "",
-            "5:Files": "",
-            "6:Chat": "",
-            "7:3D": "",
-            "8:VM": "",
-            "urgent": "",
-            "focused": "",
-            "default": ""
-        }
+  "layer": "top",
+  "position": "top",
+  "height": 30,
+  "margin-top": 8,
+  "margin-left": 8,
+  "margin-right": 8,
+  "modules-left": [
+    "sway/workspaces",
+    "sway/mode"
+  ],
+  "modules-center": [
+    "clock"
+  ],
+  "modules-right": [
+    "tray",
+    "idle_inhibitor",
+    "cpu",
+    "temperature",
+    "memory",
+    "bluetooth",
+    "network",
+    "pulseaudio",
+    "battery"
+  ],
+  "sway/workspaces": {
+    "disable-scroll": true,
+    "all-outputs": true,
+    "format": "{icon}",
+    "persistent_workspaces": {
+      "1:Home": [],
+      "2:Code": [],
+      "3:Web": [],
+      "4:Media": [],
+      "5:Files": [],
+      "6:Chat": []
     },
-    "sway/mode": {
-        "format": "<span style=\"italic\">{}</span>"
-    },
-    "idle_inhibitor": {
-        "format": "{icon}",
-        "format-icons": {
-            "activated": "\uf111",
-            "deactivated": "\uf10c"
-        }
-    },
-    "tray": {
-        "icon-size": 16,
-        "spacing": 10
-    },
-    "clock": {
-        "format": "{:\uf073 %Y-%m-%d \uf017 %H:%M}",
-        "tooltip-format": "<tt><small>{calendar}</small></tt>",
-        "calendar": {
-            "mode"          : "month",
-            "mode-mon-col"  : 3,
-            "weeks-pos"     : "",
-            "on-scroll"     : 1,
-            "on-click-right": "mode",
-            "format": {
-                "months":     "<span color='#5fb3b3'><b>{}</b></span>",
-                "days":       "<span color='#a7adba'><b>{}</b></span>",
-                "weeks":      "<span color='#99c794'><b>W{}</b></span>",
-                "weekdays":   "<span color='#6699cc'><b>{}</b></span>",
-                "today":      "<span color='#fac863'><b><u>{}</u></b></span>"
-            }
-        },
-        "actions":  {
-            "on-click-right": "mode",
-            "on-click-forward": "shift_up",
-            "on-click-backward": "shift_down"
-        }
-    },
-    "battery": {
-        "states": {
-            "warning": 35,
-            "critical": 15
-        },
-        "format": "{icon} {capacity}%",
-        "format-charging": "\udb80\udc84 {capacity}%",
-        "format-plugged": "\uf1e6 {capacity}%",
-        "format-alt": "{icon} {time}",
-        "format-full": "\uf1e6 full",
-        "format-icons": [
-            "\udb80\udc7a",
-            "\udb80\udc7b",
-            "\udb80\udc7c",
-            "\udb80\udc7d",
-            "\udb80\udc7e",
-            "\udb80\udc7f",
-            "\udb80\udc80",
-            "\udb80\udc81",
-            "\udb80\udc82",
-            "\udb80\udc79"
-        ],
-        "format-time": "{H}h {M}min"
-    },
-    "network": {
-        "format-wifi": "\uf1eb",
-        "format-ethernet": "\udb80\ude00",
-        "format-linked": "\uf44c",
-        "format-disconnected": "\udb80\udf19",
-        "format-alt": "\udb86\udd82 {ipaddr}/{cidr}",
-        "tooltip-format": "\udb81\udef3 {ifname}",
-        "tooltip-format-wifi": "\udb80\udc02  {essid} ({signalStrength}%)",
-        "tooltip-format-ethernet": "\udb81\udef3 {ifname}",
-        "tooltip-format-disconnected": "\udb80\udf19 Disconnected",
-        "interval": 20,
-        "on-click-right": "alacritty --class nmtui -e nmtui"
-    },
-    "pulseaudio": {
-        "scroll-step": 2.5,
-        "format": "{icon} {volume}%",
-        "format-alt": "{format_source}",
-        "format-bluetooth": "{icon}\udb80\udcaf {volume}%",
-        "format-bluetooth-muted": "{icon}\udb80\udcaf mute",
-        "format-muted": "\udb81\udf5f mute",
-        "format-source": "\udb80\udf6c {volume}%",
-        "format-source-muted": "\udb80\udf6d mute",
-        "format-icons": {
-            "headphone": "\udb80\udecb",
-            "headset": "\udb80\udece",
-            "default": [
-                "\udb81\udd7f",
-                "\udb81\udd80",
-                "\udb81\udd7e"
-            ]
-        },
-        "on-click-right": "swaysettings -p sound",
-        "on-click-middle": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
-    },
-    "cpu": {
-        "format": "\uf4bc  {usage}%"
-    },
-    "temperature": {
-      "thermal-zone": 7,
-      "critical-threshold": 70,
-      "format": " ({temperatureC}°C)"
-    },
-    "memory": {
-        "format": "\uf472 {percentage}%"
-    },
-    "bluetooth": {
-      "format": "\uf294",
-      "format-disabled": "",
-      "format-connected": "\uf293",
-      "format-connected-battery": "\uf293 {device_battery_percentage}%",
-      "format-device-preference": [ "MX Anywhere 2" ],
-      "tooltip-format": "{controller_alias} [{controller_address}] ({num_connections} connected)",
-      "tooltip-format-connected": "{controller_alias} [{controller_address}] ({num_connections} connected)\n\n{device_enumerate}",
-      "tooltip-format-enumerate-connected": "{device_alias}\t[{device_address}]",
-      "tooltip-format-enumerate-connected-battery": "{device_alias}\t[{device_address}] ({device_battery_percentage}%)",
-      "on-click-right": "swaysettings -p bluetooth"
+    "format-icons": {
+      "1:Home": "",
+      "2:Code": "",
+      "3:Web": "",
+      "4:Media": "",
+      "5:Files": "",
+      "6:Chat": "",
+      "7:3D": "",
+      "8:VM": "",
+      "urgent": "",
+      "focused": "",
+      "default": ""
     }
+  },
+  "sway/mode": {
+    "format": "<span style=\"italic\">{}</span>"
+  },
+  "idle_inhibitor": {
+    "format": "{icon}",
+    "format-icons": {
+      "activated": "",
+      "deactivated": ""
+    },
+    "tooltip-format-activated": "{icon} Activated",
+    "tooltip-format-deactivated": "{icon} Deactivated",
+    "on-scroll-up": "brightnessctl set +5%",
+    "on-scroll-down": "brightnessctl set 5%-"
+  },
+  "tray": {
+    "icon-size": 16,
+    "spacing": 10
+  },
+  "clock": {
+    "format": "{: %Y-%m-%d  %H:%M}",
+    "tooltip-format": "<tt><small>{calendar}</small></tt>",
+    "calendar": {
+      "mode": "month",
+      "mode-mon-col": 3,
+      "weeks-pos": "",
+      "on-scroll": 1,
+      "on-click-right": "mode",
+      "format": {
+        "months": "<span color='#5fb3b3'><b>{}</b></span>",
+        "days": "<span color='#a7adba'><b>{}</b></span>",
+        "weeks": "<span color='#99c794'><b>W{}</b></span>",
+        "weekdays": "<span color='#6699cc'><b>{}</b></span>",
+        "today": "<span color='#fac863'><b><u>{}</u></b></span>"
+      }
+    },
+    "actions": {
+      "on-click-right": "mode",
+      "on-click-forward": "shift_up",
+      "on-click-backward": "shift_down"
+    }
+  },
+  "battery": {
+    "states": {
+      "warning": 35,
+      "critical": 15
+    },
+    "format": "{icon} {capacity}%",
+    "format-charging": "󰂄 {capacity}%",
+    "format-plugged": " {capacity}%",
+    "format-alt": "{icon} {time}",
+    "format-full": " full",
+    "format-icons": [
+      "󰁺",
+      "󰁻",
+      "󰁼",
+      "󰁽",
+      "󰁾",
+      "󰁿",
+      "󰂀",
+      "󰂁",
+      "󰂂",
+      "󰁹"
+    ],
+    "format-time": "{H}h {M}min",
+    "tooltip-format": "󱐋 {timeTo} ({power}W)"
+  },
+  "network": {
+    "format-wifi": "",
+    "format-ethernet": "󰈀",
+    "format-linked": "",
+    "format-disconnected": "󰌙",
+    "format-alt": "󱦂 {ipaddr}/{cidr}",
+    "tooltip-format": "󰛳 {ifname}",
+    "tooltip-format-wifi": "󰀂  {essid} ({signalStrength}%)",
+    "tooltip-format-ethernet": "󰛳 {ifname}",
+    "tooltip-format-disconnected": "󰌙 Disconnected",
+    "interval": 20,
+    "on-click-right": "alacritty --class nmtui -e nmtui"
+  },
+  "pulseaudio": {
+    "scroll-step": 2.5,
+    "format": "{icon} {volume}%",
+    "format-alt": "{format_source}",
+    "format-bluetooth": "{icon}󰂯 {volume}%",
+    "format-bluetooth-muted": "{icon}󰂯 mute",
+    "format-muted": "󰝟 mute",
+    "format-source": "󰍬 {volume}%",
+    "format-source-muted": "󰍭 mute",
+    "format-icons": {
+      "headphone": "󰋋",
+      "headset": "󰋎",
+      "speaker": "󰓃",
+      "default": [
+        "󰕿",
+        "󰖀",
+        "󰕾"
+      ]
+    },
+    "on-click-right": "swaysettings -p sound",
+    "on-click-middle": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
+    "tooltip-format": "󱡫 {desc}"
+  },
+  "cpu": {
+    "format": "  {usage}%"
+  },
+  "temperature": {
+    "thermal-zone": 7,
+    "critical-threshold": 70,
+    "format": " ({temperatureC}°C)",
+    "format-icons": [
+      "\uf2cb",
+      "\uf2ca",
+      "\uf2c9",
+      "\uf2c8",
+      "\uf2c7"
+    ],
+    "tooltip-format": "\uf2c8 {temperatureC}°C"
+  },
+  "memory": {
+    "format": " {percentage}%",
+    "tooltip-format": " {used:0.1f}G/{total:0.1f}G"
+  },
+  "bluetooth": {
+    "format": "",
+    "format-disabled": "",
+    "format-connected": "",
+    "format-connected-battery": " {device_battery_percentage}%",
+    "format-device-preference": [
+      "MX Anywhere 2"
+    ],
+    "tooltip-format": " {controller_alias} [{controller_address}] ({num_connections} connected)",
+    "tooltip-format-connected": " {controller_alias} [{controller_address}] ({num_connections} connected)\n\n{device_enumerate}",
+    "tooltip-format-enumerate-connected": "{device_alias}\t[{device_address}]",
+    "tooltip-format-enumerate-connected-battery": "{device_alias}\t[{device_address}] ({device_battery_percentage}%)",
+    "on-click-right": "swaysettings -p bluetooth"
+  },
+  "backlight": {
+    "device": "intel_backlight",
+    "format": "{icon}",
+    "tooltip-format": "{icon} {percent}%",
+    "format-icons": [
+      "\udb80\udcde",
+      "\udb80\udcdf",
+      "\udb80\udce0"
+    ],
+
+  }
 }
