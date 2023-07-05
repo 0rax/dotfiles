@@ -11,11 +11,11 @@
 
 window#waybar {
     background-color: transparent;
-    color: @base05;
+    color: @base07;
 }
 
 tooltip {
-    color: @base05;
+    color: @base07;
     background-color: @base00;
     text-shadow: none;
     border: 2px @base0D solid;
@@ -25,29 +25,29 @@ tooltip {
 #workspaces button {
     padding: 8px 8px;
     background-color: @base0D;
-    color: @base01;
+    color: @base00;
     transition: none;
 }
 
 
 #workspaces button.focused {
     background-color: @base0A;
-    color: @base01;
+    color: @base00;
 }
 
 #workspaces button.urgent {
     background-color: @base08;
-    color: @base01;
+    color: @base00;
 }
 
 #workspaces button.persistent {
     background-color: @base01;
-    color: @base05;
+    color: @base04;
 }
 
 #workspaces button:hover {
     background: @base03;
-    color: @base05;
+    color: @base07;
 }
 
 #workspaces button:nth-child(1) {
@@ -56,7 +56,6 @@ tooltip {
 
 #workspaces button:nth-last-child(1) {
     border-radius: 0 4px 4px 0;
-    margin-right: 8px;
 }
 
 #clock,
@@ -73,15 +72,26 @@ tooltip {
 #mode,
 #idle_inhibitor,
 #bluetooth,
-#mpd {
-    padding: 0 16px;
+#mpd,
+#custom-spotify,
+#custom-scratchpad,
+#custom-gammastep {
+    padding: 0 12px;
     margin: 0px;
     color: @base07;
     background-color: @base00;
 }
 
-#mode {
+#custom-scratchpad {
+    margin-left: 8px;
+    border-radius: 4px;
     background-color: @base02;
+}
+
+#mode {
+    background-color: @base06;
+    color: @base00;
+    margin-left: 8px;
     border-radius: 4px;
 }
 
@@ -91,28 +101,42 @@ tooltip {
     margin-right: 8px;
 }
 
+#custom-spotify {
+    margin-right: 8px;
+    background-color: @base06;
+    color: @base00;
+    border-radius: 4px;
+}
+
 #tray {
     border-radius: 4px;
-    color: @base05;
     margin-right: 8px;
 }
 
 #idle_inhibitor {
+    padding-left: 10px;
+    padding-right: 14px;
     border-radius: 4px 0 0 4px;
     background-color: @base01;
-    color: @base05;
 }
 
-#idle_inhibitor.activated {
+#idle_inhibitor.deactivated {
+    color: @base03;
+}
+
+#custom-gammastep {
     background-color: @base02;
-    color: @base05;
+}
+
+#custom-gammastep.disabled {
+    color: @base04;
 }
 
 #cpu,
 #temperature,
 #memory {
     background-color: @base0C;
-    color: @base01;
+    color: @base00;
 }
 
 #cpu {
@@ -125,46 +149,57 @@ tooltip {
 
 #bluetooth {
     background-color: @base0D;
-    color: @base01;
+    color: @base00;
 }
 
 #network {
     background-color: @base07;
-    color: @base01;
+    color: @base00;
 }
 
 #network.disconnected {
     background-color: @base08;
-    color: @base01;
+    color: @base00;
 }
 
 #pulseaudio {
     background-color: @base0A;
-    color: @base01;
+    color: @base00;
 }
 
 #pulseaudio.muted {
     background-color: @base04;
-    color: @base01;
+    color: @base00;
 }
 
 #battery {
     background-color: @base0B;
-    color: @base01;
+    color: @base00;
     border-radius: 0 4px 4px 0;
 }
 
 #battery.warning:not(.charging) {
     background-color: @base09;
-    color: @base01;
+    color: @base00;
 }
 
 #battery.critical:not(.charging) {
     background-color: @base08;
-    color: @base01;
+    color: @base00;
 }
 
 #battery.charging {
     background-color: @base0B;
-    color: @base01;
+    color: @base00;
+}
+
+/* Hide some module on 2nd screen */
+window.DP-3 #custom-spotify,
+window.DP-3 #clock {
+    font-size: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    background-color: transparent;
 }

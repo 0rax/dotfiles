@@ -7,14 +7,17 @@
   "margin-right": 8,
   "modules-left": [
     "sway/workspaces",
+    "custom/scratchpad",
     "sway/mode"
   ],
   "modules-center": [
     "clock"
   ],
   "modules-right": [
+    "custom/spotify",
     "tray",
     "idle_inhibitor",
+    "custom/gammastep",
     "cpu",
     "temperature",
     "memory",
@@ -49,23 +52,16 @@
       "default": ""
     }
   },
+  "custom/scratchpad": {
+    "interval": 3,
+    "return-type": "json",
+    "exec": "$HOME/.config/waybar/scripts/scratchpad.sh",
+    "format": "󱔘 {}",
+    "on-click": "exec swaymsg 'scratchpad show'",
+    "on-click-right": "exec swaymsg 'move scratchpad'"
+  },
   "sway/mode": {
     "format": "<span style=\"italic\">{}</span>"
-  },
-  "idle_inhibitor": {
-    "format": "{icon}",
-    "format-icons": {
-      "activated": "",
-      "deactivated": ""
-    },
-    "tooltip-format-activated": "{icon} Activated",
-    "tooltip-format-deactivated": "{icon} Deactivated",
-    "on-scroll-up": "brightnessctl set +5%",
-    "on-scroll-down": "brightnessctl set 5%-"
-  },
-  "tray": {
-    "icon-size": 16,
-    "spacing": 10
   },
   "clock": {
     "format": "{: %Y-%m-%d  %H:%M}",
@@ -90,69 +86,57 @@
       "on-click-backward": "shift_down"
     }
   },
-  "battery": {
-    "states": {
-      "warning": 35,
-      "critical": 15
-    },
-    "format": "{icon} {capacity}%",
-    "format-charging": "󰂄 {capacity}%",
-    "format-plugged": " {capacity}%",
-    "format-alt": "{icon} {time}",
-    "format-full": " full",
-    "format-icons": [
-      "󰁺",
-      "󰁻",
-      "󰁼",
-      "󰁽",
-      "󰁾",
-      "󰁿",
-      "󰂀",
-      "󰂁",
-      "󰂂",
-      "󰁹"
-    ],
-    "format-time": "{H}h {M}min",
-    "tooltip-format": "󱐋 {timeTo} ({power}W)"
-  },
-  "network": {
-    "format-wifi": "",
-    "format-ethernet": "󰈀",
-    "format-linked": "",
-    "format-disconnected": "󰌙",
-    "format-alt": "󱦂 {ipaddr}/{cidr}",
-    "tooltip-format": "󰛳 {ifname}",
-    "tooltip-format-wifi": "󰀂  {essid} ({signalStrength}%)",
-    "tooltip-format-ethernet": "󰛳 {ifname}",
-    "tooltip-format-disconnected": "󰌙 Disconnected",
-    "interval": 20,
-    "on-click-right": "alacritty --class nmtui -e nmtui"
-  },
-  "pulseaudio": {
-    "scroll-step": 2.5,
-    "format": "{icon} {volume}%",
-    "format-alt": "{format_source}",
-    "format-bluetooth": "{icon}󰂯 {volume}%",
-    "format-bluetooth-muted": "{icon}󰂯 mute",
-    "format-muted": "󰝟 mute",
-    "format-source": "󰍬 {volume}%",
-    "format-source-muted": "󰍭 mute",
+  "custom/spotify": {
+    "format": "{icon} {}",
+    "escape": true,
+    "return-type": "json",
+    "max-length": 36,
     "format-icons": {
-      "headphone": "󰋋",
-      "headset": "󰋎",
-      "speaker": "󰓃",
-      "default": [
-        "󰕿",
-        "󰖀",
-        "󰕾"
-      ]
+      // "playing": "",
+      // "paused": "",
+      // "stopped": "",
+      "playing": "",
+      "paused": "",
+      "stopped": ""
     },
-    "on-click-right": "swaysettings -p sound",
-    "on-click-middle": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
-    "tooltip-format": "󱡫 {desc}"
+    "on-click": "$HOME/.config/waybar/scripts/playerctl.sh play-pause",
+    "on-click-middle": "$HOME/.config/waybar/scripts/playerctl.sh prev",
+    "on-click-right": "$HOME/.config/waybar/scripts/playerctl.sh next",
+    "exec": "$HOME/.config/waybar/scripts/playerctl.sh watch 2> /dev/null",
+    "exec-if": "pgrep spotify"
+  },
+  "tray": {
+    "icon-size": 16,
+    "spacing": 8
+  },
+  "idle_inhibitor": {
+    "format": "{icon}",
+    "format-icons": {
+      // "activated": "",
+      // "deactivated": "",
+      "activated": "󰒳",
+      "deactivated": "󰒲"
+    },
+    "tooltip-format-activated": "{icon} Activated",
+    "tooltip-format-deactivated": "{icon} Deactivated",
+    "on-scroll-up": "brightnessctl set +5%",
+    "on-scroll-down": "brightnessctl set 5%-"
+  },
+  "custom/gammastep": {
+    "format": "{icon}",
+    "return-type": "json",
+    "interval": 10,
+    "format-icons": {
+      "disabled": "󰌶",
+      "daytime": "󰖙",
+      "transition": "󰖚",
+      "night": ""
+    },
+    "on-click": "$HOME/.config/waybar/scripts/gammastep.sh toggle; pkill -SIGRTMIN+10 waybar",
+    "exec": "$HOME/.config/waybar/scripts/gammastep.sh status; pkill -SIGRTMIN+10 waybar"
   },
   "cpu": {
-    "format": "  {usage}%"
+    "format": " {usage:02d}%"
   },
   "temperature": {
     "thermal-zone": 7,
@@ -168,7 +152,7 @@
     "tooltip-format": "\uf2c8 {temperatureC}°C"
   },
   "memory": {
-    "format": " {percentage}%",
+    "format": " {percentage:02d}%",
     "tooltip-format": " {used:0.1f}G/{total:0.1f}G"
   },
   "bluetooth": {
@@ -185,15 +169,66 @@
     "tooltip-format-enumerate-connected-battery": "{device_alias}\t[{device_address}] ({device_battery_percentage}%)",
     "on-click-right": "swaysettings -p bluetooth"
   },
-  "backlight": {
-    "device": "intel_backlight",
-    "format": "{icon}",
-    "tooltip-format": "{icon} {percent}%",
-    "format-icons": [
-      "\udb80\udcde",
-      "\udb80\udcdf",
-      "\udb80\udce0"
+  "network": {
+    "format-wifi": "",
+    "format-ethernet": "󰈀",
+    "format-linked": "",
+    "format-disconnected": "󰌙",
+    "format-alt": "󱦂 {ipaddr}/{cidr}",
+    "tooltip-format": "󰛳 {ifname}",
+    "tooltip-format-wifi": "󰀂  {essid} ({signalStrength}%)",
+    "tooltip-format-ethernet": "󰛳 {ifname}",
+    "tooltip-format-disconnected": "󰌙 Disconnected",
+    "interval": 20,
+    "on-click-right": "alacritty --class nmtui -e nmtui"
+  },
+  "pulseaudio": {
+    "scroll-step": 2.5,
+    "format": "{icon} {volume:3d}%",
+    "format-bluetooth": "{icon}󰂯 {volume}%",
+    "format-bluetooth-muted": "{icon}󰂯 mute",
+    "format-muted": "󰝟 mute",
+    "format-source": "󰍬 {volume}%",
+    "format-source-muted": "󰍭 mute",
+    "format-icons": {
+      "headphone": "󰋋",
+      "headset": "󰋎",
+      "speaker": "󰓃",
+      "default": [
+        "󰕿",
+        "󰖀",
+        "󰕾"
+      ]
+    },
+    "ignored-sinks": [
+      "easyeffects_sink"
     ],
-
+    "on-click-right": "swaysettings -p sound",
+    "on-click-middle": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle; pkill -SIGRTMIN+10 waybar",
+    "tooltip-format": "󱡫 {desc}"
+  },
+  "battery": {
+    "states": {
+      "warning": 35,
+      "critical": 15
+    },
+    "format": "{icon} {capacity:3d}%",
+    "format-charging": "󰂄 {capacity:3d}%",
+    "format-plugged": " {capacity:3d}%",
+    "format-full": " full",
+    "format-icons": [
+      "󰁺",
+      "󰁻",
+      "󰁼",
+      "󰁽",
+      "󰁾",
+      "󰁿",
+      "󰂀",
+      "󰂁",
+      "󰂂",
+      "󰁹"
+    ],
+    "format-time": "{H}h {M}min",
+    "tooltip-format": "󱐋 {timeTo} ({power}W)"
   }
 }
