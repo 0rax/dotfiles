@@ -55,10 +55,11 @@
   "custom/scratchpad": {
     "interval": 3,
     "return-type": "json",
+    "signal": 8,
     "exec": "$HOME/.config/waybar/scripts/scratchpad.sh",
     "format": "󱔘 {}",
-    "on-click": "exec swaymsg 'scratchpad show'",
-    "on-click-right": "exec swaymsg 'move scratchpad'"
+    "on-click": "$HOME/.config/waybar/scripts/scratchpad.sh show",
+    "on-click-right": "$HOME/.config/waybar/scripts/scratchpad.sh move"
   },
   "sway/mode": {
     "format": "<span style=\"italic\">{}</span>"
@@ -124,16 +125,20 @@
   },
   "custom/gammastep": {
     "format": "{icon}",
+    "escape": true,
     "return-type": "json",
-    "interval": 10,
+    "signal": 9,
+    "interval": 5,
     "format-icons": {
       "disabled": "󰌶",
       "daytime": "󰖙",
       "transition": "󰖚",
       "night": ""
     },
-    "on-click": "$HOME/.config/waybar/scripts/gammastep.sh toggle; pkill -SIGRTMIN+10 waybar",
-    "exec": "$HOME/.config/waybar/scripts/gammastep.sh status; pkill -SIGRTMIN+10 waybar"
+    "on-click": "$HOME/.config/waybar/scripts/gammastep.sh toggle",
+    "on-scroll-up": "$HOME/.config/waybar/scripts/gammastep.sh brightness-up",
+    "on-scroll-down": "$HOME/.config/waybar/scripts/gammastep.sh brightness-down",
+    "exec": "$HOME/.config/waybar/scripts/gammastep.sh status"
   },
   "cpu": {
     "format": " {usage:02d}%"

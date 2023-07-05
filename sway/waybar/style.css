@@ -132,6 +132,11 @@ tooltip {
     color: @base04;
 }
 
+#custom-gammastep.daytime {
+    padding-left: 11px;
+    padding-right: 13px;
+}
+
 #cpu,
 #temperature,
 #memory {
@@ -195,7 +200,9 @@ tooltip {
 
 /* Hide some module on 2nd screen */
 window.DP-3 #custom-spotify,
-window.DP-3 #clock {
+window.DP-3 #clock,
+window.DP-5 #custom-spotify,
+window.DP-5 #clock {
     font-size: 0;
     margin: 0;
     padding: 0;
