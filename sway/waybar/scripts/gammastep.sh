@@ -7,13 +7,13 @@ WOBSOCK="$XDG_RUNTIME_DIR/wob.sock"
 
 BRIGHTNESS=$(brightnessctl -m info | head -n1 | cut -d, -f4 | tr -d '%')
 STATUS=$(systemctl --user status "${SERVICE}" | grep "Active: active (running)" >/dev/null; echo "$?")
+JQTMPL='{"alt":$alt, "text":$text, "tooltip":$tooltip, "class":$class}'
 
 CMD="${1:-status}"
 case $CMD in
 status)
     if [[ ${STATUS} = "1" ]]; then
-        jq --null-input --compact-output \
-            '{"alt":$alt, "text":$text, "tooltip":$tooltip, "class":$class}' \
+        jq --null-input --compact-output "${JQTMPL}" \
             --arg alt disabled \
             --arg text disabled \
             --arg tooltip "󰌶 Disabled (none)
@@ -33,8 +33,7 @@ status)
         # Night)
         #     ICON="" ;;
         # esac
-        jq --null-input --compact-output \
-            '{"alt":$alt, "text":$text, "tooltip":$tooltip, "class":$class}' \
+        jq --null-input --compact-output "${JQTMPL}" \
             --arg alt "${ALT}" \
             --arg text "${TEMP}" \
             --arg tooltip "${ICON} ${PERIOD} (${TEMP})

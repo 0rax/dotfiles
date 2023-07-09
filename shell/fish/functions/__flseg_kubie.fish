@@ -10,6 +10,6 @@ function __flseg_kubie
             set out "$ctx($ns)"
         end
         __fishline_segment 66cccc 393939
-        printf "\ufd31 %s" "$out"
+        printf "\udb84\udcfe %s" "$out"
     end
 end

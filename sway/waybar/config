@@ -18,9 +18,7 @@
     "tray",
     "idle_inhibitor",
     "custom/gammastep",
-    "cpu",
-    "temperature",
-    "memory",
+    "custom/system",
     "bluetooth",
     "network",
     "pulseaudio",
@@ -140,25 +138,12 @@
     "on-scroll-down": "$HOME/.config/waybar/scripts/gammastep.sh brightness-down",
     "exec": "$HOME/.config/waybar/scripts/gammastep.sh status"
   },
-  "cpu": {
-    "format": " {usage:02d}%"
-  },
-  "temperature": {
-    "thermal-zone": 7,
-    "critical-threshold": 70,
-    "format": " ({temperatureC}°C)",
-    "format-icons": [
-      "\uf2cb",
-      "\uf2ca",
-      "\uf2c9",
-      "\uf2c8",
-      "\uf2c7"
-    ],
-    "tooltip-format": "\uf2c8 {temperatureC}°C"
-  },
-  "memory": {
-    "format": " {percentage:02d}%",
-    "tooltip-format": " {used:0.1f}G/{total:0.1f}G"
+  "custom/system": {
+    "format": "{}",
+    "escape": true,
+    "return-type": "json",
+    "interval": 5,
+    "exec": "$HOME/.config/waybar/scripts/system.sh"
   },
   "bluetooth": {
     "format": "",
@@ -217,9 +202,9 @@
       "warning": 35,
       "critical": 15
     },
-    "format": "{icon} {capacity:3d}%",
-    "format-charging": "󰂄 {capacity:3d}%",
-    "format-plugged": " {capacity:3d}%",
+    "format": "{icon} {capacity:02d}%",
+    "format-charging": "󰂄 {capacity:02d}%",
+    "format-plugged": " {capacity:02d}%",
     "format-full": " full",
     "format-icons": [
       "󰁺",

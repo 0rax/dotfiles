@@ -22,13 +22,17 @@ tooltip {
     border-radius: 4px;
 }
 
+#workspaces {
+    border-radius: 4px;
+    margin-right: 4px;
+}
+
 #workspaces button {
     padding: 8px 8px;
     background-color: @base0D;
     color: @base00;
     transition: none;
 }
-
 
 #workspaces button.focused {
     background-color: @base0A;
@@ -58,24 +62,18 @@ tooltip {
     border-radius: 0 4px 4px 0;
 }
 
+#custom-scratchpad,
+#mode,
 #clock,
-#battery,
-#cpu,
-#memory,
-#disk,
-#temperature,
-#backlight,
+#custom-spotify,
+#tray,
+#idle_inhibitor,
+#custom-gammastep,
+#custom-system,
+#bluetooth,
 #network,
 #pulseaudio,
-#custom-media,
-#tray,
-#mode,
-#idle_inhibitor,
-#bluetooth,
-#mpd,
-#custom-spotify,
-#custom-scratchpad,
-#custom-gammastep {
+#battery {
     padding: 0 12px;
     margin: 0px;
     color: @base07;
@@ -83,37 +81,37 @@ tooltip {
 }
 
 #custom-scratchpad {
-    margin-left: 8px;
     border-radius: 4px;
+    margin: 0 4px 0 4px;
     background-color: @base02;
 }
 
 #mode {
+    border-radius: 4px;
+    margin: 0 4px 0 4px;
     background-color: @base06;
     color: @base00;
-    margin-left: 8px;
-    border-radius: 4px;
 }
 
 #clock {
     border-radius: 4px;
-    margin-left: 8px;
-    margin-right: 8px;
+    margin: 0 4px 0 4px;
 }
 
 #custom-spotify {
-    margin-right: 8px;
+    border-radius: 4px;
+    margin: 0 4px 0 4px;
     background-color: @base06;
     color: @base00;
-    border-radius: 4px;
 }
 
 #tray {
     border-radius: 4px;
-    margin-right: 8px;
+    margin: 0 4px 0 4px;
 }
 
 #idle_inhibitor {
+    margin-left: 4px;
     padding-left: 10px;
     padding-right: 14px;
     border-radius: 4px 0 0 4px;
@@ -137,19 +135,14 @@ tooltip {
     padding-right: 13px;
 }
 
-#cpu,
-#temperature,
-#memory {
+#custom-system {
     background-color: @base0C;
+    /* background-color: @base09; */
     color: @base00;
 }
 
-#cpu {
-    padding-right: 0px;
-}
-
-#temperature {
-    padding: 0;
+#custom-system.critical {
+    background-color: @base09;
 }
 
 #bluetooth {
@@ -202,7 +195,9 @@ tooltip {
 window.DP-3 #custom-spotify,
 window.DP-3 #clock,
 window.DP-5 #custom-spotify,
-window.DP-5 #clock {
+window.DP-5 #clock,
+window.DP-7 #custom-spotify,
+window.DP-7 #clock {
     font-size: 0;
     margin: 0;
     padding: 0;
