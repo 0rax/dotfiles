@@ -5,74 +5,117 @@ BRIGHTNESSMIN="10"
 BRIGHTNESSMAX="100"
 WOBSOCK="$XDG_RUNTIME_DIR/wob.sock"
 
-BRIGHTNESS=$(brightnessctl -m info | head -n1 | cut -d, -f4 | tr -d '%')
-STATUS=$(systemctl --user status "${SERVICE}" | grep "Active: active (running)" >/dev/null; echo "$?")
-JQTMPL='{"alt":$alt, "text":$text, "tooltip":$tooltip, "class":$class}'
+get_brightness() {
+    brightness=$(brightnessctl -m info | head -n1 | cut -d, -f4 | tr -d '%')
+}
+
+get_status() {
+    if systemctl --user status "${SERVICE}" | grep "Active: active (running)" >/dev/null; then
+        output=$(gammastep -p 2>&1)
+        period=$(echo "${output}" | sed -nE 's|^Notice: Period: ([A-Za-Z]+)( .*)?$|\1|p')
+        temp=$(echo "${output}" | sed -nE 's|^Notice: Color temperature: (.*)$|\1|p')
+        alt=$(echo "${period}" | tr '[:upper:]' '[:lower:]')
+        icon="󰌵"
+    else
+        period="Disabled"
+        temp="none"
+        alt="disabled"
+        icon="󰌶"
+    fi
+    text="${alt}"
+    tooltip="${icon} ${period} (${temp})
+󰃟 Brightness (${brightness}%)"
+}
+
+status() {
+    get_brightness
+    get_status
+    jq --null-input --compact-output '{"alt":$alt, "text":$text, "tooltip":$tooltip, "class":$class}' \
+        --arg alt "${alt}" \
+        --arg text "${text}" \
+        --arg tooltip "${tooltip}" \
+        --arg class "${alt}"
+}
+
+raw() {
+    get_brightness
+    get_status
+    alticon="${icon}"
+    case ${period} in
+    Daytime)
+        alticon="󰖙" ;;
+    Transition)
+        alticon="󰖚" ;;
+    Night)
+        alticon="" ;;
+    esac
+    echo "${alticon} ${text}"
+    echo "------------------"
+    echo "${tooltip}"
+}
+
+start() {
+    systemctl --user start "${SERVICE}"
+}
+
+stop() {
+    systemctl --user stop "${SERVICE}"
+}
+
+toggle() {
+    if systemctl --user status "${SERVICE}" | grep "Active: active (running)" >/dev/null; then
+        stop
+    else
+        start
+    fi
+}
+
+brightness-up() {
+    get_brightness
+    brightness=$((brightness + 5))
+    if [[ ${brightness} -gt ${BRIGHTNESSMAX} ]]; then
+        brightness=${BRIGHTNESSMAX}
+    fi
+    brightnessctl -q set "${brightness}%"
+    echo "${brightness}" > "${WOBSOCK}"
+}
+
+brightness-down() {
+    get_brightness
+    brightness=$((brightness - 5))
+    if [[ ${brightness} -lt ${BRIGHTNESSMIN} ]]; then
+        brightness=${BRIGHTNESSMIN}
+    fi
+    brightnessctl -q set "${brightness}%"
+    echo "${brightness}" > "${WOBSOCK}"
+}
 
 CMD="${1:-status}"
 case $CMD in
 status)
-    if [[ ${STATUS} = "1" ]]; then
-        jq --null-input --compact-output "${JQTMPL}" \
-            --arg alt disabled \
-            --arg text disabled \
-            --arg tooltip "󰌶 Disabled (none)
-󰃟 Brightness (${BRIGHTNESS}%)" \
-            --arg class disabled
-    else
-        OUTPUT=$(gammastep -p 2>&1)
-        PERIOD=$(echo "${OUTPUT}" | sed -nE 's|^Notice: Period: ([A-Za-Z]+)( .*)?$|\1|p')
-        TEMP=$(echo "${OUTPUT}" | sed -nE 's|^Notice: Color temperature: (.*)$|\1|p')
-        ALT=$(echo "${PERIOD}" | tr '[:upper:]' '[:lower:]')
-        ICON="󰌵"
-        # case ${PERIOD} in
-        # Daytime)
-        #     ICON="󰖙" ;;
-        # Transition)
-        #     ICON="󰖚" ;;
-        # Night)
-        #     ICON="" ;;
-        # esac
-        jq --null-input --compact-output "${JQTMPL}" \
-            --arg alt "${ALT}" \
-            --arg text "${TEMP}" \
-            --arg tooltip "${ICON} ${PERIOD} (${TEMP})
-󰃟 Brightness (${BRIGHTNESS}%)" \
-            --arg class "${ALT}"
-    fi
+    status
+    exit
+    ;;
+raw)
+    raw
+    exit
     ;;
 start)
-    systemctl --user start "${SERVICE}"
+    start
     ;;
 stop)
-    systemctl --user stop "${SERVICE}"
+    stop
     ;;
 toggle)
-    if [[ ${STATUS} = "1" ]]; then
-        systemctl --user start "${SERVICE}"
-    else
-        systemctl --user stop "${SERVICE}"
-    fi
+    toggle
     ;;
 brightness-up)
-    BRIGHTNESS=$((BRIGHTNESS + 5))
-    if [[ ${BRIGHTNESS} -gt ${BRIGHTNESSMAX} ]]; then
-        BRIGHTNESS=${BRIGHTNESSMAX}
-    fi
-    brightnessctl -q set "${BRIGHTNESS}%"
-    echo "${BRIGHTNESS}" > "${WOBSOCK}"
+    brightness-up
     ;;
 brightness-down)
-    BRIGHTNESS=$((BRIGHTNESS - 5))
-    if [[ ${BRIGHTNESS} -lt ${BRIGHTNESSMIN} ]]; then
-        BRIGHTNESS=${BRIGHTNESSMIN}
-    fi
-    brightnessctl -q set "${BRIGHTNESS}%"
-    echo "${BRIGHTNESS}" > "${WOBSOCK}"
+    brightness-down
     ;;
 esac
 
 # Refresh Waybar on actions
-if [[ ${CMD} != "status" ]]; then
-    pkill -SIGRTMIN+10 waybar
-fi
+pkill -SIGRTMIN+10 waybar

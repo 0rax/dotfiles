@@ -48,8 +48,14 @@ disk() {
     disk_used=$(calc "${disk_total} - ${disk_avail}")
 }
 
-output() {
-    # Generate output variables
+get_status() {
+    # Fetch statuses and generate output variables
+    cpu
+    temperature
+    memory
+    swap
+    disk
+
     text=$(printf "󰢻 %.0f%%  %d°C 󱘲 %.0f%%\n" "${cpu_pct}" "${temp}" "${ram_pct}")
     tooltip=$(printf "󰢻 %02.1f%% (%.3fGhz)
  %d°C (${TEMPTYPE})
@@ -64,12 +70,7 @@ output() {
 
 status() {
     # Print system status once (shows average CPU usage since boot)
-    cpu
-    temperature
-    memory
-    swap
-    disk
-    output
+    get_status
     jq --null-input --compact-output '{"text":$text, "tooltip":$tooltip, "class":$class}' \
                 --arg text "${text}" \
                 --arg tooltip "${tooltip}" \
@@ -86,12 +87,7 @@ watch() {
 
 raw() {
     # Print a raw version of status
-    cpu
-    temperature
-    memory
-    swap
-    disk
-    output
+    get_status
     echo "${text}"
     echo "------------------"
     echo "${tooltip}"

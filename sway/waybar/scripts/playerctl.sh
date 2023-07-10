@@ -27,7 +27,7 @@ watch)
         done
     ;;
 raw)
-    playerctl --player="${PLAYER}" --follow metadata --format="${MDFORMAT}"
+    playerctl --player="${PLAYER}" metadata --format="${MDFORMAT}"
     ;;
 next)
     playerctl --player="${PLAYER}" next
