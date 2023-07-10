@@ -142,8 +142,8 @@
     "format": "{}",
     "escape": true,
     "return-type": "json",
-    "interval": 5,
-    "exec": "$HOME/.config/waybar/scripts/system.sh"
+    "exec": "$HOME/.config/waybar/scripts/system.sh watch",
+    "exec-if": "true"
   },
   "bluetooth": {
     "format": "",
