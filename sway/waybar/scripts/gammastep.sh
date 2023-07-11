@@ -47,7 +47,7 @@ raw() {
     Transition)
         alticon="󰖚" ;;
     Night)
-        alticon="" ;;
+        alticon="󰖔" ;;
     esac
     echo "${alticon} ${text}"
     echo "------------------"

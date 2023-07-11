@@ -91,9 +91,6 @@
     "return-type": "json",
     "max-length": 36,
     "format-icons": {
-      // "playing": "",
-      // "paused": "",
-      // "stopped": "",
       "playing": "",
       "paused": "",
       "stopped": ""
@@ -111,8 +108,6 @@
   "idle_inhibitor": {
     "format": "{icon}",
     "format-icons": {
-      // "activated": "",
-      // "deactivated": "",
       "activated": "󰒳",
       "deactivated": "󰒲"
     },
@@ -131,7 +126,7 @@
       "disabled": "󰌶",
       "daytime": "󰖙",
       "transition": "󰖚",
-      "night": ""
+      "night": "󰖔"
     },
     "on-click": "$HOME/.config/waybar/scripts/gammastep.sh toggle",
     "on-scroll-up": "$HOME/.config/waybar/scripts/gammastep.sh brightness-up",
