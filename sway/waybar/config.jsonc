@@ -45,6 +45,7 @@
       "6:Chat": "",
       "7:3D": "",
       "8:VM": "",
+      "high-priority-named": [ "1:Home", "2:Code", "3:Web", "4:Media", "5:Files", "6:Chat", "7:3D", "8:VM" ],
       "urgent": "",
       "focused": "",
       "default": ""
@@ -87,13 +88,13 @@
   },
   "custom/spotify": {
     "format": "{icon} {}",
-    "escape": true,
+    "escape": false,
     "return-type": "json",
     "max-length": 36,
     "format-icons": {
-      "playing": "",
-      "paused": "",
-      "stopped": ""
+      "playing": "",
+      "paused": "",
+      "stopped": ""
     },
     "on-click": "$HOME/.config/waybar/scripts/playerctl.sh play-pause",
     "on-click-middle": "$HOME/.config/waybar/scripts/playerctl.sh prev",
@@ -168,8 +169,8 @@
     "on-click-right": "alacritty --class nmtui -e nmtui"
   },
   "pulseaudio": {
-    "scroll-step": 2.5,
-    "format": "{icon} {volume:3d}%",
+    "signal": 7,
+    "format": "{icon} {volume}%",
     "format-bluetooth": "{icon}󰂯 {volume}%",
     "format-bluetooth-muted": "{icon}󰂯 mute",
     "format-muted": "󰝟 mute",
@@ -189,7 +190,9 @@
       "easyeffects_sink"
     ],
     "on-click-right": "swaysettings -p sound",
-    "on-click-middle": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle; pkill -SIGRTMIN+10 waybar",
+    "on-click-middle": "$HOME/.config/waybar/scripts/volumectl.sh toggle-mute",
+    "on-scroll-up": "$HOME/.config/waybar/scripts/volumectl.sh volume-up",
+    "on-scroll-down": "$HOME/.config/waybar/scripts/volumectl.sh volume-down",
     "tooltip-format": "󱡫 {desc}"
   },
   "battery": {

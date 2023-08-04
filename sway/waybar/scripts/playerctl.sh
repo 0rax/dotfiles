@@ -2,13 +2,14 @@
 
 PLAYER="spotify"
 
-MDFORMAT='{ "status": "{{status}}", "artist": "{{xesam:artist}}", "title": "{{xesam:title}}", "position": "{{duration(position)}}", "length": "{{duration(mpris:length)}}" }'
+MDFORMAT='{ "status": "{{status}}", "artist": "{{xesam:artist}}", "title": "{{xesam:title}}", "position": "{{duration(position)}}", "length": "{{duration(mpris:length)}}", "album": "{{xesam:album}}" }'
 JQFUNC='{
     "alt": .status | ascii_downcase,
     "text": ( if (.title|length) > 0 then .artist + " - " + .title else .status end ),
-    "tooltip": ( " " + .status + " (" + .position + "/" + .length + ")" ),
+    "tooltip": ( "󰓇 " + .status + " (" + .position + "/" + .length + ")" + "\n󰝚 " + .title +  "\n󰠃 " + .artist + "\n󰲸 " + .album ),
     "class": .status | ascii_downcase
 }'
+
 
 CMD="${1:-status}"
 case $CMD in

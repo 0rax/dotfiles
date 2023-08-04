@@ -39,6 +39,7 @@ swap() {
     swap_total=$(awk '/SwapTotal/{ print $2/1024/1024 }' /proc/meminfo)
     swap_avail=$(awk '/SwapFree/{ print $2/1024/1024 }' /proc/meminfo)
     swap_used=$(calc "${swap_total} - ${swap_avail}")
+    swap_pct=$(calc "${swap_used} / ${swap_total} * 100")
 }
 
 disk() {
@@ -46,6 +47,7 @@ disk() {
     disk_total=$(stat -f -c '%b %S' "${DISKMOUNT}" | awk '{ print ($1 * $2) / 1024 / 1024 / 1024 }')
     disk_avail=$(stat -f -c '%a %S' "${DISKMOUNT}" | awk '{ print ($1 * $2) / 1024 / 1024 / 1024 }')
     disk_used=$(calc "${disk_total} - ${disk_avail}")
+    disk_pct=$(calc "${disk_used} / ${disk_total} * 100")
 }
 
 get_status() {
@@ -58,10 +60,10 @@ get_status() {
 
     text=$(printf "󰢻 %.0f%%  %d°C 󱘲 %.0f%%\n" "${cpu_pct}" "${temp}" "${ram_pct}")
     tooltip=$(printf "󰢻 %02.1f%% (%.3fGhz)
- %d°C (${TEMPTYPE})
-󱘲 %.1fGB/%.1fGB
-󰾴 %.1fGB/%.1fGB
-󰋊 %.1fGB/%.1fGB" "${cpu_pct}" "${cpu_freq}" "${temp}" "${ram_used}" "${ram_total}" "${swap_used}" "${swap_total}" "${disk_used}" "${disk_total}")
+ %3d°C (${TEMPTYPE})
+󱘲 %.1f%% (%.1fGB/%.1fGB)
+󰾴 %.1f%% (%.1fGB/%.1fGB)
+󰋊 %.1f%% (%.0fGB/%.0fGB)" "${cpu_pct}" "${cpu_freq}" "${temp}" "${ram_pct}" "${ram_used}" "${ram_total}" "${swap_pct}" "${swap_used}" "${swap_total}" "${disk_pct}" "${disk_used}" "${disk_total}")
     class=""
     if [[ ${temp} -ge ${TEMPCRITICAL} ]]; then
         class="critical"

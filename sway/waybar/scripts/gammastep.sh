@@ -1,8 +1,9 @@
 #!/usr/bin/env bash
 
 SERVICE="gammastep.service"
-BRIGHTNESSMIN="10"
-BRIGHTNESSMAX="100"
+BRIGHTNESSMIN=10
+BRIGHTNESSMAX=100
+BRIGHTNESSSTEP=5
 WOBSOCK="$XDG_RUNTIME_DIR/wob.sock"
 
 get_brightness() {
@@ -72,7 +73,7 @@ toggle() {
 
 brightness-up() {
     get_brightness
-    brightness=$((brightness + 5))
+    brightness=$((brightness + BRIGHTNESSSTEP))
     if [[ ${brightness} -gt ${BRIGHTNESSMAX} ]]; then
         brightness=${BRIGHTNESSMAX}
     fi
@@ -82,7 +83,7 @@ brightness-up() {
 
 brightness-down() {
     get_brightness
-    brightness=$((brightness - 5))
+    brightness=$((brightness - BRIGHTNESSSTEP))
     if [[ ${brightness} -lt ${BRIGHTNESSMIN} ]]; then
         brightness=${BRIGHTNESSMIN}
     fi

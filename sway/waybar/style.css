@@ -135,6 +135,11 @@ tooltip {
     padding-right: 13px;
 }
 
+#custom-gammastep.night {
+    padding-left: 10px;
+    padding-right: 14px;
+}
+
 #custom-system {
     background-color: @base0C;
     /* background-color: @base09; */
