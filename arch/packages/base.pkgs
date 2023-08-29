@@ -15,8 +15,14 @@
 bash                        # https://www.gnu.org/software/bash/
 fish                        # https://fishshell.com
 base-devel                  # [meta] https://www.archlinux.org/groups/x86_64/base-devel/
+
+## Pacman
+pacman                      # https://archlinux.org/pacman/
 aur/yay-bin                 # https://github.com/Jguer/yay
 aur/downgrade               # https://github.com/pbrisbin/downgrade
+mold                        # https://github.com/rui314/mold
+pigz                        # https://www.zlib.net/pigz/
+lbzip2                      # https://github.com/kjn/lbzip2/
 
 ## CVS
 git                         # https://git-scm.com
