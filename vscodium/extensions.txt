@@ -1,11 +1,13 @@
-9j.amvim
 appliedengdesign.vscode-gcode-syntax
+auiworks.amvim
 bmalehorn.vscode-fish
 bufbuild.vscode-buf
 carlocardella.vscode-texttoolbox
+coolbear.systemd-unit-file
 DavidAnson.vscode-markdownlint
 ecmel.vscode-html-css
 EditorConfig.EditorConfig
+eliostruyf.vscode-front-matter
 esbenp.prettier-vscode
 ExodiusStudios.comment-anchors
 file-icons.file-icons
