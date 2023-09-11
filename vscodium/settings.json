@@ -205,6 +205,7 @@
   "editor.insertSpaces": true,
   "editor.minimap.enabled": false,
   "editor.renderLineHighlight": "all",
+  "editor.renderLineHighlightOnlyWhenFocus": true,
   "editor.renderWhitespace": "boundary",
   "editor.rulers": [
     80
@@ -233,6 +234,16 @@
   "explorer.compactFolders": true,
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
+  "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.patterns": {
+    "*.proto": "${capture}.pb.go, ${capture}.pb.gw.go, ${capture}.pb.validate.go, ${capture}_grpc.pb.go",
+    ".gitignore": ".gitattributes, .gitmodules, .gitmessage",
+    "buf.yaml": "buf.gen.yaml, buf.lock",
+    "go.mod": "go.sum",
+    "Pipfile": "Pipfile.lock",
+    "pyproject.toml": "poetry.lock",
+    "requirements.in": "requirements.txt"
+  },
   "extensions.ignoreRecommendations": true,
   "files.associations": {
     "*.pgsql": "sql",
@@ -255,9 +266,7 @@
   "files.insertFinalNewline": true,
   "files.trimFinalNewlines": true,
   "files.trimTrailingWhitespace": true,
-  "git.autofetch": false,
   "git.enabled": false,
-  "git.ignoreLimitWarning": true,
   "go.addTags": {
     "promptForTags": true
   },
@@ -283,6 +292,7 @@
   "json.schemaDownload.enable": true,
   "markdown.extension.tableFormatter.normalizeIndentation": true,
   "markdown.preview.scrollEditorWithPreview": false,
+  "notebook.lineNumbers": "on",
   "outline.showVariables": false,
   "pylint.args": [
     "--max-line-length=100",
@@ -315,6 +325,9 @@
     "**/zshrc": true
   },
   "shellcheck.run": "onSave",
+  "tabby.api.endpoint": "http://localhost:8080",
+  "tabby.keybindings": "tabby-style",
+  "tabby.usage.anonymousUsageTracking": true,
   "telemetry.telemetryLevel": "off",
   "terminal.integrated.copyOnSelection": true,
   "terminal.integrated.defaultProfile.linux": "fish",
@@ -326,11 +339,12 @@
     }
   },
   "testing.gutterEnabled": false,
+  "TextToolbox.statusBarPriority": 1000,
   "window.menuBarVisibility": "toggle",
   "window.restoreWindows": "one",
   "workbench.colorCustomizations": {
-    "statusBar.background": "#16181D",
-    "statusBar.noFolderBackground": "#16181D"
+    "statusBar.background": "#4F5B66",
+    "statusBar.noFolderBackground": "#4F5B66"
   },
   "workbench.colorTheme": "Base16 OceanicNext Dark",
   "workbench.editor.limit.enabled": true,

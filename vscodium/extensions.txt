@@ -2,6 +2,7 @@
 appliedengdesign.vscode-gcode-syntax
 bmalehorn.vscode-fish
 bufbuild.vscode-buf
+carlocardella.vscode-texttoolbox
 DavidAnson.vscode-markdownlint
 ecmel.vscode-html-css
 EditorConfig.EditorConfig
@@ -19,6 +20,12 @@ mitchdenny.ecdc
 ms-python.black-formatter
 ms-python.pylint
 ms-python.python
+ms-toolsai.jupyter
+ms-toolsai.jupyter-keymap
+ms-toolsai.jupyter-renderers
+ms-toolsai.vscode-jupyter-cell-tags
+ms-toolsai.vscode-jupyter-powertoys
+ms-toolsai.vscode-jupyter-slideshow
 ms-vscode.live-server
 naumovs.color-highlight
 oderwat.indent-rainbow
