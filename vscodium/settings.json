@@ -235,6 +235,7 @@
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
   "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.expand": false,
   "explorer.fileNesting.patterns": {
     "*.proto": "${capture}.pb.go, ${capture}.pb.gw.go, ${capture}.pb.validate.go, ${capture}_grpc.pb.go",
     ".gitignore": ".gitattributes, .gitmodules, .gitmessage",
@@ -290,6 +291,16 @@
     "yaml"
   ],
   "json.schemaDownload.enable": true,
+  "ltex.enabled": [
+    "bibtex",
+    "context",
+    "context.tex",
+    "latex",
+    "markdown",
+    "org",
+    "restructuredtext",
+    "rsweave"
+  ],
   "markdown.extension.tableFormatter.normalizeIndentation": true,
   "markdown.preview.scrollEditorWithPreview": false,
   "notebook.lineNumbers": "on",
@@ -340,11 +351,13 @@
   },
   "testing.gutterEnabled": false,
   "TextToolbox.statusBarPriority": 1000,
-  "window.menuBarVisibility": "toggle",
   "window.restoreWindows": "one",
+  "window.titleBarStyle": "custom",
   "workbench.colorCustomizations": {
     "statusBar.background": "#4F5B66",
-    "statusBar.noFolderBackground": "#4F5B66"
+    "statusBar.noFolderBackground": "#343d46",
+    "titleBar.activeBackground": "#343d46",
+    "titleBar.inactiveBackground": "#343d46"
   },
   "workbench.colorTheme": "Base16 OceanicNext Dark",
   "workbench.editor.limit.enabled": true,
