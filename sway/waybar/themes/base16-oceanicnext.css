@@ -21,3 +21,20 @@
 @define-color base0D #6699cc;
 @define-color base0E #c594c5;
 @define-color base0F #ab7967;
+
+@define-color blur00 rgba(27, 43, 52, 0.8);
+@define-color blur01 rgba(52, 61, 70, 0.8);
+@define-color blur02 rgba(79, 91, 102, 0.8);
+@define-color blur03 rgba(101, 115, 126, 0.8);
+@define-color blur04 rgba(167, 173, 186, 0.8);
+@define-color blur05 rgba(192, 197, 206, 0.8);
+@define-color blur06 rgba(205, 211, 222, 0.8);
+@define-color blur07 rgba(216, 222, 233, 0.8);
+@define-color blur08 rgba(236, 95, 103, 0.8);
+@define-color blur09 rgba(249, 145, 87, 0.8);
+@define-color blur0A rgba(250, 200, 99, 0.8);
+@define-color blur0B rgba(153, 199, 148, 0.8);
+@define-color blur0C rgba(95, 179, 179, 0.8);
+@define-color blur0D rgba(102, 153, 204, 0.8);
+@define-color blur0E rgba(197, 148, 197, 0.8);
+@define-color blur0F rgba(171, 121, 103, 0.8);

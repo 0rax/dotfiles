@@ -16,17 +16,20 @@
 @define-color base0E #c594c5;
 @define-color base0F #ab7967;
 
+@define-color blur00 rgba(27, 43, 52, 0.8);
+@define-color blur03 rgba(101, 115, 126, 0.6);
+
 window {
     margin: 0px;
     border: 2px solid @base0D;
     border-radius: 4px;
-    background-color: @base00;
+    background-color: @blur00;
 }
 
 #outer-box {
     margin: 8px;
     border: none;
-    background-color: @base00;
+    background-color: transparent;
     padding-bottom: 0px;
 }
 
@@ -36,7 +39,7 @@ window {
     padding: 6px 10px;
     border-radius: 4px;
     color: @base06;
-    background-color: @base01;
+    background-color: @blur03;
 }
 
 #scroll {
@@ -47,7 +50,7 @@ window {
 #inner-box {
     margin: 4px;
     border: none;
-    background-color: @base00;
+    background-color: transparent;
 }
 
 #text {
@@ -58,7 +61,7 @@ window {
 }
 
 #entry:selected {
-    background-color: @base01;
+    background-color: @blur03;
     border-radius: 4px;
 }
 

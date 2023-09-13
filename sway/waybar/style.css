@@ -16,7 +16,7 @@ window#waybar {
 
 tooltip {
     color: @base07;
-    background-color: @base00;
+    background-color: @blur00;
     text-shadow: none;
     border: 2px @base0D solid;
     border-radius: 4px;
@@ -45,13 +45,17 @@ tooltip {
 }
 
 #workspaces button.persistent {
-    background-color: @base01;
+    background-color: @blur01;
     color: @base04;
 }
 
 #workspaces button:hover {
-    background: @base03;
+    background-color: @base03;
     color: @base07;
+}
+
+#workspaces button.persistent:hover {
+    background-color: @blur02;
 }
 
 #workspaces button:nth-child(1) {
@@ -77,19 +81,19 @@ tooltip {
     padding: 0 12px;
     margin: 0px;
     color: @base07;
-    background-color: @base00;
+    background-color: @blur00;
 }
 
 #custom-scratchpad {
     border-radius: 4px;
     margin: 0 4px 0 4px;
-    background-color: @base02;
+    background-color: @blur02;
 }
 
 #mode {
     border-radius: 4px;
     margin: 0 4px 0 4px;
-    background-color: @base06;
+    background-color: @blur06;
     color: @base00;
 }
 
@@ -101,13 +105,14 @@ tooltip {
 #custom-spotify {
     border-radius: 4px;
     margin: 0 4px 0 4px;
-    background-color: @base06;
+    background-color: @blur05;
     color: @base00;
 }
 
 #tray {
     border-radius: 4px;
     margin: 0 4px 0 4px;
+    background-color: @blur00;
 }
 
 #idle_inhibitor {
@@ -115,7 +120,7 @@ tooltip {
     padding-left: 10px;
     padding-right: 14px;
     border-radius: 4px 0 0 4px;
-    background-color: @base01;
+    background-color: @blur01;
 }
 
 #idle_inhibitor.deactivated {
@@ -142,7 +147,6 @@ tooltip {
 
 #custom-system {
     background-color: @base0C;
-    /* background-color: @base09; */
     color: @base00;
 }
 
@@ -198,11 +202,11 @@ tooltip {
 
 /* Hide some module on 2nd screen */
 window.DP-3 #custom-spotify,
-window.DP-3 #clock,
 window.DP-5 #custom-spotify,
-window.DP-5 #clock,
 window.DP-7 #custom-spotify,
-window.DP-7 #clock {
+window.DP-3 #custom-system,
+window.DP-5 #custom-system,
+window.DP-7 #custom-system {
     font-size: 0;
     margin: 0;
     padding: 0;

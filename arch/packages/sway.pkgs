@@ -66,6 +66,7 @@ grim                        # [screenshotter  ] https://github.com/emersion/grim
 slurp                       # [screen-region  ] https://github.com/emersion/slurp
 swappy                      # [image-annotator] https://github.com/jtheoof/swappy
 aur/grimshot                # [screenshot-wrap] https://github.com/swaywm/sway/blob/master/contrib/grimshot
+wf-recorder                 # [screen-recorder] https://github.com/ammen99/wf-recorder
 brightnessctl               # [brightness-ctrl] https://github.com/Hummer12007/brightnessctl
 playerctl                   # [metdia-ctrl    ] https://github.com/altdesktop/playerctl
 wl-clipboard                # [wl-clipboard   ] https://github.com/bugaevc/wl-clipboard
