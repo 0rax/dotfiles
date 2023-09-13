@@ -291,6 +291,7 @@
     "yaml"
   ],
   "json.schemaDownload.enable": true,
+  "jupyter.askForKernelRestart": false,
   "ltex.enabled": [
     "bibtex",
     "context",
@@ -337,11 +338,13 @@
   },
   "shellcheck.run": "onSave",
   "tabby.api.endpoint": "http://localhost:8080",
+  "tabby.codeCompletion": true,
   "tabby.keybindings": "tabby-style",
-  "tabby.usage.anonymousUsageTracking": true,
+  "tabby.usage.anonymousUsageTracking": false,
   "telemetry.telemetryLevel": "off",
   "terminal.integrated.copyOnSelection": true,
   "terminal.integrated.defaultProfile.linux": "fish",
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
   "terminal.integrated.fontSize": 14,
   "terminal.integrated.profiles.linux": {
     "fish": {

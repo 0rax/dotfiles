@@ -19,6 +19,7 @@ hashicorp.terraform
 jeff-hykin.better-dockerfile-syntax
 mechatroner.rainbow-csv
 mitchdenny.ecdc
+ms-pyright.pyright
 ms-python.black-formatter
 ms-python.pylint
 ms-python.python
@@ -33,6 +34,7 @@ naumovs.color-highlight
 oderwat.indent-rainbow
 redhat.vscode-xml
 redhat.vscode-yaml
+TabbyML.vscode-tabby
 tamasfe.even-better-toml
 timonwong.shellcheck
 usernamehw.errorlens
