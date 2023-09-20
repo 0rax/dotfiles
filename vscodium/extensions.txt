@@ -10,7 +10,6 @@ EditorConfig.EditorConfig
 eliostruyf.vscode-front-matter
 esbenp.prettier-vscode
 ExodiusStudios.comment-anchors
-file-icons.file-icons
 foxundermoon.shell-format
 golang.go
 golf1052.base16-generator
@@ -32,9 +31,10 @@ ms-toolsai.vscode-jupyter-slideshow
 ms-vscode.live-server
 naumovs.color-highlight
 oderwat.indent-rainbow
+PKief.material-icon-theme
+PKief.material-product-icons
 redhat.vscode-xml
 redhat.vscode-yaml
-TabbyML.vscode-tabby
 tamasfe.even-better-toml
 timonwong.shellcheck
 usernamehw.errorlens
