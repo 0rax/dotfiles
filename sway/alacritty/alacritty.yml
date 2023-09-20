@@ -118,6 +118,7 @@ schemes:
       - { index: 21, color: '0xcdd3de' }
 
 colors: *base16-oceanic-next
+custom_cursor_colors: true
 
 bell:
   # Visual Bell Animation

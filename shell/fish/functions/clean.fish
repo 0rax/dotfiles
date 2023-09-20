@@ -4,7 +4,7 @@
 function clean -d "Clean specified directories - or if not specified the current working one"
 
     # Find pattern options
-    set -l pattern -name '\#*\#' -o -name '*~' -o -name '.*~' -o -name '*.pyc'
+    set -l pattern -name '\#*\#' -o -name '*~' -o -name '.*~' -o -name '*.pyc' -o -name '*.orig'
     # Limit 'find' search depths to 1 by default
     set -l recur -maxdepth 1
 

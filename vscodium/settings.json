@@ -370,10 +370,16 @@
   "workbench.editorAssociations": {
     "*.ipynb": "jupyter-notebook"
   },
-  "workbench.iconTheme": "file-icons",
   "workbench.settings.editor": "json",
   "workbench.startupEditor": "none",
   "yaml.format.enable": false,
   "yaml.schemaStore.enable": false,
-  "zenMode.fullScreen": false
+  "zenMode.fullScreen": false,
+  "jupyter.widgetScriptSources": [
+    "jsdelivr.com",
+    "unpkg.com"
+  ],
+  "workbench.productIconTheme": "material-product-icons",
+  "workbench.iconTheme": "material-icon-theme",
+  "material-icon-theme.saturation": 0.72
 }
