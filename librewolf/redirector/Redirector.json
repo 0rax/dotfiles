@@ -1,0 +1,57 @@
+{
+    "createdBy": "Redirector v3.5.3",
+    "createdAt": "2023-10-04T22:53:34.785Z",
+    "redirects": [
+        {
+            "description": "Quora to Quetre",
+            "exampleUrl": "https://www.quora.com/What-is-Linux-4?share=1",
+            "exampleResult": "https://quetre.ftw.lol/redirect/https://www.quora.com/What-is-Linux-4?share=1",
+            "error": null,
+            "includePattern": "(https:\\/\\/.{2,}\\.quora\\.com\\/.*)",
+            "excludePattern": "\\?nr",
+            "patternDesc": "",
+            "redirectUrl": "https://quetre.ftw.lol/redirect/$1",
+            "patternType": "R",
+            "processMatches": "noProcessing",
+            "disabled": false,
+            "grouped": false,
+            "appliesTo": [
+                "main_frame"
+            ]
+        },
+        {
+            "description": "StackOverflow to AnonymousOverflow",
+            "exampleUrl": "https://stackoverflow.com/questions/43743250/using-libsodium-xchacha20-poly1305-for-large-files",
+            "exampleResult": "https://ao.ftw.lol/questions/43743250/using-libsodium-xchacha20-poly1305-for-large-files",
+            "error": null,
+            "includePattern": "https://stackoverflow.com/*",
+            "excludePattern": "\\?nr",
+            "patternDesc": "",
+            "redirectUrl": "https://ao.ftw.lol/$1",
+            "patternType": "W",
+            "processMatches": "noProcessing",
+            "disabled": false,
+            "grouped": false,
+            "appliesTo": [
+                "main_frame"
+            ]
+        },
+        {
+            "description": "Twitter to Nitter",
+            "exampleUrl": "https://twitter.com/johnrobb/status/1545875179225612288",
+            "exampleResult": "https://nitter.net/johnrobb/status/1545875179225612288",
+            "error": null,
+            "includePattern": "^https://twitter\\.com/([^\\?]*)",
+            "excludePattern": "\\?nr",
+            "patternDesc": "redirect all Twitter URL to Nitter",
+            "redirectUrl": "https://nitter.net/$1",
+            "patternType": "R",
+            "processMatches": "noProcessing",
+            "disabled": false,
+            "grouped": false,
+            "appliesTo": [
+                "main_frame"
+            ]
+        }
+    ]
+}

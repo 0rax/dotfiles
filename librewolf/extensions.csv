@@ -1,26 +1,16 @@
 name,id,type,enabled,homepage
-7TV,moz-addon-prod@7tv.app,extension,true,https://7tv.app
-Always Right,jid0-SzimoL45Ib8OddgoUBG0buQmjec@jetpack,extension,true,
 Arc Dark Theme,arc-dark-theme@afnankhan,theme,true,
-Bitwarden - Free Password Manager,{446900e4-71c2-419f-a6a7-df9c091e268b},extension,true,https://bitwarden.com
-British English Dictionary (Marco Pinto),marcoagpinto@mail.telepac.pt,dictionary,true,
-Bypass Paywalls Clean,{d133e097-46d9-4ecc-9903-fa6a722a6e0e},extension,true,https://gitlab.com/magnolia1234/bypass-paywalls-firefox-clean
-ClearURLs,{74145f27-f039-47ce-a470-a662b129930a},extension,true,https://docs.clearurls.xyz
-Detailed SEO Extension,{7d1f7c5e-0f6f-4bba-82a3-04d859512523},extension,false,
-Dictionnaire français,fr-dicollecte@dictionaries.addons.mozilla.org,dictionary,true,https://grammalecte.net
-Disable WebRTC,jid1-5Fs7iTLscUaZBgwr@jetpack,extension,true,
-English United States Dictionary,@unitedstatesenglishdictionary,dictionary,true,
-Facebook Container,@contain-facebook,extension,true,https://github.com/mozilla/contain-facebook
-Firefox Multi-Account Containers,@testpilot-containers,extension,true,https://github.com/mozilla/multi-account-containers#readme
-FireMonkey,firemonkey@eros.man,extension,true,https://github.com/erosman/support
 Google Container,@contain-google,extension,true,https://github.com/containers-everywhere/contain-google
-Grammalecte [fr],French-GC@grammalecte.net,extension,true,https://grammalecte.net/
-Gumbo: Twitch Companion,{59a39734-1e66-452e-a7b8-cc79f72062f0},extension,true,
-I still don't care about cookies,idcac-pub@guus.ninja,extension,true,https://github.com/OhMyGuus/I-Still-Dont-Care-About-Cookies
-LibRedirect,7esoorv3@alefvanoon.anonaddy.me,extension,true,
-Librefox Reload/Refresh Button Url Bar,librefox.reload.button@intika.be,extension,true,https://github.com/intika/Librefox-Firefox
-nightTab,{47bf427e-c83d-457d-9b3d-3db4118574bd},extension,true,https://github.com/zombieFox/nightTab
-Open Graph Preview,{6e262423-d612-4f29-be6e-e83aa641645d},extension,false,
+Dictionnaire français,fr-dicollecte@dictionaries.addons.mozilla.org,dictionary,true,https://grammalecte.net
+nightTab,{47bf427e-c83d-457d-9b3d-3db4118574bd},extension,true,
+Firefox Multi-Account Containers,@testpilot-containers,extension,true,https://github.com/mozilla/multi-account-containers#readme
+English United States Dictionary,@unitedstatesenglishdictionary,dictionary,true,
+British English Dictionary (Marco Pinto),marcoagpinto@mail.telepac.pt,dictionary,true,
+I don't care about cookies,jid1-KKzOGWgsW3Ao4Q@jetpack,extension,true,
 Refined GitHub,{a4c4eda4-fb84-4a84-b4a1-f7c1cbf2a1ad},extension,true,https://github.com/refined-github/refined-github
-Smart Referer,smart-referer@meh.paranoid.pk,extension,true,https://gitlab.com/smart-referer
+Bitwarden - Free Password Manager,{446900e4-71c2-419f-a6a7-df9c091e268b},extension,true,https://bitwarden.com
 uBlock Origin,uBlock0@raymondhill.net,extension,true,
+CanvasBlocker,CanvasBlocker@kkapsner.de,extension,true,
+Redirector,redirector@einaregilsson.com,extension,true,
+Sidebery,{3c078156-979c-498b-8990-85f7987dd929},extension,true,https://github.com/mbnuqw/sidebery
+FireMonkey,firemonkey@eros.man,extension,true,https://github.com/erosman/support
