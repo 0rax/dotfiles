@@ -2,7 +2,7 @@
   "[css]": {
     "editor.defaultFormatter": "vscode.css-language-features",
     "editor.insertSpaces": true,
-    "editor.tabSize": 4
+    "editor.tabSize": 2
   },
   "[dockercompose]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
@@ -20,7 +20,9 @@
     "editor.tabSize": 4
   },
   "[html]": {
-    "editor.defaultFormatter": "vscode.html-language-features"
+    "editor.defaultFormatter": "vscode.html-language-features",
+    "editor.insertSpaces": false,
+    "editor.tabSize": 2
   },
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
@@ -243,7 +245,8 @@
     "go.mod": "go.sum",
     "Pipfile": "Pipfile.lock",
     "pyproject.toml": "poetry.lock",
-    "requirements.in": "requirements.txt"
+    "requirements.in": "requirements.txt",
+    "*": "${capture}.orig"
   },
   "extensions.ignoreRecommendations": true,
   "files.associations": {
@@ -292,6 +295,10 @@
   ],
   "json.schemaDownload.enable": true,
   "jupyter.askForKernelRestart": false,
+  "jupyter.widgetScriptSources": [
+    "jsdelivr.com",
+    "unpkg.com"
+  ],
   "ltex.enabled": [
     "bibtex",
     "context",
@@ -304,6 +311,7 @@
   ],
   "markdown.extension.tableFormatter.normalizeIndentation": true,
   "markdown.preview.scrollEditorWithPreview": false,
+  "material-icon-theme.saturation": 0.72,
   "notebook.lineNumbers": "on",
   "outline.showVariables": false,
   "pylint.args": [
@@ -370,16 +378,16 @@
   "workbench.editorAssociations": {
     "*.ipynb": "jupyter-notebook"
   },
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.productIconTheme": "material-product-icons",
   "workbench.settings.editor": "json",
   "workbench.startupEditor": "none",
   "yaml.format.enable": false,
   "yaml.schemaStore.enable": false,
   "zenMode.fullScreen": false,
-  "jupyter.widgetScriptSources": [
-    "jsdelivr.com",
-    "unpkg.com"
-  ],
-  "workbench.productIconTheme": "material-product-icons",
-  "workbench.iconTheme": "material-icon-theme",
-  "material-icon-theme.saturation": 0.72
+  "zenMode.centerLayout": true,
+  "zenMode.showTabs": "single",
+  "zenMode.hideLineNumbers": false,
+  "workbench.activityBar.location": "top",
+  "workbench.editor.doubleClickTabToToggleEditorGroupSizes": "maximize"
 }

@@ -1,6 +1,6 @@
 {
   "autoUpdateInterval": "1",
-  "autoUpdateLast": 1686172822629,
+  "autoUpdateLast": 1699610215589,
   "cmOptions": "",
   "counter": true,
   "customOptionsCSS": "",
@@ -90,56 +90,6 @@
     "allFrames": false,
     "js": "",
     "css": "/* ==UserStyle==\n@name           Hacker News: Fixed & Spaced\n@namespace      https://github.com/0rax\n@version        1.4.1\n@description    Customize the background color and width of Hacker News\n@author         0rax\n@homepageURL    https://gist.github.com/0rax/935c7c9d92800ed74297f9f4f8d59ef1\n@updateURL      https://gist.github.com/0rax/935c7c9d92800ed74297f9f4f8d59ef1/raw/hn-fixed-spaced.user.css\n==/UserStyle== */\n\n@-moz-document domain(\"news.ycombinator.com\") {\n  body {\n    margin: 36px auto;\n    background: #333;\n  }\n  #hnmain {\n    width: 100%;\n    max-width: 1020px;\n  }\n  @media only screen and (min-width: 1020px) and (max-width: 1200px) {\n    body {\n      margin: 24px auto;\n    }\n  }\n  @media only screen and (max-width: 1020px) {\n    body {\n      margin: 0px auto;\n    }\n    #hnmain {\n      width: 100%;\n      min-width: 0;\n    }\n  }\n  .itemlist {\n    margin: 10px;\n  }\n}",
-    "matches": [],
-    "excludeMatches": [],
-    "includeGlobs": [],
-    "excludeGlobs": [],
-    "matchAboutBlank": false,
-    "runAt": "document_start"
-  },
-  "_IETF: Dark RFC Readable": {
-    "name": "IETF: Dark RFC Readable",
-    "author": "0rax",
-    "description": "Makes RFC documents darker and readable",
-    "updateURL": "https://gist.github.com/0rax/575483c4acaf235481d32d995a11565d/raw/ietf-dark-rfc.user.css",
-    "version": "1.1.3",
-    "enabled": true,
-    "autoUpdate": false,
-    "userMeta": "",
-    "antifeatures": [],
-    "injectInto": "",
-    "require": [],
-    "requireRemote": [],
-    "resource": {},
-    "error": "",
-    "storage": {},
-    "grant": [],
-    "style": [
-      {
-        "matches": [
-          "https://datatracker.ietf.org/doc/html/*"
-        ],
-        "css": "/* Document reset */\n  * {\n    margin: 0;\n    padding: 0;\n  }\n  body {\n    margin: 0;\n    background-color: rgb(0, 0, 0);\n    color: rgb(201, 209, 217);\n  }\n  /* Content */\n  div#content {\n    margin: 0 auto;\n  }\n  div#content a,\n  div#content a:visited,\n  div#content a.selflink {\n    color: #58a6ff;\n  }\n  div#content .rfcmarkup .grey {\n    opacity: .60;\n    color: rgb(201, 209, 217);\n  }\n  div#content .rfcmarkup .grey a,\n  div#content .rfcmarkup .grey a:visited {\n    color: rgb(201, 209, 217);\n  }\n  div#legend {\n    background-color: rgb(22, 27, 34) !important;\n    width: 270px;\n  }\n  /* Sidebar */\n  div#sidebar {\n    background-color: rgb(22, 27, 34) !important;\n    --bs-border-color: rgb(48, 54, 61);\n  }"
-      },
-      {
-        "matches": [
-          "https://www.rfc-editor.org/rfc/*"
-        ],
-        "css": "* {\n    margin: 0;\n    padding: 0;\n  }\n  body {\n    margin: 0 auto;\n    background-color: rgb(0, 0, 0);\n    color: rgb(201, 209, 217);\n    width: 576px;\n  }\n  a,\n  a:visited,\n  a.selflink {\n    color: #58a6ff;\n  }\n  span.pre.noprint.docinfo {\n    color: rgb(22, 27, 34);\n    background-color: rgba(201, 209, 217, .60);\n  }\n  div#legend {\n    background-color: rgb(22, 27, 34) !important;\n    width: 270px;\n  }\n  .grey {\n    opacity: .60;\n    color: rgb(201, 209, 217);\n  }\n  .grey a:link, .grey a:visited {\n    color: rgb(201, 209, 217);\n  }"
-      }
-    ],
-    "includes": [],
-    "excludes": [],
-    "container": [],
-    "userVar": {},
-    "preprocessor": "",
-    "i18n": {
-      "name": {},
-      "description": {}
-    },
-    "allFrames": false,
-    "js": "",
-    "css": "/* ==UserStyle==\n@name           IETF: Dark RFC Readable\n@namespace      https://github.com/0rax\n@version        1.1.3\n@description    Makes RFC documents darker and readable\n@author         0rax\n@homepageURL    https://gist.github.com/0rax/575483c4acaf235481d32d995a11565d\n@updateURL      https://gist.github.com/0rax/575483c4acaf235481d32d995a11565d/raw/ietf-dark-rfc.user.css\n==/UserStyle== */\n\n@-moz-document url-prefix(\"https://datatracker.ietf.org/doc/html/\")\n{\n  /* Document reset */\n  * {\n    margin: 0;\n    padding: 0;\n  }\n  body {\n    margin: 0;\n    background-color: rgb(0, 0, 0);\n    color: rgb(201, 209, 217);\n  }\n  /* Content */\n  div#content {\n    margin: 0 auto;\n  }\n  div#content a,\n  div#content a:visited,\n  div#content a.selflink {\n    color: #58a6ff;\n  }\n  div#content .rfcmarkup .grey {\n    opacity: .60;\n    color: rgb(201, 209, 217);\n  }\n  div#content .rfcmarkup .grey a,\n  div#content .rfcmarkup .grey a:visited {\n    color: rgb(201, 209, 217);\n  }\n  div#legend {\n    background-color: rgb(22, 27, 34) !important;\n    width: 270px;\n  }\n  /* Sidebar */\n  div#sidebar {\n    background-color: rgb(22, 27, 34) !important;\n    --bs-border-color: rgb(48, 54, 61);\n  }\n}\n\n@-moz-document url-prefix(\"https://www.rfc-editor.org/rfc/\") {\n  * {\n    margin: 0;\n    padding: 0;\n  }\n  body {\n    margin: 0 auto;\n    background-color: rgb(0, 0, 0);\n    color: rgb(201, 209, 217);\n    width: 576px;\n  }\n  a,\n  a:visited,\n  a.selflink {\n    color: #58a6ff;\n  }\n  span.pre.noprint.docinfo {\n    color: rgb(22, 27, 34);\n    background-color: rgba(201, 209, 217, .60);\n  }\n  div#legend {\n    background-color: rgb(22, 27, 34) !important;\n    width: 270px;\n  }\n  .grey {\n    opacity: .60;\n    color: rgb(201, 209, 217);\n  }\n  .grey a:link, .grey a:visited {\n    color: rgb(201, 209, 217);\n  }\n}",
     "matches": [],
     "excludeMatches": [],
     "includeGlobs": [],
