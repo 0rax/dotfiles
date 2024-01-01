@@ -1,3 +1,5 @@
+anweber.httpbook
+anweber.vscode-httpyac
 appliedengdesign.vscode-gcode-syntax
 auiworks.amvim
 bmalehorn.vscode-fish
@@ -15,7 +17,9 @@ golang.go
 golf1052.base16-generator
 GrapeCity.gc-excelviewer
 hashicorp.terraform
+jeanp413.open-remote-ssh
 jeff-hykin.better-dockerfile-syntax
+LawrenceGrant.cql
 mechatroner.rainbow-csv
 mitchdenny.ecdc
 ms-pyright.pyright
@@ -35,6 +39,7 @@ PKief.material-icon-theme
 PKief.material-product-icons
 redhat.vscode-xml
 redhat.vscode-yaml
+remcohaszing.schemastore
 tamasfe.even-better-toml
 timonwong.shellcheck
 usernamehw.errorlens
