@@ -1,9 +1,10 @@
 # Sway
 
-## Update ly startup script
+## Update ly startup script & update Wayland session
 
 ```sh
 sudo cp $PWD/ly/wsetup.sh /etc/ly/wsetup.sh
+sudo cp wayland-sessions/sway.desktop /usr/share/wayland-sessions/sway.desktop
 ```
 
 ## Install configurations

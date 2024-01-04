@@ -15,10 +15,11 @@ set $ctrl Control
 set $wobsock $XDG_RUNTIME_DIR/wob.sock
 
 include themes/base16-oceanicnext.conf
-include sway.d/01-general.conf
-include sway.d/02-output.conf
-include sway.d/03-input.conf
-include sway.d/04-workspace.conf
-include sway.d/05-keybinding.conf
-include sway.d/06-bar.conf
-include sway.d/10-autostart.conf
+include config.d/01-general.conf
+include config.d/02-output.conf
+include config.d/03-input.conf
+include config.d/04-workspace.conf
+include config.d/05-keybinding.conf
+include config.d/06-bar.conf
+include config.d/07-gtk.conf
+include config.d/10-autostart.conf

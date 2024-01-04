@@ -22,7 +22,7 @@ qt5-wayland                 # [qt5-support    ] https://www.qt.io/
 glfw-wayland                # [glfw-support   ] https://www.glfw.org/
 
 ## Desktop environment
-sway                        # [windows-manager] https://github.com/swaywm/sway
+aur/swayfx                  # [windows-manager] https://github.com/WillPower3309/swayfx/
 waybar                      # [wl-status-bar  ] https://github.com/Alexays/Waybar
 wofi                        # [app-launcher   ] https://hg.sr.ht/~scoopta/wofi
 mako                        # [notif-daemon   ] https://github.com/emersion/mako
@@ -32,6 +32,10 @@ gammastep                   # [gamma-ctrl     ] https://gitlab.com/chinstrap/gam
 kanshi                      # [display-profile] https://github.com/emersion/kanshi
 wob                         # [overlay-bar    ] https://github.com/francma/wob
 aur/wev                     # [event-viewer   ] https://git.sr.ht/~sircmpwn/wev
+
+## Desktop Portal
+xdg-desktop-portal          # [portal-daemon  ] https://github.com/flatpak/xdg-desktop-portal
+xdg-desktop-portal-wlr      # [portal-backend ] https://github.com/emersion/xdg-desktop-portal-wlr
 
 ## Sound
 pipewire                    # [sound-server   ] https://pipewire.org/
