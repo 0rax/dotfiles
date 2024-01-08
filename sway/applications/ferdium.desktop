@@ -1,8 +1,10 @@
 [Desktop Entry]
-Type=Application
-Version=1.0
-Name=ferdium
-Comment=ferdiumstartup script
-Exec=/opt/ferdium-bin/ferdium --enable-features=WaylandWindowDecorations --ozone-platform-hint=auto --enable-webrtc-pipewire-capturer
-StartupNotify=false
+Name=Ferdium
+Exec=/usr/bin/ferdium --enable-features=WaylandWindowDecorations --ozone-platform-hint=auto --enable-webrtc-pipewire-capturer %U
 Terminal=false
+Type=Application
+Icon=ferdium
+StartupWMClass=Ferdium
+Comment=Desktop app bringing all your messaging services into one installable
+MimeType=x-scheme-handler/ferdium;
+Categories=Network;InstantMessaging;
