@@ -23,7 +23,6 @@ ln -s $PWD/xdg/user-dirs.dirs              ~/.config/user-dirs.dirs
 ln -s $PWD/xdg-desktop-portal-wlr          ~/.config/xdg-desktop-portal-wlr
 ln -s $PWD/libinput/libinput-gestures.conf ~/.config/libinput-gestures.conf
 ln -s $PWD/swappy                          ~/.config/swappy
-ln -s $PWD/wob                             ~/.config/wob
 ```
 
 Kanshi configuration being pretty dependent on the system it is installed on, it's better to just copy the file and update it to match your specific system need.
@@ -36,6 +35,7 @@ cp $PWD/kanshi/config ~/.config/kanshi
 ## Install & enable `systemd` unit files
 
 ```sh
+systemctl --user disable gnome-keyring-daemon.service
 mkdir -p ~/.config/systemd/user/
 cp systemd/user/* ~/.config/systemd/user/
 systemctl --user enable --now waybar.service
@@ -45,5 +45,5 @@ systemctl --user enable --now gammastep.service
 systemctl --user enable --now mako.service
 systemctl --user enable --now polkit-gnome-agent.service
 systemctl --user enable --now libinput-gestures.service
-systemctl --user enable --now wob.socket
+systemctl --user enable --now gnome-keyring-daemon.socket
 ```

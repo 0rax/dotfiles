@@ -3,16 +3,29 @@
 VOLUMEMIN=0
 VOLUMEMAX=100
 VOLUMESTEP=5
-WOBSOCK="$XDG_RUNTIME_DIR/wob.sock"
 
-wob_output() {
+notify_volume() {
+    icon="audio-volume-medium"
+    if [[ ${volume} -eq 0 ]]; then
+        icon="audio-volume-off"
+    elif [[ ${volume} -le 30 ]]; then
+        icon="audio-volume-low"
+    elif [[ ${volume} -le 70 ]]; then
+        icon="audio-volume-medium"
+    else
+        icon="audio-volume-high"
+    fi
     if [[ ${muted} -eq 1 ]]; then
-        volume=$((volume + 1000))
+        notify-send --app-name="Volume" \
+            --icon="audio-volume-muted" --hint="int:value:${volume}" \
+            --hint="string:x-canonical-private-synchronous:volumectl" \
+            "Volume: ${volume}% [MUTED]"
+    else
+        notify-send --app-name="Volume" \
+            --icon="${icon}" --hint="int:value:${volume}" \
+            --hint="string:x-canonical-private-synchronous:volumectl" \
+            "Volume: ${volume}%"
     fi
-    if [[ ${volume} -eq 1100 ]]; then
-        volume=$((volume - 1))
-    fi
-    echo "${volume}" > "${WOBSOCK}"
 }
 
 status() {
@@ -32,7 +45,7 @@ get_volume() {
 toggle-mute() {
     wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle
     get_volume
-    wob_output
+    notify_volume
 }
 
 volume-up() {
@@ -42,7 +55,7 @@ volume-up() {
         volume=${VOLUMEMAX}
     fi
     wpctl set-volume @DEFAULT_AUDIO_SINK@ "${volume}%"
-    wob_output
+    notify_volume
 }
 
 volume-down() {
@@ -52,7 +65,7 @@ volume-down() {
         volume=${VOLUMEMIN}
     fi
     wpctl set-volume @DEFAULT_AUDIO_SINK@ "${volume}%"
-    wob_output
+    notify_volume
 }
 
 CMD="${1:-status}"

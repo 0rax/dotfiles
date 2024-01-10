@@ -30,7 +30,6 @@ swayidle                    # [session-idler  ] https://github.com/swaywm/swayid
 aur/swaylock-effects        # [session-locker ] https://github.com/mortie/swaylock-effects
 gammastep                   # [gamma-ctrl     ] https://gitlab.com/chinstrap/gammastep
 kanshi                      # [display-profile] https://github.com/emersion/kanshi
-wob                         # [overlay-bar    ] https://github.com/francma/wob
 aur/wev                     # [event-viewer   ] https://git.sr.ht/~sircmpwn/wev
 
 ## Desktop Portal

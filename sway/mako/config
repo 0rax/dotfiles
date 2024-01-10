@@ -3,7 +3,7 @@ max-visible=5
 sort=-time
 output=
 layer=overlay
-anchor=top-right
+anchor=top-center
 
 # Style Options
 font=Hasklig
@@ -12,6 +12,7 @@ text-color=#c0c5ce
 width=360
 height=180
 margin=8
+outer-margin=16
 padding=8
 border-size=2
 border-color=#6699cc
@@ -19,7 +20,8 @@ border-radius=4
 progress-color=over #6699cc
 icons=1
 max-icon-size=64
-icon-path=
+icon-path=/usr/share/icons/Papirus-Dark/
+icon-location=left
 markup=1
 actions=1
 default-timeout=10000

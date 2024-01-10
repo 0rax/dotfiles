@@ -1,0 +1,16 @@
+[Unit]
+Description=GNOME Keyring daemon
+Requires=gnome-keyring-daemon.socket
+Requires=dbus.service
+PartOf=sway-session.target
+After=sway-session.target
+
+[Service]
+Type=simple
+StandardError=journal
+ExecStart=/usr/bin/gnome-keyring-daemon --foreground --components="pkcs11,secrets" --control-directory=%t/keyring
+Restart=on-failure
+
+[Install]
+Also=gnome-keyring-daemon.socket
+WantedBy=sway-session.target

@@ -4,7 +4,24 @@ SERVICE="gammastep.service"
 BRIGHTNESSMIN=10
 BRIGHTNESSMAX=100
 BRIGHTNESSSTEP=5
-WOBSOCK="$XDG_RUNTIME_DIR/wob.sock"
+
+notify_brightness() {
+    # icon="display-brightness-symbolic"
+    # if [[ ${brightness} -eq 0 ]]; then
+    #     icon="display-brightness-off-symbolic"
+    # elif [[ ${brightness} -le 30 ]]; then
+    #     icon="display-brightness-low-symbolic"
+    # elif [[ ${brightness} -le 70 ]]; then
+    #     icon="display-brightness-medium-symbolic"
+    # else
+    #     icon="display-brightness-high-symbolic"
+    # fi
+    icon="/usr/share/icons/Papirus-Dark/24x24/apps/display-brightness.svg"
+    notify-send --app-name="Brightness" \
+        --icon="${icon}" --hint="int:value:${brightness}" \
+        --hint="string:x-canonical-private-synchronous:brightnessctl" \
+        "Brigthness: ${brightness}%"
+}
 
 get_brightness() {
     brightness=$(brightnessctl -m info | head -n1 | cut -d, -f4 | tr -d '%')
@@ -78,7 +95,7 @@ brightness-up() {
         brightness=${BRIGHTNESSMAX}
     fi
     brightnessctl -q set "${brightness}%"
-    echo "${brightness}" > "${WOBSOCK}"
+    notify_brightness
 }
 
 brightness-down() {
@@ -88,7 +105,7 @@ brightness-down() {
         brightness=${BRIGHTNESSMIN}
     fi
     brightnessctl -q set "${brightness}%"
-    echo "${brightness}" > "${WOBSOCK}"
+    notify_brightness
 }
 
 CMD="${1:-status}"

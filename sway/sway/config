@@ -11,9 +11,6 @@ set $mod  Mod4
 set $alt  Mod1
 set $ctrl Control
 
-# Set wob socket
-set $wobsock $XDG_RUNTIME_DIR/wob.sock
-
 include themes/base16-oceanicnext.conf
 include config.d/01-general.conf
 include config.d/02-output.conf
@@ -21,5 +18,6 @@ include config.d/03-input.conf
 include config.d/04-workspace.conf
 include config.d/05-keybinding.conf
 include config.d/06-bar.conf
-include config.d/07-gtk.conf
+include config.d/07-swayfx.conf
+include config.d/09-gtk.conf
 include config.d/10-autostart.conf

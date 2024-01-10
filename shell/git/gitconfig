@@ -126,3 +126,7 @@
 	rebase = false
 [init]
 	defaultBranch = main
+
+# Credentials
+[credential]
+	helper = /usr/lib/git-core/git-credential-libsecret
