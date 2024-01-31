@@ -113,9 +113,7 @@
       "deactivated": "󰒲"
     },
     "tooltip-format-activated": "{icon} Activated",
-    "tooltip-format-deactivated": "{icon} Deactivated",
-    "on-scroll-up": "brightnessctl set +5%",
-    "on-scroll-down": "brightnessctl set 5%-"
+    "tooltip-format-deactivated": "{icon} Deactivated"
   },
   "custom/gammastep": {
     "format": "{icon}",
