@@ -17,12 +17,26 @@ padding=8
 border-size=2
 border-color=#6699cc
 border-radius=4
-progress-color=over #6699cc
+progress-color=over #6699cc80
 icons=1
 max-icon-size=64
-icon-path=/usr/share/icons/Papirus-Dark/
+icon-path=/usr/share/icons/Papirus-Dark/:/usr/share/icons/Papirus/
 icon-location=left
 markup=1
 actions=1
 default-timeout=10000
 ignore-timeout=0
+format=<i>%a</i>\n<b>%s</b>\n%b
+# format=<b>%s</b>\n%b
+
+[grouped]
+format=(%g) <b>%s</b>\n%b
+
+[app-name="Volume"]
+format=<b>%a</b>: %s
+
+[app-name="Brightness"]
+format=<b>%a</b>: %s
+
+[app-name="yubikey-touch-detector"]
+format=<b>%s</b>

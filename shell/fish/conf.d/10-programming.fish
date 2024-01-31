@@ -45,6 +45,7 @@ if type -q pyenv; and status is-login
 end
 
 if type -q pyenv; and status is-interactive
+    set -gx PIPENV_VERBOSITY -1
     source (pyenv init - | psub)
     source (pyenv virtualenv-init - | psub)
 end

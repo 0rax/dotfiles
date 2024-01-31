@@ -19,10 +19,11 @@ ln -s $PWD/gtk-3.0                         ~/.config/gtk-3.0
 ln -s $PWD/gtk-4.0                         ~/.config/gtk-4.0
 ln -s $PWD/gammastep                       ~/.config/gammastep
 ln -s $PWD/mako                            ~/.config/mako
-ln -s $PWD/xdg/user-dirs.dirs              ~/.config/user-dirs.dirs
+ln -s $PWD/xdg-desktop-portal              ~/.config/xdg-desktop-portal
 ln -s $PWD/xdg-desktop-portal-wlr          ~/.config/xdg-desktop-portal-wlr
 ln -s $PWD/libinput/libinput-gestures.conf ~/.config/libinput-gestures.conf
 ln -s $PWD/swappy                          ~/.config/swappy
+cp $PWD/xdg/user-dirs.dirs                 ~/.config/user-dirs.dirs
 ```
 
 Kanshi configuration being pretty dependent on the system it is installed on, it's better to just copy the file and update it to match your specific system need.

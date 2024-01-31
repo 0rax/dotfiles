@@ -19,12 +19,12 @@ notify_volume() {
         notify-send --app-name="Volume" \
             --icon="audio-volume-muted" --hint="int:value:${volume}" \
             --hint="string:x-canonical-private-synchronous:volumectl" \
-            "Volume: ${volume}% [MUTED]"
+            "${volume}% [MUTED]"
     else
         notify-send --app-name="Volume" \
             --icon="${icon}" --hint="int:value:${volume}" \
             --hint="string:x-canonical-private-synchronous:volumectl" \
-            "Volume: ${volume}%"
+            "${volume}%"
     fi
 }
 

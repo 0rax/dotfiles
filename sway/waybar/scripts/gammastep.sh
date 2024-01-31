@@ -20,7 +20,7 @@ notify_brightness() {
     notify-send --app-name="Brightness" \
         --icon="${icon}" --hint="int:value:${brightness}" \
         --hint="string:x-canonical-private-synchronous:brightnessctl" \
-        "Brigthness: ${brightness}%"
+        "${brightness}%"
 }
 
 get_brightness() {

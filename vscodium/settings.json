@@ -368,7 +368,6 @@
   "testing.gutterEnabled": false,
   "TextToolbox.statusBarPriority": 1000,
   "window.restoreWindows": "one",
-  "window.titleBarStyle": "custom",
   "workbench.colorCustomizations": {
     "statusBar.background": "#4F5B66",
     "statusBar.noFolderBackground": "#343d46",
@@ -393,7 +392,8 @@
   "zenMode.centerLayout": true,
   "zenMode.showTabs": "single",
   "zenMode.hideLineNumbers": false,
-  "workbench.activityBar.location": "top",
   "workbench.editor.doubleClickTabToToggleEditorGroupSizes": "maximize",
-  "workbench.editor.enablePreview": false
+  "workbench.editor.enablePreview": false,
+  "window.titleBarStyle": "custom",
+  "workbench.activityBar.location": "top"
 }

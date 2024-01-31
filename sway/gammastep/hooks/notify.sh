@@ -8,6 +8,6 @@ period-changed)
     fi
     exec notify-send --app-name="Gammestep" --icon="${icon}" \
         --hint="string:x-canonical-private-synchronous:gammastep" \
-        "Gammastep" "Period changed to $3"
+        "Period changed to $3"
     ;;
 esac
