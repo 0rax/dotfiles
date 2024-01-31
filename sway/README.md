@@ -10,7 +10,7 @@ sudo cp wayland-sessions/sway.desktop /usr/share/wayland-sessions/sway.desktop
 ## Install configurations
 
 ```sh
-ln -s $PWD/alactritty                      ~/.config/alactritty
+ln -s $PWD/alacritty                       ~/.config/alacritty
 ln -s $PWD/sway                            ~/.config/sway
 ln -s $PWD/swaylock                        ~/.config/swaylock
 ln -s $PWD/waybar                          ~/.config/waybar
