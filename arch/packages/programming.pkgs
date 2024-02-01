@@ -57,28 +57,9 @@ pyenv                       # https://github.com/pyenv/pyenv
 python-virtualenv           # https://virtualenv.pypa.io/en/latest/
 aur/pyenv-virtualenv        # https://github.com/pyenv/pyenv-virtualenv
 
-## Web
-hugo                        # https://gohugo.io/
-
-## Text Processing
-pandoc-cli                  # http://pandoc.org
-graphviz                    # https://graphviz.org/
-
 ## Data Processing
+graphviz                    # https://graphviz.org/
 gnumeric                    # http://www.gnumeric.org/
-
-## Graph Editor
-aur/yed                     # http://www.yworks.com/en/downloads.html#yEd
-# yEd VRT palettes: https://github.com/pafnow/vrt-graphml-for-yed
-# yEd AWS palettes: https://github.com/JustDerb/yed-aws-palettes
-
-## Database
-dbeaver                     # https://dbeaver.io/
-dbeaver-plugin-office       # https://dbeaver.io/
-dbeaver-plugin-svg-format   # https://dbeaver.io/
-aur/redisinsight            # https://redis.com/redis-enterprise/redis-insight/
-
-## GUI clients
 
 ## Docker
 docker                      # https://www.docker.com/
@@ -92,13 +73,13 @@ aur/docker-credential-secretservice # https://github.com/docker/docker-credentia
 kubectl                     # https://kubernetes.io/docs/reference/kubectl/overview/
 helm                        # https://helm.sh/docs/using_helm/
 kubie                       # https://github.com/sbstp/kubie
-aur/octant-bin              # https://github.com/vmware-tanzu/octant
 aur/openlens-bin            # https://github.com/MuhammedKalkan/OpenLens
 # Requires the Node/Pod Menu extension to be complete
 # See: https://github.com/alebcay/openlens-node-pod-menu
 
 ## Alternatives & other useful softwares
 # texlive-most              # https://tug.org/texlive/ [meta]
+# pandoc-cli                # http://pandoc.org
 # aws-vault                 # https://github.com/99designs/aws-vault
 # xca                       # https://hohnstaedt.de/xca/
 # mkcert                    # https://github.com/FiloSottile/mkcert
@@ -108,4 +89,11 @@ aur/openlens-bin            # https://github.com/MuhammedKalkan/OpenLens
 # aur/prips                 # https://packages.debian.org/stable/net/prips
 # ipcalc                    # http://jodies.de/ipcalc
 # bat                       # https://github.com/sharkdp/bat
+# aur/yed                   # http://www.yworks.com/en/downloads.html#yEd
+#                           #  + yEd VRT palettes: https://github.com/pafnow/vrt-graphml-for-yed
+#                           #  + yEd AWS palettes: https://github.com/JustDerb/yed-aws-palettes
 # elasticvue                # https://elasticvue.com/
+# dbeaver                   # https://dbeaver.io/
+# aur/redisinsight          # https://redis.com/redis-enterprise/redis-insight/
+# aur/octant-bin            # https://github.com/vmware-tanzu/octant
+# hugo                      # https://gohugo.io/

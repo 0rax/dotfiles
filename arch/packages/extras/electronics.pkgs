@@ -14,13 +14,11 @@
 kicad                       # http://kicad.org/
 kicad-library               # http://kicad.org/
 kicad-library-3d            # http://kicad.org/
-aur/librepcb-appimage       # https://librepcb.org/
-aur/eagle                   # https://www.autodesk.fr/products/eagle/
-aur/easyeda-bin             # https://easyeda.com/
-aur/easyeda-router          # https://easyeda.com/
-# systemctl start easyeda-router
 
 ## Alternatives
 # - Alitum CircuitMaker
 # - Fritzing
 # - Horizon EDA
+# - EasyEDA
+# - AuthoDesk Eagle
+# - LibrePCB
