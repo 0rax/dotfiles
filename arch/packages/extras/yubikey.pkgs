@@ -1,0 +1,21 @@
+#!/usr/bin/env true
+#
+# description:
+#   YubiKey customization & management softwares
+#
+# require:
+#   - pacman (Arch Linux Package Manager)
+#   - yay (AUR Wrapper)
+#       git clone https://aur.archlinux.org/yay-bin.git /tmp/yay; cd /tmp/yay; makepkg -si
+#   - base-devel (meta package)
+#       see https://www.archlinux.org/groups/x86_64/base-devel/
+
+## Config
+yubikey-personalization         # https://www.yubico.com/support/download/yubikey-personalization-tools/
+yubikey-personalization-gui     # https://www.yubico.com/support/download/yubikey-personalization-tools/
+
+## Notifier
+yubikey-touch-detector          # https://github.com/maximbaz/yubikey-touch-detector
+
+## OTP
+aur/yubico-authenticator-bin    # https://www.yubico.com/products/yubico-authenticator/

@@ -9,9 +9,11 @@ coolbear.systemd-unit-file
 DavidAnson.vscode-markdownlint
 ecmel.vscode-html-css
 EditorConfig.EditorConfig
+EdwinKofler.vscode-assorted-languages
 eliostruyf.vscode-front-matter
 esbenp.prettier-vscode
 ExodiusStudios.comment-anchors
+fbaligand.vscode-logstash-editor
 foxundermoon.shell-format
 golang.go
 golf1052.base16-generator
@@ -19,7 +21,9 @@ GrapeCity.gc-excelviewer
 hashicorp.terraform
 jeanp413.open-remote-ssh
 jeff-hykin.better-dockerfile-syntax
+jq-syntax-highlighting.jq-syntax-highlighting
 LawrenceGrant.cql
+mblode.twig-language-2
 mechatroner.rainbow-csv
 mitchdenny.ecdc
 ms-pyright.pyright
@@ -37,6 +41,7 @@ naumovs.color-highlight
 oderwat.indent-rainbow
 PKief.material-icon-theme
 PKief.material-product-icons
+RandomChance.logstash
 redhat.vscode-xml
 redhat.vscode-yaml
 remcohaszing.schemastore

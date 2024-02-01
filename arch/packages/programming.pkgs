@@ -42,6 +42,7 @@ aur/grpcurl-bin             # https://github.com/fullstorydev/grpcurl
 httpie                      # https://httpie.org/
 jq                          # https://stedolan.github.io/jq/
 xsv                         # https://github.com/BurntSushi/xsv
+aur/insomnium-bin           # https://github.com/ArchGPT/insomnium
 
 ## NodeJS
 nodejs                      # https://nodejs.org/
@@ -107,3 +108,4 @@ aur/openlens-bin            # https://github.com/MuhammedKalkan/OpenLens
 # aur/prips                 # https://packages.debian.org/stable/net/prips
 # ipcalc                    # http://jodies.de/ipcalc
 # bat                       # https://github.com/sharkdp/bat
+# elasticvue                # https://elasticvue.com/
