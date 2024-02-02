@@ -57,10 +57,6 @@ pyenv                       # https://github.com/pyenv/pyenv
 python-virtualenv           # https://virtualenv.pypa.io/en/latest/
 aur/pyenv-virtualenv        # https://github.com/pyenv/pyenv-virtualenv
 
-## Data Processing
-graphviz                    # https://graphviz.org/
-gnumeric                    # http://www.gnumeric.org/
-
 ## Docker
 docker                      # https://www.docker.com/
 docker-compose              # https://docs.docker.com/compose/
@@ -76,6 +72,15 @@ kubie                       # https://github.com/sbstp/kubie
 aur/openlens-bin            # https://github.com/MuhammedKalkan/OpenLens
 # Requires the Node/Pod Menu extension to be complete
 # See: https://github.com/alebcay/openlens-node-pod-menu
+
+# Github
+github-cli                  # https://cli.github.com/
+aur/act-bin                 # https://github.com/nektos/act
+
+## AWS
+aws-cli-v2                  # https://github.com/aws/aws-cli
+aur/saml2aws                # https://github.com/Versent/saml2aws
+aur/amazon-ecr-credential-helper # https://github.com/awslabs/amazon-ecr-credential-helper
 
 ## Alternatives & other useful softwares
 # texlive-most              # https://tug.org/texlive/ [meta]

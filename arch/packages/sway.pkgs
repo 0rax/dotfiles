@@ -20,9 +20,10 @@ wayland                     # [display-server ] https://wayland.freedesktop.org/
 xorg-xwayland               # [x11-support    ] https://xorg.freedesktop.org/
 qt5-wayland                 # [qt5-support    ] https://www.qt.io/
 glfw-wayland                # [glfw-support   ] https://www.glfw.org/
+xorg-xhost                  # [x11-access     ] https://xorg.freedesktop.org/
 
 ## Desktop environment
-aur/swayfx                  # [windows-manager] https://github.com/WillPower3309/swayfx/
+aur/swayfx-git              # [windows-manager] https://github.com/WillPower3309/swayfx 
 waybar                      # [wl-status-bar  ] https://github.com/Alexays/Waybar
 wofi                        # [app-launcher   ] https://hg.sr.ht/~scoopta/wofi
 mako                        # [notif-daemon   ] https://github.com/emersion/mako
@@ -30,7 +31,6 @@ swayidle                    # [session-idler  ] https://github.com/swaywm/swayid
 aur/swaylock-effects        # [session-locker ] https://github.com/mortie/swaylock-effects
 gammastep                   # [gamma-ctrl     ] https://gitlab.com/chinstrap/gammastep
 kanshi                      # [display-profile] https://github.com/emersion/kanshi
-aur/wev                     # [event-viewer   ] https://git.sr.ht/~sircmpwn/wev
 
 ## Desktop Portal
 xdg-desktop-portal          # [portal-daemon  ] https://github.com/flatpak/xdg-desktop-portal
@@ -42,9 +42,9 @@ wireplumber                 # [sound-session  ] https://pipewire.pages.freedeskt
 pipewire-pulse              # [pulse-support  ] https://pipewire.org/
 pipewire-jack               # [jack2-support  ] https://pipewire.org/
 easyeffects                 # [audio-effects  ] https://github.com/wwmm/easyeffects
-calf                        # [effects-plugins] https://calf-studio-gear.org/
-lsp-plugins-lv2             # [effects-plugins] https://lsp-plug.in/
-ecasound                    # [lv2-host       ] https://ecasound.seul.org/ecasound/
+# calf                      # [effects-plugins] https://calf-studio-gear.org/
+# lsp-plugins-lv2           # [effects-plugins] https://lsp-plug.in/
+# ecasound                  # [lv2-host       ] https://ecasound.seul.org/ecasound/
 
 ## Base applications
 alacritty                   # [terminal       ] https://alacritty.org/
@@ -58,6 +58,7 @@ celluloid                   # [media-player   ] https://celluloid-player.github.
 gnome-calculator            # [calculator     ] https://wiki.gnome.org/Apps/Calculator
 file-roller                 # [archive-manager] https://wiki.gnome.org/Apps/FileRoller
 luakit                      # [web-browser    ] https://luakit.github.io/
+catfish                     # [file-search    ] https://docs.xfce.org/apps/catfish/
 
 ## Virtual filesystems (usermount, trash, ...)
 gvfs                        # [userspave-vfs  ] https://wiki.gnome.org/Projects/gvfs
@@ -74,8 +75,8 @@ brightnessctl               # [brightness-ctrl] https://github.com/Hummer12007/b
 playerctl                   # [metdia-ctrl    ] https://github.com/altdesktop/playerctl
 wl-clipboard                # [wl-clipboard   ] https://github.com/bugaevc/wl-clipboard
 xsel                        # [x11-clipboard  ] http://www.vergenet.net/~conrad/software/xsel/
+wev                         # [event-viewer   ] https://git.sr.ht/~sircmpwn/wev
 aur/wlr-randr               # [display-manager] https://sr.ht/~emersion/wlr-randr/
-aur/wev                     # [event-viewer   ] https://git.sr.ht/~sircmpwn/wev
 aur/swaycwd                 # [cwd-tool       ] https://github.com/calebstewart/swaycwd
 
 ## Fonts
@@ -105,8 +106,6 @@ cups-pdf                    # [virtual-printer] https://www.cups-pdf.de
 bluez                       # [bluetooth      ] http://www.bluez.org/
 bluez-utils                 # [bluetooth-tools] http://www.bluez.org/
 # sudo systemctl enable --now bluetooth.service
-ufw                         # [firewall       ] https://launchpad.net/ufw
-# sudo systemctl enable --now ufw.service
 aur/libinput-gestures       # [gestures-daemon] https://github.com/bulletmark/libinput-gestures
 # sudo usermod -a -G input $USER
 # systemctl --user enable --now libinput-gestures.service
@@ -117,8 +116,12 @@ accountsservice             # [config-deps    ] https://gitlab.freedesktop.org/a
 aur/wdisplays               # [display-manager] https://github.com/artizirk/wdisplays
 nm-connection-editor        # [network-manager] https://networkmanager.dev/
 system-config-printer       # [printer-config ] http://cyberelk.net/tim/software/system-config-printer/
-gufw                        # [firewall-config] http://gufw.org/
 aur/gestures                # [gestures-config] https://gitlab.com/cunidev/gestures
+
+## System utils
+gnome-disk-utility          # [disk-manager   ] https://apps.gnome.org/DiskUtility/
+baobab                      # [disk-usage     ] https://wiki.gnome.org/Apps/DiskUsageAnalyzer
+aur/appimagelauncher        # [appimg-install ] https://github.com/TheAssassin/AppImageLauncher
 
 ## Alternatives & other useful softwares
 # eog                       # image viewer    [gnome]

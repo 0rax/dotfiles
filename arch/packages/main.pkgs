@@ -22,20 +22,34 @@ aur/spotify                 # https://spotify.com/
 
 ## File editors
 aur/vscodium-bin            # https://vscodium.com/
-libreoffice-fresh           # https://www.libreoffice.org/
 obsidian                    # https://obsidian.md/
 gimp                        # http://www.gimp.org/
 inkscape                    # https://inkscape.org/
+abiword                     # https://github.com/AbiWord/abiword
+gnumeric                    # http://www.gnumeric.org/
 
 ## System utils
-gparted                     # https://gparted.sourceforge.io/
 veracrypt                   # https://veracrypt.codeplex.com/
+cpupower                    # https://www.kernel.org/
+aur/cpupower-gui            # https://github.com/vagnum08/cpupower-gui
+fwupd                       # https://github.com/fwupd/fwupd
 
-## Sound utils
-easyeffects                 # https://github.com/wwmm/easyeffects
+## Firewall
+ufw                         # https://launchpad.net/ufw
+gufw                        # http://gufw.org/
+# sudo systemctl enable --now ufw.service
+
+## Antivirus
+clamav                      # https://www.clamav.net/
+clamtk                      # https://github.com/dave-theunsub/clamtk
+fangfrisch                  # https://rseichter.github.io/fangfrisch/
+# sudo -u clamav freshclam
+# sudo -u clamav /usr/bin/fangfrisch --conf /etc/fangfrisch/fangfrisch.conf initdb
+# sudo systemctl enable --now clamav-freshclam.service
+# sudo systemctl enable --now fangfrisch.timer
+# sudo systemctl enable --now clamav-daemon.service
 
 ## Fonts
-gnome-font-viewer           # https://gitlab.gnome.org/GNOME/gnome-font-viewer
 inter-font                  # https://github.com/rsms/inter/
 ttf-hack                    # https://github.com/source-foundry/Hack
 aur/otf-hasklig             # https://github.com/i-tu/Hasklig
@@ -44,7 +58,7 @@ otf-hasklig-nerd            # https://github.com/ryanoasis/nerd-fonts/
 
 ## Dictionaries
 hunspell                    # https://hunspell.github.io/
-hunspell-en_GB              # https://hunspell.github.io/
+hunspell-en_gb              # https://hunspell.github.io/
 hunspell-fr                 # https://hunspell.github.io/
 
 ## Backup Utils
@@ -54,9 +68,6 @@ snapper                     # http://snapper.io/
 aur/snapper-gui-git         # https://github.com/ricardomv/snapper-gui
 # sudo systemctl enable --now snapper-timeline.timer
 # sudo systemctl enable --now snapper-cleanup.timer
-
-## Security
-yubioath-desktop            # https://www.yubico.com/products/yubico-authenticator/
 
 ## Alternative & other useful softwares
 # firefox                   # https://www.mozilla.org/en-US/firefox/

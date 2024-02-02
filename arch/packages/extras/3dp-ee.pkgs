@@ -1,7 +1,8 @@
 #!/usr/bin/env true
 #
 # description:
-#   3D modeling and 3d printing softwares
+#   EDA and PCB manufacturing softwares
+#   3D modeling and 3D printing softwares
 #
 # require:
 #   - pacman (Arch Linux Package Manager)
@@ -10,21 +11,33 @@
 #   - base-devel (meta package)
 #       see https://www.archlinux.org/groups/x86_64/base-devel/
 
-## 3D Modeling
+## Electronics
+
+kicad                       # http://kicad.org/
+kicad-library               # http://kicad.org/
+kicad-library-3d            # http://kicad.org/
+
+## Alternatives
+# - Alitum CircuitMaker
+# - Fritzing
+# - Horizon EDA
+# - EasyEDA
+# - AuthoDesk Eagle
+# - LibrePCB
+
+## 3D Printing
+
 freecad                     # https://www.freecadweb.org/
 openscad                    # https://openscad.org/
-aur/solvespace              # https://solvespace.com/
-blender                     # https://www.blender.org/
-
-## 3D Viewer
 aur/fstl                    # https://github.com/fstl-app/fstl
-
-## Slicer
 aur/prusa-slicer-rc-bin     # https://github.com/prusa3d/PrusaSlicer
-aur/superslicer-prerelease-bin # https://github.com/supermerill/SuperSlicer
 
 ## Alternatives
 # - LibreCAD
 # - Autodesk Fusion 360
 # - Autodesk MeshMixer
+# - Blender
+# - SolveSpace
 # - Onshape
+# - SuperSlicer
+# - OrcaSlicer
