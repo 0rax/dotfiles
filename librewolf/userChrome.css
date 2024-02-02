@@ -6,13 +6,13 @@
 .tabbrowser-tab[pending] {
     /* text-decoration: underline; */
     font-style: italic;
-    opacity: .5;
+    opacity: 0.5;
 }
 
 /* Undim slightly and remove italic on pending tab hover */
 .tabbrowser-tab[pending]:hover {
     font-style: normal;
-    opacity: .8;
+    opacity: 0.8;
 }
 
 /*
@@ -20,7 +20,7 @@
 */
 
 #sidebar-header {
-    display: none
+    display: none;
 }
 
 /*

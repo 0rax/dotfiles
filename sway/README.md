@@ -4,13 +4,13 @@
 
 ```sh
 sudo cp $PWD/ly/wsetup.sh /etc/ly/wsetup.sh
-sudo cp wayland-sessions/sway.desktop /usr/share/wayland-sessions/sway.desktop
+sudo cp $PWD/wayland-sessions/sway.desktop /usr/share/wayland-sessions/sway.desktop
 ```
 
 ## Install configurations
 
 ```sh
-ln -s $PWD/alactritty                       ~/.config/alactritty
+ln -s $PWD/alacritty                        ~/.config/alacritty
 ln -s $PWD/sway                             ~/.config/sway
 ln -s $PWD/swaylock                         ~/.config/swaylock
 ln -s $PWD/waybar                           ~/.config/waybar
@@ -30,7 +30,7 @@ cp $PWD/xdg/user-dirs.dirs                  ~/.config/user-dirs.dirs
 Kanshi configuration being pretty dependent on the system it is installed on, it's better to just copy the file and update it to match your specific system need.
 
 ```sh
-mkdir ~/.config/kanshi
+mkdir -p ~/.config/kanshi
 cp $PWD/kanshi/config ~/.config/kanshi
 ```
 
@@ -48,4 +48,5 @@ systemctl --user enable --now mako.service
 systemctl --user enable --now polkit-gnome-agent.service
 systemctl --user enable --now libinput-gestures.service
 systemctl --user enable --now gnome-keyring-daemon.socket
+systemctl --user enable --now yubikey-touch-detector.service
 ```

@@ -119,7 +119,7 @@ semantic_escape_chars = ",│`|:\"' ()[]{}<>\t"
 decorations_theme_variant = "Dark"
 dynamic_padding = false
 dynamic_title = true
-opacity = 0.8
+opacity = 0.70
 title = "alacritty"
 
 [window.class]

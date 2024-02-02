@@ -280,8 +280,6 @@
     "promptForTags": true
   },
   "go.formatTool": "gofumpt",
-  "go.gopath": "/home/orax/projects/go",
-  "go.inferGopath": false,
   "go.lintOnSave": "package",
   "go.lintTool": "golangci-lint",
   "go.removeTags": {
@@ -291,7 +289,6 @@
   "go.testFlags": [
     "-gcflags=all=-l"
   ],
-  "go.toolsGopath": "/home/orax/projects/go",
   "go.toolsManagement.autoUpdate": true,
   "go.useLanguageServer": true,
   "indentRainbow.includedLanguages": [

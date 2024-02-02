@@ -16,8 +16,8 @@
 @define-color base0E #c594c5;
 @define-color base0F #ab7967;
 
-@define-color blur00 rgba(27, 43, 52, 0.8);
-@define-color blur03 rgba(101, 115, 126, 0.6);
+@define-color blur00 rgba(27, 43, 52, 0.70);
+@define-color blur0D rgba(102, 153, 204, 0.5);
 
 window {
     margin: 0px;
@@ -27,19 +27,19 @@ window {
 }
 
 #outer-box {
-    margin: 8px;
+    margin: 8px 12px 12px 12px;
     border: none;
     background-color: transparent;
     padding-bottom: 0px;
 }
 
 #input {
-    margin: 8px 4px 4px 4px;
+    margin: 8px 0px 8px 0px;
     border: none;
     padding: 6px 10px;
     border-radius: 4px;
     color: @base06;
-    background-color: @blur03;
+    background-color: @blur0D;
 }
 
 #scroll {
@@ -48,7 +48,7 @@ window {
 }
 
 #inner-box {
-    margin: 4px;
+    margin: 0px;
     border: none;
     background-color: transparent;
 }
@@ -56,20 +56,19 @@ window {
 #text {
     margin: 4px;
     border: 2px solid transparent;
-    color: @base03;
+    color: @base04;
     background-color: transparent;
-}
-
-#entry:selected {
-    background-color: @blur03;
-    border-radius: 4px;
-}
-
-#entry list {
-    border-radius: 4px;
 }
 
 #text:selected {
     color: @base05;
     background-color: transparent;
+}
+
+#entry {
+    border-radius: 4px;
+}
+
+#entry:selected {
+    background-color: @blur0D;
 }

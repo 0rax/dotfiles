@@ -15,6 +15,7 @@
 	eol = lf
 [push]
 	default = current
+	autoSetupRemote = true
 [rebase]
 	autostash = true
 	autosquash = true

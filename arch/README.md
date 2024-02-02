@@ -11,8 +11,13 @@ cut -d# -f1 packages/file.pkgs | sed '/^$/d' | xargs -o yay -S --needed
 ### List explicitly installed packages
 
 ```sh
-pacman -Qqen
-pacman -Qqem | sed 's|^|aur/|'
+(pacman -Qqen; pacman -Qqem | sed 's|^|aur/|') | sort
+```
+
+### List wanted packages
+
+```sh
+sed 's/ *#.*$//;/^$/d;s/ +$//' packages/*.pkgs packages/extras/* | sort
 ```
 
 ## Config files
@@ -21,5 +26,10 @@ pacman -Qqem | sed 's|^|aur/|'
 
 ```sh
 cp -R $PWD/pacman                   ~/.config/
-cp -R $PWD/yubikey-touch-detector   ~/.config/
+```
+
+### Install system configuration files
+
+```sh
+sudo cp $PWD/plocate/updatedb.conf  /etc/updatedb.conf
 ```

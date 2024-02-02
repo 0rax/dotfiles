@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actions>
+<action>
+	<icon>utilities-terminal</icon>
+	<name>Open Terminal Here</name>
+	<submenu></submenu>
+	<unique-id>1646695780716738-1</unique-id>
+	<command>alacritty --working-directory %f</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<startup-notify/>
+	<directories/>
+</action>
+<action>
+	<icon>preferences-system-search</icon>
+	<name>Search with Catfish</name>
+	<submenu></submenu>
+	<unique-id>1706871760262086-1</unique-id>
+	<command>catfish --path=%f</command>
+	<description></description>
+	<range>*</range>
+	<patterns>*</patterns>
+	<directories/>
+</action>
+<action>
+	<icon>clamav</icon>
+	<name>Scan for Viruses</name>
+	<submenu></submenu>
+	<unique-id>1706876623676592-1</unique-id>
+	<command>clamtk %F</command>
+	<description></description>
+	<range>*</range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<other-files/>
+	<text-files/>
+	<video-files/>
+</action>
+</actions>
