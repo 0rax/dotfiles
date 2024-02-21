@@ -57,7 +57,11 @@
     "editor.tabSize": 2
   },
   "[python]": {
-    "editor.defaultFormatter": "ms-python.black-formatter"
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "explicit"
+    },
+    "editor.defaultFormatter": "ms-python.black-formatter",
+    "editor.formatOnSave": true
   },
   "[shellscript]": {
     "editor.insertSpaces": true,
@@ -89,9 +93,9 @@
   },
   "[xml]": {
     "editor.autoClosingBrackets": "never",
-    "files.trimFinalNewlines": true,
     "editor.insertSpaces": false,
-    "editor.tabSize": 4
+    "editor.tabSize": 4,
+    "files.trimFinalNewlines": true
   },
   "[yaml]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
@@ -201,6 +205,8 @@
     " - "
   ],
   "commentAnchors.workspace.maxFiles": 100,
+  "continue.enableTabAutocomplete": true,
+  "continue.telemetryEnabled": false,
   "editor.bracketPairColorization.enabled": true,
   "editor.copyWithSyntaxHighlighting": false,
   "editor.cursorBlinking": "solid",
@@ -210,6 +216,7 @@
   "editor.fontLigatures": true,
   "editor.guides.bracketPairs": "active",
   "editor.insertSpaces": true,
+  "editor.largeFileOptimizations": false,
   "editor.minimap.enabled": false,
   "editor.renderLineHighlight": "all",
   "editor.renderLineHighlightOnlyWhenFocus": true,
@@ -244,19 +251,20 @@
   "explorer.fileNesting.enabled": true,
   "explorer.fileNesting.expand": false,
   "explorer.fileNesting.patterns": {
+    "*": "${capture}.orig",
     "*.proto": "${capture}.pb.go, ${capture}.pb.gw.go, ${capture}.pb.validate.go, ${capture}_grpc.pb.go",
     ".gitignore": ".gitattributes, .gitmodules, .gitmessage",
     "buf.yaml": "buf.gen.yaml, buf.lock",
     "go.mod": "go.sum",
     "Pipfile": "Pipfile.lock",
     "pyproject.toml": "poetry.lock",
-    "requirements.in": "requirements.txt",
-    "*": "${capture}.orig"
+    "requirements.in": "requirements.txt"
   },
   "extensions.ignoreRecommendations": true,
   "files.associations": {
     "*.pgsql": "sql",
     "*.proto": "proto3",
+    "*.psql": "sql",
     "APKBUILD": "shellscript",
     "bashrc": "shellscript",
     "Brewfile": "ruby",
@@ -295,6 +303,10 @@
     "python",
     "yaml"
   ],
+  "isort.args": [
+    "--profile",
+    "black"
+  ],
   "json.schemaDownload.enable": true,
   "jupyter.askForKernelRestart": false,
   "jupyter.widgetScriptSources": [
@@ -323,9 +335,6 @@
   "python.languageServer": "Jedi",
   "python.venvPath": "~/.pyenv/versions/",
   "redhat.telemetry.enabled": false,
-  "search.exclude": {
-    "**/vendor": true
-  },
   "shellcheck.customArgs": [
     "-x"
   ],
@@ -347,10 +356,6 @@
     "**/zshrc": true
   },
   "shellcheck.run": "onSave",
-  "tabby.api.endpoint": "http://localhost:8080",
-  "tabby.codeCompletion": true,
-  "tabby.keybindings": "tabby-style",
-  "tabby.usage.anonymousUsageTracking": false,
   "telemetry.telemetryLevel": "off",
   "terminal.integrated.copyOnSelection": true,
   "terminal.integrated.defaultProfile.linux": "fish",
@@ -363,8 +368,9 @@
     }
   },
   "testing.gutterEnabled": false,
-  "TextToolbox.statusBarPriority": 1000,
   "window.restoreWindows": "one",
+  "window.titleBarStyle": "custom",
+  "workbench.activityBar.location": "top",
   "workbench.colorCustomizations": {
     "statusBar.background": "#4F5B66",
     "statusBar.noFolderBackground": "#343d46",
@@ -372,9 +378,11 @@
     "titleBar.inactiveBackground": "#343d46"
   },
   "workbench.colorTheme": "Base16 OceanicNext Dark",
+  "workbench.editor.doubleClickTabToToggleEditorGroupSizes": "maximize",
+  "workbench.editor.enablePreview": false,
   "workbench.editor.limit.enabled": true,
   "workbench.editor.limit.perEditorGroup": true,
-  "workbench.editor.limit.value": 5,
+  "workbench.editor.limit.value": 10,
   "workbench.editor.revealIfOpen": true,
   "workbench.editorAssociations": {
     "*.ipynb": "jupyter-notebook"
@@ -385,12 +393,8 @@
   "workbench.startupEditor": "none",
   "yaml.format.enable": false,
   "yaml.schemaStore.enable": false,
-  "zenMode.fullScreen": false,
   "zenMode.centerLayout": true,
-  "zenMode.showTabs": "single",
+  "zenMode.fullScreen": false,
   "zenMode.hideLineNumbers": false,
-  "workbench.editor.doubleClickTabToToggleEditorGroupSizes": "maximize",
-  "workbench.editor.enablePreview": false,
-  "window.titleBarStyle": "custom",
-  "workbench.activityBar.location": "top"
+  "zenMode.showTabs": "single"
 }

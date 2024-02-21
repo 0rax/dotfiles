@@ -87,5 +87,9 @@
     {
       "key": "ctrl+shift+b",
       "command": "workbench.action.toggleAuxiliaryBar"
+    },
+    {
+      "key": "ctrl+shift+r",
+      "command": "-continue.debugTerminal"
     }
 ]
