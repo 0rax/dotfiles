@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-TEMPCRITICAL=70
-THERMALZONE="/sys/class/thermal/thermal_zone5/"
+TEMPCRITICAL=80
+THERMALZONE="/sys/class/thermal/thermal_zone6/"
 DISKMOUNT="/"
 
 TEMPTYPE=$(cat "${THERMALZONE}/type")

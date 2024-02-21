@@ -7,7 +7,7 @@ clock
 font=Inter
 timestr=%H:%M
 text-color=ffffffff
-font-size=124px
+font-size=60%
 
 indicator
 inside-color=00000000
@@ -18,6 +18,6 @@ indicator-radius=132
 # screenshots
 image=/home/orax/.config/sway/wallpaper.jpg
 # fade-in=0.5
-effect-blur=5x4
+effect-blur=4x2
 # effect-greyscale
 effect-compose=50%,85%;96x96;center;/home/orax/.config/swaylock/logo.png
