@@ -11,6 +11,12 @@ if test -d $HOME/.local/bin; and not contains $HOME/.local/bin $PATH
     set -p PATH $HOME/.local/bin
 end
 
+# ---  Programming/Rancher Desktop  --------------------------------------------
+
+if test -d $HOME/.rd; and not contains $HOME/.rd/bin $PATH
+    set -p PATH $HOME/.rd/bin
+end
+
 # ---  Programming/Golang  -----------------------------------------------------
 
 if test -d /usr/lib/go

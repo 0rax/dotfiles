@@ -27,7 +27,6 @@ clang                       # https://clang.llvm.org/
 
 ## Golang
 go                          # https://go.dev/
-aur/golangci-lint-bin       # https://github.com/golangci/golangci-lint
 
 ## Shell
 dash                        # http://gondor.apana.org.au/~herbert/dash/
@@ -38,16 +37,14 @@ shfmt                       # https://github.com/mvdan/sh#shfmt
 httpie                      # https://httpie.org/
 curlie                      # https://github.com/rs/curlie
 protobuf                    # https://developers.google.com/protocol-buffers
-aur/grpcurl-bin             # https://github.com/fullstorydev/grpcurl
-httpie                      # https://httpie.org/
 jq                          # https://stedolan.github.io/jq/
 xsv                         # https://github.com/BurntSushi/xsv
-aur/insomnium-bin           # https://github.com/ArchGPT/insomnium
 
 ## NodeJS
 nodejs                      # https://nodejs.org/
 npm                         # https://www.npmjs.com/
 yarn                        # https://yarnpkg.com/
+pnpm                        # https://pnpm.io/
 prettier                    # https://prettier.io/
 
 ## Python
@@ -57,25 +54,19 @@ pyenv                       # https://github.com/pyenv/pyenv
 python-virtualenv           # https://virtualenv.pypa.io/en/latest/
 aur/pyenv-virtualenv        # https://github.com/pyenv/pyenv-virtualenv
 
-## Docker
-docker                      # https://www.docker.com/
-docker-compose              # https://docs.docker.com/compose/
-docker-buildx               # https://docs.docker.com/engine/reference/commandline/buildx/
-aur/docker-credential-secretservice # https://github.com/docker/docker-credential-helpers
-# sudo systemctl enable --now docker
-# sudo usermod -a -G docker $USER
+## Android
+android-tools               # https://developer.android.com/tools/
 
-## Kubernetes
-kubectl                     # https://kubernetes.io/docs/reference/kubectl/overview/
-helm                        # https://helm.sh/docs/using_helm/
+## Docker & Kubernetes
+aur/rancher-desktop         # https://rancherdesktop.io/
+aur/lazydocker              # https://github.com/jesseduffield/lazydocker
 kubie                       # https://github.com/sbstp/kubie
+stern                       # https://github.com/stern/stern
 aur/openlens-bin            # https://github.com/MuhammedKalkan/OpenLens
-# Requires the Node/Pod Menu extension to be complete
-# See: https://github.com/alebcay/openlens-node-pod-menu
-
-# Github
-github-cli                  # https://cli.github.com/
-aur/act-bin                 # https://github.com/nektos/act
+# Requires the following extensions:
+#  - @alebcay/openlens-node-pod-menu    # https://github.com/alebcay/openlens-node-pod-menu
+#  - @nevalla/kube-resource-map         # https://github.com/nevalla/lens-resource-map-extension
+#  - @andrea-falco/lens-multi-pod-logs  # https://github.com/andrea-falco/lens-multi-pod-logs
 
 ## AWS
 aws-cli-v2                  # https://github.com/aws/aws-cli
@@ -86,19 +77,16 @@ aur/amazon-ecr-credential-helper # https://github.com/awslabs/amazon-ecr-credent
 # texlive-most              # https://tug.org/texlive/ [meta]
 # pandoc-cli                # http://pandoc.org
 # aws-vault                 # https://github.com/99designs/aws-vault
+# hugo                      # https://gohugo.io/
 # xca                       # https://hohnstaedt.de/xca/
 # mkcert                    # https://github.com/FiloSottile/mkcert
+# aur/insomnium-bin         # https://github.com/ArchGPT/insomnium
 # hey                       # https://github.com/rakyll/hey
 # dive                      # https://github.com/wagoodman/dive
-# aur/lazydocker            # https://github.com/jesseduffield/lazydocker
-# aur/prips                 # https://packages.debian.org/stable/net/prips
 # ipcalc                    # http://jodies.de/ipcalc
-# bat                       # https://github.com/sharkdp/bat
 # aur/yed                   # http://www.yworks.com/en/downloads.html#yEd
 #                           #  + yEd VRT palettes: https://github.com/pafnow/vrt-graphml-for-yed
 #                           #  + yEd AWS palettes: https://github.com/JustDerb/yed-aws-palettes
-# elasticvue                # https://elasticvue.com/
-# dbeaver                   # https://dbeaver.io/
+# appimage/dbgate           # https://dbgate.org/
+# appimage/elasticvue       # https://elasticvue.com/
 # aur/redisinsight          # https://redis.com/redis-enterprise/redis-insight/
-# aur/octant-bin            # https://github.com/vmware-tanzu/octant
-# hugo                      # https://gohugo.io/

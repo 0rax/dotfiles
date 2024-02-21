@@ -1,0 +1,19 @@
+#!/usr/bin/env true
+#
+# description:
+#   Tools needed to setup secureboot using sbctl
+#
+# require:
+#   - pacman (Arch Linux Package Manager)
+#   - yay (AUR Wrapper)
+#       git clone https://aur.archlinux.org/yay-bin.git /tmp/yay; cd /tmp/yay; makepkg -si
+#   - base-devel (meta package)
+#       see https://www.archlinux.org/groups/x86_64/base-devel/
+
+## EFI Tools
+efibootmgr                  # https://github.com/rhboot/efibootmgr
+efitools                    # https://git.kernel.org/pub/scm/linux/kernel/git/jejb/efitools.git/about/
+
+## Secure Boot Tools
+sbctl                       # https://github.com/Foxboron/sbctl
+sbsigntools                 # https://github.com/phrack/sbsigntools

@@ -16,6 +16,7 @@ aur/librewolf-bin           # https://librewolf.net/
 aur/librewolf-firefox-shim  # https://librewolf.net/
 chromium                    # https://stacker.readthedocs.io/en/latest/
 aur/ferdium-bin             # https://github.com/ferdium/ferdium-app/
+aur/beeper-latest-bin       # https://www.beeper.com/
 
 ## Media
 aur/spotify                 # https://spotify.com/
@@ -29,10 +30,17 @@ abiword                     # https://github.com/AbiWord/abiword
 gnumeric                    # http://www.gnumeric.org/
 
 ## System utils
+aur/appimagelauncher        # https://github.com/TheAssassin/AppImageLauncher
 veracrypt                   # https://veracrypt.codeplex.com/
+seahorse                    # https://wiki.gnome.org/Apps/Seahorse
 cpupower                    # https://www.kernel.org/
 aur/cpupower-gui            # https://github.com/vagnum08/cpupower-gui
+gnome-disk-utility          # https://apps.gnome.org/DiskUtility/
+baobab                      # https://wiki.gnome.org/Apps/DiskUsageAnalyzer
+
+## Firmware Updates
 fwupd                       # https://github.com/fwupd/fwupd
+gnome-firmware              # https://gitlab.gnome.org/World/gnome-firmware
 
 ## Firewall
 ufw                         # https://launchpad.net/ufw
@@ -49,12 +57,22 @@ fangfrisch                  # https://rseichter.github.io/fangfrisch/
 # sudo systemctl enable --now fangfrisch.timer
 # sudo systemctl enable --now clamav-daemon.service
 
-## Fonts
-inter-font                  # https://github.com/rsms/inter/
-ttf-hack                    # https://github.com/source-foundry/Hack
-aur/otf-hasklig             # https://github.com/i-tu/Hasklig
-ttf-hack-nerd               # https://github.com/ryanoasis/nerd-fonts/
-otf-hasklig-nerd            # https://github.com/ryanoasis/nerd-fonts/
+## Bluetooth
+bluez                       # http://www.bluez.org/
+bluez-utils                 # http://www.bluez.org/
+# sudo systemctl enable --now bluetooth.service
+
+## Printer
+cups                        # https://wiki.archlinux.org/index.php/CUPS#Installation
+cups-pdf                    # https://www.cups-pdf.de
+system-config-printer       # http://cyberelk.net/tim/software/system-config-printer/
+# sudo systemctl enable --now cups.service
+
+## Trackpad Gestures
+aur/libinput-gestures       # [gestures-daemon] https://github.com/bulletmark/libinput-gestures
+aur/gestures                # [gestures-config] https://gitlab.com/cunidev/gestures
+# sudo usermod -a -G input $USER
+# systemctl --user enable --now libinput-gestures.service
 
 ## Dictionaries
 hunspell                    # https://hunspell.github.io/
@@ -70,9 +88,5 @@ aur/snapper-gui-git         # https://github.com/ricardomv/snapper-gui
 # sudo systemctl enable --now snapper-cleanup.timer
 
 ## Alternative & other useful softwares
-# firefox                   # https://www.mozilla.org/en-US/firefox/
-# aur/cinny-desktop-bin     # https://cinny.in/
-# bitwarden                 # https://bitwarden.com/#/
-# aur/keybase-bin           # https://keybase.io/
 # restic                    # https://github.com/restic/restic
 # rclone                    # https://rclone.org/
