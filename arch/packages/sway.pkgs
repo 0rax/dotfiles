@@ -17,9 +17,10 @@ ly                          # [session-manager] https://github.com/fairyglade/ly
 
 ## Display server
 wayland                     # [display-server ] https://wayland.freedesktop.org/
-xorg-xwayland               # [x11-support    ] https://xorg.freedesktop.org/
 qt5-wayland                 # [qt5-support    ] https://www.qt.io/
-glfw-wayland                # [glfw-support   ] https://www.glfw.org/
+qt6-wayland                 # [qt6-support    ] https://www.qt.io/
+glfw                        # [glfw-support   ] https://www.glfw.org/
+xorg-xwayland               # [x11-support    ] https://xorg.freedesktop.org/
 xorg-xhost                  # [x11-access     ] https://xorg.freedesktop.org/
 
 ## Desktop environment

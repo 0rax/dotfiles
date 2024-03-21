@@ -13,6 +13,7 @@
 ## CLI tools
 aur/gibo                    # https://github.com/simonwhitaker/gibo
 tokei                       # https://github.com/XAMPPRocky/tokei
+onefetch                    # https://github.com/o2sh/onefetch
 
 ## Make
 make                        # https://www.gnu.org/software/make/
@@ -88,5 +89,6 @@ aur/amazon-ecr-credential-helper # https://github.com/awslabs/amazon-ecr-credent
 #                           #  + yEd VRT palettes: https://github.com/pafnow/vrt-graphml-for-yed
 #                           #  + yEd AWS palettes: https://github.com/JustDerb/yed-aws-palettes
 # appimage/dbgate           # https://dbgate.org/
+# aur/tableplus             # https://tableplus.com/linux
 # appimage/elasticvue       # https://elasticvue.com/
 # aur/redisinsight          # https://redis.com/redis-enterprise/redis-insight/
