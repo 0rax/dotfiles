@@ -99,6 +99,7 @@ gnome-keyring               # [keyring        ] https://wiki.gnome.org/Projects/
 
 ## Network Settings
 networkmanager              # [network-daemon ] https://networkmanager.dev/
+networkmanager-strongswan   # [ipsec-support  ] https://strongswan.org/
 nm-connection-editor        # [network-manager] https://networkmanager.dev/
 # systemctl enable --now NetworkManager.service
 

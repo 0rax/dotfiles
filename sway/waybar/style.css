@@ -44,18 +44,18 @@ tooltip {
     color: @base00;
 }
 
-#workspaces button.persistent {
-    background-color: @blur01;
-    color: @base04;
-}
-
 #workspaces button:hover {
-    background-color: @base03;
-    color: @base07;
+  background-color: @base03;
+  color: @base07;
 }
 
-#workspaces button.persistent:hover {
-    background-color: @blur02;
+#workspaces button.empty {
+  background-color: @blur01;
+  color: @base04;
+}
+
+#workspaces button.empty:hover {
+  background-color: @blur02;
 }
 
 #workspaces button:nth-child(1) {

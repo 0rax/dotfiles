@@ -28,7 +28,7 @@
     "disable-scroll": true,
     "all-outputs": true,
     "format": "{icon}",
-    "persistent_workspaces": {
+    "persistent-workspaces": {
       "1:Home": [],
       "2:Code": [],
       "3:Web": [],
@@ -64,7 +64,7 @@
     "format": "<span style=\"italic\">{}</span>"
   },
   "clock": {
-    "format": "{: %Y-%m-%d  %H:%M}",
+    "format": " {:%Y-%m-%d  %H:%M}",
     "tooltip-format": "<tt><small>{calendar}</small></tt>",
     "calendar": {
       "mode": "month",
@@ -164,7 +164,8 @@
     "tooltip-format-ethernet": "󰛳 {ifname}",
     "tooltip-format-disconnected": "󰌙 Disconnected",
     "interval": 20,
-    "on-click-right": "alacritty --class nmtui -e nmtui"
+    "on-click-right": "alacritty --class nmtui -e nmtui-connect",
+    "on-click-middle": "nm-connection-editor"
   },
   "pulseaudio": {
     "signal": 7,
