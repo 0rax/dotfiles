@@ -34,6 +34,11 @@ tooltip {
     transition: none;
 }
 
+#workspaces button.empty {
+    background-color: @blur01;
+    color: @base04;
+}
+
 #workspaces button.focused {
     background-color: @base0A;
     color: @base00;
@@ -45,17 +50,12 @@ tooltip {
 }
 
 #workspaces button:hover {
-  background-color: @base03;
-  color: @base07;
-}
-
-#workspaces button.empty {
-  background-color: @blur01;
-  color: @base04;
+    background-color: @base03;
+    color: @base07;
 }
 
 #workspaces button.empty:hover {
-  background-color: @blur02;
+    background-color: @blur02;
 }
 
 #workspaces button:nth-child(1) {
