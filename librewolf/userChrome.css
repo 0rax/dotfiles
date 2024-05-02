@@ -4,54 +4,199 @@
 
 /* Dim, underline and italic pending tabs */
 .tabbrowser-tab[pending] {
-    /* text-decoration: underline; */
-    font-style: italic;
-    opacity: 0.5;
+  /* text-decoration: underline; */
+  font-style: italic;
+  opacity: 0.5;
 }
 
 /* Undim slightly and remove italic on pending tab hover */
 .tabbrowser-tab[pending]:hover {
-    font-style: normal;
-    opacity: 0.8;
+  font-style: normal;
+  opacity: 0.8;
 }
 
 /*
-** Disable Sidebar Header
+** Make Bookmark Separators suck less
 */
 
-#sidebar-header {
+#PlacesToolbarItems > toolbarseparator {
+  margin: 2px 0px 2px 0px !important;
+  color: white;
+  opacity: 40%;
+}
+
+/*
+** Full height Sidebery w/ bookmark toolbar support
+*/
+
+/* Configuration */
+:root {
+  --fsb-sidebar-width: 320px;
+  --fsb-border-width: 1px;
+  --fsb-separator-width: 1px;
+}
+
+/* Storage variables */
+:root {
+  --fsb-sidebar-offset: 0px;
+}
+
+/* Default values for Normal Density */
+:root {
+  --tabbar-height: 3em;
+  --toolbar-height: 40px; /* 2.7em ? */
+  --button-margin: 4px;
+}
+
+/* Default values for Touch UI density */
+#main-window[uidensity="touch"] {
+  --toolbar-height: 44px; /* 3em ? */
+  --tabbar-height: 3.35em;
+  --button-margin: 5px;
+}
+
+/* Default values for Compact density */
+#main-window[uidensity="compact"] {
+  --toolbar-height: 34px; /* 2.35em ? */
+  --tabbar-height: 2.7em;
+  --button-margin: 3px;
+}
+
+/* Cleanup padding from control surfaces */
+#nav-bar-customization-target > :is(toolbarbutton, toolbaritem):first-child,
+#nav-bar-customization-target > toolbarpaletteitem:first-child > :is(toolbarbutton, toolbaritem) {
+	padding-inline-start: var(--button-margin) !important;
+}
+#PanelUI-menu-button {
+	padding-inline-end: var(--button-margin) !important;
+}
+
+/* Remove nav-bar bottom border */
+#navigator-toolbox {
+  border-bottom: var(--fsb-border-width) var(--chrome-content-separator-color) solid !important;
+}
+
+/* Setup tab-bar animation */
+#titlebar {
+  overflow: hidden;
+  /* Setup default height to enable animation */
+  height: var(--tabbar-height) !important;
+  /* Animation setup */
+  transition: height 0.2s 0.1s !important;
+}
+
+/* Setup bookmark toolbar animation */
+#PersonalToolbar {
+  /* Set initial position to enable smoother animation */
+  top: var(--tabbar-height);
+  left: calc(-1 * var(--fsb-sidebar-width));
+  /* Animation setup */
+  transition: min-height 0.2s 0.1s ease-out,
+    max-height 0.2s 0.1s ease-out,
+    visibility 0.2s 0.1s linear,
+    left 0.2s 0.1s ease,
+    top 0.2s 0.1s ease !important;
+}
+
+/* Sideberry Mode */
+#main-window[titlepreface*="​"] {
+  /* Hide native tabs strip */
+  & #titlebar {
+      height: 0 !important;
+  }
+  /* Fix z-index of active pinned tabs */
+  & #tabbrowser-tabs {
+      z-index: 0 !important;
+  }
+  /* Force toolbar height & set margin to leave space for sidebar */
+  & #nav-bar {
+    z-index: 9 !important;
+    margin-left: calc(var(--fsb-sidebar-width) - var(--fsb-border-width));
+    height: var(--toolbar-height) !important;
+    transition: margin 0.2s 0.1s !important;
+    /* Add separator between sidebar & navbar */
+    padding-left: var(--fsb-separator-width) !important; /* Add space for separator */
+    &:before {
+      content: "";
+      position: absolute;
+      left: 0px;
+      top: calc(2 * var(--button-margin));
+      height: calc(var(--toolbar-height) - (4 * var(--button-margin)));
+      width: var(--fsb-separator-width);
+      background: var(--sidebar-border-color);
+    }
+  }
+  /* Make sidebar full height leaving space for bookmark toolbar if enabled */
+  & #sidebar-box {
+    margin-top: calc(var(--fsb-sidebar-offset) - var(--fsb-border-width)) !important;
+    z-index: 8 !important;
+    width: var(--fsb-sidebar-width) !important;
+    transition: margin 0.2s 0.1s !important;
+    border-right: var(--fsb-border-width) var(--sidebar-border-color) solid !important;
+  }
+  /* Remvoe sidebar handle as the size is forced */
+  & #sidebar-splitter {
+    display: none;
+  }
+  /* Move bookmark toolbar on top of the sidebar */
+  & #PersonalToolbar
+  {
+    display: block;
+    position: fixed;
+    visibility: visible !important;
+    height: var(--toolbar-height) !important;
+    width: var(--fsb-sidebar-width) !important;
+    left: 0px;
+    top: 0px;
+    padding: 0px !important;
+    /* Tweak favorite button spacing to match nav-bar */
+    & toolbarbutton.bookmark-item {
+      height: calc(var(--toolbar-height) - 2 * var(--button-margin)) !important;
+      margin: var(--button-margin) 0px var(--button-margin) var(--button-margin) !important;
+      padding: var(--button-margin) calc(var(--button-margin)*1.5) !important;
+    }
+    & toolbarseparator {
+      margin: calc(var(--button-margin)*1.5) 0px !important;
+      padding: 0px 0px 0px var(--button-margin) !important;
+      /* Hack to offset spacing by the width of the separator (1px) */
+      min-width: calc(var(--button-margin) + 1px) !important;
+    }
+    & #PlacesChevron {
+      padding: 0px !important;
+      margin: var(--button-margin) var(--button-margin) !important;
+    }
+  }
+  /* Set sidebar header and color (if you need it) or disable it completly */
+  & #sidebar-header {
+    /* Set header height & color to match nav-bar */
+    height: var(--toolbar-height) !important;
+    background-color: var(--toolbar-bgcolor) !important;
+    /* Remove useless border */
+    border-bottom: 0px !important;
+    /* Remove sidebar close button (optional) */
+    & > #sidebar-close {
+      display: none;
+    }
+  }
+}
+
+/* Update sidebar offset when bookmark toolbar is hidden */
+#main-window:has(#PersonalToolbar[collapsed="true"]) {
+  --fsb-sidebar-offset: calc(-1 * var(--toolbar-height));
+}
+
+/*
+** Tweak: Hide Sidebery header when in Sidebery mode
+*/
+
+#main-window[titlepreface*="​"] #sidebar-header {
     display: none;
 }
 
 /*
-** Dynamic Native Tabs
-** https://github.com/mbnuqw/sidebery/wiki/Firefox-Styles-Snippets-(via-userChrome.css)#dynamic-native-tabs
+** Tweak: Force hide bookmark toolbar when outside of Sidebery mode
 */
 
-#main-window #titlebar {
-    overflow: hidden;
-    transition: height 0.3s 0.3s !important;
-}
-
-/* Default state: Set initial height to enable animation */
-#main-window #titlebar {
-    height: 3em !important;
-}
-
-#main-window[uidensity="touch"] #titlebar {
-    height: 3.35em !important;
-}
-
-#main-window[uidensity="compact"] #titlebar {
-    height: 2.7em !important;
-}
-
-/* Hidden state: Hide native tabs strip */
-#main-window[titlepreface*="​"] #titlebar {
-    height: 0 !important;
-}
-
-/* Hidden state: Fix z-index of active pinned tabs */
-#main-window[titlepreface*="​"] #tabbrowser-tabs {
-    z-index: 0 !important;
+#PersonalToolbar {
+  height: 0px !important;
 }
