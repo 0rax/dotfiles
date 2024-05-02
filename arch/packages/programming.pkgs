@@ -11,6 +11,8 @@
 #       see https://www.archlinux.org/groups/x86_64/base-devel/
 
 ## CLI tools
+tig                         # http://jonas.nitro.dk/tig/
+gitui                       # https://github.com/Extrawurst/gitui
 aur/gibo                    # https://github.com/simonwhitaker/gibo
 tokei                       # https://github.com/XAMPPRocky/tokei
 onefetch                    # https://github.com/o2sh/onefetch
@@ -36,10 +38,11 @@ shfmt                       # https://github.com/mvdan/sh#shfmt
 
 ## HTTP & Protobuf
 httpie                      # https://httpie.org/
-curlie                      # https://github.com/rs/curlie
+aur/grpcurl-bin             # https://github.com/fullstorydev/grpcurl
 protobuf                    # https://developers.google.com/protocol-buffers
 jq                          # https://stedolan.github.io/jq/
-xsv                         # https://github.com/BurntSushi/xsv
+yq                          # https://mikefarah.gitbook.io/yq
+aur/qsv                     # https://github.com/jqnatividad/qsv
 
 ## NodeJS
 nodejs                      # https://nodejs.org/
@@ -74,6 +77,14 @@ aws-cli-v2                  # https://github.com/aws/aws-cli
 aur/saml2aws                # https://github.com/Versent/saml2aws
 aur/amazon-ecr-credential-helper # https://github.com/awslabs/amazon-ecr-credential-helper
 
+## Database clients
+appimage/dbgate             # https://dbgate.org/          (also available as aur/dbgate-bin [buggy])
+appimage/elasticvue         # https://elasticvue.com/      (also available as aur/elasticvue-bin [out-of-date])
+
+## LLM
+appimage/lmstudio           # https://lmstudio.ai/         (also available as aur/lmstudio-appimage)
+appimage/jan                # https://github.com/janhq/jan (also available as aur/jan-bin)
+
 ## Alternatives & other useful softwares
 # texlive-most              # https://tug.org/texlive/ [meta]
 # pandoc-cli                # http://pandoc.org
@@ -88,7 +99,13 @@ aur/amazon-ecr-credential-helper # https://github.com/awslabs/amazon-ecr-credent
 # aur/yed                   # http://www.yworks.com/en/downloads.html#yEd
 #                           #  + yEd VRT palettes: https://github.com/pafnow/vrt-graphml-for-yed
 #                           #  + yEd AWS palettes: https://github.com/JustDerb/yed-aws-palettes
-# appimage/dbgate           # https://dbgate.org/
+# dbeaver                   # https://dbeaver.com/
 # aur/tableplus             # https://tableplus.com/linux
-# appimage/elasticvue       # https://elasticvue.com/
+# aur/beekeeper-studio-bin  # https://www.beekeeperstudio.io/
 # aur/redisinsight          # https://redis.com/redis-enterprise/redis-insight/
+
+## TESTING
+aur/httppie-desktop-bin     # https://github.com/httpie/desktop
+aur/usql                    # https://github.com/xo/usql
+curlie                      # https://github.com/rs/curlie
+xh                          # https://github.com/ducaale/xh

@@ -58,6 +58,7 @@ celluloid                   # [media-player   ] https://celluloid-player.github.
 gnome-calculator            # [calculator     ] https://wiki.gnome.org/Apps/Calculator
 file-roller                 # [archive-manager] https://wiki.gnome.org/Apps/FileRoller
 catfish                     # [file-search    ] https://docs.xfce.org/apps/catfish/
+vimb                        # [web-browser    ] https://fanglingsu.github.io/vimb/
 ## Virtual filesystems (usermount, trash, ...)
 gvfs                        # [userspave-vfs  ] https://wiki.gnome.org/Projects/gvfs
 gvfs-smb                    # [vfs-samba      ] https://wiki.gnome.org/Projects/gvfs

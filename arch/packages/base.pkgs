@@ -26,7 +26,6 @@ lbzip2                      # https://github.com/kjn/lbzip2/
 
 ## CVS
 git                         # https://git-scm.com
-tig                         # http://jonas.nitro.dk/tig/
 git-lfs                     # https://github.com/git-lfs/git-lfs
 mercurial                   # https://www.mercurial-scm.org/
 subversion                  # https://subversion.apache.org/

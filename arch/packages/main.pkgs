@@ -28,6 +28,7 @@ gimp                        # http://www.gimp.org/
 inkscape                    # https://inkscape.org/
 abiword                     # https://github.com/AbiWord/abiword
 gnumeric                    # http://www.gnumeric.org/
+pdfchain                    # https://pdfchain.sourceforge.io/
 
 ## System utils
 aur/appimagelauncher        # https://github.com/TheAssassin/AppImageLauncher
@@ -86,6 +87,9 @@ snapper                     # http://snapper.io/
 aur/snapper-gui-git         # https://github.com/ricardomv/snapper-gui
 # sudo systemctl enable --now snapper-timeline.timer
 # sudo systemctl enable --now snapper-cleanup.timer
+
+## TESTING
+aur/sleek                   # https://github.com/ransome1/sleek
 
 ## Alternative & other useful softwares
 # restic                    # https://github.com/restic/restic
