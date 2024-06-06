@@ -44,6 +44,11 @@ if test -d $HOME/.yarn/bin; and not contains $HOME/.yarn/bin $PATH
     set -p PATH $HOME/.yarn/bin
 end
 
+set -gx PNPM_HOME "/home/orax/.local/share/pnpm"
+if not string match -q -- $PNPM_HOME $PATH
+  set -p PATH $PNPM_HOME
+end
+
 # ---  Programming/Python  -----------------------------------------------------
 
 if type -q pyenv; and status is-login
@@ -54,6 +59,14 @@ if type -q pyenv; and status is-interactive
     set -gx PIPENV_VERBOSITY -1
     source (pyenv init - | psub)
     source (pyenv virtualenv-init - | psub)
+end
+
+# ---  Programming/Android -----------------------------------------------------
+
+if test -d /opt/android-sdk
+    set -gx JAVA_HOME /usr/lib/jvm/default/
+    set -gx ANDROID_HOME /opt/android-sdk
+    set -a PATH $ANDROID_HOME/tools $ANDROID_HOME/tools/bin $ANDROID_HOME/platform-tools
 end
 
 # ------------------------------------------------------------------------------

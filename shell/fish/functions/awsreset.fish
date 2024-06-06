@@ -7,5 +7,6 @@ function awsreset
         set -e "$i"
     end
     set -e SAML2AWS_PROFILE
+    set -e AWSVAULT_PROFILE
     return 0
 end
