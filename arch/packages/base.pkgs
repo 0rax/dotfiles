@@ -11,6 +11,10 @@
 #   - base-devel (meta package)
 #       see https://www.archlinux.org/groups/x86_64/base-devel/
 
+## Kernel
+linux-zen                   # https://github.com/zen-kernel/zen-kernel/wiki
+linux-zen-headers           # https://github.com/zen-kernel/zen-kernel/wiki
+
 ## Base
 bash                        # https://www.gnu.org/software/bash/
 fish                        # https://fishshell.com
@@ -54,6 +58,7 @@ colordiff                   # https://www.colordiff.org/
 pv                          # https://www.ivarch.com/programs/pv.shtml
 pwgen                       # https://pwgen.sourceforge.io/
 keychain                    # https://www.funtoo.org/Keychain
+trash-cli                   # https://github.com/andreafrancia/trash-cli
 aur/dtrx                    # https://github.com/dtrx-py/dtrx
 aur/pfetch                  # https://github.com/dylanaraps/pfetch
 

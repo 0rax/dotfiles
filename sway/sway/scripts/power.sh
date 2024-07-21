@@ -17,7 +17,7 @@ reboot)
     systemctl reboot
     ;;
 suspend)
-    systemctl suspend
+    systemctl suspend-then-hibernate
     ;;
 hibernate)
     systemctl hibernate

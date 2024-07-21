@@ -31,6 +31,7 @@ freecad                     # https://www.freecadweb.org/
 openscad                    # https://openscad.org/
 aur/fstl                    # https://github.com/fstl-app/fstl
 aur/prusa-slicer-rc-bin     # https://github.com/prusa3d/PrusaSlicer
+aur/orca-slicer-bin         # https://github.com/SoftFever/OrcaSlicer
 
 ## Alternatives
 # - LibreCAD

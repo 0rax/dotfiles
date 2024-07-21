@@ -1,23 +1,31 @@
-# ignore-empty-password
-grace=0
-grace-no-mouse
-grace-no-touch
+ignore-empty-password
 
-clock
 font=Inter
-timestr=%H:%M
-text-color=ffffffff
-font-size=60%
-
-indicator
+font-size=40%
 inside-color=00000000
 ring-color=00000000
 line-color=00000000
 indicator-radius=132
 
+image=/home/orax/.config/swaylock/background.jpg
+
+## swaylock-effects grace period
+# grace=0
+# grace-no-mouse
+# grace-no-touch
+
+## saylock-effects clock indicator
+# font=Inter
+# font-size=60%
+# indicator
+# clock
+# timestr=%H:%M
+# text-color=ffffffff
+
+## saylock-effects background
 # screenshots
-image=/home/orax/.config/sway/wallpaper.jpg
+# image=/home/orax/.config/sway/wallpaper.jpg
 # fade-in=0.5
-effect-blur=4x2
+# effect-blur=4x2
 # effect-greyscale
-effect-compose=50%,85%;96x96;center;/home/orax/.config/swaylock/logo.png
+# effect-compose=50%,85%;96x96;center;/home/orax/.config/swaylock/logo.png

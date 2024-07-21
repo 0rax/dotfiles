@@ -5,7 +5,13 @@ PartOf=sway-session.target
 
 [Service]
 Type=simple
-ExecStart=/usr/bin/swayidle -w timeout 600 'swaylock' before-sleep 'swaylock --fade-in 0'
+ExecStart=/usr/bin/swayidle -w \
+    timeout 600 'swaylock' \
+    timeout 900 'swaymsg "output * dpms off"' \
+    resume 'swaymsg "output * dpms on"' \
+    timeout 30 'if pgrep swaylock; then swaymsg "output * dpms off"; fi' \
+    resume 'if pgrep swaylock; then swaymsg "output * dpms on"; fi' \
+    before-sleep 'swaylock'
 ExecStop=/bin/kill -2 $MAINPID
 Restart=on-failure
 RestartSec=1

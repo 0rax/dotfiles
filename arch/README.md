@@ -22,7 +22,7 @@ sed 's/ *#.*$//;/^$/d;s/ +$//' packages/*.pkgs packages/extras/* | sort
 
 ## Config files
 
-### Install configuration files
+### Install user configuration files
 
 ```sh
 cp -R $PWD/pacman                   ~/.config/
@@ -31,5 +31,6 @@ cp -R $PWD/pacman                   ~/.config/
 ### Install system configuration files
 
 ```sh
-sudo cp $PWD/plocate/updatedb.conf  /etc/updatedb.conf
+sudo cp -R $PWD/systemd/logind.conf.d /etc/systemd/
+sudo cp -R $PWD/systemd/sleep.conf.d  /etc/systemd/
 ```

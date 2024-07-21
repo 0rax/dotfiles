@@ -24,14 +24,15 @@ xorg-xwayland               # [x11-support    ] https://xorg.freedesktop.org/
 xorg-xhost                  # [x11-access     ] https://xorg.freedesktop.org/
 
 ## Desktop environment
-aur/swayfx-git              # [windows-manager] https://github.com/WillPower3309/swayfx
+aur/swayfx                  # [windows-manager] https://github.com/WillPower3309/swayfx
 waybar                      # [wl-status-bar  ] https://github.com/Alexays/Waybar
 wofi                        # [app-launcher   ] https://hg.sr.ht/~scoopta/wofi
 mako                        # [notif-daemon   ] https://github.com/emersion/mako
 swayidle                    # [session-idler  ] https://github.com/swaywm/swayidle
-aur/swaylock-effects        # [session-locker ] https://github.com/mortie/swaylock-effects
+swaylock                    # [session-locker ] https://github.com/swaywm/swaylock
 gammastep                   # [gamma-ctrl     ] https://gitlab.com/chinstrap/gammastep
 kanshi                      # [display-profile] https://github.com/emersion/kanshi
+# aur/swaylock-effects      # [session-locker ] https://github.com/jirutka/swaylock-effects # Sleep / Hibernate is broken
 
 ## Desktop Portal
 xdg-desktop-portal          # [portal-daemon  ] https://github.com/flatpak/xdg-desktop-portal
@@ -108,6 +109,7 @@ nm-connection-editor        # [network-manager] https://networkmanager.dev/
 aur/swaysettings-git        # [system-config  ] https://github.com/ErikReider/SwaySettings
 accountsservice             # [config-deps    ] https://gitlab.freedesktop.org/accountsservice/accountsservice
 aur/wdisplays               # [display-manager] https://github.com/artizirk/wdisplays
+dconf-editor                # [gnome-config   ] https://apps.gnome.org/en/DconfEditor/
 
 ## Alternatives & other useful softwares
 # eog                       # image viewer    [gnome]
@@ -122,3 +124,4 @@ aur/wdisplays               # [display-manager] https://github.com/artizirk/wdis
 # falkon                    # web browser     [kde]
 # pinta                     # image editor    [gtk]
 # drawing                   # image editor    [gnome]
+# foot                      # terminal        [wayland]

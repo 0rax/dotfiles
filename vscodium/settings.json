@@ -387,7 +387,9 @@
   "workbench.editor.limit.value": 5,
   "workbench.editor.revealIfOpen": true,
   "workbench.editorAssociations": {
-    "*.ipynb": "jupyter-notebook"
+    "*.ipynb": "jupyter-notebook",
+    "*.http": "http",
+    "*.md": "default"
   },
   "workbench.iconTheme": "material-icon-theme",
   "workbench.productIconTheme": "material-product-icons",
@@ -399,5 +401,8 @@
   "zenMode.centerLayout": true,
   "zenMode.fullScreen": false,
   "zenMode.hideLineNumbers": false,
-  "zenMode.showTabs": "single"
+  "zenMode.showTabs": "single",
+  "httpbook.saveWithOutputs": false,
+  "httpbook.outputRfc7230": "response",
+  "httpyac.useCodeLensInNotebook": true,
 }

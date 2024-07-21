@@ -1,0 +1,14 @@
+#!/usr/bin/env true
+#
+# description:
+#   GIS / GPS softwares
+#
+# require:
+#   - pacman (Arch Linux Package Manager)
+#   - yay (AUR Wrapper)
+#       git clone https://aur.archlinux.org/yay-bin.git /tmp/yay; cd /tmp/yay; makepkg -si
+#   - base-devel (meta package)
+#       see https://www.archlinux.org/groups/x86_64/base-devel/
+
+qmapshack        # https://github.com/Maproom/qmapshack
+aur/osmium-tools # https://osmcode.org/osmium-tool/

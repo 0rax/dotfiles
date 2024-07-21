@@ -8,6 +8,11 @@
 [commit]
 	gpgsign = false
 
+
+# Credentials
+[credential]
+	helper = /usr/lib/git-core/git-credential-libsecret
+
 # Git base config
 [core]
 	excludesfile = /home/orax/.gitignore_global
@@ -38,9 +43,7 @@
 [alias]
 	# git info
 	st = status
-	info = remote show origin
 	size = count-objects -vH
-	unpushed = log --stat origin/master..HEAD
 	root = rev-parse --show-toplevel
 	# git clone
 	rclone = clone --recursive
@@ -127,7 +130,3 @@
 	rebase = false
 [init]
 	defaultBranch = main
-
-# Credentials
-[credential]
-	helper = /usr/lib/git-core/git-credential-libsecret

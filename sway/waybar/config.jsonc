@@ -137,7 +137,8 @@
     "escape": true,
     "return-type": "json",
     "exec": "$HOME/.config/waybar/scripts/system.sh watch",
-    "exec-if": "true"
+    "exec-if": "true",
+    "on-click-right": "alacritty --class htop -e htop"
   },
   "bluetooth": {
     "format": "",
