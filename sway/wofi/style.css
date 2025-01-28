@@ -16,8 +16,13 @@
 @define-color base0E #c594c5;
 @define-color base0F #ab7967;
 
-@define-color blur00 rgba(27, 43, 52, 0.70);
-@define-color blur0D rgba(102, 153, 204, 0.5);
+/* Sway */
+@define-color blur00 rgba(27, 43, 52, 0.85);
+@define-color blur0D rgba(102, 153, 204, 0.75);
+
+/* SwayFX */
+/* @define-color blur00 rgba(27, 43, 52, 0.70); */
+/* @define-color blur0D rgba(102, 153, 204, 0.5); */
 
 window {
     margin: 0px;
