@@ -112,7 +112,8 @@ tooltip {
 #tray {
     border-radius: 4px;
     margin: 0 4px 0 4px;
-    background-color: @blur00;
+    /* background-color: @blur00; */
+    background-color: @blur01;
 }
 
 #idle_inhibitor {

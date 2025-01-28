@@ -16,6 +16,8 @@
 kicad                       # http://kicad.org/
 kicad-library               # http://kicad.org/
 kicad-library-3d            # http://kicad.org/
+python-kikit                # https://github.com/yaqwsx/KiKit
+aur/pcbdraw                 # https://github.com/yaqwsx/PcbDraw
 
 ## Alternatives
 # - Alitum CircuitMaker
@@ -28,17 +30,29 @@ kicad-library-3d            # http://kicad.org/
 ## 3D Printing
 
 freecad                     # https://www.freecadweb.org/
+aur/luxcorerender           # https://luxcorerender.org/ (FreeCAD render)
 openscad                    # https://openscad.org/
 aur/fstl                    # https://github.com/fstl-app/fstl
-aur/prusa-slicer-rc-bin     # https://github.com/prusa3d/PrusaSlicer
-aur/orca-slicer-bin         # https://github.com/SoftFever/OrcaSlicer
+appimage/orca-slicer-bin    # https://github.com/SoftFever/OrcaSlicer
+librecad                    # https://librecad.org/
+flatpak/com.prusa3d.PrusaSlicer     # https://github.com/prusa3d/PrusaSlicer
+
+## Testing
+
+flatpak/io.github.nokse22.Exhibit   # https://github.com/Nokse22/Exhibit
+aur/plasticity-bin                  # https://www.plasticity.xyz
 
 ## Alternatives
-# - LibreCAD
-# - Autodesk Fusion 360
-# - Autodesk MeshMixer
-# - Blender
-# - SolveSpace
-# - Onshape
-# - SuperSlicer
-# - OrcaSlicer
+# - Blender     # https://www.blender.org/
+#     aur/blender-bin
+#     aur/blender-plugin-cad-sketcher-git
+#     aur/blender-plugin-gcode-reader
+# - Ondsel ES   # https://lens.ondsel.com/download-and-explore
+#     appimage/Ondsel_ES
+# - CadQuery    # https://github.com/CadQuery/CQ-editor
+#     aur/cq-editor-bin
+# - Autodesk Fusion 360 # https://www.autodesk.com/products/fusion-360/personal
+# - Onshape     # https://www.onshape.com/
+# - SuperSlicer # https://github.com/supermerill/SuperSlicer
+# - CadQuery    # https://github.com/CadQuery/cadquery
+# - ImplicitCad # https://implicitcad.org/

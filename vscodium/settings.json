@@ -21,7 +21,12 @@
   },
   "[html]": {
     "editor.defaultFormatter": "vscode.html-language-features",
-    "editor.insertSpaces": false,
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2
+  },
+  "[mjml]": {
+    "editor.defaultFormatter": "mjmlio.vscode-mjml",
+    "editor.insertSpaces": true,
     "editor.tabSize": 2
   },
   "[javascript]": {
@@ -44,7 +49,7 @@
   },
   "[markdown]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.tabSize": 2
+    "editor.tabSize": 4
   },
   "[properties]": {
     "editor.insertSpaces": false,
@@ -217,7 +222,6 @@
   "editor.guides.bracketPairs": "active",
   "editor.insertSpaces": true,
   "editor.largeFileOptimizations": false,
-  "editor.minimap.enabled": false,
   "editor.renderLineHighlight": "all",
   "editor.renderLineHighlightOnlyWhenFocus": true,
   "editor.renderWhitespace": "boundary",
@@ -234,17 +238,31 @@
   "emmet.includeLanguages": {
     "twig": "html"
   },
-  "errorLens.errorGutterIconColor": "#bf616a",
-  "errorLens.gutterIconsEnabled": false,
-  "errorLens.gutterIconSet": "defaultOutline",
-  "errorLens.gutterIconSize": "80%",
+  "errorLens.hintGutterIconColor": "#8fa1b3",
   "errorLens.infoGutterIconColor": "#8fa1b3",
+  "errorLens.warningGutterIconColor": "#d08770",
+  "errorLens.errorGutterIconColor": "#bf616a",
+  "errorLens.gutterIconsEnabled": true,
+  "errorLens.gutterIconSet": "letter",
+  "errorLens.gutterIconSize": "80%",
+  // "errorLens.messageTemplate": "[$severity] $message",
   "errorLens.messageTemplate": "",
   "errorLens.scrollbarHackEnabled": true,
+  "errorLens.codeLensEnabled": true,
+  "errorLens.codeLensTemplate": "[$severity] $source: $message",
   "errorLens.statusBarColorsEnabled": true,
-  "errorLens.statusBarIconsEnabled": false,
+  "errorLens.statusBarIconsEnabled": true,
   "errorLens.statusBarIconsUseBackground": false,
-  "errorLens.warningGutterIconColor": "#d08770",
+  "errorLens.severityText": [
+    "E",
+    "W",
+    "I",
+    "H"
+  ],
+  "errorLens.statusBarIconsTargetProblems": "activeEditor",
+  "errorLens.replaceLinebreaksSymbol": " ­– ",
+  "errorLens.removeLinebreaks": false,
+  "errorLens.ignoreUntitled": true,
   "explorer.compactFolders": true,
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
@@ -258,7 +276,8 @@
     "go.mod": "go.sum",
     "Pipfile": "Pipfile.lock",
     "pyproject.toml": "poetry.lock",
-    "requirements.in": "requirements.txt"
+    "requirements.in": "requirements.txt",
+    "package.json": "package-lock.json, yarn.lock, pnpm-lock.yaml, bun.lockb"
   },
   "extensions.ignoreRecommendations": true,
   "files.associations": {
@@ -284,7 +303,6 @@
   "files.insertFinalNewline": true,
   "files.trimFinalNewlines": true,
   "files.trimTrailingWhitespace": true,
-  "git.enabled": false,
   "go.addTags": {
     "promptForTags": true
   },
@@ -327,6 +345,32 @@
   "markdown.extension.tableFormatter.normalizeIndentation": true,
   "markdown.preview.scrollEditorWithPreview": false,
   "material-icon-theme.saturation": 0.72,
+  "material-icon-theme.files.associations": {
+    "*.drawio.png": "drawio",
+    "*.drawio.svg": "drawio",
+    "*.step": "3d",
+    "*.wrl": "3d",
+  },
+  "material-icon-theme.files.customClones": [
+    {
+      "name": "erd",
+      "base": "github-actions-workflow",
+      "color": "gray-500",
+      "fileExtensions": ["erd", "erd.json"]
+    },
+    {
+      "name": "excalidraw",
+      "base": "dhall",
+      "color": "purple-300",
+      "fileExtensions": ["excalidraw", "excalidraw.png", "excalidraw.svg"]
+    }
+  ],
+  "material-icon-theme.folders.associations": {
+    ".dev": "batch",
+    "migrations": "database",
+    "tmpl": "template",
+    "http": "public",
+  },
   "notebook.lineNumbers": "on",
   "outline.showVariables": false,
   "pylint.args": [
@@ -376,12 +420,22 @@
   "workbench.colorCustomizations": {
     "statusBar.background": "#4F5B66",
     "statusBar.noFolderBackground": "#343d46",
+    "statusBarItem.remoteBackground": "#65737e",
+    "statusBarItem.remoteForeground": "#d8dee9",
+    "statusBarItem.remoteHoverBackground": "#6699cc",
+    "statusBarItem.remoteHoverForeground": "#d8dee9",
     "titleBar.activeBackground": "#343d46",
-    "titleBar.inactiveBackground": "#343d46"
+    "titleBar.inactiveBackground": "#343d46",
+    "errorLens.statusBarHintForeground": "#8fa1b3",
+    "errorLens.statusBarInfoForeground": "#8fa1b3",
+    "errorLens.statusBarWarningForeground": "#d08770",
+    "errorLens.statusBarErrorForeground": "#bf616a",
+    "errorLens.statusBarIconWarningForeground": "#d08770",
+    "errorLens.statusBarIconErrorForeground": "#bf616a",
+    "editorCodeLens.foreground": "#8fa1b3",
   },
   "workbench.colorTheme": "Base16 OceanicNext Dark",
   "workbench.editor.doubleClickTabToToggleEditorGroupSizes": "maximize",
-  "workbench.editor.enablePreview": false,
   "workbench.editor.limit.enabled": true,
   "workbench.editor.limit.perEditorGroup": true,
   "workbench.editor.limit.value": 5,
@@ -389,7 +443,7 @@
   "workbench.editorAssociations": {
     "*.ipynb": "jupyter-notebook",
     "*.http": "http",
-    "*.md": "default"
+    "*.md": "default",
   },
   "workbench.iconTheme": "material-icon-theme",
   "workbench.productIconTheme": "material-product-icons",
@@ -405,4 +459,14 @@
   "httpbook.saveWithOutputs": false,
   "httpbook.outputRfc7230": "response",
   "httpyac.useCodeLensInNotebook": true,
+  "editor.minimap.enabled": false,
+  "editor.codeLensFontSize": 11,
+  "task": {
+    "path": "/sbin/go-task"
+  },
+  "hediet.vscode-drawio.theme": "Kennedy",
+  "workbench.list.openMode": "doubleClick",
+  "yaml.maxItemsComputed": 2000,
+  "xml.symbols.maxItemsComputed": 2000,
+  "json.maxItemsComputed": 2000
 }

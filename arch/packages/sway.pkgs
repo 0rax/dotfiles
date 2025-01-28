@@ -24,7 +24,7 @@ xorg-xwayland               # [x11-support    ] https://xorg.freedesktop.org/
 xorg-xhost                  # [x11-access     ] https://xorg.freedesktop.org/
 
 ## Desktop environment
-aur/swayfx                  # [windows-manager] https://github.com/WillPower3309/swayfx
+sway                        # [windows-manager] https://github.com/swaywm/sway
 waybar                      # [wl-status-bar  ] https://github.com/Alexays/Waybar
 wofi                        # [app-launcher   ] https://hg.sr.ht/~scoopta/wofi
 mako                        # [notif-daemon   ] https://github.com/emersion/mako
@@ -32,6 +32,7 @@ swayidle                    # [session-idler  ] https://github.com/swaywm/swayid
 swaylock                    # [session-locker ] https://github.com/swaywm/swaylock
 gammastep                   # [gamma-ctrl     ] https://gitlab.com/chinstrap/gammastep
 kanshi                      # [display-profile] https://github.com/emersion/kanshi
+# aur/swayfx                # [windows-manager] https://github.com/WillPower3309/swayfx
 # aur/swaylock-effects      # [session-locker ] https://github.com/jirutka/swaylock-effects # Sleep / Hibernate is broken
 
 ## Desktop Portal
@@ -64,12 +65,14 @@ vimb                        # [web-browser    ] https://fanglingsu.github.io/vim
 gvfs                        # [userspave-vfs  ] https://wiki.gnome.org/Projects/gvfs
 gvfs-smb                    # [vfs-samba      ] https://wiki.gnome.org/Projects/gvfs
 gvfs-nfs                    # [vfs-nfs        ] https://wiki.gnome.org/Projects/gvfs
+gvfs-mtp                    # [vfs-mtp        ] https://wiki.gnome.org/Projects/gvfs
 
 ## CLI utils
 grim                        # [screenshotter  ] https://github.com/emersion/grim
 slurp                       # [screen-region  ] https://github.com/emersion/slurp
 swappy                      # [image-annotator] https://github.com/jtheoof/swappy
-aur/grimshot                # [screenshot-wrap] https://github.com/swaywm/sway/blob/master/contrib/grimshot
+sway-contrib                # [sway-script    ] https://github.com/OctopusET/sway-contrib
+aur/grimshot-bin-sway       # [screenshot-wrap] Link sway-contrib "grimshot" to /usr/bin
 wf-recorder                 # [screen-recorder] https://github.com/ammen99/wf-recorder
 brightnessctl               # [brightness-ctrl] https://github.com/Hummer12007/brightnessctl
 playerctl                   # [metdia-ctrl    ] https://github.com/altdesktop/playerctl
@@ -125,3 +128,5 @@ dconf-editor                # [gnome-config   ] https://apps.gnome.org/en/DconfE
 # pinta                     # image editor    [gtk]
 # drawing                   # image editor    [gnome]
 # foot                      # terminal        [wayland]
+# aur/jellyfin-media-player # jellyfin-client [qt+web]
+# delfin                    # jellyfin-client [gtk]

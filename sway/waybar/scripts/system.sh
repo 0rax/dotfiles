@@ -59,11 +59,12 @@ get_status() {
     disk
 
     text=$(printf "󰢻 %.0f%%  %d°C 󱘲 %.0f%%\n" "${cpu_pct}" "${temp}" "${ram_pct}")
+    # text=$(printf "󰢻 %.0f%%  %d°C\n" "${cpu_pct}" "${temp}")
     tooltip=$(printf "󰢻 %02.1f%% (%.3fGhz)
  %3d°C (${TEMPTYPE})
-󱘲 %.1f%% (%.1fGB/%.1fGB)
-󰾴 %.1f%% (%.1fGB/%.1fGB)
-󰋊 %.1f%% (%.0fGB/%.0fGB)" "${cpu_pct}" "${cpu_freq}" "${temp}" "${ram_pct}" "${ram_used}" "${ram_total}" "${swap_pct}" "${swap_used}" "${swap_total}" "${disk_pct}" "${disk_used}" "${disk_total}")
+󱘲 %02.1f%% (%.1fGB/%.1fGB)
+󰾴 %02.1f%% (%.1fGB/%.1fGB)
+󰋊 %02.1f%% (%.0fGB/%.0fGB)" "${cpu_pct}" "${cpu_freq}" "${temp}" "${ram_pct}" "${ram_used}" "${ram_total}" "${swap_pct}" "${swap_used}" "${swap_total}" "${disk_pct}" "${disk_used}" "${disk_total}")
     class=""
     if [[ ${temp} -ge ${TEMPCRITICAL} ]]; then
         class="critical"

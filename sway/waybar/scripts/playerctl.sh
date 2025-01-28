@@ -10,7 +10,6 @@ JQFUNC='{
     "class": .status | ascii_downcase
 }'
 
-
 CMD="${1:-status}"
 case $CMD in
 status)

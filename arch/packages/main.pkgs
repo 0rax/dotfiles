@@ -17,6 +17,7 @@ aur/librewolf-firefox-shim  # https://librewolf.net/
 chromium                    # https://stacker.readthedocs.io/en/latest/
 aur/ferdium-bin             # https://github.com/ferdium/ferdium-app/
 aur/beeper-latest-bin       # https://www.beeper.com/
+aur/mullvad-vpn-bin         # https://mullvad.net/
 aur/mullvad-browser-bin     # https://mullvad.net/en/browser
 
 ## Media
@@ -27,11 +28,10 @@ aur/vscodium-bin            # https://vscodium.com/
 obsidian                    # https://obsidian.md/
 gimp                        # http://www.gimp.org/
 inkscape                    # https://inkscape.org/
-libreoffice-fresh           # https://www.libreoffice.org/
+aur/onlyoffice-bin          # https://www.onlyoffice.com/
 pdfchain                    # https://pdfchain.sourceforge.io/
 
 ## System utils
-aur/appimagelauncher        # https://github.com/TheAssassin/AppImageLauncher
 veracrypt                   # https://veracrypt.codeplex.com/
 seahorse                    # https://wiki.gnome.org/Apps/Seahorse
 gnome-disk-utility          # https://apps.gnome.org/DiskUtility/
@@ -70,6 +70,7 @@ cups                        # https://wiki.archlinux.org/index.php/CUPS#Installa
 cups-pdf                    # https://www.cups-pdf.de
 system-config-printer       # http://cyberelk.net/tim/software/system-config-printer/
 # sudo systemctl enable --now cups.service
+simple-scan                 # https://apps.gnome.org/SimpleScan/
 
 ## Trackpad Gestures
 aur/libinput-gestures       # [gestures-daemon] https://github.com/bulletmark/libinput-gestures

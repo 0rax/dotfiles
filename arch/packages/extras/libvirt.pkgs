@@ -13,6 +13,7 @@
 ## Virtualization
 qemu-desktop                # https://www.qemu.org/
 edk2-ovmf                   # Required for UEFI support
+swtpm                       # Required for TPMv2 Emulation
 iptables-nft                # Required for libvirt DHCP/NAT networking
 dnsmasq                     # Required for libvirt DHCP/NAT networking
 dmidecode                   # Required for libvirt DHCP/NAT networking
@@ -28,3 +29,5 @@ virt-manager                # https://virt-manager.org/
 
 ## Alternatives:
 # - GNOME Boxes: GNOME GUI for QEMU/KVM user session (qemu:///session)
+
+aur/dmg2img

@@ -12,10 +12,11 @@
 
 ## CLI tools
 tig                         # http://jonas.nitro.dk/tig/
-gitui                       # https://github.com/Extrawurst/gitui
+lazygit                     # https://github.com/jesseduffield/lazygit
 aur/gibo                    # https://github.com/simonwhitaker/gibo
 tokei                       # https://github.com/XAMPPRocky/tokei
 onefetch                    # https://github.com/o2sh/onefetch
+aur/gita                    # https://github.com/nosarthur/gita
 
 ## Make
 make                        # https://www.gnu.org/software/make/
@@ -37,7 +38,7 @@ shellcheck                  # http://www.shellcheck.net/
 shfmt                       # https://github.com/mvdan/sh#shfmt
 
 ## HTTP & Protobuf
-httpie                      # https://httpie.org/
+curlie                      # https://github.com/rs/curlie
 aur/grpcurl-bin             # https://github.com/fullstorydev/grpcurl
 protobuf                    # https://developers.google.com/protocol-buffers
 jq                          # https://stedolan.github.io/jq/
@@ -46,9 +47,6 @@ aur/qsv                     # https://github.com/jqnatividad/qsv
 
 ## NodeJS
 nodejs                      # https://nodejs.org/
-npm                         # https://www.npmjs.com/
-yarn                        # https://yarnpkg.com/
-pnpm                        # https://pnpm.io/
 prettier                    # https://prettier.io/
 
 ## Python
@@ -59,8 +57,6 @@ python-virtualenv           # https://virtualenv.pypa.io/en/latest/
 aur/pyenv-virtualenv        # https://github.com/pyenv/pyenv-virtualenv
 
 ## Android
-aur/android-platform        # https://developer.android.com/studio/
-aur/android-ndk             # https://developer.android.com/ndk/
 android-tools               # https://developer.android.com/tools/
 scrcpy                      # https://github.com/Genymobile/scrcpy
 
@@ -87,9 +83,12 @@ appimage/dbgate             # https://dbgate.org/          (also available as au
 appimage/elasticvue         # https://elasticvue.com/      (also available as aur/elasticvue-bin [out-of-date])
 
 ## LLM
-appimage/lmstudio           # https://lmstudio.ai/         (also available as aur/lmstudio-appimage)
 appimage/jan                # https://github.com/janhq/jan (also available as aur/jan-bin)
-ollama                      # https://ollama.com
+# appimage/lmstudio         # https://lmstudio.ai/         (also available as aur/lmstudio-appimage)
+
+## Raspberry Pi
+rpi-imager                  # https://www.raspberrypi.com/software/
+aur/rpiusbboot              # https://github.com/raspberrypi/usbboot
 
 ## Alternatives & other useful softwares
 # texlive-most              # https://tug.org/texlive/ [meta]
@@ -97,7 +96,7 @@ ollama                      # https://ollama.com
 # hugo                      # https://gohugo.io/
 # xca                       # https://hohnstaedt.de/xca/
 # mkcert                    # https://github.com/FiloSottile/mkcert
-aur/insomnium-bin           # https://github.com/ArchGPT/insomnium
+# httpie                    # https://github.com/httpie/cli
 # hey                       # https://github.com/rakyll/hey
 # dive                      # https://github.com/wagoodman/dive
 # ipcalc                    # http://jodies.de/ipcalc
@@ -110,13 +109,10 @@ aur/insomnium-bin           # https://github.com/ArchGPT/insomnium
 # aur/redisinsight          # https://redis.com/redis-enterprise/redis-insight/
 
 ## TESTING
-aur/httppie-desktop-bin     # https://github.com/httpie/desktop
 aur/usql                    # https://github.com/xo/usql
-curlie                      # https://github.com/rs/curlie
 xh                          # https://github.com/ducaale/xh
-lapce                       # http://lapce.dev/
-rpi-imager                  # https://www.raspberrypi.com/software/
-aur/rpiusbboot              # https://github.com/raspberrypi/usbboot
 pgcli                       # https://pgcli.readthedocs.io/en/latest/
 net-snmp                    # http://www.net-snmp.org/
+aur/yaak-bin                # https://yaak.app/
+appimage/hoppscotch         # https://hoppscotch.com/download
 zed                         # https://zed.dev/

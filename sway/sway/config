@@ -18,6 +18,5 @@ include config.d/03-input.conf
 include config.d/04-workspace.conf
 include config.d/05-keybinding.conf
 include config.d/06-bar.conf
-include config.d/07-swayfx.conf
-include config.d/09-gtk.conf
+# include config.d/07-swayfx.conf
 include config.d/10-autostart.conf

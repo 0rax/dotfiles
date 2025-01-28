@@ -46,6 +46,10 @@ if test -d /usr/local/share/fish/vendor_completions.d
     set -a fish_complete_path /usr/local/share/fish/vendor_completions.d
 end
 
+# ---  System/Flatpak  ---------------------------------------------------------
+
+# set -gx XDG_DATA_DIRS   $HOME/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:$XDG_DATA_DIRS
+
 # ------------------------------------------------------------------------------
 # ---  END  --------------------------------------------------------------------
 # ------------------------------------------------------------------------------

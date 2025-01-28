@@ -8,6 +8,7 @@
   "modules-left": [
     "sway/workspaces",
     "custom/scratchpad",
+    "tray",
     "sway/mode"
   ],
   "modules-center": [
@@ -15,7 +16,6 @@
   ],
   "modules-right": [
     "custom/spotify",
-    "tray",
     "idle_inhibitor",
     "custom/gammastep",
     "custom/system",
@@ -87,10 +87,11 @@
     }
   },
   "custom/spotify": {
-    "format": "{icon} {}",
+    "format": " {}",
+    // "format": "{icon} {}", // Auto Icon format seems to not work preperly :shrug:
     "escape": false,
     "return-type": "json",
-    "max-length": 36,
+    "max-length": 32,
     "format-icons": {
       "playing": "",
       "paused": "",
@@ -165,7 +166,7 @@
     "tooltip-format-ethernet": "󰛳 {ifname}",
     "tooltip-format-disconnected": "󰌙 Disconnected",
     "interval": 20,
-    "on-click-right": "alacritty --class nmtui -e nmtui-connect",
+    "on-click-right": "alacritty --class nmtui -e nmtui",
     "on-click-middle": "nm-connection-editor"
   },
   "pulseaudio": {

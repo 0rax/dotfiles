@@ -1,0 +1,41 @@
+#!/usr/bin/env true
+#
+# description:
+#   Tools and applications to manage Flatpak and AppImage installs
+#
+# require:
+#   - pacman (Arch Linux Package Manager)
+#   - yay (AUR Wrapper)
+#       git clone https://aur.archlinux.org/yay-bin.git /tmp/yay; cd /tmp/yay; makepkg -si
+#   - base-devel (meta package)
+#       see https://www.archlinux.org/groups/x86_64/base-devel/
+
+## Flatpak
+extra/flatpak
+flatpak/org.gtk.Gtk3theme.Adwaita-dark
+flatpak/io.github.flattool.Warehouse
+flatpak/com.github.tchx84.Flatseal
+
+## AppImage
+libappimage
+flatpak/it.mijorus.gearlever
+
+# Theme support for things other than Adwaita / Adwaita-dark
+# Run:
+# 	mkdir -p ~/.themes ~/.icons
+# 	cp -r /usr/share/themes/Arc-Dark/ ~/.themes/
+# 	cp -r /usr/share/icons/Papirus/ ~/.icons/
+# 	cp -r /usr/share/icons/Papirus-Dark/ ~/.icons/
+# 	flatpak --user override --filesystem=~/.themes/:ro
+# 	flatpak --user override --filesystem=~/.icons/:ro
+# 	flatpak --user override --env=GTK_THEME=Arc-Dark
+# 	flatpak --user override --env=ICON_THEME=Papirus-Dark
+# 	flatpak --user override --env=ADW_DEBUG_COLOR_SCHEME=prefer-dark
+#
+# Verify with:
+# 	flatpak --user override --show
+#
+# See:
+#  - https://askubuntu.com/questions/1403931/how-to-apply-system-theme-to-flatpak-apps-that-use-gtk4
+#  - https://develmonk.com/2024/03/23/name-your-distro-flatpaks-irritatingly-dont-follow-desktop-theme-on-kde-plasma-desktop-6/
+#  - https://www.reddit.com/r/flatpak/comments/y9jmqj/the_general_flatpak_qt_and_gtk_theming_guide/

@@ -1,4 +1,5 @@
-# fish completion for docker                               -*- shell-script -*-
+#!/usr/bin/env fish
+# -*-  mode:fish; tab-width:4  -*-
 
 function __docker_debug
     set -l file "$BASH_COMP_DEBUG_FILE"
