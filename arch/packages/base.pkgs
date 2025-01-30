@@ -12,8 +12,8 @@
 #       see https://www.archlinux.org/groups/x86_64/base-devel/
 
 ## Kernel
-linux-zen                   # https://github.com/zen-kernel/zen-kernel/wiki
-linux-zen-headers           # https://github.com/zen-kernel/zen-kernel/wiki
+linux-cachyos               # https://cachyos.org/
+linux-cachyos-headers       # https://cachyos.org/
 
 ## Base
 bash                        # https://www.gnu.org/software/bash/

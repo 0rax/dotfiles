@@ -92,7 +92,9 @@ aur/snapper-gui-git         # https://github.com/ricardomv/snapper-gui
 # sudo systemctl enable --now snapper-cleanup.timer
 
 ## TESTING
-aur/sleek                   # https://github.com/ransome1/sleek
+flatpak/com.github.ransome1.sleek  # https://github.com/ransome1/sleek
+flatpak/cafe.avery.Delfin   # https://delfin.avery.cafe/
+flatpak/app.zen_browser.zen # https://zen-browser.app/
 
 ## Alternative & other useful softwares
 # restic                    # https://github.com/restic/restic

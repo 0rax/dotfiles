@@ -39,7 +39,6 @@ shfmt                       # https://github.com/mvdan/sh#shfmt
 
 ## HTTP & Protobuf
 curlie                      # https://github.com/rs/curlie
-aur/grpcurl-bin             # https://github.com/fullstorydev/grpcurl
 protobuf                    # https://developers.google.com/protocol-buffers
 jq                          # https://stedolan.github.io/jq/
 yq                          # https://mikefarah.gitbook.io/yq
@@ -65,9 +64,10 @@ aur/rancher-desktop         # https://rancherdesktop.io/
 aur/lazydocker              # https://github.com/jesseduffield/lazydocker
 kubie                       # https://github.com/sbstp/kubie
 stern                       # https://github.com/stern/stern
-aur/openlens-bin            # https://github.com/MuhammedKalkan/OpenLens
+appimage/freelens           # https://freelensapp.github.io/
 # Requires the following extensions:
-#  - @alebcay/openlens-node-pod-menu    # https://github.com/alebcay/openlens-node-pod-menu
+#  - @freelensapp/freelens-node-pod-menu    # https://github.com/freelensapp/freelens-node-pod-menu
+# OpenLens incompatible extensions:
 #  - @nevalla/kube-resource-map         # https://github.com/nevalla/lens-resource-map-extension
 #  - @andrea-falco/lens-multi-pod-logs  # https://github.com/andrea-falco/lens-multi-pod-logs
 
@@ -79,12 +79,11 @@ aur/amazon-ecr-credential-helper # https://github.com/awslabs/amazon-ecr-credent
 terraform                   # https://www.terraform.io/
 
 ## Database clients
-appimage/dbgate             # https://dbgate.org/          (also available as aur/dbgate-bin [buggy])
-appimage/elasticvue         # https://elasticvue.com/      (also available as aur/elasticvue-bin [out-of-date])
+appimage/dbgate             # https://dbgate.org/
+appimage/elasticvue         # https://elasticvue.com/
 
 ## LLM
 appimage/jan                # https://github.com/janhq/jan (also available as aur/jan-bin)
-# appimage/lmstudio         # https://lmstudio.ai/         (also available as aur/lmstudio-appimage)
 
 ## Raspberry Pi
 rpi-imager                  # https://www.raspberrypi.com/software/
@@ -107,6 +106,9 @@ aur/rpiusbboot              # https://github.com/raspberrypi/usbboot
 # aur/tableplus             # https://tableplus.com/linux
 # aur/beekeeper-studio-bin  # https://www.beekeeperstudio.io/
 # aur/redisinsight          # https://redis.com/redis-enterprise/redis-insight/
+# go/grpcurl                # https://github.com/fullstorydev/grpcurl
+# go/grpcui                 # https://github.com/fullstorydev/grpcui
+# appimage/lmstudio         # https://lmstudio.ai/
 
 ## TESTING
 aur/usql                    # https://github.com/xo/usql
@@ -115,4 +117,8 @@ pgcli                       # https://pgcli.readthedocs.io/en/latest/
 net-snmp                    # http://www.net-snmp.org/
 aur/yaak-bin                # https://yaak.app/
 appimage/hoppscotch         # https://hoppscotch.com/download
-zed                         # https://zed.dev/
+flatpak/io.httpie.Httpie    # https://httpie.io/docs/desktop
+flatpak/com.usebruno.Bruno  # https://usebruno.com/
+flatpak/dev.zed.Zed         # https://zed.dev/
+flatpak/dev.lapce.lapce     # https://lap.dev/lapce/
+flatpak/org.remmina.Remmina # https://remmina.org/

@@ -468,5 +468,7 @@
   "workbench.list.openMode": "doubleClick",
   "yaml.maxItemsComputed": 2000,
   "xml.symbols.maxItemsComputed": 2000,
-  "json.maxItemsComputed": 2000
+  "json.maxItemsComputed": 2000,
+  "chat.commandCenter.enabled": false,
+  "workbench.navigationControl.enabled": false
 }
