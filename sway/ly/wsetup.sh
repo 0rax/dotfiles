@@ -62,12 +62,17 @@ if test -f "${GTK_CONFIG}"; then
   font_name="$(grep 'gtk-font-name' "${GTK_CONFIG}" | sed 's/.*\s*=\s*//')"
   if [ "$prefer_dark" = "1" ]; then
     gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
+    export ADW_DEBUG_COLOR_SCHEME="prefer-dark"
   fi
   gsettings set org.gnome.desktop.interface gtk-theme "$gtk_theme"
   gsettings set org.gnome.desktop.interface icon-theme "$icon_theme"
   gsettings set org.gnome.desktop.interface cursor-theme "$cursor_theme"
   gsettings set org.gnome.desktop.interface font-name "$font_name"
-  # export GTK_THEME="$(grep 'gtk-theme-name' "${GTK_CONFIG}" | sed 's/.*\s*=\s*//')"
+  export GTK_THEME="$gtk_theme"
+  export ICON_THEME="$icon_theme"
+  systemctl --user import-environment GTK_THEME \
+                                      ICON_THEME \
+                                      ADW_DEBUG_COLOR_SCHEME
 fi
 
 # Add Flatpak path to XDH_DATA_DIRS

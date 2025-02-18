@@ -1,0 +1,13 @@
+[Desktop Entry]
+Version=1.0
+Name=Inkscape (X11)
+GenericName=Vector Graphics Editor
+Comment=Create and edit Scalable Vector Graphics images
+Keywords=image;editor;vector;drawing;
+Type=Application
+Categories=Graphics;VectorGraphics;GTK;
+MimeType=image/svg+xml;image/svg+xml-compressed;application/vnd.corel-draw;application/pdf;application/postscript;image/x-eps;application/illustrator;image/x-wmf;image/x-emf;application/x-xccx;application/x-xcdt;application/x-xcmx;image/x-xcdr;application/visio;application/x-visio;application/vnd.visio;application/vnd.ms-visio.viewer;application/visio.drawing;application/vsd;application/x-vsd;image/x-vsd;
+Exec=env GDK_BACKEND=x11 inkscape %F
+Terminal=false
+StartupNotify=true
+Icon=org.inkscape.Inkscape

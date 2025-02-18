@@ -76,7 +76,7 @@ tooltip {
 #custom-system,
 #bluetooth,
 #network,
-#pulseaudio,
+#wireplumber,
 #battery {
     padding: 0 12px;
     margin: 0px;
@@ -170,12 +170,12 @@ tooltip {
     color: @base00;
 }
 
-#pulseaudio {
+#wireplumber {
     background-color: @base0A;
     color: @base00;
 }
 
-#pulseaudio.muted {
+#wireplumber.muted {
     background-color: @base04;
     color: @base00;
 }

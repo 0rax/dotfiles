@@ -1,0 +1,14 @@
+[Desktop Entry]
+Version=1.0
+Terminal=false
+Icon=kicad
+Type=Application
+Categories=Science;Electronics;
+Exec=env GDK_BACKEND=x11 kicad %f
+StartupWMClass=kicad
+Keywords=Projectmanager;
+MimeType=application/x-kicad-project;
+Name=KiCad (X11)
+GenericName=EDA Suite
+Comment=Suite of tools for schematic design and circuit board layout
+X-Desktop-File-Install-Version=0.22

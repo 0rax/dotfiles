@@ -21,7 +21,7 @@
     "custom/system",
     "bluetooth",
     "network",
-    "pulseaudio",
+    "wireplumber",
     "battery"
   ],
   "sway/workspaces": {
@@ -169,32 +169,19 @@
     "on-click-right": "alacritty --class nmtui -e nmtui",
     "on-click-middle": "nm-connection-editor"
   },
-  "pulseaudio": {
-    "signal": 7,
+  "wireplumber": {
     "format": "{icon} {volume}%",
-    "format-bluetooth": "{icon}󰂯 {volume}%",
-    "format-bluetooth-muted": "{icon}󰂯 mute",
     "format-muted": "󰝟 mute",
-    "format-source": "󰍬 {volume}%",
-    "format-source-muted": "󰍭 mute",
-    "format-icons": {
-      "headphone": "󰋋",
-      "headset": "󰋎",
-      "speaker": "󰓃",
-      "default": [
-        "󰕿",
-        "󰖀",
-        "󰕾"
-      ]
-    },
-    "ignored-sinks": [
-      "easyeffects_sink"
-    ],
     "on-click-right": "swaysettings -p sound",
     "on-click-middle": "$HOME/.config/waybar/scripts/volumectl.sh toggle-mute",
     "on-scroll-up": "$HOME/.config/waybar/scripts/volumectl.sh volume-up",
     "on-scroll-down": "$HOME/.config/waybar/scripts/volumectl.sh volume-down",
-    "tooltip-format": "󱡫 {desc}"
+    "tooltip-format": "󱡫 {node_name}",
+    "format-icons": [
+      "󰕿",
+      "󰖀",
+      "󰕾"
+    ]
   },
   "battery": {
     "states": {
