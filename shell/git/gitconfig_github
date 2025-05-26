@@ -5,3 +5,6 @@
 
 [commit]
 	gpgsign = false
+
+[merge]
+	tool = vscode

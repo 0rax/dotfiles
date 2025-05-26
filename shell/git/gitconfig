@@ -30,6 +30,8 @@
 	insteadOf = https://github.com/
 [url "git@bitbucket.org:"]
 	insteadOf = https://bitbucket.org/
+[url "git@gitlab.com:"]
+	insteadOf = https://gitlab.com/
 
 # Specific remote config
 [includeIf "hasconfig:remote.*.url:git@github.com:**"]
