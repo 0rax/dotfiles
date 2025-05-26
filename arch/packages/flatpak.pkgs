@@ -20,6 +20,10 @@ flatpak/com.github.tchx84.Flatseal
 libappimage
 flatpak/it.mijorus.gearlever
 
+## Audio
+flatpak/com.github.wwmm.easyeffects
+# With presets: https://github.com/Digitalone1/EasyEffects-Presets
+
 # Theme support for things other than Adwaita / Adwaita-dark
 # Run:
 # 	mkdir -p ~/.themes ~/.icons

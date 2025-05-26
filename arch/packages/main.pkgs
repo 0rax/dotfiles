@@ -24,7 +24,6 @@ aur/mullvad-browser-bin     # https://mullvad.net/en/browser
 aur/spotify                 # https://spotify.com/
 
 ## File editors
-aur/vscodium-bin            # https://vscodium.com/
 obsidian                    # https://obsidian.md/
 gimp                        # http://www.gimp.org/
 inkscape                    # https://inkscape.org/
@@ -95,6 +94,7 @@ aur/snapper-gui-git         # https://github.com/ricardomv/snapper-gui
 flatpak/com.github.ransome1.sleek  # https://github.com/ransome1/sleek
 flatpak/cafe.avery.Delfin   # https://delfin.avery.cafe/
 flatpak/app.zen_browser.zen # https://zen-browser.app/
+flatpak/io.missioncenter.MissionCenter # https://missioncenter.io/
 
 ## Alternative & other useful softwares
 # restic                    # https://github.com/restic/restic

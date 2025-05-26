@@ -18,6 +18,8 @@ kicad-library               # http://kicad.org/
 kicad-library-3d            # http://kicad.org/
 python-kikit                # https://github.com/yaqwsx/KiKit
 aur/pcbdraw                 # https://github.com/yaqwsx/PcbDraw
+esptool                     # https://github.com/espressif/esptool
+espflash                    # https://github.com/esp-rs/espflash
 
 ## Alternatives
 # - Alitum CircuitMaker
@@ -32,15 +34,17 @@ aur/pcbdraw                 # https://github.com/yaqwsx/PcbDraw
 freecad                     # https://www.freecadweb.org/
 aur/luxcorerender           # https://luxcorerender.org/ (FreeCAD render)
 openscad                    # https://openscad.org/
-aur/fstl                    # https://github.com/fstl-app/fstl
-appimage/orca-slicer-bin    # https://github.com/SoftFever/OrcaSlicer
+f3d                         # https://github.com/f3d-app/f3d
 librecad                    # https://librecad.org/
-flatpak/com.prusa3d.PrusaSlicer     # https://github.com/prusa3d/PrusaSlicer
+flatpak/com.prusa3d.PrusaSlicer         # https://github.com/prusa3d/PrusaSlicer
+flatpak/io.github.softfever.OrcaSlicer  # https://github.com/SoftFever/OrcaSlicer
+flatpak/io.github.nokse22.Exhibit       # https://github.com/Nokse22/Exhibit
 
 ## Testing
 
-flatpak/io.github.nokse22.Exhibit   # https://github.com/Nokse22/Exhibit
-aur/plasticity-bin                  # https://www.plasticity.xyz
+flatpak/org.dune3d.dune3d               # https://dune3d.org/
+flatpak/org.horizon_eda.HorizonEDA      # https://horizon-eda.org/
+flatpak/io.github.dubstar_04.design     # https://github.com/dubstar-04/Design
 
 ## Alternatives
 # - Blender     # https://www.blender.org/
