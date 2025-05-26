@@ -2,7 +2,7 @@
 
 VOLUMEMIN=0
 VOLUMEMAX=100
-VOLUMESTEP=5
+VOLUMESTEP=2
 
 notify_volume() {
     icon="audio-volume-medium"
@@ -19,12 +19,12 @@ notify_volume() {
         notify-send --app-name="Volume" \
             --icon="audio-volume-muted" --hint="int:value:${volume}" \
             --hint="string:x-canonical-private-synchronous:volumectl" \
-            "${volume}% [MUTED]"
+            "${volume}% [MUTED] (${device})"
     else
         notify-send --app-name="Volume" \
             --icon="${icon}" --hint="int:value:${volume}" \
             --hint="string:x-canonical-private-synchronous:volumectl" \
-            "${volume}%"
+            "${volume}% (${device})"
     fi
 }
 
@@ -40,6 +40,7 @@ status() {
 get_volume() {
     muted=$(wpctl get-volume @DEFAULT_AUDIO_SINK@ | grep "[MUTED]" > /dev/null && echo 1)
     volume=$(wpctl get-volume @DEFAULT_AUDIO_SINK@ | awk '{print $2 * 100}')
+    device=$(wpctl inspect @DEFAULT_SINK@ | grep -E "node.description|node.nick" | tail -n1 | cut -d'"' -f2)
 }
 
 toggle-mute() {

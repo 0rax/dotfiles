@@ -29,11 +29,11 @@ waybar                      # [wl-status-bar  ] https://github.com/Alexays/Wayba
 wofi                        # [app-launcher   ] https://hg.sr.ht/~scoopta/wofi
 mako                        # [notif-daemon   ] https://github.com/emersion/mako
 swayidle                    # [session-idler  ] https://github.com/swaywm/swayidle
-swaylock                    # [session-locker ] https://github.com/swaywm/swaylock
+aur/swaylock-effects        # [session-locker ] https://github.com/jirutka/swaylock-effects
 gammastep                   # [gamma-ctrl     ] https://gitlab.com/chinstrap/gammastep
 kanshi                      # [display-profile] https://github.com/emersion/kanshi
+# swaylock                  # [session-locker ] https://github.com/swaywm/swaylock
 # aur/swayfx                # [windows-manager] https://github.com/WillPower3309/swayfx
-# aur/swaylock-effects      # [session-locker ] https://github.com/jirutka/swaylock-effects # Sleep / Hibernate is broken
 
 ## Desktop Portal
 xdg-desktop-portal          # [portal-daemon  ] https://github.com/flatpak/xdg-desktop-portal
@@ -45,8 +45,6 @@ pipewire                    # [sound-server   ] https://pipewire.org/
 wireplumber                 # [sound-session  ] https://pipewire.pages.freedesktop.org/wireplumber/
 pipewire-pulse              # [pulse-support  ] https://pipewire.org/
 pipewire-jack               # [jack2-support  ] https://pipewire.org/
-easyeffects                 # [audio-effects  ] https://github.com/wwmm/easyeffects
-calf                        # [effects-plugins] https://calf-studio-gear.org/
 
 ## Base applications
 alacritty                   # [terminal       ] https://alacritty.org/
