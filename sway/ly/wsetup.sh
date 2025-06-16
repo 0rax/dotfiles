@@ -6,49 +6,49 @@
 # Copyright (C) 2001-2005 Oswald Buddenhagen <ossi@kde.org>
 
 # Note that the respective logout scripts are not sourced.
-# shellcheck disable=SC1090,SC1091,SC3040
-case ${SHELL} in
+case $SHELL in
   */bash)
-    [ -z "$BASH" ] && exec ${SHELL} "$0" "$@"
+    [ -z "$BASH" ] && exec $SHELL $0 "$@"
     set +o posix
     [ -f /etc/profile ] && . /etc/profile
-    if [ -f "${HOME}/.bash_profile" ]; then
-      . "${HOME}/.bash_profile"
-    elif [ -f "${HOME}/.bash_login" ]; then
-      . "${HOME}/.bash_login"
-    elif [ -f "${HOME}/.profile" ]; then
-      . "${HOME}/.profile"
+    if [ -f $HOME/.bash_profile ]; then
+      . $HOME/.bash_profile
+    elif [ -f $HOME/.bash_login ]; then
+      . $HOME/.bash_login
+    elif [ -f $HOME/.profile ]; then
+      . $HOME/.profile
     fi
     ;;
 */zsh)
-    [ -z "${ZSH_NAME}" ] && exec ${SHELL} "$0" "$@"
+    [ -z "$ZSH_NAME" ] && exec $SHELL $0 "$@"
     [ -d /etc/zsh ] && zdir=/etc/zsh || zdir=/etc
     zhome=${ZDOTDIR:-$HOME}
     # zshenv is always sourced automatically.
-    [ -f "$zdir/zprofile" ] && . "$zdir/zprofile"
-    [ -f "$zhome/.zprofile" ] && . "$zhome/.zprofile"
-    [ -f "$zdir/zlogin" ] && . "$zdir/zlogin"
-    [ -f "$zhome/.zlogin" ] && . "$zhome/.zlogin"
+    [ -f $zdir/zprofile ] && . $zdir/zprofile
+    [ -f $zhome/.zprofile ] && . $zhome/.zprofile
+    [ -f $zdir/zlogin ] && . $zdir/zlogin
+    [ -f $zhome/.zlogin ] && . $zhome/.zlogin
     emulate -R sh
     ;;
   */csh|*/tcsh)
     # [t]cshrc is always sourced automatically.
     # Note that sourcing csh.login after .cshrc is non-standard.
-    wlsess_tmp=$(mktemp /tmp/wlsess-env-XXXXXX)
-    ${SHELL} -c "if (-f /etc/csh.login) source /etc/csh.login; if (-f ~/.login) source ~/.login; /bin/sh -c 'export -p' >! ${wlsess_tmp}"
-    . "${wlsess_tmp}"
-    rm -f "${wlsess_tmp}"
+    wlsess_tmp=`mktemp /tmp/wlsess-env-XXXXXX`
+    $SHELL -c "if (-f /etc/csh.login) source /etc/csh.login; if (-f ~/.login) source ~/.login; /bin/sh -c 'export -p' >! $wlsess_tmp"
+    . $wlsess_tmp
+    rm -f $wlsess_tmp
     ;;
   */fish)
     [ -f /etc/profile ] && . /etc/profile
-    xsess_tmp=$(mktemp /tmp/xsess-env-XXXXXX)
-    ${SHELL} --login -c "/bin/sh -c 'export -p' > ${xsess_tmp}"
-    . "${xsess_tmp}"
-    rm -f "${xsess_tmp}"
+    [ -f $HOME/.profile ] && . $HOME/.profile
+    xsess_tmp=`mktemp /tmp/xsess-env-XXXXXX`
+    $SHELL --login -c "/bin/sh -c 'export -p' > $xsess_tmp"
+    . $xsess_tmp
+    rm -f $xsess_tmp
     ;;
   *) # Plain sh, ksh, and anything we do not know.
     [ -f /etc/profile ] && . /etc/profile
-    [ -f "${HOME}/.profile" ] && . "${HOME}/.profile"
+    [ -f $HOME/.profile ] && . $HOME/.profile
     ;;
 esac
 
@@ -74,8 +74,5 @@ if test -f "${GTK_CONFIG}"; then
                                       ICON_THEME \
                                       ADW_DEBUG_COLOR_SCHEME
 fi
-
-# Add Flatpak path to XDH_DATA_DIRS
-export XDG_DATA_DIRS="${HOME}/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:$XDG_DATA_DIRS"
 
 exec systemd-cat --identifier ly "$@"
