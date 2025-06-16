@@ -1,5 +1,9 @@
 @import "themes/base16-oceanicnext.css";
 
+/*
+** Global configuration
+*/
+
 * {
     border: none;
     border-radius: 0;
@@ -22,10 +26,28 @@ tooltip {
     border-radius: 4px;
 }
 
-#workspaces {
+/* Handle radii and spacing of top level modules */
+window>box>box>widget>* {
     border-radius: 4px;
-    margin-right: 4px;
+    margin: 0 4px 0 4px;
 }
+
+/* Handle radii in recursive modules (workspaces and groups) */
+box > widget > box > *:not(widget):first-child,
+box > widget > box > widget:first-child > * {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+box > widget > box > *:not(widget):last-child,
+box > widget > box > widget:last-child > * {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+/*
+** Per module styling
+*/
 
 #workspaces button {
     padding: 8px 8px;
@@ -58,14 +80,6 @@ tooltip {
     background-color: @blur02;
 }
 
-#workspaces button:nth-child(1) {
-    border-radius: 4px 0 0 4px;
-}
-
-#workspaces button:nth-last-child(1) {
-    border-radius: 0 4px 4px 0;
-}
-
 #custom-scratchpad,
 #mode,
 #clock,
@@ -85,42 +99,26 @@ tooltip {
 }
 
 #custom-scratchpad {
-    border-radius: 4px;
-    margin: 0 4px 0 4px;
     background-color: @blur02;
 }
 
 #mode {
-    border-radius: 4px;
-    margin: 0 4px 0 4px;
     background-color: @blur06;
     color: @base00;
 }
 
-#clock {
-    border-radius: 4px;
-    margin: 0 4px 0 4px;
-}
-
 #custom-spotify {
-    border-radius: 4px;
-    margin: 0 4px 0 4px;
     background-color: @blur05;
     color: @base00;
 }
 
 #tray {
-    border-radius: 4px;
-    margin: 0 4px 0 4px;
-    /* background-color: @blur00; */
     background-color: @blur01;
 }
 
 #idle_inhibitor {
-    margin-left: 4px;
     padding-left: 10px;
     padding-right: 14px;
-    border-radius: 4px 0 0 4px;
     background-color: @blur01;
 }
 
@@ -183,7 +181,6 @@ tooltip {
 #battery {
     background-color: @base0B;
     color: @base00;
-    border-radius: 0 4px 4px 0;
 }
 
 #battery.warning:not(.charging) {
@@ -202,6 +199,10 @@ tooltip {
 }
 
 /* Hide some module on 2nd screen */
+
+window.DP-3 #custom-scratchpad,
+window.DP-5 #custom-scratchpad,
+window.DP-7 #custom-scratchpad,
 window.DP-3 #custom-spotify,
 window.DP-5 #custom-spotify,
 window.DP-7 #custom-spotify,

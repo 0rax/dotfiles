@@ -3,8 +3,8 @@
   "position": "top",
   "height": 30,
   "margin-top": 8,
-  "margin-left": 8,
-  "margin-right": 8,
+  "margin-left": 4,
+  "margin-right": 4,
   "modules-left": [
     "sway/workspaces",
     "custom/scratchpad",
@@ -16,14 +16,20 @@
   ],
   "modules-right": [
     "custom/spotify",
-    "idle_inhibitor",
-    "custom/gammastep",
-    "custom/system",
-    "bluetooth",
-    "network",
-    "wireplumber",
-    "battery"
+    "group/hardware"
   ],
+  "group/hardware": {
+    "orientation": "horizontal",
+    "modules": [
+      "idle_inhibitor",
+      "custom/gammastep",
+      "custom/system",
+      "bluetooth",
+      "network",
+      "wireplumber",
+      "battery"
+    ]
+  },
   "sway/workspaces": {
     "disable-scroll": true,
     "all-outputs": true,
