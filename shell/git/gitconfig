@@ -112,7 +112,7 @@
 
 # Mergetool
 [merge]
-	tool = vscodium
+	tool = zed
 [mergetool "vscodium"]
 	cmd = codium --wait "$MERGED"
 [mergetool "vscode"]
@@ -121,6 +121,8 @@
 	cmd = meld "$LOCAL" "$MERGED" "$REMOTE" --output "$MERGED"
 [mergetool "meld-base"]
 	cmd = meld "$LOCAL" "$BASE" "$REMOTE" --output "$MERGED"
+[mergetool "zed"]
+	cmd = zeditor --wait "$MERGED"
 
 # Git LFS
 [filter "lfs"]

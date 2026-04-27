@@ -12,7 +12,6 @@ end
 
 # ---  ColorSet/Base-16 - Oceanic Next -----------------------------------------
 
-
 set -l __base_16_00 1B2B34
 set -l __base_16_01 343D46
 set -l __base_16_02 4F5B66
@@ -32,26 +31,35 @@ set -l __base_16_0F AB7967
 
 # ---  Colors/Fish-Shell  ------------------------------------------------------
 
-set -U fish_color_normal                normal
-set -U fish_color_command               $__base_16_0D
-set -U fish_color_param                 $__base_16_0C
-set -U fish_color_redirection           $__base_16_0A
-set -U fish_color_comment               $__base_16_03
-set -U fish_color_error                 $__base_16_08
-set -U fish_color_escape                $__base_16_0E
-set -U fish_color_operator              $__base_16_0E
-set -U fish_color_end                   $__base_16_05
-set -U fish_color_quote                 $__base_16_0B
-set -U fish_color_autosuggestion        $__base_16_04
-set -U fish_color_valid_path            --underline
-set -U fish_color_match                 $__base_16_09
-set -U fish_color_search_match          --background=$__base_16_02
-set -U fish_color_selection             --background=$__base_16_02
-set -U fish_pager_color_prefix          $__base_16_06
-set -U fish_pager_color_completion      $__base_16_04
-set -U fish_pager_color_description     $__base_16_06
-set -U fish_pager_color_progress        $__base_16_09
-set -U fish_color_history_current       $__base_16_09
+set -g fish_color_normal                normal
+set -g fish_color_command               $__base_16_0D
+set -g fish_color_param                 $__base_16_0C
+set -g fish_color_redirection           $__base_16_0A
+set -g fish_color_comment               $__base_16_03
+set -g fish_color_error                 $__base_16_08
+set -g fish_color_escape                $__base_16_0E
+set -g fish_color_operator              $__base_16_0E
+set -g fish_color_end                   $__base_16_05
+set -g fish_color_quote                 $__base_16_0B
+set -g fish_color_autosuggestion        $__base_16_04
+set -g fish_color_valid_path            --underline
+set -g fish_color_match                 $__base_16_09
+set -g fish_color_search_match          --background=$__base_16_02
+set -g fish_color_selection             --background=$__base_16_02
+set -g fish_pager_color_prefix          $__base_16_06
+set -g fish_pager_color_completion      $__base_16_04
+set -g fish_pager_color_description     $__base_16_06
+set -g fish_pager_color_progress        $__base_16_09
+set -g fish_color_history_current       $__base_16_09
+
+set -g fish_color_cancel -r
+set -g fish_color_cwd green
+set -g fish_color_cwd_root red
+set -g fish_color_host normal
+set -g fish_color_host_remote yellow
+set -g fish_color_status red
+set -g fish_color_user brgreen
+set -g fish_pager_color_selected_background -r
 
 # ---  Colors/Fishline  --------------------------------------------------------
 

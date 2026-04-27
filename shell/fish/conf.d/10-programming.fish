@@ -17,6 +17,10 @@ if test -d $HOME/.rd; and not contains $HOME/.rd/bin $PATH
     set -p PATH $HOME/.rd/bin
 end
 
+# ---  Programming/Direnv  -----------------------------------------------------
+
+direnv hook fish | source
+
 # ---  Programming/Golang  -----------------------------------------------------
 
 if test -d /usr/lib/go
@@ -59,6 +63,12 @@ if type -q pyenv; and status is-interactive
     set -gx PIPENV_VERBOSITY -1
     source (pyenv init - | psub)
     source (pyenv virtualenv-init - | psub)
+end
+
+# ---  Programming/Rust --------------------------------------------------------
+
+if test -d $HOME/.cargo/bin
+    set -p PATH $HOME/.cargo/bin
 end
 
 # ---  Programming/Android -----------------------------------------------------

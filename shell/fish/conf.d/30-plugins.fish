@@ -19,13 +19,13 @@ end
 
 set -gx BD_OPT insensitive
 
-# ---  Plugins/Z  --------------------------------------------------------------
+# ---  Plugins/Zoxide  ---------------------------------------------------------
 
 if test -f "$FISH_PLUGIN_PATH/z/conf.d/z.fish"
     set -a fish_function_path "$FISH_PLUGIN_PATH/z/functions"
-    set -U Z_DATA $XDG_DATA_HOME/z/db
-    set -U Z_DATA_DIR $XDG_DATA_HOME/z
-    set -U Z_CMD j
+    set -gx Z_DATA $XDG_DATA_HOME/z/db
+    set -gx Z_DATA_DIR $XDG_DATA_HOME/z
+    set -gx Z_CMD j
     source "$FISH_PLUGIN_PATH/z/conf.d/z.fish"
 end
 
@@ -50,6 +50,14 @@ if type -q grc
             end
         end
     end
+end
+
+# ---  Plugins/Walk  -----------------------------------------------------------
+
+if type -q walk
+    set -gx WALK_REMOVE_CMD trash
+    set -gx WALK_STATUS_BAR '[Mode(), Owner(), Size() | PadLeft(7), ModTime() | PadLeft(12)] | join(" ")'
+    set -gx WALK_MAIN_COLOR "#6699CC"
 end
 
 # ------------------------------------------------------------------------------
