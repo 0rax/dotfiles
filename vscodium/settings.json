@@ -1,6 +1,6 @@
 {
   "[css]": {
-    "editor.defaultFormatter": "vscode.css-language-features",
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.insertSpaces": true,
     "editor.tabSize": 2
   },
@@ -13,10 +13,14 @@
     "editor.insertSpaces": true,
     "editor.tabSize": 4
   },
+  "[github-actions-workflow]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
   "[go]": {
     "editor.defaultFormatter": "golang.go",
     "editor.formatOnSave": true,
     "editor.insertSpaces": false,
+    "editor.semanticHighlighting.enabled": true,
     "editor.tabSize": 4
   },
   "[html]": {
@@ -24,24 +28,25 @@
     "editor.insertSpaces": true,
     "editor.tabSize": 2
   },
-  "[mjml]": {
-    "editor.defaultFormatter": "mjmlio.vscode-mjml",
-    "editor.insertSpaces": true,
-    "editor.tabSize": 2
-  },
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.insertSpaces": true,
+    "editor.formatOnSave": true,
     "editor.tabSize": 2
   },
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.insertSpaces": true,
+    "editor.formatOnSave": false,
     "editor.tabSize": 2
   },
   "[jsonc]": {
     "editor.defaultFormatter": "vscode.json-language-features",
+    "editor.formatOnSave": false,
     "editor.tabSize": 2
+  },
+  "[logstash]": {
+    "editor.formatOnSave": true,
+    "editor.indentSize": 2,
+    "editor.insertSpaces": true
   },
   "[makefile]": {
     "editor.insertSpaces": false,
@@ -55,22 +60,29 @@
     "editor.insertSpaces": false,
     "editor.tabSize": 4
   },
-  "[proto3]": {
+  "[proto]": {
     "editor.defaultFormatter": "bufbuild.vscode-buf",
-    "editor.formatOnSave": true,
+    "editor.formatOnSave": false,
     "editor.insertSpaces": true,
+    "editor.semanticHighlighting.enabled": false,
     "editor.tabSize": 2
   },
   "[python]": {
     "editor.codeActionsOnSave": {
       "source.organizeImports": "explicit"
     },
-    "editor.defaultFormatter": "ms-python.black-formatter",
+    "editor.formatOnSave": true
+  },
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true
   },
   "[shellscript]": {
     "editor.insertSpaces": true,
     "editor.tabSize": 4
+  },
+  "[sql]": {
+    "editor.defaultFormatter": "ReneSaarsoo.sql-formatter-vsc"
   },
   "[ssh_config]": {
     "editor.insertSpaces": false,
@@ -90,6 +102,14 @@
     "editor.insertSpaces": true,
     "editor.tabSize": 2
   },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
   "[vue]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true,
@@ -104,6 +124,7 @@
   },
   "[yaml]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": false,
     "editor.tabSize": 2
   },
   "amVim.bindCtrlCommands": false,
@@ -116,92 +137,102 @@
   "commentAnchors.epic.provideAutoCompletion": false,
   "commentAnchors.scrollPosition": "center",
   "commentAnchors.showCursor": false,
-  "commentAnchors.tags.displayInGutter": false,
-  "commentAnchors.tags.displayInRuler": true,
-  "commentAnchors.tags.displayInSidebar": true,
   "commentAnchors.tags.list": [
     {
+      "tag": "ANCHOR",
       "enabled": false,
       "highlightColor": "default",
+      "iconColor": "default",
       "scope": "hidden",
-      "tag": "ANCHOR"
+      "styleMode": "tag"
     },
     {
-      "enabled": false,
-      "highlightColor": "default",
-      "scope": "hidden",
-      "tag": "REVIEW"
-    },
-    {
-      "enabled": false,
-      "highlightColor": "default",
-      "scope": "hidden",
-      "tag": "STUB"
-    },
-    {
-      "enabled": false,
-      "highlightColor": "default",
-      "scope": "hidden",
-      "tag": "SECTION"
-    },
-    {
-      "enabled": false,
-      "highlightColor": "default",
-      "scope": "hidden",
-      "tag": "LINK"
-    },
-    {
-      "highlightColor": "#a3be8c",
-      "iconColor": "#a3be8c",
-      "scope": "workspace",
-      "styleComment": false,
-      "tag": "NOTE"
-    },
-    {
-      "highlightColor": "#96b5b4",
-      "iconColor": "#96b5b4",
-      "scope": "workspace",
-      "styleComment": false,
-      "tag": "OPTIMIZE"
-    },
-    {
-      "highlightColor": "#d08770",
-      "iconColor": "#d08770",
-      "scope": "workspace",
-      "styleComment": false,
-      "tag": "TODO"
-    },
-    {
-      "highlightColor": "#ebcb8b",
-      "iconColor": "#ebcb8b",
-      "scope": "workspace",
-      "styleComment": false,
-      "tag": "HACK"
-    },
-    {
-      "backgroundColor": "#ebcb8b",
-      "highlightColor": "#2b303b",
-      "iconColor": "#ebcb8b",
-      "scope": "workspace",
-      "styleComment": true,
-      "tag": "XXX"
-    },
-    {
-      "highlightColor": "#bf616a",
-      "iconColor": "#bf616a",
-      "scope": "workspace",
-      "styleComment": false,
-      "tag": "FIXME"
-    },
-    {
+      "tag": "BUG",
       "backgroundColor": "#bf616a",
       "highlightColor": "#2b303b",
       "iconColor": "#bf616a",
       "scope": "workspace",
-      "styleComment": true,
-      "tag": "BUG"
+      "styleMode": "comment"
+    },
+    {
+      "tag": "FIXME",
+      "highlightColor": "#bf616a",
+      "iconColor": "#bf616a",
+      "scope": "workspace",
+      "styleMode": "tag"
+    },
+    {
+      "tag": "HACK",
+      "highlightColor": "#ebcb8b",
+      "iconColor": "#ebcb8b",
+      "scope": "workspace",
+      "styleMode": "tag"
+    },
+    {
+      "tag": "LINK",
+      "enabled": false,
+      "highlightColor": "default",
+      "iconColor": "default",
+      "scope": "hidden",
+      "styleMode": "tag"
+    },
+    {
+      "tag": "NOTE",
+      "highlightColor": "#a3be8c",
+      "iconColor": "#a3be8c",
+      "scope": "workspace",
+      "styleMode": "tag"
+    },
+    {
+      "tag": "OPTIMIZE",
+      "highlightColor": "#96b5b4",
+      "iconColor": "#96b5b4",
+      "scope": "workspace",
+      "styleMode": "tag"
+    },
+    {
+      "tag": "REVIEW",
+      "enabled": false,
+      "highlightColor": "default",
+      "iconColor": "default",
+      "scope": "hidden",
+      "styleMode": "tag"
+    },
+    {
+      "tag": "SECTION",
+      "enabled": false,
+      "highlightColor": "default",
+      "iconColor": "default",
+      "scope": "hidden",
+      "styleMode": "tag"
+    },
+    {
+      "tag": "STUB",
+      "enabled": false,
+      "highlightColor": "default",
+      "iconColor": "default",
+      "scope": "hidden",
+      "styleMode": "tag"
+    },
+    {
+      "tag": "TODO",
+      "highlightColor": "#d08770",
+      "iconColor": "#d08770",
+      "scope": "workspace",
+      "styleMode": "tag"
+    },
+    {
+      "tag": "XXX",
+      "backgroundColor": "#ebcb8b",
+      "highlightColor": "#2b303b",
+      "iconColor": "#ebcb8b",
+      "scope": "workspace",
+      "styleMode": "comment"
     }
   ],
+  "commentAnchors.tags.displayInGutter": false,
+  "commentAnchors.tags.displayInRuler": true,
+  "commentAnchors.tags.displayInSidebar": true,
   "commentAnchors.tags.provideAutoCompletion": true,
   "commentAnchors.tags.rulerStyle": "left",
   "commentAnchors.tags.separators": [
@@ -210,9 +241,8 @@
     " - "
   ],
   "commentAnchors.workspace.maxFiles": 100,
-  "continue.enableTabAutocomplete": false,
-  "continue.telemetryEnabled": false,
   "editor.bracketPairColorization.enabled": true,
+  "editor.codeLensFontSize": 11,
   "editor.copyWithSyntaxHighlighting": false,
   "editor.cursorBlinking": "solid",
   "editor.cursorStyle": "block",
@@ -222,6 +252,7 @@
   "editor.guides.bracketPairs": "active",
   "editor.insertSpaces": true,
   "editor.largeFileOptimizations": false,
+  "editor.minimap.enabled": false,
   "editor.renderLineHighlight": "all",
   "editor.renderLineHighlightOnlyWhenFocus": true,
   "editor.renderWhitespace": "boundary",
@@ -238,51 +269,58 @@
   "emmet.includeLanguages": {
     "twig": "html"
   },
-  "errorLens.hintGutterIconColor": "#8fa1b3",
-  "errorLens.infoGutterIconColor": "#8fa1b3",
-  "errorLens.warningGutterIconColor": "#d08770",
+  "errorLens.codeLensEnabled": true,
+  "errorLens.codeLensTemplate": "[$severity] $source: $message",
   "errorLens.errorGutterIconColor": "#bf616a",
   "errorLens.gutterIconsEnabled": true,
   "errorLens.gutterIconSet": "letter",
   "errorLens.gutterIconSize": "80%",
+  "errorLens.hintGutterIconColor": "#8fa1b3",
+  "errorLens.ignoreUntitled": true,
+  "errorLens.infoGutterIconColor": "#8fa1b3",
   // "errorLens.messageTemplate": "[$severity] $message",
   "errorLens.messageTemplate": "",
+  "errorLens.removeLinebreaks": false,
+  "errorLens.replaceLinebreaksSymbol": " ­– ",
   "errorLens.scrollbarHackEnabled": true,
-  "errorLens.codeLensEnabled": true,
-  "errorLens.codeLensTemplate": "[$severity] $source: $message",
-  "errorLens.statusBarColorsEnabled": true,
-  "errorLens.statusBarIconsEnabled": true,
-  "errorLens.statusBarIconsUseBackground": false,
   "errorLens.severityText": [
     "E",
     "W",
     "I",
     "H"
   ],
+  "errorLens.statusBarColorsEnabled": true,
+  "errorLens.statusBarIconsEnabled": true,
   "errorLens.statusBarIconsTargetProblems": "activeEditor",
-  "errorLens.replaceLinebreaksSymbol": " ­– ",
-  "errorLens.removeLinebreaks": false,
-  "errorLens.ignoreUntitled": true,
+  "errorLens.statusBarIconsUseBackground": false,
+  "errorLens.warningGutterIconColor": "#d08770",
   "explorer.compactFolders": true,
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
   "explorer.fileNesting.enabled": true,
   "explorer.fileNesting.expand": false,
   "explorer.fileNesting.patterns": {
+    ".gitignore": ".gitattributes, .gitmodules, .gitmessage, .lfsconfig, .mailmap, .git-blame*",
     "*": "${capture}.orig",
-    "*.proto": "${capture}.pb.go, ${capture}.pb.gw.go, ${capture}.pb.validate.go, ${capture}_grpc.pb.go",
-    ".gitignore": ".gitattributes, .gitmodules, .gitmessage",
+    "*.proto": "${capture}.pb.go, ${capture}.pb.gw.go, ${capture}.pb.validate.go, ${capture}_grpc.pb.go, ${capture}.pb.micro.go",
     "buf.yaml": "buf.gen.yaml, buf.lock",
+    "gemfile": ".ruby-version, gemfile.lock",
     "go.mod": "go.sum",
-    "Pipfile": "Pipfile.lock",
-    "pyproject.toml": "poetry.lock",
-    "requirements.in": "requirements.txt",
-    "package.json": "package-lock.json, yarn.lock, pnpm-lock.yaml, bun.lockb"
+    "go.work": "go.work.sum",
+    // From: https://github.com/antfu/vscode-file-nesting-config/tree/main
+    "package.json": "*.code-workspace, .browserslist*, .circleci*, .commitlint*, .cspell*, .cursor*, .cz-config.js, .czrc, .dlint.json, .dprint.json*, .editorconfig, .eslint*, .firebase*, .flowconfig, .github*, .gitlab*, .gitmojirc.json, .gitpod*, .huskyrc*, .jslint*, .knip.*, .lintstagedrc*, .ls-lint.yml, .markdownlint*, .node-version, .nodemon*, .npm*, .nvmrc, .oxlintrc.json, .oxlintrc.json.bak, .pm2*, .pnp.*, .pnpm*, .prettier*, .pylintrc, .release-please*.json, .releaserc*, .ruff.toml, .sentry*, .shellcheckrc, .simple-git-hooks*, .stackblitz*, .styleci*, .stylelint*, .tazerc*, .textlint*, .tool-versions, .travis*, .versionrc*, .vscode*, .watchman*, .windsurfrules, .xo-config*, .yamllint*, .yarnrc*, Procfile, alejandra.toml, apollo.config.*, appveyor*, azure-pipelines*, biome.json*, bower.json, build.config.*, bun.lock, bun.lockb, bunfig.toml, colada.options.ts, commitlint*, crowdin*, cspell*, dangerfile*, dlint.json, dprint.json*, ec.config.*, electron-builder.*, eslint*, firebase.json, grunt*, gulp*, jenkins*, knip.*, lefthook.*, lerna*, lint-staged*, nest-cli.*, netlify*, nixpacks*, nodemon*, npm-shrinkwrap.json, nx.*, package-lock.json, package.nls*.json, phpcs.xml, pm2.*, pnpm*, prettier*, pullapprove*, pyrightconfig.json, release-please*.json, release-tasks.sh, release.config.*, renovate*, rolldown.config.*, rollup.config.*, rspack*, ruff.toml, sentry.*.config.ts, simple-git-hooks*, sonar-project.properties, stylelint*, taze.config.*, tsdown.config.*, tslint*, tsup.config.*, turbo*, typedoc*, unlighthouse*, vercel*, vetur.config.*, webpack*, workspace.json, wrangler.*, xo.config.*, yarn*",
+    "Pipfile": ".editorconfig, .flake8, .isort.cfg, .python-version, Pipfile, Pipfile.lock, requirements*.in, requirements*.pip, requirements*.txt, tox.ini",
+    "pyproject.toml": ".commitlint*, .cspell*, .dlint.json, .dprint.json*, .editorconfig, .eslint*, .flake8, .flowconfig, .isort.cfg, .jslint*, .lintstagedrc*, .ls-lint.yml, .markdownlint*, .oxlintrc.json, .oxlintrc.json.bak, .pdm-python, .pdm.toml, .prettier*, .pylintrc, .python-version, .ruff.toml, .shellcheckrc, .stylelint*, .textlint*, .xo-config*, .yamllint*, MANIFEST.in, Pipfile, Pipfile.lock, alejandra.toml, biome.json*, commitlint*, cspell*, dangerfile*, dlint.json, dprint.json*, eslint*, hatch.toml, lint-staged*, pdm.lock, phpcs.xml, poetry.lock, poetry.toml, prettier*, pyproject.toml, pyrightconfig.json, requirements*.in, requirements*.pip, requirements*.txt, ruff.toml, setup.cfg, setup.py, stylelint*, tox.ini, tslint*, uv.lock, uv.toml, xo.config.*",
+    "remix.config.*": "*.env, .babelrc*, .codecov, .cssnanorc*, .env.*, .envrc, .htmlnanorc*, .lighthouserc.*, .mocha*, .postcssrc*, .terserrc*, api-extractor.json, ava.config.*, babel.config.*, capacitor.config.*, content.config.*, contentlayer.config.*, cssnano.config.*, cypress.*, env.d.ts, formkit.config.*, formulate.config.*, histoire.config.*, htmlnanorc.*, i18n.config.*, ionic.config.*, jasmine.*, jest.config.*, jsconfig.*, karma*, lighthouserc.*, panda.config.*, playwright.config.*, postcss.config.*, puppeteer.config.*, react-router.config.*, remix.*, rspack.config.*, sst.config.*, svgo.config.*, tailwind.config.*, tsconfig.*, tsdoc.*, uno.config.*, unocss.config.*, vitest.config.*, vuetify.config.*, webpack.config.*, windi.config.*",
+    "requirements.txt": ".editorconfig, .flake8, .isort.cfg, .python-version, requirements*.in, requirements*.pip, requirements*.txt, tox.ini",
+    "vite.config.*": "*.env, .babelrc*, .codecov, .cssnanorc*, .env.*, .envrc, .htmlnanorc*, .lighthouserc.*, .mocha*, .postcssrc*, .terserrc*, api-extractor.json, ava.config.*, babel.config.*, capacitor.config.*, content.config.*, contentlayer.config.*, cssnano.config.*, cypress.*, env.d.ts, formkit.config.*, formulate.config.*, histoire.config.*, htmlnanorc.*, i18n.config.*, ionic.config.*, jasmine.*, jest.config.*, jsconfig.*, karma*, lighthouserc.*, panda.config.*, playwright.config.*, postcss.config.*, puppeteer.config.*, react-router.config.*, rspack.config.*, sst.config.*, svgo.config.*, tailwind.config.*, tsconfig.*, tsdoc.*, uno.config.*, unocss.config.*, vitest.config.*, vuetify.config.*, webpack.config.*, windi.config.*",
+    "vue.config.*": "*.env, .babelrc*, .codecov, .cssnanorc*, .env.*, .envrc, .htmlnanorc*, .lighthouserc.*, .mocha*, .postcssrc*, .terserrc*, api-extractor.json, ava.config.*, babel.config.*, capacitor.config.*, content.config.*, contentlayer.config.*, cssnano.config.*, cypress.*, env.d.ts, formkit.config.*, formulate.config.*, histoire.config.*, htmlnanorc.*, i18n.config.*, ionic.config.*, jasmine.*, jest.config.*, jsconfig.*, karma*, lighthouserc.*, panda.config.*, playwright.config.*, postcss.config.*, puppeteer.config.*, react-router.config.*, rspack.config.*, sst.config.*, svgo.config.*, tailwind.config.*, tsconfig.*, tsdoc.*, uno.config.*, unocss.config.*, vitest.config.*, vuetify.config.*, webpack.config.*, windi.config.*"
   },
+  "extensions.autoUpdate": false,
   "extensions.ignoreRecommendations": true,
   "files.associations": {
     "*.pgsql": "sql",
-    "*.proto": "proto3",
+    "*.proto": "proto",
     "*.psql": "sql",
     "APKBUILD": "shellscript",
     "bashrc": "shellscript",
@@ -295,18 +333,19 @@
   "files.autoSave": "onFocusChange",
   "files.autoSaveWorkspaceFilesOnly": true,
   "files.exclude": {
-    "**/*.code-workspace": true,
+    "**/__pycache__": true,
     "**/.snapshots": true,
     "**/.vscode": true,
-    "**/__pycache__": true
+    "**/*.code-workspace": true
   },
   "files.insertFinalNewline": true,
   "files.trimFinalNewlines": true,
   "files.trimTrailingWhitespace": true,
+  "github.copilot.nextEditSuggestions.enabled": true,
   "go.addTags": {
     "promptForTags": true
   },
-  "go.formatTool": "gofumpt",
+  "go.formatTool": "default",
   "go.lintOnSave": "package",
   "go.lintTool": "golangci-lint",
   "go.removeTags": {
@@ -318,6 +357,14 @@
   ],
   "go.toolsManagement.autoUpdate": true,
   "go.useLanguageServer": true,
+  "gopls": {
+    "formatting.gofumpt": true,
+    "ui.semanticTokens": true
+  },
+  "hediet.vscode-drawio.theme": "Kennedy",
+  "httpbook.outputRfc7230": "response",
+  "httpbook.saveWithOutputs": false,
+  "httpyac.useCodeLensInNotebook": true,
   "indentRainbow.includedLanguages": [
     "python",
     "yaml"
@@ -326,12 +373,9 @@
     "--profile",
     "black"
   ],
+  "js/ts.implicitProjectConfig.checkJs": true,
+  "json.maxItemsComputed": 2000,
   "json.schemaDownload.enable": true,
-  "jupyter.askForKernelRestart": false,
-  "jupyter.widgetScriptSources": [
-    "jsdelivr.com",
-    "unpkg.com"
-  ],
   "ltex.enabled": [
     "bibtex",
     "context",
@@ -344,41 +388,42 @@
   ],
   "markdown.extension.tableFormatter.normalizeIndentation": true,
   "markdown.preview.scrollEditorWithPreview": false,
-  "material-icon-theme.saturation": 0.72,
   "material-icon-theme.files.associations": {
     "*.drawio.png": "drawio",
     "*.drawio.svg": "drawio",
     "*.step": "3d",
-    "*.wrl": "3d",
+    "*.wrl": "3d"
   },
   "material-icon-theme.files.customClones": [
     {
-      "name": "erd",
       "base": "github-actions-workflow",
       "color": "gray-500",
-      "fileExtensions": ["erd", "erd.json"]
+      "fileExtensions": [
+        "erd",
+        "erd.json"
+      ],
+      "name": "erd"
     },
     {
-      "name": "excalidraw",
       "base": "dhall",
       "color": "purple-300",
-      "fileExtensions": ["excalidraw", "excalidraw.png", "excalidraw.svg"]
+      "fileExtensions": [
+        "excalidraw",
+        "excalidraw.png",
+        "excalidraw.svg"
+      ],
+      "name": "excalidraw"
     }
   ],
   "material-icon-theme.folders.associations": {
     ".dev": "batch",
-    "migrations": "database",
-    "tmpl": "template",
     "http": "public",
+    "migrations": "database",
+    "tmpl": "template"
   },
+  "material-icon-theme.saturation": 0.72,
   "notebook.lineNumbers": "on",
   "outline.showVariables": false,
-  "pylint.args": [
-    "--max-line-length=100",
-    "--disable=C,R"
-  ],
-  "python.languageServer": "Jedi",
-  "python.venvPath": "~/.pyenv/versions/",
   "redhat.telemetry.enabled": false,
   "shellcheck.customArgs": [
     "-x"
@@ -418,6 +463,13 @@
   "window.titleBarStyle": "custom",
   "workbench.activityBar.location": "top",
   "workbench.colorCustomizations": {
+    "editorCodeLens.foreground": "#8fa1b3",
+    "errorLens.statusBarErrorForeground": "#bf616a",
+    "errorLens.statusBarHintForeground": "#8fa1b3",
+    "errorLens.statusBarIconErrorForeground": "#bf616a",
+    "errorLens.statusBarIconWarningForeground": "#d08770",
+    "errorLens.statusBarInfoForeground": "#8fa1b3",
+    "errorLens.statusBarWarningForeground": "#d08770",
     "statusBar.background": "#4F5B66",
     "statusBar.noFolderBackground": "#343d46",
     "statusBarItem.remoteBackground": "#65737e",
@@ -425,14 +477,7 @@
     "statusBarItem.remoteHoverBackground": "#6699cc",
     "statusBarItem.remoteHoverForeground": "#d8dee9",
     "titleBar.activeBackground": "#343d46",
-    "titleBar.inactiveBackground": "#343d46",
-    "errorLens.statusBarHintForeground": "#8fa1b3",
-    "errorLens.statusBarInfoForeground": "#8fa1b3",
-    "errorLens.statusBarWarningForeground": "#d08770",
-    "errorLens.statusBarErrorForeground": "#bf616a",
-    "errorLens.statusBarIconWarningForeground": "#d08770",
-    "errorLens.statusBarIconErrorForeground": "#bf616a",
-    "editorCodeLens.foreground": "#8fa1b3",
+    "titleBar.inactiveBackground": "#343d46"
   },
   "workbench.colorTheme": "Base16 OceanicNext Dark",
   "workbench.editor.doubleClickTabToToggleEditorGroupSizes": "maximize",
@@ -441,34 +486,22 @@
   "workbench.editor.limit.value": 5,
   "workbench.editor.revealIfOpen": true,
   "workbench.editorAssociations": {
-    "*.ipynb": "jupyter-notebook",
     "*.http": "http",
-    "*.md": "default",
+    "*.ipynb": "jupyter-notebook",
+    "*.md": "default"
   },
-  "workbench.iconTheme": "material-icon-theme",
+  "workbench.list.openMode": "doubleClick",
   "workbench.productIconTheme": "material-product-icons",
   "workbench.settings.editor": "json",
   "workbench.startupEditor": "none",
   "workbench.tree.enableStickyScroll": true,
+  "xml.symbols.maxItemsComputed": 2000,
   "yaml.format.enable": false,
+  "yaml.maxItemsComputed": 2000,
   "yaml.schemaStore.enable": false,
   "zenMode.centerLayout": true,
   "zenMode.fullScreen": false,
   "zenMode.hideLineNumbers": false,
   "zenMode.showTabs": "single",
-  "httpbook.saveWithOutputs": false,
-  "httpbook.outputRfc7230": "response",
-  "httpyac.useCodeLensInNotebook": true,
-  "editor.minimap.enabled": false,
-  "editor.codeLensFontSize": 11,
-  "task": {
-    "path": "/sbin/go-task"
-  },
-  "hediet.vscode-drawio.theme": "Kennedy",
-  "workbench.list.openMode": "doubleClick",
-  "yaml.maxItemsComputed": 2000,
-  "xml.symbols.maxItemsComputed": 2000,
-  "json.maxItemsComputed": 2000,
-  "chat.commandCenter.enabled": false,
-  "workbench.navigationControl.enabled": false
+  "workbench.iconTheme": "material-icon-theme"
 }
