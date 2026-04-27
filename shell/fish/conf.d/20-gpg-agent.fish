@@ -8,10 +8,12 @@
 # Do not load keychain when launched non-interactivly
 status --is-interactive; or exit
 
-set GPG_AGENT_SSH_SOCK (gpgconf --list-dirs agent-ssh-socket)
-if [ -S "$GPG_AGENT_SSH_SOCK" ]
-    set -gx SSH_AGENT_PID ""
-    set -gx SSH_AUTH_SOCK "$GPG_AGENT_SSH_SOCK"
+if type -q gpgconf
+    set GPG_AGENT_SSH_SOCK (gpgconf --list-dirs agent-ssh-socket)
+    if [ -S "$GPG_AGENT_SSH_SOCK" ]
+        set -gx SSH_AGENT_PID ""
+        set -gx SSH_AUTH_SOCK "$GPG_AGENT_SSH_SOCK"
+    end
 end
 
 # # Setup keychain if present

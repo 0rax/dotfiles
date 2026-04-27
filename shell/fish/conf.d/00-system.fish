@@ -38,6 +38,12 @@ set -gx FISH_CONFD_PATH  $FISH_CONFIG_PATH/conf.d
 
 set -p fish_function_path $FISH_ALIAS_PATH
 
+if [ "$(uname)" = "Linux" ]
+    set -p fish_function_path $FISH_ALIAS_PATH/linux
+else if [ "$(uname)" = "Darwin" ]
+    set -p fish_function_path $FISH_ALIAS_PATH/macos
+end
+
 if test -d /usr/local/share/fish/vendor_functions.d
     set -a fish_function_path /usr/local/share/fish/vendor_functions.d
 end
