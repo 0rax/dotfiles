@@ -8,13 +8,13 @@
 # ---  Programming/Fluff  ------------------------------------------------------
 
 if test -d $HOME/.local/bin; and not contains $HOME/.local/bin $PATH
-    set -p PATH $HOME/.local/bin
+    fish_add_path -P $HOME/.local/bin
 end
 
 # ---  Programming/Rancher Desktop  --------------------------------------------
 
 if test -d $HOME/.rd; and not contains $HOME/.rd/bin $PATH
-    set -p PATH $HOME/.rd/bin
+    fish_add_path -P $HOME/.rd/bin
 end
 
 # ---  Programming/Direnv  -----------------------------------------------------
@@ -25,32 +25,32 @@ direnv hook fish | source
 
 if test -d /usr/lib/go
     set -gx GOROOT /usr/lib/go
-    set -a PATH $GOROOT/bin
+    fish_add_path -Pa $GOROOT/bin
 else if test -d /usr/local/go
     set -gx GOROOT /usr/local/go
-    set -a PATH $GOROOT/bin
+    fish_add_path -Pa $GOROOT/bin
 end
 
 if test -d $HOME/projects/go
     set -gx GOPATH $HOME/projects/go
-    set -p PATH $GOPATH/bin
+    fish_add_path -P $GOPATH/bin
 else if test -d $HOME/Projects/go
     set -gx GOPATH $HOME/Projects/go
-    set -p PATH $GOPATH/bin
+    fish_add_path -P $GOPATH/bin
 else if test -d $HOME/go
     set -gx GOPATH $HOME/go
-    set -p PATH $GOPATH/bin
+    fish_add_path -P $GOPATH/bin
 end
 
 # ---  Programming/NodeJS  -----------------------------------------------------
 
 if test -d $HOME/.yarn/bin; and not contains $HOME/.yarn/bin $PATH
-    set -p PATH $HOME/.yarn/bin
+    fish_add_path -P $HOME/.yarn/bin
 end
 
 set -gx PNPM_HOME "/home/orax/.local/share/pnpm"
 if not string match -q -- $PNPM_HOME $PATH
-  set -p PATH $PNPM_HOME
+  fish_add_path -P $PNPM_HOME
 end
 
 # ---  Programming/Python  -----------------------------------------------------
@@ -68,7 +68,7 @@ end
 # ---  Programming/Rust --------------------------------------------------------
 
 if test -d $HOME/.cargo/bin
-    set -p PATH $HOME/.cargo/bin
+    fish_add_path -P $HOME/.cargo/bin
 end
 
 # ---  Programming/Android -----------------------------------------------------
@@ -76,7 +76,7 @@ end
 if test -d /opt/android-sdk
     set -gx JAVA_HOME /usr/lib/jvm/default/
     set -gx ANDROID_HOME /opt/android-sdk
-    set -a PATH $ANDROID_HOME/tools $ANDROID_HOME/tools/bin $ANDROID_HOME/platform-tools
+    fish_add_path -Pa $ANDROID_HOME/tools $ANDROID_HOME/tools/bin $ANDROID_HOME/platform-tools
 end
 
 # ------------------------------------------------------------------------------

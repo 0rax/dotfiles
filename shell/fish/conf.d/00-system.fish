@@ -56,6 +56,13 @@ end
 
 # set -gx XDG_DATA_DIRS   $HOME/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:$XDG_DATA_DIRS
 
+# ---  System/Brew  ------------------------------------------------------------
+
+if type -q brew
+    set -gx HOMEBREW_NO_ENV_HINTS 1
+    set -p PATH /opt/homebrew/bin /opt/homebrew/sbin
+end
+
 # ------------------------------------------------------------------------------
 # ---  END  --------------------------------------------------------------------
 # ------------------------------------------------------------------------------

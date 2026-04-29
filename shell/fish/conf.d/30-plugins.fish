@@ -40,7 +40,7 @@ set -U grc_plugin_execs df wdiff diff dig ifconfig id ip w who mount mtr \
 
 if type -q grc
     for executable in $grc_plugin_execs
-        if type -q $executable
+        if type -q "$executable"
             function $executable --inherit-variable executable --wraps=$executable
                 if isatty 1
                     grc $executable $argv
