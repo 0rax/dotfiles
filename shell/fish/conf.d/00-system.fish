@@ -63,6 +63,10 @@ if type -q brew
     set -p PATH /opt/homebrew/bin /opt/homebrew/sbin
 end
 
+if test -d /opt/homebrew/share/google-cloud-sdk/bin
+    fish_add_path -P /opt/homebrew/share/google-cloud-sdk/bin
+end
+
 # ------------------------------------------------------------------------------
 # ---  END  --------------------------------------------------------------------
 # ------------------------------------------------------------------------------
