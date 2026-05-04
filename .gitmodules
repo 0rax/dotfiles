@@ -10,3 +10,6 @@
 [submodule "fish/plugins/z"]
 	path = shell/fish/plugins/z
 	url = https://github.com/jethrokuan/z
+[submodule "macos/hammerspoon/Spoons/WarpMouse.spoon"]
+	path = macos/hammerspoon/Spoons/WarpMouse.spoon
+	url = https://github.com/0rax/WarpMouse.spoon.git

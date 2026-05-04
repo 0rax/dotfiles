@@ -1,6 +1,4 @@
--- ~/.hammerspoon/spotify.lua
-
-local lastTrack  = nil
+local lastTrack   = nil
 local initialized = false
 
 local function notify(track, artist, album)

@@ -1,5 +1,3 @@
--- ~/.hammerspoon/switcher.lua
-
 local switcher = hs.window.switcher.new(
     hs.window.filter.new():setCurrentSpace(true):setDefaultFilter {},
     {
