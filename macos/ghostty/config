@@ -52,30 +52,8 @@ link-url = true
 # Mouse
 mouse-hide-while-typing = false
 
-# Palette — normal (0-7)
-palette = 0=#1b2b34
-palette = 1=#ec5f67
-palette = 2=#99c794
-palette = 3=#fac863
-palette = 4=#6699cc
-palette = 5=#c594c5
-palette = 6=#5fb3b3
-palette = 7=#c0c5ce
+# Theme
+theme = Oceanic Next
 
-# Palette — bright (8-15)
-palette = 8=#65737e
-palette = 9=#ec5f67
-palette = 10=#99c794
-palette = 11=#fac863
-palette = 12=#6699cc
-palette = 13=#c594c5
-palette = 14=#5fb3b3
-palette = 15=#d8dee9
-
-# Indexed colors
-palette = 16=#f99157
-palette = 17=#ab7967
-palette = 18=#343d46
-palette = 19=#4f5b66
-palette = 20=#a7adba
-palette = 21=#cdd3de
+# Keybinding
+keybind = global:alt+enter=new_window

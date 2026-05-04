@@ -1,5 +1,25 @@
 # macOS Setup
 
+## Enable Local TimeMachine
+
+```sh
+tmutil addexclusion ~/.cache/
+tmutil addexclusion ~/Temp
+tmutil addexclusion ~/Downloads
+tmutil addexclusion ~/Library/Application\ Support/rancher-desktop/
+tmutil addexclusion ~/Library/Application\ Support/Claude/vm_bundles/
+
+tmutil enable # This doesnt enable a schedule :'(
+tmutil localsnapshot
+```
+
+## Rift setup
+
+```sh
+brew services start rift
+brew services start sketchybar
+```
+
 ## Cleanup
 
 ```sh
